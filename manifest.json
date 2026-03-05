@@ -1,0 +1,22 @@
+{
+  "name": "เล่าประสบการณ์อ่านพระคัมภีร์",
+  "short_name": "phrakham.life",
+  "description": "ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF6F0",
+  "theme_color": "#8B4513",
+  "lang": "th",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
