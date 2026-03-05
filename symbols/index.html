@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สัญลักษณ์ภาษาเดิม | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="คู่มือศึกษาพระคัมภีร์ภาษาไทยเชิงอรรถาธิบาย เปิดให้เห็น nuance ของภาษาเดิม (กรีก/ฮีบรู)">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- Google Fonts: Noto Sans Thai (headings), Sarabun (body), Gentium Plus (ESV/Greek) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a>
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <a href="/ot/">พันธสัญญาเดิม</a>
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js"></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <h1>สัญลักษณ์ภาษาเดิม</h1>
+<p class="post-meta-date">20 ก.พ. 2569 · อัพเดท 5 มี.ค. 2569</p>
+
+<h2 id="คู่มืออ่านสัญลักษณ์ภาษาเดิม-ฮีบรูกรีก">คู่มืออ่านสัญลักษณ์ภาษาเดิม (ฮีบรู/กรีก)</h2>
+
+<p>เมื่ออ่านบทเรียนบนเว็บนี้ จะเห็น emoji ปรากฏหน้าคำหรือวลีใน ESV block quote — emoji แต่ละตัวบอกข้อมูลทางไวยากรณ์ที่ภาษาเดิม (กรีก/ฮีบรู) ซ่อนไว้ แต่ฉบับแปลถ่ายทอดไม่หมด สัญลักษณ์ทั้งหมดจัดเป็น 5 กลุ่มตามหน้าที่ เพื่อให้เห็นจุดต่างของแต่ละตัวได้ชัดเจน</p>
+
+<p><strong>วิธีอ่าน:</strong> คำที่เป็น<span style="color:var(--emphasis);font-weight:700">สีแดง</span>ใน blockquote คือคำที่มี emoji กำกับ — <strong>แตะหรือชี้ที่ emoji</strong> เพื่อดูความหมายทางไวยากรณ์</p>
+
+
+<!-- Filter buttons -->
+<div class="symbol-filters" role="group" aria-label="กรองสัญลักษณ์">
+  <button class="symbol-filter-btn active" data-group="all" aria-pressed="true">ทั้งหมด</button>
+  <button class="symbol-filter-btn" data-group="action" aria-pressed="false">⏱ เวลา</button>
+  <button class="symbol-filter-btn" data-group="command" aria-pressed="false">📢 คำสั่ง</button>
+  <button class="symbol-filter-btn" data-group="stem" aria-pressed="false">🔥 ความเข้มข้น</button>
+  <button class="symbol-filter-btn" data-group="narrative" aria-pressed="false">⛓ เชื่อม</button>
+  <button class="symbol-filter-btn" data-group="emphasis" aria-pressed="false">✦ เน้น</button>
+</div>
+<div class="sr-only" aria-live="polite" id="filter-status"></div>
+
+
+
+
+
+
+
+
+  
+  
+  
+  <section class="symbol-group" data-group="action" id="group-action">
+    <div class="symbol-group-header">
+      <h2 class="symbol-group-title">⏱ เวลา/ลักษณะ</h2>
+      <div class="symbol-group-actions">
+        <button class="symbol-group-toggle" aria-expanded="false" aria-label="ขยาย/ยุบกลุ่มนี้" title="กลุ่มนี้">▼ กลุ่มนี้</button>
+        <button class="symbol-all-toggle" aria-expanded="false" aria-label="ขยาย/ยุบทุกกลุ่ม" title="ทุกกลุ่ม">▼ ทั้งหมด</button>
+      </div>
+    </div>
+    <div class="symbol-cards">
+      
+      <article class="symbol-card" id="greek-present">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🫀</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Greek Present</h3>
+            
+            <p class="symbol-card-analogy">เหมือนหัวใจที่เต้นตลอดชีวิต ไม่เคยหยุด — เป็นส่วนหนึ่งของตัวเราโดยธรรมชาติ ไม่ต้องคิดสั่ง</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. <a href="/nt/james/4-1-10/">ยก. 4:2</a> — You do not 🫀<strong>ask</strong>
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ยก. 4:2</strong>
+                <a href="/nt/james/4-1-10/">อ่านบทเรียน →</a>
+              </div>
+              <p class="symbol-example-esv">You do not 🫀<strong>ask</strong>
+</p>
+              
+              <p class="symbol-example-thai">ท่านไม่เคย 🫀<strong>ขอ</strong> เลย
+</p>
+              
+              <p class="symbol-example-original"><em>αἰτεῖσθε (aiteisthe)</em></p>
+              <p class="symbol-example-explain">→ การขอไม่เคยเป็นจังหวะชีวิตของพวกเขาเลย</p>
+            </div>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>มธ. 7:7</strong>
+                
+              </div>
+              <p class="symbol-example-esv">🫀<strong>Ask</strong>, and it will be given to you
+</p>
+              
+              <p class="symbol-example-thai">จง 🫀<strong>ขอ</strong> แล้วจะได้รับ
+</p>
+              
+              <p class="symbol-example-original"><em>αἰτεῖτε (aiteite)</em></p>
+              <p class="symbol-example-explain">→ การขอเป็นวิถีชีวิต ไม่ใช่แค่ขอครั้งเดียว</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "ขอ" แต่ภาษากรีกเน้นว่า "ไม่เคยขอเลยแม้แต่ครั้งเดียวในชีวิต" — การขอไม่เคยเป็นส่วนหนึ่งของวิถีชีวิตเลย</p>
+            
+            
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: 🫀 สังเกต vs 🔁 สั่ง</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>🫀 สังเกต (Indicative)</th><th>🔁 สั่ง (Imperative)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>ความหมาย</strong></td><td>"เขาทำอยู่แล้ว"</td><td>"จงทำต่อไปเรื่อยๆ!"</td></tr>
+                  <tr><td><strong>ตัวอย่าง</strong></td><td>ยก.4:2 — ไม่ขอ</td><td>มธ.7:7 — จงขอ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="hebrew-imperfect">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">▶️</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Hebrew Imperfect</h3>
+            
+            <p class="symbol-card-analogy">เหมือนกดปุ่ม play ดูหนังที่ยังไม่จบ — เรื่องราวยังดำเนินอยู่ ยังไม่รู้ตอนจบ</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. สดด. 1:3 — In all that he does, he ▶️<strong>prospers</strong>
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>สดด. 1:3</strong>
+                
+              </div>
+              <p class="symbol-example-esv">In all that he does, he ▶️<strong>prospers</strong>
+</p>
+              
+              <p class="symbol-example-thai">ทุกสิ่งที่เขาทำก็ ▶️<strong>เจริญขึ้น</strong>
+</p>
+              
+              <p class="symbol-example-original"><em>יַצְלִ֗יחַ (yatsliach)</em></p>
+              <p class="symbol-example-explain">→ การเจริญขึ้นยังดำเนินอยู่ต่อไปไม่สิ้นสุด</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "ให้ผล" แต่ภาษาฮีบรูเน้นว่า "กำลังให้ผลอยู่เรื่อยๆ ไม่เคยหยุด" — ไม่ใช่ให้ผลครั้งเดียวแล้วจบ</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="completed">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">✅</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Completed</h3>
+            
+            <p class="symbol-card-analogy">เหมือนเช็คลิสต์ที่ติ๊ก ✓ แล้ว — เสร็จแล้วจริงๆ ไม่ต้องกลับมาทำซ้ำ</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. <a href="/nt/james/4-1-10/">ยก. 4:2</a> — You ✅<strong>do not have</strong>, because you do not ask
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ยก. 4:2</strong>
+                <a href="/nt/james/4-1-10/">อ่านบทเรียน →</a>
+              </div>
+              <p class="symbol-example-esv">You ✅<strong>do not have</strong>, because you do not ask
+</p>
+              
+              <p class="symbol-example-thai">ท่าน ✅<strong>ไม่ได้</strong> เพราะท่านไม่ได้ขอ
+</p>
+              
+              <p class="symbol-example-original"><em>ἔχετε (echete)</em></p>
+              <p class="symbol-example-explain">→ ความจริงที่ชัดเจน — ไม่ได้สิ่งที่ต้องการ</p>
+            </div>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>รม. 5:8</strong>
+                
+              </div>
+              <p class="symbol-example-esv">Christ ✅<strong>died</strong> for us
+</p>
+              
+              <p class="symbol-example-thai">พระคริสต์ ✅<strong>สิ้นพระชนม์</strong> เพื่อเรา
+</p>
+              
+              <p class="symbol-example-original"><em>ἀπέθανεν (apethanen)</em></p>
+              <p class="symbol-example-explain">→ พระคริสต์สิ้นพระชนม์แล้วอย่างเด็ดขาด — เป็นความจริงที่เปลี่ยนไม่ได้</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "ได้" หรือ "แล้ว" แต่ต้นฉบับเน้นว่า "สำเร็จอย่างเด็ดขาด เป็นความจริงที่แน่นอน" — ไม่ใช่แค่ทำผ่านๆ</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="greek-perfect">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🔔</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Greek Perfect</h3>
+            
+            <p class="symbol-card-analogy">เหมือนระฆังที่ตีไปแล้ว แต่เสียงยังก้องอยู่ — การกระทำจบแล้ว แต่ผลไม่เคยจางหาย</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. มธ. 4:4 — It is 🔔<strong>written</strong>
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>มธ. 4:4</strong>
+                
+              </div>
+              <p class="symbol-example-esv">It is 🔔<strong>written</strong>
+</p>
+              
+              <p class="symbol-example-thai">มี 🔔<strong>เขียนไว้</strong> แล้วว่า
+</p>
+              
+              <p class="symbol-example-original"><em>γέγραπται (gegraptai)</em></p>
+              <p class="symbol-example-explain">→ เขียนไว้ในอดีตและยังเป็นจริงจนถึงวันนี้</p>
+            </div>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>อฟ. 2:8</strong>
+                
+              </div>
+              <p class="symbol-example-esv">By grace you have been 🔔<strong>saved</strong>
+</p>
+              
+              <p class="symbol-example-thai">โดยพระคุณ ท่านได้รับการ 🔔<strong>ช่วยให้รอด</strong> แล้ว
+</p>
+              
+              <p class="symbol-example-original"><em>σεσῳσμένοι (sesōsmenoi)</em></p>
+              <p class="symbol-example-explain">→ ได้รับการช่วยแล้วและยังคงอยู่ในสถานะนั้น</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "เขียนไว้" แต่ภาษากรีกเน้นว่า "เขียนไว้แล้วและยังคงเป็นจริงอยู่จนถึงวันนี้" — ไม่ใช่แค่เขียนในอดีต แต่ยังมีผลอยู่ตอนนี้</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="greek-imperfect">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">⏪</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Greek Imperfect</h3>
+            
+            <p class="symbol-card-analogy">เหมือนกรอกลับไปดูวิดีโอเก่าๆ — เห็นฉากที่เกิดซ้ำแล้วซ้ำเล่า ไม่ใช่แค่เหตุการณ์ครั้งเดียว</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. มก. 1:22 — they ⏪<strong>were astonished</strong> at his teaching
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>มก. 1:22</strong>
+                
+              </div>
+              <p class="symbol-example-esv">they ⏪<strong>were astonished</strong> at his teaching
+</p>
+              
+              <p class="symbol-example-thai">พวกเขา ⏪<strong>ประหลาดใจ</strong> ในคำสอนของพระองค์
+</p>
+              
+              <p class="symbol-example-original"><em>ἐξεπλήσσοντο (exeplēssonto)</em></p>
+              <p class="symbol-example-explain">→ ความประหลาดใจไม่ได้เกิดแค่แวบเดียว แต่คงอยู่เรื่อยๆ</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "ประหลาดใจ" แต่ภาษากรีกเน้นว่า "ประหลาดใจอยู่เรื่อยๆ ไม่หายประทับใจ" — ไม่ใช่แค่แปลกใจแวบเดียวแล้วลืม</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="historical-present">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">📍</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Historical Present</h3>
+            
+            <p class="symbol-card-analogy">เหมือนปักหมุดบนแผนที่บอกว่า "คุณอยู่ตรงนี้!" — ผู้เขียนดึงคุณเข้าไปในฉากเหมือนเห็นด้วยตาตัวเอง</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. มก. 1:12 — The Spirit immediately 📍<strong>drives</strong> him out
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>มก. 1:12</strong>
+                
+              </div>
+              <p class="symbol-example-esv">The Spirit immediately 📍<strong>drives</strong> him out
+</p>
+              
+              <p class="symbol-example-thai">พระวิญญาณ 📍<strong>ขับไล่</strong> พระองค์ออกไปในถิ่นทุรกันดารทันที
+</p>
+              
+              <p class="symbol-example-original"><em>ἐκβάλλει (ekballei)</em></p>
+              <p class="symbol-example-explain">→ กรีกใช้ ἐκβάλλω ไม่ใช่ ἀποστέλλω (ส่ง) — มาระโกเลือกคำที่แรงอย่างตั้งใจ แล้วเขียนเป็นปัจจุบันกาลเพื่อดึงผู้อ่านมาอยู่ในฉาก</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>TNCV แปลว่า "ส่ง" แต่กรีกใช้ ἐκβάλλω (ἐκ = ออก + βάλλω = เหวี่ยง) คำเดียวกับ "ขับไล่ผี" — ไม่ใช่ไล่แบบไม่ต้องการ แต่คือแรงผลักดันที่เด็ดขาดเร่งด่วน แถมมาระโกเขียนเป็นปัจจุบันกาลแทนอดีต เพื่อดึงคุณเข้าไปรู้สึกถึงแรงผลักดันนั้นจริงๆ</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+    </div>
+
+  </section>
+  
+
+  
+  
+  
+  <section class="symbol-group" data-group="command" id="group-command">
+    <div class="symbol-group-header">
+      <h2 class="symbol-group-title">📢 คำสั่ง</h2>
+      <div class="symbol-group-actions">
+        <button class="symbol-group-toggle" aria-expanded="false" aria-label="ขยาย/ยุบกลุ่มนี้" title="กลุ่มนี้">▼ กลุ่มนี้</button>
+        <button class="symbol-all-toggle" aria-expanded="false" aria-label="ขยาย/ยุบทุกกลุ่ม" title="ทุกกลุ่ม">▼ ทั้งหมด</button>
+      </div>
+    </div>
+    <div class="symbol-cards">
+      
+      <article class="symbol-card" id="greek-aorist-imperative">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🚀</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Greek Aorist Imperative</h3>
+            
+            <p class="symbol-card-analogy">เหมือนกดปุ่มจรวด — ยิงทีเดียว ตัดสินใจเด็ดขาด ไม่ต้องคิดซ้ำ</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. <a href="/nt/james/4-1-10/">ยก. 4:7</a> — 🚀<strong>Submit</strong> yourselves therefore to God
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ยก. 4:7</strong>
+                <a href="/nt/james/4-1-10/">อ่านบทเรียน →</a>
+              </div>
+              <p class="symbol-example-esv">🚀<strong>Submit</strong> yourselves therefore to God
+</p>
+              
+              <p class="symbol-example-thai">จง 🚀<strong>นอบน้อม</strong> ต่อพระเจ้า
+</p>
+              
+              <p class="symbol-example-original"><em>ὑποτάγητε (hypotagēte)</em></p>
+              <p class="symbol-example-explain">→ ตัดสินใจนอบน้อมตอนนี้เลย — ไม่ใช่ค่อยๆ ทำ</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "จงนอบน้อม" แต่ภาษากรีกเน้นว่า "ตัดสินใจนอบน้อมเดี๋ยวนี้เลย!" — เป็นการตัดสินใจครั้งเดียวที่เปลี่ยนทิศทางชีวิต</p>
+            
+            
+            
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: คำสั่ง 4 แบบ</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>ทำทีเดียว (Aorist)</th><th>ทำต่อเนื่อง (Present)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>สั่งให้ทำ</strong></td><td>🚀 กดปุ่มจรวด ยิงทีเดียว!</td><td>🔁 กดปุ่ม repeat ทำซ้ำเรื่อยๆ</td></tr>
+                  <tr><td><strong>สั่งห้าม</strong></td><td>🙅‍♂️ อย่า! แม้แต่ครั้งเดียว</td><td>🚫 เลิกทำได้แล้ว! หยุดวนซ้ำ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="greek-present-imperative">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🔁</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Greek Present Imperative</h3>
+            
+            <p class="symbol-card-analogy">เหมือนกดปุ่ม repeat — สั่งให้ทำซ้ำเรื่อยๆ ไม่ใช่ทำแค่วันนี้แล้วหยุด</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. มธ. 7:7 — 🔁<strong>Ask</strong>, and it will be given to you
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>มธ. 7:7</strong>
+                
+              </div>
+              <p class="symbol-example-esv">🔁<strong>Ask</strong>, and it will be given to you
+</p>
+              
+              <p class="symbol-example-thai">จง 🔁<strong>ขอ</strong> ต่อไป แล้วจะได้รับ
+</p>
+              
+              <p class="symbol-example-original"><em>αἰτεῖτε (aiteite)</em></p>
+              <p class="symbol-example-explain">→ จงขอต่อไปเรื่อยๆ อย่าหยุด — ไม่ใช่ขอแค่ครั้งเดียว</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "จงขอ" แต่ภาษากรีกเน้นว่า "จงขอต่อไปเรื่อยๆ อย่าหยุดขอ!" — ไม่ใช่ขอครั้งเดียวแล้วรอ</p>
+            
+            
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: 🫀 สังเกต vs 🔁 สั่ง</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>🫀 สังเกต (Indicative)</th><th>🔁 สั่ง (Imperative)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>ความหมาย</strong></td><td>"เขาทำอยู่แล้ว"</td><td>"จงทำต่อไปเรื่อยๆ!"</td></tr>
+                  <tr><td><strong>ตัวอย่าง</strong></td><td>ยก.4:2 — ไม่ขอ</td><td>มธ.7:7 — จงขอ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: คำสั่ง 4 แบบ</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>ทำทีเดียว (Aorist)</th><th>ทำต่อเนื่อง (Present)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>สั่งให้ทำ</strong></td><td>🚀 กดปุ่มจรวด ยิงทีเดียว!</td><td>🔁 กดปุ่ม repeat ทำซ้ำเรื่อยๆ</td></tr>
+                  <tr><td><strong>สั่งห้าม</strong></td><td>🙅‍♂️ อย่า! แม้แต่ครั้งเดียว</td><td>🚫 เลิกทำได้แล้ว! หยุดวนซ้ำ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="negated-greek-present-imperative">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🚫</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Negated Greek Present Imperative</h3>
+            
+            <p class="symbol-card-analogy">เหมือนกดปุ่มหยุด 🚫 บนเครื่องเล่นที่กำลังวนซ้ำ — เลิกทำสิ่งที่ทำอยู่ได้แล้ว!</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. มธ. 6:25 — 🚫<strong>do not be anxious</strong> about your life
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>มธ. 6:25</strong>
+                
+              </div>
+              <p class="symbol-example-esv">🚫<strong>do not be anxious</strong> about your life
+</p>
+              
+              <p class="symbol-example-thai">🚫<strong>อย่ากังวล</strong> เรื่องชีวิตของท่าน
+</p>
+              
+              <p class="symbol-example-original"><em>μὴ μεριμνᾶτε (mē merimnate)</em></p>
+              <p class="symbol-example-explain">→ หยุดกังวลที่กำลังทำอยู่ได้แล้ว — ไม่ใช่แค่อย่าเริ่มกังวล</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "อย่ากังวล" แต่ภาษากรีกเน้นว่า "หยุดกังวลได้แล้ว!" — บอกให้เลิกกังวลที่กำลังทำอยู่ ไม่ใช่แค่เตือนล่วงหน้า</p>
+            
+            
+            
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: คำสั่ง 4 แบบ</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>ทำทีเดียว (Aorist)</th><th>ทำต่อเนื่อง (Present)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>สั่งให้ทำ</strong></td><td>🚀 กดปุ่มจรวด ยิงทีเดียว!</td><td>🔁 กดปุ่ม repeat ทำซ้ำเรื่อยๆ</td></tr>
+                  <tr><td><strong>สั่งห้าม</strong></td><td>🙅‍♂️ อย่า! แม้แต่ครั้งเดียว</td><td>🚫 เลิกทำได้แล้ว! หยุดวนซ้ำ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="negated-greek-aorist-imperative">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🙅‍♂️</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Negated Greek Aorist Imperative</h3>
+            
+            <p class="symbol-card-analogy">เหมือนคนยกมือห้าม "อย่า! แม้แต่ครั้งเดียว!" — ห้ามเด็ดขาด ไม่มีข้อยกเว้น</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. มธ. 10:28 — 🙅‍♂️<strong>do not fear</strong> those who kill the body
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>มธ. 10:28</strong>
+                
+              </div>
+              <p class="symbol-example-esv">🙅‍♂️<strong>do not fear</strong> those who kill the body
+</p>
+              
+              <p class="symbol-example-thai">🙅‍♂️<strong>อย่ากลัว</strong> ผู้ที่ฆ่าได้แค่กาย
+</p>
+              
+              <p class="symbol-example-original"><em>μὴ φοβηθῆτε (mē phobēthēte)</em></p>
+              <p class="symbol-example-explain">→ อย่าปล่อยให้ความกลัวเข้ามาแม้แต่วินาทีเดียว</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "อย่ากลัว" แต่ภาษากรีกเน้นว่า "อย่ากลัวแม้แต่ครั้งเดียว!" — ห้ามปล่อยให้ความกลัวเข้ามาเลย ไม่ใช่แค่ห้ามกลัวเป็นนิสัย</p>
+            
+            
+            
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: คำสั่ง 4 แบบ</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>ทำทีเดียว (Aorist)</th><th>ทำต่อเนื่อง (Present)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>สั่งให้ทำ</strong></td><td>🚀 กดปุ่มจรวด ยิงทีเดียว!</td><td>🔁 กดปุ่ม repeat ทำซ้ำเรื่อยๆ</td></tr>
+                  <tr><td><strong>สั่งห้าม</strong></td><td>🙅‍♂️ อย่า! แม้แต่ครั้งเดียว</td><td>🚫 เลิกทำได้แล้ว! หยุดวนซ้ำ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+    </div>
+
+  </section>
+  
+
+  
+  
+  
+  <section class="symbol-group" data-group="stem" id="group-stem">
+    <div class="symbol-group-header">
+      <h2 class="symbol-group-title">🔥 ความเข้มข้น — Hebrew Stems</h2>
+      <div class="symbol-group-actions">
+        <button class="symbol-group-toggle" aria-expanded="false" aria-label="ขยาย/ยุบกลุ่มนี้" title="กลุ่มนี้">▼ กลุ่มนี้</button>
+        <button class="symbol-all-toggle" aria-expanded="false" aria-label="ขยาย/ยุบทุกกลุ่ม" title="ทุกกลุ่ม">▼ ทั้งหมด</button>
+      </div>
+    </div>
+    <div class="symbol-cards">
+      
+      <article class="symbol-card" id="hebrew-hiphil">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🪄</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Hebrew Hiphil</h3>
+            
+            <p class="symbol-card-analogy">เหมือนไม้กายสิทธิ์ — ไม่ใช่ตัวเองเปลี่ยน แต่ทำให้สิ่งอื่นเปลี่ยนหรือเกิดขึ้น</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. ปฐก. 2:9 — God 🪄<strong>made to grow</strong> every tree
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ปฐก. 2:9</strong>
+                
+              </div>
+              <p class="symbol-example-esv">God 🪄<strong>made to grow</strong> every tree
+</p>
+              
+              <p class="symbol-example-thai">พระเจ้า 🪄<strong>ทำให้งอกขึ้น</strong> ซึ่งต้นไม้ทุกชนิด
+</p>
+              
+              <p class="symbol-example-original"><em>וַיַּצְמַ֞ח (wayyatsmach)</em></p>
+              <p class="symbol-example-explain">→ พระเจ้าเป็นผู้ทำให้ต้นไม้งอก — ต้นไม้ไม่ได้งอกเอง</p>
+            </div>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>อพย. 6:6</strong>
+                
+              </div>
+              <p class="symbol-example-esv">I will 🪄<strong>bring you out</strong> from under the burdens
+</p>
+              
+              <p class="symbol-example-thai">เราจะ 🪄<strong>นำเจ้าออกมา</strong> จากภาระหนัก
+</p>
+              
+              <p class="symbol-example-original"><em>וְהוֹצֵאתִ֣י (wehōtse'tī)</em></p>
+              <p class="symbol-example-explain">→ พระเจ้าเป็นผู้ทำให้อิสราเอลออกมา — ไม่ใช่พวกเขาหนีออกมาเอง</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "ทำให้งอกขึ้น" แต่ภาษาฮีบรูเน้นว่า "เป็นผู้ทำให้เกิด" — พระเจ้าเป็นต้นเหตุที่ทำให้ต้นไม้งอก ไม่ใช่ต้นไม้งอกเอง</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="hebrew-piel">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">💥</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Hebrew Piel</h3>
+            
+            <p class="symbol-card-analogy">เหมือนแรงระเบิดที่เปลี่ยนทุกอย่าง 💥 — ไม่ใช่แค่แตะเบาๆ แต่ทำอย่างทรงพลังจนสภาพเปลี่ยนไป</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. ปฐก. 1:22 — God 💥<strong>blessed</strong> them
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ปฐก. 1:22</strong>
+                
+              </div>
+              <p class="symbol-example-esv">God 💥<strong>blessed</strong> them
+</p>
+              
+              <p class="symbol-example-thai">พระเจ้า 💥<strong>อวยพร</strong> พวกเขา
+</p>
+              
+              <p class="symbol-example-original"><em>וַיְבָ֧רֶךְ (wayebarek)</em></p>
+              <p class="symbol-example-explain">→ อวยพรอย่างเข้มข้น ไม่ใช่แค่พูดดีๆ แต่ทำให้เกิดผลจริง</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "อวยพร" แต่ภาษาฮีบรูเน้นว่า "อวยพรอย่างเข้มข้นจนชีวิตเปลี่ยน" — ไม่ใช่แค่พูดให้พร แต่ประทานพรจนเต็มล้น</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="hithpael">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">↩️</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Hebrew Hithpael</h3>
+            
+            <p class="symbol-card-analogy">เหมือนลูกศรที่วนกลับหาตัวเอง ↩️ — การกระทำเริ่มจากตัวเองและส่งผลกลับมาที่ตัวเอง</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. ปฐก. 3:8 — the man and his wife ↩️<strong>hid themselves</strong>
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ปฐก. 3:8</strong>
+                
+              </div>
+              <p class="symbol-example-esv">the man and his wife ↩️<strong>hid themselves</strong>
+</p>
+              
+              <p class="symbol-example-thai">ชายและภรรยา ↩️<strong>ซ่อนตัว</strong>
+</p>
+              
+              <p class="symbol-example-original"><em>וַיִּתְחַבֵּ֨א (wayyitchabbe')</em></p>
+              <p class="symbol-example-explain">→ ตัดสินใจซ่อนตัวเอง — ไม่มีใครบังคับ แต่เลือกทำเพราะรู้สึกละอาย</p>
+            </div>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>2 พศด. 7:14</strong>
+                
+              </div>
+              <p class="symbol-example-esv">if my people ↩️<strong>humble themselves</strong>
+</p>
+              
+              <p class="symbol-example-thai">ถ้าประชากรของเรา ↩️<strong>ถ่อมตัวลง</strong>
+</p>
+              
+              <p class="symbol-example-original"><em>וְיִכָּנְע֨וּ (weyikkane'u)</em></p>
+              <p class="symbol-example-explain">→ ตัดสินใจถ่อมตัวเอง — ไม่มีใครบังคับ แต่เลือกทำด้วยใจ</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "ซ่อนตัว" แต่ภาษาฮีบรูเน้นว่า "ตัดสินใจซ่อนตัวเอง" — ไม่ใช่ถูกบังคับให้ซ่อน แต่เลือกซ่อนเองเพราะรู้สึกละอาย</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+    </div>
+
+  </section>
+  
+
+  
+  
+  
+  <section class="symbol-group" data-group="narrative" id="group-narrative">
+    <div class="symbol-group-header">
+      <h2 class="symbol-group-title">⛓ เชื่อมเรื่องเล่า</h2>
+      <div class="symbol-group-actions">
+        <button class="symbol-group-toggle" aria-expanded="false" aria-label="ขยาย/ยุบกลุ่มนี้" title="กลุ่มนี้">▼ กลุ่มนี้</button>
+        <button class="symbol-all-toggle" aria-expanded="false" aria-label="ขยาย/ยุบทุกกลุ่ม" title="ทุกกลุ่ม">▼ ทั้งหมด</button>
+      </div>
+    </div>
+    <div class="symbol-cards">
+      
+      <article class="symbol-card" id="hebrew-conjunctive-perfect">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🔑</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Hebrew Conjunctive Perfect</h3>
+            
+            <p class="symbol-card-analogy">เหมือนกุญแจไขสลับโหมด 🔑 — ปลดล็อกเรื่องราวไปอีกทิศทาง สลับจากเล่าอดีตไปมองอนาคต</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. ปฐก. 1:27 — So God 🔑<strong>created</strong> man in his own image
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ปฐก. 1:27</strong>
+                
+              </div>
+              <p class="symbol-example-esv">So God 🔑<strong>created</strong> man in his own image
+</p>
+              
+              <p class="symbol-example-thai">พระเจ้าจึง 🔑<strong>ทรงสร้าง</strong> มนุษย์ตามพระฉายาของพระองค์
+</p>
+              
+              <p class="symbol-example-original"><em>וַיִּבְרָ֨א (wayyibra')</em></p>
+              <p class="symbol-example-explain">→ หลังจากตรัสว่า "ให้เราสร้างมนุษย์" (แผน) → "จึงทรงสร้าง" (ลงมือทำ) — waw สลับจากแผนไปเป็นการกระทำจริง</p>
+            </div>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ปฐก. 2:7</strong>
+                
+              </div>
+              <p class="symbol-example-esv">then the LORD God 🔑<strong>formed</strong> the man
+</p>
+              
+              <p class="symbol-example-thai">แล้วพระเจ้า 🔑<strong>ทรงปั้น</strong> มนุษย์
+</p>
+              
+              <p class="symbol-example-original"><em>וַיִּ֩יצֶר֩ (wayyitser)</em></p>
+              <p class="symbol-example-explain">→ waw สลับจากฉากหลัง (พื้นดินยังไม่มีต้นไม้) → ลงมือทำสิ่งใหม่ (ปั้นมนุษย์) — จุดหักเหของเรื่อง</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "และ" แต่ในฮีบรูคำว่า "และ" (waw) ตัวนี้ไม่ใช่แค่ต่อประโยค — มันสลับทิศทางเวลา เช่น จากอดีตไปอนาคต หรือจากคำบรรยายไปคำสั่ง เหมือนหมุนกุญแจเปลี่ยนเกียร์</p>
+            
+            
+            
+            
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: 🔑 สลับเวลา vs 🔗 เชื่อมเหตุการณ์</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>🔑 สลับเวลา</th><th>🔗 เชื่อมเหตุการณ์</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>ความหมาย</strong></td><td>"จากนั้นจึง..." (สลับโหมด)</td><td>"เพื่อจะ..." (จุดประสงค์)</td></tr>
+                  <tr><td><strong>ตัวอย่าง</strong></td><td>ปฐก.1:27 — จึงทรงสร้าง</td><td>สดด.119:11 — เพื่อจะไม่ทำบาป</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="conjunctive-imperfect">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🔗</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Hebrew Conjunctive Imperfect</h3>
+            
+            <p class="symbol-card-analogy">เหมือนข้อต่อของโซ่ 🔗 — เชื่อมเหตุการณ์ให้ต่อเนื่องกัน เรื่องราวไหลไปข้างหน้า</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. สดด. 119:11 — I have stored up your word… 🔗<strong>that I might not sin</strong>
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>สดด. 119:11</strong>
+                
+              </div>
+              <p class="symbol-example-esv">I have stored up your word… 🔗<strong>that I might not sin</strong>
+</p>
+              
+              <p class="symbol-example-thai">ข้าพเจ้าเก็บพระวจนะไว้… 🔗<strong>เพื่อจะไม่ทำบาป</strong>
+</p>
+              
+              <p class="symbol-example-original"><em>לְ֝מַ֗עַן (lema'an)</em></p>
+              <p class="symbol-example-explain">→ เก็บพระวจนะ → เชื่อมไปยังจุดประสงค์ → ไม่ทำบาป</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "เพื่อจะไม่ทำบาป" แต่ภาษาฮีบรูเน้นว่า "เชื่อมต่อไปยังจุดประสงค์" — ไม่ใช่แค่ "เพื่อ" แต่เป็นข้อต่อที่เชื่อมเหตุไปยังผล</p>
+            
+            
+            
+            
+            
+            
+            <div class="symbol-comparison">
+              <h4>เปรียบเทียบ: 🔑 สลับเวลา vs 🔗 เชื่อมเหตุการณ์</h4>
+              <table class="compare-table">
+                <thead>
+                  <tr><th></th><th>🔑 สลับเวลา</th><th>🔗 เชื่อมเหตุการณ์</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>ความหมาย</strong></td><td>"จากนั้นจึง..." (สลับโหมด)</td><td>"เพื่อจะ..." (จุดประสงค์)</td></tr>
+                  <tr><td><strong>ตัวอย่าง</strong></td><td>ปฐก.1:27 — จึงทรงสร้าง</td><td>สดด.119:11 — เพื่อจะไม่ทำบาป</td></tr>
+                </tbody>
+              </table>
+            </div>
+            
+          </div>
+        </details>
+        
+      </article>
+      
+    </div>
+
+  </section>
+  
+
+  
+  
+  
+  <section class="symbol-group" data-group="emphasis" id="group-emphasis">
+    <div class="symbol-group-header">
+      <h2 class="symbol-group-title">✦ เน้น</h2>
+      <div class="symbol-group-actions">
+        <button class="symbol-group-toggle" aria-expanded="false" aria-label="ขยาย/ยุบกลุ่มนี้" title="กลุ่มนี้">▼ กลุ่มนี้</button>
+        <button class="symbol-all-toggle" aria-expanded="false" aria-label="ขยาย/ยุบทุกกลุ่ม" title="ทุกกลุ่ม">▼ ทั้งหมด</button>
+      </div>
+    </div>
+    <div class="symbol-cards">
+      
+      <article class="symbol-card" id="contrast-emphasis">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">🌓</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Contrast Emphasis</h3>
+            
+            <p class="symbol-card-analogy">เหมือนดวงจันทร์ครึ่งสว่างครึ่งมืด 🌓 — มีสองด้านที่ตรงข้ามกันอยู่คู่กัน</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. <a href="/nt/james/4-1-10/">ยก. 4:4</a> — friendship with the world is 🌓<strong>enmity</strong> with God
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ยก. 4:4</strong>
+                <a href="/nt/james/4-1-10/">อ่านบทเรียน →</a>
+              </div>
+              <p class="symbol-example-esv">friendship with the world is 🌓<strong>enmity</strong> with God
+</p>
+              
+              <p class="symbol-example-thai">มิตรภาพกับโลกคือการเป็น 🌓<strong>ศัตรู</strong> กับพระเจ้า
+</p>
+              
+              <p class="symbol-example-original"><em>ἔχθρα (echthra)</em></p>
+              <p class="symbol-example-explain">→ มิตรภาพกับโลก ↔ เป็นศัตรูกับพระเจ้า — ตรงข้ามอย่างสิ้นเชิง</p>
+            </div>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>สดด. 1:4</strong>
+                
+              </div>
+              <p class="symbol-example-esv">The wicked are 🌓<strong>not so</strong>
+</p>
+              
+              <p class="symbol-example-thai">คนอธรรม 🌓<strong>ไม่เป็นเช่นนั้น</strong>
+</p>
+              
+              <p class="symbol-example-original"><em>לֹא־כֵ֥ן (lo'-ken)</em></p>
+              <p class="symbol-example-explain">→ คนชอบธรรม ↔ คนอธรรม — ชีวิตตรงข้ามกันโดยสิ้นเชิง</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "แต่" แต่ต้นฉบับเน้นว่า "ตรงข้ามอย่างสิ้นเชิง" — ไม่ใช่แค่เปลี่ยนเรื่อง แต่พลิกกลับ 180 องศา</p>
+            
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+      <article class="symbol-card" id="emphasis">
+        <div class="symbol-card-header">
+          <span class="symbol-card-emoji">✨</span>
+          <div class="symbol-card-info">
+            <h3 class="symbol-card-name">Emphasis</h3>
+            
+            <p class="symbol-card-analogy">เหมือนขีดเส้นใต้แล้วทำตัวหนาด้วย — ผู้เขียนต้องการให้คุณสังเกตคำนี้เป็นพิเศษ</p>
+            
+            
+              
+              <p class="symbol-card-example">
+                ตย. <a href="/nt/james/4-1-10/">ยก. 4:7</a> — Resist the devil, and he will flee from ✨<strong>you</strong>
+
+              </p>
+            
+          </div>
+        </div>
+        
+        <details>
+          <summary>ดูเพิ่ม</summary>
+          <div class="symbol-card-detail">
+            
+            <h4>ตัวอย่าง</h4>
+            
+            <div class="symbol-detail-example">
+              <div class="symbol-example-header">
+                <strong>ยก. 4:7</strong>
+                <a href="/nt/james/4-1-10/">อ่านบทเรียน →</a>
+              </div>
+              <p class="symbol-example-esv">Resist the devil, and he will flee from ✨<strong>you</strong>
+</p>
+              
+              <p class="symbol-example-thai">จงต่อสู้มาร แล้วมันจะหนีไปจาก ✨<strong>ท่าน</strong>
+</p>
+              
+              <p class="symbol-example-original"><em>ὑμῶν (hymōn)</em></p>
+              <p class="symbol-example-explain">→ "จากพวกท่าน" ถูกวางไว้ท้ายประโยคเพื่อเน้น — มารจะหนีจากท่านแน่นอน</p>
+            </div>
+            
+            
+            
+            <h4>ทำไมต้องสังเกตคำนี้?</h4>
+            <p>ภาษาไทยแปลว่า "ตัวท่านเอง" แต่ต้นฉบับเน้นว่า "ตัวท่านเอง!" — ใส่คำเพิ่มที่ไม่จำเป็นต้องมี เพียงเพื่อเน้นย้ำว่าต้องเป็นตัวท่านเท่านั้น</p>
+            
+            
+            <div class="symbol-demo">
+              <p>“ฉันบอกให้เขาทำวันนี้” — ประโยคเดียวกัน แต่ถ้าเน้นคนละคำ ความหมายและผลที่ตามมาก็เปลี่ยนไปทั้งหมด:
+— ✨<strong>ฉัน</strong> บอกให้เขาทำวันนี้ — ฉันเป็นคนบอกนะ ไม่ใช่คนอื่น → ถ้าเป็นหัวหน้าพูด ก็ต้องฟัง ถ้าเป็นแค่เพื่อนร่วมงาน น้ำหนักก็ต่างกัน
+— ฉันบอกให้ ✨<strong>เขา</strong> ทำวันนี้ — ให้เขาทำ ไม่ใช่คนอื่น → ถ้าคนอื่นไปทำแทน ก็ผิดคน
+— ฉันบอกให้เขาทำ ✨<strong>วันนี้</strong> — วันนี้นะ ไม่ใช่พรุ่งนี้ → ถ้าทำพรุ่งนี้ก็สายไป</p>
+
+            </div>
+            
+            
+            
+            
+            
+          </div>
+        </details>
+        
+      </article>
+      
+    </div>
+
+  </section>
+  
+
+
+<script>
+(function() {
+  // Filter buttons
+  var filterBtns = document.querySelectorAll('.symbol-filter-btn');
+  var groups = document.querySelectorAll('.symbol-group');
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var group = this.getAttribute('data-group');
+      filterBtns.forEach(function(b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
+
+      var visibleCount = 0;
+      groups.forEach(function(section) {
+        if (group === 'all' || section.getAttribute('data-group') === group) {
+          section.style.display = '';
+          visibleCount++;
+        } else {
+          section.style.display = 'none';
+        }
+      });
+
+      var status = document.getElementById('filter-status');
+      if (status) {
+        status.textContent = 'แสดง ' + visibleCount + ' กลุ่ม';
+      }
+    });
+  });
+
+  // Helper: update button text/state
+  function updateToggleBtn(btn, isExpanded, label) {
+    btn.textContent = (isExpanded ? '▲ ' : '▼ ') + label;
+    btn.setAttribute('aria-expanded', isExpanded);
+  }
+
+  // Per-group expand/collapse
+  document.querySelectorAll('.symbol-group-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var section = this.closest('.symbol-group');
+      var details = section.querySelectorAll('.symbol-card details');
+      var anyOpen = Array.prototype.some.call(details, function(d) { return d.open; });
+      details.forEach(function(d) { d.open = !anyOpen; });
+      updateToggleBtn(this, !anyOpen, 'กลุ่มนี้');
+    });
+  });
+
+  // Expand/Collapse ALL (buttons on every group header)
+  document.querySelectorAll('.symbol-all-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var allDetails = document.querySelectorAll('.symbol-card details');
+      var anyOpen = Array.prototype.some.call(allDetails, function(d) { return d.open; });
+      allDetails.forEach(function(d) { d.open = !anyOpen; });
+      // Sync all toggle buttons
+      document.querySelectorAll('.symbol-all-toggle').forEach(function(b) {
+        updateToggleBtn(b, !anyOpen, 'ทั้งหมด');
+      });
+      document.querySelectorAll('.symbol-group-toggle').forEach(function(b) {
+        updateToggleBtn(b, !anyOpen, 'กลุ่มนี้');
+      });
+    });
+  });
+
+  // Summary toggle: "ดูเพิ่ม" ↔ "ซ่อน"
+  document.querySelectorAll('.symbol-card details').forEach(function(det) {
+    det.addEventListener('toggle', function() {
+      var summary = this.querySelector('summary');
+      if (summary) {
+        summary.textContent = this.open ? 'ซ่อน' : 'ดูเพิ่ม';
+      }
+    });
+  });
+})();
+</script>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js"></script>
+</body>
+</html>
