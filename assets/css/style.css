@@ -2180,8 +2180,14 @@ button:focus-visible,
   outline-offset: 2px;
 }
 
-/* "ใหม่!" button — gold accent */
+/* "ใหม่!" button — gold accent, 2-line with date, own row */
 .hero-btn-new {
+  flex-basis: 100%;
+  max-width: 320px;
+  flex-direction: column;
+  height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-color: rgba(255, 215, 100, 0.9) !important;
   background: rgba(255, 215, 100, 0.18) !important;
   box-shadow: 0 0 12px rgba(255, 215, 100, 0.25);
@@ -2193,6 +2199,13 @@ button:focus-visible,
 .hero-btn-new:hover, .hero-btn-new:visited:hover {
   background: rgba(255, 215, 100, 0.35) !important;
   box-shadow: 0 0 18px rgba(255, 215, 100, 0.4);
+}
+
+.hero-btn-date {
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.7;
+  text-shadow: none;
 }
 
 /* Dropdown container */
