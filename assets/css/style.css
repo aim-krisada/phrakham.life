@@ -2180,6 +2180,21 @@ button:focus-visible,
   outline-offset: 2px;
 }
 
+/* "ใหม่!" button — gold accent */
+.hero-btn-new {
+  border-color: rgba(255, 215, 100, 0.9) !important;
+  background: rgba(255, 215, 100, 0.18) !important;
+  box-shadow: 0 0 12px rgba(255, 215, 100, 0.25);
+}
+.hero-btn-new:visited {
+  border-color: rgba(255, 215, 100, 0.9) !important;
+  background: rgba(255, 215, 100, 0.18) !important;
+}
+.hero-btn-new:hover, .hero-btn-new:visited:hover {
+  background: rgba(255, 215, 100, 0.35) !important;
+  box-shadow: 0 0 18px rgba(255, 215, 100, 0.4);
+}
+
 /* Dropdown container */
 .hero-dropdown {
   position: relative;
