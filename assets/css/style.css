@@ -1184,6 +1184,12 @@ blockquote {
   font-weight: 600;
 }
 
+/* Dim Greek/Hebrew references in normal mode */
+.original-lang-ref,
+.foreign-script {
+  opacity: 0.55;
+}
+
 /* ===================================
    Focus Mode FAB
    =================================== */
@@ -2202,6 +2208,7 @@ button:focus-visible,
 }
 
 .hero-btn-date {
+  display: block;
   font-size: 0.75rem;
   font-weight: 400;
   opacity: 0.7;
