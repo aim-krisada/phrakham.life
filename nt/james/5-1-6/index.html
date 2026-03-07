@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ยากอบ 5:1-6 — เมื่อสนิมกลายเป็นพยาน | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="ตอนที่ 1: เมื่อสมบัติกลายเป็นหลักฐาน
+">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8B4513">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Google Fonts: Noto Sans Thai (headings), Sarabun (body), Gentium Plus (ESV/Greek) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a>
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <a href="/ot/">พันธสัญญาเดิม</a>
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js" defer></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <article class="post-content" itemscope itemtype="http://schema.org/Article">
+  <header>
+    <h1 itemprop="name">ยากอบ 5:1-6 — เมื่อสนิมกลายเป็นพยาน</h1>
+    <p class="post-meta-date">7 มี.ค. 2569</p>
+  </header>
+
+  <div itemprop="articleBody">
+    <h2 id="ตอนที่-1-เมื่อสมบัติกลายเป็นหลักฐาน">ตอนที่ 1: เมื่อสมบัติกลายเป็นหลักฐาน</h2>
+
+<blockquote>
+  <p><em>🔁<strong>Come</strong> now, you rich, 🚀<strong>weep</strong> and howl for the miseries that are coming upon you. Your riches have 🔔<strong>rotted</strong> and your garments are 🔔<strong>moth-eaten</strong>. Your gold and silver have 🔔<strong>corroded</strong>, and their corrosion will be ✨<strong>evidence</strong> against you and will eat your flesh like fire. You have laid up treasure in the last days.</em> (ESV)</p>
+</blockquote>
+
+<p>พออ่านรอบแรก รู้สึกเลยว่ายากอบไม่ค่อยถูกใจคนรวยเท่าไหร่ เพราะก่อนหน้านี้ในบทที่ 2 ก็เคยเตือนแล้วว่า “ก็คนรวยไม่ใช่หรอที่พาคุณไปขึ้นศาล ที่ดูหมิ่นพระนามของพระเยซู?” แต่ตรงนี้ไม่ใช่แค่เตือนแล้ว — ยากอบกำลังประกาศคำพิพากษาเลย</p>
+
+<p>🔁<strong>มาฟังสิ</strong> — Ἄγε (<em>age</em>) เป็น Present Imperative คำเดียวกับ 4:13 แต่น้ำเสียงเปลี่ยนไปอย่างสิ้นเชิง แล้วก็ตามด้วย 🚀<strong>ร้องไห้</strong> — κλαύσατε (<em>klausate</em>) เป็น Aorist Imperative สั่งให้ทำเดี๋ยวนี้เลย ภาษากรีกแยกชัดว่า “weep” (κλαύσατε) คือหลั่งน้ำตา ส่วน “howl” (ὀλολύζοντες / <em>ololyzontes</em>) คือร้องแบบมีเสียงออกมา คร่ำครวญแบบเต็มที่ — ทำทั้งสองอย่างเดี๋ยวนี้เลย เพราะความทุกข์กำลังจะมาถึง</p>
+
+<p>สิ่งที่สวนทางเลยคือ คนรวยก็ต้องมีความสุขสิเพราะมีเงิน แต่ยากอบบอกให้ร้องไห้คร่ำครวญ เพราะว่าตอนนี้คุณอาจมองว่าทรัพย์สินเงินทองของคุณดี ค้ำชูคุณได้ แต่คุณไม่รู้หรอกว่าจริงๆ แล้วมันเป็นยังไงในสายพระเนตรของพระเจ้า</p>
+
+<p>ลองนึกภาพห้องเก็บของใหญ่โต ข้างนอกดูหรูหรา ล็อกกุญแจแน่นหนา แต่พอเปิดประตูเข้าไป — ของทุกอย่างข้างในเน่าหมดแล้ว ยากอบใช้ 🔔 Greek Perfect ซ้ำถึงสามครั้งเพื่อวาดภาพนี้ — 🔔<strong>เน่าแล้ว</strong> σέσηπεν (<em>sesēpen</em>) ทรัพย์สมบัติไม่ใช่ “กำลังจะเน่า” แต่ “ผุพังไปแล้วและยังผุพังอยู่” 🔔<strong>ถูกแมลงกินแล้ว</strong> σητόβρωτα γέγονεν (<em>sētobōta gegonen</em>) เสื้อผ้าสวยหรูดีไซน์ราคาแพงที่สะสมไว้ มอดกินจนพรุนไปแล้ว 🔔<strong>เป็นสนิมแล้ว</strong> κατίωται (<em>katiōtai</em>) เงินและทองที่คิดว่าไม่มีวันเสื่อม กลับขึ้นสนิมไปเรียบร้อย ทองไม่ขึ้นสนิมในทางวิทยาศาสตร์ แต่ยากอบบอกว่าในสายพระเนตรของพระเจ้า แม้แต่สิ่งที่คงทนที่สุดก็ผุพังไปแล้ว</p>
+
+<p>🔔 ทั้งสามคำบอกเรื่องเดียวกัน — เหมือนระฆังที่ถูกตีไปแล้วเสียงยังก้องอยู่ คนรวยอาจยังมองไม่เห็น แต่ในสายพระเนตรของพระเจ้า ทุกอย่างถูกตัดสินไปนานแล้ว</p>
+
+<p>แล้วก็มาถึงจุดพลิก — สนิมนั้นจะเป็น ✨<strong>หลักฐาน</strong>กล่าวโทษ μαρτύριον (<em>martyrion</em>) หมายถึงพยานในศาล สิ่งที่เราหรือชาวโลกมองว่าเป็น “ตัวเสริม” — เงินทอง เสื้อผ้า ทรัพย์สิน — ในสายพระเนตรของพระเจ้ามันจะกลายเป็นพยานปรักปรำเจ้าของเอง แล้วมันก็จะ “กัดกินเนื้อท่านดั่งไฟ” คือสิ่งที่คิดว่าดี สุดท้ายมันจะทำร้ายเราเอง เพราะเราไปหวังพึ่งมันและยึดติดกับมัน</p>
+
+<p>ข้อ 3 จบด้วยประโยคที่ขมขื่นที่สุด — “You have laid up treasure in the last days” — ตอนนี้ถือว่าเป็นวาระสุดท้ายแล้ว พระคริสต์ใกล้เสด็จมา แต่คุณก็ยังสั่งสมทรัพย์สมบัติบนโลกนี้อยู่ ไม่ได้สั่งสมเพื่อชีวิตนิรันดร์ ἐθησαυρίσατε (<em>ethēsaurisate</em>) แปลว่า “สะสมสมบัติ” ตายไปก็เอาอะไรไปไม่ได้สักอย่าง ทรัพย์เหล่านี้ไม่ได้ช่วยอะไรในโลกหน้า เจ้าของคิดว่ากำลังเก็บสมบัติ แต่จริงๆ กำลังสะสมหลักฐานฟ้องตัวเอง</p>
+
+<h3 id="รากศัพท์">รากศัพท์</h3>
+
+<ul>
+  <li><strong>σητόβρωτος</strong> = σής (ตัวมอด) + βιβρώσκω (กิน) — “ถูกแมลงกินจนพรุน”</li>
+  <li><strong>κατίωται</strong> จาก κατ- (ทั่ว) + ἰός (สนิม/พิษ) — “ถูกสนิมกัดกินทั่ว” น่าสนใจว่า ἰός แปลได้ทั้ง “สนิม” และ “พิษ” — สนิมของทรัพย์จึงเป็นทั้งหลักฐานและเป็นพิษที่กัดกินเนื้อหนัง</li>
+</ul>
+
+<hr />
+
+<h2 id="ตอนที่-2-เสียงร้องที่คนรวยไม่ได้ยิน">ตอนที่ 2: เสียงร้องที่คนรวยไม่ได้ยิน</h2>
+
+<blockquote>
+  <p><em>Behold, the wages of the laborers who mowed your fields, which you 🔔<strong>kept back</strong> by fraud, are 🫀<strong>crying out</strong> against you, and the cries of the harvesters have 🔔<strong>reached</strong> the ears of the Lord of hosts.</em> (ESV)</p>
+</blockquote>
+
+<p>ยากอบบอกว่า “Behold!” — Ἰδού (<em>idou</em>) — “ดูให้ดีนะ!” สิ่งที่ถูกเปิดเผยคือค่าจ้างของคนงานที่มาทำสวนทำนาให้แล้วไม่ได้รับเงิน 🔔<strong>ถูกกักไว้</strong>โดยการโกง — ἀπεστερημένος (<em>apesterēmenos</em>) เป็น Perfect passive participle 🔔 บอกว่าค่าจ้างนั้น “ถูกกักไว้แล้วและยังถูกกักอยู่” จนถึงตอนนี้ก็ยังไม่จ่าย — เงินยังอยู่ในมือคนรวย ไม่ได้ไปถึงมือคนงาน</p>
+
+<p>แต่ความอยุติธรรมนี้ไม่ได้เงียบ — ภาษากรีกใช้ภาพว่าค่าจ้างนั้นเองกำลัง 🫀<strong>ร้อง</strong>กล่าวโทษ κράζει (<em>krazei</em>) เป็น Present tense 🫀 แต่สิ่งที่ร้องจริง ๆ คือเสียงของคนงานที่ถูกโกง — αἱ βοαὶ τῶν θερισάντων (<em>hai boai tōn therisantōn</em>) “เสียงร้องของคนเก็บเกี่ยว” คนที่ทำงานหนักมาแล้วไม่ได้เงิน เสียงของพวกเขากำลังร้องอยู่ทุกวัน คนรวยอาจไม่ได้ยิน แต่พระเจ้าได้ยินทุกเสียง</p>
+
+<p>เสียงร้องนั้น 🔔<strong>เข้าถึง</strong>หูของพระเจ้าแล้ว — εἰσελήλυθαν (<em>eiselēlythan</em>) เป็น Perfect อีกครั้ง 🔔 เสียงคร่ำครวญของคนที่เก็บเกี่ยวนาให้คนรวย “เข้าไปถึงแล้วและยังก้องอยู่” ไม่ใช่แค่พระเจ้าเคยได้ยินแล้วลืม แต่เสียงนั้นยังอยู่ต่อหน้าพระองค์เป็นหลักฐานถาวร</p>
+
+<p>สังเกตว่ายากอบไม่ได้เรียกพระเจ้าว่า “พระบิดา” หรือ “พระผู้เลี้ยง” แต่ใช้ κύριος σαβαώθ (<em>kyrios sabaōth</em>) — “พระเจ้าจอมโยธา” จากฮีบรู צְבָאוֹת (<em>tseva’ot</em>) ที่แปลว่า “กองทัพ” เสียงร้องของคนงานไม่ได้ไปถึงหูผู้พิพากษาธรรมดา แต่ไปถึงหูผู้บัญชาการกองทัพใหญ่โตของสวรรค์แล้ว — แล้วคุณไม่กลัวหรือ?</p>
+
+<p>ธรรมบัญญัติของโมเสสสั่งไว้ชัดตั้งแต่เฉลยธรรมบัญญัติ 24:14-15 ว่าต้องจ่ายค่าจ้างภายในวันเดียวกัน “มิฉะนั้นเขาจะร้องทูลต่อพระเจ้า และท่านก็จะมีบาป” สิ่งที่โมเสสเตือนไว้ได้เกิดขึ้นจริง — คนงานร้องทูลแล้ว พระเจ้าได้ยินแล้ว หลักฐานครบแล้ว</p>
+
+<p><em>หมายเหตุ: ตอนอ่านตรงนี้ก็นึกถึงมีคา 6:8 ที่เตือนตั้งแต่สมัยพันธสัญญาเดิมแล้วว่าพระเจ้าต้องการอะไรจากเรา — “ให้ทำสิ่งที่ถูกต้อง ให้ซื่อสัตย์ต่อพระเจ้าและเพื่อนบ้าน แล้วก็ดำเนินชีวิตอย่างถ่อมใจกับพระองค์” โมเสสเตือน มีคาเตือน มาจนถึงยุคพระเยซู ยุคยากอบ ก็ยังผิดเหมือนเดิม — ค่าจ้างลูกจ้างทำไมไม่จ่าย ไปเอาเปรียบคนอื่นเขาอะ</em></p>
+
+<hr />
+
+<h2 id="ตอนที่-3-ขุนตัวเองเพื่อรอวันถูกเชือด">ตอนที่ 3: ขุนตัวเองเพื่อรอวันถูกเชือด</h2>
+
+<blockquote>
+  <p><em>You have lived on the earth in luxury and in self-indulgence. You have ✅<strong>fattened</strong> your hearts in a day of slaughter. You have condemned and ✅<strong>murdered</strong> the righteous person. He does not 🫀<strong>resist</strong> you.</em> (ESV)</p>
+</blockquote>
+
+<p>ยากอบเปลี่ยนจากหลักฐานเรื่องทรัพย์สินมาดูที่พฤติกรรม ภาษากรีกใช้สองคำวาดภาพชีวิตที่เกินพอดี — ἐτρυφήσατε (<em>etruphēsate</em>) หมายถึงใช้ชีวิตอย่างหรูหราฟุ่มเฟือย กินดื่มอย่างไม่กังวลอะไรเลย และ ἐσπαταλήσατε (<em>espatalēsate</em>) หมายถึงปรนเปรอตัวเองอย่างเกินขนาด อย่างไร้สติ ไม่ใช่แค่ปรนเปรอธรรมดา แต่เกินลิมิตไปเลย</p>
+
+<p>แล้วก็มาถึงภาพที่น่าสะพรึง — ✅<strong>ขุนใจตัวเองให้อ้วน</strong> — ἐθρέψατε τὰς καρδίας ὑμῶν (<em>ethrepsate tas kardias hymōn</em>) τρέφω แปลว่า “ขุน” เหมือนเกษตรกรขุนหมูให้อ้วน ๆ หมูมันก็ชอบ กินเยอะ ๆ อ้วน ๆ สบายดี โดยไม่รู้เลยว่าที่ถูกขุนอย่างดีนั้นก็เพราะรอวันเชือด คนรวยก็เหมือนกัน — แต่สิ่งที่ขุนไม่ใช่ร่างกาย เป็น “ใจ” (καρδίας) บำเรอใจตัวเองไปเรื่อย ๆ โดยไม่รู้ตัวเลยว่า “วันแห่งการฆ่า” (ἐν ἡμέρᾳ σφαγῆς / <em>en hēmera sphagēs</em>) วันพิพากษากำลังจะมาถึง</p>
+
+<p>แล้วข้อ 6 ยากอบก็ทิ้งข้อกล่าวหาสุดท้ายไว้ — ✅<strong>ตัดสินและฆ่า</strong>คนชอบธรรม κατεδικάσατε (<em>katedikasate</em>) แปลว่า “ตัดสินลงโทษ” และ ἐφονεύσατε (<em>ephoneusate</em>) แปลว่า “ฆ่า” ทั้ง ๆ ที่เขาไม่ได้ทำอะไรผิด</p>
+
+<p>ยากอบปิดด้วยประโยคสั้น ๆ ที่เงียบแต่ทรงพลัง — “He does not 🫀<strong>resist</strong> you” — ἀντιτάσσεται (<em>antitassetai</em>) เป็นศัพท์ทหาร มาจาก ἀντί (ต่อต้าน) + τάσσω (จัดทัพ) แปลว่า “ตั้งกองทัพสู้” แต่คนชอบธรรมไม่ 🫀<strong>ขัดขืน</strong> ไม่ต่อต้าน 🫀 บอกว่าเป็นอย่างนั้นตลอด คุณไม่ได้แค่ฆ่าคน คุณฆ่าคนที่ไม่สู้กลับ ยิ่งทำให้ความผิดหนักขึ้น</p>
+
+<p>ข้อ 6 นี้ดูเหมือนมาแปลก ๆ ตอนท้าย แต่จริง ๆ แล้วมันเป็นคำเชื่อมไปข้อ 7 — “คนชอบธรรมที่ไม่ต่อต้าน” ก็คือคนที่ถูกคนรวยทำลาย แล้วยากอบก็จะหันมาให้กำลังใจคนเหล่านี้ในตอนถัดไปว่า “จงอดทนรอคอยวันที่พระองค์จะเสด็จกลับมา”</p>
+
+<hr />
+
+<h2 id="บทสรุป">บทสรุป</h2>
+
+<p>ยากอบ 🔁<strong>เรียก</strong>คนร่ำรวยให้หยุดฟัง แล้วสั่งให้ 🚀<strong>ร้องไห้คร่ำครวญเดี๋ยวนี้</strong> เพราะสิ่งที่คิดว่ามั่นคงนั้น 🔔<strong>เน่าแล้ว</strong> 🔔<strong>ผุแล้ว</strong> 🔔<strong>เป็นสนิมแล้ว</strong> ทั้งหมดเสร็จสิ้นไปก่อนที่จะรู้ตัว → สิ่งที่ชาวโลกมองว่าเป็นตัวเสริม กลับกลายเป็น ✨<strong>พยานปรักปรำ</strong>เจ้าของเอง คิดว่าสะสมสมบัติ แท้จริงสะสมหลักฐานฟ้องตัวเอง → ค่าจ้าง 🔔<strong>ถูกกักไว้</strong> แต่คนงานที่ถูกโกง 🫀<strong>ร้องกล่าวโทษ</strong>อยู่ไม่หยุด และเสียงนั้น 🔔<strong>เข้าถึง</strong>หูพระเจ้าจอมโยธาแล้ว ยังก้องอยู่ → ในขณะที่คนงานอดอยาก คนรวยกลับ ✅<strong>ขุนใจตัวเองให้อ้วน</strong>เหมือนหมูที่เกษตรกรเลี้ยงให้อ้วนเพื่อรอวันเชือด → สุดท้ายก็ ✅<strong>ตัดสินและฆ่า</strong>คนชอบธรรมผู้ไม่ 🫀<strong>ขัดขืน</strong>แม้แต่น้อย → ทั้งหมดนี้เตือนเราว่าอย่าให้โลภรักเงินทอง แต่ให้รู้ว่าอะไรสำคัญที่สุดกับเราจริง ๆ เพราะยิ่งสั่งสมทรัพย์สินเงินทองบนโลกมากเท่าไหร่ สิ่งเหล่านั้นก็จะยิ่งเป็นพยานฟ้องร้องเราเองมากเท่านั้น</p>
+
+
+  </div>
+</article>
+
+<script>
+window.SITE_BASEURL = "";
+window.SYMBOLS_DATA = [{"emoji":"🫀","code":"A","name":"Greek Present","thai":"เกิดขึ้นต่อเนื่องเป็นวิถีชีวิต — เหมือนหัวใจที่เต้นตลอด ไม่เคยหยุด","anchor":"greek-present"},{"emoji":"▶️","code":"b","name":"Hebrew Imperfect","thai":"การกระทำที่ยังดำเนินอยู่ ไม่จบ — เหมือนกด play แล้วยังไม่ถึงตอนจบ","anchor":"hebrew-imperfect"},{"emoji":"✅","code":"D","name":"Completed","thai":"เสร็จแล้ว ผลลัพธ์เป็นจริง — เหมือนเช็คลิสต์ที่ติ๊กถูกแล้ว","anchor":"completed"},{"emoji":"🔔","code":"G","name":"Greek Perfect","thai":"เสร็จแล้วแต่ผลยังก้องอยู่ — เหมือนระฆังที่ตีแล้วเสียงยังดังก้อง","anchor":"greek-perfect"},{"emoji":"⏪","code":"d","name":"Greek Imperfect","thai":"เล่าย้อนอดีตที่เกิดซ้ำๆ — เหมือนกรอกลับดูวิดีโอเก่า","anchor":"greek-imperfect"},{"emoji":"📍","code":"H","name":"Historical Present","thai":"ปักหมุดให้คุณอยู่ตรงนั้น — \"คุณอยู่ตรงนี้!\" ขณะเหตุการณ์เกิดขึ้น","anchor":"historical-present"},{"emoji":"🚀","code":"E","name":"Greek Aorist Imperative","thai":"ทำเดี๋ยวนี้! ลงมือเลย! — เหมือนกดปุ่มจรวด ยิงทีเดียว!","anchor":"greek-aorist-imperative"},{"emoji":"🔁","code":"B","name":"Greek Present Imperative","thai":"จงทำสิ่งนี้ต่อไปเรื่อยๆ! — เหมือนกดปุ่ม repeat สั่งให้ทำซ้ำเรื่อยๆ","anchor":"greek-present-imperative"},{"emoji":"🚫","code":"C","name":"Negated Greek Present Imperative","thai":"เลิกทำได้แล้ว! หยุดวนซ้ำ! — หยุดสิ่งที่กำลังทำอยู่","anchor":"negated-greek-present-imperative"},{"emoji":"🙅‍♂️","code":"F","name":"Negated Greek Aorist Imperative","thai":"อย่าทำเด็ดขาด! แม้แต่ครั้งเดียว! — คนยกมือห้าม \"อย่า!\"","anchor":"negated-greek-aorist-imperative"},{"emoji":"🪄","code":"a","name":"Hebrew Hiphil","thai":"ทำให้เกิดขึ้น — เหมือนไม้กายสิทธิ์ที่ทำให้สิ่งใหม่ปรากฏ","anchor":"hebrew-hiphil"},{"emoji":"💥","code":"c","name":"Hebrew Piel","thai":"ทำอย่างเข้มข้น เปลี่ยนสภาพไปเลย — เหมือนแรงระเบิดที่เปลี่ยนทุกอย่าง","anchor":"hebrew-piel"},{"emoji":"↩️","code":"f","name":"Hebrew Hithpael","thai":"ตัดสินใจทำเอง จากข้างใน — เหมือนลูกศรที่วนกลับหาตัวเอง","anchor":"hithpael"},{"emoji":"🔑","code":"g","name":"Hebrew Conjunctive Perfect","thai":"กุญแจไขสลับโหมดเวลา — ปลดล็อกลำดับเหตุการณ์ใหม่","anchor":"hebrew-conjunctive-perfect"},{"emoji":"🔗","code":"q","name":"Hebrew Conjunctive Imperfect","thai":"ข้อต่อโซ่เชื่อมเหตุการณ์ — ต่อเรื่องให้ไหลต่อไป","anchor":"conjunctive-imperfect"},{"emoji":"🌓","code":"I","name":"Contrast Emphasis","thai":"สื่อถึงสิ่งตรงข้าม — เหมือนดวงจันทร์ครึ่งสว่างครึ่งมืด","anchor":"contrast-emphasis"},{"emoji":"✨","code":"K","name":"Emphasis","thai":"คำนี้ถูกเน้นเป็นพิเศษ — ทั้งจากบริบทและไวยากรณ์","anchor":"emphasis"}];
+</script>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js" defer></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>
