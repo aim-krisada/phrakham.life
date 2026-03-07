@@ -1,6 +1,6 @@
 // Service Worker for phrakham.life PWA
 // Cache version — bump this on each deploy to refresh cached content
-var CACHE_VERSION = 'v1-20260307083205';
+var CACHE_VERSION = 'v1-20260307091617';
 var CORE_CACHE = 'core-' + CACHE_VERSION;
 var RUNTIME_CACHE = 'runtime-' + CACHE_VERSION;
 
