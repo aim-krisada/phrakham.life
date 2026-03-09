@@ -576,10 +576,10 @@ blockquote {
   font-weight: 600;
 }
 
-/* Dim Greek/Hebrew references in normal mode */
+/* Dim Greek/Hebrew references in normal mode (0.7 = WCAG AA contrast) */
 .original-lang-ref,
 .foreign-script {
-  opacity: 0.55;
+  opacity: 0.7;
 }
 
 /* ── Reading/Study toggle classes ── */
