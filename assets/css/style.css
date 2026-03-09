@@ -655,6 +655,7 @@ table td {
 /* Prevent scrollbar layout shift */
 html {
   scrollbar-gutter: stable;
+  scroll-padding-top: 60px; /* WCAG 2.4.11: prevent sticky header from obscuring focused elements */
 }
 
 /* --- CSS Variables: Light Theme (Default) --- */
@@ -1057,6 +1058,20 @@ blockquote {
   transform: translateX(-50%);
   border: 6px solid transparent;
   border-top-color: var(--tooltip-bg);
+  pointer-events: none; /* prevent arrow from blocking hover bridge */
+}
+.tooltip {
+  /* Flipped below emoji when clipped at top (WCAG 1.4.13 Hoverable) */
+}
+.tooltip.tooltip-below {
+  bottom: auto;
+  top: calc(100% + 8px);
+}
+.tooltip.tooltip-below::after {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+  border-bottom-color: var(--tooltip-bg);
 }
 .tooltip .tooltip-title {
   display: block;
@@ -1190,6 +1205,15 @@ blockquote {
   opacity: 0.55;
 }
 
+/* ── Reading/Study toggle classes ── */
+.reading-only {
+  display: none;
+}
+
+.english-term {
+  opacity: 0.55;
+}
+
 /* ===================================
    Focus Mode FAB
    =================================== */
@@ -1225,29 +1249,40 @@ blockquote {
   line-height: 1;
 }
 
-/* Focus mode toggle — glassmorphism */
+/* Focus mode toggle — solid color by mode */
 .fab-reading {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.9);
-}
-.fab-reading[aria-pressed=true] {
-  background: rgba(255, 255, 255, 0.25);
+  /* Study mode (default): blue — serious/academic */
+  background: #2563EB;
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.35);
+  /* Reading mode (active): green — relaxed/listening */
+}
+.fab-reading[data-mode=read] {
+  background: #16A34A;
 }
 
-[data-theme=light] .fab-reading {
-  background: rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.7);
+/* Toast notification — pill shape, above FAB */
+.mode-toast {
+  position: fixed;
+  bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+  left: 50%;
+  transform: translateX(-50%) translateY(1rem);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  font-family: "Sarabun", sans-serif;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease, transform 300ms ease, visibility 300ms;
+  pointer-events: none;
 }
-[data-theme=light] .fab-reading[aria-pressed=true] {
-  background: rgba(0, 0, 0, 0.15);
-  color: rgba(0, 0, 0, 0.85);
-  border-color: rgba(0, 0, 0, 0.2);
+.mode-toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* --- Reading mode active: hide non-Thai content --- */
@@ -1283,10 +1318,28 @@ blockquote {
   display: none;
 }
 .reading-mode {
-  /* Dim inline Greek/Hebrew (can't hide — breaks Thai sentences) */
+  /* Hide inline Greek/Hebrew — TTS must not read foreign script */
 }
 .reading-mode .foreign-script {
-  opacity: 0.4;
+  display: none;
+}
+.reading-mode {
+  /* Hide parenthesized English grammar terms — e.g. (Present Imperative) */
+}
+.reading-mode .english-term {
+  display: none;
+}
+.reading-mode {
+  /* Toggle classes: study-only hidden, reading-only shown */
+}
+.reading-mode .study-only {
+  display: none;
+}
+.reading-mode .reading-only {
+  display: inline;
+}
+.reading-mode div.reading-only {
+  display: block;
 }
 
 /* ===================================
@@ -1327,7 +1380,6 @@ blockquote {
   display: block;
   font-size: 0.75rem;
   color: var(--accent-secondary);
-  opacity: 0.55;
   margin-top: 0.15em;
 }
 
@@ -1727,6 +1779,7 @@ blockquote {
   padding: 1rem;
   background: var(--block-bg);
   border-radius: 8px;
+  overflow-x: auto; /* WCAG 1.4.10: prevent table overflow on narrow screens */
 }
 
 .symbol-comparison h3 {
@@ -2015,43 +2068,86 @@ button:focus-visible,
   }
 }
 /* ===================================
-   Print
+   Print / PDF
    =================================== */
 @media print {
+  /* --- Hide UI elements --- */
   .site-header, .site-nav, .nav-hamburger, .theme-dropdown,
-  .site-footer, .tooltip, .mobile-menu-overlay {
+  .site-footer, .tooltip, .mobile-menu-overlay,
+  .fab-btn, .mode-toast {
     display: none !important;
   }
+  /* --- Print respects user's chosen mode (study or reading) --- */
+  /* No overrides needed — .reading-mode CSS cascade handles both modes */
+  /* --- Typography for A4 --- */
   body {
     color: #000 !important;
     background: #fff !important;
     font-size: 11pt;
+    line-height: 1.6;
   }
   a {
     color: #000 !important;
     text-decoration: none !important;
   }
-  h1, h2, h3 {
+  h1 {
+    font-size: 16pt !important;
+    color: #222 !important;
+    margin-bottom: 0.3em;
+  }
+  h2 {
+    font-size: 14pt !important;
     color: #333 !important;
   }
-  .esv-block {
-    background: #fff;
-    border-left: 3px solid #999;
-    color: #000;
+  h3 {
+    font-size: 12pt !important;
+    color: #333 !important;
+  }
+  /* --- Restore opacity on Greek/English terms --- */
+  .original-lang-ref,
+  .foreign-script,
+  .english-term {
+    opacity: 1 !important;
+  }
+  /* --- Blockquote / ESV with cream background --- */
+  blockquote, .esv-block {
+    background: #F5F0E8 !important;
+    border-left: 3px solid #8B4513 !important;
+    color: #000 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* --- Red emphasis in print --- */
+  blockquote strong, .emphasis {
+    color: #B71C1C !important;
   }
   .emoji-phrase {
-    color: #6B3410;
+    color: #6B3410 !important;
   }
-  img {
-    filter: none !important;
-    max-width: 100%;
+  /* --- Etymology section --- */
+  .etymology-section {
+    background: #F5F0E8 !important;
+    border-left: 3px solid #8B4513 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
-  .esv-block, h2, h3, img {
+  /* --- Page break control --- */
+  blockquote, .esv-block, .etymology-section,
+  table, h2, h3, img {
     break-inside: avoid;
   }
   h2, h3 {
     break-after: avoid;
   }
+  li {
+    break-inside: avoid;
+  }
+  /* --- Images --- */
+  img {
+    filter: none !important;
+    max-width: 100%;
+  }
+  /* --- Page margins + watermark --- */
   @page {
     margin: 2cm;
     @bottom-right {

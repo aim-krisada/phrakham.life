@@ -6,7 +6,7 @@
 (function() {
   if (!window.SYMBOLS_DATA) return;
 
-  var container = document.querySelector('.post-content');
+  var container = document.querySelector('.post-content') || document.querySelector('.symbols-content');
   if (!container) return;
 
   // Build emoji → data map (skip non-emoji like "*")
@@ -198,10 +198,11 @@
         fragment.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
       }
 
-      // Wrap in span
+      // Wrap in span — WCAG 3.1.2: detect Greek vs Hebrew for lang
       var span = document.createElement('span');
       span.className = 'original-lang-ref';
-      span.setAttribute('lang', 'en');
+      var hasHebrew = /[\u0590-\u05FF]/.test(match[0]);
+      span.setAttribute('lang', hasHebrew ? 'he' : 'el');
       span.textContent = match[0];
       fragment.appendChild(span);
 
@@ -267,6 +268,9 @@
       }
       var span = document.createElement('span');
       span.className = 'foreign-script';
+      // WCAG 3.1.2: set lang for screen readers — detect Greek vs Hebrew
+      var firstChar = match[0].charCodeAt(0);
+      span.setAttribute('lang', (firstChar >= 0x0590 && firstChar <= 0x05FF) ? 'he' : 'el');
       span.textContent = match[0];
       fragment.appendChild(span);
       lastIndex = scriptPattern.lastIndex;
@@ -282,23 +286,134 @@
   });
 })();
 
+// --- Phase 3.7: Wrap parenthesized English grammar terms ---
+// Wraps e.g. (Present Imperative), (Greek Perfect) in <span class="english-term">
+// so focus mode can hide them for TTS-clean Thai reading
+(function() {
+  var container = document.querySelector('.post-content');
+  if (!container) return;
+
+  // Match (CapitalizedWord ...) — at least one capital start + lowercase
+  // Excludes: (ESV), (TTS) — all-caps; (age) — lowercase start; Greek parens — already wrapped
+  var engPattern = /\([A-Z][a-z]+(?:\s[A-Za-z]+)*\)/g;
+
+  var walker = document.createTreeWalker(
+    container,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode: function(node) {
+        if (node.parentElement && (
+          node.parentElement.closest('.original-lang-ref') ||
+          node.parentElement.closest('.foreign-script') ||
+          node.parentElement.closest('.english-term') ||
+          node.parentElement.closest('.tooltip') ||
+          node.parentElement.closest('.emoji-symbol') ||
+          node.parentElement.closest('blockquote')
+        )) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  var textNodes = [];
+  while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+  textNodes.forEach(function(textNode) {
+    var text = textNode.textContent;
+    engPattern.lastIndex = 0;
+    if (!engPattern.test(text)) return;
+    engPattern.lastIndex = 0;
+
+    var fragment = document.createDocumentFragment();
+    var lastIndex = 0;
+    var match;
+
+    while ((match = engPattern.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+      }
+      var span = document.createElement('span');
+      span.className = 'english-term';
+      span.setAttribute('lang', 'en');
+      span.textContent = match[0];
+      fragment.appendChild(span);
+      lastIndex = engPattern.lastIndex;
+    }
+
+    if (lastIndex < text.length) {
+      fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+    }
+
+    if (lastIndex > 0) {
+      textNode.parentNode.replaceChild(fragment, textNode);
+    }
+  });
+})();
+
 // --- Focus Mode FAB ---
 // Floating Action Button (bottom-right) on study guide pages only
-// Hides non-Thai content (blockquotes, Greek/Hebrew, emoji, etymology)
+// Toggles between Study mode (full content) and Reading mode (Thai-only for TTS)
 (function() {
-  // Only inject FAB on study guide pages (they set window.SYMBOLS_DATA)
-  if (!window.SYMBOLS_DATA) return;
+  // Only inject FAB on study guide pages (.post-content)
+  var contentArea = document.querySelector('.post-content');
+  if (!contentArea) return;
 
-  // Content target for reading-mode class
-  var contentArea = document.querySelector('.post-content') || mainContent;
+  // --- Toast notification ---
+  var toastEl = document.createElement('div');
+  toastEl.id = 'mode-toast';
+  toastEl.className = 'mode-toast';
+  toastEl.setAttribute('role', 'status');
+  toastEl.setAttribute('aria-live', 'polite');
+  document.body.appendChild(toastEl);
+
+  var toastTimer = null;
+  function showToast(message) {
+    toastEl.textContent = message;
+    toastEl.classList.remove('show');
+    void toastEl.offsetWidth; // force reflow for re-trigger
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function() {
+      toastEl.classList.remove('show');
+    }, 2000);
+  }
+
+  // --- Scroll preservation ---
+  function getAnchorElement() {
+    var midY = window.innerHeight / 2;
+    var els = contentArea.querySelectorAll('h2, h3, p');
+    var closest = null;
+    var closestDist = Infinity;
+    for (var i = 0; i < els.length; i++) {
+      var rect = els[i].getBoundingClientRect();
+      var dist = Math.abs(rect.top - midY);
+      if (dist < closestDist) {
+        closestDist = dist;
+        closest = els[i];
+      }
+    }
+    return closest;
+  }
+
+  function preserveScroll(fn) {
+    var anchor = getAnchorElement();
+    var offset = anchor ? anchor.getBoundingClientRect().top : 0;
+    fn();
+    if (anchor) {
+      window.scrollBy(0, anchor.getBoundingClientRect().top - offset);
+    }
+  }
 
   // --- Build FAB ---
   var fabBtn = document.createElement('button');
   fabBtn.className = 'fab-btn fab-reading';
-  fabBtn.setAttribute('aria-label', 'อ่านเฉพาะภาษาไทย');
-  fabBtn.setAttribute('title', 'อ่านเฉพาะภาษาไทย');
+  fabBtn.setAttribute('aria-label', 'สลับเป็นโหมดอ่าน');
+  fabBtn.setAttribute('title', 'สลับเป็นโหมดอ่าน');
   fabBtn.setAttribute('aria-pressed', 'false');
-  fabBtn.innerHTML = '<span class="fab-icon">TH</span>';
+  fabBtn.setAttribute('data-mode', 'study');
+  fabBtn.innerHTML = '<span class="fab-icon">\uD83C\uDFA7</span>';
   document.body.appendChild(fabBtn);
 
   // --- Focus mode state ---
@@ -306,45 +421,54 @@
 
   function setAriaHidden(hide) {
     var val = hide ? 'true' : 'false';
-    contentArea.querySelectorAll('blockquote').forEach(function(el) {
-      el.setAttribute('aria-hidden', val);
+    var selectors = ['blockquote', '.original-lang-ref', '.foreign-script', '.english-term', '.etymology-section', '.study-only'];
+    selectors.forEach(function(sel) {
+      contentArea.querySelectorAll(sel).forEach(function(el) {
+        el.setAttribute('aria-hidden', val);
+      });
     });
-    contentArea.querySelectorAll('.original-lang-ref').forEach(function(el) {
-      el.setAttribute('aria-hidden', val);
-    });
-    contentArea.querySelectorAll('.etymology-section').forEach(function(el) {
-      el.setAttribute('aria-hidden', val);
+    // reading-only: inverse — visible when reading mode is active
+    contentArea.querySelectorAll('.reading-only').forEach(function(el) {
+      el.setAttribute('aria-hidden', hide ? 'false' : 'true');
     });
   }
 
-  function activateFocusMode() {
+  function activateFocusMode(silent) {
     isFocusMode = true;
     contentArea.classList.add('reading-mode');
     fabBtn.setAttribute('aria-pressed', 'true');
-    fabBtn.setAttribute('aria-label', 'ปิดโหมดโฟกัส');
-    fabBtn.innerHTML = '<span class="fab-icon">ไทย</span>';
+    fabBtn.setAttribute('data-mode', 'read');
+    fabBtn.setAttribute('aria-label', 'สลับเป็นโหมดศึกษา');
+    fabBtn.setAttribute('title', 'สลับเป็นโหมดศึกษา');
+    fabBtn.innerHTML = '<span class="fab-icon">\uD83D\uDCD6</span>';
     setAriaHidden(true);
     localStorage.setItem('reading-mode', 'true');
+    if (!silent) showToast('เข้าสู่โหมดเน้นภาษาไทย (พร้อมฟัง)');
   }
 
-  function deactivateFocusMode() {
+  function deactivateFocusMode(silent) {
     isFocusMode = false;
     contentArea.classList.remove('reading-mode');
     fabBtn.setAttribute('aria-pressed', 'false');
-    fabBtn.setAttribute('aria-label', 'อ่านเฉพาะภาษาไทย');
-    fabBtn.innerHTML = '<span class="fab-icon">TH</span>';
+    fabBtn.setAttribute('data-mode', 'study');
+    fabBtn.setAttribute('aria-label', 'สลับเป็นโหมดอ่าน');
+    fabBtn.setAttribute('title', 'สลับเป็นโหมดอ่าน');
+    fabBtn.innerHTML = '<span class="fab-icon">\uD83C\uDFA7</span>';
     setAriaHidden(false);
     localStorage.setItem('reading-mode', 'false');
+    if (!silent) showToast('เข้าสู่โหมดศึกษา (แสดงข้อมูลเต็ม)');
   }
 
-  // Restore saved preference
+  // Restore saved preference (silent — no toast on page load)
   if (localStorage.getItem('reading-mode') === 'true') {
-    activateFocusMode();
+    activateFocusMode(true);
   }
 
   fabBtn.addEventListener('click', function() {
-    if (isFocusMode) { deactivateFocusMode(); }
-    else { activateFocusMode(); }
+    preserveScroll(function() {
+      if (isFocusMode) { deactivateFocusMode(); }
+      else { activateFocusMode(); }
+    });
   });
 })();
 
@@ -353,24 +477,90 @@
 (function() {
   var activeTooltip = null;
 
+  function repositionTooltip(el) {
+    var tooltip = el.querySelector('.tooltip');
+    if (!tooltip) return;
+
+    // Reset any previous reposition
+    tooltip.classList.remove('tooltip-below');
+    tooltip.style.left = '';
+    tooltip.style.transform = '';
+
+    // Use visibility trick to measure without flicker (Gemini suggestion)
+    var origDisplay = tooltip.style.display;
+    tooltip.style.visibility = 'hidden';
+    tooltip.style.display = 'block';
+
+    var rect = tooltip.getBoundingClientRect();
+    var pad = 8; // viewport edge padding
+
+    // Vertical: flip below if clipped at top
+    if (rect.top < pad) {
+      tooltip.classList.add('tooltip-below');
+    }
+
+    // Horizontal: shift if clipped at left/right
+    var updatedRect = tooltip.getBoundingClientRect();
+    if (updatedRect.left < pad) {
+      var shift = pad - updatedRect.left;
+      tooltip.style.transform = 'translateX(calc(-50% + ' + shift + 'px))';
+    } else if (updatedRect.right > window.innerWidth - pad) {
+      var shift = updatedRect.right - window.innerWidth + pad;
+      tooltip.style.transform = 'translateX(calc(-50% - ' + shift + 'px))';
+    }
+
+    // Reveal
+    tooltip.style.display = origDisplay;
+    tooltip.style.visibility = '';
+  }
+
+  function resetTooltipPosition(el) {
+    var tooltip = el.querySelector('.tooltip');
+    if (!tooltip) return;
+    tooltip.classList.remove('tooltip-below');
+    tooltip.style.left = '';
+    tooltip.style.transform = '';
+  }
+
   function showTooltip(el) {
     hideAll();
     el.classList.add('active');
     activeTooltip = el;
+    repositionTooltip(el);
   }
 
   function hideAll() {
     if (activeTooltip) {
+      resetTooltipPosition(activeTooltip);
       activeTooltip.classList.remove('active');
       activeTooltip = null;
     }
   }
 
+  // Dismiss on resize/rotate — simpler than recalculating (Gemini suggestion)
+  window.addEventListener('resize', function() { hideAll(); });
+
   // All emoji symbols (including auto-detected ones from Phase 1)
   var symbols = document.querySelectorAll('.emoji-symbol');
+  var isTouch = false;
 
   symbols.forEach(function(el) {
+    // Touch: show/hide on tap directly via touchend (reliable on all mobile browsers)
+    el.addEventListener('touchend', function(e) {
+      // Let tooltip links navigate normally
+      if (e.target.closest('.tooltip-link')) return;
+      e.preventDefault();
+      isTouch = true;
+      if (el.classList.contains('active')) {
+        hideAll();
+      } else {
+        showTooltip(el);
+      }
+    });
+
+    // Desktop: show on hover
     el.addEventListener('mouseenter', function() {
+      if (isTouch) { isTouch = false; return; }
       showTooltip(el);
     });
 
@@ -386,7 +576,9 @@
       }
     });
 
+    // Desktop: toggle on click
     el.addEventListener('click', function(e) {
+      if (isTouch) return; // Already handled by touchend
       // Let tooltip links navigate normally
       if (e.target.closest('.tooltip-link')) return;
       e.preventDefault();
@@ -468,17 +660,42 @@
   var mobileClose = document.getElementById('mobile-menu-close');
 
   if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', function() {
+    function openMobileMenu() {
       mobileMenu.classList.add('open');
       hamburger.setAttribute('aria-expanded', 'true');
-    });
+      if (mobileClose) mobileClose.focus();
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.focus();
+    }
+
+    hamburger.addEventListener('click', openMobileMenu);
 
     if (mobileClose) {
-      mobileClose.addEventListener('click', function() {
-        mobileMenu.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-      });
+      mobileClose.addEventListener('click', closeMobileMenu);
     }
+
+    // Focus trap: keep Tab/Shift+Tab inside mobile menu (WCAG 2.4.3)
+    mobileMenu.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') { closeMobileMenu(); return; }
+      if (e.key !== 'Tab') return;
+
+      var focusable = mobileMenu.querySelectorAll('a[href], button, [tabindex]:not([tabindex="-1"])');
+      if (focusable.length === 0) return;
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
 
     var dropdownToggles = mobileMenu.querySelectorAll('.mobile-dropdown-toggle');
     dropdownToggles.forEach(function(toggle) {
@@ -486,7 +703,9 @@
         e.preventDefault();
         var sub = toggle.nextElementSibling;
         if (sub) {
-          sub.style.display = sub.style.display === 'none' ? 'block' : 'none';
+          var isOpen = sub.style.display !== 'none';
+          sub.style.display = isOpen ? 'none' : 'block';
+          toggle.setAttribute('aria-expanded', !isOpen);
         }
       });
     });
