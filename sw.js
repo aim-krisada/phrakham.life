@@ -1,6 +1,6 @@
 // Service Worker for phrakham.life PWA
 // Cache version — bump this on each deploy to refresh cached content
-var CACHE_VERSION = 'v1-20260309103838';
+var CACHE_VERSION = 'v1-20260309104347';
 var CORE_CACHE = 'core-' + CACHE_VERSION;
 var RUNTIME_CACHE = 'runtime-' + CACHE_VERSION;
 
@@ -58,26 +58,9 @@ self.addEventListener('fetch', function(event) {
   // Only handle GET requests
   if (request.method !== 'GET') return;
 
-  // Skip cross-origin requests except Google Fonts
+  // Skip cross-origin requests (fonts are self-hosted now)
   var url = new URL(request.url);
-  var isGoogleFonts = url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com';
-  if (url.origin !== self.location.origin && !isGoogleFonts) return;
-
-  // Google Fonts: cache-first
-  if (isGoogleFonts) {
-    event.respondWith(
-      caches.match(request).then(function(cached) {
-        return cached || fetch(request).then(function(response) {
-          var clone = response.clone();
-          caches.open(RUNTIME_CACHE).then(function(cache) {
-            cache.put(request, clone);
-          });
-          return response;
-        });
-      })
-    );
-    return;
-  }
+  if (url.origin !== self.location.origin) return;
 
   // HTML pages: network-first, fallback to cache
   if (request.headers.get('Accept') && request.headers.get('Accept').includes('text/html')) {
