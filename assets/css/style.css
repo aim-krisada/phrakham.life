@@ -715,10 +715,10 @@ blockquote {
   font-weight: 600;
 }
 
-/* Dim Greek/Hebrew references in normal mode (0.7 = WCAG AA contrast) */
+/* Dim Greek/Hebrew references in normal mode (0.75 = WCAG AA in dark mode) */
 .original-lang-ref,
 .foreign-script {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 /* ── Reading/Study toggle classes ── */
