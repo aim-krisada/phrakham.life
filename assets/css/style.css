@@ -816,16 +816,24 @@ blockquote {
   display: none;
 }
 .reading-mode {
-  /* Hide emoji characters but keep the annotated word */
+  /* Hide emoji characters, tooltip, and de-emphasize annotated words */
 }
 .reading-mode .emoji-symbol {
   cursor: default;
+  pointer-events: none;
 }
 .reading-mode .emoji-symbol .emoji-char {
   display: none;
 }
 .reading-mode .emoji-symbol .tooltip {
   display: none !important;
+}
+.reading-mode .emoji-symbol {
+  /* Remove bold/red — word reads as normal Thai text */
+}
+.reading-mode .emoji-symbol strong {
+  font-weight: inherit;
+  color: inherit;
 }
 .reading-mode {
   /* Hide etymology sections */
