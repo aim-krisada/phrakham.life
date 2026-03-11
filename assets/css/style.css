@@ -816,23 +816,18 @@ blockquote {
   display: none;
 }
 .reading-mode {
-  /* Hide emoji characters, tooltip, and de-emphasize annotated words */
+  /* Hide emoji chars, keep bold words clickable with tooltip */
 }
 .reading-mode .emoji-symbol {
   cursor: default;
-  pointer-events: none;
 }
 .reading-mode .emoji-symbol .emoji-char {
   display: none;
 }
-.reading-mode .emoji-symbol .tooltip {
-  display: none !important;
-}
 .reading-mode .emoji-symbol {
-  /* Remove bold/red — word reads as normal Thai text */
+  /* Bold only (no red) — key words still stand out, click for tooltip */
 }
 .reading-mode .emoji-symbol strong {
-  font-weight: inherit;
   color: inherit;
 }
 .reading-mode {
