@@ -513,7 +513,11 @@ body, p, li, blockquote {
 /* Override Minima's blockquote styling */
 blockquote {
   color: var(--text) !important;
-  border-left-color: var(--accent-secondary) !important;
+  border-left: 4px solid var(--accent-secondary) !important;
+  background: var(--block-bg);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0 6px 6px 0;
   font-size: inherit !important;
   letter-spacing: normal !important;
   font-style: italic;
@@ -1368,16 +1372,25 @@ blockquote {
     padding: 0.4rem 0.5rem;
   }
 }
-/* Generic table overrides for dark mode */
+/* Generic table styling */
 table {
   color: var(--text);
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.25rem 0;
 }
 table th, table td {
   color: var(--text);
-  background-color: transparent;
+  border: 1px solid var(--accent-secondary);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
 }
-table tr:nth-child(even) {
-  background-color: var(--block-bg) !important;
+table th {
+  background-color: var(--block-bg);
+  font-weight: 600;
+}
+table tr:nth-child(even) td {
+  background-color: var(--block-bg);
 }
 
 /* ===================================

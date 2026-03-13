@@ -1,6 +1,6 @@
 // Service Worker for phrakham.life PWA
 // Cache version — bump this on each deploy to refresh cached content
-var CACHE_VERSION = 'v1-20260311133609';
+var CACHE_VERSION = 'v1-20260313102016';
 var CORE_CACHE = 'core-' + CACHE_VERSION;
 var RUNTIME_CACHE = 'runtime-' + CACHE_VERSION;
 
@@ -13,7 +13,7 @@ var SHELL_PAGES = [
   '/resources/',
   '/symbols/',
   '/articles/',
-  '/nt/james/',
+  '/nt/galatians/','/nt/james/',
 ];
 
 var CORE_ASSETS = SHELL_PAGES.concat([

@@ -86,7 +86,7 @@
       tooltip.innerHTML =
         '<span class="tooltip-title">' + sym.emoji + ' ' + sym.thai + '</span>' +
         '<span class="tooltip-name">' + sym.name + '</span>' +
-        '<a href="' + (window.SITE_BASEURL || '') + '/symbols/#' + sym.anchor + '" class="tooltip-link">ดูสัญลักษณ์ทั้งหมด →</a>';
+        '<a href="' + (window.SITE_BASEURL || '') + '/symbols/#' + sym.anchor + '" class="tooltip-link">ดูสัญลักษณ์ทั้งหมด</a>';
 
       var emojiChar = document.createElement('span');
       emojiChar.className = 'emoji-char';
