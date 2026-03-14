@@ -1373,6 +1373,13 @@ blockquote {
   }
 }
 /* Generic table styling */
+.post-content table,
+article table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 table {
   color: var(--text);
   border-collapse: collapse;
