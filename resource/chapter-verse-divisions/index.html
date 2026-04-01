@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>การแบ่งบทและข้อในพระคัมภีร์ — กับดักของการอ่าน | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="ถ้าเปิดพระคัมภีร์ฉบับไหนก็ตามในวันนี้ ไม่ว่าภาษาใด เราจะเห็นตัวเลขกำกับทุกอย่าง — เลขบทใหญ่ ๆ ตัวหนา เลขข้อเล็ก ๆ ตัวยก ทำให้หาข้อที่อ้างได้ง่ายมาก บอก “ยอห์น 3:16” ก็เปิดเจอในไม่กี่วินาที
+">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics (GA4) — deferred until after page load to improve LCP -->
+<script>
+window.addEventListener('load', function() {
+  var s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W3XP4T2FFE';
+  document.head.appendChild(s);
+  s.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W3XP4T2FFE');
+  };
+});
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8B4513">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Fonts: self-hosted in assets/fonts/ (Sarabun, Noto Sans Thai, Gentium Plus) -->
+<!-- @font-face rules defined in _sass/custom.scss -->
+<!-- Preload critical fonts to reduce CLS (layout shift from font swap) -->
+<link rel="preload" href="/assets/fonts/sarabun-700-thai.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sarabun-400-thai.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <!-- <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a> -->
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <!-- <a href="/ot/">พันธสัญญาเดิม</a> -->
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js" defer></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <article class="post-content" itemscope itemtype="http://schema.org/Article">
+  <header>
+    <h1 itemprop="name">การแบ่งบทและข้อในพระคัมภีร์ — กับดักของการอ่าน</h1>
+    
+    <p class="post-meta-date">สร้าง 22 เมษายน 2569 13:05 น.</p>
+    
+  </header>
+
+  <div itemprop="articleBody">
+    <p>ถ้าเปิดพระคัมภีร์ฉบับไหนก็ตามในวันนี้ ไม่ว่าภาษาใด เราจะเห็นตัวเลขกำกับทุกอย่าง — เลขบทใหญ่ ๆ ตัวหนา เลขข้อเล็ก ๆ ตัวยก ทำให้หาข้อที่อ้างได้ง่ายมาก บอก “ยอห์น 3:16” ก็เปิดเจอในไม่กี่วินาที</p>
+
+<p>แต่ลองนึกภาพว่าถ้าเอาตัวเลขเหล่านี้ออก พระคัมภีร์จะกลายเป็นอะไร — คำตอบคือ <strong>หนังสือปกติ</strong> ที่มีย่อหน้า มีบทพูด มีเรื่องเล่าไหลต่อเนื่อง เหมือนที่เราอ่านหนังสืออื่น ๆ ทั่วไป</p>
+
+<p>และนั่นคือสิ่งที่พระเจ้าทรงให้เป็นแบบนั้น ผู้เขียนทำตามน้ำพระทัยของพระองค์โดยเขียนเป็นเรื่องเล่าและจดหมายที่ไหลต่อเนื่อง ไม่ได้แบ่งเป็นเลขบทเลขข้อแต่แรก</p>
+
+<hr />
+
+<h2 id="ผู้เขียนไม่ได้แบ่ง">ผู้เขียนไม่ได้แบ่ง</h2>
+
+<p>โมเสสไม่ได้เขียนปฐมกาลเป็นบทที่ 1, 2, 3 ดาวิดไม่ได้แต่งสดุดีแล้วใส่ว่าข้อ 1, 2, 3 ลูกาไม่ได้เขียนกิจการแล้วบอกว่า “จบบทที่ 18 ขึ้นบทที่ 19” — ทั้งหมดนี้เป็นเรื่องต่อเนื่องที่ไม่มีเลขคั่น</p>
+
+<p><strong>การแบ่งบทและข้อเป็นสิ่งที่คนรุ่นหลังได้เพิ่มเติมเข้ามา — หลังผู้เขียนเขียนจบไปแล้วเกือบ 1,200 ปี</strong></p>
+
+<ul>
+  <li><strong>การแบ่งบท</strong> — Stephen Langton อาร์ชบิชอปแห่งแคนเทอร์เบอรี แบ่งพระคัมภีร์เป็นบทราวปี ค.ศ. 1227 (พ.ศ. 1770) เพื่อให้หาอ้างอิงได้ง่ายขึ้น</li>
+  <li><strong>การแบ่งข้อ</strong> — Robert Estienne ช่างพิมพ์ชาวฝรั่งเศส เริ่มแบ่งเป็นข้อในภาคพันธสัญญาใหม่ปี ค.ศ. 1551 (พ.ศ. 2094) แล้วแบ่งครบทั้งเล่มในปี ค.ศ. 1555 (พ.ศ. 2098)</li>
+</ul>
+
+<p>ตั้งแต่นั้นมา การแบ่งนี้ก็ติดอยู่ในพระคัมภีร์ทุกฉบับในทุกภาษาจนถึงวันนี้ — และตัวเลขเหล่านี้เองก็ไม่ใช่ถ้อยคำที่ได้รับการดลใจจากพระเจ้า เป็นเพียงเครื่องมือช่วยจำที่คนยุคกลางใส่เข้ามา ต่างจากเนื้อหาของพระคัมภีร์เองที่มาจากการทรงดลใจ</p>
+
+<hr />
+
+<h2 id="กับดักที่ต้องระวัง">กับดักที่ต้องระวัง</h2>
+
+<p>การแบ่งบทแบ่งข้อสร้างกับดักทางความเข้าใจหลายอย่าง:</p>
+
+<p><strong>1. เรื่องเดียวถูกตัดเป็นสองบท</strong>
+เวลาเราเห็น “กิจการ 18” กับ “กิจการ 19” เรารู้สึกว่ามันคนละเรื่อง ทั้งที่ลูกาเขียนเป็นเรื่องเดียวต่อเนื่อง ตัวอย่างเด่นคือเรื่อง<strong>อปอลโล</strong> ที่ลูกาตั้งคำถามในตอนท้ายบทที่ 18 (อปอลโลสอนเรื่องพระเยซูได้ถูกต้องอยู่แล้ว แต่ทำไมยังต้องได้รับการแก้ไขให้ “ถูกต้องยิ่งขึ้น”?) แล้วเฉลยในบทที่ 19 (คำตอบคือ “ขาดพระวิญญาณบริสุทธิ์”) — ถ้าอ่านบทที่ 18 จบแล้วปิดเล่ม คุณจะพลาดคำเฉลย</p>
+
+<p><strong>2. ข้อเดี่ยวถูกหยิบไปใช้โดยไม่สนบริบท</strong>
+“ข้าพเจ้าผจญทุกสิ่งได้โดยพระองค์ผู้ทรงเสริมกำลังข้าพเจ้า” (ฟีลิปปี 4:13) — คนมักอ้างข้อนี้เป็นคำปลุกพลังก่อนสอบ ก่อนเล่นกีฬา ก่อนทำภารกิจยาก ๆ เหมือนเป็นคาถาบอกว่า “ฉันต้องทำสำเร็จได้” แต่บริบทในย่อหน้าที่เปาโลเขียน (ฟีลิปปี 4:10–13) ท่านกำลังบอกว่าท่านเรียนรู้ที่จะพอใจในทุกสภาพ — ทั้งยามอิ่มและยามหิว ทั้งยามมีและยามขาด “ผจญทุกสิ่งได้” ในที่นี้จึงหมายถึงใช้ชีวิตได้ในทุกสภาพ ไม่ใช่ทำสำเร็จทุกสิ่งที่ตั้งใจ การตัดข้อออกจากย่อหน้า ทำให้ความหมายเพี้ยนไปคนละทิศ</p>
+
+<p><strong>3. ย่อหน้าธรรมชาติหายไป</strong>
+ผู้เขียนเดิมเขียนจบเมื่อจบใจความ ไม่ใช่จบที่เลขข้อ พวกเขาคิดเป็น “ย่อหน้า” (flow of thought) ไม่ใช่ “ข้อ” เมื่อเราเห็นเลขข้อ 1, 2, 3, 4, 5 ติดกัน เรามักอ่านเหมือนรายการจุด ๆ ที่ไม่เกี่ยวกัน ทั้งที่จริงมันเป็นประโยคที่ต่อเนื่อง</p>
+
+<p><strong>4. ความคิดแบบ “หาข้อเด็ด”</strong>
+การแบ่งข้อทำให้เกิดวัฒนธรรม “ข้อพระคัมภีร์ของวันนี้” — หยิบข้อเดียวมาโพสต์ ดูสวย ฟังดูลึก แต่ตัดขาดจากเรื่องที่ข้อนั้นอยู่ในนั้น พระคัมภีร์ไม่ได้ถูกเขียนให้เป็นคอลเลกชันของคำคม — แต่ถูกเขียนเป็นเรื่องเล่าและจดหมายที่มีบริบท</p>
+
+<hr />
+
+<h2 id="หมายเหตุส่วนตัว">หมายเหตุส่วนตัว</h2>
+
+<p>ผมเขียนบทความนี้ขึ้นมาเพื่อบอกให้ทราบว่าการแบ่งบทและข้อมีกับดักอะไรซ่อนอยู่ — โดยส่วนตัวผมมองว่ามันเป็นการบดบังการทำความเข้าใจพระคัมภีร์อย่างที่ควรจะเป็น แม้จะช่วยให้การอ้างอิงง่ายขึ้นจริง แต่เมื่อชั่งน้ำหนักแล้ว ผมเห็นว่าผลร้ายมีมากกว่าผลดี</p>
+
+<p>ผมเพียงอยากชวนให้ลองชั่งน้ำหนักดูกันครับ</p>
+
+  </div>
+</article>
+
+      
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life · 25 เมษายน 2569 19:12 น.
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js" defer></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>

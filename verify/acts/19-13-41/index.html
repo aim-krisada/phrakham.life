@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ตรวจสอบแหล่งอ้างอิง — กิจการ 19:13-41 | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="ทุก marker ในบทเรียน กิจการ 19:13-41 ได้รับการตรวจสอบโดยใช้กฎ 2-source consensus — ทุก symbol ต้องมีอย่างน้อย 2 แหล่งวิชาการที่เป็น mechanical (ไม่ใช่ AI) เห็นพ้องกัน
+">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics (GA4) — deferred until after page load to improve LCP -->
+<script>
+window.addEventListener('load', function() {
+  var s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W3XP4T2FFE';
+  document.head.appendChild(s);
+  s.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W3XP4T2FFE');
+  };
+});
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8B4513">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Fonts: self-hosted in assets/fonts/ (Sarabun, Noto Sans Thai, Gentium Plus) -->
+<!-- @font-face rules defined in _sass/custom.scss -->
+<!-- Preload critical fonts to reduce CLS (layout shift from font swap) -->
+<link rel="preload" href="/assets/fonts/sarabun-700-thai.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sarabun-400-thai.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <!-- <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a> -->
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <!-- <a href="/ot/">พันธสัญญาเดิม</a> -->
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js" defer></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <article class="post-content verification-page" itemscope itemtype="http://schema.org/Article">
+  <header>
+    <h1 itemprop="name">ตรวจสอบแหล่งอ้างอิง — กิจการ 19:13-41</h1>
+    <p class="post-meta-date">
+      สร้าง 25 เมษายน 2569 18:53 น.
+    </p>
+    
+    <p class="verify-back">
+      ← <a href="/nt/acts/19-13-41/">กลับไปที่บทเรียน</a>
+    </p>
+    
+  </header>
+
+  <div itemprop="articleBody">
+    <p>ทุก marker ในบทเรียน <em>กิจการ 19:13-41</em> ได้รับการตรวจสอบโดยใช้กฎ <strong>2-source consensus</strong> — ทุก symbol ต้องมีอย่างน้อย 2 แหล่งวิชาการที่เป็น mechanical (ไม่ใช่ AI) เห็นพ้องกัน</p>
+
+<h2 id="หลักการตรวจสอบ">หลักการตรวจสอบ</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Sources required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🫀⏪✅🔔 (tense)</td>
+      <td><strong>MorphGNT</strong> + <strong>TDB</strong></td>
+    </tr>
+    <tr>
+      <td>✨ (emphasis)</td>
+      <td><strong>TDB</strong> + <strong>Levinsohn DF</strong> (OpenGNT)</td>
+    </tr>
+    <tr>
+      <td>📍 (Historical Present)</td>
+      <td><strong>MorphGNT</strong> + <strong>TDB</strong> + <strong>Levinsohn DF</strong> (triple-confirmed)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ดู<a href="/resource/references/#แหล่งที่มาเพิ่มเติม--ระบบตรวจสอบไวยากรณ์-2-แหล่ง">หลักการเต็ม</a></p>
+
+<h2 id="markers-ใน-กิจการ-1913-41">Markers ใน กิจการ 19:13-41</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>ข้อ</th>
+      <th>Thai</th>
+      <th>Greek</th>
+      <th>MorphGNT</th>
+      <th>TDB</th>
+      <th>Levinsohn DF</th>
+      <th>✓</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🫀</td>
+      <td>19:13</td>
+      <td>เอ่ยพระนาม</td>
+      <td>ὀνομάζειν</td>
+      <td>-PAN—- (Pres Inf)</td>
+      <td>A</td>
+      <td>(n/a — tense layer)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>🔔</td>
+      <td>19:16</td>
+      <td>บาดเจ็บที่ยังติดตัวอยู่</td>
+      <td>τετραυματισμένους</td>
+      <td>-XPPAPM- (Perf Pass Part)</td>
+      <td>G</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>⏪</td>
+      <td>19:17</td>
+      <td>ทรงได้รับการยกย่อง</td>
+      <td>ἐμεγαλύνετο</td>
+      <td>3IPI-S– (Imperf Pass)</td>
+      <td>I.d</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>🔔</td>
+      <td>19:18</td>
+      <td>เชื่ออยู่แล้ว</td>
+      <td>πεπιστευκότων</td>
+      <td>-XAPGPM- (Perf Act Part)</td>
+      <td>G</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>⏪</td>
+      <td>19:18</td>
+      <td>พากันเข้ามา</td>
+      <td>ἤρχοντο</td>
+      <td>3IMI-P– (Imperf Mid)</td>
+      <td>d</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>⏪</td>
+      <td>19:19</td>
+      <td>เผาทิ้ง</td>
+      <td>κατέκαιον</td>
+      <td>3IAI-P– (Imperf)</td>
+      <td>d</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>⏪</td>
+      <td>19:20</td>
+      <td>เจริญขึ้น</td>
+      <td>ηὔξανεν</td>
+      <td>3IAI-S– (Imperf)</td>
+      <td>d</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>✨</td>
+      <td>19:20</td>
+      <td>อย่างทรงพลัง</td>
+      <td>κατὰ κράτος</td>
+      <td>(PP — phrase)</td>
+      <td>I</td>
+      <td>Focus+</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>⏪</td>
+      <td>19:20</td>
+      <td>มีชัยชนะ</td>
+      <td>ἴσχυεν</td>
+      <td>3IAI-S– (Imperf)</td>
+      <td>d</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>⏪</td>
+      <td>19:30</td>
+      <td>ไม่ยอมให้ท่านเข้าไป</td>
+      <td>οὐκ εἴων</td>
+      <td>3IAI-P– (Imperf)</td>
+      <td>I.d</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>⏪</td>
+      <td>19:31</td>
+      <td>ส่งคนมาขอร้อง</td>
+      <td>παρεκάλουν</td>
+      <td>3IAI-P– (Imperf)</td>
+      <td>d</td>
+      <td>(n/a)</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>✨</td>
+      <td>19:34</td>
+      <td>ยิ่งใหญ่</td>
+      <td>μεγάλη</td>
+      <td>(Adj NSF)</td>
+      <td>I</td>
+      <td>Focus+</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>📍</td>
+      <td>19:35</td>
+      <td>กล่าว</td>
+      <td>φησίν</td>
+      <td>3PAI-S– (Pres Ind)</td>
+      <td>*</td>
+      <td>Historical Present</td>
+      <td>✓✓✓</td>
+    </tr>
+    <tr>
+      <td>✨</td>
+      <td>19:39</td>
+      <td>ระบบศาลที่ถูกกฎหมาย</td>
+      <td>ἐννόμῳ ἐκκλησίᾳ</td>
+      <td>(Adj+Noun DSF)</td>
+      <td>I</td>
+      <td>Focus+</td>
+      <td>✓</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><a href="/symbols/#methodology">หลักการตรวจสอบ + แหล่งที่มาทั้งหมด</a> (ใช้ร่วมกันทุกบทเรียน)</p>
+
+  </div>
+
+  <hr>
+  <p class="verify-disclaimer" style="font-size:0.85em; color:var(--text-muted, #666);">
+    TDB markers cited under fair use for educational verification.
+  </p>
+</article>
+
+      
+      <p class="post-meta-date page-timestamp">อัพเดท 25 เมษายน 2569 18:53 น.</p>
+      
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life · 25 เมษายน 2569 19:12 น.
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js" defer></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>

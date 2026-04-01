@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ยากอบ 2:14-26 — ความเชื่อที่มีชีวิต | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="ตอนที่ 1: ความเชื่อแบบไหนที่ช่วยได้?
+">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics (GA4) — deferred until after page load to improve LCP -->
+<script>
+window.addEventListener('load', function() {
+  var s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W3XP4T2FFE';
+  document.head.appendChild(s);
+  s.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W3XP4T2FFE');
+  };
+});
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8B4513">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Fonts: self-hosted in assets/fonts/ (Sarabun, Noto Sans Thai, Gentium Plus) -->
+<!-- @font-face rules defined in _sass/custom.scss -->
+<!-- Preload critical fonts to reduce CLS (layout shift from font swap) -->
+<link rel="preload" href="/assets/fonts/sarabun-700-thai.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sarabun-400-thai.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <!-- <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a> -->
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <!-- <a href="/ot/">พันธสัญญาเดิม</a> -->
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js" defer></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <article class="post-content reading-mode" itemscope itemtype="http://schema.org/Article">
+  <header>
+    <!--
+    --><h1 itemprop="name" aria-label="ยากอบ บทที่ 2 ข้อ 14 ถึง 26"><!--
+      --><span class="study-only">ยากอบ 2:14-26 — ความเชื่อที่มีชีวิต</span><!--
+      --><span class="reading-only">ยากอบ บทที่ 2 ข้อ 14 ถึง 26 — ความเชื่อที่มีชีวิต</span><!--
+    --></h1>
+    <p class="post-meta-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</p>
+  </header>
+
+  <div itemprop="articleBody">
+    <h2 id="ตอนที่-1-ความเชื่อแบบไหนที่ช่วยได้">ตอนที่ 1: ความเชื่อแบบไหนที่ช่วยได้?</h2>
+
+<blockquote>
+  <p><em>What good is it, my brothers, if someone 🫀<strong>says</strong> he has faith but does not have works? Can ✨<strong>that faith</strong> save him? If a brother or sister is poorly clothed and lacking in daily food, and one of you says to them, “Go in peace, be warmed and filled,” without giving them the things needed for the body, what good is that? So also faith by itself, if it does not have works, is dead.</em> (ESV)</p>
+</blockquote>
+
+<p>ยากอบเปิดเรื่องด้วยคำถามที่ตรงไปตรงมา — ถ้าใครบอกว่าฉันมีความเชื่อ แต่ไม่มีการกระทำเลย ความเชื่อแบบนั้นจะช่วยเขาได้ไหม?</p>
+
+<p>สิ่งที่น่าสนใจคือคำว่า 🫀<strong>บอกอยู่ตลอดว่า</strong><span class="study-only"> — “says”</span> (λέγῃ / legē) เป็น<span class="study-only"> present tense</span><span class="reading-only"> รูปปัจจุบันต่อเนื่อง</span> คือไม่ได้พูดครั้งเดียว แต่เป็นคนที่พูดอยู่เรื่อยๆ ว่า “ฉันมีความเชื่อนะ” เหมือนคนที่ติดปากพูดแต่ไม่เคยลงมือทำ</p>
+
+<p>แล้วยากอบก็ถามกลับว่า “ความเชื่อ ✨<strong>แบบนั้น</strong>” (ἡ πίστις / hē pistis) ช่วยเขาได้ไหม? คำว่า “แบบนั้น” มีความสำคัญมาก เพราะในภาษากรีกมีคำนำหน้านาม<span class="study-only"> (article)</span> กำกับ ซึ่งชี้กลับไปที่ความเชื่อที่เพิ่งพูดถึง — ยากอบไม่ได้บอกว่าความเชื่อทุกแบบช่วยไม่ได้ แต่เจาะจงถามว่า ความเชื่อ <em>แบบที่มีแต่คำพูดไม่มีการกระทำ</em> นั่นแหละ ช่วยได้จริงไหม?</p>
+
+<p>จากนั้นก็ยกตัวอย่างที่เห็นภาพชัดมาก — ถ้าพี่น้องมาหาเรา ไม่มีเสื้อผ้า ไม่มีอาหาร แล้วเราก็บอกว่า “ไปเถอะ ขอให้อบอุ่นและอิ่มนะ” แต่ไม่ได้หยิบยื่นอะไรให้เขาเลย มันจะมีประโยชน์อะไร? ยากอบใช้ตัวอย่างนี้เพื่อให้เห็นว่าแค่ “พูด” ว่าเชื่อ โดยไม่มี “การลงมือทำ” มันว่างเปล่าแค่ไหน</p>
+
+<p>แล้วก็สรุปว่า ความเชื่อที่อยู่ตามลำพัง ไม่มีการกระทำ ก็เหมือนความเชื่อที่ตายแล้ว — ไม่มีชีวิต ไม่มีลมหายใจ ไม่มีพลัง</p>
+
+<hr />
+
+<h2 id="ตอนที่-2-ผีมารก็ยังเชื่อ-แล้วคุณล่ะ">ตอนที่ 2: ผีมารก็ยังเชื่อ แล้วคุณล่ะ?</h2>
+
+<blockquote>
+  <p><em>But someone will say, “You have faith and I have works.” 🚀<strong>Show</strong> me your faith apart from your works, and I will show you my faith by my works. You 🫀<strong>believe</strong> that God is one; you do well. Even the demons 🫀<strong>believe</strong> — and 🫀<strong>shudder</strong>! Do you want to be shown, you foolish person, that faith apart from works is ✨<strong>useless</strong>?</em> (ESV)</p>
+</blockquote>
+
+<p>ยากอบจำลองบทสนทนาขึ้นมา — มีคนบอกว่า “คุณมีความเชื่อ ผมมีการกระทำ” เหมือนจะแยกสองอย่างออกจากกัน ยากอบก็ท้ากลับทันทีว่า 🚀<strong>แสดงมาเดี๋ยวนี้เลย</strong><span class="study-only"> — “Show me”</span> (Δεῖξόν μοι / Deixon moi) เป็น<span class="study-only"> Aorist Imperative</span><span class="reading-only"> คำสั่งเด็ดขาด</span> คือท้าตรงๆ ว่า “เอาเลย แสดงมาเดี๋ยวนี้” ว่าความเชื่อของคุณที่ไม่มีการกระทำน่ะเป็นยังไง แล้วยากอบก็บอกว่า ส่วนผม ผมจะแสดงให้เห็นว่าความเชื่อของผมเป็นยังไง <em>จากการกระทำ</em></p>
+
+<p>จากนั้นยากอบยกตัวอย่างที่แหลมคมมาก — “คุณเชื่อว่ามีพระเจ้าองค์เดียว ดีแล้ว” คำว่า 🫀<strong>เชื่ออยู่ตลอด</strong> (πιστεύεις / pisteueis)<span class="study-only"> present tense</span><span class="reading-only"> รูปปัจจุบันต่อเนื่อง</span> คือเชื่ออยู่เรื่อยๆ เป็นสิ่งที่ยึดถืออยู่ “แต่รู้ไหม ผีมารก็ 🫀<strong>เชื่ออยู่เหมือนกัน</strong>“<span class="study-only"> — “believe”</span> (πιστεύουσιν / pisteuousin) เชื่ออยู่ตลอดเหมือนกัน และไม่ใช่แค่เชื่อ แต่ยัง 🫀<strong>ตัวสั่นอยู่ตลอด</strong> (φρίσσουσιν / phrissousin)<span class="study-only"><sup><a href="#root2" id="rootref2">↑</a></sup></span> คือกลัวจนตัวสั่นอยู่ตลอดเวลาด้วย</p>
+
+<p>ลองคิดดู — ผีมารรู้ว่าพระเจ้ามีจริง รู้ว่าพระองค์ทรงฤทธิ์ รู้จนกลัวตัวสั่น แต่ความรู้และความกลัวนั้นไม่ได้ทำให้พวกมันมีความสัมพันธ์กับพระเจ้าเลย ถ้าความเชื่อของเราเป็นแค่ “รู้ว่าพระเจ้ามีจริง” มันก็ไม่ต่างอะไรกับผีมาร</p>
+
+<p>แล้วยากอบก็ถามว่า ยอมรับได้ไหมว่าความเชื่อที่ไม่มีการกระทำนั้น ✨<strong>ไร้ประโยชน์สิ้นดี</strong>? คำว่า<span class="study-only"> “useless” ในภาษากรีก (ἀργή / argē)<sup><a href="#root1" id="rootref1">↑</a></sup> น่าสนใจมาก เพราะมาจาก ἀ (ไม่มี) + ἔργον (การงาน) แปลตรงตัวว่า “ไร้การงาน” —</span><span class="reading-only"> “ไร้ประโยชน์สิ้นดี” นี้</span> ยากอบเล่นคำอย่างแยบยลว่า ความเชื่อที่ไม่มี <em>การกระทำ</em> (ἔργα / erga) ก็คือความเชื่อที่ <em>ไร้การงาน</em> (ἀργή / argē) พอดี</p>
+
+<h3 id="รากศัพท์">รากศัพท์</h3>
+
+<ul>
+  <li><a href="#rootref1" id="root1">↑</a> <strong>ไร้การงาน</strong> — <strong>ἀργή</strong> (argē) = ἀ (ไม่มี) + ἔργον (การงาน) — ยากอบเล่นคำกับ ἔργα (การกระทำ) ที่พูดถึงตลอดทั้งตอน</li>
+  <li><a href="#rootref2" id="root2">↑</a> <strong>สั่นด้วยความกลัว</strong> — <strong>φρίσσουσιν</strong> (phrissousin) — ไม่ใช่แค่กลัวธรรมดา แต่เป็นความหวาดผวาลึก ๆ ที่มาจากการรู้ว่าใครเป็นใคร</li>
+</ul>
+
+<hr />
+
+<h2 id="ตอนที่-3-หลักฐานจากชีวิตจริง">ตอนที่ 3: หลักฐานจากชีวิตจริง</h2>
+
+<blockquote>
+  <p><em>Was not Abraham our father ✅<strong>justified</strong> by works when he ✅<strong>offered up</strong> his son Isaac on the altar? You see that faith ⏪<strong>was active along with</strong> his works, and faith was ✅<strong>completed</strong> by his works. And the Scripture was fulfilled that says, “Abraham ✅<strong>believed</strong> God, and it was ✅<strong>counted</strong> to him as righteousness” — and he was called a friend of God. You see that a person 🫀<strong>is justified</strong> by works and 🌓<strong>not by faith alone</strong>. And in the same way was not also Rahab the prostitute ✅<strong>justified</strong> by works when she ✅<strong>received</strong> the messengers and ✅<strong>sent</strong> them out by another way? For as the body apart from the spirit is dead, so also faith apart from works is dead.</em> (ESV)</p>
+</blockquote>
+
+<p>ยากอบยกสองตัวอย่างจากชีวิตจริงในพระคัมภีร์ และเลือกได้อย่างน่าทึ่ง — อับราฮัมบิดาแห่งความเชื่อ กับราหับหญิงโสเภณี คนหนึ่งเป็นต้นตระกูลของชนชาติอิสราเอล อีกคนเป็นคนต่างชาติที่อยู่นอกพันธสัญญา แต่ทั้งสองคนมีสิ่งเดียวกัน — ความเชื่อที่พิสูจน์ด้วยการกระทำ</p>
+
+<p>อับราฮัม ✅<strong>ได้รับการพิจารณาว่าชอบธรรม</strong><span class="study-only"> — “justified”</span> (ἐδικαιώθη / edikaiōthē) เป็น<span class="study-only"> Aorist</span><span class="reading-only"> รูปสำเร็จ</span> คือเหตุการณ์ที่เกิดขึ้นเด็ดขาดแน่นอน เมื่อไร? เมื่อเขา ✅<strong>ถวาย</strong> (ἀνενέγκας / anenenkas) อิสอัคลูกชายบนแท่นบูชา — ไม่ใช่แค่คิดในใจว่าเชื่อพระเจ้า แต่ลงมือทำจนถึงขั้นยกมีดขึ้นแล้ว</p>
+
+<p>แล้วยากอบก็อธิบายกลไกว่ามันทำงานยังไง — ความเชื่อ ⏪<strong>ทำงานร่วมกับ</strong>การกระทำของเขา (συνήργει / synērgei) เป็น<span class="study-only"> Imperfect tense</span><span class="reading-only"> รูปอดีตต่อเนื่อง</span> คือความเชื่อกับการกระทำทำงานควบคู่กันไป <em>ตลอดเวลา</em> ไม่ใช่ครั้งเดียวจบ แต่เป็นกระบวนการที่เดินไปด้วยกัน แล้วผลจากการกระทำก็ทำให้ความเชื่อ ✅<strong>สมบูรณ์</strong> (ἐτελειώθη / eteleiōthē) — คำนี้ไม่ได้แปลว่าความเชื่อบกพร่อง แต่หมายความว่าความเชื่อถูกนำไปถึงเป้าหมายที่ตั้งไว้ เหมือนต้นไม้ที่เติบโตจนออกผล — ต้นไม้ไม่ได้บกพร่องตอนยังเป็นต้นกล้า แต่มันสมบูรณ์เมื่อออกผล ความเชื่อก็เช่นกัน สมบูรณ์เมื่อออกมาเป็นการกระทำ</p>
+
+<p>ดังนั้นพระคัมภีร์ที่บอกว่า “อับราฮัม ✅<strong>เชื่อ</strong>พระเจ้า แล้วก็ ✅<strong>นับ</strong>ว่าเป็นความชอบธรรมสำหรับเขา” (ในหนังสือปฐมกาล<span class="study-only"><sup><a href="#fn1" id="fnref1">1</a></sup></span>) ก็ได้รับการเติมเต็มให้สมบูรณ์ — อับราฮัมเชื่อตั้งแต่ตอนนั้น แล้วความเชื่อก็ออกผลเป็นการกระทำเมื่อเขายอมถวายอิสอัค จึงได้ชื่อว่าเป็น “สหายของพระเจ้า” (φίλος θεοῦ / philos theou) — ไม่ใช่แค่คนรู้จักพระเจ้า แต่เป็นเพื่อนสนิท</p>
+
+<p>แล้วยากอบก็สรุปว่า คนเรา 🫀<strong>ถูกนับว่าชอบธรรมอยู่เสมอ</strong> (δικαιοῦται / dikaioutai) โดยการกระทำ 🌓<strong>ไม่ใช่โดยความเชื่ออย่างเดียว</strong> — ตรงนี้สำคัญที่ต้องเข้าใจให้ถูก ยากอบไม่ได้ขัดกับเปาโลที่บอกว่ารอดโดยความเชื่อไม่ใช่การกระทำ (ดังที่เปาโลเขียนไว้ในหนังสือเอเฟซัส<span class="study-only"><sup><a href="#fn2" id="fnref2">2</a></sup></span>) เพราะเปาโลพูดถึง <em>ทางเข้า</em> สู่ความรอด — ไม่มีใครทำดีจนรอดได้ ส่วนยากอบพูดถึง <em>หลักฐาน</em> ของความเชื่อที่แท้จริง — ถ้าเชื่อจริง มันต้องมีผลออกมาเป็นการกระทำ</p>
+
+<p>ตัวอย่างที่สองคือราหับ — หญิงโสเภณีที่ ✅<strong>ได้รับการพิจารณาว่าชอบธรรม</strong> เมื่อเธอ ✅<strong>รับ</strong> (ὑποδεξαμένη / hypodexamenē) สายลับไว้ และ ✅<strong>ส่ง</strong> (ἐκβαλοῦσα / ekbalousa) พวกเขาออกไปทางอื่น ราหับไม่ได้พูดเรื่องความเชื่อยืดยาวอะไร แต่เธอเสี่ยงชีวิตของตัวเอง ซ่อนสายลับ แล้วช่วยพวกเขาหนี — การกระทำนั้นพูดดังกว่าคำพูดใดๆ</p>
+
+<p>สุดท้ายยากอบเปรียบเทียบให้เห็นภาพชัดที่สุด — ร่างกายที่ไม่มีวิญญาณก็ตายแล้ว ฉันใด ความเชื่อที่ไม่มีการกระทำก็ตายแล้วฉันนั้น วิญญาณเป็นสิ่งที่ทำให้ร่างกายมีชีวิต การกระทำก็เป็นสิ่งที่ทำให้ความเชื่อมีชีวิตเช่นกัน</p>
+
+<hr />
+
+<h2 id="บทสรุป">บทสรุป</h2>
+
+<p>ตอนนี้ตั้งคำถามตรงๆ ว่าถ้าใคร 🫀<strong>พูดอยู่เรื่อยๆ</strong> ว่ามีความเชื่อแต่ไม่เคยลงมือทำอะไร ✨<strong>ความเชื่อแบบนั้น</strong>ช่วยเขาได้จริงไหม? แล้วยกตัวอย่างคนที่เห็นพี่น้องอดอยากแต่แค่พูดให้กำลังใจโดยไม่ช่วยอะไรเลย จากนั้นชี้ว่าแม้แต่ผีมารก็ยัง 🫀<strong>เชื่ออยู่ตลอด</strong>ว่าพระเจ้ามีจริงและ 🫀<strong>กลัวสั่นอยู่ตลอด</strong> แต่ความเชื่อแบบนั้น ✨<strong>ไร้ประโยชน์สิ้นดี</strong> แล้วยกอับราฮัมเป็นตัวอย่างว่าความเชื่อกับการกระทำ ⏪<strong>ทำงานร่วมกันตลอด</strong> จนความเชื่อ ✅<strong>สมบูรณ์</strong>ผ่านการกระทำ ราหับหญิงโสเภณีก็เช่นกัน ✅<strong>พิสูจน์</strong>ความเชื่อด้วยการเสี่ยงชีวิตช่วยสายลับ สุดท้ายยากอบเปรียบว่าร่างกายไม่มีวิญญาณก็ตาย ความเชื่อไม่มีการกระทำก็ตายเหมือนกัน — 🌓<strong>ไม่ใช่ว่าเราต้องทำดีเพื่อให้รอด</strong> แต่ถ้าเราเชื่อจริง ชีวิตของเราจะสะท้อนออกมาเอง เหมือนต้นไม้ที่มีชีวิตย่อมออกผล</p>
+
+<div class="footnotes study-only">
+<hr />
+<p class="footnotes-title">อ้างอิง</p>
+
+<p id="fn1"><a href="#fnref1">1</a> ปฐมกาล 15:6</p>
+<p id="fn2"><a href="#fnref2">2</a> เอเฟซัส 2:8-9</p>
+
+</div>
+
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+
+</article>
+
+
+<a href="/nt/james/2-1-13/" class="post-nav-float post-nav-prev" aria-label="บทเรียนก่อนหน้า: 2:1-13">
+  <span class="post-nav-arrow"></span>
+</a>
+
+
+<a href="/nt/james/3-1-12/" class="post-nav-float post-nav-next" aria-label="บทเรียนถัดไป: 3:1-12">
+  <span class="post-nav-arrow"></span>
+</a>
+
+
+<script>
+window.SITE_BASEURL = "";
+window.SYMBOLS_DATA = [{"emoji":"🫀","code":"A","name":"Greek Present","thai":"เกิดขึ้นต่อเนื่องเป็นวิถีชีวิต — เหมือนหัวใจที่เต้นตลอด ไม่เคยหยุด","anchor":"greek-present"},{"emoji":"▶️","code":"b","name":"Hebrew Imperfect","thai":"การกระทำที่ยังดำเนินอยู่ ไม่จบ — เหมือนกด play แล้วยังไม่ถึงตอนจบ","anchor":"hebrew-imperfect"},{"emoji":"✅","code":"D","name":"Completed","thai":"เสร็จแล้ว ผลลัพธ์เป็นจริง — เหมือนเช็คลิสต์ที่ติ๊กถูกแล้ว","anchor":"completed"},{"emoji":"🔔","code":"G","name":"Greek Perfect","thai":"เสร็จแล้วแต่ผลยังก้องอยู่ — เหมือนระฆังที่ตีแล้วเสียงยังดังก้อง","anchor":"greek-perfect"},{"emoji":"⏪","code":"d","name":"Greek Imperfect","thai":"ย้อนไปดูอดีต — พวกเขาทำสิ่งนี้ซ้ำแล้วซ้ำเล่า ไม่ใช่แค่ครั้งเดียวจบ","anchor":"greek-imperfect"},{"emoji":"📍","code":"H","name":"Historical Present","thai":"ปักหมุดให้คุณอยู่ตรงนั้น — \"คุณอยู่ตรงนี้!\" ขณะเหตุการณ์เกิดขึ้น","anchor":"historical-present"},{"emoji":"🚀","code":"E","name":"Greek Aorist Imperative","thai":"ทำเดี๋ยวนี้! ลงมือเลย! — เหมือนกดปุ่มจรวด ยิงทีเดียว!","anchor":"greek-aorist-imperative"},{"emoji":"🔁","code":"B","name":"Greek Present Imperative","thai":"จงทำสิ่งนี้ต่อไปเรื่อยๆ! — เหมือนกดปุ่ม repeat สั่งให้ทำซ้ำเรื่อยๆ","anchor":"greek-present-imperative"},{"emoji":"🚫","code":"C","name":"Negated Greek Present Imperative","thai":"เลิกทำได้แล้ว! หยุดวนซ้ำ! — หยุดสิ่งที่กำลังทำอยู่","anchor":"negated-greek-present-imperative"},{"emoji":"🙅‍♂️","code":"F","name":"Negated Greek Aorist Imperative","thai":"อย่าทำเด็ดขาด! แม้แต่ครั้งเดียว! — คนยกมือห้าม \"อย่า!\"","anchor":"negated-greek-aorist-imperative"},{"emoji":"🪄","code":"a","name":"Hebrew Hiphil","thai":"ทำให้เกิดขึ้น — เหมือนไม้กายสิทธิ์ที่ทำให้สิ่งใหม่ปรากฏ","anchor":"hebrew-hiphil"},{"emoji":"💥","code":"c","name":"Hebrew Piel","thai":"ทำอย่างเข้มข้น เปลี่ยนสภาพไปเลย — เหมือนแรงระเบิดที่เปลี่ยนทุกอย่าง","anchor":"hebrew-piel"},{"emoji":"↩️","code":"f","name":"Hebrew Hithpael","thai":"ทุ่มเทเต็มหัวใจจากข้างใน — ผลก็วนกลับมาที่ตัวเอง","anchor":"hithpael"},{"emoji":"🎬","code":"g","name":"Hebrew Conjunctive Perfect","thai":"ตรงนี้สำคัญจริงๆ — เรื่องเปลี่ยนทิศทางตรงจุดนี้","anchor":"hebrew-conjunctive-perfect"},{"emoji":"🔗","code":"q","name":"Hebrew Conjunctive Imperfect","thai":"ข้อต่อโซ่เชื่อมเหตุการณ์ — ต่อเรื่องให้ไหลต่อไป","anchor":"conjunctive-imperfect"},{"emoji":"🌓","code":"I","name":"Contrast Emphasis","thai":"สื่อถึงสิ่งตรงข้าม — เหมือนดวงจันทร์ครึ่งสว่างครึ่งมืด","anchor":"contrast-emphasis"},{"emoji":"✨","code":"K","name":"Emphasis","thai":"คำนี้ถูกเน้นเป็นพิเศษ — ทั้งจากบริบทและไวยากรณ์","anchor":"emphasis"}];
+</script>
+
+      
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life · 25 เมษายน 2569 19:12 น.
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js" defer></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>

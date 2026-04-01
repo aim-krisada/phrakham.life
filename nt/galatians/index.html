@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>กาลาเทีย | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="คู่มือศึกษาพระคัมภีร์ภาษาไทยเชิงอรรถาธิบาย เปิดให้เห็น nuance ของภาษาเดิม (กรีก/ฮีบรู)">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics (GA4) — deferred until after page load to improve LCP -->
+<script>
+window.addEventListener('load', function() {
+  var s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W3XP4T2FFE';
+  document.head.appendChild(s);
+  s.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W3XP4T2FFE');
+  };
+});
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8B4513">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Fonts: self-hosted in assets/fonts/ (Sarabun, Noto Sans Thai, Gentium Plus) -->
+<!-- @font-face rules defined in _sass/custom.scss -->
+<!-- Preload critical fonts to reduce CLS (layout shift from font swap) -->
+<link rel="preload" href="/assets/fonts/sarabun-700-thai.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sarabun-400-thai.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <!-- <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a> -->
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <!-- <a href="/ot/">พันธสัญญาเดิม</a> -->
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js" defer></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <h1>กาลาเทีย</h1>
+
+<ul class="post-list">
+  
+  
+  
+    
+    
+  <li>
+    <a href="/nt/galatians/1-1-12/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 1:1-12 — มีเพียงกิตติคุณเดียว</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  <li>
+    <a href="/nt/galatians/1-13-24/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 1:13-24 — จากผู้ข่มเหงสู่ผู้ประกาศ</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  
+    
+    
+  <li>
+    <a href="/nt/galatians/2-1-10/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 2:1-10 — เสาหลักยื่นมือขวา</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  <li>
+    <a href="/nt/galatians/2-11-21/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 2:11-21 — ถูกตรึงกับพระคริสต์แล้ว</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  
+    
+    
+  <li>
+    <a href="/nt/galatians/3-1-14/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 3:1-14 — โดยความเชื่อ ไม่ใช่โดยบัญญัติ</span>
+      <span class="post-card-date">สร้าง 15 เมษายน 2569 09:35 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  <li>
+    <a href="/nt/galatians/3-15-29/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 3:15-29 — ทายาทตามคำสัญญา โดยความเชื่อ</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  
+    
+    
+  <li>
+    <a href="/nt/galatians/4-1-20/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 4:1-20 — จากทาสสู่บุตร อย่าถอยกลับ</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  <li>
+    <a href="/nt/galatians/4-21-5-1/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 4:21–5:1 — บุตรตามเนื้อหนัง หรือบุตรตามคำสัญญา</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  
+    
+    
+  <li>
+    <a href="/nt/galatians/5-2-12/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 5:2-12 — พระคริสต์ไร้ค่า ถ้ากลับไปอยู่ใต้บัญญัติ</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  <li>
+    <a href="/nt/galatians/5-13-26/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 5:13-26 — เสรีภาพแท้คือดำเนินตามพระวิญญาณ</span>
+      <span class="post-card-date">สร้าง 15 เมษายน 2569 09:35 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  
+    
+    
+  <li>
+    <a href="/nt/galatians/6-1-10/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 6:1-10 — รับภาระกันด้วยความอ่อนสุภาพ หว่านตามพระวิญญาณ</span>
+      <span class="post-card-date">สร้าง 15 เมษายน 2569 09:36 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  <li>
+    <a href="/nt/galatians/6-11-18/" class="post-card">
+      <span class="post-card-title">กาลาเทีย 6:11-18 — อวดได้แค่กางเขน สิ่งทรงสร้างใหม่คือทุกอย่าง</span>
+      <span class="post-card-date">สร้าง 4 เมษายน 2569 18:59 น. · อัพเดท 4 เมษายน 2569 19:00 น.</span>
+    </a>
+  </li>
+    
+  
+</ul>
+
+
+
+
+      
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life · 25 เมษายน 2569 19:12 น.
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js" defer></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>

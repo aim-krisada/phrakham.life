@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>กาลาเทีย 3:1-14 — โดยความเชื่อ ไม่ใช่โดยบัญญัติ | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="ตอนที่ 1: คุณจะโง่ไปถึงไหน
+">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics (GA4) — deferred until after page load to improve LCP -->
+<script>
+window.addEventListener('load', function() {
+  var s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W3XP4T2FFE';
+  document.head.appendChild(s);
+  s.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W3XP4T2FFE');
+  };
+});
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8B4513">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Fonts: self-hosted in assets/fonts/ (Sarabun, Noto Sans Thai, Gentium Plus) -->
+<!-- @font-face rules defined in _sass/custom.scss -->
+<!-- Preload critical fonts to reduce CLS (layout shift from font swap) -->
+<link rel="preload" href="/assets/fonts/sarabun-700-thai.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sarabun-400-thai.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <!-- <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a> -->
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <!-- <a href="/ot/">พันธสัญญาเดิม</a> -->
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js" defer></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <article class="post-content reading-mode" itemscope itemtype="http://schema.org/Article">
+  <header>
+    <!--
+    --><h1 itemprop="name" aria-label="กาลาเทีย บทที่ 3 ข้อ 1 ถึง 14"><!--
+      --><span class="study-only">กาลาเทีย 3:1-14 — โดยความเชื่อ ไม่ใช่โดยบัญญัติ</span><!--
+      --><span class="reading-only">กาลาเทีย บทที่ 3 ข้อ 1 ถึง 14 — โดยความเชื่อ ไม่ใช่โดยบัญญัติ</span><!--
+    --></h1>
+    <p class="post-meta-date">สร้าง 15 เมษายน 2569 09:35 น. · อัพเดท 4 เมษายน 2569 19:00 น.</p>
+  </header>
+
+  <div itemprop="articleBody">
+    <h2 id="ตอนที่-1-คุณจะโง่ไปถึงไหน">ตอนที่ 1: คุณจะโง่ไปถึงไหน</h2>
+
+<blockquote>
+  <p><em>O foolish Galatians! Who has 🫀<strong>bewitched</strong> you? It was before your eyes that Jesus Christ was 🔔<strong>publicly portrayed</strong> as crucified. Let me ask you only this: Did you receive the Spirit by works of the law or by 🫀<strong>hearing</strong> with faith? Are you so foolish? Having begun by the Spirit, are you now being 🌓<strong>perfected</strong> by the flesh? Did you ✅<strong>suffer</strong> so many things in vain — if indeed it was in vain? Does he who supplies the Spirit to you and 🫀<strong>works</strong> miracles among you do so by works of the law, or by hearing with faith?</em> (ESV)</p>
+</blockquote>
+
+<p>เปาโลเปิดตอนนี้ด้วยคำรุนแรงมาก — “ชาวกาลาเทียผู้โง่เขลา!” ถ้าพูดเป็นภาษาไทยแบบตรง ๆ ก็คือ “คุณจะโง่ไปถึงไหน!” แล้วก็ถามว่า “ใครสะกดท่าน?” คำว่า 🫀<strong>สะกดหลอกล่ออยู่</strong> (βασκαίνω / baskainō) ภาษากรีกสื่อว่าเป็นการหลอกลวงที่ดำเนินอยู่ต่อเนื่อง<span class="study-only"> (Present)</span> เหมือนมีคนค่อย ๆ ร่ายมนตร์ใส่ไม่หยุด</p>
+
+<p>ทั้ง ๆ ที่ภาพพระคริสต์ถูกตรึงกางเขนนั้น 🔔<strong>ถูกประกาศไว้ชัดเจนแล้วต่อหน้าต่อตาและผลยังคงอยู่</strong> (προεγράφη / proegraphē) ภาษากรีกอยู่ในรูปที่สื่อว่าเขียนไว้แล้วและผลยังคงอยู่<span class="study-only"> (Perfect)</span> — ไม่ใช่เหตุการณ์ที่จบไปแล้วลืมได้ แต่ภาพนั้นยังชัดเจนอยู่จนถึงวันนี้</p>
+
+<p>แล้วเปาโลก็ถามคำถามสำคัญที่สุดของตอนนี้ — “คุณได้รับพระวิญญาณบริสุทธิ์โดยการทำตามบัญญัติ หรือโดยความเชื่อในสิ่งที่ได้ยิน?” คำตอบชัดอยู่แล้ว — โดยความเชื่อ ไม่มีทางอื่น</p>
+
+<p>แล้วก็ถามต่ออีกว่า “คุณเริ่มต้นโดยพระวิญญาณแล้ว แล้วตอนนี้จะกลับไปทำให้สมบูรณ์ด้วยเนื้อหนังเหรอ?” คำว่า 🌓<strong>ทำให้สมบูรณ์ด้วยเนื้อหนัง</strong> (σαρκὶ ἐπιτελεῖσθε / sarki epiteleisthe) ตรงข้ามกับการเริ่มต้นด้วยพระวิญญาณโดยสิ้นเชิง — เปาโลชี้ให้เห็นว่ามันย้อนแย้ง คุณเริ่มต้นด้วยสิ่งที่ดีที่สุดแล้ว แล้วจะถอยกลับไปพึ่งกำลังมนุษย์เหรอ?</p>
+
+<p>แล้วเปาโลก็ย้ำอีกว่า — “คุณ ✅<strong>ทนทุกข์มากมายมาแล้ว</strong> จะให้สูญเปล่าเหรอ? คุณคิดว่ามันเปล่าประโยชน์จริง ๆ ใช่ไหม?” ถามซ้ำสองครั้ง เพราะอยากให้หยุดคิด แล้วทิ้งท้ายว่า — “พระเจ้าที่ประทานพระวิญญาณให้คุณ และ 🫀<strong>ทำการอัศจรรย์มากมายอยู่ท่ามกลางคุณ</strong> ทำได้เพราะคุณทำตามบัญญัติ หรือเพราะคุณเชื่อในสิ่งที่ได้ยิน?”</p>
+
+<p>ทั้งหมดนี้เปาโลตั้งคำถามให้ชาวกาลาเทียคิดเอง — ไม่ได้สั่งสอน แต่ถามให้ดูหลักฐานจากชีวิตของพวกเขาเอง</p>
+
+<hr />
+
+<h2 id="ตอนที่-2-หลักฐานจากอับราฮัม">ตอนที่ 2: หลักฐานจากอับราฮัม</h2>
+
+<blockquote>
+  <p><em>Just as ✅<strong>Abraham “believed God</strong>, and 🔔<strong>it was counted</strong> to him as righteousness”? 🔁<strong>Know</strong> then that it is those of faith who are the sons of Abraham. And the Scripture, foreseeing that God would justify the Gentiles by faith, ✅<strong>preached the gospel beforehand</strong> to Abraham, saying, “In you shall all the nations be blessed.” So then, those who are of faith are ✨<strong>blessed</strong> along with Abraham, the man of faith.</em> (ESV)</p>
+</blockquote>
+
+<p>หลังจากถามชาวกาลาเทียให้ดูตัวเองแล้ว เปาโลก็ชี้ไปที่หลักฐานจากพระคัมภีร์ — ให้ดูอับราฮัม</p>
+
+<p>อับราฮัม ✅<strong>เชื่อพระเจ้าครั้งเดียวเด็ดขาด</strong> (ἐπίστευσεν / episteusen) แล้วพระเจ้าก็ 🔔<strong>นับว่าเขาเป็นผู้ชอบธรรมแล้วและผลยังคงอยู่</strong> (ἐλογίσθη / elogisthē) — ถูกนับว่าชอบธรรม ไม่ใช่เพราะทำตามบัญญัติ แต่เพราะเชื่อ<span class="study-only"><sup><a href="#fn1" id="fnref1">1</a></sup></span> สังเกตว่าตอนที่อับราฮัมเชื่อนั้น ยังไม่มีบัญญัติของโมเสสเลย — ความชอบธรรมมาก่อนบัญญัติ</p>
+
+<p>เปาโลจึงสั่งว่า 🔁<strong>ให้มั่นใจเลยนะ</strong> (γινώσκετε / ginōskete) ภาษากรีกเป็นคำสั่งให้ทำต่อเนื่อง<span class="study-only"> (Present Imperative)</span> — คือให้จดจำสิ่งนี้ไว้ตลอด ให้มั่นใจเลยว่า เฉพาะคนที่อาศัยความเชื่อเท่านั้นแหละ ถึงจะนับว่าเป็นบุตรของอับราฮัม</p>
+
+<p>แล้วเปาโลก็อธิบายว่าทำไมพระคัมภีร์ถึงบันทึกเรื่องอับราฮัมไว้แบบนี้ — เพราะพระเจ้าวางแผนไว้ตั้งแต่แรกแล้วว่าจะให้คนต่างชาติชอบธรรมโดยความเชื่อ พระองค์จึง ✅<strong>ประกาศกิตติคุณล่วงหน้า</strong>ให้อับราฮัมรู้ว่า “นานาประเทศจะได้รับพระพรผ่านทางเจ้า” ดังนั้นผู้ที่อาศัยความเชื่อ ก็จะได้รับ ✨<strong>พระพร</strong>ผ่านทางอับราฮัม<span class="study-only"> — ESV: “along with” (σύν / syn = ร่วมกับ) แต่บริบทข้อ 8 ชี้ว่าพระพรไหลผ่านทางอับราฮัมมาถึงนานาชาติ</span></p>
+
+<p>พูดง่าย ๆ คือ — พระคัมภีร์เดิมเองก็ยืนยันแล้วว่า ชอบธรรมโดยความเชื่อ ไม่ใช่โดยบัญญัติ</p>
+
+<hr />
+
+<h2 id="ตอนที่-3-คำสาปของบัญญัติ--พระคริสต์ไถ่แล้ว">ตอนที่ 3: คำสาปของบัญญัติ — พระคริสต์ไถ่แล้ว</h2>
+
+<blockquote>
+  <p><em>For all who rely on works of the law are under a 🌓<strong>curse</strong>; for 🔔<strong>it is written</strong>, “Cursed be everyone who does not abide by all things written in the Book of the Law, and do them.” Now it is evident that no one is 🫀<strong>justified</strong> before God by the law, for “The righteous shall 🫀<strong>live</strong> by faith.” But the law is 🌓<strong>not</strong> of faith, rather “The one who does them shall live by them.” Christ ✅<strong>redeemed</strong> us from the curse of the law by 🌓<strong>becoming a curse</strong> for us — for 🔔<strong>it is written</strong>, “Cursed is everyone who is hanged on a tree” — so that in Christ Jesus the blessing of Abraham might come to the Gentiles, so that we might ✅<strong>receive</strong> the promised Spirit through faith.</em> (ESV)</p>
+</blockquote>
+
+<p>ตอนนี้เปาโลเปิดอีกมุมหนึ่ง — ไม่ใช่แค่บอกว่าความเชื่อเป็นหัวใจ แต่บอกว่าบัญญัตินำไปสู่ 🌓<strong>คำสาป</strong> เลย</p>
+
+<p>ทุกคนที่พึ่งการทำตามบัญญัติ ถือว่าอยู่ใต้คำสาป เพราะพระคัมภีร์ 🔔<strong>เขียนไว้แล้วและยังมีผลอยู่</strong> ว่าใครที่ไม่ทำตามทุกข้อในบัญญัติก็ถูกสาปแช่ง<span class="study-only"><sup><a href="#fn2" id="fnref2">2</a></sup></span> — คำว่า “ทุกข้อ” คือปัญหา เพราะไม่มีใครทำตามบัญญัติได้ครบทุกข้อ พอทำไม่ครบก็ถูกสาป</p>
+
+<p>เปาโลจึงชี้ให้เห็นชัดว่า — ต่อเบื้องพระพักตร์พระเจ้า 🫀<strong>ไม่มีใครชอบธรรมได้</strong>โดยบัญญัติ เพราะพระคัมภีร์ก็บอกไว้แล้วว่า “คนชอบธรรมจะ 🫀<strong>ดำเนินชีวิตอยู่เสมอ</strong>โดยความเชื่อ”<span class="study-only"><sup><a href="#fn3" id="fnref3">3</a></sup></span> ไม่ใช่โดยบัญญัติ</p>
+
+<p>แล้วเปาโลพูดต่อด้วยประโยคที่ฟังดูน่าสับสน — เปาโลบอกว่า “บัญญัติ 🌓<strong>ไม่ได้</strong>เป็นเรื่องของความเชื่อ แต่ใครที่ทำตามก็จะมีชีวิตอยู่โดยสิ่งเหล่านั้น” ฟังเผิน ๆ เหมือนบอกว่าทำตามบัญญัติก็ได้ แต่จริง ๆ เปาโลกำลังชี้ให้เห็นว่าบัญญัติกับความเชื่อเป็นคนละระบบกัน — บัญญัติบอกว่า “ทำได้ก็รอด” แต่ปัญหาคือไม่มีใครทำได้ครบ เปาโลจึงเพิ่งบอกไปข้างต้นว่าทำไม่ครบก็ถูกสาป ดังนั้นทางเดียวที่เหลือคือความเชื่อ</p>
+
+<p>แล้วพระคริสต์ก็ ✅<strong>ไถ่เราครั้งเดียวจบเด็ดขาด</strong> (ἐξηγόρασεν / exēgorasen) จากคำสาปของบัญญัติ — โดยพระองค์เอง 🌓<strong>กลายเป็นคำสาปแทนเรา</strong> เพราะพระคัมภีร์บอกไว้ว่า “ผู้ที่ถูกแขวนบนต้นไม้ก็ถูกสาปแช่ง”<span class="study-only"><sup><a href="#fn4" id="fnref4">4</a></sup></span> — การที่พระคริสต์ถูกตรึงบนไม้กางเขน ก็เปรียบเหมือนถูกแขวนบนต้นไม้ พระองค์จึงรับคำสาปนั้นแทนเราไปแล้ว</p>
+
+<p>ทั้งหมดนี้เพื่ออะไร? — เพื่อพระพรที่พระเจ้าสัญญาไว้กับอับราฮัมจะมาถึงคนต่างชาติอย่างเรา ผ่านทางพระเยซูคริสต์ เพื่อเราจะ ✅<strong>ได้รับพระวิญญาณบริสุทธิ์ตามพระสัญญา</strong> — โดยความเชื่อ</p>
+
+<hr />
+
+<h2 id="บทสรุป">บทสรุป</h2>
+
+<p>เปาโลถามชาวกาลาเทียตรง ๆ ว่าคุณจะโง่ไปถึงไหน — ภาพพระคริสต์ถูกตรึงกางเขน 🔔<strong>ชัดเจนอยู่ต่อหน้าต่อตาแล้วและผลยังคงอยู่</strong> คุณได้รับพระวิญญาณโดยความเชื่อ ไม่ใช่โดยบัญญัติ แล้วจะกลับไป 🌓<strong>ทำให้สมบูรณ์ด้วยเนื้อหนัง</strong>เหรอ? ที่ ✅<strong>ทนทุกข์มากมายมาแล้ว</strong>จะให้สูญเปล่าเหรอ? แล้วเปาโลก็ชี้ไปที่อับราฮัม — ตัวอับราฮัมเอง ✅<strong>เชื่อพระเจ้าครั้งเดียวเด็ดขาด</strong> พระองค์ก็ 🔔<strong>นับว่าชอบธรรมแล้วและผลยังคงอยู่</strong> ดังนั้น 🔁<strong>ให้มั่นใจเลย</strong>ว่าเฉพาะคนที่อาศัยความเชื่อเท่านั้นถึงจะนับว่าเป็นบุตรของอับราฮัม — พระเจ้าวางแผนไว้ตั้งแต่แรกว่าจะให้คนต่างชาติชอบธรรมโดยความเชื่อ แล้วเปาโลก็เปิดอีกมุมว่าคนที่พึ่งบัญญัติอยู่ใต้ 🌓<strong>คำสาป</strong>เพราะไม่มีใครทำครบทุกข้อ แต่พระคริสต์ ✅<strong>ไถ่เราครั้งเดียวจบเด็ดขาด</strong>โดย 🌓<strong>กลายเป็นคำสาปแทนเรา</strong>บนไม้กางเขน — เพื่อพระพรของอับราฮัมจะมาถึงคนต่างชาติ เพื่อเราจะ ✅<strong>ได้รับพระวิญญาณบริสุทธิ์ตามพระสัญญา</strong>โดยความเชื่อ</p>
+
+<hr />
+
+<h2 id="คำอธิษฐาน">คำอธิษฐาน</h2>
+
+<p>พระเจ้าพระบิดา ขอบคุณสรรเสริญพระองค์ที่พระคำชัดเจน — สิ่งที่พระองค์บอกผ่านเปาโลก็คือให้ชาวกาลาเทียคิดได้เองว่าชอบธรรมโดยความเชื่อ ไม่ใช่โดยการทำตามบัญญัติ อับราฮัมก็ชอบธรรมด้วยความเชื่อ พระคริสต์ก็รับคำสาปของบัญญัติแทนเราไปแล้ว</p>
+
+<p>พระองค์เจ้าข้า ผมคิดว่าไม่ใช่โดยความเชื่ออย่างเดียว แต่ความเชื่อเป็นจุดเริ่มต้น — เปาโลเตือนชาวกาลาเทียเพราะพวกเขาจะกลับไปอาศัยการทำตามบัญญัติ แต่ยากอบก็บอกแล้วว่าความเชื่ออย่างเดียวไม่พอ ต้องมีการประพฤติเป็นหลักฐานยืนยันด้วย ขอพระองค์โปรดเมตตาให้เราเป็นผู้ชอบธรรมโดยความเชื่อ และมีการประพฤติเป็นหลักฐานยืนยันความเชื่อนั้น</p>
+
+<p>ขอพระองค์เมตตาให้เราติดสนิทกับพระองค์ ให้รักในพระคำ และให้พระคำถูกเขียนอยู่ในใจของเราทุกวัน อาเมน</p>
+
+<div class="footnotes study-only">
+<hr />
+<p class="footnotes-title">อ้างอิง</p>
+
+<p id="fn1"><a href="#fnref1">1</a> ปฐมกาล 15:6</p>
+<p id="fn2"><a href="#fnref2">2</a> เฉลยธรรมบัญญัติ 27:26</p>
+<p id="fn3"><a href="#fnref3">3</a> ฮาบากุก 2:4</p>
+<p id="fn4"><a href="#fnref4">4</a> เฉลยธรรมบัญญัติ 21:23</p>
+
+</div>
+
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+
+</article>
+
+
+<a href="/nt/galatians/2-11-21/" class="post-nav-float post-nav-prev" aria-label="บทเรียนก่อนหน้า: 2:11-21">
+  <span class="post-nav-arrow"></span>
+</a>
+
+
+<a href="/nt/galatians/3-15-29/" class="post-nav-float post-nav-next" aria-label="บทเรียนถัดไป: 3:15-29">
+  <span class="post-nav-arrow"></span>
+</a>
+
+
+<script>
+window.SITE_BASEURL = "";
+window.SYMBOLS_DATA = [{"emoji":"🫀","code":"A","name":"Greek Present","thai":"เกิดขึ้นต่อเนื่องเป็นวิถีชีวิต — เหมือนหัวใจที่เต้นตลอด ไม่เคยหยุด","anchor":"greek-present"},{"emoji":"▶️","code":"b","name":"Hebrew Imperfect","thai":"การกระทำที่ยังดำเนินอยู่ ไม่จบ — เหมือนกด play แล้วยังไม่ถึงตอนจบ","anchor":"hebrew-imperfect"},{"emoji":"✅","code":"D","name":"Completed","thai":"เสร็จแล้ว ผลลัพธ์เป็นจริง — เหมือนเช็คลิสต์ที่ติ๊กถูกแล้ว","anchor":"completed"},{"emoji":"🔔","code":"G","name":"Greek Perfect","thai":"เสร็จแล้วแต่ผลยังก้องอยู่ — เหมือนระฆังที่ตีแล้วเสียงยังดังก้อง","anchor":"greek-perfect"},{"emoji":"⏪","code":"d","name":"Greek Imperfect","thai":"ย้อนไปดูอดีต — พวกเขาทำสิ่งนี้ซ้ำแล้วซ้ำเล่า ไม่ใช่แค่ครั้งเดียวจบ","anchor":"greek-imperfect"},{"emoji":"📍","code":"H","name":"Historical Present","thai":"ปักหมุดให้คุณอยู่ตรงนั้น — \"คุณอยู่ตรงนี้!\" ขณะเหตุการณ์เกิดขึ้น","anchor":"historical-present"},{"emoji":"🚀","code":"E","name":"Greek Aorist Imperative","thai":"ทำเดี๋ยวนี้! ลงมือเลย! — เหมือนกดปุ่มจรวด ยิงทีเดียว!","anchor":"greek-aorist-imperative"},{"emoji":"🔁","code":"B","name":"Greek Present Imperative","thai":"จงทำสิ่งนี้ต่อไปเรื่อยๆ! — เหมือนกดปุ่ม repeat สั่งให้ทำซ้ำเรื่อยๆ","anchor":"greek-present-imperative"},{"emoji":"🚫","code":"C","name":"Negated Greek Present Imperative","thai":"เลิกทำได้แล้ว! หยุดวนซ้ำ! — หยุดสิ่งที่กำลังทำอยู่","anchor":"negated-greek-present-imperative"},{"emoji":"🙅‍♂️","code":"F","name":"Negated Greek Aorist Imperative","thai":"อย่าทำเด็ดขาด! แม้แต่ครั้งเดียว! — คนยกมือห้าม \"อย่า!\"","anchor":"negated-greek-aorist-imperative"},{"emoji":"🪄","code":"a","name":"Hebrew Hiphil","thai":"ทำให้เกิดขึ้น — เหมือนไม้กายสิทธิ์ที่ทำให้สิ่งใหม่ปรากฏ","anchor":"hebrew-hiphil"},{"emoji":"💥","code":"c","name":"Hebrew Piel","thai":"ทำอย่างเข้มข้น เปลี่ยนสภาพไปเลย — เหมือนแรงระเบิดที่เปลี่ยนทุกอย่าง","anchor":"hebrew-piel"},{"emoji":"↩️","code":"f","name":"Hebrew Hithpael","thai":"ทุ่มเทเต็มหัวใจจากข้างใน — ผลก็วนกลับมาที่ตัวเอง","anchor":"hithpael"},{"emoji":"🎬","code":"g","name":"Hebrew Conjunctive Perfect","thai":"ตรงนี้สำคัญจริงๆ — เรื่องเปลี่ยนทิศทางตรงจุดนี้","anchor":"hebrew-conjunctive-perfect"},{"emoji":"🔗","code":"q","name":"Hebrew Conjunctive Imperfect","thai":"ข้อต่อโซ่เชื่อมเหตุการณ์ — ต่อเรื่องให้ไหลต่อไป","anchor":"conjunctive-imperfect"},{"emoji":"🌓","code":"I","name":"Contrast Emphasis","thai":"สื่อถึงสิ่งตรงข้าม — เหมือนดวงจันทร์ครึ่งสว่างครึ่งมืด","anchor":"contrast-emphasis"},{"emoji":"✨","code":"K","name":"Emphasis","thai":"คำนี้ถูกเน้นเป็นพิเศษ — ทั้งจากบริบทและไวยากรณ์","anchor":"emphasis"}];
+</script>
+
+      
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life · 25 เมษายน 2569 19:12 น.
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js" defer></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>

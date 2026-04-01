@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หนังสืออ้างอิงที่ใช้ในบทเรียน | เล่าประสบการณ์อ่านพระคัมภีร์</title>
+  <meta name="description" content="บทเรียนทุกตอนบน phrakham.life อ้างอิงจากหนังสือวิชาการด้านพระคัมภีร์โดยตรง ไม่ใช่จากการตีความส่วนตัว หน้านี้รวบรวมรายชื่อหนังสือที่ใช้ พร้อมอธิบายสั้น ๆ ว่าแต่ละเล่มคืออะไรและช่วยอะไรในการเขียนบทเรียน
+">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Analytics (GA4) — deferred until after page load to improve LCP -->
+<script>
+window.addEventListener('load', function() {
+  var s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-W3XP4T2FFE';
+  document.head.appendChild(s);
+  s.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W3XP4T2FFE');
+  };
+});
+</script>
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#8B4513">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+<!-- Fonts: self-hosted in assets/fonts/ (Sarabun, Noto Sans Thai, Gentium Plus) -->
+<!-- @font-face rules defined in _sass/custom.scss -->
+<!-- Preload critical fonts to reduce CLS (layout shift from font swap) -->
+<link rel="preload" href="/assets/fonts/sarabun-700-thai.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sarabun-400-thai.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Prevent FOUC: apply saved theme before render -->
+<script>
+(function() {
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+</script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+  <header class="site-header">
+  <div class="header-wrapper">
+    <nav class="site-nav" aria-label="เมนูหลัก">
+      
+        
+          <a href="/" class="nav-link nav-home" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        
+      
+        
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+              บทเรียน ▾
+            </button>
+            <div class="nav-dropdown-content" role="menu">
+              <!-- <a href="/ot/" role="menuitem">พันธสัญญาเดิม</a> -->
+              <a href="/nt/" role="menuitem">พันธสัญญาใหม่</a>
+            </div>
+          </div>
+        
+      
+        
+          <a href="/resources/" class="nav-link">แหล่งเรียนรู้</a>
+        
+      
+        
+          <a href="/about/" class="nav-link">ที่มา</a>
+        
+      
+      <div class="nav-dropdown theme-dropdown">
+        <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="เปลี่ยนธีม">
+          ◐ ▾
+        </button>
+        <div class="nav-dropdown-content" role="menu">
+          <button class="theme-option" data-value="light" role="menuitem">☀️ Light mode</button>
+          <button class="theme-option" data-value="dark" role="menuitem">🌙 Dark mode</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger (mobile) -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+  <div class="mobile-menu-header">
+    <span class="site-title">เล่าประสบการณ์อ่านพระคัมภีร์</span>
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="ปิดเมนู">✕</button>
+  </div>
+
+  
+    
+      <a href="/" class="mobile-nav-link" aria-label="หน้าแรก"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>หน้าแรก</a>
+    
+  
+    
+      <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">บทเรียน ▾</button>
+      <div class="mobile-nav-sub" style="display:none;">
+        <!-- <a href="/ot/">พันธสัญญาเดิม</a> -->
+        <a href="/nt/">พันธสัญญาใหม่</a>
+      </div>
+    
+  
+    
+      <a href="/resources/" class="mobile-nav-link">แหล่งเรียนรู้</a>
+    
+  
+    
+      <a href="/about/" class="mobile-nav-link">ที่มา</a>
+    
+  
+  <button class="mobile-nav-link mobile-dropdown-toggle" aria-expanded="false">ธีม ▾</button>
+  <div class="mobile-nav-sub mobile-theme-sub" style="display:none;">
+    <button class="theme-option" data-value="light">☀️ Light mode</button>
+    <button class="theme-option" data-value="dark">🌙 Dark mode</button>
+  </div>
+</div>
+
+<script src="/assets/js/dark-mode.js" defer></script>
+
+
+  <main id="main-content" class="site-content" aria-label="เนื้อหาหลัก">
+    <div class="wrapper">
+      <article class="post-content" itemscope itemtype="http://schema.org/Article">
+  <header>
+    <h1 itemprop="name">หนังสืออ้างอิงที่ใช้ในบทเรียน</h1>
+    
+    <p class="post-meta-date">สร้าง 22 เมษายน 2569 17:35 น. · อัพเดท 25 เมษายน 2569 18:55 น.</p>
+    
+  </header>
+
+  <div itemprop="articleBody">
+    <p>บทเรียนทุกตอนบน phrakham.life อ้างอิงจากหนังสือวิชาการด้านพระคัมภีร์โดยตรง ไม่ใช่จากการตีความส่วนตัว หน้านี้รวบรวมรายชื่อหนังสือที่ใช้ พร้อมอธิบายสั้น ๆ ว่าแต่ละเล่มคืออะไรและช่วยอะไรในการเขียนบทเรียน</p>
+
+<hr />
+
+<h2 id="พจนานุกรมภาษาเดิม">พจนานุกรมภาษาเดิม</h2>
+
+<h3 id="bdag">BDAG — A Greek-English Lexicon of the New Testament</h3>
+
+<p><strong>Danker, Frederick W., Walter Bauer, William F. Arndt, and F. Wilbur Gingrich.</strong> <em>A Greek-English Lexicon of the New Testament and Other Early Christian Literature.</em> 3rd ed. Chicago: University of Chicago Press, 2000.</p>
+
+<p>พจนานุกรมกรีก-อังกฤษที่เป็นมาตรฐานสำหรับพันธสัญญาใหม่ ให้ความหมาย บริบทการใช้ และข้อมูลไวยากรณ์ของทุกคำในพันธสัญญาใหม่ภาษากรีก เมื่อบทเรียนอธิบายความหมายของคำกรีก ส่วนใหญ่อ้างจากเล่มนี้</p>
+
+<h3 id="halot">HALOT — Hebrew and Aramaic Lexicon of the Old Testament</h3>
+
+<p><strong>Koehler, Ludwig, Walter Baumgartner, and Johann J. Stamm.</strong> <em>The Hebrew and Aramaic Lexicon of the Old Testament.</em> Leiden: Brill, 2001.</p>
+
+<p>พจนานุกรมฮีบรู-อังกฤษที่เป็นมาตรฐานสำหรับพันธสัญญาเดิม ใช้เมื่อบทเรียนอ้างถึงคำฮีบรูหรืออาราเมค</p>
+
+<hr />
+
+<h2 id="ไวยากรณ์">ไวยากรณ์</h2>
+
+<h3 id="wallace">Wallace — Greek Grammar Beyond the Basics</h3>
+
+<p><strong>Wallace, Daniel B.</strong> <em>Greek Grammar Beyond the Basics: An Exegetical Syntax of the New Testament.</em> Grand Rapids: Zondervan, 1996.</p>
+
+<p>ตำราไวยากรณ์กรีกระดับสูงที่อธิบายว่า tense, mood, voice ในภาษากรีกสื่อความหมายอะไร เมื่อบทเรียนอธิบายว่าคำกริยาเป็น imperfect หรือ aorist แล้วมีผลต่อความหมายอย่างไร ส่วนใหญ่อ้างจากเล่มนี้</p>
+
+<h3 id="waltke">Waltke &amp; O'Connor — Introduction to Biblical Hebrew Syntax</h3>
+
+<p><strong>Waltke, Bruce K., and Michael P. O’Connor.</strong> <em>An Introduction to Biblical Hebrew Syntax.</em> Winona Lake: Eisenbrauns, 1990.</p>
+
+<p>ตำราไวยากรณ์ฮีบรูที่ครอบคลุมที่สุด ใช้เมื่อบทเรียนอ้างถึงโครงสร้างไวยากรณ์ในพันธสัญญาเดิม</p>
+
+<hr />
+
+<h2 id="สารานุกรมและพจนานุกรมพระคัมภีร์">สารานุกรมและพจนานุกรมพระคัมภีร์</h2>
+
+<h3 id="abd">ABD — Anchor Bible Dictionary</h3>
+
+<p><strong>Freedman, David Noel, ed.</strong> <em>The Anchor Bible Dictionary.</em> 6 vols. New York: Doubleday, 1992.</p>
+
+<p>สารานุกรมพระคัมภีร์ 6 เล่มที่ครอบคลุมทุกหัวข้อ — บุคคล สถานที่ ประเพณี โบราณคดี เทววิทยา เมื่อบทเรียนให้ข้อมูลเชิงประวัติศาสตร์หรือวัฒนธรรม เช่น เมืองเอเฟซัส หอบรรยายสาธารณะ หรือธรรมเนียมยิว มักอ้างจากเล่มนี้</p>
+
+<hr />
+
+<h2 id="commentary">Commentary</h2>
+
+<h3 id="keener-ivp-nt">Keener — IVP Bible Background Commentary: New Testament</h3>
+
+<p><strong>Keener, Craig S.</strong> <em>The IVP Bible Background Commentary: New Testament.</em> 2nd ed. Downers Grove: IVP Academic, 2014.</p>
+
+<p>Commentary ที่เน้นบริบททางประวัติศาสตร์และวัฒนธรรม อธิบายว่าผู้อ่านยุคแรกจะเข้าใจข้อความนั้นอย่างไร เมื่อบทเรียนอธิบายบริบทเชิงสังคมหรือประเพณีกรีก-โรมัน มักอ้างจากเล่มนี้</p>
+
+<h3 id="walton-ivp-ot">Walton — IVP Bible Background Commentary: Old Testament</h3>
+
+<p><strong>Walton, John H., Victor H. Matthews, and Mark W. Chavalas.</strong> <em>The IVP Bible Background Commentary: Old Testament.</em> Downers Grove: IVP Academic, 2000.</p>
+
+<p>Commentary บริบทพันธสัญญาเดิม ใช้เมื่อบทเรียนอ้างถึงธรรมเนียมหรือประวัติศาสตร์ตะวันออกกลางโบราณ</p>
+
+<hr />
+
+<h2 id="ภูมิศาสตร์และโบราณคดี">ภูมิศาสตร์และโบราณคดี</h2>
+
+<h3 id="freeman">Freeman — The New Manners and Customs of the Bible</h3>
+
+<p><strong>Freeman, James M., and Harold J. Chadwick.</strong> <em>The New Manners and Customs of the Bible.</em> Rev. ed. Gainesville: Bridge-Logos, 1998.</p>
+
+<p>อธิบายวิถีชีวิต ขนบธรรมเนียม และวัฒนธรรมในยุคพระคัมภีร์ ช่วยให้เห็นภาพว่าคนในสมัยนั้นกิน อยู่ ทำงาน และนมัสการอย่างไร</p>
+
+<h3 id="matthews">Matthews — Manners and Customs in the Bible</h3>
+
+<p><strong>Matthews, Victor H.</strong> <em>Manners and Customs in the Bible.</em> 3rd ed. Grand Rapids: Baker Academic, 2006.</p>
+
+<p>คล้ายกับ Freeman แต่เน้นการวิเคราะห์เชิงวิชาการมากกว่า ใช้ประกอบกันเมื่อต้องการข้อมูลเชิงวัฒนธรรมที่ลึกขึ้น</p>
+
+<hr />
+
+<h2 id="แหล่งที่มาเพิ่มเติม--ระบบตรวจสอบไวยากรณ์">แหล่งที่มาเพิ่มเติม — ระบบตรวจสอบไวยากรณ์</h2>
+
+<p>ทุกครั้งที่บทเรียนแสดง emoji กำกับไวยากรณ์ — ใช้หลักการ <strong>“2 แหล่งเชื่อถือได้ตรงกัน”</strong> เพื่อป้องกันความผิดพลาดและการตีความตามใจของ AI</p>
+
+<p>→ ดู<a href="/symbols/#methodology">หลักการ + แหล่งข้อมูล + กระบวนการ</a> ใน หน้าสัญลักษณ์</p>
+
+<p>วัตถุประสงค์: เปลี่ยน ✓/✗ ให้กลายเป็น mechanical verification แทนการพึ่ง AI judgment</p>
+
+  </div>
+</article>
+
+      
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-wrapper">
+    เล่าประสบการณ์อ่านพระคัมภีร์<br>
+    ชวนอ่านพระคัมภีร์ด้วยกัน — ค้นพบสิ่งที่ภาษาเดิมอยากบอกเรา<br>
+    phrakham.life · 25 เมษายน 2569 19:12 น.
+  </div>
+</footer>
+
+
+  <script src="/assets/js/tooltip.js" defer></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}</script>
+</body>
+</html>
