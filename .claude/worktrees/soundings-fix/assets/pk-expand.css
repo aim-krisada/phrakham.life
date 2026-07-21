@@ -1,0 +1,362 @@
+.lx-*/.sym*/.iw/.gflow) mirror the reader's
+   (#pk in index.qmd) but are scoped to .pk-exp so both can coexist until the
+   reader adopts this stylesheet too. Site palette: #8B4513 / #FAF6F0 / #8C7A4E
+   / #E0D6C8 / #2D2A26. */
+
+/* ---- triggers ---- */
+.pk-wlink, .pk-vlink { cursor: pointer; }
+.pk-wlink[aria-expanded="true"], .pk-vlink[aria-expanded="true"] { background: #F7E9C9; border-radius: 3px; box-shadow: 0 0 0 2px #F7E9C9; }
+.pk-vlink .pk-caret { font-size: .8em; display: inline-block; transition: transform .15s; }
+.pk-vlink[aria-expanded="true"] .pk-caret { transform: rotate(180deg); }
+
+/* inline scripture icon written in the prose (the 📖 emoji) — opens the quoted
+   verse in a highlighted box below the paragraph. Plain emoji, NO button
+   background (cleaner in running text). Distinct from word-links (italic translit)
+   and footnote numbers, so the reader can tell "this is Scripture". */
+.pk-verse { text-decoration: none; cursor: pointer; margin: 0 .1em; font-size: .9em; line-height: 1; }
+.pk-verse:hover { opacity: .6; }
+.pk-verse:focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; border-radius: 3px; }
+.pk-verse[aria-expanded="true"] { opacity: .55; }
+
+/* ---- expand wrapper ---- */
+.pk-exp { font-family: 'Noto Sans', 'Noto Sans Thai', 'Noto Sans Hebrew', sans-serif; color: #2D2A26; }
+.pk-exp[hidden] { display: none; }
+
+/* word-detail card, opened below the paragraph */
+.pk-exp .wexp { box-sizing: border-box; width: 100%; margin: .55rem 0 .7rem; border: 1px solid #D8B25A; border-radius: .5rem; background: #FFFDF7; overflow: hidden; line-height: 1.5; }
+.pk-exp .wexp .wd-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; background: #F7E9C9; padding: .4rem .7rem; font-family: 'Noto Sans Thai', sans-serif; font-weight: 700; color: #8B4513; border-bottom: 1px solid #E8D49E; }
+.pk-exp .wexp .wd-head .wd-gk { font-size: 1.15rem; }
+.pk-exp .wexp .wd-head .wd-tr { color: #8C7A4E; font-weight: 400; font-size: .85rem; margin-left: .35rem; }
+.pk-exp .wexp .wd-close { border: none; background: none; cursor: pointer; font-size: 1.2rem; line-height: 1; color: #8C7A4E; padding: 0 .2rem; border-radius: 5px; flex: none; }
+.pk-exp .wexp .wd-close:hover, .pk-exp .wexp .wd-close:focus-visible { background: #E8D49E; color: #75380F; outline: none; }
+.pk-exp .wexp .wd-body { padding: .55rem .8rem; }
+.pk-exp .wd-meta { font-size: .8rem; color: #6B5D45; margin-bottom: .5rem; }
+.pk-exp .wd-meta .wd-k { color: #8C7A4E; }
+.pk-exp .wd-lex .wd-none { color: #A38A5C; font-style: italic; }
+
+/* rendered lexicon content (Abbott-Smith + Strong's) */
+.pk-exp .lx-block { margin: .2rem 0 .6rem; font-size: .9rem; line-height: 1.7; }
+.pk-exp .lx-src { font-family: 'Noto Sans Thai', sans-serif; font-weight: 700; color: #8B4513; font-size: .8rem; margin: .2rem 0 .15rem; }
+.pk-exp .lx-occ { font-size: .8rem; margin-bottom: .3rem; }
+.pk-exp .occ-toggle { border: none; background: none; cursor: pointer; font: inherit; color: #8C7A4E; padding: 0; text-decoration: underline dotted; text-underline-offset: 2px; }
+.pk-exp .occ-toggle:hover { color: #75380F; }
+.pk-exp .occ-caret { font-size: .75em; }
+.pk-exp .occ-refs { margin: .25rem 0 .15rem; line-height: 1.7; color: #8C7A4E; }
+.pk-exp .occ-refs a { color: #75380F; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+.pk-exp .occ-refs[hidden] { display: none; }
+.pk-exp .lx-sense { display: block; margin: .12rem 0; }
+.pk-exp .lx-row { margin: .1rem 0; }
+.pk-exp .lx-k { color: #8C7A4E; font-size: .78rem; margin-right: .25rem; }
+.pk-exp .lx-ref { color: #75380F; white-space: nowrap; }
+
+/* grammar/emphasis symbol section inside the word card */
+.pk-exp .symsec { margin: .1rem 0 .55rem; display: flex; flex-direction: column; gap: .4rem; }
+.pk-exp .symrow { background: #F1EFE8; border-radius: 7px; padding: .45rem .6rem; }
+.pk-exp .symrow .head { display: flex; align-items: center; gap: .4rem; }
+.pk-exp .symrow .head .e { font-size: 1.05rem; }
+.pk-exp .symrow .head .nm { font-weight: 700; font-size: .9rem; color: #2D2A26; font-family: 'Noto Sans Thai', sans-serif; }
+.pk-exp .symrow .srow { font-size: .85rem; color: #5F5E5A; line-height: 1.6; margin-top: .35rem; }
+.pk-exp .symrow .fcap { color: #8B4513; font-weight: 600; }
+.pk-exp .symexp { background: none; border: none; color: #8B4513; font: inherit; font-size: .85rem; cursor: pointer; padding: .35rem 0 0; }
+.pk-exp .symexp:hover { color: #75380F; }
+.pk-exp .symdet { margin-top: 0; }
+.pk-exp .symdet[hidden] { display: none; }
+.pk-exp .symdet .ex { padding-left: .55rem; border-left: 2px solid #D8B25A; }
+.pk-exp .symdet .ex .lbl { color: #8B4513; font-weight: 700; }
+
+/* clickable blue ⓘ linking to the help page */
+.pk-exp .helpi { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; border-radius: 50%; border: 1.5px solid #1D4ED8; color: #1D4ED8; font: italic 700 10px/1 Georgia, serif; text-decoration: none; vertical-align: middle; margin-left: .25rem; }  /* #1D4ED8 ~6:1 (WCAG AA) */
+.pk-exp .helpi:hover { background: #1D4ED8; color: #fff; }
+.pk-exp .helpi:focus-visible { outline: 2px solid #8B4513; outline-offset: 1px; }  /* WCAG 2.4.7 */
+
+/* ---- passage card (footnote reference): original on top, TCV below ---- */
+.pk-exp .pk-vc { margin: .55rem 0 .7rem; border: 1px solid #D8B25A; border-left: 4px solid #8B4513; border-radius: .5rem; background: #FCFAF6; overflow: hidden; }
+.pk-exp .pk-vc-sec { padding: .55rem .8rem; }
+.pk-exp .pk-vc-sec + .pk-vc-sec { border-top: 1px solid #EFE6D6; }
+.pk-exp .pk-vc-lbl { font-family: 'Noto Sans Thai', sans-serif; font-weight: 700; color: #8B4513; font-size: .82rem; margin: 0 0 .35rem; }
+.pk-exp .pk-vc-txt { line-height: 1.75; font-size: 1rem; }
+.pk-exp .pk-vc-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; background: #F7E9C9; padding: .35rem .7rem; }
+.pk-exp .pk-vc-ref { font-family: 'Noto Sans Thai', sans-serif; font-weight: 700; color: #8B4513; font-size: .9rem; }
+.pk-exp .pk-vc-close { border: none; background: none; cursor: pointer; font-size: 1.2rem; line-height: 1; color: #8C7A4E; padding: 0 .2rem; border-radius: 5px; }
+.pk-exp .pk-vc-close:hover, .pk-exp .pk-vc-close:focus-visible { background: #E8D49E; color: #75380F; outline: none; }
+.pk-exp .pk-vc-more { font-size: .8rem; }
+.pk-exp .pk-vc-more a { color: #75380F; }
+/* actions row: "show original" toggle + "read full" link; original collapsed */
+.pk-exp .pk-vc-actions { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; align-items: center; font-size: .85rem; }
+.pk-exp .pk-vc-orig-toggle { border: none; background: none; cursor: pointer; font: inherit; font-size: .85rem; color: #8B4513; padding: 0; text-decoration: underline dotted; text-underline-offset: 2px; }
+.pk-exp .pk-vc-orig-toggle:hover { color: #75380F; }
+.pk-exp .pk-vc-orig-toggle .pk-caret2 { display: inline-block; transition: transform .15s; }
+.pk-exp .pk-vc-orig-toggle[aria-expanded="true"] .pk-caret2 { transform: rotate(180deg); }
+.pk-exp .pk-vc-open { color: #75380F; }
+.pk-exp .pk-vc-orig[hidden] { display: none; }
+
+/* ---- curated Thai-TCV symbol span inside the translation text + its why-card ----
+   Mirrors the reader's #pk .tw / #pk .twexp rules (index.qmd), scoped to .pk-exp so
+   the article verse box shows the SAME tappable symbol card. */
+.pk-exp .tw { cursor: pointer; border-radius: 5px; padding: 0 .06rem; }
+.pk-exp .tw:hover { background: #F0E7D8; }
+.pk-exp .tw:focus-visible { outline: 2px solid #8B4513; outline-offset: 2px; }
+.pk-exp .tw.on { background: #F7E9C9; box-shadow: 0 0 0 2px #D8B25A; }
+.pk-exp .tw .sym { font-size: .78em; margin-left: 1px; white-space: nowrap; }
+.pk-exp .tw.twhint { opacity: .6; }
+.pk-exp .tw.twhint:hover, .pk-exp .tw.twhint.on { opacity: 1; }
+.pk-exp .twexp { background: #F1EFE8; border: 1px solid #E3DAC8; border-radius: 9px; padding: .5rem .7rem; margin: .35rem 0 .2rem; }
+.pk-exp .twexp .wd-head { display: flex; justify-content: space-between; align-items: center; gap: .5rem; margin-bottom: .2rem; }
+.pk-exp .twexp .wd-head .e { font-size: 1.1rem; }
+.pk-exp .twexp .wd-head .nm { font-weight: 700; color: #2D2A26; font-family: 'Noto Sans Thai', sans-serif; }
+.pk-exp .twexp .tw-close { background: none; border: none; font-size: 1.25rem; line-height: 1; color: #8B4513; cursor: pointer; padding: 0 .2rem; }
+.pk-exp .twexp .srow { font-size: .9rem; color: #4A463F; line-height: 1.65; margin-top: .28rem; }
+.pk-exp .twexp .fcap { color: #8B4513; font-weight: 600; }
+
+/* interlinear (shared by the passage card's original section) */
+.pk-exp .gflow { display: flex; flex-wrap: wrap; align-items: flex-start; }
+.pk-exp .gflow.rtl { direction: rtl; }
+.pk-exp .gflow.rtl .iw { margin-left: .05rem; margin-right: .05rem; }
+.pk-exp .gflow.rtl .iw:not(.jn) { margin-left: .42rem; }
+.pk-exp .gflow.rtl .wexp { direction: ltr; text-align: left; }
+.pk-exp .iw { display: inline-flex; flex-direction: column; align-items: center; text-align: center; vertical-align: top; margin: 0 .12rem .28rem; padding: .1rem .22rem; border-radius: 7px; cursor: pointer; }
+.pk-exp .iw:hover { background: #F0E7D8; }
+.pk-exp .iw:focus-visible { outline: 2px solid #8B4513; outline-offset: 2px; }
+.pk-exp .iw.on { background: #F7E9C9; outline: 2px solid #D8B25A; }
+.pk-exp .iw .gkln { display: inline-flex; align-items: center; gap: 1px; line-height: 1.25; }
+.pk-exp .iw .gk { font-size: 1rem; color: #2D2A26; line-height: 1.25; }
+.pk-exp .iw.emph .gk { color: #A33; font-weight: 700; }
+.pk-exp .iw .sym { font-size: .8rem; line-height: 1; display: inline-flex; gap: 1px; }
+.pk-exp .iw .gl { font-size: .72rem; color: #6B5D45; max-width: 13ch; line-height: 1.15; margin-top: .12rem; }
+.pk-exp .iw .st, .pk-exp .iw .mo { display: none; }
+.pk-exp sup.vn { color: #A33; font-weight: 700; font-size: .62em; margin-right: .15em; }
+.pk-exp sup.gvn { align-self: flex-start; margin-top: .2rem; }
+
+/* ---- responsive: everything is single-column and full width already; the
+   interlinear wraps, so nothing scrolls horizontally on phones ---- */
+@media (max-width: 560px) {
+  .pk-exp .iw .gl { max-width: 11ch; }
+}
+
+/* ---- bblfig collapse card ({{< bblfig … collapse=true >}}): a brand summary bar
+   that expands to the figure. Native <details>, brown-on-cream to match the site. ---- */
+.pk-fig { border: 1px solid #E0D6C8; border-radius: .5rem; overflow: hidden; margin: .55rem 0 .9rem; }
+.pk-fig > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: .5rem;
+  background: #FAF6F0; color: #8B4513; font-weight: 600; padding: .6rem .85rem; }
+.pk-fig > summary::-webkit-details-marker { display: none; }
+.pk-fig > summary::after { content: "▾"; margin-left: auto; font-size: .85em; transition: transform .15s; }
+.pk-fig[open] > summary::after { transform: rotate(180deg); }
+.pk-fig > figure { margin: 0; }
+
+/* ---- bblfig inline marker (🗺️ mid-sentence) -> figure card (option 3) ---- */
+.pk-figure { text-decoration: none; cursor: pointer; }
+.pk-figure[aria-expanded="true"] { background: #F7E9C9; border-radius: 4px; box-shadow: 0 0 0 2px #F7E9C9; }
+.pk-exp .pk-fc-img { display: block; width: 100%; height: auto; }
+/* fullscreen zoom affordance (assets/pk-imgview.js): tap the image OR the ⛶ button
+   opens the viewer. Article figures keep filling the column; only the cue is added. */
+.pk-exp .pk-fig-wrap { position: relative; }
+.pk-exp img.pk-zoom { cursor: zoom-in; }
+.pk-exp .pk-zoom-btn { position: absolute; top: 6px; right: 6px; width: 40px; height: 40px; border-radius: 8px; border: 1px solid rgba(255,255,255,.55); background: rgba(20,16,12,.55); color: #fff; font-size: 1.15rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.pk-exp .pk-zoom-btn:hover { background: rgba(20,16,12,.82); }
+.pk-exp .pk-zoom-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.pk-exp .pk-fc-credit { font-size: .78rem; color: #8C7A4E; padding: .4rem .7rem; }
+
+/* ---- auto-map marker (🗺️ after a 📖 verse link) -> accordion card of the verse's
+   maps (thumb + Thai title -> image + refs + credit). Mirrors the reader (index.qmd). ---- */
+.pk-mapmk { text-decoration: none; cursor: pointer; margin: 0 .05rem 0 .1rem; border-radius: 4px; }
+.pk-mapmk:focus-visible { outline: 2px solid #C89B3C; outline-offset: 1px; }
+.pk-mapmk[aria-expanded="true"] { background: #F7E9C9; box-shadow: 0 0 0 2px #F7E9C9; }
+/* Accordion fills its column automatically (containment standard). No fixed
+   max-width — a block div fills the column (~800px, itself capped by the article
+   grid); the SVG diagram (vector) and table (width:100%) fill it, and hi-res map
+   images downscale to fit. max-width:100% is just a belt-and-suspenders cap. */
+.pk-exp .mapexp { margin: .55rem 0 .7rem; border: 1px solid #D8B25A; border-radius: .5rem; background: #FFFDF7; overflow: hidden; max-width: 100%; }
+.pk-exp .mapexp-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; background: #F7E9C9; color: #8B4513; padding: .4rem .7rem; font-family: 'Noto Sans Thai', sans-serif; font-weight: 700; border-bottom: 1px solid #E8D49E; }
+.pk-exp .mapexp-close { border: none; background: none; cursor: pointer; font-size: 1.2rem; line-height: 1; color: #8C7A4E; padding: 0 .2rem; border-radius: 5px; flex: none; }
+.pk-exp .mapexp-close:hover, .pk-exp .mapexp-close:focus-visible { background: #E8D49E; color: #75380F; outline: none; }
+.pk-exp .mapitem { border-top: 1px solid #EEE4CE; }
+.pk-exp .mapitem:first-child { border-top: 0; }
+.pk-exp .mapitem-h { display: flex; align-items: center; gap: .55rem; width: 100%; text-align: left; border: none; background: none; cursor: pointer; padding: .45rem .7rem; font-family: 'Noto Sans Thai', sans-serif; font-size: .95rem; color: #2D2A26; }
+.pk-exp .mapitem-h:hover, .pk-exp .mapitem-h:focus-visible { background: #FBF3DE; outline: none; }
+.pk-exp .mapitem-h img { width: 44px; height: 44px; object-fit: cover; border-radius: 5px; flex: none; background: #EEE; }
+.pk-exp .mapitem-h .nm { flex: 1 1 auto; font-weight: 600; }
+.pk-exp .mapitem-h .cr { flex: none; color: #B08A3C; transition: transform .15s; }
+.pk-exp .mapitem.open .mapitem-h .cr { transform: rotate(90deg); }
+.pk-exp .mapitem-body { padding: 0 .7rem .6rem; }
+.pk-exp .mapitem-body[hidden] { display: none; }
+/* raster maps: cap at natural size (scale down only, never upscale/blur) + centre;
+   SVG diagrams fill (vector stays crisp). Mirrors the reader (index.qmd). */
+.pk-exp .mapitem-body img { display: block; max-width: 100%; width: auto; height: auto; border-radius: 6px; margin: .2rem auto .5rem; }
+.pk-exp .mapitem-body img[src$=".svg"] { width: 100%; }
+.pk-exp .map-tags { display: flex; flex-wrap: wrap; gap: .3rem; margin: .2rem 0; }
+.pk-exp .map-tag { font-size: .78rem; background: #F1E7D3; color: #7A5B1E; border-radius: 999px; padding: .1rem .5rem; }
+.pk-exp .map-credit { color: #8C7A4E; font-size: .78rem; margin-top: .4rem; }
+
+/* ---- inline emoji markers aligned on the Thai text baseline (พอดีกับข้อความ ไม่เหลื่อม)
+   📖 (.pk-verse) · 🗺️/🖼️ (.pk-mapmk) · 🗺️/🖼️ (.pk-figure) — same size + same vertical
+   anchor so a 📖 and a map/figure emoji sitting side by side line up. ---- */
+.pk-verse, .pk-mapmk, .pk-figure { font-size: .95em; line-height: 1; vertical-align: -0.12em; }
+
+/* ---- print / Save as PDF: the "บันทึกเป็น PDF" button expands every card first,
+   so the cards SHOULD print (full document). Just drop their interactive chrome
+   and avoid splitting a card across pages. ---- */
+@media print {
+  .pk-exp { break-inside: avoid; }
+  .pk-exp .wd-close,
+  .pk-exp .pk-vc-close,
+  .pk-exp .mapexp-close,
+  .pk-exp .pk-vc-more,
+  .pk-exp .pk-vc-actions,
+  .pk-caret { display: none !important; }
+  /* NOTE: the original-language interlinear is NOT force-shown here. Only
+     "ขยายทุกส่วน" reveals it (pk-reflections.js un-hides it before printing);
+     "ตามที่เห็นตอนนี้" must print exactly what the reader sees (TCV-only if the
+     "แสดงภาษาเดิม" toggle is collapsed). */
+}
+
+/* Figure accordion table (curated แผนภาพ figures — family tree etc.). Site
+   containment standard: the table WRAPS to fit its column at any width — it
+   never forces horizontal scroll (the overflow-x below is a hidden tier-1
+   backstop only). Scripture-ref links stay on one line (short). */
+.pk-fig-context { border-left: 3px solid #8B4513; background: #FAF6F0; padding: .5rem .85rem; border-radius: 0 6px 6px 0; margin: .5rem 0; }
+.pk-fig-context p { margin: 0; }
+.pk-fig-tbl { overflow-x: auto; margin: .5rem 0; }
+.pk-fig-tbl table { border-collapse: collapse; font-size: .86rem; width: 100%; }
+.pk-fig-tbl th, .pk-fig-tbl td { padding: .4rem .55rem; border-top: 1px solid #E0D6C8; vertical-align: top; text-align: left; }
+.pk-fig-tbl th { border-top: none; border-bottom: 2px solid #E0D6C8; }
+.pk-fig-tbl td:first-child { font-weight: 600; }
+.pk-fig-tbl a { color: #8B4513; text-decoration: none; white-space: nowrap; }
+.pk-fig-tbl a:hover, .pk-fig-tbl a:focus { text-decoration: underline; }
+.pk-fig-note { font-size: .8rem; color: #8C7A4E; margin-top: .35rem; }
+
+/* ================================================================= NUMERAL MARKER VOCABULARY
+   Switched on per article by `marker-style: numeral` in the front matter, which makes
+   etl/versechips.lua rewrite the 📖 chips to `[21]` and add `pk-numeral` to <html>.
+   เล่าประสบการณ์ pages only — the study/reader page keeps emoji in every case.
+
+   Four families, told apart by SHAPE and POSITION, never by colour (SC 1.4.1 —
+   all four are the same brown #8B4513 on #FFFFFF, 7.10:1):
+     ข้อพระคัมภีร์  [23]        square brackets, ON the baseline   -> verse card below the ¶
+     เชิงอรรถ        raised 1   raised, dotted underline, no brackets -> note card below the ¶
+     คำภาษาเดิม      the word   dotted underline, NO numeral        -> word card below the ¶
+     ออกนอกหน้า      ชื่อ ↗      bordered pill                        -> leaves the page
+   Measurements + colour-vision simulations: dev/reflection-page-numerals/findings.md. */
+
+.pk-numeral a.pk-verse.pk-vnum {
+  position: relative; display: inline-block; color: #8B4513; text-decoration: none;
+  font-family: 'Noto Sans', sans-serif; font-size: .78em; font-weight: 600;
+  line-height: 1; vertical-align: baseline; margin: 0 .06em; letter-spacing: .01em;
+  white-space: nowrap; opacity: 1;
+}
+/* SC 2.5.8 — the GLYPH stays small (that is the whole point) while the TAP TARGET is
+   inflated to 24x24 by a transparent pseudo-element centred on the mark. */
+.pk-numeral a.pk-verse.pk-vnum::before,
+.pk-numeral a.footnote-ref::before {
+  content: ''; position: absolute; left: 50%; width: 24px; height: 24px;
+  transform: translate(-50%, -50%);
+}
+.pk-numeral a.pk-verse.pk-vnum::before { top: 50%; }
+.pk-numeral a.pk-verse.pk-vnum:hover { color: #75380F; background: #F3E7D2; border-radius: 3px; opacity: 1; }
+.pk-numeral a.pk-verse.pk-vnum:focus-visible { outline: 2px solid #8B4513; outline-offset: 2px; border-radius: 3px; }
+.pk-numeral a.pk-verse.pk-vnum[aria-expanded="true"] { background: #F7E9C9; border-radius: 3px; box-shadow: 0 0 0 2px #F7E9C9; opacity: 1; }
+
+/* เชิงอรรถ — raised, dotted underline, no brackets. The inflated box is re-centred
+   onto the LINE BOX (`50% + .55em`); centring it on the raised glyph pushed the box up
+   into the line above and collided with the marker there (measured 14.4px apart at 375). */
+.pk-numeral a.footnote-ref { position: relative; text-decoration: underline dotted 1px; text-underline-offset: 2px; }
+.pk-numeral a.footnote-ref::before { top: calc(50% + .55em); }
+.pk-numeral a.footnote-ref:hover { background: #F3E7D2; border-radius: 3px; }
+
+/* คำภาษาเดิม — the word itself is the marker: dotted underline, no glyph added. */
+.pk-numeral a.pk-wlink { text-decoration: underline dotted 1px; text-underline-offset: 3px; }
+
+/* ออกนอกหน้า — the ONLY action that costs the reader their place gets the loudest,
+   most explicit shape: a bordered pill with ↗. (Inverse of the old vocabulary, where
+   the emoji shouted on the cheapest actions — proposal.md §3c.) */
+.pk-numeral a.pk-study-ref { border: 1px solid #D8B25A; border-radius: 999px; }
+
+/* The full four-shape key moved OFF the article to the guide (help.html#markers),
+   since it is not main content (P'Aim, 25-Jul-2026). What stays is one discreet,
+   quiet line — the site's standard circled-i badge — so a first-time reader can
+   still reach the key. Unobtrusive by design: small, muted, one line. */
+.pk-marker-help { display: flex; align-items: center; gap: .35rem; margin: -.2rem 0 1.6rem;
+  font-size: .8rem; line-height: 1.6; color: #8C7A4E; }
+.pk-marker-help a:not(.helpi) { color: #8C7A4E; text-decoration: underline dotted 1px; text-underline-offset: 3px; }
+.pk-marker-help a:not(.helpi):hover { color: #75380F; }
+/* circled-i badge, same skin as `.pk-exp .helpi` and the study page (#1D4ED8 ~6:1, WCAG AA) */
+.pk-marker-help .helpi { display: inline-flex; align-items: center; justify-content: center;
+  width: 15px; height: 15px; flex: none; border-radius: 50%; border: 1.5px solid #1D4ED8; color: #1D4ED8;
+  font: italic 700 10px/1 Georgia, serif; text-decoration: none; }
+.pk-marker-help .helpi:hover { background: #1D4ED8; color: #fff; }
+.pk-marker-help .helpi:focus-visible { outline: 2px solid #8B4513; outline-offset: 1px; }
+
+/* ============================================================== END-OF-SECTION FIGURE STRIP
+   One hero figure inline per H2; the rest live here, at the section boundary
+   (proposal.md §3b/§4). Existence stays visible and searchable — each item is named
+   in plain Thai — only the ~600px of rendering is deferred until the reader asks.
+   Items are real a.pk-figure links, so the existing expand + print engines drive them. */
+.pk-figstrip { margin: 1.3rem 0 1.7rem; padding-top: .55rem; border-top: 1px solid #E0D6C8; }
+.pk-figstrip-hd { font-family: 'Noto Sans Thai', sans-serif; font-size: .8rem; color: #8C7A4E; margin-bottom: .45rem; }
+.pk-figstrip-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.pk-figstrip-item, .pk-figstrip-item.pk-figure, .pk-figstrip-item.pk-mapmk {
+  display: flex; align-items: center; gap: .55rem; flex: 1 1 17rem; min-width: 0; max-width: 100%;
+  min-height: 44px; box-sizing: border-box; padding: .35rem .6rem .35rem .35rem;
+  border: 1px solid #E0D6C8; border-radius: 10px; background: #FCFAF6;
+  color: #2D2A26; text-decoration: none; cursor: pointer;
+  font-family: 'Noto Sans Thai', sans-serif; font-size: .87rem; line-height: 1.45;
+  vertical-align: baseline;
+}
+.pk-figstrip-item:hover { background: #F0E7D8; border-color: #D8B25A; }
+.pk-figstrip-item:focus-visible { outline: 2px solid #8B4513; outline-offset: 2px; }
+.pk-figstrip-item[aria-expanded="true"] { background: #F7E9C9; border-color: #D8B25A; }
+.pk-figstrip-item[aria-expanded="true"] .pk-figstrip-cr { transform: rotate(90deg); }
+.pk-figstrip-th { width: 58px; height: 44px; flex: none; object-fit: cover; border-radius: 6px;
+  background: #F1E7D3; border: 1px solid #EFE4D2; }
+.pk-figstrip-nm { min-width: 0; overflow-wrap: anywhere; }
+.pk-figstrip-cr { flex: none; margin-left: auto; color: #8C7A4E; font-size: .8em; transition: transform .15s; }
+@media (max-width: 575.98px) { .pk-figstrip-item { flex: 1 1 100%; } }
+
+/* PRINT — the strip stays on paper as a named, thumbnailed index, so a plain Ctrl+P
+   never silently loses a figure the screen offered. "บันทึกเป็น PDF / ขยายทุกส่วน"
+   additionally expands each item into a full card (pk-reflections.js printFigure),
+   which then prints below the strip. The marker key prints too, so a bracketed
+   number and a raised number still resolve where nothing can be clicked. */
+@media print {
+  .pk-figstrip-item { break-inside: avoid; background: none; }
+  .pk-figstrip-cr { display: none; }
+}
+
+/* ========================================================== FIGURE ACCORDION (one component)
+   `figure-style: accordion` in the front matter. EVERY figure on the page is the
+   same native <details>; the only authored difference is `open` — one per H2
+   (quota, not an author judgement call). Two states of one control, not two
+   components.
+
+   The <summary> is a slim, tasteful HEADER that stays at the TOP of the figure in
+   BOTH states: the figure's real Thai name on the left, a state chevron on the
+   right (▸ shut, ▾ open). Clicking it TOGGLES open↔closed both ways — it is the one
+   obvious, always-visible control. When open, the image + caption + credit render
+   directly below it; when shut, only the header row remains. This deliberately
+   trades the old "no chrome when open" ideal for a control a reader can always find
+   and close instantly — the earlier build demoted the summary to a tiny line at the
+   BOTTOM when open, so a reader who clicked the image (not a toggle) could never
+   collapse it again (the reported "เปิดภาพแล้ว ยังยุบภาพไม่ได้"). Native <details>
+   is kept, so keyboard + a11y are free and the header IS the toggle target.
+
+   Existence is never hidden — Ctrl+F finds "แผนที่ ครีต → คาวดา" whether open or shut. */
+.pk-figacc { margin: .55rem 0 1.15rem; border: 0; background: none; padding: 0; }
+/* Flex is applied ONLY to an OPEN figure. A CLOSED <details> must keep its NATIVE
+   display so the browser's built-in collapse (hide everything but the summary) runs —
+   that path works on every engine that supports <details> at all. Overriding `display`
+   on the <details> element itself removes it from that native path and makes the closed
+   state depend SOLELY on `::details-content { content-visibility: hidden }`, a pseudo
+   shipped only in Chrome 121+ / Safari 18.4+. On any older engine the figure then never
+   collapses. When OPEN every child is visible anyway, so flex-column just stacks the
+   header (first in DOM) above the body without touching the closed-state mechanism. */
+.pk-figacc[open] { display: flex; flex-direction: column; }
+
+/* --- HEADER (the <summary>): one slim chip, SAME skin and SAME position (top) in
+   both states, so the toggle never moves under the reader's cursor. Only the chevron
+   rotates and the thumbnail drops when open (the real image is right below). --- */
+.pk-figacc > summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; gap: .55rem; min-height: 44px;
+  box-sizing: border-box; padding: .35rem .6rem .35rem .35rem;
+  border: 1px solid #E0D6C8; border-radius: 10px; background: #FCFAF6;
+  color: #2D2A26; font-size: .87rem; line-height: 1.45;
+  font-family: 'Noto Sans Thai',sans-serif}.pk-figacc>summary::-webkit-details-marker{display:none}.pk-figacc>summary:hover{background:#f0e7d8;border-color:#d8b25a}.pk-figacc>summary:focus-visible{outline:2px solid #8b4513;outline-offset:2px;border-radius:10px}.pk-figacc-body{margin:0}.pk-figacc-body>figure{margin:0}.pk-figacc-th{width:58px;height:44px;flex:none;object-fit:cover;border-radius:6px;background:#f1e7d3;border:1px solid #efe4d2}.pk-figacc-nm{min-width:0;overflow-wrap:anywhere}.pk-figacc-cr{flex:none;margin-left:auto;color:#8b4513;font-size:.9em;transition:transform .15s}.pk-figacc[open]>summary{margin-bottom:.55rem}.pk-figacc[open] .pk-figacc-th{display:none}.pk-figacc[open] .pk-figacc-cr{transform:rotate(90deg)}.pk-figacc-body.pk-exp>.pk-fig-wrap>img.pk-zoom{display:block;max-width:100%;width:auto;height:auto;margin:.2rem auto .4rem;border-radius:6px}.pk-figacc-body.pk-exp>.pk-fig-wrap>img.pk-zoom[src$=".svg"]{width:100%}@media print{.pk-figacc{display:block;break-inside:avoid}.pk-figacc>summary{display:none !important}.pk-figacc::details-content{content-visibility:visible !important;block-size:auto !important}.pk-figacc-body{display:block !important}}

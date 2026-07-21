@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="570" viewBox="0 0 900 570" role="img" aria-labelledby="sa-title sa-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+  <title id="sa-title">สมอน้ำ (สมอลอย) ทำงานอย่างไร (กิจการ 27:17)</title>
+  <desc id="sa-desc">แผนภาพอธิบายสมอน้ำ ลูกเรือหย่อนเครื่องถ่วงคล้ายผ้าใบขนาดใหญ่ลงในทะเลบนเชือกยาวจากหัวเรือ เมื่อน้ำเข้าไปอยู่ในผ้าใบจะเกิดแรงต้าน ช่วยชะลอไม่ให้ลมพัดเรือไปเร็วเกินไป และช่วยให้หัวเรือหันตั้งรับคลื่นลม เส้นประคือช่วงเชือกและเครื่องถ่วงที่อยู่ใต้น้ำ</desc>
+
+  <!-- sea -->
+  <path d="M0,280 Q56,268 112,280 T224,280 T336,280 T448,280 T560,280 T672,280 T784,280 T896,280 L900,280 L900,570 L0,570 Z" fill="#AEC3C7"/>
+  <g stroke="#8ea3a6" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M60,318 q22,-9 44,0"/><path d="M180,336 q22,-9 44,0"/>
+    <path d="M470,320 q22,-9 44,0"/><path d="M600,338 q22,-9 44,0"/><path d="M720,320 q22,-9 44,0"/>
+  </g>
+
+  <!-- wind (blows from the left against the bow) -->
+  <g stroke="#7d8f92" stroke-width="1.8" fill="none" stroke-dasharray="8 7">
+    <path d="M70,70 H360"/><path d="M70,104 H320"/><path d="M70,138 H300"/>
+  </g>
+  <g fill="#7d8f92">
+    <path d="M360,70 l-16,-6 6,15 Z" transform="rotate(90 360 70)"/>
+    <path d="M320,104 l-16,-6 6,15 Z" transform="rotate(90 320 104)"/>
+    <path d="M300,138 l-16,-6 6,15 Z" transform="rotate(90 300 138)"/>
+  </g>
+  <text x="70" y="52" font-size="16" font-weight="700" fill="#5f7377">ลมพายุพัดปะทะหัวเรือ</text>
+
+  <!-- ======= ship (bow left, stern right) — same silhouette as fig.1 ======= -->
+  <g transform="translate(346,31) scale(0.72)">
+    <path d="M214,268 C206,254 220,246 234,254 L620,254 C644,254 662,258 668,270
+             C682,312 640,380 452,386 C322,390 250,360 226,312 C218,296 214,282 214,268 Z"
+          fill="#F0E4CE" stroke="#6d3610" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="234" y1="254" x2="620" y2="254" stroke="#6d3610" stroke-width="2.6"/>
+    <path d="M232,272 L622,272 M240,292 C360,300 520,298 630,290" fill="none" stroke="#d8c39a" stroke-width="1.8"/>
+    <path d="M636,254 C660,222 660,190 636,176 C623,169 612,176 618,189 C629,193 634,206 627,223 C621,239 630,250 638,254"
+          fill="none" stroke="#8B4513" stroke-width="3.4" stroke-linecap="round"/>
+    <line x1="256" y1="254" x2="214" y2="196" stroke="#8B4513" stroke-width="3.4" stroke-linecap="round"/>
+    <line x1="612" y1="264" x2="650" y2="356" stroke="#8B4513" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M642,342 l18,9 -8,18 -18,-9 Z" fill="#F0E4CE" stroke="#6d3610" stroke-width="2.6"/>
+    <line x1="422" y1="254" x2="422" y2="118" stroke="#8B4513" stroke-width="3.6" stroke-linecap="round"/>
+    <line x1="372" y1="150" x2="472" y2="150" stroke="#8B4513" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M376,152 C402,162 442,162 468,152 L466,198 C442,206 402,206 378,198 Z"
+          fill="#FAF6F0" stroke="#8C7A4E" stroke-width="2.2"/>
+    <path d="M400,157 L398,200 M422,159 L422,202 M444,157 L446,200" stroke="#e3d7bd" stroke-width="1.6"/>
+  </g>
+  <text x="662" y="74" font-size="15" font-weight="700" fill="#4a3a20" text-anchor="middle">หัวเรือตั้งรับคลื่นลม</text>
+  <text x="662" y="95" font-size="14" fill="#6b5c3d" text-anchor="middle">เรือถูกลมพัดถอยไปช้า ๆ</text>
+
+  <!-- ======= sea anchor system ======= -->
+  <!-- rode: solid above water, dashed below -->
+  <path d="M500,232 L466,280" fill="none" stroke="#5a4a2a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M466,280 L372,404" fill="none" stroke="#6f5d38" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+  <!-- shroud lines converging to the rode knot -->
+  <g stroke="#6f5d38" stroke-width="2" fill="none" stroke-dasharray="5 5">
+    <path d="M300,380 L372,404"/><path d="M286,426 L372,404"/><path d="M300,472 L372,404"/>
+  </g>
+  <circle cx="372" cy="404" r="4" fill="#6f5d38"/>
+  <!-- canopy (open mouth toward the ship) -->
+  <path d="M300,378 C262,398 262,454 300,474" fill="#FAF6F0" stroke="#6d3610" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M300,378 C290,410 290,442 300,474" fill="none" stroke="#c9b485" stroke-width="1.6"/>
+  <path d="M282,398 C274,420 274,432 282,454" fill="none" stroke="#c9b485" stroke-width="1.6"/>
+  <!-- water flowing / drag arrow (resistance opposing the drift) -->
+  <path d="M270,426 H214" fill="none" stroke="#3f5457" stroke-width="3" stroke-linecap="round"/>
+  <path d="M214,426 l18,-7 -7,16 Z" fill="#3f5457"/>
+
+  <!-- labels -->
+  <text x="250" y="512" font-size="18" font-weight="700" fill="#8B4513" text-anchor="middle">สมอน้ำ</text>
+  <text x="250" y="533" font-size="13.5" fill="#6b5c3d" text-anchor="middle">(เครื่องถ่วงคล้ายผ้าใบ)</text>
+  <text x="150" y="452" font-size="13.5" font-weight="700" fill="#3f5457" text-anchor="middle">แรงต้านของน้ำ</text>
+  <text x="452" y="352" font-size="13.5" fill="#4a3a20" text-anchor="middle" transform="rotate(37 452 352)">เชือกยาวหย่อนจากหัวเรือ</text>
+
+  <!-- explanatory footer (own rows) -->
+  <text x="450" y="548" font-size="14" fill="#4a3a20" text-anchor="middle">น้ำที่ค้างในผ้าใบทำให้เกิดแรงต้าน — ช่วยชะลอไม่ให้ลมพัดเรือไปเร็วเกินไป และให้หัวเรือหันสู้คลื่น</text>
+  <text x="450" y="566" font-size="12.5" fill="#6b5c3d" text-anchor="middle">เส้นประ = ช่วงเชือกและเครื่องถ่วงที่อยู่ใต้น้ำ</text>
+</svg>

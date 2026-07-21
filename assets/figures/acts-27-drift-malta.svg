@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="578" viewBox="0 0 960 578" role="img" aria-labelledby="dm-title dm-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+<title id="dm-title">แผนที่ภาพรวม กิจการ 27:27 — เรือถูกพายุซัดจากเกาะครีตถึงเกาะมอลตาสิบสี่วันสิบสี่คืน</title>
+<desc id="dm-desc">แผนที่ทะเลเมดิเตอร์เรเนียนตอนกลางแบบมุมกว้าง แสดงเกาะครีตทางขวา เกาะมอลตาทางซ้าย เกาะซิซิลีและอิตาลีมุมบนซ้าย และชายฝั่งแอฟริกาเหนือกับอ่าวเซอร์ทิสด้านล่าง เส้นสีแดงคือเส้นทางที่เรือถูกพายุซัดลอยจากเกาะคาวดาใต้เกาะครีต โค้งลงไปทางใต้เฉียดอ่าวเซอร์ทิสแล้ววกขึ้นไปยังเกาะมอลตา เส้นสีเขียวประคือแผนเดิมที่ตั้งใจจะมุ่งไปอิตาลี ลูกศรสีน้ำเงินคือลมพายุที่พัดมาจากทิศตะวันออกเฉียงเหนือ กล่องข้อความทางขวาสรุปว่าเรือลอยราวสิบสี่วัน ระยะประมาณ 480 ไมล์ทะเล หรือราว 880 กิโลเมตร ด้วยอัตราราว 1.5 นอต ตามการคำนวณของเจมส์ สมิธ เส้นทางที่ลอยเป็นการสันนิษฐานของนักวิชาการ ไม่ใช่เส้นทางที่พระคัมภีร์บันทึกไว้</desc>
+<rect x="0" y="0" width="960" height="578" fill="#FAF6F0"/>
+<clipPath id="dmclip"><rect x="30" y="58" width="900" height="442" rx="4"/></clipPath>
+<g clip-path="url(#dmclip)">
+<rect x="30" y="58" width="900" height="442" fill="#A7D0E4"/>
+<g stroke="#8fbdd4" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5">
+<path d="M96,150 q16,-7 32,0"/>
+<path d="M120,430 q16,-7 32,0"/>
+<path d="M770,150 q16,-7 32,0"/>
+<path d="M470,470 q16,-7 32,0"/>
+<path d="M840,300 q16,-7 32,0"/>
+</g>
+<!-- NORTH AFRICA (Libya) — coast dips south at the Gulf of Sidra (Syrtis) -->
+<path d="M 30,342 C 70,346 110,354 142,362 C 180,368 216,363 250,374 C 300,392 335,432 364,448 C 393,432 415,412 432,403 C 465,388 490,374 511,366 C 570,356 640,349 700,346 C 780,342 860,340 930,340 L 930,500 L 30,500 Z" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 30,342 C 70,346 110,354 142,362 C 180,368 216,363 250,374 C 300,392 335,432 364,448 C 393,432 415,412 432,403 C 465,388 490,374 511,366 C 570,356 640,349 700,346 C 780,342 860,340 930,340 L 930,354 C 860,354 780,356 700,360 C 640,363 570,370 511,380 C 490,388 465,402 432,417 C 415,426 393,446 364,462 L 364,448 C 335,432 300,392 250,374 C 216,363 180,368 142,376 C 110,368 70,360 30,356 Z" fill="#DDC48A" opacity="0.35"/>
+<!-- SICILY -->
+<path d="M 110,107 C 150,98 210,90 245,90 C 250,96 248,120 235,140 C 228,152 222,160 225,165 C 210,160 175,150 150,138 C 130,128 108,115 110,107 Z" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.6" stroke-linejoin="round"/>
+<!-- ITALY (toe) at top edge -->
+<path d="M 243,92 C 246,78 251,66 260,58 L 288,58 C 284,72 276,84 266,93 C 258,97 249,97 243,92 Z" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.6" stroke-linejoin="round"/>
+<!-- CRETE (right) -->
+<path d="M 582,240 C 600,230 630,227 655,228 C 675,229 695,234 700,240 C 701,245 690,250 668,253 C 640,257 610,260 598,258 C 588,256 578,250 578,245 C 577,242 579,241 582,240 Z" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.6" stroke-linejoin="round"/>
+<!-- CAUDA / Gavdos (small island south of Crete) -->
+<circle cx="606" cy="263" r="4.4" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.4"/>
+<!-- MALTA -->
+<path d="M 192,203 C 196,199 205,200 206,205 C 207,210 200,213 194,211 C 189,209 188,205 192,203 Z" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.5" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#dmclip)">
+<!-- WIND arrows (NE gale blowing SW) -->
+<g stroke="#1F6FC4" stroke-width="5" stroke-linecap="round" fill="#1F6FC4" opacity="0.9">
+<line x1="690" y1="140" x2="634" y2="196"/>
+<path d="M634,196 L648.1,190.3 L639.7,181.9 Z"/>
+<line x1="548" y1="150" x2="492" y2="206"/>
+<path d="M492,206 L506.1,200.3 L497.7,191.9 Z"/>
+</g>
+<!-- INTENDED plan toward Italy (green dashed) -->
+<path d="M 600,240 C 500,200 370,168 258,130" fill="none" stroke="#FFFFFF" stroke-width="7.2" stroke-linecap="butt" stroke-linejoin="round" opacity="0.85" stroke-dasharray="13 9"/>
+<path d="M 600,240 C 500,200 370,168 258,130" fill="none" stroke="#4C9A2A" stroke-width="4.0" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="13 9"/>
+<path d="M258,130 L273.2,128.8 L269.4,140.2 Z" fill="#4C9A2A"/>
+<!-- Fair Havens -> Phoenix intent (short green dashed) -->
+<path d="M 637,258 C 624,252 610,246 601,242" fill="none" stroke="#4C9A2A" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 6"/>
+<path d="M601,242 L611.6,240.5 L606.8,251.5 Z" fill="#4C9A2A"/>
+<!-- STORM DRIFT (red) — Cauda -> south toward Syrtis -> up to Malta -->
+<path d="M 606,263 C 545,300 470,350 405,368 C 340,382 250,320 200,212" fill="none" stroke="#FFFFFF" stroke-width="8.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+<path d="M 606,263 C 545,300 470,350 405,368 C 340,382 250,320 200,212" fill="none" stroke="#CE2F26" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M200,212 L213.1,223.5 L200.5,229.5 Z" fill="#CE2F26"/>
+<!-- Syrtis danger connector (dashed) -->
+<path d="M 405,375 L 378,432" fill="none" stroke="#B5502A" stroke-width="2" stroke-dasharray="6 5" opacity="0.85"/>
+</g>
+<!-- PLACE MARKERS + LABELS -->
+<circle cx="606" cy="263" r="3.4" fill="#2D2A26"/>
+<text x="613" y="259" font-size="15" font-weight="700" fill="#2D2A26" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">เกาะคาวดา</text>
+<text x="613" y="275" font-size="11.5" font-weight="600" fill="#B5502A" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" stroke-linejoin="round">จุดเริ่มลอย · ข้อ 16</text>
+<circle cx="200" cy="207" r="4.8" fill="#CE2F26"/>
+<text x="192" y="197" font-size="16.5" font-weight="800" fill="#2D2A26" text-anchor="end" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.4" stroke-linejoin="round">เกาะมอลตา</text>
+<text x="192" y="213" font-size="11.5" font-weight="600" fill="#CE2F26" text-anchor="end" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" stroke-linejoin="round">จุดขึ้นฝั่ง · 28:1</text>
+<circle cx="637" cy="258" r="3.2" fill="#2D2A26"/>
+<text x="642" y="246" font-size="11.5" font-weight="600" fill="#7A6A4E" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="2.8" stroke-linejoin="round">ท่างาม</text>
+<text x="596" y="235" font-size="11.5" font-weight="600" fill="#7A6A4E" text-anchor="end" paint-order="stroke" stroke="#FAF6F0" stroke-width="2.8" stroke-linejoin="round">ฟีนิกซ์</text>
+<text x="640" y="221" font-size="18" font-weight="800" fill="#7A6A4E" text-anchor="middle" letter-spacing="0.8" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.4" stroke-linejoin="round">เกาะครีต</text>
+<text x="176" y="150" font-size="16" font-weight="700" fill="#7A6A4E" text-anchor="middle" letter-spacing="0.6" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">เกาะซิซิลี</text>
+<text x="285" y="74" font-size="15" font-weight="700" fill="#7A6A4E" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">อิตาลี · สู่กรุงโรม</text>
+<text x="150" y="430" font-size="17" font-weight="700" fill="#7A6A4E" text-anchor="middle" letter-spacing="0.8" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.4" stroke-linejoin="round">แอฟริกาเหนือ (ลิเบีย)</text>
+<text x="368" y="470" font-size="14" font-weight="700" fill="#7A6A4E" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">อ่าวเซอร์ทิส</text>
+<text x="343" y="418" font-size="11.5" font-weight="700" fill="#B5502A" text-anchor="end" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" stroke-linejoin="round">หวั่นถูกซัดเข้าสันดอน · ข้อ 17</text>
+<!-- Sea name from v.27 -->
+<text x="486" y="258" font-size="16" font-weight="600" fill="#4E7A99" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">ทะเลอาเดรีย</text>
+<text x="486" y="274" font-size="11" font-weight="500" fill="#4E7A99" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="2.8" stroke-linejoin="round">(เมดิเตอร์เรเนียนตอนกลาง · ข้อ 27)</text>
+<!-- Route labels -->
+<text x="372" y="150" font-size="13.5" font-weight="700" fill="#4C9A2A" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" stroke-linejoin="round">แผนเดิม · มุ่งอิตาลี</text>
+<text x="470" y="345" font-size="14" font-weight="800" fill="#CE2F26" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">ถูกพายุซัด · สิบสี่คืน</text>
+<text x="470" y="361" font-size="10.5" font-weight="600" fill="#B5502A" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="2.6" stroke-linejoin="round">* เส้นทางที่ลอยเป็นการสันนิษฐาน</text>
+<text x="700" y="150" font-size="13" font-weight="700" fill="#1F6FC4" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" stroke-linejoin="round">ลมพายุ</text>
+<text x="700" y="166" font-size="11" font-weight="600" fill="#1F6FC4" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="2.8" stroke-linejoin="round">(ตะวันออกเฉียงเหนือ)</text>
+<!-- STAT BOX (right, red border — ties to the red drift line) -->
+<g>
+<rect x="704" y="256" width="222" height="168" rx="9" fill="#FFFFFF" stroke="#CE2F26" stroke-width="1.6" opacity="0.98"/>
+<text x="715" y="278" font-size="13.5" font-weight="800" fill="#CE2F26" text-anchor="start">ลอยตามพายุ 14 วัน 14 คืน</text>
+<text x="715" y="294" font-size="11" font-weight="600" fill="#7A6A4E" text-anchor="start">กิจการ 27:27 – 28:1</text>
+<line x1="715" y1="302" x2="915" y2="302" stroke="#E4D8C4" stroke-width="1"/>
+<text x="715" y="322" font-size="12" font-weight="700" fill="#2D2A26" text-anchor="start">ระยะ ≈ 480 ไมล์ทะเล (≈ 880 กม.)</text>
+<text x="715" y="342" font-size="12" font-weight="700" fill="#2D2A26" text-anchor="start">อัตรา ≈ 1.5 นอต ≈ 36 ไมล์ทะเล/วัน</text>
+<text x="715" y="362" font-size="11.5" font-weight="600" fill="#2D2A26" text-anchor="start">“ถูกซัดไป” ไม่ใช่แล่นเอง (ข้อ 15, 17)</text>
+<line x1="715" y1="372" x2="915" y2="372" stroke="#E4D8C4" stroke-width="1"/>
+<text x="715" y="391" font-size="11" font-weight="600" fill="#7A6A4E" text-anchor="start">คำนวณแบบ James Smith,</text>
+<text x="715" y="406" font-size="10.5" font-weight="500" fill="#7A6A4E" text-anchor="start" font-style="italic">The Voyage and Shipwreck of</text>
+<text x="715" y="419" font-size="10.5" font-weight="500" fill="#7A6A4E" text-anchor="start" font-style="italic">St Paul (1848)</text>
+</g>
+<!-- Title -->
+<text x="30" y="34" font-size="21" font-weight="800" fill="#2D2A26">ถูกพายุซัดจากเกาะครีตถึงเกาะมอลตา — สิบสี่วันสิบสี่คืน</text>
+<text x="30" y="52" font-size="13.5" font-weight="600" fill="#7A6A4E">กิจการ 27:27 · ภาพรวมการลอยตามพายุข้ามทะเลอาเดรีย</text>
+<!-- North arrow -->
+<g transform="translate(902,86)"><path d="M0,-16 L6,10 L0,4 L-6,10 Z" fill="#2D2A26"/><text x="0" y="26" font-size="12" font-weight="700" fill="#2D2A26" text-anchor="middle">N</text></g>
+<!-- Scale bar (200 km) -->
+<g stroke="#2D2A26" stroke-width="2.2"><line x1="806" y1="480" x2="899.4" y2="480"/><line x1="806" y1="475" x2="806" y2="485"/><line x1="899.4" y1="475" x2="899.4" y2="485"/></g>
+<text x="852.7" y="472" font-size="12" font-weight="600" fill="#2D2A26" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="3">200 กม.</text>
+<!-- Legend -->
+<rect x="30" y="509" width="900" height="46" rx="8" fill="#FFFFFF" stroke="#BE9E5E" stroke-width="1" opacity="0.96"/>
+<line x1="48" y1="532" x2="88" y2="532" stroke="#CE2F26" stroke-width="4.6" stroke-linecap="round"/><path d="M88,532 l-9,-5 l0,10 Z" fill="#CE2F26"/><text x="96" y="537" font-size="14" font-weight="600" fill="#2D2A26">ถูกพายุซัด (สันนิษฐาน)</text>
+<line x1="316" y1="532" x2="356" y2="532" stroke="#4C9A2A" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 7"/><path d="M356,532 l-9,-5 l0,10 Z" fill="#4C9A2A"/><text x="364" y="537" font-size="14" font-weight="600" fill="#2D2A26">แผนเดิม · มุ่งอิตาลี</text>
+<line x1="592" y1="532" x2="632" y2="532" stroke="#1F6FC4" stroke-width="5" stroke-linecap="round"/><path d="M632,532 l-9,-5 l0,10 Z" fill="#1F6FC4"/><text x="640" y="537" font-size="14" font-weight="600" fill="#2D2A26">ลมพายุ (ตะวันออกเฉียงเหนือ)</text>
+</svg>

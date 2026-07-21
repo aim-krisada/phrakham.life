@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="578" viewBox="0 0 960 578" role="img" aria-labelledby="rm-title rm-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+<title id="rm-title">แผนที่เส้นทางเรือ กิจการ 27:4-8 — ลมพัดเรือหลงจากแผนเดิม</title>
+<desc id="rm-desc">แผนที่แสดงมุมทะเลระหว่างเมืองมิราในเอเชียไมเนอร์ เกาะครีต และท่างาม ลูกศรสีน้ำเงินคือลมที่พัดต้านลงมาจากทิศตะวันตกเฉียงเหนือ เส้นสีเขียวคือเส้นทางปกติที่ตั้งใจจะแล่นไปทางตะวันตกเหนือเกาะครีต เส้นสีแดงคือเส้นทางที่ไปจริงซึ่งถูกลมพัดให้เบนลงไปด้านใต้ของเกาะครีต ผ่านแหลมสัลโมเนไปยังท่างามใกล้เมืองลาเซีย เส้นสีดำคือเส้นทางเปาโลที่แล่นมาจากซีซารียาผ่านไซดอน</desc>
+<rect x="0" y="0" width="960" height="578" fill="#FAF6F0"/>
+<clipPath id="mapclip"><rect x="30" y="58" width="894" height="435" rx="4"/></clipPath>
+<g clip-path="url(#mapclip)">
+<rect x="30" y="58" width="894" height="435" fill="#A7D0E4"/>
+<g stroke="#8fbdd4" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.55">
+<path d="M82.0,429.2 q16,-7 32,0"/>
+<path d="M227.5,442.0 q16,-7 32,0"/>
+<path d="M123.6,147.6 q16,-7 32,0"/>
+<path d="M664.1,314.0 q16,-7 32,0"/>
+<path d="M747.2,403.6 q16,-7 32,0"/>
+<path d="M165.1,474.0 q16,-7 32,0"/>
+</g>
+<path d="M 430.2 32.4 C 349.8 44.1 441.8 87.9 447.9 102.8 C 453.9 117.7 460.3 116.2 466.6 122.0 C 472.8 127.8 477.1 132.2 485.3 137.4 C 493.4 142.5 506.1 153.6 515.4 152.7 C 524.8 151.9 527.9 133.1 541.4 132.2 C 554.9 131.4 578.7 143.8 596.5 147.6 C 614.4 151.4 632.9 152.1 648.5 155.3 C 664.1 158.5 678.5 160.2 690.1 166.8 C 701.7 173.4 706.9 189.2 718.1 195.0 C 729.4 200.7 746.2 199.7 757.6 201.4 C 769.1 203.1 772.9 205.6 786.7 205.2 C 800.6 204.8 823.1 202.0 840.8 198.8 C 858.5 195.6 877.9 190.3 892.8 186.0 C 907.7 181.7 923.9 198.8 930.2 173.2 C 936.4 147.6 1013.5 55.9 930.2 32.4 C 846.8 8.9 510.6 20.7 430.2 32.4 Z" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 118.4 294.8 C 122.5 288.8 140.0 296.7 154.7 298.6 C 169.5 300.6 189.4 304.4 206.7 306.3 C 224.0 308.2 244.8 308.0 258.7 310.2 C 272.5 312.3 277.4 318.3 289.9 319.1 C 302.3 320.0 319.3 314.6 333.5 315.3 C 347.7 315.9 363.3 320.8 375.1 323.0 C 386.9 325.1 400.7 324.0 404.2 328.1 C 407.7 332.1 402.0 341.9 395.9 347.3 C 389.8 352.6 380.3 357.1 367.8 360.1 C 355.4 363.1 336.6 363.1 321.1 365.2 C 305.5 367.3 285.5 370.7 274.3 372.9 C 263.0 375.0 263.9 378.4 253.5 378.0 C 243.1 377.6 226.6 373.7 211.9 370.3 C 197.2 366.9 178.8 363.5 165.1 357.5 C 151.4 351.5 137.6 344.9 129.8 334.5 C 122.0 324.0 114.2 300.8 118.4 294.8 Z" fill="#E7D4A3" stroke="#BE9E5E" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 430.2 32.4 C 349.8 44.1 441.8 87.9 447.9 102.8 C 453.9 117.7 460.3 116.2 466.6 122.0 C 472.8 127.8 477.1 132.2 485.3 137.4 C 493.4 142.5 506.1 153.6 515.4 152.7 C 524.8 151.9 527.9 133.1 541.4 132.2 C 554.9 131.4 578.7 143.8 596.5 147.6 C 614.4 151.4 632.9 152.1 648.5 155.3 C 664.1 158.5 678.5 160.2 690.1 166.8 C 701.7 173.4 706.9 189.2 718.1 195.0 C 729.4 200.7 746.2 199.7 757.6 201.4 C 769.1 203.1 772.9 205.6 786.7 205.2 C 800.6 204.8 823.1 202.0 840.8 198.8 C 858.5 195.6 877.9 190.3 892.8 186.0 C 907.7 181.7 923.9 198.8 930.2 173.2 C 936.4 147.6 1013.5 55.9 930.2 32.4 C 846.8 8.9 510.6 20.7 430.2 32.4 Z" fill="#DDC48A" opacity="0.35" transform="translate(0,-14)"/>
+</g>
+<g clip-path="url(#mapclip)">
+<path d="M 930.2 256.4 C 923.9 253.6 907.7 245.5 892.8 239.8 C 877.9 234.0 856.4 227.0 840.8 221.8 C 825.2 216.7 808.2 211.8 799.2 209.0 C 790.2 206.3 788.8 205.8 786.7 205.2 " fill="none" stroke="#FFFFFF" stroke-width="6.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/><path d="M 930.2 256.4 C 923.9 253.6 907.7 245.5 892.8 239.8 C 877.9 234.0 856.4 227.0 840.8 221.8 C 825.2 216.7 808.2 211.8 799.2 209.0 C 790.2 206.3 788.8 205.8 786.7 205.2 " fill="none" stroke="#2D2A26" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M786.7,205.2 L798.4,202.5 L794.9,214.0 Z" fill="#2D2A26"/>
+<path d="M 528.9 170.6 C 515.1 171.5 477.0 169.4 445.8 175.8 C 414.6 182.2 378.2 200.5 341.8 209.0 C 305.5 217.6 263.9 222.3 227.5 227.0 C 191.1 231.7 153.9 235.1 123.6 237.2 C 93.2 239.3 58.6 239.3 45.6 239.8 " fill="none" stroke="#FFFFFF" stroke-width="7.2" stroke-linecap="butt" stroke-linejoin="round" opacity="0.85" stroke-dasharray="13 9"/><path d="M 528.9 170.6 C 515.1 171.5 477.0 169.4 445.8 175.8 C 414.6 182.2 378.2 200.5 341.8 209.0 C 305.5 217.6 263.9 222.3 227.5 227.0 C 191.1 231.7 153.9 235.1 123.6 237.2 C 93.2 239.3 58.6 239.3 45.6 239.8 " fill="none" stroke="#4C9A2A" stroke-width="4.0" stroke-linecap="butt" stroke-linejoin="round" stroke-dasharray="13 9"/>
+<path d="M45.6,239.8 L56.6,232.9 L57.1,245.9 Z" fill="#4C9A2A"/>
+<path d="M 786.7 205.2 C 771.5 203.3 726.1 197.7 695.3 193.7 C 664.4 189.6 628.6 182.6 601.7 180.9 C 574.9 179.2 554.1 174.5 534.1 183.4 C 514.2 192.4 496.5 217.6 482.2 234.6 C 467.8 251.7 459.1 271.5 447.9 285.8 C 436.6 300.1 427.1 307.2 414.6 320.4 C 402.1 333.6 388.6 354.1 373.0 365.2 C 357.4 376.3 337.5 382.3 321.1 387.0 C 304.6 391.7 285.4 393.8 274.3 393.4 C 263.2 392.9 257.8 385.9 254.5 384.4 " fill="none" stroke="#FFFFFF" stroke-width="7.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/><path d="M 786.7 205.2 C 771.5 203.3 726.1 197.7 695.3 193.7 C 664.4 189.6 628.6 182.6 601.7 180.9 C 574.9 179.2 554.1 174.5 534.1 183.4 C 514.2 192.4 496.5 217.6 482.2 234.6 C 467.8 251.7 459.1 271.5 447.9 285.8 C 436.6 300.1 427.1 307.2 414.6 320.4 C 402.1 333.6 388.6 354.1 373.0 365.2 C 357.4 376.3 337.5 382.3 321.1 387.0 C 304.6 391.7 285.4 393.8 274.3 393.4 C 263.2 392.9 257.8 385.9 254.5 384.4 " fill="none" stroke="#CE2F26" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254.5,384.4 L268.5,383.0 L262.7,395.8 Z" fill="#CE2F26"/>
+<g stroke="#1F6FC4" stroke-width="5" stroke-linecap="round" fill="#1F6FC4" opacity="0.92">
+<line x1="191.1" y1="115.6" x2="235.8" y2="175.8"/>
+<path d="M235.8,175.8 L224.8,171.0 L234.4,163.8 Z" fill="#1F6FC4"/>
+<line x1="295.1" y1="109.2" x2="339.8" y2="169.4"/>
+<path d="M339.8,169.4 L328.7,164.6 L338.4,157.4 Z" fill="#1F6FC4"/>
+<line x1="383.4" y1="109.2" x2="425.0" y2="166.8"/>
+<path d="M425.0,166.8 L414.0,161.9 L423.8,154.9 Z" fill="#1F6FC4"/>
+</g>
+</g>
+<text x="838.4" y="113.2" font-size="17" font-weight="700" fill="#7A6A4E" text-anchor="middle" letter-spacing="1.2" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">เอเชียไมเนอร์</text>
+<text x="848.8" y="161.8" font-size="13.5" font-weight="600" fill="#7A6A4E" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">แคว้นลีเซีย</text>
+<text x="251.1" y="334.5" font-size="17" font-weight="700" fill="#7A6A4E" text-anchor="middle" letter-spacing="1.0" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">เกาะครีต</text>
+<text x="162.7" y="452.4" font-size="16" font-weight="500" fill="#4E7A99" text-anchor="middle" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">ทะเลเมดิเตอร์เรเนียน</text>
+<circle cx="786.7" cy="205.2" r="4.2" fill="#2D2A26"/>
+<text x="796.7" y="211.2" font-size="17" font-weight="700" fill="#2D2A26" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">มิรา</text>
+<text x="796.7" y="227.2" font-size="12" font-weight="500" fill="#7A6A4E" text-anchor="start" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">Myra</text>
+<circle cx="515.4" cy="160.4" r="4.6" fill="#CE2F26"/>
+<text x="525.4" y="156.4" font-size="16" font-weight="700" fill="#2D2A26" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">คนีดัส</text>
+<text x="525.4" y="172.4" font-size="12" font-weight="500" fill="#7A6A4E" text-anchor="start" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">Cnidus</text>
+<circle cx="404.2" cy="328.1" r="4.2" fill="#2D2A26"/>
+<text x="414.2" y="325.1" font-size="15" font-weight="700" fill="#2D2A26" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">แหลมสัลโมเน</text>
+<text x="414.2" y="341.1" font-size="11.5" font-weight="500" fill="#7A6A4E" text-anchor="start" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">Salmone</text>
+<circle cx="254.5" cy="378.0" r="4.8" fill="#CE2F26"/>
+<text x="243.5" y="384.0" font-size="16" font-weight="700" fill="#2D2A26" text-anchor="end" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">ท่างาม</text>
+<text x="243.5" y="400.0" font-size="11.5" font-weight="500" fill="#7A6A4E" text-anchor="end" font-style="italic" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">Fair Havens</text>
+<circle cx="274.3" cy="383.1" r="3" fill="#2D2A26"/>
+<text x="281.3" y="399.1" font-size="12.5" font-weight="600" fill="#7A6A4E" text-anchor="start" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">ลาเซีย</text>
+<text x="917.9" y="294.8" font-size="12.5" font-weight="700" fill="#7A6A4E" text-anchor="end" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">จากซีซารียา · ไซดอน</text>
+<text x="917.9" y="310.8" font-size="11" font-weight="500" fill="#7A6A4E" text-anchor="end" paint-order="stroke" stroke="#FAF6F0" stroke-width="3.2" stroke-linejoin="round">(เลียบด้านปลอดลมของไซปรัส)</text>
+<g aria-hidden="true">
+<circle cx="786.7" cy="205.2" r="8.5" fill="none" stroke="#CE2F26" stroke-width="2"/>
+<line x1="786.7" y1="213.7" x2="786.7" y2="220" stroke="#CE2F26" stroke-width="1.6"/>
+<rect x="556" y="220" width="236" height="64" rx="8" fill="#FFFFFF" stroke="#CE2F26" stroke-width="1.4" opacity="0.97"/>
+<text x="674" y="240" font-size="13.5" font-weight="700" fill="#CE2F26" text-anchor="middle">เปลี่ยนเรือที่นี่ · ข้อ 6</text>
+<text x="674" y="259" font-size="12" font-weight="600" fill="#2D2A26" text-anchor="middle">ขึ้นเรือขนส่งเมืองอเล็กซานเดรีย</text>
+<text x="674" y="276" font-size="12" font-weight="600" fill="#2D2A26" text-anchor="middle">ที่กำลังมุ่งสู่อิตาลี</text>
+</g>
+<text x="159.9" y="157.8" font-size="13.5" font-weight="700" fill="#1F6FC4" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" text-anchor="middle">ลมพัดต้าน (ตะวันตกเฉียงเหนือ)</text>
+<text x="227.5" y="211.3" font-size="13.5" font-weight="700" fill="#4C9A2A" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" text-anchor="middle">แผนเดิม · เหนือเกาะครีต (ที่ไม่ได้ไป)</text>
+<text x="409.4" y="413.8" font-size="13.5" font-weight="700" fill="#CE2F26" paint-order="stroke" stroke="#FAF6F0" stroke-width="3" text-anchor="middle">ที่ไปจริง · ใต้เกาะครีต</text>
+<text x="30" y="34" font-size="21" font-weight="800" fill="#2D2A26">แผนเดิม กับ ที่ไปจริง — เมื่อลมเปลี่ยนเส้นทางเรือ</text>
+<text x="30" y="52" font-size="13.5" font-weight="600" fill="#7A6A4E">กิจการ 27:4-8 · มุมทะเล มิรา–เกาะครีต–ท่างาม</text>
+<g transform="translate(920,44)"><path d="M0,-16 L6,10 L0,4 L-6,10 Z" fill="#2D2A26"/><text x="0" y="26" font-size="12" font-weight="700" fill="#2D2A26" text-anchor="middle">N</text></g>
+<g stroke="#2D2A26" stroke-width="2.2"><line x1="790.6" y1="473.2" x2="905.9" y2="473.2"/><line x1="790.6" y1="468.2" x2="790.6" y2="478.2"/><line x1="905.9" y1="468.2" x2="905.9" y2="478.2"/></g>
+<text x="848.3" y="465.2" font-size="12" font-weight="600" fill="#2D2A26" text-anchor="middle" paint-order="stroke" stroke="#FAF6F0" stroke-width="3">100 กม.</text>
+<rect x="30" y="503.1999999999998" width="894" height="48" rx="8" fill="#FFFFFF" stroke="#BE9E5E" stroke-width="1" opacity="0.96"/>
+<line x1="46" y1="527.1999999999998" x2="80" y2="527.1999999999998" stroke="#1F6FC4" stroke-width="5" stroke-linecap="round"/><path d="M80,527.1999999999998 l-9,-5 l0,10 Z" fill="#1F6FC4"/><text x="94" y="532.1999999999998" font-size="14.5" font-weight="600" fill="#2D2A26">ลม (พัดต้าน)</text>
+<line x1="210" y1="527.1999999999998" x2="250" y2="527.1999999999998" stroke="#4C9A2A" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 7"/><path d="M250,527.1999999999998 l-9,-5 l0,10 Z" fill="#4C9A2A"/><text x="258" y="532.1999999999998" font-size="14.5" font-weight="600" fill="#2D2A26">แผนเดิม (ที่ไม่ได้ไป)</text>
+<line x1="450" y1="527.1999999999998" x2="490" y2="527.1999999999998" stroke="#CE2F26" stroke-width="4" stroke-linecap="round"/><path d="M490,527.1999999999998 l-9,-5 l0,10 Z" fill="#CE2F26"/><text x="498" y="532.1999999999998" font-size="14.5" font-weight="600" fill="#2D2A26">ที่ไปจริง (ผลจากลม)</text>
+<line x1="680" y1="527.1999999999998" x2="720" y2="527.1999999999998" stroke="#2D2A26" stroke-width="4" stroke-linecap="round"/><path d="M720,527.1999999999998 l-9,-5 l0,10 Z" fill="#2D2A26"/><text x="728" y="532.1999999999998" font-size="14.5" font-weight="600" fill="#2D2A26">เส้นทางเปาโล</text>
+</svg>

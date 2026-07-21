@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="sd-title sd-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+  <title id="sd-title">การหยั่งน้ำ — ลึก 20 วา แล้วเหลือ 15 วา (กิจการ 27:28)</title>
+  <desc id="sd-desc">ภาพตัดขวางใต้ทะเลกลางคืน พื้นทะเลลาดตื้นขึ้นไปทางฝั่งด้านซ้าย ลมพัดเรือจากขวาไปซ้ายเข้าหาฝั่ง ครั้งแรกลูกเรือหย่อนสายดิ่งลงวัดได้ลึก 20 วา (ประมาณ 37 เมตร) ต่อมาไม่นานหย่อนอีกครั้งเหลือ 15 วา (ประมาณ 27 เมตร) ความลึกที่ลดลงคือสัญญาณว่าแผ่นดินกำลังใกล้เข้ามา เส้นประคือช่วงสายดิ่งที่อยู่ใต้น้ำ</desc>
+
+  <!-- ======= night sky ======= -->
+  <rect x="0" y="0" width="900" height="180" fill="#EFE7DC"/>
+  <g fill="#c9b98f">
+    <circle cx="120" cy="52" r="1.5"/><circle cx="206" cy="34" r="1.3"/><circle cx="268" cy="72" r="1.4"/>
+    <circle cx="520" cy="40" r="1.5"/><circle cx="668" cy="70" r="1.3"/><circle cx="748" cy="36" r="1.5"/>
+  </g>
+  <circle cx="836" cy="52" r="20" fill="#F3EAD3" stroke="#d9c79a" stroke-width="1.6"/>
+  <circle cx="828" cy="46" r="20" fill="#EFE7DC"/>
+
+  <!-- ======= sea ======= -->
+  <rect x="0" y="180" width="900" height="380" fill="#AEC3C7"/>
+  <g stroke="#8ea3a6" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M180,232 q22,-9 44,0"/><path d="M400,244 q22,-9 44,0"/>
+    <path d="M700,232 q22,-9 44,0"/><path d="M820,262 q22,-9 44,0"/>
+  </g>
+  <line x1="0" y1="180" x2="900" y2="180" stroke="#8ea3a6" stroke-width="2"/>
+  <text x="874" y="200" font-size="14" fill="#5f7377" text-anchor="end">ผิวน้ำ</text>
+
+  <!-- ======= wind pushes the ship toward shore (right -> left) ======= -->
+  <g stroke="#7d8f92" stroke-width="1.8" fill="none" stroke-dasharray="8 7">
+    <path d="M790,60 H560"/><path d="M790,94 H600"/>
+  </g>
+  <g fill="#7d8f92">
+    <path d="M560,60 l16,-6 -6,15 Z" transform="rotate(-90 560 60)"/>
+    <path d="M600,94 l16,-6 -6,15 Z" transform="rotate(-90 600 94)"/>
+  </g>
+  <text x="790" y="128" font-size="16" font-weight="700" fill="#5f7377" text-anchor="end">ลมพัดเรือเข้าหาฝั่ง</text>
+
+  <!-- ======= sea floor + beach (one shape: above y=180 is beach, below is sea bed) ======= -->
+  <path d="M0,104 L46,142 Q78,180 108,232 Q132,272 150,300 Q228,340 300,372
+           Q378,394 450,412 Q528,428 600,436 Q684,448 760,455 Q832,462 900,466
+           L900,560 L0,560 Z"
+        fill="#E4D2AE" stroke="#cbb589" stroke-width="2.4" stroke-linejoin="round"/>
+  <g fill="#8f8069" stroke="#6f6350" stroke-width="1.6">
+    <path d="M46,140 l22,-14 20,12 -7,18 -27,3 Z"/>
+    <path d="M14,88 l17,-11 15,11 -6,13 -20,2 Z"/>
+  </g>
+  <text x="66" y="256" font-size="15" font-weight="700" fill="#6b5c3d">ฝั่ง</text>
+  <text x="46" y="278" font-size="13.5" fill="#6b5c3d">(มืดจนยังมองไม่เห็น)</text>
+  <text x="430" y="486" font-size="14" fill="#6b5c3d" text-anchor="middle">พื้นทะเล — ลาดตื้นขึ้นไปทางฝั่ง</text>
+
+  <!-- ======= sounding ①  (earlier, deeper: 20 fathoms ≈ 37 m) ======= -->
+  <!-- hull, bow to the left, just aft of the lead line -->
+  <g transform="translate(537.2,93.6) scale(0.34)">
+    <path d="M214,268 C206,254 220,246 234,254 L620,254 C644,254 662,258 668,270
+             C682,312 640,380 452,386 C322,390 250,360 226,312 C218,296 214,282 214,268 Z"
+          fill="#F0E4CE" stroke="#6d3610" stroke-width="7" stroke-linejoin="round"/>
+    <line x1="234" y1="254" x2="620" y2="254" stroke="#6d3610" stroke-width="6"/>
+    <path d="M636,254 C660,222 660,190 636,176 C623,169 612,176 618,189 C629,193 634,206 627,223 C621,239 630,250 638,254"
+          fill="none" stroke="#8B4513" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- lead line: solid above water, dashed below -->
+  <line x1="600" y1="174" x2="600" y2="180" stroke="#5b4a2c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="600" y1="180" x2="600" y2="428" stroke="#5b4a2c" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 6"/>
+  <path d="M594,428 h12 l-3,16 h-6 Z" fill="#5b4a2c" stroke="#3f3320" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- depth bracket -->
+  <g stroke="#3f5457" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <line x1="562" y1="184" x2="562" y2="432"/>
+    <line x1="552" y1="184" x2="572" y2="184"/><line x1="552" y1="432" x2="572" y2="432"/>
+  </g>
+  <text x="544" y="288" font-size="20" font-weight="700" fill="#4a3a20" text-anchor="end">① ครั้งแรก</text>
+  <text x="544" y="318" font-size="24" font-weight="700" fill="#8B4513" text-anchor="end">20 วา</text>
+  <text x="544" y="344" font-size="16" fill="#6b5c3d" text-anchor="end">≈ 37 เมตร</text>
+
+  <!-- ======= sounding ②  (a little later, shallower: 15 fathoms ≈ 27 m) ======= -->
+  <g transform="translate(237.2,93.6) scale(0.34)">
+    <path d="M214,268 C206,254 220,246 234,254 L620,254 C644,254 662,258 668,270
+             C682,312 640,380 452,386 C322,390 250,360 226,312 C218,296 214,282 214,268 Z"
+          fill="#F0E4CE" stroke="#6d3610" stroke-width="7" stroke-linejoin="round"/>
+    <line x1="234" y1="254" x2="620" y2="254" stroke="#6d3610" stroke-width="6"/>
+    <path d="M636,254 C660,222 660,190 636,176 C623,169 612,176 618,189 C629,193 634,206 627,223 C621,239 630,250 638,254"
+          fill="none" stroke="#8B4513" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <line x1="300" y1="174" x2="300" y2="180" stroke="#5b4a2c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="300" y1="180" x2="300" y2="364" stroke="#5b4a2c" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 6"/>
+  <path d="M294,364 h12 l-3,16 h-6 Z" fill="#5b4a2c" stroke="#3f3320" stroke-width="1.6" stroke-linejoin="round"/>
+  <g stroke="#3f5457" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <line x1="262" y1="184" x2="262" y2="368"/>
+    <line x1="252" y1="184" x2="272" y2="184"/><line x1="252" y1="368" x2="272" y2="368"/>
+  </g>
+  <text x="244" y="252" font-size="20" font-weight="700" fill="#4a3a20" text-anchor="end">② ต่อมาไม่นาน</text>
+  <text x="244" y="282" font-size="24" font-weight="700" fill="#8B4513" text-anchor="end">15 วา</text>
+  <text x="244" y="308" font-size="16" fill="#6b5c3d" text-anchor="end">≈ 27 เมตร</text>
+
+  <!-- ======= the point: ① -> ② the water is getting shallower ======= -->
+  <path d="M556,150 H344" fill="none" stroke="#3f5457" stroke-width="3" stroke-linecap="round"/>
+  <path d="M344,150 l18,-7 -7,16 Z" fill="#3f5457"/>
+  <text x="450" y="140" font-size="15" font-weight="700" fill="#3f5457" text-anchor="middle">หยั่งซ้ำอีกครั้ง</text>
+
+  <!-- ======= footer ======= -->
+  <rect x="0" y="512" width="900" height="48" fill="#EFE7DC" opacity="0.92"/>
+  <text x="450" y="536" font-size="17" font-weight="700" fill="#4a3a20" text-anchor="middle">ตื้นขึ้น 5 วา (≈ 9 เมตร) ในเวลาไม่นาน — สัญญาณว่าเรือกำลังถูกซัดเข้าหาแผ่นดิน</text>
+  <text x="450" y="554" font-size="13.5" fill="#6b5c3d" text-anchor="middle">1 วา (ὀργυιά) ≈ 1.83 เมตร คือระยะช่วงแขนกางของคน · เส้นประ = ช่วงสายดิ่งที่อยู่ใต้น้ำ</text>
+</svg>

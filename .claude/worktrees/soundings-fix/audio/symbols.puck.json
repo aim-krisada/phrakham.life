@@ -1,0 +1,287 @@
+{
+  "v": 1,
+  "article": "symbols",
+  "version": "tcv",
+  "voice": "th-TH-Chirp3-HD-Puck",
+  "rateHz": 24000,
+  "pauseMs": 350,
+  "generated": "2026-07-21",
+  "audio": "symbols.puck.mp3",
+  "duration": 321.82,
+  "textHash": "sha256:15716595fc983a0b",
+  "segs": [
+    {
+      "i": 0,
+      "t": 0.0,
+      "d": 1.88,
+      "h": "sha256:09ae9223a481b9e9",
+      "domHash": "sha256:09ae9223a481b9e9"
+    },
+    {
+      "i": 1,
+      "t": 2.23,
+      "d": 3.04,
+      "h": "sha256:9660583f2ad7e5a2",
+      "domHash": "sha256:9660583f2ad7e5a2"
+    },
+    {
+      "i": 2,
+      "t": 5.62,
+      "d": 2.24,
+      "h": "sha256:cfb9430dfd76bc4c",
+      "domHash": "sha256:cfb9430dfd76bc4c"
+    },
+    {
+      "i": 3,
+      "t": 8.21,
+      "d": 14.8,
+      "h": "sha256:bf2a1c097a34decd",
+      "domHash": "sha256:bf2a1c097a34decd"
+    },
+    {
+      "i": 4,
+      "t": 23.36,
+      "d": 13.56,
+      "h": "sha256:a5d7047f031465d3",
+      "domHash": "sha256:a5d7047f031465d3"
+    },
+    {
+      "i": 5,
+      "t": 37.27,
+      "d": 4.12,
+      "h": "sha256:e12fde44502b3eba",
+      "domHash": "sha256:e12fde44502b3eba"
+    },
+    {
+      "i": 6,
+      "t": 41.74,
+      "d": 4.36,
+      "h": "sha256:8ce3b8e4149ded3e",
+      "domHash": "sha256:8ce3b8e4149ded3e"
+    },
+    {
+      "i": 7,
+      "t": 46.45,
+      "d": 11.68,
+      "h": "sha256:7c7e7f39ea1cd617",
+      "domHash": "sha256:7c7e7f39ea1cd617"
+    },
+    {
+      "i": 8,
+      "t": 58.48,
+      "d": 9.08,
+      "h": "sha256:ea894267cb2a49cf",
+      "domHash": "sha256:ea894267cb2a49cf"
+    },
+    {
+      "i": 9,
+      "t": 67.91,
+      "d": 8.08,
+      "h": "sha256:63c0c5fdd3e6d310",
+      "domHash": "sha256:63c0c5fdd3e6d310"
+    },
+    {
+      "i": 10,
+      "t": 76.34,
+      "d": 2.04,
+      "h": "sha256:a8043a9b66ff40a6",
+      "domHash": "sha256:a8043a9b66ff40a6"
+    },
+    {
+      "i": 11,
+      "t": 78.73,
+      "d": 7.56,
+      "h": "sha256:cc3b0849b8450a16",
+      "domHash": "sha256:cc3b0849b8450a16"
+    },
+    {
+      "i": 12,
+      "t": 86.64,
+      "d": 13.36,
+      "h": "sha256:4ebe63e35a4afa56",
+      "domHash": "sha256:4ebe63e35a4afa56"
+    },
+    {
+      "i": 13,
+      "t": 100.35,
+      "d": 6.44,
+      "h": "sha256:7148f72ec4f89424",
+      "domHash": "sha256:7148f72ec4f89424"
+    },
+    {
+      "i": 14,
+      "t": 107.14,
+      "d": 8.52,
+      "h": "sha256:e9aa27b6566824a7",
+      "domHash": "sha256:e9aa27b6566824a7"
+    },
+    {
+      "i": 15,
+      "t": 116.01,
+      "d": 17.12,
+      "h": "sha256:bac83ba720040e32",
+      "domHash": "sha256:bac83ba720040e32"
+    },
+    {
+      "i": 16,
+      "t": 133.48,
+      "d": 13.36,
+      "h": "sha256:5d67c4bfdc6a4402",
+      "domHash": "sha256:5d67c4bfdc6a4402"
+    },
+    {
+      "i": 17,
+      "t": 147.19,
+      "d": 3.52,
+      "h": "sha256:60dd774687f065f1",
+      "domHash": "sha256:60dd774687f065f1"
+    },
+    {
+      "i": 18,
+      "t": 151.06,
+      "d": 14.56,
+      "h": "sha256:12d3562bdf44b9fc",
+      "domHash": "sha256:12d3562bdf44b9fc"
+    },
+    {
+      "i": 19,
+      "t": 165.97,
+      "d": 13.76,
+      "h": "sha256:050533fbf2615a75",
+      "domHash": "sha256:050533fbf2615a75"
+    },
+    {
+      "i": 20,
+      "t": 180.08,
+      "d": 15.2,
+      "h": "sha256:9ae0e922df660bd9",
+      "domHash": "sha256:489234fabcdbcc31"
+    },
+    {
+      "i": 21,
+      "t": 195.63,
+      "d": 10.68,
+      "h": "sha256:51bad5235f11d0b3",
+      "domHash": "sha256:e719470386f2203e"
+    },
+    {
+      "i": 22,
+      "t": 206.66,
+      "d": 14.8,
+      "h": "sha256:ca1d68bc0cedf633",
+      "domHash": "sha256:ca1d68bc0cedf633"
+    },
+    {
+      "i": 23,
+      "t": 221.81,
+      "d": 9.8,
+      "h": "sha256:9df517e4e942adf2",
+      "domHash": "sha256:9df517e4e942adf2"
+    },
+    {
+      "i": 24,
+      "t": 231.96,
+      "d": 3.56,
+      "h": "sha256:9ac9737ecdc74e0c",
+      "domHash": "sha256:9ac9737ecdc74e0c"
+    },
+    {
+      "i": 25,
+      "t": 235.87,
+      "d": 3.92,
+      "h": "sha256:1d285916fbd0671b",
+      "domHash": "sha256:1d285916fbd0671b"
+    },
+    {
+      "i": 26,
+      "t": 240.14,
+      "d": 2.08,
+      "h": "sha256:83487d9fb0a9f0c0",
+      "domHash": "sha256:83487d9fb0a9f0c0"
+    },
+    {
+      "i": 27,
+      "t": 242.57,
+      "d": 2.8,
+      "h": "sha256:bbf83f6712bbb84e",
+      "domHash": "sha256:bbf83f6712bbb84e"
+    },
+    {
+      "i": 28,
+      "t": 245.72,
+      "d": 3.76,
+      "h": "sha256:bcd7c755cae8a34e",
+      "domHash": "sha256:bcd7c755cae8a34e"
+    },
+    {
+      "i": 29,
+      "t": 249.83,
+      "d": 2.92,
+      "h": "sha256:36dbd5cca5be7eca",
+      "domHash": "sha256:36dbd5cca5be7eca"
+    },
+    {
+      "i": 30,
+      "t": 253.1,
+      "d": 5.28,
+      "h": "sha256:0430a22425a7efd0",
+      "domHash": "sha256:0430a22425a7efd0"
+    },
+    {
+      "i": 31,
+      "t": 258.73,
+      "d": 2.0,
+      "h": "sha256:b0f9e3e9241ff030",
+      "domHash": "sha256:b0f9e3e9241ff030"
+    },
+    {
+      "i": 32,
+      "t": 261.08,
+      "d": 3.28,
+      "h": "sha256:4e7578e359198748",
+      "domHash": "sha256:4e7578e359198748"
+    },
+    {
+      "i": 33,
+      "t": 264.71,
+      "d": 17.08,
+      "h": "sha256:f1fff4c541678cda",
+      "domHash": "sha256:f1fff4c541678cda"
+    },
+    {
+      "i": 34,
+      "t": 282.14,
+      "d": 3.44,
+      "h": "sha256:1622b7fdb175a0df",
+      "domHash": "sha256:1622b7fdb175a0df"
+    },
+    {
+      "i": 35,
+      "t": 285.93,
+      "d": 3.16,
+      "h": "sha256:6029f44b30853048",
+      "domHash": "sha256:6029f44b30853048"
+    },
+    {
+      "i": 36,
+      "t": 289.44,
+      "d": 5.88,
+      "h": "sha256:e72905478fa69405",
+      "domHash": "sha256:e72905478fa69405"
+    },
+    {
+      "i": 37,
+      "t": 295.67,
+      "d": 12.72,
+      "h": "sha256:100fcfb295f291ca",
+      "domHash": "sha256:100fcfb295f291ca"
+    },
+    {
+      "i": 38,
+      "t": 308.74,
+      "d": 13.08,
+      "h": "sha256:fc72002bb600a173",
+      "domHash": "sha256:fc72002bb600a173"
+    }
+  ]
+}

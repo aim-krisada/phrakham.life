@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" role="img" aria-labelledby="sp-title sp-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+  <title id="sp-title">เปรียบเทียบนิกายซาดูสีกับฟาริสี</title>
+  <desc id="sp-desc">แผนภาพเปรียบเทียบสองนิกายของศาสนายิว ซาดูสียอมรับเฉพาะโทราห์ห้าเล่ม เป็นปุโรหิตชั้นสูงที่คุมพระวิหาร และไม่เชื่อเรื่องการเป็นขึ้นจากตายหรือทูตสวรรค์ ส่วนฟาริสียอมรับทั้งโทราห์ ผู้เผยพระวจนะ ข้อเขียน และธรรมเนียมปากเปล่า เป็นธรรมาจารย์ที่คุมธรรมศาลาใกล้ชิดประชาชน และเชื่อเรื่องการเป็นขึ้นจากตายและทูตสวรรค์ ฟาริสีสร้างกฎยิบย่อยเป็นรั้วล้อมธรรมบัญญัติจึงถูกเรียกว่านิกายที่เคร่งที่สุด</desc>
+
+  <style>
+    .card{stroke:#8C7A4E;stroke-width:1.5;fill:#FAF6F0;}
+    .head{fill:#8B4513;}
+    .hname{font-weight:700;fill:#FFFFFF;text-anchor:middle;}
+    .htag{fill:#f3e8dc;text-anchor:middle;}
+    .li{fill:#4a3a20;}
+    .dot{fill:#8C7A4E;}
+    .band{fill:#EFE7D8;stroke:#8C7A4E;stroke-width:1.2;}
+    .bandtx{fill:#5b4a2e;text-anchor:middle;}
+    .bandhl{font-weight:700;fill:#8B4513;}
+    .title{fill:#4a3a20;font-weight:700;text-anchor:middle;}
+  </style>
+
+  <text class="title" x="410" y="30" font-size="18">สองนิกายใหญ่ของศาสนายิวในสมัยเปาโล</text>
+
+  <!-- ซาดูสี card -->
+  <rect class="card" x="36" y="50" width="360" height="250" rx="12"/>
+  <path class="head" d="M36 62 a12 12 0 0 1 12 -12 h336 a12 12 0 0 1 12 12 v34 h-360 z"/>
+  <text class="hname" x="216" y="80" font-size="17">ซาดูสี</text>
+  <text class="htag" x="216" y="90" font-size="11" opacity="0"> </text>
+
+  <circle class="dot" cx="60" cy="126" r="4"/>
+  <text class="li" x="74" y="131" font-size="14">ยอมรับเฉพาะโทราห์ (เบญจบรรณ 5 เล่มแรก)</text>
+  <circle class="dot" cx="60" cy="164" r="4"/>
+  <text class="li" x="74" y="169" font-size="14">ปุโรหิตชั้นสูง · คุมพระวิหาร · ใกล้อำนาจ</text>
+  <circle class="dot" cx="60" cy="202" r="4"/>
+  <text class="li" x="74" y="207" font-size="14" font-weight="700" fill="#6d3610">ไม่เชื่อ การเป็นขึ้นจากตาย · ทูตสวรรค์ · วิญญาณ</text>
+  <circle class="dot" cx="60" cy="240" r="4"/>
+  <text class="li" x="74" y="245" font-size="14">เคร่งที่ "พิธีกรรมในพระวิหาร"</text>
+  <text class="li" x="74" y="272" font-size="12" fill="#8C7A4E">สาบสูญหลังพระวิหารถูกทำลาย ปี ค.ศ. 70</text>
+
+  <!-- ฟาริสี card -->
+  <rect class="card" x="424" y="50" width="360" height="250" rx="12"/>
+  <path class="head" d="M424 62 a12 12 0 0 1 12 -12 h336 a12 12 0 0 1 12 12 v34 h-360 z"/>
+  <text class="hname" x="604" y="80" font-size="17">ฟาริสี</text>
+
+  <circle class="dot" cx="448" cy="126" r="4"/>
+  <text class="li" x="462" y="131" font-size="14">ยอมรับโทราห์ + ผู้เผยพระวจนะ + ข้อเขียน</text>
+  <circle class="dot" cx="448" cy="150" r="4"/>
+  <text class="li" x="462" y="155" font-size="14">+ "ธรรมเนียมปากเปล่า" ที่สืบทอดกันมา</text>
+  <circle class="dot" cx="448" cy="188" r="4"/>
+  <text class="li" x="462" y="193" font-size="14">ธรรมาจารย์ · คุมธรรมศาลา · ใกล้ประชาชน</text>
+  <circle class="dot" cx="448" cy="226" r="4"/>
+  <text class="li" x="462" y="231" font-size="14" font-weight="700" fill="#6d3610">เชื่อ การเป็นขึ้นจากตาย · ทูตสวรรค์ · วิญญาณ</text>
+  <text class="li" x="462" y="272" font-size="12" fill="#8C7A4E">ระบบศาสนายิวปัจจุบันสืบสายจากฟาริสี</text>
+
+  <!-- bottom band -->
+  <rect class="band" x="36" y="322" width="748" height="90" rx="10"/>
+  <text class="bandtx" x="410" y="352" font-size="13">จุดที่วัด "ความเคร่ง": ฟาริสีสร้าง <tspan class="bandhl">"รั้วล้อมธรรมบัญญัติ"</tspan> — กฎยิบย่อยเพิ่มขึ้นอีกนับร้อย</text>
+  <text class="bandtx" x="410" y="374" font-size="13">เพื่อกันไม่ให้ละเมิดข้อบัญญัติเดิม ควบคุมแทบทุกวินาทีของชีวิต</text>
+  <text class="bandtx" x="410" y="398" font-size="13">เปาโลจึงเรียกนิกายนี้ว่า <tspan class="bandhl">"ที่เคร่งที่สุด"</tspan> ในศาสนายิว</text>
+</svg>

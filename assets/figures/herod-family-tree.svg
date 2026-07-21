@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="520" viewBox="0 0 940 520" role="img" aria-labelledby="ht-title ht-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+  <title id="ht-title">สายตระกูลเฮโรดในพระคัมภีร์ใหม่</title>
+  <desc id="ht-desc">แผนผังลำดับวงศ์ตระกูลเฮโรด เริ่มจากเฮโรดมหาราช แตกเป็นเฮโรด อันทีพาส และอาริสโทบูลัส อาริสโทบูลัสเป็นบิดาของเฮโรด อากริปปาที่ 1 ซึ่งมีบุตรสามคนคือ อากริปปาที่ 2 เบอร์นิส และดรูสิลลา สามคนนี้เป็นพี่น้องท้องเดียวกันและปรากฏในกิจการบทที่ 24 ถึง 26</desc>
+
+  <style>
+    .box{stroke:#8C7A4E;stroke-width:1.5;}
+    .plain{fill:#FAF6F0;}
+    .link{fill:#EFE7D8;}
+    .hl{fill:#8B4513;stroke:#6d3610;}
+    .nm{font-weight:700;fill:#4a3a20;}
+    .nmw{font-weight:700;fill:#FFFFFF;}
+    .sub{fill:#6b5c3d;}
+    .subw{fill:#f3e8dc;}
+    .edge{stroke:#8C7A4E;stroke-width:1.6;fill:none;}
+    text{text-anchor:middle;}
+  </style>
+
+  <!-- edges -->
+  <path class="edge" d="M470 82 V102 H300 V138 M300 102 H780 V138"/>
+  <path class="edge" d="M300 196 V236"/>
+  <path class="edge" d="M300 308 V330 H110 V354 M110 330 H300 V354 M300 330 H490 V354"/>
+
+  <!-- Herod the Great -->
+  <rect class="box plain" x="350" y="24" width="240" height="58" rx="10"/>
+  <text class="nm" x="470" y="50" font-size="16">เฮโรดมหาราช</text>
+  <text class="sub" x="470" y="70" font-size="12">ฆ่าทารกที่เบธเลเฮม (มธ. 2)</text>
+
+  <!-- Aristobulus (son, link node) -->
+  <rect class="box link" x="190" y="138" width="220" height="58" rx="10"/>
+  <text class="nm" x="300" y="164" font-size="15">อาริสโทบูลัส</text>
+  <text class="sub" x="300" y="184" font-size="12">บุตรของเฮโรดมหาราช</text>
+
+  <!-- Herod Antipas (son) -->
+  <rect class="box plain" x="648" y="138" width="264" height="74" rx="10"/>
+  <text class="nm" x="780" y="163" font-size="15">เฮโรด อันทีพาส</text>
+  <text class="sub" x="780" y="183" font-size="12">ตัดศีรษะยอห์นบัพติศมา (มก. 6)</text>
+  <text class="sub" x="780" y="201" font-size="12">ร่วมไต่สวนพระเยซู (ลก. 23)</text>
+
+  <!-- Herod Agrippa I (father of the three) -->
+  <rect class="box plain" x="176" y="236" width="248" height="72" rx="10"/>
+  <text class="nm" x="300" y="262" font-size="15">เฮโรด อากริปปาที่ 1</text>
+  <text class="sub" x="300" y="282" font-size="12">ประหารยากอบอัครทูต</text>
+  <text class="sub" x="300" y="300" font-size="12">ถูกหนอนไชตาย (กจ. 12)</text>
+
+  <!-- Agrippa II (highlight) -->
+  <rect class="box hl" x="20" y="354" width="180" height="76" rx="10"/>
+  <text class="nmw" x="110" y="380" font-size="15">อากริปปาที่ 2</text>
+  <text class="subw" x="110" y="400" font-size="12">พี่คนโต</text>
+  <text class="subw" x="110" y="418" font-size="12">ฟังคดีเปาโล (กจ. 25–26)</text>
+
+  <!-- Bernice (highlight) -->
+  <rect class="box hl" x="210" y="354" width="180" height="76" rx="10"/>
+  <text class="nmw" x="300" y="380" font-size="15">เบอร์นิส</text>
+  <text class="subw" x="300" y="400" font-size="12">น้องสาว</text>
+  <text class="subw" x="300" y="418" font-size="12">มาเคียงคู่พี่ชาย (กจ. 25)</text>
+
+  <!-- Drusilla (highlight) -->
+  <rect class="box hl" x="400" y="354" width="180" height="76" rx="10"/>
+  <text class="nmw" x="490" y="380" font-size="15">ดรูสิลลา</text>
+  <text class="subw" x="490" y="400" font-size="12">น้องสาวคนเล็ก</text>
+  <text class="subw" x="490" y="418" font-size="12">ภรรยาเฟลิกส์ (กจ. 24)</text>
+
+  <!-- legend (own row, centered, below the boxes — no overlap) -->
+  <text x="470" y="470" font-size="13" font-weight="700" fill="#8B4513">◼ ตัวละครในเรื่องเปาโล (กิจการ 24–26)</text>
+  <text x="470" y="493" font-size="12.5" fill="#6b5c3d">อากริปปาที่ 2 · เบอร์นิส · ดรูสิลลา เป็นพี่น้องท้องเดียวกัน</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-labelledby="h3-title h3-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+  <title id="h3-title">สามมุมมองต่อ "ความหวัง" ของบรรพบุรุษ</title>
+  <desc id="h3-desc">แผนภาพเปรียบเทียบความเข้าใจเรื่องความหวังในพระสัญญาที่พระเจ้าให้บรรพบุรุษ สามมุมมอง ซาดูสีมองว่าความหวังจบที่ชีวิตนี้ ไม่มีการเป็นขึ้นจากตาย เป้าหมายคือชาติรุ่งเรืองในโลกนี้ ฟาริสีเชื่อว่าคนชอบธรรมจะเป็นขึ้นในวันสุดท้ายและรอพระเมสสิยาห์มากอบกู้ชาติซึ่งยังไม่มาถึง ส่วนเปาโลและคริสเตียนเชื่อพระสัญญาเดียวกันแต่ว่าเริ่มสำเร็จแล้ว เพราะพระเยซูเป็นขึ้นจากตายเป็นผลแรก ความหวังจึงแน่นอนและขยายถึงทุกชนชาติ</desc>
+
+  <style>
+    .card{stroke:#8C7A4E;stroke-width:1.5;fill:#FAF6F0;}
+    .cardhl{stroke:#8B4513;stroke-width:2;fill:#FBF3EA;}
+    .head{fill:#8C7A4E;}
+    .headhl{fill:#8B4513;}
+    .hname{font-weight:700;fill:#FFFFFF;text-anchor:middle;}
+    .li{fill:#4a3a20;}
+    .dot{fill:#8C7A4E;}
+    .dothl{fill:#8B4513;}
+    .title{fill:#4a3a20;font-weight:700;text-anchor:middle;}
+    .rootband{fill:#EFE7D8;stroke:#8C7A4E;stroke-width:1.2;}
+    .roottx{fill:#5b4a2e;text-anchor:middle;}
+    .roothl{font-weight:700;fill:#8B4513;}
+  </style>
+
+  <text class="title" x="450" y="28" font-size="18">ความหวังเดียวกัน — เข้าใจต่างกันสามมุม</text>
+
+  <!-- shared root band -->
+  <rect class="rootband" x="40" y="44" width="820" height="40" rx="8"/>
+  <text class="roottx" x="450" y="69" font-size="13.5">รากเดียวกัน: <tspan class="roothl">"ความหวังในพระสัญญาที่พระเจ้าให้บรรพบุรุษ"</tspan> (ปฐมกาล ถึง ผู้เผยพระวจนะ)</text>
+
+  <!-- ซาดูสี -->
+  <rect class="card" x="40" y="100" width="256" height="280" rx="12"/>
+  <path class="head" d="M40 112 a12 12 0 0 1 12 -12 h232 a12 12 0 0 1 12 12 v32 h-256 z"/>
+  <text class="hname" x="168" y="132" font-size="16">ซาดูสี</text>
+  <circle class="dot" cx="60" cy="176" r="4"/>
+  <text class="li" x="72" y="181" font-size="13.5">หวังแค่ "ชีวิตนี้"</text>
+  <circle class="dot" cx="60" cy="212" r="4"/>
+  <text class="li" x="72" y="217" font-size="13.5">ไม่มีการเป็นขึ้นจากตาย</text>
+  <text class="li" x="72" y="235" font-size="13.5">ไม่มีโลกหน้า</text>
+  <circle class="dot" cx="60" cy="270" r="4"/>
+  <text class="li" x="72" y="275" font-size="13.5">เป้าหมาย = ชาติรุ่งเรือง</text>
+  <text class="li" x="72" y="293" font-size="13.5">พระวิหาร · อำนาจในโลกนี้</text>
+
+  <!-- ฟาริสี -->
+  <rect class="card" x="322" y="100" width="256" height="280" rx="12"/>
+  <path class="head" d="M322 112 a12 12 0 0 1 12 -12 h232 a12 12 0 0 1 12 12 v32 h-256 z"/>
+  <text class="hname" x="450" y="132" font-size="16">ฟาริสี</text>
+  <circle class="dot" cx="342" cy="176" r="4"/>
+  <text class="li" x="354" y="181" font-size="13.5">หวัง "วันสุดท้าย"</text>
+  <circle class="dot" cx="342" cy="212" r="4"/>
+  <text class="li" x="354" y="217" font-size="13.5">คนชอบธรรมจะเป็นขึ้น</text>
+  <text class="li" x="354" y="235" font-size="13.5">พร้อมกันในอนาคต</text>
+  <circle class="dot" cx="342" cy="270" r="4"/>
+  <text class="li" x="354" y="275" font-size="13.5">รอพระเมสสิยาห์มากู้ชาติ</text>
+  <text class="li" x="354" y="293" font-size="13.5">— แต่ยังไม่มาถึง</text>
+
+  <!-- เปาโล / คริสเตียน (highlight) -->
+  <rect class="cardhl" x="604" y="100" width="256" height="280" rx="12"/>
+  <path class="headhl" d="M604 112 a12 12 0 0 1 12 -12 h232 a12 12 0 0 1 12 12 v32 h-256 z"/>
+  <text class="hname" x="732" y="132" font-size="16">เปาโล (คริสเตียน)</text>
+  <circle class="dothl" cx="624" cy="176" r="4"/>
+  <text class="li" x="636" y="181" font-size="13.5">พระสัญญาเดียวกันเป๊ะ</text>
+  <circle class="dothl" cx="624" cy="212" r="4"/>
+  <text class="li" x="636" y="217" font-size="13.5" font-weight="700" fill="#6d3610">แต่ "เริ่มสำเร็จแล้ว"</text>
+  <text class="li" x="636" y="235" font-size="13.5">พระเยซูเป็นขึ้น = ผลแรก</text>
+  <circle class="dothl" cx="624" cy="270" r="4"/>
+  <text class="li" x="636" y="275" font-size="13.5">ความหวังแน่นอน</text>
+  <text class="li" x="636" y="293" font-size="13.5">และถึงทุกชนชาติ</text>
+
+  <!-- bottom note -->
+  <text class="roottx" x="450" y="424" font-size="13">เปาโลไม่ได้ทิ้งศาสนายิว — เขาเชื่อใน <tspan class="roothl">สิ่งที่ศาสนายิวเฝ้ารอมาตลอด</tspan></text>
+  <text class="roottx" x="450" y="446" font-size="13">ต่างกันแค่ว่า สำหรับเขา ความหวังนั้นมาถึงแล้วในพระเยซู</text>
+</svg>

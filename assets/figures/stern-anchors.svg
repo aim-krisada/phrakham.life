@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="570" viewBox="0 0 900 570" role="img" aria-labelledby="st-title st-desc" font-family="'Noto Sans Thai','Sarabun',sans-serif">
+  <title id="st-title">ทำไมทิ้งสมอจากท้ายเรือ (กิจการ 27:29)</title>
+  <desc id="st-desc">แผนภาพอธิบายการทอดสมอสี่ตัวจากท้ายเรือกลางคืน ลมและคลื่นซัดเข้าหาฝั่งที่มีโขดหินทางซ้าย สมอสี่ตัวที่หย่อนลงจากท้ายเรือทางขวายึดเรือไว้ไม่ให้ถูกซัดไปชนหิน และทำให้หัวเรือยังหันไปทางฝั่ง พร้อมแล่นเข้าเกยหาดทันทีเมื่อฟ้าสาง เส้นประคือช่วงเชือกและสมอที่อยู่ใต้น้ำ</desc>
+
+  <!-- ======= night sky ======= -->
+  <rect x="0" y="0" width="900" height="250" fill="#EFE7DC"/>
+  <g fill="#c9b98f">
+    <circle cx="120" cy="70" r="1.6"/><circle cx="190" cy="46" r="1.3"/><circle cx="250" cy="92" r="1.4"/>
+    <circle cx="540" cy="54" r="1.5"/><circle cx="640" cy="88" r="1.3"/><circle cx="740" cy="50" r="1.6"/><circle cx="820" cy="98" r="1.3"/>
+  </g>
+  <circle cx="800" cy="66" r="22" fill="#F3EAD3" stroke="#d9c79a" stroke-width="1.6"/>
+  <circle cx="792" cy="60" r="22" fill="#EFE7DC"/>
+
+  <!-- ======= shore + rocks (left) ======= -->
+  <path d="M0,250 L150,250 C120,300 96,392 90,570 L0,570 Z" fill="#E4D2AE"/>
+  <path d="M0,250 L150,250 C120,300 96,392 90,570 L0,570 Z" fill="none" stroke="#cbb589" stroke-width="2"/>
+  <g fill="#8f8069" stroke="#6f6350" stroke-width="1.6">
+    <path d="M150,252 l26,-16 22,14 -8,20 -30,4 Z"/>
+    <path d="M120,236 l18,-12 16,12 -6,14 -22,2 Z"/>
+    <path d="M186,262 l20,-10 18,12 -8,14 -24,0 Z"/>
+  </g>
+  <text x="118" y="330" font-size="15" font-weight="700" fill="#6b5c3d" text-anchor="middle">ฝั่ง · โขดหิน</text>
+
+  <!-- ======= sea ======= -->
+  <path d="M150,250 Q230,238 320,250 T500,250 T680,250 T860,250 L900,250 L900,570 L90,570 C96,392 120,300 150,250 Z" fill="#AEC3C7"/>
+  <g stroke="#8ea3a6" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M250,300 q22,-9 44,0"/><path d="M400,286 q22,-9 44,0"/>
+    <path d="M560,300 q22,-9 44,0"/><path d="M720,288 q22,-9 44,0"/><path d="M300,346 q22,-9 44,0"/>
+  </g>
+
+  <!-- ======= wind + waves push toward shore (right -> left) ======= -->
+  <g stroke="#7d8f92" stroke-width="1.8" fill="none" stroke-dasharray="8 7">
+    <path d="M860,74 H560"/><path d="M860,108 H600"/><path d="M860,142 H620"/>
+  </g>
+  <g fill="#7d8f92">
+    <path d="M560,74 l16,-6 -6,15 Z" transform="rotate(-90 560 74)"/>
+    <path d="M600,108 l16,-6 -6,15 Z" transform="rotate(-90 600 108)"/>
+    <path d="M620,142 l16,-6 -6,15 Z" transform="rotate(-90 620 142)"/>
+  </g>
+  <text x="858" y="56" font-size="16" font-weight="700" fill="#5f7377" text-anchor="end">ลมและคลื่นซัดเข้าหาฝั่ง</text>
+
+  <!-- ======= ship (bow left toward shore, stern right toward open sea) ======= -->
+  <g transform="translate(300,60) scale(0.72)">
+    <path d="M214,268 C206,254 220,246 234,254 L620,254 C644,254 662,258 668,270
+             C682,312 640,380 452,386 C322,390 250,360 226,312 C218,296 214,282 214,268 Z"
+          fill="#F0E4CE" stroke="#6d3610" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="234" y1="254" x2="620" y2="254" stroke="#6d3610" stroke-width="2.6"/>
+    <path d="M232,272 L622,272 M240,292 C360,300 520,298 630,290" fill="none" stroke="#d8c39a" stroke-width="1.8"/>
+    <path d="M636,254 C660,222 660,190 636,176 C623,169 612,176 618,189 C629,193 634,206 627,223 C621,239 630,250 638,254"
+          fill="none" stroke="#8B4513" stroke-width="3.4" stroke-linecap="round"/>
+    <line x1="256" y1="254" x2="214" y2="196" stroke="#8B4513" stroke-width="3.4" stroke-linecap="round"/>
+    <line x1="422" y1="254" x2="422" y2="118" stroke="#8B4513" stroke-width="3.6" stroke-linecap="round"/>
+    <line x1="372" y1="150" x2="472" y2="150" stroke="#8B4513" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M376,152 C402,162 442,162 468,152 L466,198 C442,206 402,206 378,198 Z"
+          fill="#FAF6F0" stroke="#8C7A4E" stroke-width="2.2"/>
+    <path d="M400,157 L398,200 M422,159 L422,202 M444,157 L446,200" stroke="#e3d7bd" stroke-width="1.6"/>
+  </g>
+  <text x="322" y="96" font-size="15" font-weight="700" fill="#4a3a20" text-anchor="middle">หัวเรือหันไปทางฝั่ง</text>
+  <text x="322" y="117" font-size="14" fill="#6b5c3d" text-anchor="middle">พร้อมเกยหาดเมื่อฟ้าสาง</text>
+
+  <!-- ======= four stern anchors (rode: solid above water, dashed below) ======= -->
+  <!-- stern is around x=760, deck y=250 -->
+  <g fill="none" stroke="#5b4a2c" stroke-width="2.4" stroke-linecap="round">
+    <path d="M762,250 L806,300"/><path d="M770,250 L836,306"/>
+    <path d="M756,250 L792,308"/><path d="M776,250 L864,300"/>
+  </g>
+  <g fill="none" stroke="#5b4a2c" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="7 6">
+    <path d="M806,300 L812,432"/><path d="M836,306 L850,470"/>
+    <path d="M792,308 L774,452"/><path d="M864,300 L878,428"/>
+  </g>
+  <!-- anchor glyphs on the seabed -->
+  <g stroke="#3f3320" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(812,432)"><line x1="0" y1="-10" x2="0" y2="16"/><circle cx="0" cy="-13" r="4"/><line x1="-11" y1="-3" x2="11" y2="-3"/><path d="M-13,10 Q-13,22 -2,22 M13,10 Q13,22 2,22"/></g>
+    <g transform="translate(850,470)"><line x1="0" y1="-10" x2="0" y2="16"/><circle cx="0" cy="-13" r="4"/><line x1="-11" y1="-3" x2="11" y2="-3"/><path d="M-13,10 Q-13,22 -2,22 M13,10 Q13,22 2,22"/></g>
+    <g transform="translate(774,452)"><line x1="0" y1="-10" x2="0" y2="16"/><circle cx="0" cy="-13" r="4"/><line x1="-11" y1="-3" x2="11" y2="-3"/><path d="M-13,10 Q-13,22 -2,22 M13,10 Q13,22 2,22"/></g>
+    <g transform="translate(878,428)"><line x1="0" y1="-10" x2="0" y2="16"/><circle cx="0" cy="-13" r="4"/><line x1="-11" y1="-3" x2="11" y2="-3"/><path d="M-13,10 Q-13,22 -2,22 M13,10 Q13,22 2,22"/></g>
+  </g>
+  <text x="812" y="360" font-size="15" font-weight="700" fill="#4a3a20" text-anchor="middle">สมอ 4 ตัวจากท้ายเรือ</text>
+  <text x="812" y="381" font-size="14" fill="#6b5c3d" text-anchor="middle">ยึดไม่ให้ถูกซัดไปชนหิน</text>
+
+  <!-- waterline label -->
+  <text x="168" y="244" font-size="13" fill="#5f7377">ผิวน้ำ</text>
+</svg>
