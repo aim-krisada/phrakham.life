@@ -1,0 +1,164 @@
+name: Deploy to GitHub Pages
+
+# TWO VERSIONS, ONE SITE — root is what people read today, and it comes from `main`.
+#   /      = branch `main`    — the live site. Quarto built these files elsewhere and they are
+#                               committed as finished HTML, so there is NOTHING to build here:
+#                               checking `main` out already gives us the site.
+#   /v3/   = branch `v3-dist` — the redesign. ⚠️ NOT source: it holds the ALREADY-BUILT site.
+#                               May not exist yet; that is fine and must not fail the run.
+#                               Delivered by aimgit, which then fires `repository_dispatch` —
+#                               see the `on:` block for why a push to that branch cannot do it.
+#
+# WHY /v3/ IS DELIVERED AND NOT BUILT HERE: v3 is a Nuxt app and it lives on aimgit (project
+# `v3/phrakham`), not here. It is built THERE by the manual job `ปล่อยเว็บ` and the finished files
+# are pushed to `v3-dist`. This repo only serves them, because a custom domain can be attached to
+# exactly one repository and this is that repository.
+# ⇒ so there is no `npm ci`/`npm run build` for v3 here. Building it here would mean copying both
+#   v3's source AND its data key into this public repo; delivering the built files does not.
+#
+# The branch name and the dispatch event name below must match the CI variables on aimgit
+# (`PUBLISH_BRANCH`, `PUBLISH_DISPATCH_EVENT`) — aimgit's `tools/ส่งเว็บขึ้น-github.sh` owns those.
+on:
+  push:
+    branches: [main]
+  # A delivery of v3 arrives as a push to `v3-dist` — but that CANNOT trigger this file, because
+  # GitHub reads the workflow from the ref that was pushed, and `v3-dist` holds the built site only:
+  # no .github/ at all. Listing it under `push.branches` would therefore be a lie that reads as
+  # working, and the delivery would silently show up on the next unrelated push to main instead.
+  # ⇒ aimgit calls the repository_dispatch API right after pushing. That always runs the workflow
+  #   file on the DEFAULT branch, which is the copy we can actually see and review.
+  repository_dispatch:
+    types: [v3-delivered]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time. Do NOT cancel an in-progress deploy: a cancelled
+# deploy-pages run can leave the Pages backend mid-deployment, and the next push
+# then fails with "Deployment failed, try again later." Let production deploys finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # ---- the live site (root) — from `main` --------------------------------------------------
+      # NO continue-on-error here on purpose: if the live site cannot be fetched, the run must go
+      # red and nothing ships. Shipping a site whose root is missing is worse than not shipping.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: live
+
+      # ---- drop everything in the checkout that is not part of the site ------------------------
+      # The old Pages builder (legacy, Jekyll) skipped dot-directories by itself. upload-pages-artifact
+      # does NOT skip them, so without this step `.claude/worktrees` and the whole `.git` history of
+      # a 410 MB repo would be served on a public web server.
+      # ⛔ Do not turn this into "delete everything starting with a dot": `.nojekyll` must survive,
+      #   and it is the file that keeps Pages from hiding `site_libs/` and every other underscore path.
+      # The commit is read BEFORE `.git` goes away — that is the only place it can be read from,
+      # and the report step at the bottom needs it.
+      - id: root
+        name: Record the root commit, then remove non-site files from the checkout
+        run: |
+          echo "sha=$(git -C live rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+          rm -rf live/.git live/.github live/.claude
+
+      # The step above deletes by name, so a typo there would quietly ship the wrong thing.
+      # These four lines are the proof that it removed what it should and kept what it must.
+      - name: Check the root still is the site
+        run: |
+          test -f live/index.html
+          test -f live/CNAME
+          test -f live/.nojekyll
+          for d in .git .github .claude; do
+            test ! -e "live/$d" || { echo "::error::live/$d survived the cleanup"; exit 1; }
+          done
+
+      # ---- the redesign (/v3/) — already built, delivered on branch `v3-dist` -------------------
+      # continue-on-error on the CHECKOUT: `v3-dist` may not exist yet, and a missing branch must
+      # not fail the run. No install and no build — the files arrive finished (see header).
+      - id: v3checkout
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: v3-dist
+          path: v3
+
+      # A delivered site must be able to say which commit it came from, the same way root does.
+      # v3's own CI writes version.json; if it is missing, the delivery is not what we expect, so
+      # treat it as "no v3 this run" rather than shipping something unidentifiable.
+      # ⚠️ Presence of a file is not proof the site works. On the sister repo pleng.phrakham.life the
+      # reviewer deleted favicon.png, logo.png and the whole _nuxt/ directory from a real build —
+      # index.html untouched — and an earlier version of this check still passed, so a site with no
+      # JS and no CSS would have shipped with nothing red on either side.
+      # aimgit's tools/สร้างเว็บที่จะปล่อย.sh refuses to publish such a build; this is the second
+      # line, because this repo must not depend on the sender being correct.
+      - id: v3check
+        if: steps.v3checkout.outcome == 'success'
+        continue-on-error: true
+        run: |
+          test -f v3/index.html
+          test -f v3/version.json
+          test -n "$(find v3/_nuxt -name '*.js' -print -quit 2>/dev/null)" \
+            || { echo "::error::delivered v3 has no JS in _nuxt — refusing to publish an empty page"; exit 1; }
+          # Everything index.html points at must actually be in the delivery.
+          # ⚠️ Thai file names are percent-encoded inside the HTML but are Thai bytes on disk, so the
+          # path has to be decoded before testing — comparing the raw text would report every valid
+          # Thai-named file as missing. (Same trap aimgit hit on 29 Aug 2026.)
+          for p in $(grep -oE '"/v3/[^"]+"' v3/index.html | tr -d '"' | sort -u); do
+            p=${p%%\?*}; p=${p%%#*}
+            case "${p##*/}" in *.*) ;; *) continue ;; esac
+            p=$(printf '%b' "${p//%/'\x'}")
+            test -f "v3${p#/v3}" || { echo "::error::delivered v3 references $p but the file is missing"; exit 1; }
+          done
+          echo "delivered v3: $(cat v3/version.json)"
+
+      # ---- combine: root is the checkout itself, with /v3 nested under it -----------------------
+      - name: Nest the delivered redesign under the site root
+        run: |
+          # v3 arrives built, so the checkout itself IS the site. Drop the .git that checkout adds —
+          # publishing it would put the delivery branch's history on a public web server.
+          if [ "${{ steps.v3check.outcome }}" = "success" ]; then
+            rm -rf live/v3
+            cp -r v3 live/v3
+            rm -rf live/v3/.git
+          fi
+
+      # ---- say out loud which commit the root actually carries ---------------------------------
+      # Without this line, "the merge went in but the site did not change" looks exactly like
+      # "the site changed" — every check mark is green either way.
+      - name: Report what is being deployed
+        run: |
+          echo "root  <- main @ ${{ steps.root.outputs.sha }}"
+          echo "root  : $(ls -A live | tr '\n' ' ')"
+          if [ -d live/v3 ]; then echo "/v3/  : included"; else echo "/v3/  : NOT included"; fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: live
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      # ---- a delivery that arrived but did not ship must be LOUD -------------------------------
+      # Pages replaces the WHOLE site every run. So if `v3-dist` was delivered but failed its check,
+      # the upload above simply has no /v3/ in it — and a /v3/ that was working five minutes ago
+      # becomes a 404, with every check mark still green because v3check is continue-on-error.
+      #
+      # This runs AFTER the deployment on purpose: the live root has already shipped, which is the
+      # property we must never trade away. All this does is refuse to call the run a success.
+      - name: Fail if a v3 delivery arrived but did not make it onto the site
+        if: steps.v3checkout.outcome == 'success' && steps.v3check.outcome != 'success'
+        run: |
+          echo "::error::v3-dist was delivered but failed its check, so /v3/ is NOT on the site."
+          echo "The root shipped normally. Fix the delivery on aimgit and press ปล่อยเว็บ again."
+          exit 1
