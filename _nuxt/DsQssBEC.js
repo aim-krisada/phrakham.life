@@ -1,0 +1,1 @@
+import{o as e}from"./D4D_hBlD.js";function t(){let t=e().app.baseURL||`/`;return t.endsWith(`/`)?t:t+`/`}function n(e){return t()+e.replace(/^\/+/,``)}function r(){return t()+`read`}function i(){return t()+`sources`}function a(e,n){return`${t()}read/${e}/${n}`}export{n as i,a as n,i as r,r as t};
