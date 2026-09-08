@@ -1,0 +1,1 @@
+import"./DHwB1DNv.js";import{M as e}from"./BpaOgp5-.js";export{e as createArchitectureServices};

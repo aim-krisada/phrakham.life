@@ -1,0 +1,1 @@
+import{F as e,V as t,b as n,f as r}from"./C6hVCTxc.js";import{t as i}from"./DBYTw6GU.js";var a=n({__name:`index`,setup(n){return(n,a)=>(e(),r(t(i),{รหัสเล่ม:`JHN`,เลขบท:3,เป็นหน้าแรก:``}))}});export{a as default};
