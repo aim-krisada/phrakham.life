@@ -133,8 +133,9 @@ jobs:
       # site on `main` uses for its own reading pages. It is built by the older pipeline, it is not
       # in this push, and the incoming delivery cannot change it. It carries no v3 names — only how
       # many books the same Bible has and how many chapters each one has — so nothing here goes
-      # stale when v3 renames a page. If that file is ever gone, the ruler is skipped with a warning
-      # and never a red: a missing ruler must not take the site down.
+      # stale when v3 renames a page. If that file is ever gone, or comes back in a shape these
+      # counts cannot be read out of, the ruler is skipped with a warning — spelled out in the run
+      # log, never silently — and never a red: the root site's own file must not take /v3/ down.
       #
       # ⚠️ MISSING IS AN ERROR, EXTRA IS NOT. Every check below asks "is anything the delivery
       # promised absent?" and never "is there anything here I did not expect?" A red here takes
@@ -262,18 +263,37 @@ jobs:
           # live/webdata/books.json belongs to the root site on `main`. Same Bible, different
           # pipeline, not in this push. Only counts are compared - no name from it is ever matched
           # against a v3 name, so v3 may rename anything it likes. Missing ruler = skip, never red.
+          # ⚠️ EVERY WAY OUT OF THE MEASUREMENT SAYS SO OUT LOUD. Skipping quietly is worse than not
+          # having a ruler at all, because the run then looks exactly like a measured one. The file
+          # can go three ways, and each of them ends in a warning: it cannot be read, it can be read
+          # but is no longer a list of books, or it is a list of books that no longer carries
+          # chapter numbers - in that last one the book half is still measured and only the chapter
+          # half is skipped. (8 Sep 2026: a reviewer replaced the ruler with an object, with an
+          # empty list, and with 66 books stripped of their chapters, then threw away 1,123 of the
+          # delivery's 1,189 chapters; all three runs passed without a single line of warning,
+          # while the comment here promised a warning whenever the ruler was skipped.)
           ruler = "live/webdata/books.json"
           out_books = out_chapters = 0
+          skipped = None
           try:
               with open(ruler, encoding="utf-8") as fh:
                   rows = json.load(fh)
-              if isinstance(rows, list) and rows:
+          except Exception as exc:
+              skipped = "it could not be read (%s)" % exc
+          else:
+              if not isinstance(rows, list) or not rows:
+                  skipped = "it is no longer a list of books with anything in it"
+              else:
                   out_books = len(rows)
                   out_chapters = sum(len(row.get("chapters") or []) for row in rows
                                      if isinstance(row, dict))
-          except Exception as exc:
-              print("::warning::%s could not be read (%s) - this run has no ruler from outside the "
-                    "delivery, so api/books.json is only checked against itself" % (ruler, exc))
+          if skipped:
+              print("::warning::%s was not used as a ruler because %s - this run has no ruler from "
+                    "outside the delivery, so api/books.json is only checked against itself"
+                    % (ruler, skipped))
+          elif not out_chapters:
+              print("::warning::%s no longer says which chapters its books have, so this run could "
+                    "measure the book count against it but not the chapter count" % ruler)
           if out_books:
               # A tenth is the whole slack. The two catalogues describe the same Bible, so they
               # should land on the same numbers; a delivery that declares less than nine tenths of
@@ -353,6 +373,15 @@ jobs:
           # home page would have taken the site down without touching anything to do with this file
           # (8 Sep 2026). What still has bite: the section the link starts in must have been
           # delivered, so a link to /v3/sources when sources/ was never sent is still red.
+          # ⛔ THAT RELAXATION LEANS ON 404.html, SO 404.html IS CHECKED AND NOT ASSUMED. It is the
+          # only reason a deep address opens at all: GitHub serves it for every path with no file of
+          # its own. Without it every /v3/read/JHN/3 in the delivery dies in the reader's browser
+          # while everything in this run looks normal. (8 Sep 2026, one round after this section
+          # started leaning on that file: a reviewer deleted 404.html, then deleted it while the
+          # home page linked to a verse, and this check stayed green both times.)
+          test -s v3/404.html \
+            || { echo "::error::v3/404.html is missing or empty — every address under /v3/ that has no file of its own is served from it, so deep links would all land on GitHub's own not-found page"; exit 1; }
+
           linked=
           n=0
           for raw in $(grep -ohE "(href|url)=(\"[^\"]*\"|'[^']*'|[^\"'[:space:]>]+)" v3/index.html \
