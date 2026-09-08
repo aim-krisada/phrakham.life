@@ -106,52 +106,398 @@ jobs:
       # A delivered site must be able to say which commit it came from, the same way root does.
       # v3's own CI writes version.json; if it is missing, the delivery is not what we expect, so
       # treat it as "no v3 this run" rather than shipping something unidentifiable.
-      # ⚠️ Presence of a file is not proof the site works. On the sister repo pleng.phrakham.life a
-      # reviewer deleted the whole _nuxt/ directory from a real build, left index.html alone, and an
-      # earlier version of this check still passed — a site with no JS and no CSS would have shipped
-      # with nothing red on either side. Stopping that is what this step is for.
-      # ⚠️ ITS REACH IS SMALL. ⛔ Do not read a green here as "the delivery was verified". It tests
-      # that the files the two pages below NAME are present, and nothing beyond that:
-      #   - whatever those two pages do not name is never looked at ⇒ a delivery with every chapter
-      #     page gone, or with sources/, api/ or __nuxt_content/ missing whole, is green here;
-      #   - `test -f` says a file exists, not that anything is in it ⇒ zero-byte .js is green too.
-      # ⇒ completeness belongs to the sender: aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the pages
-      #   it built against the data before it publishes. This step is only the shallow second line
-      #   for the delivery that is obviously broken.
+      #
+      # WHAT THIS STEP ANSWERS: "did the whole delivery arrive, or only part of it?" ⛔ NOT "does the
+      # home page open?" A build that dies half way still writes a perfect home page, so opening one
+      # page — or following the links on it — proves nothing about the rest. (On the sister repo
+      # pleng.phrakham.life a reviewer deleted the whole _nuxt/ directory from a real build and an
+      # earlier version of this check stayed green; on 8 Sep 2026 a reviewer threw away 97% of this
+      # delivery, 1543 files down to 52, and the version before this one stayed green too.)
+      #
+      # HOW COMPLETENESS IS MEASURED WITHOUT NAMING A SINGLE BOOK: the delivery brings its own
+      # count. api/books.json is written by the sender and says how many books there are, what each
+      # one is called, and which chapter numbers each one has. Every book it names is then looked
+      # for in three places — one JSON per book under api/book/, one chapter directory per book
+      # under api/chapter/, and one reading page per book under read/ — and every chapter number it
+      # lists must be a file in that directory. ⛔ Never write a book name, a book count
+      # or a page name into this file: aimgit owns those and they do change (a page moved once
+      # already, 29 Aug 2026, /sources → /read), and a copy kept here would go stale without anyone
+      # noticing. Reading the numbers out of the delivery keeps them fresh on their own.
+      #
+      # ⚠️ THE SENDER'S OWN COUNT CANNOT BE THE ONLY RULER. api/books.json travels inside the same
+      # push as the files it describes, so a sender that ships less and writes a shorter list agrees
+      # with itself and every count above still adds up. (8 Sep 2026: a reviewer cut the delivery to
+      # three books and shortened the list to match — 75% of the files gone — and the version before
+      # this one stayed green; with one book left, 89% gone, still green.) So the count is measured
+      # against a ruler from OUTSIDE the delivery: live/webdata/books.json, the catalogue the root
+      # site on `main` uses for its own reading pages. It is built by the older pipeline, it is not
+      # in this push, and the incoming delivery cannot change it. It carries no v3 names — only how
+      # many books the same Bible has and how many chapters each one has — so nothing here goes
+      # stale when v3 renames a page. If that file is ever gone, or comes back in a shape these
+      # counts cannot be read out of, the ruler is skipped with a warning — spelled out in the run
+      # log, never silently — and never a red: the root site's own file must not take /v3/ down.
+      #
+      # ⚠️ MISSING IS AN ERROR, EXTRA IS NOT. Every check below asks "is anything the delivery
+      # promised absent?" and never "is there anything here I did not expect?" A red here takes
+      # /v3/ off the live site completely, so a false red costs as much as a hole that was missed.
+      # A new page under read/ that is not a book, a second translation kept one directory deeper,
+      # or an empty robots.txt must not take the site down. (8 Sep 2026: the version before this one
+      # demanded that read/ match the book list exactly, and refused a whole delivery over a single
+      # empty robots.txt — either one would have done it.)
+      #
+      # ⚠️ WHAT IT STILL CANNOT SEE: these checks count files, weigh them, and read the numbers the
+      # sender declares; they do not read the Bible text inside a chapter file. A chapter file with
+      # a plausible amount of the wrong text in it would pass. ⛔ So a green here is not a promise
+      # that the delivery is right — it is the receiver's shallow second line. The first line is the
+      # sender's own: aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the pages it built against its
+      # data before it hands anything over.
       - id: v3check
         if: steps.v3checkout.outcome == 'success'
         continue-on-error: true
         run: |
           test -f v3/index.html
           test -f v3/version.json
-          test -n "$(find v3/_nuxt -name '*.js' -print -quit 2>/dev/null)" \
+
+          # ---- 1. nothing hollow -----------------------------------------------------------------
+          # `test -f` says a file is there, not that anything is inside it. A write that failed part
+          # way leaves a 0-byte .js, .css or .html behind, and every check further down still passes
+          # while the site is blank in the browser.
+          # ⚠️ Only the file kinds that carry the site are looked at. An empty file is perfectly
+          # normal for others — an empty robots.txt, an empty marker file — and one of those must
+          # never drop /v3/ off the live site. (8 Sep 2026: a reviewer added one empty robots.txt to
+          # a good delivery and the version before this one refused the whole thing.)
+          empty=$(find v3 -type f -empty -not -path 'v3/.git/*' \
+                    \( -name '*.html' -o -name '*.js' -o -name '*.mjs' -o -name '*.css' \
+                       -o -name '*.json' \) \
+                  | head -3 | tr '\n' ' ')
+          test -z "$empty" \
+            || { echo "::error::delivered v3 contains empty files, e.g. $empty"; exit 1; }
+
+          # ---- 2. no whole part of the delivery went missing --------------------------------------
+          # ⛔ These are the delivery's own directory names, not page names. If aimgit renames one,
+          # this step goes red on purpose: the census below reads these directories, so a rename has
+          # to be followed here instead of quietly skipped.
+          for d in _nuxt __nuxt_content api/book api/chapter read; do
+            test -n "$(find "v3/$d" -type f -print -quit 2>/dev/null)" \
+              || { echo "::error::v3/$d is missing or holds no files — the delivery is not complete"; exit 1; }
+          done
+          test -n "$(find v3/_nuxt -name '*.js' -print -quit)" \
             || { echo "::error::delivered v3 has no JS in _nuxt — refusing to publish an empty page"; exit 1; }
 
-          # ⚠️ The delivered v3/index.html is a REDIRECT STUB, not a page. aimgit's nuxt.config.ts
-          # sends `/` straight on to the reading pages, so the whole file is one meta refresh and it
-          # names no CSS and no JS at all. Checking only that file would pass on a gutted delivery.
-          # ⇒ read the redirect target out of the stub and check THAT page. Do not write the page
-          #   name here: aimgit owns it, and it already moved once (29 Aug 2026, /sources → /read).
-          target=$(grep -o 'url=/v3/[A-Za-z0-9._~%/-]*' v3/index.html | head -1 | cut -c5-)
-          test -n "$target" \
-            || { echo "::error::v3/index.html does not redirect to a page under /v3/"; exit 1; }
-          page="v3${target#/v3}"
-          case "$page" in */) page="${page}index.html" ;; esac
-          [ -f "$page" ] || page="$page/index.html"
-          test -f "$page" \
-            || { echo "::error::v3/index.html redirects to $target but that page is not in the delivery"; exit 1; }
+          # ---- 3. the census: every book the delivery declares must arrive whole ----------------
+          # api/books.json is the sender's own count, carried inside the delivery. It is first
+          # weighed against the ruler from outside (see the header), then against itself, and only
+          # then against the files. Each book it names has to turn up as book data, as a chapter
+          # directory holding a file for every chapter that book says it has, and as a reading page
+          # with something on it. ⚠️ The chapter count is what catches a delivery that lost the
+          # Bible text but kept one file per book: on 8 Sep 2026 a reviewer left chapter 1 of every
+          # book and threw away the other 1,123 files, and the version before this one stayed green.
+          # ⚠️ Book data and chapter files are looked for where the site itself fetches them —
+          # api/book/<CODE>.json and api/chapter/<CODE>/<n>.json, exactly there. An earlier version
+          # accepted a file of that name anywhere at any depth, so a 2-byte file dropped into
+          # api/book/xx/ stood in for the real Genesis and this check stayed green (8 Sep 2026).
+          # Looking only at the one place the reader's browser looks costs nothing and closes that:
+          # a second translation filed one directory deeper (api/book/thsv11/JHN.json) is extra, and
+          # extra is never an error, so it still does not read as a book gone missing.
+          # ⚠️ The floors on size sit far below anything real — the smallest chapter file in a good
+          # delivery runs past 1,700 bytes and the smallest reading page past 9,000 — and far above
+          # an empty shell. They are here to catch a file that was created but never filled, not to
+          # police size. The reading page is weighed with its blank space taken out, because 5,000
+          # spaces is a shell too.
+          # ⚠️ Written in python because it has to read numbers out of JSON, and because every gap
+          # is collected and reported together: a half-built delivery shows its whole gap in one run
+          # instead of one book per re-run. The Thai keys are written as escapes so that no editor
+          # or terminal on the way here can quietly break them.
+          python3 - <<'PY'
+          import json, os, sys
 
-          # Everything those two pages point at must actually be in the delivery.
-          # ⚠️ Thai file names are percent-encoded inside the HTML but are Thai bytes on disk, so the
-          # path has to be decoded before testing — comparing the raw text would report every valid
-          # Thai-named file as missing. (Same trap aimgit hit on 29 Aug 2026.)
-          for p in $(grep -ohE '"/v3/[^"]+"' v3/index.html "$page" | tr -d '"' | sort -u); do
-            p=${p%%\?*}; p=${p%%#*}
-            case "${p##*/}" in *.*) ;; *) continue ;; esac
-            p=$(printf '%b' "${p//%/'\x'}")
-            test -f "v3${p#/v3}" || { echo "::error::delivered v3 references $p but the file is missing"; exit 1; }
+          def die(msg):
+              print("::error::" + msg)
+              sys.exit(1)
+
+          manifest = "v3/api/books.json"
+          if not os.path.isfile(manifest):
+              die("v3/api/books.json is missing - the delivery does not say what it should contain")
+          try:
+              with open(manifest, encoding="utf-8") as fh:
+                  said = json.load(fh)
+          except Exception as exc:
+              die("v3/api/books.json cannot be read: %s" % exc)
+
+          books = said.get("\u0e40\u0e25\u0e48\u0e21") or []          # "เล่ม" = the list of books
+          count = said.get("\u0e08\u0e33\u0e19\u0e27\u0e19\u0e40\u0e25\u0e48\u0e21")  # "จำนวนเล่ม" = how many books
+          total = said.get("\u0e08\u0e33\u0e19\u0e27\u0e19\u0e1a\u0e17")              # "จำนวนบท"  = how many chapters
+          if not books:
+              die("v3/api/books.json names no books at all - the delivery is not complete")
+          if count is not None and count != len(books):
+              die("v3/api/books.json says %s books but names %d of them" % (count, len(books)))
+
+          # Read the chapter list of every book once, and make the manifest agree with itself while
+          # doing it. "บทที่มี" is the list of chapter numbers this book actually has. ⚠️ It is not
+          # the same as "บท", the number the last chapter carries: Joel is numbered up to 4 and has
+          # 3, so reading the number instead of the list would go red on a good delivery.
+          # ⛔ If the list ever stops being sent this goes red on purpose, rather than quietly
+          # falling back to the number and checking the wrong thing.
+          # "ข้อสุดท้าย" is the last verse number of each chapter, one entry per chapter. It is
+          # written from the same source and must therefore be exactly as long as the chapter list:
+          # shortening one list and forgetting the other is what a hand-trimmed manifest looks like.
+          wanted = {}
+          for book in books:
+              code = book.get("\u0e23\u0e2b\u0e31\u0e2a")          # "รหัส" = the book code, e.g. JHN
+              if not code:
+                  die("v3/api/books.json has an entry with no book code - it cannot be checked")
+              want = book.get("\u0e1a\u0e17\u0e17\u0e35\u0e48\u0e21\u0e35")
+              if not isinstance(want, list) or not want:
+                  die("v3/api/books.json no longer lists which chapters %s has - the delivery changed shape and this check has to be brought up to date here" % code)
+              ends = book.get("\u0e02\u0e49\u0e2d\u0e2a\u0e38\u0e14\u0e17\u0e49\u0e32\u0e22")
+              if isinstance(ends, list) and len(ends) != len(want):
+                  die("v3/api/books.json disagrees with itself about %s: it lists %d chapters but %d last-verse numbers" % (code, len(want), len(ends)))
+              wanted[code] = want
+          here_chapters = sum(len(v) for v in wanted.values())
+          last = sum(b.get("\u0e1a\u0e17") for b in books
+                     if isinstance(b.get("\u0e1a\u0e17"), int))
+          if isinstance(total, int) and total != last:
+              die("v3/api/books.json says %d chapters but its books add up to %d" % (total, last))
+
+          # ---- the ruler from outside the delivery ----------------------------------------------
+          # live/webdata/books.json belongs to the root site on `main`. Same Bible, different
+          # pipeline, not in this push. Only counts are compared - no name from it is ever matched
+          # against a v3 name, so v3 may rename anything it likes.
+          # ⛔ A FILE WE DO NOT OWN MUST NEVER CRASH THIS SCRIPT. Reading it, and every sum taken
+          # from it, sits inside the one guard below, so whatever shape it turns up in the worst
+          # that can happen is a run with no ruler. Missing ruler = skip, never red.
+          # ⚠️ That is not the same as "this file can never turn /v3/ red". A ruler that is the
+          # right shape but has grown - more books, or more chapters per book - makes the delivery
+          # look short and does turn it red. That is the ruler doing its job, and the fix is to
+          # bring this check up to date, which is what the red says.
+          # ⚠️ AND EVERY WAY OUT OF THE MEASUREMENT SAYS SO OUT LOUD. Skipping quietly is worse than
+          # not having a ruler at all, because the run then looks exactly like a measured one. There
+          # is only one way out: the file cannot be read as a list of books at all. Books that have
+          # lost their chapter numbers are left out of the chapter sum and said out loud, but the
+          # books that still carry theirs keep measuring. ⛔ A SHORT RULER MUST NEVER STOP THE
+          # MEASURING. The test below is "this delivery has less than nine tenths of the ruler", so
+          # a ruler that lost some of its numbers can only make a red harder to reach, never easier
+          # - it cannot produce a false red, and dropping it outright throws away every hole it
+          # could still have caught.
+          # (8 Sep 2026, one reviewer round: the ruler replaced by an object, by an empty list, and
+          # by 66 books stripped of their chapters, each time throwing away 1,123 of the delivery's
+          # 1,189 chapters, all passing without a line of warning. The round after: turning
+          # `chapters` into a plain count - the one change the root site could make without ever
+          # thinking about v3 - crashed this script and took /v3/ off the site. The round after
+          # that: the fix for the crash had also stopped counting chapters whenever a single book
+          # was short, so the root site merely adding one not-yet-numbered book to its own
+          # catalogue switched the whole chapter measurement off, and the same 1,123 missing
+          # chapters went through.)
+          ruler = "live/webdata/books.json"
+          out_books = out_chapters = 0
+          skipped = None
+          numbered_books = None
+          try:
+              with open(ruler, encoding="utf-8") as fh:
+                  rows = json.load(fh)
+              if not isinstance(rows, list) or not rows:
+                  skipped = "it is no longer a list of books with anything in it"
+              else:
+                  numbered = [row["chapters"] for row in rows
+                              if isinstance(row, dict)
+                              and isinstance(row.get("chapters"), list) and row["chapters"]]
+                  out_books = len(rows)
+                  out_chapters = sum(len(ch) for ch in numbered)
+                  if len(numbered) != out_books:
+                      numbered_books = len(numbered)
+          except Exception as exc:
+              skipped = "it could not be read as a list of books (%s)" % exc
+              out_books = out_chapters = 0
+              numbered_books = None
+          if skipped:
+              print("::warning::%s was not used as a ruler because %s - this run has no ruler from "
+                    "outside the delivery, so api/books.json is only checked against itself"
+                    % (ruler, skipped))
+          elif numbered_books is not None:
+              print("::warning::%s carries chapter numbers for only %d of its %d books, so the "
+                    "chapter count below is measured against a ruler that is short by %d books - "
+                    "it can still catch a delivery that lost a lot, but a smaller loss may slip by"
+                    % (ruler, numbered_books, out_books, out_books - numbered_books))
+          if out_books:
+              # A tenth is the whole slack. The two catalogues describe the same Bible, so they
+              # should land on the same numbers; a delivery that declares less than nine tenths of
+              # what the root site already publishes is a delivery that lost something.
+              if len(books) * 10 < out_books * 9:
+                  die("the root site's own catalogue has %d books but this delivery declares only "
+                      "%d - it is not a whole Bible. If that is on purpose, this check has to be "
+                      "brought up to date here." % (out_books, len(books)))
+              if out_chapters and here_chapters * 10 < out_chapters * 9:
+                  die("the root site's own catalogue has %d chapters but this delivery declares "
+                      "only %d - it is not a whole Bible. If that is on purpose, this check has to "
+                      "be brought up to date here." % (out_chapters, here_chapters))
+              print("ruler: the root site's catalogue has %d books and %d chapters; this delivery "
+                    "declares %d and %d" % (out_books, out_chapters, len(books), here_chapters))
+
+          gaps = []
+          for book in books:
+              code = book["\u0e23\u0e2b\u0e31\u0e2a"]
+              want = wanted[code]
+              data = "v3/api/book/%s.json" % code
+              if not os.path.isfile(data):
+                  gaps.append("%s has no book data at api/book/%s.json" % (code, code))
+                  continue
+              holder = "v3/api/chapter/%s" % code
+              if not os.path.isdir(holder):
+                  gaps.append("%s has no chapter directory at api/chapter/%s" % (code, code))
+                  continue
+              here = set(os.listdir(holder))
+              short = [n for n in want if ("%s.json" % n) not in here]
+              if short:
+                  gaps.append("%s is missing %d of its %d chapters in %s, e.g. %s"
+                              % (code, len(short), len(want), holder,
+                                 ", ".join(str(n) for n in short[:5])))
+                  continue
+              thin = [n for n in want
+                      if os.path.getsize(os.path.join(holder, "%s.json" % n)) < 256]
+              if thin:
+                  gaps.append("%d of %s's %d chapter files are under 256 bytes - shells, not "
+                              "chapters, e.g. %s"
+                              % (len(thin), code, len(want),
+                                 ", ".join(str(n) for n in thin[:5])))
+                  continue
+              page = "v3/read/%s/index.html" % code
+              if not os.path.isfile(page):
+                  gaps.append("%s has data but no reading page at /v3/read/%s" % (code, code))
+                  continue
+              with open(page, "rb") as fh:
+                  filled = len(b"".join(fh.read().split()))
+              if filled < 1024:
+                  gaps.append("the reading page for %s holds only %d bytes once blank space is "
+                              "taken out - a shell, not a page" % (code, filled))
+
+          if gaps:
+              die("the delivery declares %d books and %d of them did not arrive whole: %s"
+                  % (len(books), len(gaps), "; ".join(gaps[:5])))
+
+          print("census: api/books.json declares %d books and every one of them arrived whole "
+                "- book data, every one of its %d chapters, "
+                "and a reading page" % (len(books), here_chapters))
+          PY
+
+          # ---- 4. the home page must lead somewhere -----------------------------------------------
+          # The links are read out of the delivered file. ⛔ Do not write a page name here.
+          # Every shape the root has had, or could have, is accepted, because all of them work in a
+          # browser and none of them may fail here: a real page (href="/v3/read"), the old redirect
+          # stub (url=/v3/read), single quotes, and links written relative to the root (href="read").
+          # ⚠️ A link back to the home page itself — rel="canonical" href="/v3/", which Nuxt writes on
+          # its own, or a stub that redirects to /v3/ — is not a way out and is not counted. A page
+          # whose only links point at itself is not a home page.
+          # ⚠️ WHAT IS CHECKED IS THE FIRST STEP OF THE PATH, NOT THE WHOLE OF IT. v3 is one page
+          # that redraws itself as the reader moves, and 404.html — a small page, no home-page text
+          # in it, that loads that same app and that GitHub serves whenever a path has no file of
+          # its own — is what lets a deep address work: the reader
+          # gets the app and the app draws the right chapter. So /v3/read/JHN/3 and /v3/read/JHN/3.16
+          # open perfectly well while no such file exists anywhere in the delivery. An earlier
+          # version demanded a file for every link and would have gone red on both, and a red here
+          # takes the whole of /v3/ off the site — so a designer adding a "read on" button to the
+          # home page would have taken the site down without touching anything to do with this file
+          # (8 Sep 2026). What still has bite: the section the link starts in must have been
+          # delivered, so a link to /v3/sources when sources/ was never sent is still red.
+          # ⛔ THAT RELAXATION LEANS ON 404.html, SO 404.html IS CHECKED AND NOT ASSUMED. It is the
+          # only reason a deep address opens at all: GitHub serves it for every path with no file of
+          # its own. Without it every /v3/read/JHN/3 in the delivery dies in the reader's browser
+          # while everything in this run looks normal. (8 Sep 2026, one round after this section
+          # started leaning on that file: a reviewer deleted 404.html, then deleted it while the
+          # home page linked to a verse, and this check stayed green both times.)
+          test -s v3/404.html \
+            || { echo "::error::v3/404.html is missing or empty — every address under /v3/ that has no file of its own is served from it, so deep links would all land on GitHub's own not-found page"; exit 1; }
+
+          linked=
+          n=0
+          for raw in $(grep -ohE "(href|url)=(\"[^\"]*\"|'[^']*'|[^\"'[:space:]>]+)" v3/index.html \
+                       | sed -E "s/^(href|url)=//; s/^[\"']//; s/[\"']\$//" | sort -u); do
+            t=${raw%%\?*}; t=${t%%#*}
+            case "$t" in ""|"#"*|*:*|"//"*) continue ;; esac
+            case "$t" in
+              /v3|/v3/*) t=${t#/v3} ;;
+              /*) continue ;;
+              *) t="/$t" ;;
+            esac
+            t=$(printf '%b' "${t//%/'\x'}")
+            t=${t%/}
+            test -n "$t" || continue
+            case "${t##*/}" in
+              *.js|*.mjs|*.css|*.json|*.map|*.txt|*.xml|*.webmanifest|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.avif|*.woff|*.woff2|*.ttf|*.mp3|*.pdf) continue ;;
+            esac
+            # ⚠️ A page name is allowed to contain a dot — our Bible references are written with one,
+            # as in /v3/read/JHN/3.16 — so "has a dot" must never be read as "is a file". Only the
+            # file endings listed just above are treated as files.
+            seg=${t#/}; seg=${seg%%/*}
+            [ -e "v3/$seg" ] || [ -f "v3/$seg.html" ] \
+              || { echo "::error::the home page links to /v3$t but /v3/$seg was not delivered at all"; exit 1; }
+            n=$((n+1))
+            case " $linked " in *" $seg "*) continue ;; esac   # two links, one section
+            linked="$linked $seg"
           done
-          echo "delivered v3: $(cat v3/version.json) — asset check ran against $page"
+          [ "$n" -gt 0 ] \
+            || { echo "::error::v3/index.html links to no other page under /v3/ — that is not a home page"; exit 1; }
+
+          # ---- 5. every file the delivered pages name must be there -------------------------------
+          # ⚠️ This reads EVERY delivered page, not only the home page and its neighbours. The home
+          # page names its own bundle and nothing else, so a delivery that lost most of _nuxt/ would
+          # sail through if only the home page were read.
+          # ⚠️ Thai file names are percent-encoded inside the HTML but are Thai bytes on disk, so the
+          # path has to be decoded before it is tested — comparing the raw text would report every
+          # valid Thai-named file as missing. (Same trap aimgit hit on 29 Aug 2026.)
+          refs=0
+          for p in $(grep -ohrE "[\"']/v3/[^\"']+" --include='*.html' --exclude-dir=.git v3 \
+                     | cut -c2- | sort -u); do
+            p=${p%%\?*}; p=${p%%#*}
+            case "${p##*/}" in
+              *.js|*.mjs|*.css|*.json|*.map|*.txt|*.xml|*.webmanifest|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.avif|*.woff|*.woff2|*.ttf|*.mp3|*.pdf) ;;
+              *) continue ;;
+            esac
+            p=$(printf '%b' "${p//%/'\x'}")
+            test -f "v3${p#/v3}" \
+              || { echo "::error::delivered v3 references $p but the file is missing"; exit 1; }
+            refs=$((refs+1))
+          done
+
+          # ---- 6. the files the JS fetches later must be there -------------------------------------
+          # ⚠️ A page names only the handful of files it needs to start. The rest of the app is
+          # fetched later, by name, from inside the JS — and those names appear nowhere in any HTML,
+          # so a delivery that lost them looks perfect to sections 4 and 5 and then breaks under the
+          # reader's first click. (8 Sep 2026: a reviewer deleted every _nuxt file the four pages
+          # then being read did not name, and the check before this one stayed green.)
+          # ⚠️ THE BUNDLER WRITES THOSE NAMES IN MORE THAN ONE SPELLING and reading only one of them
+          # leaves a hole of exactly the kind this section exists to close: an earlier version read
+          # only the "./name.js" spelling, so deleting the whole of _nuxt/builds/ — which the JS asks
+          # for in backticks — passed unnoticed (8 Sep 2026). All three spellings are read here.
+          # ⚠️ Only names with a directory in them are followed. A bare name in backticks is usually
+          # a library's own fallback string and need not exist: a good delivery carries
+          # `sqlite3-opfs-async-proxy.js` in its JS and no such file, on purpose.
+          # ⚠️ Where a name is built at run time — `api/chapter/${code}` — the name cannot be known
+          # here, so what is checked is that the directory it is built inside was delivered and is
+          # not empty. That is what catches a whole fetched-later directory going missing.
+          chunks=0
+          for c in $(grep -ohE '"\./[A-Za-z0-9_.-]+\.(js|css)"' v3/_nuxt/*.js | tr -d '"' | sort -u); do
+            test -f "v3/_nuxt/${c#./}" \
+              || { echo "::error::delivered v3 loads _nuxt/${c#./} from its JS but that file is missing"; exit 1; }
+            chunks=$((chunks+1))
+          done
+          for c in $(grep -ohE '`[A-Za-z0-9_][A-Za-z0-9_./-]*\.(js|mjs|css|json)`' v3/_nuxt/*.js \
+                     | tr -d '`' | sort -u); do
+            case "$c" in */*) ;; *) continue ;; esac
+            { [ -f "v3/_nuxt/$c" ] || [ -f "v3/$c" ]; } \
+              || { echo "::error::delivered v3 fetches $c from its JS but that file is missing"; exit 1; }
+            chunks=$((chunks+1))
+          done
+          holds=0
+          for d in $(grep -ohE '`[A-Za-z0-9_][A-Za-z0-9_./-]*/\$\{' v3/_nuxt/*.js \
+                     | sed -E 's/^.//; s|/\$\{$||' | sort -u); do
+            case "$d" in */*) ;; *) continue ;; esac
+            test -n "$(find "v3/_nuxt/$d" "v3/$d" -type f -print -quit 2>/dev/null)" \
+              || { echo "::error::delivered v3 fetches files out of $d from its JS but that directory is missing or empty"; exit 1; }
+            holds=$((holds+1))
+          done
+
+          echo "delivered v3: $(cat v3/version.json)"
+          echo "checked: $(find v3 -name '*.html' -not -path 'v3/.git/*' | wc -l) pages, $refs files they name, $chunks files and $holds directories the JS loads later, $n links out of the home page (into$linked)"
 
       # ---- combine: root is the checkout itself, with /v3 nested under it -----------------------
       - name: Nest the delivered redesign under the site root
