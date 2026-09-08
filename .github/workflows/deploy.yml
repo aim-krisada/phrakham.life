@@ -114,21 +114,30 @@ jobs:
       # earlier version of this check stayed green; on 8 Sep 2026 a reviewer threw away 97% of this
       # delivery, 1543 files down to 52, and the version before this one stayed green too.)
       #
-      # HOW COMPLETENESS IS MEASURED WITHOUT NAMING A SINGLE BOOK: the delivery carries three
-      # separate listings of the same set of books — one JSON per book under api/book/, one chapter
-      # directory per book under api/chapter/, and one reading page per book under read/. A build
-      # that stopped part way, or a delivery that lost files on the way here, leaves those three out
-      # of step with each other, and they are compared against each other — never against a list
-      # written down here. ⛔ Never write a book name, a book count or a page name into this file:
-      # aimgit owns those and they do change (a page moved once already, 29 Aug 2026, /sources →
-      # /read), and a copy kept here would go stale without anyone noticing.
+      # HOW COMPLETENESS IS MEASURED WITHOUT NAMING A SINGLE BOOK: the delivery brings its own
+      # count. api/books.json is written by the sender and says how many books there are, what each
+      # one is called, and which chapter numbers each one has. Every book it names is then looked
+      # for in three places — one JSON per book under api/book/, one chapter directory per book
+      # under api/chapter/, and one reading page per book under read/ — and every chapter number it
+      # lists must be a file in that directory. ⛔ Never write a book name, a book count
+      # or a page name into this file: aimgit owns those and they do change (a page moved once
+      # already, 29 Aug 2026, /sources → /read), and a copy kept here would go stale without anyone
+      # noticing. Reading the numbers out of the delivery keeps them fresh on their own.
       #
-      # ⚠️ WHAT IT STILL CANNOT SEE: if all three listings shrink by the same books, the delivery is
-      # self-consistent and this step is green. Only a count sent by the sender can catch that, and
-      # the sender has not been asked for one yet (noted on aimgit issue #89). ⛔ So a green here is
-      # still not a promise that the delivery is complete — it is the receiver's shallow second
-      # line. The first line is the sender's own: aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the
-      # pages it built against its data before it hands anything over.
+      # ⚠️ MISSING IS AN ERROR, EXTRA IS NOT. Every check below asks "is anything the delivery
+      # promised absent?" and never "is there anything here I did not expect?" A red here takes
+      # /v3/ off the live site completely, so a false red costs as much as a hole that was missed.
+      # A new page under read/ that is not a book, a second translation kept one directory deeper,
+      # or an empty robots.txt must not take the site down. (8 Sep 2026: the version before this one
+      # demanded that read/ match the book list exactly, and refused a whole delivery over a single
+      # empty robots.txt — either one would have done it.)
+      #
+      # ⚠️ WHAT IT STILL CANNOT SEE: these checks count files and read the numbers the sender
+      # declares; they do not read the Bible text inside the chapter files. A delivery whose chapter
+      # files all held "{}" would still pass. ⛔ So a green here is not a promise that the delivery
+      # is complete — it is the receiver's shallow second line. The first line is the sender's own:
+      # aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the pages it built against its data before
+      # it hands anything over.
       - id: v3check
         if: steps.v3checkout.outcome == 'success'
         continue-on-error: true
@@ -140,7 +149,14 @@ jobs:
           # `test -f` says a file is there, not that anything is inside it. A write that failed part
           # way leaves a 0-byte .js, .css or .html behind, and every check further down still passes
           # while the site is blank in the browser.
-          empty=$(find v3 -type f -empty -not -path 'v3/.git/*' | head -3 | tr '\n' ' ')
+          # ⚠️ Only the file kinds that carry the site are looked at. An empty file is perfectly
+          # normal for others — an empty robots.txt, an empty marker file — and one of those must
+          # never drop /v3/ off the live site. (8 Sep 2026: a reviewer added one empty robots.txt to
+          # a good delivery and the version before this one refused the whole thing.)
+          empty=$(find v3 -type f -empty -not -path 'v3/.git/*' \
+                    \( -name '*.html' -o -name '*.js' -o -name '*.mjs' -o -name '*.css' \
+                       -o -name '*.json' \) \
+                  | head -3 | tr '\n' ' ')
           test -z "$empty" \
             || { echo "::error::delivered v3 contains empty files, e.g. $empty"; exit 1; }
 
@@ -155,32 +171,109 @@ jobs:
           test -n "$(find v3/_nuxt -name '*.js' -print -quit)" \
             || { echo "::error::delivered v3 has no JS in _nuxt — refusing to publish an empty page"; exit 1; }
 
-          # ---- 3. the census: the three listings of the books must agree --------------------------
-          data=$(find v3/api/book -maxdepth 1 -name '*.json' -printf '%f\n' | sed 's/\.json$//' | sort)
-          chapters=$(find v3/api/chapter -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort)
-          rendered=$(find v3/read -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort)
-          books=$(printf '%s\n' "$data" | grep -c . || true)
-          [ "$books" -gt 0 ] \
-            || { echo "::error::v3/api/book lists no books at all — the delivery is not complete"; exit 1; }
-          gap=$(comm -3 <(printf '%s\n' "$data") <(printf '%s\n' "$chapters") | tr -d '\t' | sort -u | tr '\n' ' ')
-          test -z "$gap" \
-            || { echo "::error::api/book lists $books books but api/chapter does not match it — out of step: $gap"; exit 1; }
-          gap=$(comm -3 <(printf '%s\n' "$data") <(printf '%s\n' "$rendered") | tr -d '\t' | sort -u | tr '\n' ' ')
-          test -z "$gap" \
-            || { echo "::error::api/book lists $books books but read/ does not match it — out of step: $gap"; exit 1; }
-          # Every book must have a page with something on it, and chapter data behind that page.
-          # ⚠️ The size floor is deliberately far below any real page (the smallest reading page in a
-          # good delivery runs to several kilobytes) and far above an empty shell — it is here to
-          # catch a page that was written but never filled, not to police page size.
-          for b in $data; do
-            p="v3/read/$b/index.html"
-            test -f "$p" \
-              || { echo "::error::book $b has data but no reading page at /v3/read/$b"; exit 1; }
-            [ "$(wc -c <"$p")" -ge 1024 ] \
-              || { echo "::error::the reading page for $b is only $(wc -c <"$p") bytes — that is a shell, not a page"; exit 1; }
-            test -n "$(find "v3/api/chapter/$b" -name '*.json' -print -quit)" \
-              || { echo "::error::book $b has no chapter data under api/chapter/$b"; exit 1; }
-          done
+          # ---- 3. the census: every book the delivery declares must arrive whole ----------------
+          # api/books.json is the sender's own count, carried inside the delivery. Each book it
+          # names has to turn up as book data, as a chapter directory holding a file for every
+          # chapter that book says it has, and as a reading page with something on
+          # it. ⚠️ The chapter count is what catches a delivery that lost the Bible text but kept
+          # one file per book: on 8 Sep 2026 a reviewer left chapter 1 of every book and threw away
+          # the other 1,123 files, and the version before this one stayed green.
+          # ⚠️ Book data and chapter directories are matched by name at any depth, so the day a
+          # second translation is filed one directory deeper (api/book/thsv11/JHN.json) nothing here
+          # reads it as a book gone missing.
+          # ⚠️ The size floor on a reading page sits far below any real page — the smallest good
+          # one runs to several kilobytes — and far above an empty shell. It is here to catch a page
+          # that was written but never filled, not to police page size.
+          # ⚠️ Written in python because it has to read numbers out of JSON, and because every gap
+          # is collected and reported together: a half-built delivery shows its whole gap in one run
+          # instead of one book per re-run. The Thai keys are written as escapes so that no editor
+          # or terminal on the way here can quietly break them.
+          python3 - <<'PY'
+          import json, os, sys
+
+          def die(msg):
+              print("::error::" + msg)
+              sys.exit(1)
+
+          manifest = "v3/api/books.json"
+          if not os.path.isfile(manifest):
+              die("v3/api/books.json is missing - the delivery does not say what it should contain")
+          try:
+              with open(manifest, encoding="utf-8") as fh:
+                  said = json.load(fh)
+          except Exception as exc:
+              die("v3/api/books.json cannot be read: %s" % exc)
+
+          books = said.get("\u0e40\u0e25\u0e48\u0e21") or []          # "เล่ม" = the list of books
+          count = said.get("\u0e08\u0e33\u0e19\u0e27\u0e19\u0e40\u0e25\u0e48\u0e21")  # "จำนวนเล่ม" = how many books
+          if not books:
+              die("v3/api/books.json names no books at all - the delivery is not complete")
+          if count is not None and count != len(books):
+              die("v3/api/books.json says %s books but names %d of them" % (count, len(books)))
+
+          data = {}
+          for root, dirs, files in os.walk("v3/api/book"):
+              for name in files:
+                  if name.endswith(".json"):
+                      data.setdefault(name[:-5], os.path.join(root, name))
+          holders = {}
+          for root, dirs, files in os.walk("v3/api/chapter"):
+              for name in dirs:
+                  holders.setdefault(name, os.path.join(root, name))
+
+          def chapter_names(where):
+              found = set()
+              for root, dirs, files in os.walk(where):
+                  found.update(name for name in files if name.endswith(".json"))
+              return found
+
+          gaps = []
+          for book in books:
+              code = book.get("\u0e23\u0e2b\u0e31\u0e2a")          # "รหัส" = the book code, e.g. JHN
+              if not code:
+                  die("v3/api/books.json has an entry with no book code - it cannot be checked")
+              if code not in data:
+                  gaps.append("%s has no book data under api/book" % code)
+                  continue
+              holder = holders.get(code)
+              if holder is None:
+                  gaps.append("%s has no chapter directory under api/chapter" % code)
+                  continue
+              # "บทที่มี" is the list of chapter numbers this book actually has.
+              # ⚠️ It is not the same as "บท", the number the last chapter carries: Joel is
+              # numbered up to 4 and has 3. Reading the list, and not the number, is what
+              # keeps a good delivery green. ⛔ If that list ever stops being sent,
+              # this goes red on purpose rather than quietly checking nothing.
+              want = book.get("\u0e1a\u0e17\u0e17\u0e35\u0e48\u0e21\u0e35")
+              if want is None:
+                  last = book.get("\u0e1a\u0e17")
+                  want = list(range(1, last + 1)) if isinstance(last, int) else None
+              if want is None:
+                  die("v3/api/books.json no longer says which chapters %s has - the delivery changed shape and this check has to be brought up to date here" % code)
+              here = chapter_names(holder)
+              short = [n for n in want if ("%s.json" % n) not in here]
+              if short:
+                  gaps.append("%s is missing %d of its %d chapters in %s, e.g. %s"
+                              % (code, len(short), len(want), holder,
+                                 ", ".join(str(n) for n in short[:5])))
+                  continue
+              page = "v3/read/%s/index.html" % code
+              if not os.path.isfile(page):
+                  gaps.append("%s has data but no reading page at /v3/read/%s" % (code, code))
+                  continue
+              size = os.path.getsize(page)
+              if size < 1024:
+                  gaps.append("the reading page for %s is only %d bytes - a shell, not a page"
+                              % (code, size))
+
+          if gaps:
+              die("the delivery declares %d books and %d of them did not arrive whole: %s"
+                  % (len(books), len(gaps), "; ".join(gaps[:5])))
+
+          print("census: api/books.json declares %d books and every one of them arrived whole "
+                "- book data, every chapter it lists, "
+                "and a reading page" % len(books))
+          PY
 
           # ---- 4. the home page must lead somewhere -----------------------------------------------
           # The links are read out of the delivered file. ⛔ Do not write a page name here.
@@ -258,7 +351,6 @@ jobs:
           done
 
           echo "delivered v3: $(cat v3/version.json)"
-          echo "census: $books books, and api/book, api/chapter and read/ all agree on which ones"
           echo "checked: $(find v3 -name '*.html' -not -path 'v3/.git/*' | wc -l) pages, $refs files they name, $chunks files the JS loads later, $n links out of the home page ($linked)"
 
       # ---- combine: root is the checkout itself, with /v3 nested under it -----------------------
