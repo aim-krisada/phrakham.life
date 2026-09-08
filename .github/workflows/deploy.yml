@@ -124,6 +124,18 @@ jobs:
       # already, 29 Aug 2026, /sources → /read), and a copy kept here would go stale without anyone
       # noticing. Reading the numbers out of the delivery keeps them fresh on their own.
       #
+      # ⚠️ THE SENDER'S OWN COUNT CANNOT BE THE ONLY RULER. api/books.json travels inside the same
+      # push as the files it describes, so a sender that ships less and writes a shorter list agrees
+      # with itself and every count above still adds up. (8 Sep 2026: a reviewer cut the delivery to
+      # three books and shortened the list to match — 75% of the files gone — and the version before
+      # this one stayed green; with one book left, 89% gone, still green.) So the count is measured
+      # against a ruler from OUTSIDE the delivery: live/webdata/books.json, the catalogue the root
+      # site on `main` uses for its own reading pages. It is built by the older pipeline, it is not
+      # in this push, and the incoming delivery cannot change it. It carries no v3 names — only how
+      # many books the same Bible has and how many chapters each one has — so nothing here goes
+      # stale when v3 renames a page. If that file is ever gone, the ruler is skipped with a warning
+      # and never a red: a missing ruler must not take the site down.
+      #
       # ⚠️ MISSING IS AN ERROR, EXTRA IS NOT. Every check below asks "is anything the delivery
       # promised absent?" and never "is there anything here I did not expect?" A red here takes
       # /v3/ off the live site completely, so a false red costs as much as a hole that was missed.
@@ -132,12 +144,12 @@ jobs:
       # demanded that read/ match the book list exactly, and refused a whole delivery over a single
       # empty robots.txt — either one would have done it.)
       #
-      # ⚠️ WHAT IT STILL CANNOT SEE: these checks count files and read the numbers the sender
-      # declares; they do not read the Bible text inside the chapter files. A delivery whose chapter
-      # files all held "{}" would still pass. ⛔ So a green here is not a promise that the delivery
-      # is complete — it is the receiver's shallow second line. The first line is the sender's own:
-      # aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the pages it built against its data before
-      # it hands anything over.
+      # ⚠️ WHAT IT STILL CANNOT SEE: these checks count files, weigh them, and read the numbers the
+      # sender declares; they do not read the Bible text inside a chapter file. A chapter file with
+      # a plausible amount of the wrong text in it would pass. ⛔ So a green here is not a promise
+      # that the delivery is right — it is the receiver's shallow second line. The first line is the
+      # sender's own: aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the pages it built against its
+      # data before it hands anything over.
       - id: v3check
         if: steps.v3checkout.outcome == 'success'
         continue-on-error: true
@@ -172,18 +184,25 @@ jobs:
             || { echo "::error::delivered v3 has no JS in _nuxt — refusing to publish an empty page"; exit 1; }
 
           # ---- 3. the census: every book the delivery declares must arrive whole ----------------
-          # api/books.json is the sender's own count, carried inside the delivery. Each book it
-          # names has to turn up as book data, as a chapter directory holding a file for every
-          # chapter that book says it has, and as a reading page with something on
-          # it. ⚠️ The chapter count is what catches a delivery that lost the Bible text but kept
-          # one file per book: on 8 Sep 2026 a reviewer left chapter 1 of every book and threw away
-          # the other 1,123 files, and the version before this one stayed green.
-          # ⚠️ Book data and chapter directories are matched by name at any depth, so the day a
-          # second translation is filed one directory deeper (api/book/thsv11/JHN.json) nothing here
-          # reads it as a book gone missing.
-          # ⚠️ The size floor on a reading page sits far below any real page — the smallest good
-          # one runs to several kilobytes — and far above an empty shell. It is here to catch a page
-          # that was written but never filled, not to police page size.
+          # api/books.json is the sender's own count, carried inside the delivery. It is first
+          # weighed against the ruler from outside (see the header), then against itself, and only
+          # then against the files. Each book it names has to turn up as book data, as a chapter
+          # directory holding a file for every chapter that book says it has, and as a reading page
+          # with something on it. ⚠️ The chapter count is what catches a delivery that lost the
+          # Bible text but kept one file per book: on 8 Sep 2026 a reviewer left chapter 1 of every
+          # book and threw away the other 1,123 files, and the version before this one stayed green.
+          # ⚠️ Book data and chapter files are looked for where the site itself fetches them —
+          # api/book/<CODE>.json and api/chapter/<CODE>/<n>.json, exactly there. An earlier version
+          # accepted a file of that name anywhere at any depth, so a 2-byte file dropped into
+          # api/book/xx/ stood in for the real Genesis and this check stayed green (8 Sep 2026).
+          # Looking only at the one place the reader's browser looks costs nothing and closes that:
+          # a second translation filed one directory deeper (api/book/thsv11/JHN.json) is extra, and
+          # extra is never an error, so it still does not read as a book gone missing.
+          # ⚠️ The floors on size sit far below anything real — the smallest chapter file in a good
+          # delivery runs past 1,700 bytes and the smallest reading page past 9,000 — and far above
+          # an empty shell. They are here to catch a file that was created but never filled, not to
+          # police size. The reading page is weighed with its blank space taken out, because 5,000
+          # spaces is a shell too.
           # ⚠️ Written in python because it has to read numbers out of JSON, and because every gap
           # is collected and reported together: a half-built delivery shows its whole gap in one run
           # instead of one book per re-run. The Thai keys are written as escapes so that no editor
@@ -206,73 +225,114 @@ jobs:
 
           books = said.get("\u0e40\u0e25\u0e48\u0e21") or []          # "เล่ม" = the list of books
           count = said.get("\u0e08\u0e33\u0e19\u0e27\u0e19\u0e40\u0e25\u0e48\u0e21")  # "จำนวนเล่ม" = how many books
+          total = said.get("\u0e08\u0e33\u0e19\u0e27\u0e19\u0e1a\u0e17")              # "จำนวนบท"  = how many chapters
           if not books:
               die("v3/api/books.json names no books at all - the delivery is not complete")
           if count is not None and count != len(books):
               die("v3/api/books.json says %s books but names %d of them" % (count, len(books)))
 
-          data = {}
-          for root, dirs, files in os.walk("v3/api/book"):
-              for name in files:
-                  if name.endswith(".json"):
-                      data.setdefault(name[:-5], os.path.join(root, name))
-          holders = {}
-          for root, dirs, files in os.walk("v3/api/chapter"):
-              for name in dirs:
-                  holders.setdefault(name, os.path.join(root, name))
-
-          def chapter_names(where):
-              found = set()
-              for root, dirs, files in os.walk(where):
-                  found.update(name for name in files if name.endswith(".json"))
-              return found
-
-          gaps = []
+          # Read the chapter list of every book once, and make the manifest agree with itself while
+          # doing it. "บทที่มี" is the list of chapter numbers this book actually has. ⚠️ It is not
+          # the same as "บท", the number the last chapter carries: Joel is numbered up to 4 and has
+          # 3, so reading the number instead of the list would go red on a good delivery.
+          # ⛔ If the list ever stops being sent this goes red on purpose, rather than quietly
+          # falling back to the number and checking the wrong thing.
+          # "ข้อสุดท้าย" is the last verse number of each chapter, one entry per chapter. It is
+          # written from the same source and must therefore be exactly as long as the chapter list:
+          # shortening one list and forgetting the other is what a hand-trimmed manifest looks like.
+          wanted = {}
           for book in books:
               code = book.get("\u0e23\u0e2b\u0e31\u0e2a")          # "รหัส" = the book code, e.g. JHN
               if not code:
                   die("v3/api/books.json has an entry with no book code - it cannot be checked")
-              if code not in data:
-                  gaps.append("%s has no book data under api/book" % code)
-                  continue
-              holder = holders.get(code)
-              if holder is None:
-                  gaps.append("%s has no chapter directory under api/chapter" % code)
-                  continue
-              # "บทที่มี" is the list of chapter numbers this book actually has.
-              # ⚠️ It is not the same as "บท", the number the last chapter carries: Joel is
-              # numbered up to 4 and has 3. Reading the list, and not the number, is what
-              # keeps a good delivery green. ⛔ If that list ever stops being sent,
-              # this goes red on purpose rather than quietly checking nothing.
               want = book.get("\u0e1a\u0e17\u0e17\u0e35\u0e48\u0e21\u0e35")
-              if want is None:
-                  last = book.get("\u0e1a\u0e17")
-                  want = list(range(1, last + 1)) if isinstance(last, int) else None
-              if want is None:
-                  die("v3/api/books.json no longer says which chapters %s has - the delivery changed shape and this check has to be brought up to date here" % code)
-              here = chapter_names(holder)
+              if not isinstance(want, list) or not want:
+                  die("v3/api/books.json no longer lists which chapters %s has - the delivery changed shape and this check has to be brought up to date here" % code)
+              ends = book.get("\u0e02\u0e49\u0e2d\u0e2a\u0e38\u0e14\u0e17\u0e49\u0e32\u0e22")
+              if isinstance(ends, list) and len(ends) != len(want):
+                  die("v3/api/books.json disagrees with itself about %s: it lists %d chapters but %d last-verse numbers" % (code, len(want), len(ends)))
+              wanted[code] = want
+          here_chapters = sum(len(v) for v in wanted.values())
+          last = sum(b.get("\u0e1a\u0e17") for b in books
+                     if isinstance(b.get("\u0e1a\u0e17"), int))
+          if isinstance(total, int) and total != last:
+              die("v3/api/books.json says %d chapters but its books add up to %d" % (total, last))
+
+          # ---- the ruler from outside the delivery ----------------------------------------------
+          # live/webdata/books.json belongs to the root site on `main`. Same Bible, different
+          # pipeline, not in this push. Only counts are compared - no name from it is ever matched
+          # against a v3 name, so v3 may rename anything it likes. Missing ruler = skip, never red.
+          ruler = "live/webdata/books.json"
+          out_books = out_chapters = 0
+          try:
+              with open(ruler, encoding="utf-8") as fh:
+                  rows = json.load(fh)
+              if isinstance(rows, list) and rows:
+                  out_books = len(rows)
+                  out_chapters = sum(len(row.get("chapters") or []) for row in rows
+                                     if isinstance(row, dict))
+          except Exception as exc:
+              print("::warning::%s could not be read (%s) - this run has no ruler from outside the "
+                    "delivery, so api/books.json is only checked against itself" % (ruler, exc))
+          if out_books:
+              # A tenth is the whole slack. The two catalogues describe the same Bible, so they
+              # should land on the same numbers; a delivery that declares less than nine tenths of
+              # what the root site already publishes is a delivery that lost something.
+              if len(books) * 10 < out_books * 9:
+                  die("the root site's own catalogue has %d books but this delivery declares only "
+                      "%d - it is not a whole Bible. If that is on purpose, this check has to be "
+                      "brought up to date here." % (out_books, len(books)))
+              if out_chapters and here_chapters * 10 < out_chapters * 9:
+                  die("the root site's own catalogue has %d chapters but this delivery declares "
+                      "only %d - it is not a whole Bible. If that is on purpose, this check has to "
+                      "be brought up to date here." % (out_chapters, here_chapters))
+              print("ruler: the root site's catalogue has %d books and %d chapters; this delivery "
+                    "declares %d and %d" % (out_books, out_chapters, len(books), here_chapters))
+
+          gaps = []
+          for book in books:
+              code = book["\u0e23\u0e2b\u0e31\u0e2a"]
+              want = wanted[code]
+              data = "v3/api/book/%s.json" % code
+              if not os.path.isfile(data):
+                  gaps.append("%s has no book data at api/book/%s.json" % (code, code))
+                  continue
+              holder = "v3/api/chapter/%s" % code
+              if not os.path.isdir(holder):
+                  gaps.append("%s has no chapter directory at api/chapter/%s" % (code, code))
+                  continue
+              here = set(os.listdir(holder))
               short = [n for n in want if ("%s.json" % n) not in here]
               if short:
                   gaps.append("%s is missing %d of its %d chapters in %s, e.g. %s"
                               % (code, len(short), len(want), holder,
                                  ", ".join(str(n) for n in short[:5])))
                   continue
+              thin = [n for n in want
+                      if os.path.getsize(os.path.join(holder, "%s.json" % n)) < 256]
+              if thin:
+                  gaps.append("%d of %s's %d chapter files are under 256 bytes - shells, not "
+                              "chapters, e.g. %s"
+                              % (len(thin), code, len(want),
+                                 ", ".join(str(n) for n in thin[:5])))
+                  continue
               page = "v3/read/%s/index.html" % code
               if not os.path.isfile(page):
                   gaps.append("%s has data but no reading page at /v3/read/%s" % (code, code))
                   continue
-              size = os.path.getsize(page)
-              if size < 1024:
-                  gaps.append("the reading page for %s is only %d bytes - a shell, not a page"
-                              % (code, size))
+              with open(page, "rb") as fh:
+                  filled = len(b"".join(fh.read().split()))
+              if filled < 1024:
+                  gaps.append("the reading page for %s holds only %d bytes once blank space is "
+                              "taken out - a shell, not a page" % (code, filled))
 
           if gaps:
               die("the delivery declares %d books and %d of them did not arrive whole: %s"
                   % (len(books), len(gaps), "; ".join(gaps[:5])))
 
           print("census: api/books.json declares %d books and every one of them arrived whole "
-                "- book data, every chapter it lists, "
-                "and a reading page" % len(books))
+                "- book data, every one of its %d chapters, "
+                "and a reading page" % (len(books), here_chapters))
           PY
 
           # ---- 4. the home page must lead somewhere -----------------------------------------------
@@ -283,6 +343,16 @@ jobs:
           # ⚠️ A link back to the home page itself — rel="canonical" href="/v3/", which Nuxt writes on
           # its own, or a stub that redirects to /v3/ — is not a way out and is not counted. A page
           # whose only links point at itself is not a home page.
+          # ⚠️ WHAT IS CHECKED IS THE FIRST STEP OF THE PATH, NOT THE WHOLE OF IT. v3 is one page
+          # that redraws itself as the reader moves, and 404.html — the copy of the home page that
+          # GitHub serves whenever a path has no file — is what lets a deep address work: the reader
+          # gets the app and the app draws the right chapter. So /v3/read/JHN/3 and /v3/read/JHN/3.16
+          # open perfectly well while no such file exists anywhere in the delivery. An earlier
+          # version demanded a file for every link and would have gone red on both, and a red here
+          # takes the whole of /v3/ off the site — so a designer adding a "read on" button to the
+          # home page would have taken the site down without touching anything to do with this file
+          # (8 Sep 2026). What still has bite: the section the link starts in must have been
+          # delivered, so a link to /v3/sources when sources/ was never sent is still red.
           linked=
           n=0
           for raw in $(grep -ohE "(href|url)=(\"[^\"]*\"|'[^']*'|[^\"'[:space:]>]+)" v3/index.html \
@@ -303,15 +373,12 @@ jobs:
             # ⚠️ A page name is allowed to contain a dot — our Bible references are written with one,
             # as in /v3/read/JHN/3.16 — so "has a dot" must never be read as "is a file". Only the
             # file endings listed just above are treated as files.
-            page=
-            for c in "v3$t/index.html" "v3$t" "v3$t.html"; do
-              [ -f "$c" ] && { page="$c"; break; }
-            done
-            test -n "$page" \
-              || { echo "::error::the home page links to /v3$t but that page is not in the delivery"; exit 1; }
-            case " $linked " in *" $page "*) continue ;; esac   # two links, one page
-            linked="$linked $page"
+            seg=${t#/}; seg=${seg%%/*}
+            [ -e "v3/$seg" ] || [ -f "v3/$seg.html" ] \
+              || { echo "::error::the home page links to /v3$t but /v3/$seg was not delivered at all"; exit 1; }
             n=$((n+1))
+            case " $linked " in *" $seg "*) continue ;; esac   # two links, one section
+            linked="$linked $seg"
           done
           [ "$n" -gt 0 ] \
             || { echo "::error::v3/index.html links to no other page under /v3/ — that is not a home page"; exit 1; }
@@ -337,21 +404,46 @@ jobs:
             refs=$((refs+1))
           done
 
-          # ---- 6. the JS bundle must have no holes in it ------------------------------------------
+          # ---- 6. the files the JS fetches later must be there -------------------------------------
           # ⚠️ A page names only the handful of files it needs to start. The rest of the app is
           # fetched later, by name, from inside the JS — and those names appear nowhere in any HTML,
           # so a delivery that lost them looks perfect to sections 4 and 5 and then breaks under the
           # reader's first click. (8 Sep 2026: a reviewer deleted every _nuxt file the four pages
           # then being read did not name, and the check before this one stayed green.)
+          # ⚠️ THE BUNDLER WRITES THOSE NAMES IN MORE THAN ONE SPELLING and reading only one of them
+          # leaves a hole of exactly the kind this section exists to close: an earlier version read
+          # only the "./name.js" spelling, so deleting the whole of _nuxt/builds/ — which the JS asks
+          # for in backticks — passed unnoticed (8 Sep 2026). All three spellings are read here.
+          # ⚠️ Only names with a directory in them are followed. A bare name in backticks is usually
+          # a library's own fallback string and need not exist: a good delivery carries
+          # `sqlite3-opfs-async-proxy.js` in its JS and no such file, on purpose.
+          # ⚠️ Where a name is built at run time — `api/chapter/${code}` — the name cannot be known
+          # here, so what is checked is that the directory it is built inside was delivered and is
+          # not empty. That is what catches a whole fetched-later directory going missing.
           chunks=0
           for c in $(grep -ohE '"\./[A-Za-z0-9_.-]+\.(js|css)"' v3/_nuxt/*.js | tr -d '"' | sort -u); do
             test -f "v3/_nuxt/${c#./}" \
               || { echo "::error::delivered v3 loads _nuxt/${c#./} from its JS but that file is missing"; exit 1; }
             chunks=$((chunks+1))
           done
+          for c in $(grep -ohE '`[A-Za-z0-9_][A-Za-z0-9_./-]*\.(js|mjs|css|json)`' v3/_nuxt/*.js \
+                     | tr -d '`' | sort -u); do
+            case "$c" in */*) ;; *) continue ;; esac
+            { [ -f "v3/_nuxt/$c" ] || [ -f "v3/$c" ]; } \
+              || { echo "::error::delivered v3 fetches $c from its JS but that file is missing"; exit 1; }
+            chunks=$((chunks+1))
+          done
+          holds=0
+          for d in $(grep -ohE '`[A-Za-z0-9_][A-Za-z0-9_./-]*/\$\{' v3/_nuxt/*.js \
+                     | sed -E 's/^.//; s|/\$\{$||' | sort -u); do
+            case "$d" in */*) ;; *) continue ;; esac
+            test -n "$(find "v3/_nuxt/$d" "v3/$d" -type f -print -quit 2>/dev/null)" \
+              || { echo "::error::delivered v3 fetches files out of $d from its JS but that directory is missing or empty"; exit 1; }
+            holds=$((holds+1))
+          done
 
           echo "delivered v3: $(cat v3/version.json)"
-          echo "checked: $(find v3 -name '*.html' -not -path 'v3/.git/*' | wc -l) pages, $refs files they name, $chunks files the JS loads later, $n links out of the home page ($linked)"
+          echo "checked: $(find v3 -name '*.html' -not -path 'v3/.git/*' | wc -l) pages, $refs files they name, $chunks files and $holds directories the JS loads later, $n links out of the home page (into$linked)"
 
       # ---- combine: root is the checkout itself, with /v3 nested under it -----------------------
       - name: Nest the delivered redesign under the site root
