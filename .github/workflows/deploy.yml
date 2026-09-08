@@ -106,65 +106,160 @@ jobs:
       # A delivered site must be able to say which commit it came from, the same way root does.
       # v3's own CI writes version.json; if it is missing, the delivery is not what we expect, so
       # treat it as "no v3 this run" rather than shipping something unidentifiable.
-      # ⚠️ Presence of a file is not proof the site works. On the sister repo pleng.phrakham.life a
-      # reviewer deleted the whole _nuxt/ directory from a real build, left index.html alone, and an
-      # earlier version of this check still passed — a site with no JS and no CSS would have shipped
-      # with nothing red on either side. Stopping that is what this step is for.
-      # ⚠️ ITS REACH IS SMALL. ⛔ Do not read a green here as "the delivery was verified". It tests
-      # that the files the pages below NAME are present, and nothing beyond that:
-      #   - whatever those pages do not name is never looked at ⇒ a delivery with every chapter
-      #     page gone, or with sources/, api/ or __nuxt_content/ missing whole, is green here;
-      #   - `test -f` says a file exists, not that anything is in it ⇒ zero-byte .js is green too.
-      # ⇒ completeness belongs to the sender: aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the pages
-      #   it built against the data before it publishes. This step is only the shallow second line
-      #   for the delivery that is obviously broken.
+      #
+      # WHAT THIS STEP ANSWERS: "did the whole delivery arrive, or only part of it?" ⛔ NOT "does the
+      # home page open?" A build that dies half way still writes a perfect home page, so opening one
+      # page — or following the links on it — proves nothing about the rest. (On the sister repo
+      # pleng.phrakham.life a reviewer deleted the whole _nuxt/ directory from a real build and an
+      # earlier version of this check stayed green; on 8 Sep 2026 a reviewer threw away 97% of this
+      # delivery, 1543 files down to 52, and the version before this one stayed green too.)
+      #
+      # HOW COMPLETENESS IS MEASURED WITHOUT NAMING A SINGLE BOOK: the delivery carries three
+      # separate listings of the same set of books — one JSON per book under api/book/, one chapter
+      # directory per book under api/chapter/, and one reading page per book under read/. A build
+      # that stopped part way, or a delivery that lost files on the way here, leaves those three out
+      # of step with each other, and they are compared against each other — never against a list
+      # written down here. ⛔ Never write a book name, a book count or a page name into this file:
+      # aimgit owns those and they do change (a page moved once already, 29 Aug 2026, /sources →
+      # /read), and a copy kept here would go stale without anyone noticing.
+      #
+      # ⚠️ WHAT IT STILL CANNOT SEE: if all three listings shrink by the same books, the delivery is
+      # self-consistent and this step is green. Only a count sent by the sender can catch that, and
+      # the sender has not been asked for one yet (noted on aimgit issue #89). ⛔ So a green here is
+      # still not a promise that the delivery is complete — it is the receiver's shallow second
+      # line. The first line is the sender's own: aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the
+      # pages it built against its data before it hands anything over.
       - id: v3check
         if: steps.v3checkout.outcome == 'success'
         continue-on-error: true
         run: |
           test -f v3/index.html
           test -f v3/version.json
-          test -n "$(find v3/_nuxt -name '*.js' -print -quit 2>/dev/null)" \
+
+          # ---- 1. nothing hollow -----------------------------------------------------------------
+          # `test -f` says a file is there, not that anything is inside it. A write that failed part
+          # way leaves a 0-byte .js, .css or .html behind, and every check further down still passes
+          # while the site is blank in the browser.
+          empty=$(find v3 -type f -empty -not -path 'v3/.git/*' | head -3 | tr '\n' ' ')
+          test -z "$empty" \
+            || { echo "::error::delivered v3 contains empty files, e.g. $empty"; exit 1; }
+
+          # ---- 2. no whole part of the delivery went missing --------------------------------------
+          # ⛔ These are the delivery's own directory names, not page names. If aimgit renames one,
+          # this step goes red on purpose: the census below reads these directories, so a rename has
+          # to be followed here instead of quietly skipped.
+          for d in _nuxt __nuxt_content api/book api/chapter read; do
+            test -n "$(find "v3/$d" -type f -print -quit 2>/dev/null)" \
+              || { echo "::error::v3/$d is missing or holds no files — the delivery is not complete"; exit 1; }
+          done
+          test -n "$(find v3/_nuxt -name '*.js' -print -quit)" \
             || { echo "::error::delivered v3 has no JS in _nuxt — refusing to publish an empty page"; exit 1; }
 
-          # ⚠️ Checking v3/index.html ALONE is not enough, whatever shape it has. It used to be a
-          # bare meta-refresh stub that named no CSS and no JS, and even now that it is a real page
-          # it names only its own assets — a delivery whose reading section failed to build would
-          # still have a perfectly good home page.
-          # ⇒ follow the links the home page itself offers, and check the pages behind them.
-          # ⛔ Do not write a page name here: aimgit owns those, and one already moved once
-          #   (29 Aug 2026, /sources → /read). Read them out of the delivered file instead.
-          # Two shapes are accepted, because the root has been both over time: a real page names
-          # where readers go next in href="/v3/…", a redirect stub names its one destination in
-          # url=/v3/… . Neither shape is required; whichever arrives, its links must be real pages.
-          # WHY A GREEN HERE MEANS THE DELIVERY HANGS TOGETHER: these links are exactly what a
-          # reader can click from the first screen. A section that failed to build (read/, sources/)
-          # still has its link sitting in the home page while the page behind it is gone ⇒ red. And
-          # a home page that links to no page at all is not a home page ⇒ also red.
-          pages=
-          for t in $(grep -ohE '(url=|href=")/v3/[A-Za-z0-9._~%/-]*' v3/index.html \
-                     | sed -E 's/^(url=|href=")//' | sort -u); do
-            case "${t##*/}" in *.*) continue ;; esac   # names a file, not a page — checked below
-            page="v3${t#/v3}"
-            case "$page" in */) page="${page}index.html" ;; *) page="$page/index.html" ;; esac
-            test -f "$page" \
-              || { echo "::error::the home page links to $t but that page is not in the delivery"; exit 1; }
-            pages="$pages $page"
+          # ---- 3. the census: the three listings of the books must agree --------------------------
+          data=$(find v3/api/book -maxdepth 1 -name '*.json' -printf '%f\n' | sed 's/\.json$//' | sort)
+          chapters=$(find v3/api/chapter -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort)
+          rendered=$(find v3/read -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort)
+          books=$(printf '%s\n' "$data" | grep -c . || true)
+          [ "$books" -gt 0 ] \
+            || { echo "::error::v3/api/book lists no books at all — the delivery is not complete"; exit 1; }
+          gap=$(comm -3 <(printf '%s\n' "$data") <(printf '%s\n' "$chapters") | tr -d '\t' | sort -u | tr '\n' ' ')
+          test -z "$gap" \
+            || { echo "::error::api/book lists $books books but api/chapter does not match it — out of step: $gap"; exit 1; }
+          gap=$(comm -3 <(printf '%s\n' "$data") <(printf '%s\n' "$rendered") | tr -d '\t' | sort -u | tr '\n' ' ')
+          test -z "$gap" \
+            || { echo "::error::api/book lists $books books but read/ does not match it — out of step: $gap"; exit 1; }
+          # Every book must have a page with something on it, and chapter data behind that page.
+          # ⚠️ The size floor is deliberately far below any real page (the smallest reading page in a
+          # good delivery runs to several kilobytes) and far above an empty shell — it is here to
+          # catch a page that was written but never filled, not to police page size.
+          for b in $data; do
+            p="v3/read/$b/index.html"
+            test -f "$p" \
+              || { echo "::error::book $b has data but no reading page at /v3/read/$b"; exit 1; }
+            [ "$(wc -c <"$p")" -ge 1024 ] \
+              || { echo "::error::the reading page for $b is only $(wc -c <"$p") bytes — that is a shell, not a page"; exit 1; }
+            test -n "$(find "v3/api/chapter/$b" -name '*.json' -print -quit)" \
+              || { echo "::error::book $b has no chapter data under api/chapter/$b"; exit 1; }
           done
-          test -n "$pages" \
-            || { echo "::error::v3/index.html links to no page under /v3/ — that is not a home page"; exit 1; }
 
-          # Everything those pages point at must actually be in the delivery.
-          # ⚠️ Thai file names are percent-encoded inside the HTML but are Thai bytes on disk, so the
-          # path has to be decoded before testing — comparing the raw text would report every valid
-          # Thai-named file as missing. (Same trap aimgit hit on 29 Aug 2026.)
-          for p in $(grep -ohE '"/v3/[^"]+"' v3/index.html $pages | tr -d '"' | sort -u); do
-            p=${p%%\?*}; p=${p%%#*}
-            case "${p##*/}" in *.*) ;; *) continue ;; esac
-            p=$(printf '%b' "${p//%/'\x'}")
-            test -f "v3${p#/v3}" || { echo "::error::delivered v3 references $p but the file is missing"; exit 1; }
+          # ---- 4. the home page must lead somewhere -----------------------------------------------
+          # The links are read out of the delivered file. ⛔ Do not write a page name here.
+          # Every shape the root has had, or could have, is accepted, because all of them work in a
+          # browser and none of them may fail here: a real page (href="/v3/read"), the old redirect
+          # stub (url=/v3/read), single quotes, and links written relative to the root (href="read").
+          # ⚠️ A link back to the home page itself — rel="canonical" href="/v3/", which Nuxt writes on
+          # its own, or a stub that redirects to /v3/ — is not a way out and is not counted. A page
+          # whose only links point at itself is not a home page.
+          linked=
+          n=0
+          for raw in $(grep -ohE "(href|url)=(\"[^\"]*\"|'[^']*'|[^\"'[:space:]>]+)" v3/index.html \
+                       | sed -E "s/^(href|url)=//; s/^[\"']//; s/[\"']\$//" | sort -u); do
+            t=${raw%%\?*}; t=${t%%#*}
+            case "$t" in ""|"#"*|*:*|"//"*) continue ;; esac
+            case "$t" in
+              /v3|/v3/*) t=${t#/v3} ;;
+              /*) continue ;;
+              *) t="/$t" ;;
+            esac
+            t=$(printf '%b' "${t//%/'\x'}")
+            t=${t%/}
+            test -n "$t" || continue
+            case "${t##*/}" in
+              *.js|*.mjs|*.css|*.json|*.map|*.txt|*.xml|*.webmanifest|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.avif|*.woff|*.woff2|*.ttf|*.mp3|*.pdf) continue ;;
+            esac
+            # ⚠️ A page name is allowed to contain a dot — our Bible references are written with one,
+            # as in /v3/read/JHN/3.16 — so "has a dot" must never be read as "is a file". Only the
+            # file endings listed just above are treated as files.
+            page=
+            for c in "v3$t/index.html" "v3$t" "v3$t.html"; do
+              [ -f "$c" ] && { page="$c"; break; }
+            done
+            test -n "$page" \
+              || { echo "::error::the home page links to /v3$t but that page is not in the delivery"; exit 1; }
+            case " $linked " in *" $page "*) continue ;; esac   # two links, one page
+            linked="$linked $page"
+            n=$((n+1))
           done
-          echo "delivered v3: $(cat v3/version.json) — asset check ran against v3/index.html$pages"
+          [ "$n" -gt 0 ] \
+            || { echo "::error::v3/index.html links to no other page under /v3/ — that is not a home page"; exit 1; }
+
+          # ---- 5. every file the delivered pages name must be there -------------------------------
+          # ⚠️ This reads EVERY delivered page, not only the home page and its neighbours. The home
+          # page names its own bundle and nothing else, so a delivery that lost most of _nuxt/ would
+          # sail through if only the home page were read.
+          # ⚠️ Thai file names are percent-encoded inside the HTML but are Thai bytes on disk, so the
+          # path has to be decoded before it is tested — comparing the raw text would report every
+          # valid Thai-named file as missing. (Same trap aimgit hit on 29 Aug 2026.)
+          refs=0
+          for p in $(grep -ohrE "[\"']/v3/[^\"']+" --include='*.html' --exclude-dir=.git v3 \
+                     | cut -c2- | sort -u); do
+            p=${p%%\?*}; p=${p%%#*}
+            case "${p##*/}" in
+              *.js|*.mjs|*.css|*.json|*.map|*.txt|*.xml|*.webmanifest|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.avif|*.woff|*.woff2|*.ttf|*.mp3|*.pdf) ;;
+              *) continue ;;
+            esac
+            p=$(printf '%b' "${p//%/'\x'}")
+            test -f "v3${p#/v3}" \
+              || { echo "::error::delivered v3 references $p but the file is missing"; exit 1; }
+            refs=$((refs+1))
+          done
+
+          # ---- 6. the JS bundle must have no holes in it ------------------------------------------
+          # ⚠️ A page names only the handful of files it needs to start. The rest of the app is
+          # fetched later, by name, from inside the JS — and those names appear nowhere in any HTML,
+          # so a delivery that lost them looks perfect to sections 4 and 5 and then breaks under the
+          # reader's first click. (8 Sep 2026: a reviewer deleted every _nuxt file the four pages
+          # then being read did not name, and the check before this one stayed green.)
+          chunks=0
+          for c in $(grep -ohE '"\./[A-Za-z0-9_.-]+\.(js|css)"' v3/_nuxt/*.js | tr -d '"' | sort -u); do
+            test -f "v3/_nuxt/${c#./}" \
+              || { echo "::error::delivered v3 loads _nuxt/${c#./} from its JS but that file is missing"; exit 1; }
+            chunks=$((chunks+1))
+          done
+
+          echo "delivered v3: $(cat v3/version.json)"
+          echo "census: $books books, and api/book, api/chapter and read/ all agree on which ones"
+          echo "checked: $(find v3 -name '*.html' -not -path 'v3/.git/*' | wc -l) pages, $refs files they name, $chunks files the JS loads later, $n links out of the home page ($linked)"
 
       # ---- combine: root is the checkout itself, with /v3 nested under it -----------------------
       - name: Nest the delivered redesign under the site root
