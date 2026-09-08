@@ -263,26 +263,35 @@ jobs:
           # live/webdata/books.json belongs to the root site on `main`. Same Bible, different
           # pipeline, not in this push. Only counts are compared - no name from it is ever matched
           # against a v3 name, so v3 may rename anything it likes.
-          # ⛔ A FILE WE DO NOT OWN MUST NEVER TAKE /v3/ OFF THE SITE. Reading it, and every sum
-          # taken from it, sits inside the one guard below, so whatever shape it turns up in the
-          # worst that can happen is a run with no ruler. Missing ruler = skip, never red.
+          # ⛔ A FILE WE DO NOT OWN MUST NEVER CRASH THIS SCRIPT. Reading it, and every sum taken
+          # from it, sits inside the one guard below, so whatever shape it turns up in the worst
+          # that can happen is a run with no ruler. Missing ruler = skip, never red.
+          # ⚠️ That is not the same as "this file can never turn /v3/ red". A ruler that is the
+          # right shape but has grown - more books, or more chapters per book - makes the delivery
+          # look short and does turn it red. That is the ruler doing its job, and the fix is to
+          # bring this check up to date, which is what the red says.
           # ⚠️ AND EVERY WAY OUT OF THE MEASUREMENT SAYS SO OUT LOUD. Skipping quietly is worse than
-          # not having a ruler at all, because the run then looks exactly like a measured one. The
-          # ways out: it cannot be read as a list of books, or its books no longer all carry chapter
-          # numbers - in that second one the book half is still measured and only the chapter half
-          # is skipped. Chapters are counted only when every single book carries them, because a
-          # ruler that still has its numbers for 1 book out of 66 measures nothing while looking
-          # exactly like one that measures everything.
+          # not having a ruler at all, because the run then looks exactly like a measured one. There
+          # is only one way out: the file cannot be read as a list of books at all. Books that have
+          # lost their chapter numbers are left out of the chapter sum and said out loud, but the
+          # books that still carry theirs keep measuring. ⛔ A SHORT RULER MUST NEVER STOP THE
+          # MEASURING. The test below is "this delivery has less than nine tenths of the ruler", so
+          # a ruler that lost some of its numbers can only make a red harder to reach, never easier
+          # - it cannot produce a false red, and dropping it outright throws away every hole it
+          # could still have caught.
           # (8 Sep 2026, one reviewer round: the ruler replaced by an object, by an empty list, and
           # by 66 books stripped of their chapters, each time throwing away 1,123 of the delivery's
-          # 1,189 chapters, all passing without a line of warning. The round after: stripping the
-          # chapter numbers from 65 of the 66 books still passed in silence, and turning `chapters`
-          # into a plain count - the one change the root site could make without ever thinking about
-          # v3 - crashed this script and took /v3/ off the site.)
+          # 1,189 chapters, all passing without a line of warning. The round after: turning
+          # `chapters` into a plain count - the one change the root site could make without ever
+          # thinking about v3 - crashed this script and took /v3/ off the site. The round after
+          # that: the fix for the crash had also stopped counting chapters whenever a single book
+          # was short, so the root site merely adding one not-yet-numbered book to its own
+          # catalogue switched the whole chapter measurement off, and the same 1,123 missing
+          # chapters went through.)
           ruler = "live/webdata/books.json"
           out_books = out_chapters = 0
           skipped = None
-          short = None
+          numbered_books = None
           try:
               with open(ruler, encoding="utf-8") as fh:
                   rows = json.load(fh)
@@ -293,22 +302,22 @@ jobs:
                               if isinstance(row, dict)
                               and isinstance(row.get("chapters"), list) and row["chapters"]]
                   out_books = len(rows)
-                  if len(numbered) == out_books:
-                      out_chapters = sum(len(ch) for ch in numbered)
-                  else:
-                      short = len(numbered)
+                  out_chapters = sum(len(ch) for ch in numbered)
+                  if len(numbered) != out_books:
+                      numbered_books = len(numbered)
           except Exception as exc:
               skipped = "it could not be read as a list of books (%s)" % exc
               out_books = out_chapters = 0
-              short = None
+              numbered_books = None
           if skipped:
               print("::warning::%s was not used as a ruler because %s - this run has no ruler from "
                     "outside the delivery, so api/books.json is only checked against itself"
                     % (ruler, skipped))
-          elif short is not None:
-              print("::warning::%s carries chapter numbers for only %d of its %d books, so this run "
-                    "could measure the book count against it but not the chapter count"
-                    % (ruler, short, out_books))
+          elif numbered_books is not None:
+              print("::warning::%s carries chapter numbers for only %d of its %d books, so the "
+                    "chapter count below is measured against a ruler that is short by %d books - "
+                    "it can still catch a delivery that lost a lot, but a smaller loss may slip by"
+                    % (ruler, numbered_books, out_books, out_books - numbered_books))
           if out_books:
               # A tenth is the whole slack. The two catalogues describe the same Bible, so they
               # should land on the same numbers; a delivery that declares less than nine tenths of
