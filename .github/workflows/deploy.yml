@@ -111,8 +111,8 @@ jobs:
       # earlier version of this check still passed — a site with no JS and no CSS would have shipped
       # with nothing red on either side. Stopping that is what this step is for.
       # ⚠️ ITS REACH IS SMALL. ⛔ Do not read a green here as "the delivery was verified". It tests
-      # that the files the two pages below NAME are present, and nothing beyond that:
-      #   - whatever those two pages do not name is never looked at ⇒ a delivery with every chapter
+      # that the files the pages below NAME are present, and nothing beyond that:
+      #   - whatever those pages do not name is never looked at ⇒ a delivery with every chapter
       #     page gone, or with sources/, api/ or __nuxt_content/ missing whole, is green here;
       #   - `test -f` says a file exists, not that anything is in it ⇒ zero-byte .js is green too.
       # ⇒ completeness belongs to the sender: aimgit's tools/สร้างเว็บที่จะปล่อย.sh counts the pages
@@ -127,31 +127,44 @@ jobs:
           test -n "$(find v3/_nuxt -name '*.js' -print -quit 2>/dev/null)" \
             || { echo "::error::delivered v3 has no JS in _nuxt — refusing to publish an empty page"; exit 1; }
 
-          # ⚠️ The delivered v3/index.html is a REDIRECT STUB, not a page. aimgit's nuxt.config.ts
-          # sends `/` straight on to the reading pages, so the whole file is one meta refresh and it
-          # names no CSS and no JS at all. Checking only that file would pass on a gutted delivery.
-          # ⇒ read the redirect target out of the stub and check THAT page. Do not write the page
-          #   name here: aimgit owns it, and it already moved once (29 Aug 2026, /sources → /read).
-          target=$(grep -o 'url=/v3/[A-Za-z0-9._~%/-]*' v3/index.html | head -1 | cut -c5-)
-          test -n "$target" \
-            || { echo "::error::v3/index.html does not redirect to a page under /v3/"; exit 1; }
-          page="v3${target#/v3}"
-          case "$page" in */) page="${page}index.html" ;; esac
-          [ -f "$page" ] || page="$page/index.html"
-          test -f "$page" \
-            || { echo "::error::v3/index.html redirects to $target but that page is not in the delivery"; exit 1; }
+          # ⚠️ Checking v3/index.html ALONE is not enough, whatever shape it has. It used to be a
+          # bare meta-refresh stub that named no CSS and no JS, and even now that it is a real page
+          # it names only its own assets — a delivery whose reading section failed to build would
+          # still have a perfectly good home page.
+          # ⇒ follow the links the home page itself offers, and check the pages behind them.
+          # ⛔ Do not write a page name here: aimgit owns those, and one already moved once
+          #   (29 Aug 2026, /sources → /read). Read them out of the delivered file instead.
+          # Two shapes are accepted, because the root has been both over time: a real page names
+          # where readers go next in href="/v3/…", a redirect stub names its one destination in
+          # url=/v3/… . Neither shape is required; whichever arrives, its links must be real pages.
+          # WHY A GREEN HERE MEANS THE DELIVERY HANGS TOGETHER: these links are exactly what a
+          # reader can click from the first screen. A section that failed to build (read/, sources/)
+          # still has its link sitting in the home page while the page behind it is gone ⇒ red. And
+          # a home page that links to no page at all is not a home page ⇒ also red.
+          pages=
+          for t in $(grep -ohE '(url=|href=")/v3/[A-Za-z0-9._~%/-]*' v3/index.html \
+                     | sed -E 's/^(url=|href=")//' | sort -u); do
+            case "${t##*/}" in *.*) continue ;; esac   # names a file, not a page — checked below
+            page="v3${t#/v3}"
+            case "$page" in */) page="${page}index.html" ;; *) page="$page/index.html" ;; esac
+            test -f "$page" \
+              || { echo "::error::the home page links to $t but that page is not in the delivery"; exit 1; }
+            pages="$pages $page"
+          done
+          test -n "$pages" \
+            || { echo "::error::v3/index.html links to no page under /v3/ — that is not a home page"; exit 1; }
 
-          # Everything those two pages point at must actually be in the delivery.
+          # Everything those pages point at must actually be in the delivery.
           # ⚠️ Thai file names are percent-encoded inside the HTML but are Thai bytes on disk, so the
           # path has to be decoded before testing — comparing the raw text would report every valid
           # Thai-named file as missing. (Same trap aimgit hit on 29 Aug 2026.)
-          for p in $(grep -ohE '"/v3/[^"]+"' v3/index.html "$page" | tr -d '"' | sort -u); do
+          for p in $(grep -ohE '"/v3/[^"]+"' v3/index.html $pages | tr -d '"' | sort -u); do
             p=${p%%\?*}; p=${p%%#*}
             case "${p##*/}" in *.*) ;; *) continue ;; esac
             p=$(printf '%b' "${p//%/'\x'}")
             test -f "v3${p#/v3}" || { echo "::error::delivered v3 references $p but the file is missing"; exit 1; }
           done
-          echo "delivered v3: $(cat v3/version.json) — asset check ran against $page"
+          echo "delivered v3: $(cat v3/version.json) — asset check ran against v3/index.html$pages"
 
       # ---- combine: root is the checkout itself, with /v3 nested under it -----------------------
       - name: Nest the delivered redesign under the site root
