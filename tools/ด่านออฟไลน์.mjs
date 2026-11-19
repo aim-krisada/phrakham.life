@@ -38,7 +38,7 @@
 // ⛔ **ไม่ออกเน็ตนอกเครื่อง** ⇒ เสียงข้อ (ต่างโดเมน) ⛔ ถูกขอ ⇒ ด่านเปิดแต่เว็บที่สร้างเสร็จ
 
 import { chromium } from 'playwright'
-import { createServer } from 'node:http'
+import { createServer, request as ขอhttp } from 'node:http'
 import { createHash } from 'node:crypto'
 import { เส้นทางเว็บ } from './หน้าที่ตรวจ.mjs'
 
@@ -95,6 +95,26 @@ async function รายการรุ่นใหม่(ไบต์) {
   return Buffer.from(JSON.stringify(m))
 }
 
+// ⭐ ส่งต่อด้วย `http.request` แบบ ⛔ เก็บสายไว้ใช้ซ้ำ (`agent: false`) ⛔ ไม่ใช่ `fetch`
+//   ⇒ `fetch` ของ node เก็บสายไว้ใช้ซ้ำ ⇒ เซิร์ฟเวอร์ปิดสายที่ว่างไปแล้ว ⇒ คำขอถัดไปที่หยิบสายนั้นล้มทันที
+//   ⇒ ท่อ 44588701611 ⇒ โหมดพิสูจน์เช็กของจริงไม่ผ่าน ทั้งที่ด่านปกติในท่อเดียวกันผ่าน และในเครื่องผ่าน 3/3
+//     ⇒ หน้าขาด `pk-fontsize.js` (*PKFontSize is not defined*) ⇒ ตัวเสริมไม่วิ่ง ⇒ ⛔ เริ่มเก็บทั้งเล่ม
+//   ⇒ ⛔ ไม่ใช่การลองซ้ำ ⇒ ตัดต้นเหตุที่สายถูกใช้ซ้ำ
+function ส่งต่อ(ทาง) {
+  return new Promise((ok, ไม่) => {
+    const r = ขอhttp(ต้นทาง.origin + ทาง, { agent: false, headers: { connection: 'close' } }, (ตอบ) => {
+      const ก้อน = []
+      ตอบ.on('data', (c) => ก้อน.push(c))
+      ตอบ.on('end', () =>
+        ok({ status: ตอบ.statusCode, headers: { get: (k) => ตอบ.headers[k.toLowerCase()] ?? null }, ไบต์: Buffer.concat(ก้อน) }),
+      )
+      ตอบ.on('error', ไม่)
+    })
+    r.on('error', ไม่)
+    r.end()
+  })
+}
+
 async function เปิดตัวกลาง() {
   const สภาพ = { ปิดเน็ต: false, รุ่นใหม่: false, พัง: null, บันทึก: [] }
   const เซิร์ฟ = createServer(async (req, res) => {
@@ -108,10 +128,10 @@ async function เปิดตัวกลาง() {
     } catch {}
     สภาพ.บันทึก.push(ทาง)
     try {
-      const ตอบ = await fetch(ต้นทาง.origin + req.url, { redirect: 'manual' })
+      const ตอบ = await ส่งต่อ(req.url)
       let status = ตอบ.status
       const ชนิด = ตอบ.headers.get('content-type') || 'application/octet-stream'
-      let ไบต์ = Buffer.from(await ตอบ.arrayBuffer())
+      let ไบต์ = ตอบ.ไบต์
       const ทางในเว็บ = ทาง.startsWith(ต้นทาง.pathname) ? ทาง.slice(ต้นทาง.pathname.length) : null
       if (สภาพ.รุ่นใหม่ && ทางในเว็บ !== null) {
         ไบต์ = ทางในเว็บ === 'offline.json' ? await รายการรุ่นใหม่(ไบต์) : แก้เป็นรุ่นใหม่(ทางในเว็บ, ชนิด, ไบต์)
@@ -125,7 +145,9 @@ async function เปิดตัวกลาง() {
       if (ตอบ.headers.get('location')) หัว.location = ตอบ.headers.get('location')
       res.writeHead(status, หัว)
       res.end(ไบต์)
-    } catch {
+    } catch (e) {
+      // ⭐ ต้องพูดออกมา ⇒ 502 เงียบ ๆ ทำให้หน้าขาดไฟล์แล้วด่านแดงข้อที่ไม่เกี่ยว (ท่อ 44588701611)
+      console.error(`⚠️ ตัวกลางส่งต่อ ${ทาง} ไม่ได้ ⇒ ${e?.code || ''} ${e?.message || e}`)
       res.writeHead(502).end()
     }
   })
