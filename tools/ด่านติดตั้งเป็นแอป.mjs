@@ -15,6 +15,7 @@
 //   ③ สีแถบบนกับสีพื้นตอนเปิดแอป ตรงสีพื้นกระดาษ `--color-pk-paper` ใน `app/assets/css/main.css`
 //   ④ รูปทุกรูปที่ประกาศ เปิดได้จริงและขนาดจริงตรงที่ประกาศ ⇒ มี 192 กับ 512 ครบ
 //   ⑤ รูปไอคอนของ iPhone (`apple-touch-icon`) เปิดได้จริง ขนาด 180
+//   ⑦ ไอคอนบนแท็บ (favicon) ⇒ มีป้ายรูป .ico และรูป png 32 ⇒ เปิดได้จริง ⇒ png ขนาด 32 จริง
 //   ⑥ ⛔ ไม่มีตัวช่วยออฟไลน์ (service worker) ⇒ ใบงานสั่งไม่ทำ ⇒ เว็บเดิมมี `/sw.js` ที่ต้องวางแผนตอนย้าย
 //
 // **พิสูจน์ว่าด่านแดงได้จริง** ⇒ ท่า `--ทดสอบตัวเอง` ดักของที่เบราว์เซอร์ขอ แล้วส่งของพังกลับไปทีละอาการ
@@ -77,6 +78,7 @@ async function ตรวจ(ctx) {
       สีแถบ: d.querySelector('meta[name="theme-color"]')?.getAttribute('content') ?? null,
       รูปiPhone: ราก(d.querySelector('link[rel="apple-touch-icon"]')?.getAttribute('href')),
       มีลิงก์manifest: !!d.querySelector('link[rel="manifest"]'),
+      favicon: [...d.querySelectorAll('link[rel="icon"]')].map((l) => ({ ที่: ราก(l.getAttribute('href')), ชนิด: l.getAttribute('type'), ขนาด: l.getAttribute('sizes') })),
     }
   })
   if (!ป้าย.มีลิงก์manifest) ตก.push('⓪ ไฟล์หน้าแรกไม่มีลิงก์ manifest')
@@ -132,6 +134,19 @@ async function ตรวจ(ctx) {
     if (ผล.สถานะ !== 200 || ผล.อ่านไม่ออก) ตก.push(`⑤ รูปไอคอน iPhone ${ป้าย.รูปiPhone} เปิดไม่ได้ (${ผล.สถานะ})`)
     else if (ผล.กว้าง !== 180 || ผล.สูง !== 180) ตก.push(`⑤ รูปไอคอน iPhone ขนาด ${ผล.กว้าง}x${ผล.สูง} ⇒ ต้อง 180x180`)
   }
+
+  // ⑦ ไอคอนบนแท็บ
+  const ico = ป้าย.favicon.find((f) => /\.ico$/.test(f.ที่ || ''))
+  const png32 = ป้าย.favicon.find((f) => f.ชนิด === 'image/png' && f.ขนาด === '32x32')
+  if (!ico) ตก.push('⑦ หัวหน้าเว็บไม่มีป้าย favicon รูป .ico ⇒ แท็บจะได้ไอคอนของเว็บรุ่น 2 จากรากโดเมน')
+  if (!png32) ตก.push('⑦ หัวหน้าเว็บไม่มีป้าย favicon รูป png 32x32')
+  for (const f of [ico, png32].filter(Boolean)) {
+    if (!f.ที่.startsWith(หน้าแรก)) ตก.push(`⑦ favicon ${f.ที่} อยู่นอกฐานของเว็บ ${หน้าแรก}`)
+    const ผล = await วัดรูป(f.ที่)
+    if (ผล.สถานะ !== 200 || ผล.อ่านไม่ออก) ตก.push(`⑦ favicon ${f.ที่} เปิดไม่ได้ (${ผล.สถานะ})`)
+    else if (f === png32 && (ผล.กว้าง !== 32 || ผล.สูง !== 32)) ตก.push(`⑦ favicon png ขนาดจริง ${ผล.กว้าง}x${ผล.สูง} ⇒ ต้อง 32x32`)
+  }
+  หลักฐาน.favicon = ป้าย.favicon
 
   // ⑥ ไม่มีตัวช่วยออฟไลน์
   const ตัวช่วย = await แท็บ.evaluate(async () =>
@@ -191,6 +206,8 @@ if (ทดสอบตัวเอง) {
       /^④ รูป .*icon-512\.png ขนาดจริง/,
     ],
     ['รูป 192 หาย', async (ctx) => ctx.route('**/icons/icon-192.png', (route) => route.fulfill({ status: 404, body: '' })), /^④ รูป .*icon-192\.png เปิดไม่ได้/],
+    ['favicon หาย', async (ctx) => ctx.route('**/favicon.ico', (route) => route.fulfill({ status: 404, body: '' })), /^⑦ favicon .*favicon\.ico เปิดไม่ได้/],
+    ['ป้าย favicon หายจากไฟล์', แก้หน้าแรก((h) => h.replace(/<link[^>]*rel="icon"[^>]*>/g, '')), /^⑦ หัวหน้าเว็บไม่มีป้าย/],
     ['รูปไอคอน iPhone หาย', async (ctx) => ctx.route('**/icons/apple-touch-icon.png', (route) => route.fulfill({ status: 404, body: '' })), /^⑤ /],
     ['ชื่อใต้ไอคอน iPhone หาย', แก้หน้าแรก((h) => h.replace(/<meta[^>]*name="apple-mobile-web-app-title"[^>]*>/g, '')), /^① ชื่อใต้ไอคอน/],
     ['ป้ายสีแถบบนหายจากไฟล์', แก้หน้าแรก((h) => h.replace(/<meta[^>]*name="theme-color"[^>]*>/g, '')), /^③ ป้าย theme-color/],

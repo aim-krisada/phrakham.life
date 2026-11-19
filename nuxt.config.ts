@@ -329,6 +329,11 @@ export default defineNuxtConfig({
       link: [
         { rel: 'manifest', href: BASE + 'manifest.webmanifest' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: BASE + 'icons/apple-touch-icon.png' },
+        // ⭐ **ไอคอนบนแท็บ (favicon)** ⇒ ย่อมาจาก `icons/icon-512.png` รูปเดียวกับไอคอนแอป (พี่เอมขอ 19 พ.ย. 2569)
+        //   ⇒ ⛔ ไม่ใส่ = เบราว์เซอร์ไปขอ `/favicon.ico` ที่รากโดเมน ⇒ ได้ไอคอนของเว็บรุ่น 2 แทน
+        //   ⇒ ตัวเฝ้าคือข้อ ⑦ ของ `tools/ด่านติดตั้งเป็นแอป.mjs`
+        { rel: 'icon', href: BASE + 'favicon.ico', sizes: '16x16 32x32 48x48' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: BASE + 'icons/favicon-32.png' },
       ],
 
       // ⭐⭐ **ขนาดตัวอักษรที่ผู้อ่านเคยตั้งไว้ ต้องถูกใส่ก่อนหน้าจอวาดครั้งแรก**
