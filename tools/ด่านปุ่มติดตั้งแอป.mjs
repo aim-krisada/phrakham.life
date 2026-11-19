@@ -465,7 +465,10 @@ const ของพัง = {
   },
   'ปิดแผ่นแล้วโฟกัสไม่กลับ': {
     ข้อ: '②',
-    ก่อนโหลด: `document.addEventListener('keyup', (e) => { if (e.key === 'Escape') setTimeout(() => document.activeElement && document.activeElement.blur(), 0) }, true)`,
+    // ⭐ ปิดการคืนโฟกัสของเว็บตรง ๆ ⇒ หลังกด Escape ⇒ `focus()` ทุกตัวไม่ทำอะไร
+    //   ⛔ ท่าเดิม blur ด้วย setTimeout(0) แข่งเวลากับเว็บ ⇒ บนเครื่องของ GitHub เว็บคืนโฟกัสทีหลัง blur
+    //     ⇒ ของพังกลายเป็นของดี ⇒ ด่านพิสูจน์แดงทั้งที่ด่านจริงไม่พัง (ท่อ 44579661362 · ในเครื่องผ่าน 3/3)
+    ก่อนโหลด: `document.addEventListener('keydown', (e) => { if (e.key === 'Escape') HTMLElement.prototype.focus = function () {} }, true)`,
   },
   'ลิงก์พาออกจาก LINE ลืม openExternalBrowser': {
     ข้อ: '③',
