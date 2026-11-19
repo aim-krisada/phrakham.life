@@ -1,0 +1,22 @@
+You are checking a Bible-study data set, not writing devotional material.
+
+Reference: DAN 10.15
+Language: Biblical Hebrew
+Whole word as printed in the text: וּבְדַבְּר֣וֹ
+Our source data cuts that word into 4 piece(s), in this order:
+  piece 1: וּ   gloss: and
+  piece 2: בְ   gloss: while
+  piece 3: דַבְּר֣   gloss: speaking
+  piece 4: וֹ   gloss: he
+We are asking about piece number 4: וֹ
+
+Questions:
+a. What does that piece mean here?
+b. What does the whole word mean here?
+c. If a reader taps that piece and we open one lexicon entry for it, which single
+   headword should that entry be under? Write the headword in its own script.
+
+Answer in this shape:
+1. First line: the headword only, in Hebrew or Greek script.
+2. Then at most four sentences answering a and b and saying why that headword.
+Do not quote more than the single word above from the Bible text.

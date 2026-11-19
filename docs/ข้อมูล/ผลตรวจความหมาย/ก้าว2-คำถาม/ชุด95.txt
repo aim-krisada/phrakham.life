@@ -1,0 +1,48 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 258
+ที่อยู่: 2KI 8:18
+ข้อความต้นฉบับ: וַיֵּ֜לֶךְ בְּדֶ֣רֶךְ׀מַלְכֵ֣י יִשְׂרָאֵ֗ל כַּאֲשֶׁ֤ר עָשׂוּ֙ בֵּ֣ית אַחְאָ֔ב כִּ֚י בַּת־אַחְאָ֔ב הָֽיְתָה־לּ֖וֹ לְאִשָּׁ֑ה וַיַּ֥עַשׂ הָרַ֖ע בְּעֵינֵ֥י יְהוָֽה׃
+คำที่ถาม: בַּת   (รูปตั้งต้น בַּת · ชนิดคำ noun)
+ตัวเลือก:
+  A) title used to address a woman who is regarded with some degree of affection, · as if she were the speaker's child [คำแปลสั้น: daughter, my daughter]
+  B) direct or indirect female offspring of humans or animals, either biologically or through adoption [คำแปลสั้น: daughter]
+  C) plural only: villages or small towns that are considered part of the territory of a larger town or nation, referred to as the daughters of that larger town or nation [คำแปลสั้น: daughters, villages, towns]
+  D) singular only: the population of a certain location, town, or ethnic group, · referred to as the daughter of that location, town, or ethnic group [คำแปลสั้น: daughter, people]
+  E) state in which female humans and animals have a certain age, · referred to as a daughter of a certain number of years [คำแปลสั้น: age]
+  F) literally: daughters of a town, region, nation; hence: women that are inhabitants of a place, town, region, or nation, · as if they were the female offspring of that place [คำแปลสั้น: daughters, women]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 259
+ที่อยู่: PRO 11:31
+ข้อความต้นฉบับ: הֵ֣ן צַ֭דִּיק בָּאָ֣רֶץ יְשֻׁלָּ֑ם אַ֝֗ף כִּֽי־רָשָׁ֥ע וְחוֹטֵֽא׃
+คำที่ถาม: אָ֣רֶץ   (รูปตั้งต้น אֶרֶץ · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: distance of land; hence: a referent pointing to a relatively short distance [คำแปลสั้น: short distance]
+  B) the earth as opposed to the sky; sometimes used in a more specific sense to denote part of the earth, such as the dry land as opposed to the sea, or a specific region, area, country, or plot of land [คำแปลสั้น: earth, ground, land, country, region, area]
+  C) a more or less fixed phrase: the heavens and the earth, equivalent to a single lexical item: the totality of God's creation [คำแปลสั้น: heaven and earth, universe]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 260
+ที่อยู่: SNG 7:5
+ข้อความต้นฉบับ: צַוָּארֵ֖ךְ כְּמִגְדַּ֣ל הַשֵּׁ֑ן עֵינַ֜יִךְ בְּרֵכ֣וֹת בְּחֶשְׁבּ֗וֹן עַל־שַׁ֨עַר֙ בַּת־רַבִּ֔ים אַפֵּךְ֙ כְּמִגְדַּ֣ל הַלְּבָנ֔וֹן צוֹפֶ֖ה פְּנֵ֥י דַמָּֽשֶׂק׃
+คำที่ถาม: שַׁ֨עַר֙   (รูปตั้งต้น שַׁעַר · ชนิดคำ noun)
+ตัวเลือก:
+  A) a construction with a door that provides entrance to a building, a complex, or a town [คำแปลสั้น: gate]
+  B) one of the city gates of Jerusalem, · through which small cattle could be taken [คำแปลสั้น: Sheep (Gate)]
+  C) one of the gates of the temple in Jerusalem on the east side [คำแปลสั้น: King's Gate]
+  D) one of the city gates of Jerusalem · during the time of Nehemiah [คำแปลสั้น: Spring Gate]
+  E) one of the city gates of Jerusalem [คำแปลสั้น: Muster Gate]
+  F) literally: gate of my people; hence: one's fellow citizens of a town [คำแปลสั้น: my townsmen]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

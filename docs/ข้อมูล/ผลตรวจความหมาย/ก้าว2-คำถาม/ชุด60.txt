@@ -1,0 +1,65 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 467
+ที่อยู่: MAT 21:19
+ข้อความต้นฉบับ: καὶ ἰδὼν συκῆν μίαν ἐπὶ τῆς ὁδοῦ ἦλθεν ἐπ’αὐτήν,καὶ οὐδὲν εὗρεν ἐν αὐτῇ εἰ μὴ φύλλα μόνον,καὶ λέγει αὐτῇ·Μηκέτι ἐκ σοῦ καρπὸς γένηται εἰς τὸν αἰῶνα·καὶ ἐξηράνθη παραχρῆμα ἡ συκῆ.
+คำที่ถาม: τὸν   (รูปตั้งต้น ὁ · ชนิดคำ det)
+ตัวเลือก:
+  A) a reference to an entity, event, or state, clearly identified by the linguistic or non-linguistic context of the utterance001 [คำแปลสั้น: the, he, she, it]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 468
+ที่อยู่: MRK 6:24
+ข้อความต้นฉบับ: καὶ ἐξελθοῦσα εἶπεν τῇ μητρὶ αὐτῆς·Τί αἰτήσωμαι;ἡ δὲ εἶπεν·Τὴν κεφαλὴν Ἰωάννου τοῦ βαπτίζοντος.
+คำที่ถาม: εἶπεν   (รูปตั้งต้น λέγω · ชนิดคำ verb)
+ตัวเลือก:
+  A) (an idiom, literally: to speak to oneself) to think about something without communicating the content to others [คำแปลสั้น: to think to oneself, to say to oneself (often used to introduce a direct quotation of one’s thoughts)]
+  B) to use an attribution in speaking of a person [คำแปลสั้น: to call, to name]
+  C) to speak or talk, with apparent focus upon the content of what is said [คำแปลสั้น: to say, to talk, to tell, to speak]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 469
+ที่อยู่: LUK 5:14
+ข้อความต้นฉบับ: καὶ αὐτὸς παρήγγειλεν αὐτῷ μηδενὶ εἰπεῖν,ἀλλὰ ἀπελθὼν δεῖξον σεαυτὸν τῷ ἱερεῖ,καὶ προσένεγκε περὶ τοῦ καθαρισμοῦ σου καθὼς προσέταξεν Μωϋσῆς εἰς μαρτύριον αὐτοῖς.
+คำที่ถาม: ἀλλὰ   (รูปตั้งต้น ἀλλά · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of transition, with a slightly adversative implication in some contexts, often best left untranslated [คำแปลสั้น: and, yet]
+  B) a marker of more emphatic contrast (as compared with δέ[c], 89.124) [คำแปลสั้น: but, instead, on the contrary]
+  C) a marker of a series of coordinate relations which are contrastive with a previously identified event or state [คำแปลสั้น: and]
+  D) a marker of contrastive emphasis [คำแปลสั้น: certainly, emphatically]
+  E) a marker of sets of items in contrast with one another [คำแปลสั้น: on the one hand … but on the other hand]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 470
+ที่อยู่: MRK 14:25
+ข้อความต้นฉบับ: ἀμὴν λέγω ὑμῖν ὅτι οὐκέτι οὐ μὴ πίω ἐκ τοῦ γενήματος τῆς ἀμπέλου ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω καινὸν ἐν τῇ βασιλείᾳ τοῦ θεοῦ.
+คำที่ถาม: αὐτὸ   (รูปตั้งต้น αὐτός · ชนิดคำ pron)
+ตัวเลือก:
+  A) a marker of emphasis by calling attention to the distinctiveness of the lexical item with which it occurs (used for all persons, genders, and numbers)001 [คำแปลสั้น: -self, -selves (for example, myself, yourself, yourselves, ourselves, himself, herself, itself, themselves)]
+  B) pertaining to that which is identical to something [คำแปลสั้น: same]
+  C) a reference to a definite person or persons spoken or written about (with an added feature of emphasis in the nominative forms) [คำแปลสั้น: he, him, she, her, it, they, them]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 471
+ที่อยู่: MRK 15:41
+ข้อความต้นฉบับ: αἳ ὅτε ἦν ἐν τῇ Γαλιλαίᾳ ἠκολούθουν αὐτῷ καὶ διηκόνουν αὐτῷ,καὶ ἄλλαι πολλαὶ αἱ συναναβᾶσαι αὐτῷ εἰς Ἱεροσόλυμα.
+คำที่ถาม: καὶ   (รูปตั้งต้น καί · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of emphasis, involving surprise and unexpectedness [คำแปลสั้น: then, indeed, how is it then, yet]
+  B) a marker of an additive relation which is not coordinate [คำแปลสั้น: and, and also, also, in addition, even]
+  C) marker of a sequence of closely related events [คำแปลสั้น: and, and then]
+  D) a marker of a totality of two closely related elements [คำแปลสั้น: both … and]
+  E) a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]
+  F) a marker of coordinate relations [คำแปลสั้น: and]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

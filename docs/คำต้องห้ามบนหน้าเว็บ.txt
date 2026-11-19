@@ -1,0 +1,17 @@
+ETL
+JSON
+API
+SQL
+HTML
+CSS
+frontmatter
+lemma
+USX
+USFM
+USFX
+VerseMap
+AugIndex
+HOTTP
+SDBH
+TWOT
+EULA

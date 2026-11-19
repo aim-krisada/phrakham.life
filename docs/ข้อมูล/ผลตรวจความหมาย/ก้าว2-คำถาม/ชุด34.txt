@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 405
+ที่อยู่: ROM 16:17
+ข้อความต้นฉบับ: Παρακαλῶ δὲ ὑμᾶς,ἀδελφοί,σκοπεῖν τοὺς τὰς διχοστασίας καὶ τὰ σκάνδαλα παρὰ τὴν διδαχὴν ἣν ὑμεῖς ἐμάθετε ποιοῦντας,καὶ ἐκκλίνετε ἀπ’αὐτῶν·
+คำที่ถาม: διδαχὴν   (รูปตั้งต้น διδαχή · ชนิดคำ noun)
+ตัวเลือก:
+  A) (derivative of διδάσκω ‘to teach,’ 33.224) the content of what is taught [คำแปลสั้น: what is taught, doctrine, teaching]
+  B) to provide instruction in a formal or informal setting [คำแปลสั้น: to teach, teaching]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 406
+ที่อยู่: MAT 23:37
+ข้อความต้นฉบับ: Ἰερουσαλὴμ Ἰερουσαλήμ,ἡ ἀποκτείνουσα τοὺς προφήτας καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς αὐτήν ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα σου,ὃν τρόπον ὄρνις ἐπισυνάγει τὰ νοσσία αὐτῆς ὑπὸ τὰς πτέρυγας,καὶ οὐκ ἠθελήσατε;
+คำที่ถาม: ἠθελήσατε   (รูปตั้งต้น θέλω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to desire to have or experience something [คำแปลสั้น: to desire, to want, to wish]
+  B) to have a particular view or opinion about something [คำแปลสั้น: to be of an opinion, to think something is so]
+  C) to purpose, generally based upon a preference and desire [คำแปลสั้น: to purpose]
+  D) (an idiom, literally: it wishes to be) something which is to mean or to be understood in a particular manner [คำแปลสั้น: it means, this is to be understood as]
+  E) to take pleasure in something in view of its being desirable [คำแปลสั้น: to like, to enjoy]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 407
+ที่อยู่: MAT 13:5
+ข้อความต้นฉบับ: ἄλλα δὲ ἔπεσεν ἐπὶ τὰ πετρώδη ὅπου οὐκ εἶχεν γῆν πολλήν,καὶ εὐθέως ἐξανέτειλεν διὰ τὸ μὴ ἔχειν βάθος γῆς,
+คำที่ถาม: πετρώδη   (รูปตั้งต้น πετρῶδες · ชนิดคำ adj)
+ตัวเลือก:
+  A) (derivative of πέτρα ‘bedrock,’ 2.21) a rocky substance or bedrock covered by a thin layer of earth [คำแปลสั้น: rocky ground]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 408
+ที่อยู่: HEB 11:8
+ข้อความต้นฉบับ: Πίστει καλούμενος Ἀβραὰμ ὑπήκουσεν ἐξελθεῖν εἰς τόπον ὃν ἤμελλεν λαμβάνειν εἰς κληρονομίαν,καὶ ἐξῆλθεν μὴ ἐπιστάμενος ποῦ ἔρχεται.
+คำที่ถาม: ἐξῆλθεν   (รูปตั้งต้น ἐξέρχομαι · ชนิดคำ verb)
+ตัวเลือก:
+  A) to move out of an enclosed or welldefined two or three-dimensional area [คำแปลสั้น: to go out of, to depart out of, to leave from within]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 409
+ที่อยู่: JHN 21:18
+ข้อความต้นฉบับ: ἀμὴν ἀμὴν λέγω σοι,ὅτε ἦς νεώτερος,ἐζώννυες σεαυτὸν καὶ περιεπάτεις ὅπου ἤθελες·ὅταν δὲ γηράσῃς,ἐκτενεῖς τὰς χεῖράς σου,καὶ ἄλλος σε ζώσει καὶ οἴσει ὅπου οὐ θέλεις.
+คำที่ถาม: σοι   (รูปตั้งต้น σύ · ชนิดคำ pron)
+ตัวเลือก:
+  A) a reference to the receptors of a message, whether oral or written (with an added feature of emphasis in the form ὑμεῖς) [คำแปลสั้น: you, your]
+  B) a reference to a receptor of a message (with an added feature of emphasis in the form σύ) [คำแปลสั้น: you]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,36 @@
+{
+  "name": "phrakham",
+  "private": true,
+  "type": "module",
+  "description": "พระคำ.ชีวิต รุ่นที่ 3 — เว็บอ่านพระคัมภีร์พร้อมเครื่องหมายภาษาเดิม",
+  "repository": {
+    "type": "git",
+    "url": "https://aimgit.aimagin.com/v3/phrakham.git"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.16.0",
+    "better-sqlite3": "^13.0.3",
+    "mermaid": "^11.17.2",
+    "nuxt": "^4.5.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@xmldom/xmldom": "^0.9.12",
+    "axe-core": "^4.12.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "playwright": "^1.62.1",
+    "reka-ui": "^2.10.4",
+    "shadcn-nuxt": "^2.8.2",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.3",
+    "usfm-grammar-web": "^3.2.0"
+  }
+}

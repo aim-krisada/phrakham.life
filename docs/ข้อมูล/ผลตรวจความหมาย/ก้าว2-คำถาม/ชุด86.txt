@@ -1,0 +1,48 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 221
+ที่อยู่: JDG 20:10
+ข้อความต้นฉบับ: וְלָקַ֣חְנוּ עֲשָׂרָה֩ אֲנָשִׁ֨ים לַמֵּאָ֜ה לְכֹ֣ל׀שִׁבְטֵ֣י יִשְׂרָאֵ֗ל וּמֵאָ֤ה לָאֶ֨לֶף֙ וְאֶ֣לֶף לָרְבָבָ֔ה לָקַ֥חַת צֵדָ֖ה לָעָ֑ם לַעֲשׂ֗וֹת לְבוֹאָם֙ לְגֶ֣בַע בִּנְיָמִ֔ן כְּכָל־הַ֨נְּבָלָ֔ה אֲשֶׁ֥ר עָשָׂ֖ה בְּיִשְׂרָאֵֽל׃
+คำที่ถาม: קַ֥חַת   (รูปตั้งต้น לָקַח · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to take (something) away; hence: causative action by which deities cause objects to disappear from existence [คำแปลสั้น: to take away]
+  B) literally: to take (one's) tongue; hence: action by which humans utter words that they have made up by themselves [คำแปลสั้น: to wag (one's) tongue]
+  C) literally: to take (someone as one's child); hence: action by which humans accept other humans as their children [คำแปลสั้น: to adopt]
+  D) literally: to take words (along); hence: action by which humans reflect on what they will say [คำแปลสั้น: to take words (along), to reflect on what to say]
+  E) literally: to take; hence: causative action by which humans or deities take objects or people from a certain location and bring them to a specific place [คำแปลสั้น: to bring, to fetch, to get]
+  F) literally: to receive (an event); hence: process by which humans become involved in a certain event [คำแปลสั้น: to receive, to gain, to undergo, to suffer]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 222
+ที่อยู่: NUM 35:5
+ข้อความต้นฉบับ: וּמַדֹּתֶ֞ם מִח֣וּץ לָעִ֗יר אֶת־פְּאַת־קֵ֣דְמָה אַלְפַּ֪יִם בָּֽאַמָּ֟ה וְאֶת־פְּאַת־נֶגֶב֩ אַלְפַּ֨יִם בָּאַמָּ֜ה וְאֶת־פְּאַת־יָ֣ם׀אַלְפַּ֣יִם בָּֽאַמָּ֗ה וְאֵ֨ת פְּאַ֥ת צָפ֛וֹן אַלְפַּ֥יִם בָּאַמָּ֖ה וְהָעִ֣יר בַּתָּ֑וֶךְ זֶ֚ה יִהְיֶ֣ה לָהֶ֔ם מִגְרְשֵׁ֖י הֶעָרִֽים׃
+คำที่ถาม: פְּאַת   (รูปตั้งต้น פֵּאָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) one of the sides or corners of an object [คำแปลสั้น: side, edge, corner, leg]
+  B) literally: side (of land); hence: area of land located on the boundary of one's territory; · functions as buffer between one's own territory and that of the neighboring countries [คำแปลสั้น: frontier land]
+  C) literally: side (of head); hence: side of the head between forehead and ear; · the hair of which was not be shaved as was the practice of certain ethnic groups [คำแปลสั้น: temple]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 223
+ที่อยู่: LEV 27:15
+ข้อความต้นฉบับ: וְאִ֨ם־הַמַּקְדִּ֔ישׁ יִגְאַ֖ל אֶת־בֵּית֑וֹ וְ֠יָסַף חֲמִישִׁ֧ית כֶּֽסֶף־עֶרְכְּךָ֛ עָלָ֖יו וְהָ֥יָה לֽוֹ׃
+คำที่ถาม: מַּקְדִּ֔ישׁ   (รูปตั้งต้น קָדַשׁ · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which humans transfer a state of holiness to other humans by contact [คำแปลสั้น: to make consecrated]
+  B) literally: to sanctify (one's) name; hence: action by which God asserts his greatness · by proving himself holy through his actions [คำแปลสั้น: to sanctify (one's) name > to show (one's) greatness]
+  C) action by which humans acknowledge the holiness of God and certain times of the year that are important to him, and act accordingly [คำแปลสั้น: to respect holiness]
+  D) action by which God asserts his greatness · by proving himself holy through his actions [คำแปลสั้น: to show oneself holy]
+  E) causative action by which humans or deities set apart humans or objects for a particular purpose or activity relating to the service of God, as a result of which they become holy [คำแปลสั้น: to set apart, to dedicate, to consecrate]
+  F) action by which humans that are part of a holy nation set themselves apart from others by not engaging in activities that are not in accordance with God's law [คำแปลสั้น: to sanctify oneself, to consecrate oneself]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

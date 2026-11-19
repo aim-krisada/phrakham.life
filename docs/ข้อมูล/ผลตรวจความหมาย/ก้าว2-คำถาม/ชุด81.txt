@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 198
+ที่อยู่: 1SA 20:2
+ข้อความต้นฉบับ: וַיֹּ֨אמֶר ל֣וֹ חָלִילָה֮ לֹ֣א תָמוּת֒ הִנֵּ֡ה לֹֽא־יַעֲשֶׂ֨ה אָבִ֜י דָּבָ֣ר גָּד֗וֹל א֚וֹ דָּבָ֣ר קָטֹ֔ן וְלֹ֥א יִגְלֶ֖ה אֶת־אָזְנִ֑י וּמַדּוּעַ֩ יַסְתִּ֨יר אָבִ֥י מִמֶּ֛נִּי אֶת־הַדָּבָ֥ר הַזֶּ֖ה אֵ֥ין זֹֽאת׃
+คำที่ถาม: י   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally: father; hence: a way of addressing a male person that one regards as one's superior because of his age, status, authority, etc. [คำแปลสั้น: father (as title)]
+  B) direct male progenitor; · who normally provides protection, care, instruction, and discipline; · is usually regarded with respect and associated with wisdom, security, and comfort [คำแปลสั้น: father]
+  C) a person, · compared to a father, · who provides advice to someone in authority [คำแปลสั้น: adviser]
+  D) indirect male progenitor [คำแปลสั้น: grandfather, ancestor]
+  E) a person · who is the first to be engaged in a certain activity or pattern of behavior [คำแปลสั้น: the first person to ...]
+  F) a group of people to which one traces one's ancestry; · smallest unit within family group [คำแปลสั้น: father's house = family]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 199
+ที่อยู่: RUT 1:16
+ข้อความต้นฉบับ: וַתֹּ֤אמֶר רוּת֙ אַל־תִּפְגְּעִי־בִ֔י לְעָזְבֵ֖ךְ לָשׁ֣וּב מֵאַחֲרָ֑יִךְ כִּ֠י אֶל־אֲשֶׁ֨ר תֵּלְכִ֜י אֵלֵ֗ךְ וּבַאֲשֶׁ֤ר תָּלִ֨ינִי֙ אָלִ֔ין עַמֵּ֣ךְ עַמִּ֔י וֵאלֹהַ֖יִךְ אֱלֹהָֽי׃
+คำที่ถาม: ךְ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) plural with singular meaning: generic term for a supernatural being, worshiped by individuals or entire nations [คำแปลสั้น: god (of someone), God (of someone)]
+  B) plural with plural meaning: generic term for a supernatural being, worshiped by individuals or entire nations [คำแปลสั้น: heavenly beings]
+  C) process by which an event takes place with great intensity, evoking an association with God [คำแปลสั้น: mighty, exceedingly, great (in intensity)]
+  D) plural with singular meaning: the highest God, creator of heaven and earth [คำแปลสั้น: God]
+  E) state in which a human being is highly esteemd, evoking an association with God [คำแปลสั้น: mighty (in status)]
+  F) state in which humans are characterized as pure and undefiled in character, evoking an association with God [คำแปลสั้น: godly, holy]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 200
+ที่อยู่: EXO 3:4
+ข้อความต้นฉบับ: וַיַּ֥רְא יְהוָ֖ה כִּ֣י סָ֣ר לִרְא֑וֹת וַיִּקְרָא֩ אֵלָ֨יו אֱלֹהִ֜ים מִתּ֣וֹךְ הַסְּנֶ֗ה וַיֹּ֛אמֶר מֹשֶׁ֥ה מֹשֶׁ֖ה וַיֹּ֥אמֶר הִנֵּֽנִי׃
+คำที่ถาม: תּ֣וֹךְ   (รูปตั้งต้น תָּוֶךְ · ชนิดคำ noun)
+ตัวเลือก:
+  A) state in which humans or objects are located within another location [คำแปลสั้น: in, inside]
+  B) the area in the center of a location [คำแปลสั้น: middle, midst, center]
+  C) the line that divides an object or distance into two more or less equal halves [คำแปลสั้น: middle, between]
+  D) literally: inside (a group); hence: state in which humans or objects are part of a group of other humans or objects [คำแปลสั้น: among]
+  E) literally: inside (an event); state in which an event happens simulateously with another event [คำแปลสั้น: in the midst of, while, during]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 201
+ที่อยู่: EXO 1:22
+ข้อความต้นฉบับ: וַיְצַ֣ו פַּרְעֹ֔ה לְכָל־עַמּ֖וֹ לֵאמֹ֑ר כָּל־הַבֵּ֣ן הַיִּלּ֗וֹד הַיְאֹ֨רָה֙ תַּשְׁלִיכֻ֔הוּ וְכָל־הַבַּ֖ת תְּחַיּֽוּן׃ס
+คำที่ถาม: יִּלּ֗וֹד   (รูปตั้งต้น יִלּוֹד · ชนิดคำ adjective)
+ตัวเลือก:
+  A) process by which young human offspring goes through the process of birth [คำแปลสั้น: born]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

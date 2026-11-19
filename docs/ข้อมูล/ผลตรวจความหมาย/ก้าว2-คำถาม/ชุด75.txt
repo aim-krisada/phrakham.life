@@ -1,0 +1,50 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 172
+ที่อยู่: PRO 10:6
+ข้อความต้นฉบับ: בְּ֭רָכוֹת לְרֹ֣אשׁ צַדִּ֑יק וּפִ֥י רְ֝שָׁעִ֗ים יְכַסֶּ֥ה חָמָֽס׃
+คำที่ถาม: צַדִּ֑יק   (รูปตั้งต้น צַדִּיק · ชนิดคำ adjective)
+ตัวเลือก:
+  A) state in which a person's or deity's behavior is fully consistent with the requirements of the law, either in a specific matter that is under dispute or as one's general mode of behavior [คำแปลสั้น: righteous, just, right, in the right, innocent]
+  B) state in which regulations are fully consistent with the requirements of the law or with accepted standards [คำแปลสั้น: righteous, just]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 173
+ที่อยู่: AMO 9:11
+ข้อความต้นฉบับ: בַּיּ֣וֹם הַה֔וּא אָקִ֛ים אֶת־סֻכַּ֥ת דָּוִ֖יד הַנֹּפֶ֑לֶת וְגָדַרְתִּ֣י אֶת־פִּרְצֵיהֶ֗ן וַהֲרִֽסֹתָיו֙ אָקִ֔ים וּבְנִיתִ֖יהָ כִּימֵ֥י עוֹלָֽם׃
+คำที่ถาม: סֻכַּ֥ת   (รูปตั้งต้น סֻכָּה · ชนิดคำ noun)
+ตัวเลือก:
+  A) a shelter, · made of fragile materials such as leaves and branches, · for the purpose of protection from rain and sun for both humans and animals; used by people who needed a temporary shelter, such as nomads, soldiers, and farm workers in the field; · by extension, figuratively God's protection over his people, God's shelter for himself; also a metaphor for Jerusalem, the dwelling of God's people; also by extension, a place where ferocious animals can hide in order to attack someone [คำแปลสั้น: shelter, booth, hut]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 174
+ที่อยู่: 2CH 24:23
+ข้อความต้นฉบับ: וַיְהִ֣י׀לִתְקוּפַ֣ת הַשָּׁנָ֗ה עָלָ֣ה עָלָיו֮ חֵ֣יל אֲרָם֒ וַיָּבֹ֗אוּ אֶל־יְהוּדָה֙ וִיר֣וּשָׁלִַ֔ם וַיַּשְׁחִ֛יתוּ אֶת־כָּל־שָׂרֵ֥י הָעָ֖ם מֵעָ֑ם וְכָל־שְׁלָלָ֥ם שִׁלְּח֖וּ לְמֶ֥לֶךְ דַּרְמָֽשֶׂק׃
+คำที่ถาม: יר֣וּשָׁלִַ֔ם   (รูปตั้งต้น יְרוּשָׁלִַ͏ם · ชนิดคำ noun)
+ตัวเลือก:
+  A) town, formerly referred to as Salem and Jebus;· located on Mt. Zion; territory of Judah; · conquered by king David, who made it the capital of his kingdom [คำแปลสั้น: Jerusalem]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 175
+ที่อยู่: DAN 7:11
+ข้อความต้นฉบับ: חָזֵ֣ה הֲוֵ֔ית בֵּאדַ֗יִן מִן־קָל֙ מִלַּיָּ֣א רַבְרְבָתָ֔א דִּ֥י קַרְנָ֖א מְמַלֱּלָ֑ה חָזֵ֣ה הֲוֵ֡ית עַד֩ דִּ֨י קְטִילַ֤ת חֵֽיוְתָא֙ וְהוּבַ֣ד גִּשְׁמַ֔הּ וִיהִיבַ֖ת לִיקֵדַ֥ת אֶשָּֽׁא׃
+คำที่ถาม: יהִיבַ֖ת   (รูปตั้งต้น יְהַב · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to give (someone a spouse); hence: causative action by which parents allow their child to become someone's spouse [คำแปลสั้น: to give (someone a spouse)]
+  B) causative action by which humans transfer the possession of an object to someone else [คำแปลสั้น: to give]
+  C) literally: to give; hence: action by which humans or deities make a selection among several options, which include humans, divine beings, animals, other objects, or events [คำแปลสั้น: to select, to provide]
+  D) literally: to give (a quality); hence: action by which humans publicly acknowledge one of the qualities of a deity [คำแปลสั้น: to ascribe, to acknowledge]
+  E) literally: to give (someone) in the hands (of someone else); hence: causative action by which humans or deities cause (other) humans to be in a position of control or authority over others [คำแปลสั้น: to hand over, to deliver in the hands (of someone else)]
+  F) literally: to give; hence: causative action by which humans or deities cause (other) humans to receive a quality, a position, or support [คำแปลสั้น: to grant help, to give aid, to help]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

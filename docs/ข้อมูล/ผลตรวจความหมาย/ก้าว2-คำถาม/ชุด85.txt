@@ -1,0 +1,61 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 216
+ที่อยู่: 1SA 17:52
+ข้อความต้นฉบับ: וַיָּקֻ֣מוּ אַנְשֵׁי֩ יִשְׂרָאֵ֨ל וִיהוּדָ֜ה וַיָּרִ֗עוּ וַֽיִּרְדְּפוּ֙ אֶת־הַפְּלִשְׁתִּ֔ים עַד־בּוֹאֲךָ֣ גַ֔יְא וְעַ֖ד שַׁעֲרֵ֣י עֶקְר֑וֹן וַֽיִּפְּל֞וּ חַֽלְלֵ֤י פְלִשְׁתִּים֙ בְּדֶ֣רֶךְ שַׁעֲרַ֔יִם וְעַד־גַּ֖ת וְעַד־עֶקְרֽוֹן׃
+คำที่ถาม: פְּלִשְׁתִּ֔ים   (รูปตั้งต้น פְּלִשְׁתִּי · ชนิดคำ noun)
+ตัวเลือก:
+  A) inhabitant of Philistia, considered to have come from Kaphtor [คำแปลสั้น: Philistine]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 217
+ที่อยู่: EXO 8:23
+ข้อความต้นฉบับ: דֶּ֚רֶךְ שְׁלֹ֣שֶׁת יָמִ֔ים נֵלֵ֖ךְ בַּמִּדְבָּ֑ר וְזָבַ֨חְנוּ֙ לַֽיהוָ֣ה אֱלֹהֵ֔ינוּ כַּאֲשֶׁ֖ר יֹאמַ֥ר אֵלֵֽינוּ׃
+คำที่ถาม: יָמִ֔ים   (รูปตั้งต้น יוֹם · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: ancient of days; hence: a title for God as the one who has been in existence from everlasting [คำแปลสั้น: Ancient of Days, Ancient in Years, Ancient One]
+  B) a basic unit of time, including evening and morning; seven days make a week; sometimes used in a figurative sense referring to a limited period of time, which may be shorter or slightly longer than a single day; the context often makes it difficult to determine [คำแปลสั้น: day, time, when]
+  C) literally: all the day; hence: process by which an event or pattern of events takes place for an extended time, without interruption [คำแปลสั้น: always, all the time, continually]
+  D) literally: days or years; hence: a long period of time [คำแปลสั้น: a long time]
+  E) literally: the day of everlasting; hence: a reference to the time of long ago [คำแปลสั้น: a distant past]
+  F) literally: all the days; hence: process by which an event or pattern of events takes place for an extended time, without interruption [คำแปลสั้น: always, all the time, continually]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 218
+ที่อยู่: ECC 7:1
+ข้อความต้นฉบับ: ט֥וֹב שֵׁ֖ם מִשֶּׁ֣מֶן ט֑וֹב וְי֣וֹם הַמָּ֔וֶת מִיּ֖וֹם הִוָּלְדֽוֹ׃
+คำที่ถาม: ט֑וֹב   (รูปตั้งต้น טוֹב · ชนิดคำ adjective)
+ตัวเลือก:
+  A) a town or territory east of northern Jordan river [คำแปลสั้น: Tob]
+  B) state in which objects are of a high quality and/or a pleasure to look at [คำแปลสั้น: good, nice, beautiful, handsome]
+  C) state in which events are well-performed, morally and ethically correct, and beneficial to others [คำแปลสั้น: good, right]
+  D) state in which humans and deities have character, integrity, and good fortune [คำแปลสั้น: good, just, honest, fortunate]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 219
+ที่อยู่: ISA 37:38
+ข้อความต้นฉบับ: וַיְהִי֩ ה֨וּא מִֽשְׁתַּחֲוֶ֜ה בֵּ֣ית׀נִסְרֹ֣ךְ אֱלֹהָ֗יו וְֽאַדְרַמֶּ֨לֶךְ וְשַׂרְאֶ֤צֶר בָּנָיו֙ הִכֻּ֣הוּ בַחֶ֔רֶב וְהֵ֥מָּה נִמְלְט֖וּ אֶ֣רֶץ אֲרָרָ֑ט וַיִּמְלֹ֛ךְ אֵֽסַר־חַדֹּ֥ן בְּנ֖וֹ תַּחְתָּֽיו׃ס
+คำที่ถาม: חַדֹּ֥ן   (รูปตั้งต้น אֵסַרחַדּוֹן · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · son of Sennacherib; · king of Assyria [คำแปลสั้น: Esarhaddon]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 220
+ที่อยู่: 1SA 6:4
+ข้อความต้นฉบับ: וַיֹּאמְר֗וּ מָ֣ה הָאָשָׁם֮ אֲשֶׁ֣ר נָשִׁ֣יב לוֹ֒ וַיֹּאמְר֗וּ מִסְפַּר֙ סַרְנֵ֣י פְלִשְׁתִּ֔ים חֲמִשָּׁה֙ טְחֹרֵ֣י זָהָ֔ב וַחֲמִשָּׁ֖ה עַכְבְּרֵ֣י זָהָ֑ב כִּֽי־מַגֵּפָ֥ה אַחַ֛ת לְכֻלָּ֖ם וּלְסַרְנֵיכֶֽם׃
+คำที่ถาม: סַרְנֵי   (รูปตั้งต้น סֶרֶן · ชนิดคำ noun)
+ตัวเลือก:
+  A) person in charge of a Philistine city [คำแปลสั้น: lord, ruler, chief]
+  B) rod passing through the center of a wheel or set of wheels [คำแปลสั้น: axle]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

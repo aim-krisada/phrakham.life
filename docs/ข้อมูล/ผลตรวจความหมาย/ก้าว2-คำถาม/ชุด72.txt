@@ -1,0 +1,37 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 2 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 160
+ที่อยู่: JDG 3:15
+ข้อความต้นฉบับ: וַיִּזְעֲק֣וּ בְנֵֽי־יִשְׂרָאֵל֮ אֶל־יְהוָה֒ וַיָּקֶם֩ יְהוָ֨ה לָהֶ֜ם מוֹשִׁ֗יעַ אֶת־אֵה֤וּד בֶּן־גֵּרָא֙ בֶּן־הַיְמִינִ֔י אִ֥ישׁ אִטֵּ֖ר יַד־יְמִינ֑וֹ וַיִּשְׁלְח֨וּ בְנֵי־יִשְׂרָאֵ֤ל בְּיָדוֹ֙ מִנְחָ֔ה לְעֶגְל֖וֹן מֶ֥לֶךְ מוֹאָֽב׃
+คำที่ถาม: וֹ֙   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) the lower part of the upper limb of the human body, which in some contexts may include the full arm, · apart from basic human activities such as holding, giving and taking, working, beating, also used in rituals around blessings, oaths, and prayer; · used figuratively in expressions involving strength, control, responsibility, punishment; · possibly used as a euphemism for the male genitals [คำแปลสั้น: hand, wrist, forearm, arm]
+  B) literally: to stretch out (one's) hands (to someone); hence: action by which humans give generously to someone else [คำแปลสั้น: to give generously]
+  C) literally: by the hand (of someone); hence: process by which a certain event is carried out by an intermediary (person) or instrument (object) [คำแปลสั้น: by, through]
+  D) literally: by the hand (of someone); hence, possibly: state in which something is done because of another matter relating to a particular person [คำแปลสั้น: because of]
+  E) literally: (one's) hands are weak; hence: state in which humans lack the confidence to perform a certain event [คำแปลสั้น: to be discouraged, to lose heart]
+  F) literally: to appoint (someone) over the hands (of an activity); hence: state in which someone has the authority over a certain activity [คำแปลสั้น: to put (someone) in charge of (something)]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 161
+ที่อยู่: HOS 14:10
+ข้อความต้นฉบับ: מִ֤י חָכָם֙ וְיָ֣בֵֽן אֵ֔לֶּה נָב֖וֹן וְיֵֽדָעֵ֑ם כִּֽי־יְשָׁרִ֞ים דַּרְכֵ֣י יְהוָ֗ה וְצַדִּקִים֙ יֵ֣לְכוּ בָ֔ם וּפֹשְׁעִ֖ים יִכָּ֥שְׁלוּ בָֽם׃
+คำที่ถาม: נָב֖וֹן   (รูปตั้งต้น בִּין · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which someone observes something carefully, with the intention of seeing through the outward appearance of things and grasping their essence, and so gain knowledge and understanding [คำแปลสั้น: to look closely, to take note, to pay attention, to consider, to understand, to draw understanding]
+  B) pattern of actions by which someone helps others to gain knowledge and understanding by observing carefully in order to see through the outward appearance of things and grasp their essence [คำแปลสั้น: to instruct, to give instruction, to teach, to give understanding, to explain]
+  C) pattern of actions by which someone gives positive attention to someone else with the intention of making sure that no harm is done to that person [คำแปลสั้น: to take care of, to watch over]
+  D) state in which someone has the ability to see through the outward appearance of things and grasp their essence [คำแปลสั้น: to be intelligent, to be discerning, to have insight, to be an expert]
+  E) process by which someone gains knowledge and understanding by observing carefully in order to see through the outward appearance of things and grasp their essence [คำแปลสั้น: to consider, to pay heed, to perceive, to realize, to understand, to distinguish]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

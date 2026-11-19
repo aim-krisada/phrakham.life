@@ -1,0 +1,59 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 355
+ที่อยู่: ACT 25:17
+ข้อความต้นฉบับ: συνελθόντων οὖν ἐνθάδε ἀναβολὴν μηδεμίαν ποιησάμενος τῇ ἑξῆς καθίσας ἐπὶ τοῦ βήματος ἐκέλευσα ἀχθῆναι τὸν ἄνδρα·
+คำที่ถาม: οὖν   (รูปตั้งต้น οὖν · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of result, often implying the conclusion of a process of reasoning [คำแปลสั้น: so, therefore, consequently, accordingly, then, so then]
+  B) a relatively emphatic marker of contrast [คำแปลสั้น: but, on the contrary, on the other hand]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 356
+ที่อยู่: MRK 2:5
+ข้อความต้นฉบับ: καὶ ἰδὼν ὁ Ἰησοῦς τὴν πίστιν αὐτῶν λέγει τῷ παραλυτικῷ·Τέκνον,ἀφίενταί σου αἱ ἁμαρτίαι.
+คำที่ถาม: Τέκνον   (รูปตั้งต้น τέκνον · ชนิดคำ noun)
+ตัวเลือก:
+  A) (extension of meaning of τέκνον[a] ‘child, offspring,’ 10.36) a person of any age for whom there is a special relationship of endearment and association [คำแปลสั้น: my child, my dear friend, my dear man, my dear one, my dear lad]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 357
+ที่อยู่: REV 2:1
+ข้อความต้นฉบับ: Τῷ ἀγγέλῳ τῆς ἐν Ἐφέσῳ ἐκκλησίας γράψον·Τάδε λέγει ὁ κρατῶν τοὺς ἑπτὰ ἀστέρας ἐν τῇ δεξιᾷ αὐτοῦ,ὁ περιπατῶν ἐν μέσῳ τῶν ἑπτὰ λυχνιῶν τῶν χρυσῶν·
+คำที่ถาม: Ἐφέσῳ   (รูปตั้งต้น Ἔφεσος · ชนิดคำ noun)
+ตัวเลือก:
+  A) a seaport in the western part of the Roman province of Asia [คำแปลสั้น: Ephesus]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 358
+ที่อยู่: ACT 15:31
+ข้อความต้นฉบับ: ἀναγνόντες δὲ ἐχάρησαν ἐπὶ τῇ παρακλήσει.
+คำที่ถาม: παρακλήσει   (รูปตั้งต้น παράκλησις · ชนิดคำ noun)
+ตัวเลือก:
+  A) to ask for something earnestly and with propriety [คำแปลสั้น: to ask for (earnestly), to request, to plead for, to appeal to, earnest request, appeal]
+  B) to cause someone to be encouraged or consoled, either by verbal or non-verbal means001 [คำแปลสั้น: to encourage, to console, encouragement]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 359
+ที่อยู่: LUK 24:32
+ข้อความต้นฉบับ: καὶ εἶπαν πρὸς ἀλλήλους·Οὐχὶ ἡ καρδία ἡμῶν καιομένη ἦν ἐν ἡμῖν ὡς ἐλάλει ἡμῖν ἐν τῇ ὁδῷ,ὡς διήνοιγεν ἡμῖν τὰς γραφάς;
+คำที่ถาม: ὁδῷ   (รูปตั้งต้น ὁδός · ชนิดคำ noun)
+ตัวเลือก:
+  A) to be in the process of travelling, presumably for some distance [คำแปลสั้น: to travel, to be on a journey, journey]
+  B) (a figurative extension of meaning of ὁδός[a] ‘road, way,’ 1.99) behavior in accordance with Christian principles and practices [คำแปลสั้น: Way, Christian way of life]
+  C) (an idiom, literally: a straight road) the right or correct pattern of behavior [คำแปลสั้น: right way, correct manner of life, just way of life]
+  D) (a figurative extension of meaning of ὁδός[a] ‘road,’ 1.99) a customary manner of life or behavior, with probably some implication of goal or purpose [คำแปลสั้น: way of life, way to live]
+  E) (an idiom, literally: a Sabbath’s road) a Sabbath day’s journey, somewhat over half a mile and about one kilometer [คำแปลสั้น: half a mile, one kilometer, Sabbath journey]
+  F) a general term for a thoroughfare, either within a population center or between two such centers [คำแปลสั้น: road, highway, street, way]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

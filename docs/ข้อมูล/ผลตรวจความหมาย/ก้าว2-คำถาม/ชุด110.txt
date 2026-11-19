@@ -1,0 +1,54 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 321
+ที่อยู่: GEN 15:18
+ข้อความต้นฉบับ: בַּיּ֣וֹם הַה֗וּא כָּרַ֧ת יְהוָ֛ה אֶת־אַבְרָ֖ם בְּרִ֣ית לֵאמֹ֑ר לְזַרְעֲךָ֗ נָתַ֨תִּי֙ אֶת־הָאָ֣רֶץ הַזֹּ֔את מִנְּהַ֣ר מִצְרַ֔יִם עַד־הַנָּהָ֥ר הַגָּדֹ֖ל נְהַר־פְּרָֽת׃
+คำที่ถาม: ךָ֗   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) a flowering plant’s unit of reproduction, capable of developing into another such plant, in some cases also used as food [คำแปลสั้น: seed, grain]
+  B) state of being associated with a certain attribute, attitude, or behavior, · referred to as offspring of that attribute, attitude, or behavior [คำแปลสั้น: those that are ...]
+  C) group of people that consider themselves descendants of one single ancestor [คำแปลสั้น: stock, race, family, lineage]
+  D) a person’s child or children, or the young of an animal [คำแปลสั้น: offspring, child, children]
+  E) the time of the year when sowing takes place [คำแปลสั้น: sowing time, time for sowing]
+  F) a thick whitish fluid containing spermatozoa, that is ejaculated from the male genital tract [คำแปลสั้น: semen, sperm]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 322
+ที่อยู่: PSA 105:17
+ข้อความต้นฉบับ: שָׁלַ֣ח לִפְנֵיהֶ֣ם אִ֑ישׁ לְ֝עֶ֗בֶד נִמְכַּ֥ר יוֹסֵֽף׃
+คำที่ถาม: נִמְכַּ֥ר   (รูปตั้งต้น מָכַר · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to sell (a quality); hence: action by which humans part with a certain quality [คำแปลสั้น: to sell, to part with (a quality)]
+  B) literally: to sell; hence: causative action by which deities surrender their people to be controled by others [คำแปลสั้น: to surrender]
+  C) action by which humans hand themselves over to other humans to become their slaves [คำแปลสั้น: to sell oneself]
+  D) causative action by which humans hand over objects or privileges in their possession in exchange for goods or money [คำแปลสั้น: to sell]
+  E) literally: to sell oneself; hence: action by which humans make a conscious decision to engage in a certain type of behavior; · only used in the context of morally and ethically unacceptable behavior [คำแปลสั้น: to sell oneself (to an activity), to engage oneself consciously]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 323
+ที่อยู่: JER 51:57
+ข้อความต้นฉบับ: וְ֠הִשְׁכַּרְתִּי שָׂרֶ֨יהָ וַחֲכָמֶ֜יהָ פַּחוֹתֶ֤יהָ וּסְגָנֶ֨יהָ֙ וְגִבּוֹרֶ֔יהָ וְיָשְׁנ֥וּ שְׁנַת־עוֹלָ֖ם וְלֹ֣א יָקִ֑יצוּ נְאֻ֨ם־הַמֶּ֔לֶךְ יְהוָ֥ה צְבָא֖וֹת שְׁמֽוֹ׃ס
+คำที่ถาม: פַּחוֹתֶ֤י   (รูปตั้งต้น פֶּחָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) a regional governor within a larger kingdom, responsible for enforcing the law of the king, collecting taxes for the king, and leading regional armies [คำแปลสั้น: governor]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 324
+ที่อยู่: 2CH 3:13
+ข้อความต้นฉบับ: כַּנְפֵי֙ הַכְּרוּבִ֣ים הָאֵ֔לֶּה פֹּֽרְשִׂ֖ים אַמּ֣וֹת עֶשְׂרִ֑ים וְהֵ֛ם עֹמְדִ֥ים עַל־רַגְלֵיהֶ֖ם וּפְנֵיהֶ֥ם לַבָּֽיִת׃ס
+คำที่ถาม: כַּנְפֵי֙   (รูปตั้งต้น כָּנָף · ชนิดคำ noun)
+ตัวเลือก:
+  A) part where converging sides or edges of an object meet; · sometimes associated with the far side of an object [คำแปลสั้น: corner, hem, edge]
+  B) part of body; · of bird, insect, celestial creature; · used for flying but also to give protection [คำแปลสั้น: wing]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

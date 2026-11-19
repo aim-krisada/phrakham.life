@@ -1,0 +1,63 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 423
+ที่อยู่: LUK 12:56
+ข้อความต้นฉบับ: ὑποκριταί,τὸ πρόσωπον τῆς γῆς καὶ τοῦ οὐρανοῦ οἴδατε δοκιμάζειν,τὸν δὲ καιρὸν τοῦτον πῶς οὐκ οἴδατε δοκιμάζειν;
+คำที่ถาม: καιρὸν   (รูปตั้งต้น καιρός · ชนิดคำ noun)
+ตัวเลือก:
+  A) an indefinite period of time, but probably with the implication of the relation of a period to a particular state of affairs [คำแปลสั้น: age, era]
+  B) points of time consisting of occasions for particular events [คำแปลสั้น: time, occasion]
+  C) a favorable opportunity or occasion in view of propitious circumstances [คำแปลสั้น: opportunity, good occasion]
+  D) an indefinite unit of time (the actual extent of time being determined by the context)001 [คำแปลสั้น: time, period of time]
+  E) pertaining to a relatively short period of time, with emphasis upon the temporary nature of the event or state [คำแปลสั้น: not long, temporary, for a little while, for a while]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 424
+ที่อยู่: LUK 2:25
+ข้อความต้นฉบับ: Καὶ ἰδοὺ ἄνθρωπος ἦν ἐν Ἰερουσαλὴμ ᾧ ὄνομα Συμεών,καὶ ὁ ἄνθρωπος οὗτος δίκαιος καὶ εὐλαβής,προσδεχόμενος παράκλησιν τοῦ Ἰσραήλ,καὶ πνεῦμα ἦν ἅγιον ἐπ’αὐτόν·
+คำที่ถาม: ἄνθρωπος   (รูปตั้งต้น ἄνθρωπος · ชนิดคำ noun)
+ตัวเลือก:
+  A) a human being (normally an adult) [คำแปลสั้น: (in the singular) person, human being, individual, (in the plural) people, persons,
+ mankind]
+  B) (an idiom, literally: old person, or: former person) the old or former pattern of behavior, in contrast with a new pattern of behavior which people should conform to [คำแปลสั้น: old self, old pattern of life]
+  C) an adult male person of marriageable age001 [คำแปลสั้น: man]
+  D) (idioms, literally: the inner (person), and: the hidden (person)) the psychological faculty, including intellectual, emotional, and spiritual aspects, in contrast with the purely physical aspects of human existence [คำแปลสั้น: the inner being, the inmost being, inwardly]
+  E) a man who is married to a woman [คำแปลสั้น: husband]
+  F) (a Semitic idiom, literally: sons of men) human beings (equivalent in denotative meaning to ἄνθρωπος[a], 9.1) [คำแปลสั้น: people, mankind]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 425
+ที่อยู่: LUK 21:2
+ข้อความต้นฉบับ: εἶδεν δέ τινα χήραν πενιχρὰν βάλλουσαν ἐκεῖ λεπτὰ δύο,
+คำที่ถาม: δέ   (รูปตั้งต้น δέ · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of contrast [คำแปลสั้น: but, on the other hand]
+  B) a marker of two or more items which are additively related and thematically parallel [คำแปลสั้น: some … others, first … then]
+  C) marker of a sequence of closely related events [คำแปลสั้น: and, and then]
+  D) a marker of sets of items in contrast with one another [คำแปลสั้น: on the one hand … but on the other hand]
+  E) a marker of an additive relation, but with the possible implication of some contrast [คำแปลสั้น: and]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 426
+ที่อยู่: JHN 5:26
+ข้อความต้นฉบับ: ὥσπερ γὰρ ὁ πατὴρ ἔχει ζωὴν ἐν ἑαυτῷ,οὕτως καὶ τῷ υἱῷ ἔδωκεν ζωὴν ἔχειν ἐν ἑαυτῷ·
+คำที่ถาม: καὶ   (รูปตั้งต้น καί · ชนิดคำ adv)
+ตัวเลือก:
+  A) a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]
+  B) a marker of a totality of two closely related elements [คำแปลสั้น: both … and]
+  C) a marker of an additive relation which is not coordinate [คำแปลสั้น: and, and also, also, in addition, even]
+  D) a marker of coordinate relations [คำแปลสั้น: and]
+  E) marker of a sequence of closely related events [คำแปลสั้น: and, and then]
+  F) a marker of emphasis, involving surprise and unexpectedness [คำแปลสั้น: then, indeed, how is it then, yet]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

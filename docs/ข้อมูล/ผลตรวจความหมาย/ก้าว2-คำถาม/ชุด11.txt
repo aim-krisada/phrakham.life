@@ -1,0 +1,46 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 21
+ที่อยู่: 1SA 23:14
+ข้อความต้นฉบับ: וַיֵּ֨שֶׁב דָּוִ֤ד בַּמִּדְבָּר֙ בַּמְּצָד֔וֹת וַיֵּ֥שֶׁב בָּהָ֖ר בְּמִדְבַּר־זִ֑יף וַיְבַקְשֵׁ֤הוּ שָׁאוּל֙ כָּל־הַיָּמִ֔ים וְלֹֽא־נְתָנ֥וֹ אֱלֹהִ֖ים בְּיָדֽוֹ׃
+คำที่ถาม: מְּצָד֔וֹת   (รูปตั้งต้น מְצָד · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: (God as one's) stronghold, fortress; hence: a title of God as the one providing security for those who follow him [คำแปลสั้น: Stronghold, Fortress]
+  B) animal hunted by humans or other animals · for food; · often extended metaphorically to people [คำแปลสั้น: prey, victim]
+  C) combination of two or three nets in layers, usually a small-mesh inner net sandwiched between two nets of looser mesh; · set out vertically in the water, held in place by floats on the surface of the water and weighted down by a single weighted rope at the bottom; left in place for several hours to give time for fish to accumulate in it; · associated with aggression and control [คำแปลสั้น: (trammel) net]
+  D) construction of which the exact form is unknown, · built in order to gain access to a city during a siege [คำแปลสั้น: siege-works]
+  E) area shaped and located in such a way that it is hard to access and can be easily defended against enemies; · this can be a natural stronghold in the mountains (e.g. caves) or a construction erected by humans in populated areas; · often associated with security and sometimes used as an epithet for leaders or deities that are considered providers of security [คำแปลสั้น: stronghold, fortress]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 22
+ที่อยู่: NUM 11:34
+ข้อความต้นฉบับ: וַיִּקְרָ֛א אֶת־שֵֽׁם־הַמָּק֥וֹם הַה֖וּא קִבְר֣וֹת הַֽתַּאֲוָ֑ה כִּי־שָׁם֙ קָֽבְר֔וּ אֶת־הָעָ֖ם הַמִּתְאַוִּֽים׃
+คำที่ถาม: קָֽבְר֔וּ   (รูปตั้งต้น קָבַר · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which humans put the body of deceased humans or animals in a designated place, such as a hole in a rock or in the ground, or in a place which was constructed specifically for this purpose; · associated with death, but also with honor and respect [คำแปลสั้น: to bury]
+  B) literally: to be buried by death; hence: to be killed, probably by a fatal epidemic disease [คำแปลสั้น: to be buried > to be killed by death]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 23
+ที่อยู่: NUM 2:34
+ข้อความต้นฉบับ: וַֽיַּעֲשׂ֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל כְּ֠כֹל אֲשֶׁר־צִוָּ֨ה יְהוָ֜ה אֶת־מֹשֶׁ֗ה כֵּֽן־חָנ֤וּ לְדִגְלֵיהֶם֙ וְכֵ֣ן נָסָ֔עוּ אִ֥ישׁ לְמִשְׁפְּחֹתָ֖יו עַל־בֵּ֥ית אֲבֹתָֽיו׃
+คำที่ถาม: נָסָ֔עוּ   (รูปตั้งต้น נָסַע · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally to make (someone) pluck up (their tent pegs); hence: causative action by which humans or deities cause a relatively large company of humans, together with their possessions, to depart from a place where they had set up a temporary residence [คำแปลสั้น: to cause to depart, to lead out, to drive out]
+  B) literally to pluck up (the tent pegs); hence: action by which a relatively large company of humans, together with their possessions, departs from a place where they had set up a temporary residence [คำแปลสั้น: to depart, to set out]
+  C) causative action by which humans remove an object from another object into which it had been inserted or attached in a different way [คำแปลสั้น: to pull out, to pull up, to uproot, to quarry]
+  D) action by which a relatively large company of humans and/or animals move from one place to another, whether with a clear destination in mind or not [คำแปลสั้น: to march, to move about]
+  E) causative action by which deities cause a wind to blow [คำแปลสั้น: to cause to blow]
+  F) causative action by which an object is taken away or removed from its original location [คำแปลสั้น: to remove, to set aside]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

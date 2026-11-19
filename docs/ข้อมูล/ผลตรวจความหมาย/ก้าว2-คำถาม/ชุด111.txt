@@ -1,0 +1,25 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 1 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 325
+ที่อยู่: EST 9:18
+ข้อความต้นฉบับ: וְהַיְּהוּדִ֣ים אֲשֶׁר־בְּשׁוּשָׁ֗ן נִקְהֲלוּ֙ בִּשְׁלֹשָׁ֤ה עָשָׂר֙ בּ֔וֹ וּבְאַרְבָּעָ֥ה עָשָׂ֖ר בּ֑וֹ וְנ֗וֹחַ בַּחֲמִשָּׁ֤ה עָשָׂר֙ בּ֔וֹ וְעָשֹׂ֣ה אֹת֔וֹ י֖וֹם מִשְׁתֶּ֥ה וְשִׂמְחָֽה׃
+คำที่ถาม: י֖וֹם   (รูปตั้งต้น יוֹם · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: as (on) this day; hence: at this moment or as soon as possible [คำแปลสั้น: now, first, at once]
+  B) literally: ancient of days; hence: a title for God as the one who has been in existence from everlasting [คำแปลสั้น: Ancient of Days, Ancient in Years, Ancient One]
+  C) a basic unit of time, including evening and morning; seven days make a week; sometimes used in a figurative sense referring to a limited period of time, which may be shorter or slightly longer than a single day; the context often makes it difficult to determine [คำแปลสั้น: day, time, when]
+  D) literally: days upon days; hence, probably: process by which a prolonged period of time elapses [คำแปลสั้น: gradually]
+  E) literally: to days from days; exact meaning unsure; possibly: a reference to the time after an unspecified amount of time had elapsed [คำแปลสั้น: in due time, in the course of time]
+  F) the time of day that it is light, as opposed to the time that it is dark [คำแปลสั้น: day]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

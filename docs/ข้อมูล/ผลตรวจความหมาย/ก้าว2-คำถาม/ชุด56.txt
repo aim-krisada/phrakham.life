@@ -1,0 +1,66 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 457
+ที่อยู่: LUK 12:39
+ข้อความต้นฉบับ: Τοῦτο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ ὥρᾳ ὁ κλέπτης ἔρχεται,οὐκ ἂν ἀφῆκεν διορυχθῆναι τὸν οἶκον αὐτοῦ.
+คำที่ถาม: ἔρχεται   (รูปตั้งต้น ἔρχομαι · ชนิดคำ verb)
+ตัวเลือก:
+  A) to move from one place to another, either coming or going001 [คำแปลสั้น: to come, to go]
+  B) (an idiom, literally: to come in sheeps clothing) to pretend to be harmless when in reality one is dangerous and destructive [คำแปลสั้น: to pretend to be good, to act hypocritically, to come in sheeps clothing]
+  C) (an idiom, literally: to come into) to result in a state [คำแปลสั้น: to result in, to end up being]
+  D) to happen, with the implication of the event being directed to someone or something [คำแปลสั้น: to happen to]
+  E) to move toward or up to the reference point of the viewpoint character or event002 [คำแปลสั้น: to come, coming]
+  F) to come into a particular state or condition, implying a process [คำแปลสั้น: to become]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 458
+ที่อยู่: MAT 26:63
+ข้อความต้นฉบับ: ὁ δὲ Ἰησοῦς ἐσιώπα.καὶ ὁ ἀρχιερεὺς εἶπεν αὐτῷ·Ἐξορκίζω σε κατὰ τοῦ θεοῦ τοῦ ζῶντος ἵνα ἡμῖν εἴπῃς εἰ σὺ εἶ ὁ χριστὸς ὁ υἱὸς τοῦ θεοῦ.
+คำที่ถาม: καὶ   (รูปตั้งต้น καί · ชนิดคำ conj)
+ตัวเลือก:
+  A) marker of a sequence of closely related events [คำแปลสั้น: and, and then]
+  B) a marker of a totality of two closely related elements [คำแปลสั้น: both … and]
+  C) a marker of emphasis, involving surprise and unexpectedness [คำแปลสั้น: then, indeed, how is it then, yet]
+  D) a marker of an additive relation which is not coordinate [คำแปลสั้น: and, and also, also, in addition, even]
+  E) a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]
+  F) a marker of coordinate relations [คำแปลสั้น: and]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 459
+ที่อยู่: JUD 1:2
+ข้อความต้นฉบับ: ἔλεος ὑμῖν καὶ εἰρήνη καὶ ἀγάπη πληθυνθείη.
+คำที่ถาม: ἔλεος   (รูปตั้งต้น ἔλεος · ชนิดคำ noun)
+ตัวเลือก:
+  A) to show kindness or concern for someone in serious need [คำแปลสั้น: to show mercy, to be merciful toward, to have mercy on, mercy]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 460
+ที่อยู่: LUK 9:61
+ข้อความต้นฉบับ: εἶπεν δὲ καὶ ἕτερος·Ἀκολουθήσω σοι,κύριε·πρῶτον δὲ ἐπίτρεψόν μοι ἀποτάξασθαι τοῖς εἰς τὸν οἶκόν μου.
+คำที่ถาม: Ἀκολουθήσω   (รูปตั้งต้น ἀκολουθέω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to follow or accompany someone who takes the lead in determining direction and route of movement [คำแปลสั้น: to accompany as a follower, to follow, to go along with]
+  B) to come/go behind or after someone else [คำแปลสั้น: to follow, to come behind, to go behind]
+  C) to be a follower or a disciple of someone, in the sense of adhering to the teachings or instructions of a leader and in promoting the cause of such a leader [คำแปลสั้น: to follow, to be a disciple of]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 461
+ที่อยู่: MAT 11:23
+ข้อความต้นฉบับ: καὶ σύ,Καφαρναούμ,μὴ ἕως οὐρανοῦ ὑψωθήσῃ;ἕως ᾅδου καταβήσῃ·ὅτι εἰ ἐν Σοδόμοις ἐγενήθησαν αἱ δυνάμεις αἱ γενόμεναι ἐν σοί,ἔμεινεν ἂν μέχρι τῆς σήμερον.
+คำที่ถาม: ᾅδου   (รูปตั้งต้น ᾅδης · ชนิดคำ noun)
+ตัวเลือก:
+  A) (a figurative extension of meaning of ᾅδης[a] Hades, 1.19, as a personification of the power of Hades as the place of the dead) [คำแปลสั้น: death, power of death]
+  B) (an idiom, literally: gates of Hades) death as an impersonal supernatural power [คำแปลสั้น: death]
+  C) a place or abode of the dead, including both the righteous and the unrighteous (in most contexts ᾅδης[a] is equivalent to the Hebrew term Sheol) [คำแปลสั้น: the world of the dead, Hades]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

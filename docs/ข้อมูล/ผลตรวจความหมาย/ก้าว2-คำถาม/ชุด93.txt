@@ -1,0 +1,63 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 248
+ที่อยู่: PSA 58:11
+ข้อความต้นฉบับ: יִשְׂמַ֣ח צַ֭דִּיק כִּי־חָזָ֣ה נָקָ֑ם פְּעָמָ֥יו יִ֝רְחַ֗ץ בְּדַ֣ם הָרָשָֽׁע׃
+คำที่ถาม: יִ֝רְחַ֗ץ   (รูปตั้งต้น רָחַץ · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which humans or animals wash (part of) their own body or someone else's body or another object, usually with water, · in order to remove any dirt; · the resulting cleanness often symbolizes ritual cleanness, innocence, or even holiness [คำแปลสั้น: to take a bath, to bathe, to wash]
+  B) state in which humans live with confidence and without fear [คำแปลสั้น: to rely on, to trust]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 249
+ที่อยู่: LEV 11:45
+ข้อความต้นฉบับ: כִּ֣י׀אֲנִ֣י יְהוָ֗ה הַֽמַּעֲלֶ֤ה אֶתְכֶם֙ מֵאֶ֣רֶץ מִצְרַ֔יִם לִהְיֹ֥ת לָכֶ֖ם לֵאלֹהִ֑ים וִהְיִיתֶ֣ם קְדֹשִׁ֔ים כִּ֥י קָד֖וֹשׁ אָֽנִי׃
+คำที่ถาม: אָֽנִי   (รูปตั้งต้น אֲנִי · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to the speaker or writer in a discourse [คำแปลสั้น: I]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 250
+ที่อยู่: 1SA 18:7
+ข้อความต้นฉบับ: וַֽתַּעֲנֶ֛ינָה הַנָּשִׁ֥ים הַֽמְשַׂחֲק֖וֹת וַתֹּאמַ֑רְןָ הִכָּ֤ה שָׁאוּל֙ בַּאֲלָפָ֔יו וְדָוִ֖ד בְּרִבְבֹתָֽיו׃
+คำที่ถาม: הִכָּ֤ה   (รูปตั้งต้น נָכָה · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to strike; hence: causative action by which humans use their hands to cause an object to move suddenly or violently in a certain direction [คำแปลสั้น: to strike, to plunge, to thrust]
+  B) literally: to strike mortally wounded; hence: action by which humans inflict a serious wound on someone else, which is usually fatal [คำแปลสั้น: to strike down]
+  C) literally: to strike; hence: causative action by which humans, animals, or deities cause other humans or animals to die a violent death [คำแปลสั้น: to kill]
+  D) action by which humans strike the palms of their hands together repeatedly · as an expression of strong emotions, including joy and grief [คำแปลสั้น: to clap (one's) hands]
+  E) literally: to strike a life; hence: causative action by which humans cause other humans or animals to die a violent death [คำแปลสั้น: to take a life]
+  F) literally: to strike; hence: action by which deities inflict punishment on individuals and groups [คำแปลสั้น: to punish]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 251
+ที่อยู่: 1SA 29:10
+ข้อความต้นฉบับ: וְעַתָּה֙ הַשְׁכֵּ֣ם בַּבֹּ֔קֶר וְעַבְדֵ֥י אֲדֹנֶ֖יךָ אֲשֶׁר־בָּ֣אוּ אִתָּ֑ךְ וְהִשְׁכַּמְתֶּ֣ם בַּבֹּ֔קֶר וְא֥וֹר לָכֶ֖ם וָלֵֽכוּ׃
+คำที่ถาม: לֵֽכוּ   (รูปตั้งต้น הלך · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to go; hence: process by which living creatures live their life until the moment of death [คำแปลสั้น: to go > to live]
+  B) causative process by which humans cause other humans to follow a certain pattern of behavior, · which is described as their journey through life [คำแปลสั้น: to make go, to lead]
+  C) action by which humans, deities, or animals move forward, usually towards a specific destination [คำแปลสั้น: to go, to come]
+  D) process by which someone is going to die, described as a movement in one way only [คำแปลสั้น: to pass away]
+  E) process by which an object vanishes from existence [คำแปลสั้น: to vanish]
+  F) person who spends much time on the road, either as well-intentioned traveller or as roaming vagabond [คำแปลสั้น: traveller, vagabond]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 252
+ที่อยู่: JER 31:1
+ข้อความต้นฉบับ: בָּעֵ֤ת הַהִיא֙ נְאֻם־יְהוָ֔ה אֶֽהְיֶה֙ לֵֽאלֹהִ֔ים לְכֹ֖ל מִשְׁפְּח֣וֹת יִשְׂרָאֵ֑ל וְהֵ֖מָּה יִֽהְיוּ־לִ֥י לְעָֽם׃ס
+คำที่ถาม: הֵ֖מָּה   (รูปตั้งต้น הֵמָּה · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to a group of masculine (and possibly including feminine) participants [คำแปลสั้น: them]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

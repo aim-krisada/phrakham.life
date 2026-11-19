@@ -1,0 +1,65 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 442
+ที่อยู่: MRK 6:46
+ข้อความต้นฉบับ: καὶ ἀποταξάμενος αὐτοῖς ἀπῆλθεν εἰς τὸ ὄρος προσεύξασθαι.
+คำที่ถาม: εἰς   (รูปตั้งต้น εἰς · ชนิดคำ prep)
+ตัวเลือก:
+  A) extension toward a goal which is inside an area [คำแปลสั้น: into]
+  B) (an idiom, literally: into the ear) pertaining to what is known only by those who hear a particular message in private [คำแปลสั้น: in secret, in private, privately]
+  C) unlimited duration of time, with particular focus upon the future [คำแปลสั้น: always, forever, forever and ever, eternally]
+  D) a marker of result, with the probable implication of a preceding process [คำแปลสั้น: with the result that, so that as a result, to cause]
+  E) extension toward a special goal001 [คำแปลสั้น: to, toward, in the direction of]
+  F) a marker of a change of state [คำแปลสั้น: from … to, to, for]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 443
+ที่อยู่: LUK 18:1
+ข้อความต้นฉบับ: Ἔλεγεν δὲ παραβολὴν αὐτοῖς πρὸς τὸ δεῖν πάντοτε προσεύχεσθαι αὐτοὺς καὶ μὴ ἐγκακεῖν,
+คำที่ถาม: δεῖν   (รูปตั้งต้น δέω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to be something which should be done as the result of compulsion, whether internal (as a matter of duty) or external (law, custom, and circumstances) [คำแปลสั้น: should, ought, to have to do]
+  B) to be that which must necessarily take place, often with the implication of inevitability [คำแปลสั้น: to be necessary, must]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 444
+ที่อยู่: ROM 13:3
+ข้อความต้นฉบับ: οἱ γὰρ ἄρχοντες οὐκ εἰσὶν φόβος τῷ ἀγαθῷ ἔργῳ ἀλλὰ τῷ κακῷ.θέλεις δὲ μὴ φοβεῖσθαι τὴν ἐξουσίαν;τὸ ἀγαθὸν ποίει,καὶ ἕξεις ἔπαινον ἐξ αὐτῆς·
+คำที่ถาม: φοβεῖσθαι   (รูปตั้งต้น φοβέομαι · ชนิดคำ verb)
+ตัวเลือก:
+  A) (a figurative extension of meaning of φοβέω[a] ‘to fear,’ 25.252) to have profound reverence and respect for deity, with the implication of awe bordering on fear [คำแปลสั้น: to reverence, to worship]
+  B) to have such awe or respect for a person as to involve a measure of fear [คำแปลสั้น: to fear, to show great reverence for, to show great respect for]
+  C) (derivative of φόβος[a] ‘fear,’ 25.251) to be in a state of fearing [คำแปลสั้น: to fear, to be afraid]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 445
+ที่อยู่: 2CO 4:8
+ข้อความต้นฉบับ: ἐν παντὶ θλιβόμενοι ἀλλ’οὐ στενοχωρούμενοι,ἀπορούμενοι ἀλλ’οὐκ ἐξαπορούμενοι,
+คำที่ถาม: παντὶ   (รูปตั้งต้น πᾶς · ชนิดคำ adj)
+ตัวเลือก:
+  A) the totality of any object, mass, collective, or extension001 [คำแปลสั้น: all, every, each, whole]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 446
+ที่อยู่: LUK 24:4
+ข้อความต้นฉบับ: καὶ ἐγένετο ἐν τῷ ἀπορεῖσθαι αὐτὰς περὶ τούτου καὶ ἰδοὺ ἄνδρες δύο ἐπέστησαν αὐταῖς ἐν ἐσθῆτι ἀστραπτούσῃ.
+คำที่ถาม: ἐπέστησαν   (รูปตั้งต้น ἐφίστημι · ชนิดคำ verb)
+ตัวเลือก:
+  A) to use sudden physical force against someone as the outgrowth of a hostile attitude001 [คำแปลสั้น: to attack, to assault]
+  B) to be in proximity to something [คำแปลสั้น: to be near, to be at, to be nearby]
+  C) to happen to someone or something, with the implication of an event which is undesirable [คำแปลสั้น: to happen to, to come upon, to overtake]
+  D) to continue in an activity in spite of presumed opposition [คำแปลสั้น: to continue, to persist in]
+  E) to occur with high probability at a point of time just subsequent to another point of time [คำแปลสั้น: imminent, impending]
+  F) to stand at a particular place, often with the implication of suddenness [คำแปลสั้น: to stand by, to stand at]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

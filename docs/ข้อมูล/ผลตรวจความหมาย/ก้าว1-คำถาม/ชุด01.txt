@@ -1,0 +1,67 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 1
+ที่อยู่: ISA 48:3
+ข้อความต้นฉบับ: הָרִֽאשֹׁנוֹת֙ מֵאָ֣ז הִגַּ֔דְתִּי וּמִפִּ֥י יָצְא֖וּ וְאַשְׁמִיעֵ֑ם פִּתְאֹ֥ם עָשִׂ֖יתִי וַתָּבֹֽאנָה׃
+คำที่ถาม: רִֽאשֹׁנוֹת֙   (รูปตั้งต้น רִאשׁוֹן · ชนิดคำ adjective)
+ตัวเลือก:
+  A) state of authority within a group of people [คำแปลสั้น: leading]
+  B) state in which a countable entity is the first or the previous in a range [คำแปลสั้น: first, former, formost, previous]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 2
+ที่อยู่: PSA 62:5
+ข้อความต้นฉบับ: אַ֤ךְ מִשְּׂאֵת֨וֹ׀יָעֲצ֣וּ לְהַדִּיחַ֮ יִרְצ֪וּ כָ֫זָ֥ב בְּפִ֥יו יְבָרֵ֑כוּ וּ֝בְקִרְבָּ֗ם יְקַלְלוּ־סֶֽלָה׃
+คำที่ถาม: קִרְבָּ֗   (รูปตั้งต้น קֶרֶב · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: to complete (an event); hence: causative action by which deities cause a situation to come to an end [คำแปลสั้น: to bring to an end]
+  B) process by which an event takes place with great intensity, evoking an association with God [คำแปลสั้น: mighty, exceedingly, great (in intensity)]
+  C) a state in which a human or deity helps a human in need to be safe / a safe state [คำแปลสั้น: safety, welfare, prosperity, victory, salvation, deliverance]
+  D) state in which an event is regarded as relatively unimportant, not requiring much effort or thought [คำแปลสั้น: to be a trivial matter, to be of no consequence, to come easy]
+  E) a marker negating a proposition [คำแปลสั้น: not, no]
+  F) literally: lifted up state in which humans or deities have an elevated status, either in their own eyes or in the eyes of other people, · which can either be good or bad, depending on whether this status is justified [คำแปลสั้น: high status, honor, dignity]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 3
+ที่อยู่: JDG 5:11
+ข้อความต้นฉบับ: מִקּ֣וֹל מְחַֽצְצִ֗ים בֵּ֚ין מַשְׁאַבִּ֔ים שָׁ֤ם יְתַנּוּ֙ צִדְק֣וֹת יְהוָ֔ה צִדְקֹ֥ת פִּרְזֹנ֖וֹ בְּיִשְׂרָאֵ֑ל אָ֛ז יָרְד֥וּ לַשְּׁעָרִ֖ים עַם־יְהוָֽה׃
+คำที่ถาม: קּ֣וֹל   (รูปตั้งต้น קוֹל · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: voice; hence: process by which information is passed on within a community [คำแปลสั้น: report, news, proclamation]
+  B) literally: one voice; hence: action by which a group of people do things in one accord [คำแปลสั้น: in unison]
+  C) literally: to raise (one's) voice; hence: action by which humans raise their voice. · either in order to shout or to speak [คำแปลสั้น: to shout]
+  D) literally: to make (one's) voice kind; hence: actions by which humans speak in a kind and gracious way · in order to win a favorable attitude from other humans [คำแปลสั้น: to speak kindly, to speak charmingly]
+  E) literally: voice; hence: action by which humans or deities utter words [คำแปลสั้น: words]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 4
+ที่อยู่: NEH 3:10
+ข้อความต้นฉบับ: וְעַל־יָדָ֧ם הֶחֱזִ֛יק יְדָיָ֥ה בֶן־חֲרוּמַ֖ף וְנֶ֣גֶד בֵּית֑וֹסוְעַל־יָד֣וֹ הֶחֱזִ֔יק חַטּ֖וּשׁ בֶּן־חֲשַׁבְנְיָֽה׃
+คำที่ถาม: בֶן   (รูปตั้งต้น בֵּן · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · Levite; time of king David [คำแปลสั้น: Ben]
+  B) literally: son (of a number of years); hence: state in which humans and animals have a certain age, · referred to as a child of a certain number of years [คำแปลสั้น: at the age of ...]
+  C) state of being associated with a certain time of day, · referred to as a child of that time [คำแปลสั้น: one that is ...]
+  D) literally: children of a town, region, nation; hence: people, animals, or products that are inhabitants of or originating from a place, town, region, or nation, · as if they were the offspring of that place [คำแปลสั้น: inhabitants of, originating from]
+  E) state of being associated with a certain attribute, attitude, or behavior, · referred to as a child of that attribute, attitude, or behavior [คำแปลสั้น: one who is ..., one that is ...]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 5
+ที่อยู่: PSA 6:7
+ข้อความต้นฉบับ: יָגַ֤עְתִּי׀בְּֽאַנְחָתִ֗י אַשְׂחֶ֣ה בְכָל־לַ֭יְלָה מִטָּתִ֑י בְּ֝דִמְעָתִ֗י עַרְשִׂ֥י אַמְסֶֽה׃
+คำที่ถาม: מִטָּתִ֑   (รูปตั้งต้น מִטָּה · ชนิดคำ noun)
+ตัวเลือก:
+  A) a bed-like structure used to transport important people, either in lying or sitting position [คำแปลสั้น: bier, litter]
+  B) a low platform standing on four legs, a bit longer than the length of a man, and about 70-80 centimeters wide; · used by people of means to sit or sleep on [คำแปลสั้น: couch, bed]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

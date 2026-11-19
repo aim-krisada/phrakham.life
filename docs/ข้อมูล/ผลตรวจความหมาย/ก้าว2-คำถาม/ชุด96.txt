@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 261
+ที่อยู่: 2CH 18:9
+ข้อความต้นฉบับ: וּמֶ֣לֶךְ יִשְׂרָאֵ֡ל וִֽיהוֹשָׁפָ֣ט מֶֽלֶךְ־יְהוּדָ֡ה יוֹשְׁבִים֩ אִ֨ישׁ עַל־כִּסְא֜וֹ מְלֻבָּשִׁ֤ים בְּגָדִים֙ וְיֹשְׁבִ֣ים בְּגֹ֔רֶן פֶּ֖תַח שַׁ֣עַר שֹׁמְר֑וֹן וְכָל־הַ֨נְּבִיאִ֔ים מִֽתְנַבְּאִ֖ים לִפְנֵיהֶֽם׃
+คำที่ถาม: יֹשְׁבִ֣ים   (รูปตั้งต้น יָשַׁב · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans assume a sitting position in a certain location and remain in that position for some time; · sometimes associated with a certain status, role, or common activity [คำแปลสั้น: to sit down, to be seated]
+  B) literally: to sit; hence: causative action by which humans cause a certain condition to persist over a relatively long period of time [คำแปลสั้น: to remain, to stay]
+  C) action by which humans or deities assume a position of leadership, · as if sitting on an actual throne [คำแปลสั้น: to be enthroned]
+  D) literally: to sit; hence: a process by which a certain condition persists over a relatively long period of time [คำแปลสั้น: to continue]
+  E) state in which a place or area has been made the home of humans [คำแปลสั้น: to be settled, to be inhabited]
+  F) state in which humans remain in a place that is not their home for a relatively short time [คำแปลสั้น: to stay, to remain]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 262
+ที่อยู่: PSA 77:12
+ข้อความต้นฉบับ: אֶזְכּ֥וֹר מַֽעַלְלֵי־יָ֑הּ כִּֽי־אֶזְכְּרָ֖ה מִקֶּ֣דֶם פִּלְאֶֽךָ׃
+คำที่ถาม: קֶּ֣דֶם   (รูปตั้งต้น קֶדֶם · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: front; hence: a reference to a period of time referenced in the distant past [คำแปลสั้น: ancient time, long ago]
+  B) literally: long ago; hence: state in which a deity or object has been in existence since a distant past [คำแปลสั้น: ancient]
+  C) literally: long ago; hence: a point in time at which an event starts happening [คำแปลสั้น: beginning]
+  D) a referent pointing in the direction that one is facing [คำแปลสั้น: in front]
+  E) literally: front; hence: a referent pointing to the place where the sun rises [คำแปลสั้น: east, eastern, easterly, eastward]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 263
+ที่อยู่: JOS 19:14
+ข้อความต้นฉบับ: וְנָסַ֤ב אֹתוֹ֙ הַגְּב֔וּל מִצְּפ֖וֹן חַנָּתֹ֑ן וְהָיוּ֙ תֹּֽצְאֹתָ֔יו גֵּ֖י יִפְתַּח־אֵֽל׃
+คำที่ถาม: אֵֽל   (รูปตั้งต้น יִפְתַּחאֵל · ชนิดคำ noun)
+ตัวเลือก:
+  A) valley; · located on boundary between the territories of Zebulun and Asher; the exact location is uncertain [คำแปลสั้น: Valley of Iphtah El, Valley of Iphtahel]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 264
+ที่อยู่: EXO 30:10
+ข้อความต้นฉบับ: וְכִפֶּ֤ר אַהֲרֹן֙ עַל־קַרְנֹתָ֔יו אַחַ֖ת בַּשָּׁנָ֑ה מִדַּ֞ם חַטַּ֣את הַכִּפֻּרִ֗ים אַחַ֤ת בַּשָּׁנָה֙ יְכַפֵּ֤ר עָלָיו֙ לְדֹרֹ֣תֵיכֶ֔ם קֹֽדֶשׁ־קָֽדָשִׁ֥ים ה֖וּא לַיהוָֽה׃פ
+คำที่ถาม: קָֽדָשִׁ֥ים   (รูปตั้งต้น קֹדֶשׁ · ชนิดคำ noun)
+ตัวเลือก:
+  A) state in which a deity differs from humans and other deities in that he cannot be associated with anything that is in any way profane or tainted by sin or other impurities, which is a quality that he desires to see in everything else as well [คำแปลสั้น: holiness, holy]
+  B) innermost room at the back of the main temple building; · location of the ark of the covenant; · regarded as the most holy place [คำแปลสั้น: (most) holy place]
+  C) the outer sanctuary of either the tabernacle or the temple, described in terms of its holiness [คำแปลสั้น: holy place]
+  D) the tabernacle or temple of YHWH, described in terms of its holiness [คำแปลสั้น: holy place, sanctuary]
+  E) literally: the holiest of holies; hence: innermost room at the back of the main temple building; · location of the ark of the covenant; · regarded as the most holy place [คำแปลสั้น: most holy place]
+  F) state in which by which humans or objects have become part of the realm of God and his service · and therefore no longer accessible to humans unless they have gone through special rituals [คำแปลสั้น: holiness, holy]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

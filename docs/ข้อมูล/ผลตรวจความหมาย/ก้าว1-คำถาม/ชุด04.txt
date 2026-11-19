@@ -1,0 +1,65 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 16
+ที่อยู่: LEV 5:18
+ข้อความต้นฉบับ: וְ֠הֵבִיא אַ֣יִל תָּמִ֧ים מִן־הַצֹּ֛אן בְּעֶרְכְּךָ֥ לְאָשָׁ֖ם אֶל־הַכֹּהֵ֑ן וְכִפֶּר֩ עָלָ֨יו הַכֹּהֵ֜ן עַ֣ל שִׁגְגָת֧וֹ אֲשֶׁר־שָׁגָ֛ג וְה֥וּא לֹֽא־יָדַ֖ע וְנִסְלַ֥ח לֽוֹ׃
+คำที่ถาม: כֹּהֵ֜ן   (รูปตั้งต้น כֹּהֵן · ชนิดคำ noun)
+ตัวเลือก:
+  A) person ordained and consecrated to perform religious services on behalf of others [คำแปลสั้น: priest]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 17
+ที่อยู่: LEV 8:21
+ข้อความต้นฉบับ: וְאֶת־הַקֶּ֥רֶב וְאֶת־הַכְּרָעַ֖יִם רָחַ֣ץ בַּמָּ֑יִם וַיַּקְטֵר֩ מֹשֶׁ֨ה אֶת־כָּל־הָאַ֜יִל הַמִּזְבֵּ֗חָה עֹלָ֨ה ה֤וּא לְרֵֽיחַ־נִיחֹ֨חַ֙ אִשֶּׁ֥ה הוּא֙ לַיהוָ֔ה כַּאֲשֶׁ֛ר צִוָּ֥ה יְהוָ֖ה אֶת־מֹשֶֽׁה׃
+คำที่ถาม: אַ֜יִל   (รูปตั้งต้น אַיִל · ชนิดคำ noun)
+ตัวเลือก:
+  A) a relatively short side wall projecting from the main wall of a building, either to create side chambers or to hold a door frame; alternatively this could be a pillar that stands flush with the wall or with the sides of an entrance way; it could also be the verticle part of a door frame [คำแปลสั้น: side wall, entrance, jamb]
+  B) tree, more commonly known as אֵלָה, with a broad crown, heavy branches, and thick trunk; may reach a height of 7.5 to 9 m.; sheds its leaves; has small an inconspicuous flowers; · pictacia terebinthus; · its stem contains aromatic turpentine, a resinous juice, which flows out when the bark is cut; it provides pleasant shade; · imposing tree, preferred place to sit under and enjoy the shade, associated with cultic worship [คำแปลสั้น: terebinth]
+  C) male herbivorous mammal with four legs; · |iovis ladicaudata|i*, fat-tailed sheep; · clean animal, used for sacrifice, source of meat, hides, wool, and horns; · associated with strength and leadership [คำแปลสั้น: ram]
+  D) person who has a position of leadership [คำแปลสั้น: leader, chief]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 18
+ที่อยู่: PSA 49:16
+ข้อความต้นฉบับ: אַךְ־אֱלֹהִ֗ים יִפְדֶּ֣ה נַ֭פְשִׁי מִֽיַּד־שְׁא֑וֹל כִּ֖י יִקָּחֵ֣נִי סֶֽלָה׃
+คำที่ถาม: סֶֽלָה   (รูปตั้งต้น סֶלָה · ชนิดคำ particle)
+ตัวเลือก:
+  A) literally: to see the light; hence: state in which humans are alive [คำแปลสั้น: to see the light > to live]
+  B) literally: to turn back (someone's) heart; hence: causative action by which deities cause humans to change their way of thinking [คำแปลสั้น: to turn (someone's) heart back, to win back (someone's allegiance)]
+  C) literally: to take; hence: state in which humans or deities are willing to accept what is offered to them, whether it is a physical gift, an oath, a promise, or words [คำแปลสั้น: to accept]
+  D) state of an event or an object that is very difficult or painful or harmful; also used to describe the attitude or emotion in reaction to such an event [คำแปลสั้น: harm, misery, trouble, disaster, evil]
+  E) process by which objects open up · in order to give access to something located inside or to create a passage [คำแปลสั้น: to open, to open up]
+  F) action by which someone decides to stop searching for an object that is not located in its expected place [คำแปลสั้น: to give up as lost]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 19
+ที่อยู่: JOL 1:11
+ข้อความต้นฉบับ: הֹבִ֣ישׁוּ אִכָּרִ֗ים הֵילִ֨ילוּ֙ כֹּֽרְמִ֔ים עַל־חִטָּ֖ה וְעַל־שְׂעֹרָ֑ה כִּ֥י אָבַ֖ד קְצִ֥יר שָׂדֶֽה׃
+คำที่ถาม: חִטָּ֖ה   (รูปตั้งต้น חִטָּה · ชนิดคำ noun)
+ตัวเลือก:
+  A) the period of a person's life ranging from early childhood to adulthood [คำแปลสั้น: youth]
+  B) literally: to bring (information) to (someone); hence: causative process by which humans cause (other) humans or deities to receive information about a certain event, either directly or indirectly [คำแปลสั้น: to bring]
+  C) one of the gates of Jerusalem [คำแปลสั้น: Water Gate]
+  D) one of the city gates of Jerusalem, · through which small cattle could be taken [คำแปลสั้น: Sheep Gate]
+  E) literally: house (of an object); hence: an object that serves as a holder or container of another object, · as if it were its house [คำแปลสั้น: holder, container]
+  F) action by which humans speak written words aloud [คำแปลสั้น: to read, to recite]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 20
+ที่อยู่: EZK 43:9
+ข้อความต้นฉบับ: עַתָּ֞ה יְרַחֲק֧וּ אֶת־זְנוּתָ֛ם וּפִגְרֵ֥י מַלְכֵיהֶ֖ם מִמֶּ֑נִּי וְשָׁכַנְתִּ֥י בְתוֹכָ֖ם לְעוֹלָֽם׃ס
+คำที่ถาม: פִגְרֵ֥י   (รูปตั้งต้น פֶּגֶר · ชนิดคำ noun)
+ตัวเลือก:
+  A) body of an animal or human that has died or been killed; · source of pollution and impurity [คำแปลสั้น: corpse, carcass]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

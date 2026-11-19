@@ -1,0 +1,62 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 234
+ที่อยู่: PSA 21:1
+ข้อความต้นฉบับ: לַמְנַצֵּ֗חַ מִזְמ֥וֹר לְדָוִֽד׃
+คำที่ถาม: מְנַצֵּ֗חַ   (รูปตั้งต้น נָצַח · ชนิดคำ verb)
+ตัวเลือก:
+  A) state in which a process is never ending or changing [คำแปลสั้น: perpetual, persistent]
+  B) process by which humans show themselves to be different or better than others [คำแปลสั้น: to be distinguished, to surpass]
+  C) action by which humans supervise, direct or oversee work (such as building or repairing) or worship (such as singing or playing instruments) [คำแปลสั้น: to lead, to oversee, to direct]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 235
+ที่อยู่: PSA 115:5
+ข้อความต้นฉบับ: פֶּֽה־לָ֭הֶם וְלֹ֣א יְדַבֵּ֑רוּ עֵינַ֥יִם לָ֝הֶ֗ם וְלֹ֣א יִרְאֽוּ׃
+คำที่ถาม: לֹ֣א   (รูปตั้งต้น לֹא · ชนิดคำ particle)
+ตัวเลือก:
+  A) a marker negating a proposition [คำแปลสั้น: not, no]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 236
+ที่อยู่: JOS 3:4
+ข้อความต้นฉบับ: אַ֣ךְ׀רָח֣וֹק יִהְיֶ֗ה בֵּֽינֵיכֶם֙ וּבֵינָ֔יו כְּאַלְפַּ֥יִם אַמָּ֖ה בַּמִּדָּ֑ה אַֽל־תִּקְרְב֣וּ אֵלָ֗יו לְמַ֤עַן אֲשֶׁר־תֵּֽדְעוּ֙ אֶת־הַדֶּ֨רֶךְ֙ אֲשֶׁ֣ר תֵּֽלְכוּ־בָ֔הּ כִּ֣י לֹ֧א עֲבַרְתֶּ֛ם בַּדֶּ֖רֶךְ מִתְּמ֥וֹל שִׁלְשֽׁוֹם׃ס
+คำที่ถาม: רָח֣וֹק   (รูปตั้งต้น רָחֹוק · ชนิดคำ adjective)
+ตัวเลือก:
+  A) literally: (to be) far (from an action); hence: state in which deities do not seem to be willing or able to engage in any way [คำแปลสั้น: far (from doing something)]
+  B) literally: (an event is) far (from someone); hence: state in which it seems unlikely for humans to experience a certain event [คำแปลสั้น: (an event is) far, elusive]
+  C) state in which humans or objects are located in a place that is at a relatively great distance from the point of reference [คำแปลสั้น: far, distant, distance]
+  D) literally: far (from someone else); hence: state in which deities are no longer associating with humans, · as if they have distanced themselves [คำแปลสั้น: far, distant (from someone)]
+  E) literally: far (in time); hence: a point in time long ago or far into the future [คำแปลสั้น: long ago, in the distant future]
+  F) literally: far (from a certain value); hence: state in which a person is considerably more valuable than something else [คำแปลสั้น: far more]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 237
+ที่อยู่: JOB 26:4
+ข้อความต้นฉบับ: אֶת־מִ֭י הִגַּ֣דְתָּ מִלִּ֑ין וְנִשְׁמַת־מִ֝י יָצְאָ֥ה מִמֶּֽךָּ׃
+คำที่ถาม: מִלִּ֑ין   (รูปตั้งต้น מִלָּה · ชนิดคำ noun)
+ตัวเลือก:
+  A) in Hebrew, used in poetry only; literally: word; hence: things humans or deities say to others [คำแปลสั้น: words, message, matter]
+  B) words spoken with the express purpose of mocking someone else [คำแปลสั้น: byword]
+  C) in Hebrew, used in poetry only; literally: words; hence: things humans or deities say to others [คำแปลสั้น: words, message, matter]
+  D) used in poetry only; a single distinct meaningful element of speech or writing, used to form sentences with others [คำแปลสั้น: word]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 238
+ที่อยู่: 2KI 2:5
+ข้อความต้นฉบับ: וַיִּגְּשׁ֨וּ בְנֵֽי־הַנְּבִיאִ֥ים אֲשֶׁר־בִּֽירִיחוֹ֮ אֶל־אֱלִישָׁע֒ וַיֹּאמְר֣וּ אֵלָ֔יו הֲיָדַ֕עְתָּ כִּ֣י הַיּ֗וֹם יְהוָ֛ה לֹקֵ֥חַ אֶת־אֲדֹנֶ֖יךָ מֵעַ֣ל רֹאשֶׁ֑ךָ וַיֹּ֛אמֶר גַּם־אֲנִ֥י יָדַ֖עְתִּי הֶחֱשֽׁוּ׃
+คำที่ถาม: אֲנִ֥י   (รูปตั้งต้น אֲנִי · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to the speaker or writer in a discourse [คำแปลสั้น: I]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

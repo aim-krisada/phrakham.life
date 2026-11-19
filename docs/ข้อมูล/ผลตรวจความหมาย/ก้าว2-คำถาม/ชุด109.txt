@@ -1,0 +1,46 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 318
+ที่อยู่: LEV 11:3
+ข้อความต้นฉบับ: כֹּ֣ל׀מַפְרֶ֣סֶת פַּרְסָ֗ה וְשֹׁסַ֤עַת שֶׁ֨סַע֙ פְּרָסֹ֔ת מַעֲלַ֥ת גֵּרָ֖ה בַּבְּהֵמָ֑ה אֹתָ֖הּ תֹּאכֵֽלוּ׃
+คำที่ถาม: תֹּאכֵֽלוּ   (รูปตั้งต้น אָכַל · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally, to eat pieces (of someone) [คำแปลสั้น: to denounce, to slander]
+  B) action by which people or objects are removed from existence in a violent way · as food that is eaten [คำแปลสั้น: to consume, to devour, to destroy]
+  C) action by which someone consumes food; with or without explicit object [คำแปลสั้น: to eat]
+  D) literally: to eat (goods); hence pattern of actions by which someone makes a living off material goods until they are gone; · often associated with joy [คำแปลสั้น: to eat > to enjoy, to eat > to use up]
+  E) literally: to eat words; hence: action by which someone listens carefully to someone else's words [คำแปลสั้น: to eat words > to listen carefully to (someone's) words]
+  F) literally: to give (goods) to eat; hence action by which someone enables someone else to make a living off material goods until they are gone; · often associated with joy [คำแปลสั้น: to give to eat > to give to enjoy]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 319
+ที่อยู่: ISA 13:4
+ข้อความต้นฉบับ: ק֥וֹל הָמ֛וֹן בֶּֽהָרִ֖ים דְּמ֣וּת עַם־רָ֑ב ק֠וֹל שְׁא֞וֹן מַמְלְכ֤וֹת גּוֹיִם֙ נֶֽאֱסָפִ֔ים יְהוָ֣ה צְבָא֔וֹת מְפַקֵּ֖ד צְבָ֥א מִלְחָמָֽה׃
+คำที่ถาม: צְבָ֥א   (รูปตั้งต้น צָבָא · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: "YHWH (or one of the other names of God or a combination thereof) of Hosts"; hence: epithet of God with focus on his being in charge of the host of heavenly beings surrounding his throne, praising him, and carrying out his will in earth; · as an epithet it relates to God's power and control of the cosmos as the divine king and warrior [คำแปลสั้น: of Hosts, Almighty One]
+  B) state of serving as a soldier in active combat [คำแปลสั้น: war, campaign, battle]
+  C) relatively large group of people, usually with centralized leadership; · assembled for a common purpose, such as warfare or a journey [คำแปลสั้น: division, company]
+  D) person who is fit for military service [คำแปลสั้น: soldier fit for war]
+  E) collective of all celestial bodies that give light; · created by God; · often worshiped by people, contrary to God's law; · in Daniel 8 possibly used as a metaphor for the people of God [คำแปลสั้น: host of heaven, sun, moon, and stars]
+  F) literally: "host of YHWH" or "host of heaven"; hence: heavenly beings surrounding God's throne, praising him and carrying out his will on earth [คำแปลสั้น: army of YHWH, heavenly army]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 320
+ที่อยู่: DAN 7:7
+ข้อความต้นฉบับ: בָּאתַ֣ר דְּנָה֩ חָזֵ֨ה הֲוֵ֜ית בְּחֶזְוֵ֣י לֵֽילְיָ֗א וַאֲר֣וּ חֵיוָ֣ה רְֽבִיעָאָ֡ה דְּחִילָה֩ וְאֵֽימְתָנִ֨י וְתַקִּיפָ֜א יַתִּ֗ירָא וְשִׁנַּ֨יִן דִּֽי־פַרְזֶ֥ל לַהּ֙ רַבְרְבָ֔ן אָֽכְלָ֣ה וּמַדֱּקָ֔ה וּשְׁאָרָ֖א בְּרַגְלַ֣הּ רָפְסָ֑ה וְהִ֣יא מְשַׁנְּיָ֗ה מִן־כָּל־חֵֽיוָתָא֙ דִּ֣י קָֽדָמַ֔יהּ וְקַרְנַ֥יִן עֲשַׂ֖ר לַֽהּ׃
+คำที่ถาม: בָּאתַ֣ר   (รูปตั้งต้น בָּאתַר · ชนิดคำ preposition)
+ตัวเลือก:
+  A) a reference to the time following a particular point in time [คำแปลสั้น: after]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

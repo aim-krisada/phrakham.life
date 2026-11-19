@@ -1,0 +1,56 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 148
+ที่อยู่: NEH 3:1
+ข้อความต้นฉบับ: וַיָּ֡קָם אֶלְיָשִׁיב֩ הַכֹּהֵ֨ן הַגָּד֜וֹל וְאֶחָ֣יו הַכֹּהֲנִ֗ים וַיִּבְנוּ֙ אֶת־שַׁ֣עַר הַצֹּ֔אן הֵ֣מָּה קִדְּשׁ֔וּהוּ וַֽיַּעֲמִ֖ידוּ דַּלְתֹתָ֑יו וְעַד־מִגְדַּ֤ל הַמֵּאָה֙ קִדְּשׁ֔וּהוּ עַ֖ד מִגְדַּ֥ל חֲנַנְאֵֽל׃ס
+คำที่ถาม: מִגְדַּ֤ל   (รูปตั้งต้น מִגְדָּל · ชนิดคำ noun)
+ตัวเลือก:
+  A) raised level surface · made of wood · for people or things to stand on and be visible from a relatively large distance [คำแปลสั้น: platform]
+  B) relatively high structure made of stone; · used for guarding the surrounding area and/or for providing protection against hostile forces from outside; · associated with security and protection [คำแปลสั้น: tower]
+  C) tower; · located in bakers' quarter in northwestern Jerusalem (ABYD) [คำแปลสั้น: Tower of Ovens]
+  D) tower; · located in Jerusalem at the northwestern corner of the wall surrounding the Temple Mount (ABYD) [คำแปลสั้น: Tower of Hananel]
+  E) literally: tower, but with focus on a tower as a small population center: small fortified population center; · possibly built to provide protection to the surrounding countryside [คำแปลสั้น: tower]
+  F) tower; · located in Jerusalem protecting the northern approach to the city, east of the Fish Gate and the Tower of Hananeel (ABYD) [คำแปลสั้น: Tower of the Hundred]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 149
+ที่อยู่: JOB 5:15
+ข้อความต้นฉบับ: וַיֹּ֣שַׁע מֵ֭חֶרֶב מִפִּיהֶ֑ם וּמִיַּ֖ד חָזָ֣ק אֶבְיֽוֹן׃
+คำที่ถาม: יֹּ֣שַׁע   (รูปตั้งต้น יָשַׁע · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which humans or deities come to the help of humans in need, whether in military, civil or judicial contexts [คำแปลสั้น: to help, to deliver, to save]
+  B) action by which humans or deities help themselves in a (difficult) situation [คำแปลสั้น: to win victory, to take vengeance]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 150
+ที่อยู่: 1KI 2:8
+ข้อความต้นฉบับ: וְהִנֵּ֣ה עִ֠מְּךָ שִֽׁמְעִ֨י בֶן־גֵּרָ֥א בֶן־הַיְמִינִי֮ מִבַּחֻרִים֒ וְה֤וּא קִֽלְלַ֨נִי֙ קְלָלָ֣ה נִמְרֶ֔צֶת בְּי֖וֹם לֶכְתִּ֣י מַחֲנָ֑יִם וְהֽוּא־יָרַ֤ד לִקְרָאתִי֙ הַיַּרְדֵּ֔ן וָאֶשָּׁ֨בַֽע ל֤וֹ בַֽיהוָה֙ לֵאמֹ֔ר אִם־אֲמִֽיתְךָ֖ בֶּחָֽרֶב׃
+คำที่ถาม: יָרַ֤ד   (รูปตั้งต้น יָרַד · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which humans or deities cause objects to move from a place that is relatively high in elevation to a relatively lower place [คำแปลสั้น: to lower, to let down, to take down, to bring down, to take off (ornaments)]
+  B) literally: (a boundary or measuring line) goes down; hence: state in which a boundary or measuring line follows a certain trajectory downhill [คำแปลสั้น: to go down]
+  C) process by which objects move (involuntarily) from a place that is relatively high in elevation to a relatively lower place [คำแปลสั้น: to go down, to come down, to fall down, to sink down, to descend]
+  D) literally: to descend on one's skull; hence: state in which humans are held responsible for their deeds [คำแปลสั้น: to come down on one's skull]
+  E) literally: to go down (to the netherworld, death, the pit, the dust, silence, etc.); hence: process by which humans die and descend into the world of the dead [คำแปลสั้น: to go down (to the netherworld), to die]
+  F) action by which human, animals, or deities move (voluntarily) from a place that is relatively high in elevation to a relatively lower place [คำแปลสั้น: to go down, to come down, to climb down, to step down, to descend]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 151
+ที่อยู่: ISA 8:6
+ข้อความต้นฉบับ: יַ֗עַן כִּ֤י מָאַס֙ הָעָ֣ם הַזֶּ֔ה אֵ֚ת מֵ֣י הַשִּׁלֹ֔חַ הַהֹלְכִ֖ים לְאַ֑ט וּמְשׂ֥וֹשׂ אֶת־רְצִ֖ין וּבֶן־רְמַלְיָֽהוּ׃
+คำที่ถาม: יַ֗עַן   (รูปตั้งต้น יַעַן · ชนิดคำ conjunction)
+ตัวเลือก:
+  A) state in which an event is presented as the motivation, cause, or reason for another event [คำแปลสั้น: because, since]
+  B) read דָּנָה יַעַן [คำแปลสั้น: Dan Jaan]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

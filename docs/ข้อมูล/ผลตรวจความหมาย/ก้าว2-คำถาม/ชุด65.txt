@@ -1,0 +1,46 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 135
+ที่อยู่: PSA 49:4
+ข้อความต้นฉบับ: פִּ֭י יְדַבֵּ֣ר חָכְמ֑וֹת וְהָג֖וּת לִבִּ֣י תְבוּנֽוֹת׃
+คำที่ถาม: י   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally: heart; hence: a referent to the space right in the middle of something else, such as the sea, the heavens, or a tree [คำแปลสั้น: middle]
+  B) literally: heart; hence: the ability to think for oneself as opposed to being easily swayed by what others say or do [คำแปลสั้น: sense, understanding]
+  C) cryptic name for Chaldeans [คำแปลสั้น: Leb-Kamai, Chaldeans]
+  D) the organ located in the centre of the human body that pumps the blood through our circulatory system, · seen as the seat of knowledge, human reasoning, planning, intelligence, skill, affection and hatred, desire and satisfaction, humility and pride, courage and fear, joy and grief [คำแปลสั้น: heart]
+  E) literally: heart; hence: the seat of knowledge, human reasoning, planning, intelligence, skill, affection and hatred, desire and satisfaction, humility and pride, courage and fear, joy and grief [คำแปลสั้น: heart, mind, attention, courage]
+  F) literally: heart; hence: a human being [คำแปลสั้น: person]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 136
+ที่อยู่: ISA 42:16
+ข้อความต้นฉบับ: וְהוֹלַכְתִּ֣י עִוְרִ֗ים בְּדֶ֨רֶךְ֙ לֹ֣א יָדָ֔עוּ בִּנְתִיב֥וֹת לֹֽא־יָדְע֖וּ אַדְרִיכֵ֑ם אָשִׂים֩ מַחְשָׁ֨ךְ לִפְנֵיהֶ֜ם לָא֗וֹר וּמַֽעֲקַשִּׁים֙ לְמִישׁ֔וֹר אֵ֚לֶּה הַדְּבָרִ֔ים עֲשִׂיתִ֖ם וְלֹ֥א עֲזַבְתִּֽים׃
+คำที่ถาม: עֲשִׂיתִ֖   (รูปตั้งต้น עָשָׂה · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans touch or stroke an object gently [คำแปลสั้น: to caress, to fondle]
+  B) literally: to make (people in a certain role); hence: causative action by which humans in authority or deities assign a certain task to (other) humans [คำแปลสั้น: to appoint]
+  C) action by which humans or deities engage in a particular action [คำแปลสั้น: to do, to perform, to commit, to practice, to observe, to celebrate, to keep]
+  D) literally: to do (something); hence: action by which humans do what is needed for the benefit of other humans or parts of their body [คำแปลสั้น: to care for]
+  E) literally: to make (possessions); hence: action by which humans obtain possessions [คำแปลสั้น: to acquire, to get, to obtain]
+  F) literally: to make (plans); hence: causative action by which humans or deities conceive events in their minds, · described as an craftsperson producing an artifact [คำแปลสั้น: to plan, to determine, to plot]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 137
+ที่อยู่: GEN 27:11
+ข้อความต้นฉบับ: וַיֹּ֣אמֶר יַעֲקֹ֔ב אֶל־רִבְקָ֖ה אִמּ֑וֹ הֵ֣ן עֵשָׂ֤ו אָחִי֙ אִ֣ישׁ שָׂעִ֔ר וְאָנֹכִ֖י אִ֥ישׁ חָלָֽק׃
+คำที่ถาม: יַעֲקֹ֔ב   (รูปตั้งต้น יַעֲקֹב · ชนิดคำ noun)
+ตัวเลือก:
+  A) man, also known as Israel and Jeshurun; · second son of Isaac; · one of the patriarchs of Israel; in poetic texts often used as a reference to the entire people of Israel [คำแปลสั้น: Jacob]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

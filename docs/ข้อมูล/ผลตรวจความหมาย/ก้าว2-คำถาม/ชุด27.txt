@@ -1,0 +1,56 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 57
+ที่อยู่: NEH 10:40
+ข้อความต้นฉบับ: כִּ֣י אֶל־הַ֠לְּשָׁכוֹת יָבִ֨יאוּ בְנֵי־יִשְׂרָאֵ֜ל וּבְנֵ֣י הַלֵּוִ֗י אֶת־תְּרוּמַ֣ת הַדָּגָן֮ הַתִּיר֣וֹשׁ וְהַיִּצְהָר֒ וְשָׁם֙ כְּלֵ֣י הַמִּקְדָּ֔שׁ וְהַכֹּהֲנִים֙ הַמְשָׁ֣רְתִ֔ים וְהַשּׁוֹעֲרִ֖ים וְהַמְשֹׁרְרִ֑ים וְלֹ֥א נַעֲזֹ֖ב אֶת־בֵּ֥ית אֱלֹהֵֽינוּ׃
+คำที่ถาม: נַעֲזֹ֖ב   (รูปตั้งต้น עָזַב · ชนิดคำ verb)
+ตัวเลือก:
+  A) state in which humans are not or no longer in a state of bondage [คำแปลสั้น: free]
+  B) action by which animals, humans, or deities suspend their commitment to (other) objects, animals, humans, or deities, either temporarily or permanently [คำแปลสั้น: to desert, to abandon, to forsake]
+  C) action by which humans stop resisting a certain event from happening [คำแปลสั้น: to release]
+  D) action by which humans or deities move away from an object, person, or place [คำแปลสั้น: to leave, to leave behind, to desert]
+  E) literally: to let go of (one's) face; hence: action by which humans let go of sad expression on their face and try to look cheerful [คำแปลสั้น: to put off (one's) sad face]
+  F) action by which humans or deities suspend their commitment to a certain pattern of behavior [คำแปลสั้น: to reject]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 58
+ที่อยู่: JOS 19:33
+ข้อความต้นฉบับ: וַיְהִ֣י גְבוּלָ֗ם מֵחֵ֨לֶף מֵֽאֵל֜וֹן בְּצַעֲנַנִּ֗ים וַאֲדָמִ֥י הַנֶּ֛קֶב וְיַבְנְאֵ֖ל עַד־לַקּ֑וּם וַיְהִ֥י תֹצְאֹתָ֖יו הַיַּרְדֵּֽן׃
+คำที่ถาม: הַנֶּ֛קֶב   (รูปตั้งต้น נֶקֶב · ชนิดคำ noun)
+ตัวเลือก:
+  A) town; · territory of Naphtali [คำแปลสั้น: Adami-Nekeb]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 59
+ที่อยู่: PRO 1:8
+ข้อความต้นฉบับ: שְׁמַ֣ע בְּ֭נִי מוּסַ֣ר אָבִ֑יךָ וְאַל־תִּ֝טֹּ֗שׁ תּוֹרַ֥ת אִמֶּֽךָ׃
+คำที่ถาม: ךָ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) a group of people to which one traces one's ancestry [คำแปลสั้น: ancestry]
+  B) direct male progenitor; · who normally provides protection, care, instruction, and discipline; · is usually regarded with respect and associated with wisdom, security, and comfort [คำแปลสั้น: father]
+  C) possessions belonging to a group of people that share a common ancestry [คำแปลสั้น: family possessions, patrimony]
+  D) a person · who is the first to be engaged in a certain activity or pattern of behavior [คำแปลสั้น: the first person to ...]
+  E) a person · who is the founder of a village, town, or region, and usually the ancestor of most of its inhabitants [คำแปลสั้น: father > founder]
+  F) literally: father; hence: a way of addressing a male person that one regards as one's superior because of his age, status, authority, etc. [คำแปลสั้น: father (as title)]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 60
+ที่อยู่: JOS 3:13
+ข้อความต้นฉบับ: וְהָיָ֡ה כְּנ֣וֹחַ כַּפּ֣וֹת רַגְלֵ֣י הַכֹּהֲנִ֡ים נֹשְׂאֵי֩ אֲר֨וֹן יְהוָ֜ה אֲד֤וֹן כָּל־הָאָ֨רֶץ֙ בְּמֵ֣י הַיַּרְדֵּ֔ן מֵ֤י הַיַּרְדֵּן֙ יִכָּ֣רֵת֔וּן הַמַּ֥יִם הַיֹּרְדִ֖ים מִלְמָ֑עְלָה וְיַעַמְד֖וּ נֵ֥ד אֶחָֽד׃
+คำที่ถาม: אָ֨רֶץ֙   (รูปตั้งต้น אֶרֶץ · ชนิดคำ noun)
+ตัวเลือก:
+  A) a more or less fixed phrase: the heavens and the earth, equivalent to a single lexical item: the totality of God's creation [คำแปลสั้น: heaven and earth, universe]
+  B) literally: distance of land; hence: a referent pointing to a relatively short distance [คำแปลสั้น: short distance]
+  C) the earth as opposed to the sky; sometimes used in a more specific sense to denote part of the earth, such as the dry land as opposed to the sea, or a specific region, area, country, or plot of land [คำแปลสั้น: earth, ground, land, country, region, area]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

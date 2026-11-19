@@ -1,0 +1,57 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 119
+ที่อยู่: EZK 1:8
+ข้อความต้นฉบับ: וִידֵ֣י אָדָ֗ם מִתַּ֨חַת֙ כַּנְפֵיהֶ֔ם עַ֖ל אַרְבַּ֣עַת רִבְעֵיהֶ֑ם וּפְנֵיהֶ֥ם וְכַנְפֵיהֶ֖ם לְאַרְבַּעְתָּֽם׃
+คำที่ถาม: כַּנְפֵי   (รูปตั้งต้น כָּנָף · ชนิดคำ noun)
+ตัวเลือก:
+  A) part of body; · of bird, insect, celestial creature; · used for flying but also to give protection [คำแปลสั้น: wing]
+  B) part where converging sides or edges of an object meet; · sometimes associated with the far side of an object [คำแปลสั้น: corner, hem, edge]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 120
+ที่อยู่: EXO 31:13
+ข้อความต้นฉบับ: וְאַתָּ֞ה דַּבֵּ֨ר אֶל־בְּנֵ֤י יִשְׂרָאֵל֙ לֵאמֹ֔ר אַ֥ךְ אֶת־שַׁבְּתֹתַ֖י תִּשְׁמֹ֑רוּ כִּי֩ א֨וֹת הִ֜וא בֵּינִ֤י וּבֵֽינֵיכֶם֙ לְדֹרֹ֣תֵיכֶ֔ם לָדַ֕עַת כִּ֛י אֲנִ֥י יְהוָ֖ה מְקַדִּשְׁכֶֽם׃
+คำที่ถาม: אַתָּ֞ה   (รูปตั้งต้น אַתָּה · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to a male participant that is addressed in a discourse [คำแปลสั้น: you]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 121
+ที่อยู่: EZK 21:37
+ข้อความต้นฉบับ: לָאֵ֤שׁ תִּֽהְיֶה֙ לְאָכְלָ֔ה דָּמֵ֥ךְ יִהְיֶ֖ה בְּת֣וֹךְ הָאָ֑רֶץ לֹ֣א תִזָּכֵ֔רִי כִּ֛י אֲנִ֥י יְהוָ֖ה דִּבַּֽרְתִּי׃פ
+คำที่ถาม: אֲנִ֥י   (รูปตั้งต้น אֲנִי · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to the speaker or writer in a discourse [คำแปลสั้น: I]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 122
+ที่อยู่: EST 2:6
+ข้อความต้นฉบับ: אֲשֶׁ֤ר הָגְלָה֙ מִיר֣וּשָׁלַ֔יִם עִם־הַגֹּלָה֙ אֲשֶׁ֣ר הָגְלְתָ֔ה עִ֖ם יְכָנְיָ֣ה מֶֽלֶךְ־יְהוּדָ֑ה אֲשֶׁ֣ר הֶגְלָ֔ה נְבוּכַדְנֶאצַּ֖ר מֶ֥לֶךְ בָּבֶֽל׃
+คำที่ถาม: נְבוּכַדְנֶאצַּ֖ר   (รูปตั้งต้น נְבוּכַדְנֶאצַּר · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · son of Nabopolassar; · king of Babylon from 605-562 B.C. who led the people of Judah into exile [คำแปลสั้น: Nebuchadnezzar, Nebuchadrezzar]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 123
+ที่อยู่: JDG 12:6
+ข้อความต้นฉบับ: וַיֹּ֣אמְרוּ לוֹ֩ אֱמָר־נָ֨א שִׁבֹּ֜לֶת וַיֹּ֣אמֶר סִבֹּ֗לֶת וְלֹ֤א יָכִין֙ לְדַבֵּ֣ר כֵּ֔ן וַיֹּאחֲז֣וּ אוֹת֔וֹ וַיִּשְׁחָט֖וּהוּ אֶל־מַעְבְּר֣וֹת הַיַּרְדֵּ֑ן וַיִּפֹּ֞ל בָּעֵ֤ת הַהִיא֙ מֵֽאֶפְרַ֔יִם אַרְבָּעִ֥ים וּשְׁנַ֖יִם אָֽלֶף׃
+คำที่ถาม: יֹּ֣אמְרוּ   (รูปตั้งต้น אָמַר · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans and deities make a very solemn statement concerning something [คำแปลสั้น: to declare, to affirm]
+  B) action by which humans utter words about themselves, usually with the purpose of drawing all attention to themselves [คำแปลสั้น: to boast]
+  C) action by which humans give verbal instructions regarding something [คำแปลสั้น: to assign]
+  D) action by which humans refer to a particular object when speaking [คำแปลสั้น: to mention]
+  E) action by which humans and deities utter words; this can happen within their minds and be inaudible to others, but in most cases the words are spoken out loud in order to communicate something to others; usually directly followed by the actual words that are spoken [คำแปลสั้น: to say, to speak, to tell, to command, to think, to call]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

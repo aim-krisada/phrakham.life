@@ -1,0 +1,62 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 253
+ที่อยู่: EZK 46:5
+ข้อความต้นฉบับ: וּמִנְחָה֙ אֵיפָ֣ה לָאַ֔יִל וְלַכְּבָשִׂ֥ים מִנְחָ֖ה מַתַּ֣ת יָד֑וֹ וְשֶׁ֖מֶן הִ֥ין לָאֵיפָֽה׃
+คำที่ถาม: וֹ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally: hand; hence: a referent pointing to the location to the left or right of an object · analogous to the location of someone's hands or arms [คำแปลสั้น: side, vicinity]
+  B) literally: to stretch out (one's) arm; hence: action by which deities prepare to punish to humans [คำแปลสั้น: to stretch out (one's) hand (to punish)]
+  C) literally: hand; hence: a pillar-like object made out of rock, possibly with a hand engraved upon it (as has been found on other ancient monuments, as a symbol of power or of prayer) · set up in honor or memorial of someone (known ancient ones are in honor of a king or god) [คำแปลสั้น: monument, memorial]
+  D) literally: hand, used metonymically to denote the owner of the hand; hence: the person who is the originator of a particular event [คำแปลสั้น: hand (as metonym), person]
+  E) literally: (to do something with) raised hand; hence: state in which humans or deities perform an action with confidence [คำแปลสั้น: boldly, defiantly]
+  F) literally: idleness of hands; hence: state in which humans avoid activity [คำแปลสั้น: laziness, indolence]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 254
+ที่อยู่: PSA 115:5
+ข้อความต้นฉบับ: פֶּֽה־לָ֭הֶם וְלֹ֣א יְדַבֵּ֑רוּ עֵינַ֥יִם לָ֝הֶ֗ם וְלֹ֣א יִרְאֽוּ׃
+คำที่ถาม: יִרְאֽוּ   (รูปตั้งต้น רָאָה · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans look at one another [คำแปลสั้น: to look at one another, to face each other]
+  B) causative action by which humans or deities cause humans to perceive something, primarily --though not necessarily exclusively-- with their eyes [คำแปลสั้น: to let see, to show]
+  C) literally: to see the sub; hence: state in which humans are alive [คำแปลสั้น: to see the sun > to live]
+  D) process or action by which living creatures perceive something, primarily --though not necessarily exclusively-- with their eyes, either as a spontaneous incident or as the result of focusing the eyes on something [คำแปลสั้น: to see, to look, to notice]
+  E) literally: to see the pit; hence: process by which humans die [คำแปลสั้น: to die]
+  F) literally: to see evil; hence: state in which humans suffer harm [คำแปลสั้น: to suffer]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 255
+ที่อยู่: 2KI 23:25
+ข้อความต้นฉบับ: וְכָמֹהוּ֩ לֹֽא־הָיָ֨ה לְפָנָ֜יו מֶ֗לֶךְ אֲשֶׁר־שָׁ֤ב אֶל־יְהוָה֙ בְּכָל־לְבָב֤וֹ וּבְכָל־נַפְשׁוֹ֙ וּבְכָל־מְאֹד֔וֹ כְּכֹ֖ל תּוֹרַ֣ת מֹשֶׁ֑ה וְאַחֲרָ֖יו לֹֽא־קָ֥ם כָּמֹֽהוּ׃
+คำที่ถาม: יְהוָה֙   (รูปตั้งต้น יהוה · ชนิดคำ noun)
+ตัวเลือก:
+  A) deity; · God of Israel who revealed himself to Moses [คำแปลสั้น: YHWH]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 256
+ที่อยู่: JDG 18:2
+ข้อความต้นฉบับ: וַיִּשְׁלְח֣וּ בְנֵי־דָ֣ן׀מִֽמִּשְׁפַּחְתָּ֡ם חֲמִשָּׁ֣ה אֲנָשִׁ֣ים מִקְצוֹתָם֩ אֲנָשִׁ֨ים בְּנֵי־חַ֜יִל מִצָּרְעָ֣ה וּמֵֽאֶשְׁתָּאֹ֗ל לְרַגֵּ֤ל אֶת־הָאָ֨רֶץ֙ וּלְחָקְרָ֔הּ וַיֹּאמְר֣וּ אֲלֵהֶ֔ם לְכ֖וּ חִקְר֣וּ אֶת־הָאָ֑רֶץ וַיָּבֹ֤אוּ הַר־אֶפְרַ֨יִם֙ עַד־בֵּ֣ית מִיכָ֔ה וַיָּלִ֖ינוּ שָֽׁם׃
+คำที่ถาม: ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) a particular group or class of either people (as in a clan or tribe) or animals (as in a genus or species) that share common characteristics [คำแปลสั้น: genus, kind (of animals), clan, family]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 257
+ที่อยู่: HOS 5:2
+ข้อความต้นฉบับ: וְשַׁחֲטָ֥ה שֵׂטִ֖ים הֶעְמִ֑יקוּ וַאֲנִ֖י מוּסָ֥ר לְכֻלָּֽם׃
+คำที่ถาม: אֲנִ֖י   (รูปตั้งต้น אֲנִי · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to the speaker or writer in a discourse [คำแปลสั้น: I]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

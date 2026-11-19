@@ -1,0 +1,62 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 193
+ที่อยู่: 1SA 2:8
+ข้อความต้นฉบับ: מֵקִ֨ים מֵעָפָ֜ר דָּ֗ל מֵֽאַשְׁפֹּת֙ יָרִ֣ים אֶבְי֔וֹן לְהוֹשִׁיב֙ עִם־נְדִיבִ֔ים וְכִסֵּ֥א כָב֖וֹד יַנְחִלֵ֑ם כִּ֤י לַֽיהוָה֙ מְצֻ֣קֵי אֶ֔רֶץ וַיָּ֥שֶׁת עֲלֵיהֶ֖ם תֵּבֵֽל׃
+คำที่ถาม: נְדִיבִ֔ים   (รูปตั้งต้น נָדִיב · ชนิดคำ adjective)
+ตัวเลือก:
+  A) state in which humans are willing to perform a certain task and show that by their actions [คำแปลสั้น: willing]
+  B) member of the nobility; · associated with authority; expected to be generous, reliable, and just [คำแปลสั้น: noble person]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 194
+ที่อยู่: PSA 52:9
+ข้อความต้นฉบับ: הִנֵּ֤ה הַגֶּ֗בֶר לֹ֤א יָשִׂ֥ים אֱלֹהִ֗ים מָֽע֫וּזּ֥וֹ וַ֭יִּבְטַח בְּרֹ֣ב עָשְׁר֑וֹ יָ֝עֹ֗ז בְּהַוָּתֽוֹ׃
+คำที่ถาม: וֹ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) state of experiencing an urge to see something happen or do something oneself; · usually evil [คำแปลสั้น: desire, interests]
+  B) process by which events take place that cause damage, distress, hurt, and/or loss of life [คำแปลสั้น: disaster, destruction]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 195
+ที่อยู่: LEV 15:25
+ข้อความต้นฉบับ: וְאִשָּׁ֡ה כִּֽי־יָזוּב֩ ז֨וֹב דָּמָ֜הּ יָמִ֣ים רַבִּ֗ים בְּלֹא֙ עֶת־נִדָּתָ֔הּ א֥וֹ כִֽי־תָז֖וּב עַל־נִדָּתָ֑הּ כָּל־יְמֵ֞י ז֣וֹב טֻמְאָתָ֗הּ כִּימֵ֧י נִדָּתָ֛הּ תִּהְיֶ֖ה טְמֵאָ֥ה הִֽוא׃
+คำที่ถาม: נִדָּתָ֔   (รูปตั้งต้น נִדָּה · ชนิดคำ noun)
+ตัวเลือก:
+  A) state in which objects are considered impure because of their association with evil practices [คำแปลสั้น: pollution]
+  B) state in which humans are considered unclean because of a flow of blood or contact with a corpse [คำแปลสั้น: impurity]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 196
+ที่อยู่: JER 46:27
+ข้อความต้นฉบับ: וְ֠אַתָּה אַל־תִּירָ֞א עַבְדִּ֤י יַֽעֲקֹב֙ וְאַל־תֵּחַ֣ת יִשְׂרָאֵ֔ל כִּ֠י הִנְנִ֤י מוֹשִֽׁעֲךָ֙ מֵֽרָח֔וֹק וְאֶֽת־זַרְעֲךָ֖ מֵאֶ֣רֶץ שִׁבְיָ֑ם וְשָׁ֧ב יַעֲק֛וֹב וְשָׁקַ֥ט וְשַׁאֲנַ֖ן וְאֵ֥ין מַחֲרִֽיד׃ס
+คำที่ถาม: ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) state in which people, animals or objects have been forcibly carried off; · in the case of people, into slavery or exile [คำแปลสั้น: captivity, captured]
+  B) a person or group that has been forcibly carried off to prison, into slavery, or resettlement [คำแปลสั้น: captive, prisoner]
+  C) causative action by which people, animals, or objects are forcibly carried off; · in the case of people, into slavery or exile [คำแปลสั้น: taking captive, carrying off]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 197
+ที่อยู่: EZK 7:12
+ข้อความต้นฉบับ: בָּ֤א הָעֵת֙ הִגִּ֣יעַ הַיּ֔וֹם הַקּוֹנֶה֙ אַל־יִשְׂמָ֔ח וְהַמּוֹכֵ֖ר אַל־יִתְאַבָּ֑ל כִּ֥י חָר֖וֹן אֶל־כָּל־הֲמוֹנָֽהּ׃
+คำที่ถาม: בָּ֤א   (รูปตั้งต้น בּוֹא · ชนิดคำ verb)
+ตัวเลือก:
+  A) a narrow horizontal surface projecting from the side of a building, · used as a support for side chambers [คำแปลสั้น: ledge, offset]
+  B) literally: to bring (someone) on (someone else's hands); hence: causative action by which people in authority make other people responsible for someone else [คำแปลสั้น: to entrust, to commit to someone's charge]
+  C) literally: (one's deeds) come (upon someone); hence: process by which humans are held responsible for their actions and will eventually be punished [คำแปลสั้น: to come (upon someone)]
+  D) literally: to being (someone) into the bond of a covenant; hence: action by which deities make a solemn agreement with humans [คำแปลสั้น: to take (someone) into the bond of a covenant]
+  E) literally: to come among men, but probably to be read as: to come in years; hence: state in which humans are advanced in age [คำแปลสั้น: to be old]
+  F) literally: (an event) comes; hence: process by which events take place [คำแปลสั้น: to come, to happen, to come to pass]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

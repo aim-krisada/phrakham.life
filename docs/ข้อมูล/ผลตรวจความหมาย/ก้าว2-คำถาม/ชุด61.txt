@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 128
+ที่อยู่: DEU 23:5
+ข้อความต้นฉบับ: עַל־דְּבַ֞ר אֲשֶׁ֨ר לֹא־קִדְּמ֤וּ אֶתְכֶם֙ בַּלֶּ֣חֶם וּבַמַּ֔יִם בַּדֶּ֖רֶךְ בְּצֵאתְכֶ֣ם מִמִּצְרָ֑יִם וַאֲשֶׁר֩ שָׂכַ֨ר עָלֶ֜יךָ אֶת־בִּלְעָ֣ם בֶּן־בְּע֗וֹר מִפְּת֛וֹר אֲרַ֥ם נַהֲרַ֖יִם לְקַֽלְלֶֽךָּ׃
+คำที่ถาม: דֶּ֖רֶךְ   (รูปตั้งต้น דֶּרֶךְ · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: road; hence: action by which humans are travelling from one place to another, often with a certain goal [คำแปลสั้น: journey, errand, mission]
+  B) literally: ways; hence: pattern of behavior, with a primary focus on moral and ethical behavior, · understood as a journey through life [คำแปลสั้น: ways, conduct]
+  C) literally: road; hence: a space between walls · serving to connect two different points in a building [คำแปลสั้น: way, passage, corridor]
+  D) an open space connecting different places, · used for travelling and transportation; · often extended to denote our life as a journey from birth to death, and the totality of our activities during our lives [คำแปลสั้น: road, way, path, track]
+  E) literally: direction; hence: the things that will ultimately happen to humans · described as the direction in which they are heading [คำแปลสั้น: fate]
+  F) literally: way(s) (of God); hence: causative action by which a deity brings a living being into existence [คำแปลสั้น: works]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 129
+ที่อยู่: EZR 8:9
+ข้อความต้นฉบับ: מִבְּנֵ֣י יוֹאָ֔ב עֹבַדְיָ֖ה בֶּן־יְחִיאֵ֑ל וְעִמּ֕וֹ מָאתַ֛יִם וּשְׁמֹנָ֥ה עָשָׂ֖ר הַזְּכָרִֽים׃ס
+คำที่ถาม: זְּכָרִֽים   (รูปตั้งต้น זָכָר · ชนิดคำ noun)
+ตัวเลือก:
+  A) person or animal belonging to the male sex [คำแปลสั้น: male, man]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 130
+ที่อยู่: 1KI 8:59
+ข้อความต้นฉบับ: וְיִֽהְי֨וּ דְבָרַ֜י אֵ֗לֶּה אֲשֶׁ֤ר הִתְחַנַּ֨נְתִּי֙ לִפְנֵ֣י יְהוָ֔ה קְרֹבִ֛ים אֶל־יְהוָ֥ה אֱלֹהֵ֖ינוּ יוֹמָ֣ם וָלָ֑יְלָה לַעֲשׂ֣וֹת׀מִשְׁפַּ֣ט עַבְדּ֗וֹ וּמִשְׁפַּ֛ט עַמּ֥וֹ יִשְׂרָאֵ֖ל דְּבַר־י֥וֹם בְּיוֹמֽוֹ׃
+คำที่ถาม: דְבָרַ֜   (รูปตั้งต้น דָּבָר · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: events; hence: a written account of important historical events [คำแปลสั้น: chronicles, annals]
+  B) words spoken by humans and deities and, in certain cases, written down [คำแปลสั้น: words, message]
+  C) any kind of object [คำแปลสั้น: thing]
+  D) literally: a thing; hence: any kind of event [คำแปลสั้น: thing, event, matter]
+  E) literally: word; hence: a collection of words spoken by humans and deities and, in certain cases, written down [คำแปลสั้น: word, words, message]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 131
+ที่อยู่: GEN 42:25
+ข้อความต้นฉบับ: וַיְצַ֣ו יוֹסֵ֗ף וַיְמַלְא֣וּ אֶת־כְּלֵיהֶם֮ בָּר֒ וּלְהָשִׁ֤יב כַּסְפֵּיהֶם֙ אִ֣ישׁ אֶל־שַׂקּ֔וֹ וְלָתֵ֥ת לָהֶ֛ם צֵדָ֖ה לַדָּ֑רֶךְ וַיַּ֥עַשׂ לָהֶ֖ם כֵּֽן׃
+คำที่ถาม: יַּ֥עַשׂ   (รูปตั้งต้น עָשָׂה · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans or deities engage in a particular action [คำแปลสั้น: to do, to perform, to commit, to practice, to observe, to celebrate, to keep]
+  B) causative action by which humans cause an event to happen to people or objects for a specific purpose [คำแปลสั้น: to use, to treat]
+  C) literally: to make a name (for someone else); hence: causative action by which deities provide humans with a good reputation [คำแปลสั้น: to make a name (for someone else)]
+  D) action by which humans touch or stroke an object gently [คำแปลสั้น: to caress, to fondle]
+  E) literally: to make a name (for oneself); hence: action as a result of which humans or deities gain a good reputation for themselves [คำแปลสั้น: to make a name (for oneself)]
+  F) literally: to make (possessions); hence: action by which humans obtain possessions [คำแปลสั้น: to acquire, to get, to obtain]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

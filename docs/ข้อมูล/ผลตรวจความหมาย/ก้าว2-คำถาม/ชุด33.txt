@@ -1,0 +1,49 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 68
+ที่อยู่: PRO 10:5
+ข้อความต้นฉบับ: אֹגֵ֣ר בַּ֭קַּיִץ בֵּ֣ן מַשְׂכִּ֑יל נִרְדָּ֥ם בַּ֝קָּצִ֗יר בֵּ֣ן מֵבִֽישׁ׃
+คำที่ถาม: מֵבִֽישׁ   (รูปตั้งต้น בּוֹשׁ · ชนิดคำ verb)
+ตัวเลือก:
+  A) state in which someone has forfeited the respect of the community, due to a situation that is not in accordance to someone's status [คำแปลสั้น: to be ashamed, to come to shame, to be put to shame, to be disappointed]
+  B) action by which someone takes much more time than expected to do something; · possibly with an implicit connotation of bringing some sort of disappointment to those expecting [คำแปลสั้น: to delay, to be delayed]
+  C) probably a pun on יבשׁ "to dry up": state in which an event does not happen as expected · as if it withers before coming to fruition and those who are waiting for it are disappointed [คำแปลสั้น: to fail, to come to naught]
+  D) causative action by which someone causes someone else to forfeit the respect of the community, by provoking a situation that is not in accordance to that person's status [คำแปลสั้น: to put to shame, to bring shame]
+  E) state in which someone has forfeited the respect of the community, due to a situation that is not in accordance to someone's status [คำแปลสั้น: to be ashamed]
+  F) state of being without water or moisture; · possibly with an implicit connotation of shame [คำแปลสั้น: to dry up]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 69
+ที่อยู่: PSA 68:34
+ข้อความต้นฉบับ: לָ֭רֹכֵב בִּשְׁמֵ֣י שְׁמֵי־קֶ֑דֶם הֵ֥ן יִתֵּ֥ן בְּ֝קוֹלוֹ ק֣וֹל עֹֽז׃
+คำที่ถาม: רֹכֵב   (รูปตั้งต้น רָכַב · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans ride on a domestic animal such as a donkey or a horse or in a chariot [คำแปลสั้น: to ride]
+  B) causative action by which humans harness an animal to a chariot or plow in order to draw it [คำแปลสั้น: to make pull, to make draw]
+  C) literally: to make one's hands ride; hence, probably: causative action by which humans let their hands move over an object; · possibly as a ritual of consecration [คำแปลสั้น: = to move (one's) hands]
+  D) causative action by which humans or deities make (other) humans ride on a domestic animal such as a donkey or a horse, in a chariot or on a cart [คำแปลสั้น: to make (someone) ride]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 70
+ที่อยู่: EZK 6:6
+ข้อความต้นฉบับ: בְּכֹל֙ מוֹשְׁב֣וֹתֵיכֶ֔ם הֶעָרִ֣ים תֶּחֱרַ֔בְנָה וְהַבָּמ֖וֹת תִּישָׁ֑מְנָה לְמַעַן֩ יֶחֶרְב֨וּ וְיֶאְשְׁמ֜וּ מִזְבְּחֽוֹתֵיכֶ֗ם וְנִשְׁבְּר֤וּ וְנִשְׁבְּתוּ֙ גִּלּ֣וּלֵיכֶ֔ם וְנִגְדְּעוּ֙ חַמָּ֣נֵיכֶ֔ם וְנִמְח֖וּ מַעֲשֵׂיכֶֽם׃
+คำที่ถาม: נִשְׁבְּתוּ֙   (รูปตั้งต้น שָׁבַת · ชนิดคำ verb)
+ตัวเลือก:
+  A) process by which an activity comes to an end [คำแปลสั้น: to end, to cease, to stop]
+  B) causative process by which humans or deities cause an activity to come to an end [คำแปลสั้น: to end (something), to make cease, to stop]
+  C) action by which humans refrain from doing work [คำแปลสั้น: to rest]
+  D) literally: to end; hence: action by which human stop engaging in a certain activity [คำแปลสั้น: to cease, to stop]
+  E) literally: to cause to end; hence: causative action by which humans or deities cause (other) humans to stop engaging in a certain activity [คำแปลสั้น: to cause to cease]
+  F) literally: to end; hence: process by which humans or objects are no longer found in a certain place [คำแปลสั้น: to disappear]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

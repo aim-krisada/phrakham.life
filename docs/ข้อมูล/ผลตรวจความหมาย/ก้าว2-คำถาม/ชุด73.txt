@@ -1,0 +1,65 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 162
+ที่อยู่: JOB 19:11
+ข้อความต้นฉบับ: וַיַּ֣חַר עָלַ֣י אַפּ֑וֹ וַיַּחְשְׁבֵ֖נִי ל֣וֹ כְצָרָֽיו׃
+คำที่ถาม: וֹ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) air that is expelled from the body through mouth or nose [คำแปลสั้น: breath]
+  B) literally: short of nostrils; hence: inability to restrain oneself from expressing one's displeasure; · regarded as foolishness [คำแปลสั้น: impatience]
+  C) state of extreme displeasure; · often associated with fire and smoke [คำแปลสั้น: anger, wrath]
+  D) literally: long of nostrils; hence: ability to restrain oneself from expressing one's displeasure; · regarded as wisdom [คำแปลสั้น: patience]
+  E) the two external openings in the nose [คำแปลสั้น: nostrils]
+  F) the entire front side of a person's head, which reflects certain attitudes, such as pride [คำแปลสั้น: face]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 163
+ที่อยู่: GEN 27:11
+ข้อความต้นฉบับ: וַיֹּ֣אמֶר יַעֲקֹ֔ב אֶל־רִבְקָ֖ה אִמּ֑וֹ הֵ֣ן עֵשָׂ֤ו אָחִי֙ אִ֣ישׁ שָׂעִ֔ר וְאָנֹכִ֖י אִ֥ישׁ חָלָֽק׃
+คำที่ถาม: י֙   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) expression denoting a situation in which two people or objects that are regarded as masculine are involved in a reciprocal event [คำแปลสั้น: a man ... his brother > one ... each other]
+  B) fellow member of the same group of people, not necessarily relatives, sharing a bond of affection, employment, or a common purpose [คำแปลสั้น: brother, friend, companion, colleague]
+  C) portable container containing burning coals, · used for heating [คำแปลสั้น: brazier]
+  D) son of one's father, whether from the same mother or not [คำแปลสั้น: brother, half-brother]
+  E) exclamation expressing grief and dismay [คำแปลสั้น: brother! alas!]
+  F) close relative, such as one's uncle's son and one's brother's son, or someone else regarded as closely related [คำแปลสั้น: brother, cousin, nephew, kinsman, relative]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 164
+ที่อยู่: EZK 7:24
+ข้อความต้นฉบับ: וְהֵֽבֵאתִי֙ רָעֵ֣י גוֹיִ֔ם וְיָרְשׁ֖וּ אֶת־בָּֽתֵּיהֶ֑ם וְהִשְׁבַּתִּי֙ גְּא֣וֹן עַזִּ֔ים וְנִחֲל֖וּ מְקַֽדְשֵׁיהֶֽם׃
+คำที่ถาม: גְּא֣וֹן   (รูปตั้งต้น גָּאוֹן · ชนิดคำ noun)
+ตัวเลือก:
+  A) state in which humans or deities have an elevated status, either in their own eyes or in the eyes of other people, · which can either be good or bad, depending on whether this status is justified [คำแปลสั้น: greatness, glory, majesty, pride, arrogance]
+  B) dense growth of shrubbery or small trees, habitat of animals [คำแปลสั้น: thicket]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 165
+ที่อยู่: 2CH 23:11
+ข้อความต้นฉบับ: וַיּוֹצִ֣יאוּ אֶת־בֶּן־הַמֶּ֗לֶךְ וַיִּתְּנ֤וּ עָלָיו֙ אֶת־הַנֵּ֨זֶר֙ וְאֶת־הָ֣עֵד֔וּת וַיַּמְלִ֖יכוּ אֹת֑וֹ וַיִּמְשָׁחֻ֨הוּ֙ יְהוֹיָדָ֣ע וּבָנָ֔יו וַיֹּאמְר֖וּ יְחִ֥י הַמֶּֽלֶךְ׃ס
+คำที่ถาม: עֵד֔וּת   (รูปตั้งต้น עֵדוּת · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: lily of testimony; hence, possibly: a song to the tune of which one or more of the psalms were played or sung [คำแปลสั้น: the lily of the testimony, shushan edut]
+  B) a stipulation accompanying, and as such bearing testimony to, a legal agreement such as a covenant [คำแปลสั้น: testimony, stipulation]
+  C) a written version of the stipulations accompanying and bearing testimony to a covenant [คำแปลสั้น: testimony, witness]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 166
+ที่อยู่: 1KI 14:18
+ข้อความต้นฉบับ: וַיִּקְבְּר֥וּ אֹת֛וֹ וַיִּסְפְּדוּ־ל֖וֹ כָּל־יִשְׂרָאֵ֑ל כִּדְבַ֤ר יְהוָה֙ אֲשֶׁ֣ר דִּבֶּ֔ר בְּיַד־עַבְדּ֖וֹ אֲחִיָּ֥הוּ הַנָּבִֽיא׃
+คำที่ถาม: נָּבִֽיא   (รูปตั้งต้น נָבִיא · ชนิดคำ noun)
+ตัวเลือก:
+  A) male person speaking on behalf of a deity [คำแปลสั้น: prophet]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

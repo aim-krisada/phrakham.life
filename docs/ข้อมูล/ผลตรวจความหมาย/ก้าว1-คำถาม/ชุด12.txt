@@ -1,0 +1,67 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 53
+ที่อยู่: LUK 24:33
+ข้อความต้นฉบับ: καὶ ἀναστάντες αὐτῇ τῇ ὥρᾳ ὑπέστρεψαν εἰς Ἰερουσαλήμ,καὶ εὗρον ἠθροισμένους τοὺς ἕνδεκα καὶ τοὺς σὺν αὐτοῖς,
+คำที่ถาม: εἰς   (รูปตั้งต้น εἰς · ชนิดคำ prep)
+ตัวเลือก:
+  A) unlimited duration of time, with particular focus upon the future [คำแปลสั้น: always, forever, forever and ever, eternally]
+  B) (with the accusative) a marker of persons benefited by an event, with the implication of something directed to them [คำแปลสั้น: for, on behalf of]
+  C) a marker of the means by which one event makes another event possible004 [คำแปลสั้น: by means of, through, by]
+  D) (an idiom, literally: into the ear) pertaining to what is known only by those who hear a particular message in private [คำแปลสั้น: in secret, in private, privately]
+  E) (with the dative) a marker of objects which serve as symbolic substitutes for supernatural persons or powers presumed to act as guarantors of compliance with oaths [คำแปลสั้น: by]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 54
+ที่อยู่: MRK 2:8
+ข้อความต้นฉบับ: καὶ εὐθὺς ἐπιγνοὺς ὁ Ἰησοῦς τῷ πνεύματι αὐτοῦ ὅτι οὕτως διαλογίζονται ἐν ἑαυτοῖς λέγει αὐτοῖς·Τί ταῦτα διαλογίζεσθε ἐν ταῖς καρδίαις ὑμῶν;
+คำที่ถาม: ὅτι   (รูปตั้งต้น ὅτι · ชนิดคำ conj)
+ตัวเลือก:
+  A) marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]
+  B) a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 55
+ที่อยู่: ROM 1:2
+ข้อความต้นฉบับ: ὃ προεπηγγείλατο διὰ τῶν προφητῶν αὐτοῦ ἐν γραφαῖς ἁγίαις
+คำที่ถาม: διὰ   (รูปตั้งต้น διά · ชนิดคำ prep)
+ตัวเลือก:
+  A) (an idiom, literally: through all) a number of related points of time, occurring at regular intervals [คำแปลสั้น: regularly, periodically]
+  B) pertaining to a relatively brief extent of time003 [คำแปลสั้น: a little while, for a little while, a short time, brief, briefly]
+  C) (an idiom, literally: through days) a point of time subsequent to another point of time after an interval of a few days [คำแปลสั้น: a few days later]
+  D) (an idiom, literally: through years) a point of time subsequent to another point of time after an interval of some years [คำแปลสั้น: some years later]
+  E) a marker of the extent of time within a unit [คำแปลสั้น: during, in the course of, within, for]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 56
+ที่อยู่: MRK 14:58
+ข้อความต้นฉบับ: ὅτι Ἡμεῖς ἠκούσαμεν αὐτοῦ λέγοντος ὅτι Ἐγὼ καταλύσω τὸν ναὸν τοῦτον τὸν χειροποίητον καὶ διὰ τριῶν ἡμερῶν ἄλλον ἀχειροποίητον οἰκοδομήσω·
+คำที่ถาม: λέγοντος   (รูปตั้งต้น λέγω · ชนิดคำ verb)
+ตัวเลือก:
+  A) (an idiom, literally: to acquire one’s soul or to acquire one’s life) to save oneself from grave danger or death [คำแปลสั้น: to save oneself, to protect oneself]
+  B) a marker of a strongly emphatic affirmative response to a question [คำแปลสั้น: not]
+  C) (an idiom, literally: to his own master he stands or falls, probably a familiar adage) whether one maintains one’s status or relationship to a master depends on the masters judgment or evaluation [คำแปลสั้น: honor or disgrace depends on the person whom one serves]
+  D) pertaining to events which measure up to their intended purpose [คำแปลสั้น: fine, well, good, excellent, well done]
+  E) to change from one state to another [คำแปลสั้น: to change, to become]
+  F) pertaining to being poor and destitute, implying a continuous state [คำแปลสั้น: poor, destitute]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 57
+ที่อยู่: JHN 11:56
+ข้อความต้นฉบับ: ἐζήτουν οὖν τὸν Ἰησοῦν καὶ ἔλεγον μετ’ἀλλήλων ἐν τῷ ἱερῷ ἑστηκότες·Τί δοκεῖ ὑμῖν;ὅτι οὐ μὴ ἔλθῃ εἰς τὴν ἑορτήν;
+คำที่ถาม: ὅτι   (รูปตั้งต้น ὅτι · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]
+  B) marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,24 @@
+You are checking a Bible-study data set, not writing devotional material.
+
+Reference: ACT 10.3
+Language: Koine Greek
+Whole word as printed in the text: φανερῶς
+Our source data cuts that word into 1 piece(s), in this order:
+  piece 1: φανερῶς   gloss: clearly
+We are asking about piece number 1: φανερῶς
+Interlinear gloss of that piece in our source data: clearly
+Lemma our source data gives for that piece: φανερῶς
+
+Our data attaches to that piece one dictionary entry:
+  dictionary headword: φανερός
+  glosses: clear; evident; clearly
+  definition: (derivative of the stem φαν- ‘to appear,’ {D:24.18}, {D:24.19}) pertaining to that which appears clear or evident
+
+Question: is that attached meaning really the meaning of that piece of the word,
+and of the whole word, at this reference?
+
+Answer in this shape:
+1. First line: YES or NO or PARTLY.
+2. Then at most four sentences saying what the piece actually means, what the whole
+   word means here, and whether the attached dictionary entry is the right entry.
+Do not quote more than the single word above from the Bible text.

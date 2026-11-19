@@ -1,0 +1,57 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 279
+ที่อยู่: GEN 37:30
+ข้อความต้นฉบับ: וַיָּ֥שָׁב אֶל־אֶחָ֖יו וַיֹּאמַ֑ר הַיֶּ֣לֶד אֵינֶ֔נּוּ וַאֲנִ֖י אָ֥נָה אֲנִי־בָֽא׃
+คำที่ถาม: אֲנִ֖י   (รูปตั้งต้น אֲנִי · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to the speaker or writer in a discourse [คำแปลสั้น: I]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 280
+ที่อยู่: 1SA 14:29
+ข้อความต้นฉบับ: וַיֹּ֨אמֶר֙ יֽוֹנָתָ֔ן עָכַ֥ר אָבִ֖י אֶת־הָאָ֑רֶץ רְאוּ־נָא֙ כִּֽי־אֹ֣רוּ עֵינַ֔י כִּ֣י טָעַ֔מְתִּי מְעַ֖ט דְּבַ֥שׁ הַזֶּֽה׃
+คำที่ถาม: יֽוֹנָתָ֔ן   (รูปตั้งต้น יוֹנָתָן · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · secretary; time of Zedekiah; the prophet Jeremiah was locked up in his house [คำแปลสั้น: Jonathan]
+  B) man; · warrior; time of David [คำแปลสั้น: Jonathan]
+  C) man; · tribe of Levi; · Levite; time of king Jehoshaphat [คำแปลสั้น: Jehonathan]
+  D) man; · son of king Saul; tribe of Benjamin; · friend of David [คำแปลสั้น: Jonathan]
+  E) man; · son of Shimeah, brother of David; tribe of Judah [คำแปลสั้น: Jonathan]
+  F) various men [คำแปลสั้น: Jonathan, Jehonathan]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 281
+ที่อยู่: ECC 9:7
+ข้อความต้นฉบับ: לֵ֣ךְ אֱכֹ֤ל בְּשִׂמְחָה֙ לַחְמֶ֔ךָ וּֽשֲׁתֵ֥ה בְלֶב־ט֖וֹב יֵינֶ֑ךָ כִּ֣י כְבָ֔ר רָצָ֥ה הָאֱלֹהִ֖ים אֶֽת־מַעֲשֶֽׂיךָ׃
+คำที่ถาม: אֱלֹהִ֖ים   (รูปตั้งต้น אֱלֹהִים · ชนิดคำ noun)
+ตัวเลือก:
+  A) plural with singular meaning: the highest God, creator of heaven and earth [คำแปลสั้น: God]
+  B) process by which an event takes place with great intensity, evoking an association with God [คำแปลสั้น: mighty, exceedingly, great (in intensity)]
+  C) state in which humans are characterized as pure and undefiled in character, evoking an association with God [คำแปลสั้น: godly, holy]
+  D) plural with singular meaning: generic term for a supernatural being, worshiped by individuals or entire nations [คำแปลสั้น: god (of someone), God (of someone)]
+  E) plural with plural meaning: generic term for a supernatural being, worshiped by individuals or entire nations [คำแปลสั้น: heavenly beings]
+  F) state in which a human being is highly esteemd, evoking an association with God [คำแปลสั้น: mighty (in status)]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 282
+ที่อยู่: 2SA 7:23
+ข้อความต้นฉบับ: וּמִ֤י כְעַמְּךָ֙ כְּיִשְׂרָאֵ֔ל גּ֥וֹי אֶחָ֖ד בָּאָ֑רֶץ אֲשֶׁ֣ר הָלְכֽוּ־אֱ֠לֹהִים לִפְדּֽוֹת־ל֨וֹ לְעָ֜ם וְלָשׂ֧וּם ל֣וֹ שֵׁ֗ם וְלַעֲשׂ֨וֹת לָכֶ֜ם הַגְּדוּלָּ֤ה וְנֹֽרָאוֹת֙ לְאַרְצֶ֔ךָ מִפְּנֵ֣י עַמְּךָ֗ אֲשֶׁ֨ר פָּדִ֤יתָ לְּךָ֙ מִמִּצְרַ֔יִם גּוֹיִ֖ם וֵאלֹהָֽיו׃
+คำที่ถาม: אֲשֶׁ֣ר   (รูปตั้งต้น אֲשֶׁר · ชนิดคำ particle)
+ตัวเลือก:
+  A) a linker indicating that one proposition is the purpose or result or another [คำแปลสั้น: so that]
+  B) a linker introducing a proposition that gives additional information regarding an explicit or implicit object, location, time, or manner [คำแปลสั้น: that, which, where, when, how]
+  C) a linker introducing a propostion that contains the content of what precedes [คำแปลสั้น: that]
+  D) state in which an event is presented as the motivation, cause, or reason for another event [คำแปลสั้น: because, for, in that]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

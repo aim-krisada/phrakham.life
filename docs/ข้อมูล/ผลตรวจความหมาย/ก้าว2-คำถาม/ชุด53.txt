@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 110
+ที่อยู่: EZK 20:32
+ข้อความต้นฉบับ: וְהָֽעֹלָה֙ עַל־ר֣וּחֲכֶ֔ם הָי֖וֹ לֹ֣א תִֽהְיֶ֑ה אֲשֶׁ֣ר׀אַתֶּ֣ם אֹמְרִ֗ים נִֽהְיֶ֤ה כַגּוֹיִם֙ כְּמִשְׁפְּח֣וֹת הָאֲרָצ֔וֹת לְשָׁרֵ֖ת עֵ֥ץ וָאָֽבֶן׃
+คำที่ถาม: עֵ֥ץ   (รูปตั้งต้น עֵץ · ชนิดคำ noun)
+ตัวเลือก:
+  A) a wooden construction used to execute criminals by hanging [คำแปลสั้น: gallows, tower (for hanging)]
+  B) any kind of tall, woody plant that grows from a single trunk and with several lateral branches that often bear leaves and fruit [คำแปลสั้น: tree]
+  C) a single piece of wood taken from a tree, cut and finished, and used for building and construction [คำแปลสั้น: (piece of) wood, lumber]
+  D) an evergreen conifer that grows to a height of 20 meters and can live as long as 150 years; · Pinus halepensis; Aleppo pine; · the wood is suitable for carpentry work, and the leaves for building booths. Or alternatively, olive tree ("oil tree") [คำแปลสั้น: pine tree, olive tree, olive wood]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 111
+ที่อยู่: JOB 1:12
+ข้อความต้นฉบับ: וַיֹּ֨אמֶר יְהוָ֜ה אֶל־הַשָּׂטָ֗ן הִנֵּ֤ה כָל־אֲשֶׁר־לוֹ֙ בְּיָדֶ֔ךָ רַ֣ק אֵלָ֔יו אַל־תִּשְׁלַ֖ח יָדֶ֑ךָ וַיֵּצֵא֙ הַשָּׂטָ֔ן מֵעִ֖ם פְּנֵ֥י יְהוָֽה׃
+คำที่ถาม: ךָ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally: idleness of hands; hence: state in which humans avoid activity [คำแปลสั้น: laziness, indolence]
+  B) literally: hand; hence: a space designated for a certain purpose [คำแปลสั้น: area, position]
+  C) causative action by which someone strikes the palm of their hand against someone else's palm; · in order to show that one has taken responsibility for someone else's debts; · usually regarded as unwise [คำแปลสั้น: to strike hands (in pledge)]
+  D) literally: in (one's) hand; hence: state in which an event is about to take place [คำแปลสั้น: imminent]
+  E) literally: (one's) hand finds enough (to do something); hence: state in which someone has sufficient resources to carry out a certain task [คำแปลสั้น: to afford]
+  F) literally: to stretch out (one's) hand (against someone); hence: action by which humans or deities engage in an act of violence against (other) humans [คำแปลสั้น: to lay (one's) hands (on someone or something)]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 112
+ที่อยู่: DEU 17:14
+ข้อความต้นฉบับ: כִּֽי־תָבֹ֣א אֶל־הָאָ֗רֶץ אֲשֶׁ֨ר יְהוָ֤ה אֱלֹהֶ֨יךָ֙ נֹתֵ֣ן לָ֔ךְ וִֽירִשְׁתָּ֖הּ וְיָשַׁ֣בְתָּה בָּ֑הּ וְאָמַרְתָּ֗ אָשִׂ֤ימָה עָלַי֙ מֶ֔לֶךְ כְּכָל־הַגּוֹיִ֖ם אֲשֶׁ֥ר סְבִיבֹתָֽי׃
+คำที่ถาม: אֲשֶׁ֥ר   (รูปตั้งต้น אֲשֶׁר · ชนิดคำ particle)
+ตัวเลือก:
+  A) a linker introducing a propostion that contains the content of what precedes [คำแปลสั้น: that]
+  B) state in which an event is presented as the motivation, cause, or reason for another event [คำแปลสั้น: because, for, in that]
+  C) a linker introducing a proposition that gives additional information regarding an explicit or implicit object, location, time, or manner [คำแปลสั้น: that, which, where, when, how]
+  D) a linker indicating that one proposition is the purpose or result or another [คำแปลสั้น: so that]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 113
+ที่อยู่: ISA 45:10
+ข้อความต้นฉบับ: ה֛וֹי אֹמֵ֥ר לְאָ֖ב מַה־תּוֹלִ֑יד וּלְאִשָּׁ֖ה מַה־תְּחִילִֽין׃ס
+คำที่ถาม: אִשָּׁ֖ה   (รูปตั้งต้น אִשָּׁה · ชนิดคำ noun)
+ตัวเลือก:
+  A) female counterpart of a male animal [คำแปลสั้น: mate]
+  B) woman of marriagable age or older, whether married or not [คำแปลสั้น: woman, wife]
+  C) referent to each member of a group of objects of the feminine grammatical gender [คำแปลสั้น: each one]
+  D) woman as a social class, to be distinguished from the men and the children [คำแปลสั้น: women]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

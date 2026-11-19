@@ -1,0 +1,6805 @@
+{
+ "v": 1,
+ "version": "WEB",
+ "voice": "en-US-Chirp3-HD-Puck",
+ "languageCode": "en-US",
+ "rateHz": 24000,
+ "bitrate": "48k",
+ "engine": "Google Cloud Text-to-Speech v1 text:synthesize",
+ "generated": "2026-11-04",
+ "generator": "tools/พ่นเสียงพระคำ.py",
+ "dir": "WEB/",
+ "source": {
+  "name": "World English Bible (WEB)",
+  "publisher": "eBible.org",
+  "url": "https://ebible.org/find/details.php?id=eng-web",
+  "license": "สาธารณสมบัติ",
+  "licenseUrl": "https://ebible.org/find/details.php?id=eng-web",
+  "adapted": false,
+  "permission": "สาธารณสมบัติ ทำซ้ำและเผยแพร่ได้ ชื่อ World English Bible เป็นเครื่องหมายการค้าของ eBible.org ใช้ชื่อนี้ได้เมื่อไม่เปลี่ยนคำของตัวบท",
+  "notice": "ข้อความจาก World English Bible (WEB) ซึ่งเป็นสาธารณสมบัติ\nต้นฉบับ https://ebible.org/find/details.php?id=eng-web\nWorld English Bible เป็นเครื่องหมายการค้าของ eBible.org\nเสียงอ่านนี้แปลงข้อความข้างต้นเป็นเสียงพูดด้วยเครื่องอ่านออกเสียงของ Google อ่านคำต่อคำ ไม่เปลี่ยนคำ"
+ },
+ "verses": {
+  "Mark.1.1": {
+   "ref": "มาระโก 1:1",
+   "osis": "Mark",
+   "c": 1,
+   "v": 1,
+   "file": "Mark.1.1.puck.mp3",
+   "d": 3.28,
+   "chars": 63,
+   "h": "sha256:7e7188d4eb409cb7"
+  },
+  "Mark.1.2": {
+   "ref": "มาระโก 1:2",
+   "osis": "Mark",
+   "c": 1,
+   "v": 2,
+   "file": "Mark.1.2.puck.mp3",
+   "d": 6.4,
+   "chars": 118,
+   "h": "sha256:d4199945c326ebdd"
+  },
+  "Mark.1.3": {
+   "ref": "มาระโก 1:3",
+   "osis": "Mark",
+   "c": 1,
+   "v": 3,
+   "file": "Mark.1.3.puck.mp3",
+   "d": 5.68,
+   "chars": 102,
+   "h": "sha256:2d8a42dce56e1e67"
+  },
+  "Mark.1.4": {
+   "ref": "มาระโก 1:4",
+   "osis": "Mark",
+   "c": 1,
+   "v": 4,
+   "file": "Mark.1.4.puck.mp3",
+   "d": 5.32,
+   "chars": 102,
+   "h": "sha256:1abee6ecb5656a00"
+  },
+  "Mark.1.5": {
+   "ref": "มาระโก 1:5",
+   "osis": "Mark",
+   "c": 1,
+   "v": 5,
+   "file": "Mark.1.5.puck.mp3",
+   "d": 7.88,
+   "chars": 138,
+   "h": "sha256:387095e728b2ddfc"
+  },
+  "Mark.1.6": {
+   "ref": "มาระโก 1:6",
+   "osis": "Mark",
+   "c": 1,
+   "v": 6,
+   "file": "Mark.1.6.puck.mp3",
+   "d": 5.44,
+   "chars": 102,
+   "h": "sha256:3a31a1c80b23b4d0"
+  },
+  "Mark.1.7": {
+   "ref": "มาระโก 1:7",
+   "osis": "Mark",
+   "c": 1,
+   "v": 7,
+   "file": "Mark.1.7.puck.mp3",
+   "d": 8.04,
+   "chars": 132,
+   "h": "sha256:17b2e69961f37cd3"
+  },
+  "Mark.1.8": {
+   "ref": "มาระโก 1:8",
+   "osis": "Mark",
+   "c": 1,
+   "v": 8,
+   "file": "Mark.1.8.puck.mp3",
+   "d": 3.84,
+   "chars": 69,
+   "h": "sha256:33cc38f200d95047"
+  },
+  "Mark.1.9": {
+   "ref": "มาระโก 1:9",
+   "osis": "Mark",
+   "c": 1,
+   "v": 9,
+   "file": "Mark.1.9.puck.mp3",
+   "d": 5.4,
+   "chars": 91,
+   "h": "sha256:5b3a3f8530b6a94e"
+  },
+  "Mark.1.10": {
+   "ref": "มาระโก 1:10",
+   "osis": "Mark",
+   "c": 1,
+   "v": 10,
+   "file": "Mark.1.10.puck.mp3",
+   "d": 6.56,
+   "chars": 110,
+   "h": "sha256:c3a12c6d143deab4"
+  },
+  "Mark.1.11": {
+   "ref": "มาระโก 1:11",
+   "osis": "Mark",
+   "c": 1,
+   "v": 11,
+   "file": "Mark.1.11.puck.mp3",
+   "d": 4.96,
+   "chars": 81,
+   "h": "sha256:5c422c23ced2eb32"
+  },
+  "Mark.1.12": {
+   "ref": "มาระโก 1:12",
+   "osis": "Mark",
+   "c": 1,
+   "v": 12,
+   "file": "Mark.1.12.puck.mp3",
+   "d": 2.88,
+   "chars": 57,
+   "h": "sha256:25d28fba787ecd5b"
+  },
+  "Mark.1.13": {
+   "ref": "มาระโก 1:13",
+   "osis": "Mark",
+   "c": 1,
+   "v": 13,
+   "file": "Mark.1.13.puck.mp3",
+   "d": 7.4,
+   "chars": 123,
+   "h": "sha256:a1908b4cf60cf179"
+  },
+  "Mark.1.14": {
+   "ref": "มาระโก 1:14",
+   "osis": "Mark",
+   "c": 1,
+   "v": 14,
+   "file": "Mark.1.14.puck.mp3",
+   "d": 6.76,
+   "chars": 105,
+   "h": "sha256:9b771d8925e98aed"
+  },
+  "Mark.1.15": {
+   "ref": "มาระโก 1:15",
+   "osis": "Mark",
+   "c": 1,
+   "v": 15,
+   "file": "Mark.1.15.puck.mp3",
+   "d": 6.84,
+   "chars": 104,
+   "h": "sha256:4ce5e15eb7b9ef81"
+  },
+  "Mark.1.16": {
+   "ref": "มาระโก 1:16",
+   "osis": "Mark",
+   "c": 1,
+   "v": 16,
+   "file": "Mark.1.16.puck.mp3",
+   "d": 7.44,
+   "chars": 136,
+   "h": "sha256:7ba7a46008f5c1a9"
+  },
+  "Mark.1.17": {
+   "ref": "มาระโก 1:17",
+   "osis": "Mark",
+   "c": 1,
+   "v": 17,
+   "file": "Mark.1.17.puck.mp3",
+   "d": 4.8,
+   "chars": 78,
+   "h": "sha256:3f42040b20acbd50"
+  },
+  "Mark.1.18": {
+   "ref": "มาระโก 1:18",
+   "osis": "Mark",
+   "c": 1,
+   "v": 18,
+   "file": "Mark.1.18.puck.mp3",
+   "d": 2.68,
+   "chars": 51,
+   "h": "sha256:7a0199b118033a9a"
+  },
+  "Mark.1.19": {
+   "ref": "มาระโก 1:19",
+   "osis": "Mark",
+   "c": 1,
+   "v": 19,
+   "file": "Mark.1.19.puck.mp3",
+   "d": 6.88,
+   "chars": 136,
+   "h": "sha256:68b32d02e0a5f0ad"
+  },
+  "Mark.1.20": {
+   "ref": "มาระโก 1:20",
+   "osis": "Mark",
+   "c": 1,
+   "v": 20,
+   "file": "Mark.1.20.puck.mp3",
+   "d": 5.96,
+   "chars": 121,
+   "h": "sha256:b65ec3c9abd2b8bd"
+  },
+  "Mark.1.21": {
+   "ref": "มาระโก 1:21",
+   "osis": "Mark",
+   "c": 1,
+   "v": 21,
+   "file": "Mark.1.21.puck.mp3",
+   "d": 4.88,
+   "chars": 102,
+   "h": "sha256:c83441b6d5d75b8b"
+  },
+  "Mark.1.22": {
+   "ref": "มาระโก 1:22",
+   "osis": "Mark",
+   "c": 1,
+   "v": 22,
+   "file": "Mark.1.22.puck.mp3",
+   "d": 4.96,
+   "chars": 101,
+   "h": "sha256:7a91e74df8b57cb4"
+  },
+  "Mark.1.23": {
+   "ref": "มาระโก 1:23",
+   "osis": "Mark",
+   "c": 1,
+   "v": 23,
+   "file": "Mark.1.23.puck.mp3",
+   "d": 5.56,
+   "chars": 88,
+   "h": "sha256:ded677df0ff92d6e"
+  },
+  "Mark.1.24": {
+   "ref": "มาระโก 1:24",
+   "osis": "Mark",
+   "c": 1,
+   "v": 24,
+   "file": "Mark.1.24.puck.mp3",
+   "d": 8.48,
+   "chars": 136,
+   "h": "sha256:2cec4ffe9e4f76c4"
+  },
+  "Mark.1.25": {
+   "ref": "มาระโก 1:25",
+   "osis": "Mark",
+   "c": 1,
+   "v": 25,
+   "file": "Mark.1.25.puck.mp3",
+   "d": 3.0,
+   "chars": 59,
+   "h": "sha256:6c8b937b5fbe92c9"
+  },
+  "Mark.1.26": {
+   "ref": "มาระโก 1:26",
+   "osis": "Mark",
+   "c": 1,
+   "v": 26,
+   "file": "Mark.1.26.puck.mp3",
+   "d": 5.92,
+   "chars": 81,
+   "h": "sha256:45d5838c7438913b"
+  },
+  "Mark.1.27": {
+   "ref": "มาระโก 1:27",
+   "osis": "Mark",
+   "c": 1,
+   "v": 27,
+   "file": "Mark.1.27.puck.mp3",
+   "d": 12.64,
+   "chars": 194,
+   "h": "sha256:457f932d8f4f7729"
+  },
+  "Mark.1.28": {
+   "ref": "มาระโก 1:28",
+   "osis": "Mark",
+   "c": 1,
+   "v": 28,
+   "file": "Mark.1.28.puck.mp3",
+   "d": 5.12,
+   "chars": 95,
+   "h": "sha256:ecc580bf8dcd387f"
+  },
+  "Mark.1.29": {
+   "ref": "มาระโก 1:29",
+   "osis": "Mark",
+   "c": 1,
+   "v": 29,
+   "file": "Mark.1.29.puck.mp3",
+   "d": 6.4,
+   "chars": 120,
+   "h": "sha256:643e543fefe43cdb"
+  },
+  "Mark.1.30": {
+   "ref": "มาระโก 1:30",
+   "osis": "Mark",
+   "c": 1,
+   "v": 30,
+   "file": "Mark.1.30.puck.mp3",
+   "d": 5.28,
+   "chars": 89,
+   "h": "sha256:39a4f46516de5aac"
+  },
+  "Mark.1.31": {
+   "ref": "มาระโก 1:31",
+   "osis": "Mark",
+   "c": 1,
+   "v": 31,
+   "file": "Mark.1.31.puck.mp3",
+   "d": 4.8,
+   "chars": 104,
+   "h": "sha256:adbe2a61cc48b651"
+  },
+  "Mark.1.32": {
+   "ref": "มาระโก 1:32",
+   "osis": "Mark",
+   "c": 1,
+   "v": 32,
+   "file": "Mark.1.32.puck.mp3",
+   "d": 6.52,
+   "chars": 111,
+   "h": "sha256:ae6fc5f8dbc58a7e"
+  },
+  "Mark.1.33": {
+   "ref": "มาระโก 1:33",
+   "osis": "Mark",
+   "c": 1,
+   "v": 33,
+   "file": "Mark.1.33.puck.mp3",
+   "d": 2.28,
+   "chars": 47,
+   "h": "sha256:7cf5db547e847741"
+  },
+  "Mark.1.34": {
+   "ref": "มาระโก 1:34",
+   "osis": "Mark",
+   "c": 1,
+   "v": 34,
+   "file": "Mark.1.34.puck.mp3",
+   "d": 7.48,
+   "chars": 136,
+   "h": "sha256:81a4c2c35dae7e8e"
+  },
+  "Mark.1.35": {
+   "ref": "มาระโก 1:35",
+   "osis": "Mark",
+   "c": 1,
+   "v": 35,
+   "file": "Mark.1.35.puck.mp3",
+   "d": 7.72,
+   "chars": 125,
+   "h": "sha256:7ff74959040a3f51"
+  },
+  "Mark.1.36": {
+   "ref": "มาระโก 1:36",
+   "osis": "Mark",
+   "c": 1,
+   "v": 36,
+   "file": "Mark.1.36.puck.mp3",
+   "d": 2.2,
+   "chars": 51,
+   "h": "sha256:f7b1b0f437ba84d9"
+  },
+  "Mark.1.37": {
+   "ref": "มาระโก 1:37",
+   "osis": "Mark",
+   "c": 1,
+   "v": 37,
+   "file": "Mark.1.37.puck.mp3",
+   "d": 3.24,
+   "chars": 59,
+   "h": "sha256:81111583954f2af9"
+  },
+  "Mark.1.38": {
+   "ref": "มาระโก 1:38",
+   "osis": "Mark",
+   "c": 1,
+   "v": 38,
+   "file": "Mark.1.38.puck.mp3",
+   "d": 5.24,
+   "chars": 124,
+   "h": "sha256:487af50c4bcb184d"
+  },
+  "Mark.1.39": {
+   "ref": "มาระโก 1:39",
+   "osis": "Mark",
+   "c": 1,
+   "v": 39,
+   "file": "Mark.1.39.puck.mp3",
+   "d": 4.8,
+   "chars": 87,
+   "h": "sha256:1f89888027ce7cf6"
+  },
+  "Mark.1.40": {
+   "ref": "มาระโก 1:40",
+   "osis": "Mark",
+   "c": 1,
+   "v": 40,
+   "file": "Mark.1.40.puck.mp3",
+   "d": 6.32,
+   "chars": 115,
+   "h": "sha256:090de8e99308653b"
+  },
+  "Mark.1.41": {
+   "ref": "มาระโก 1:41",
+   "osis": "Mark",
+   "c": 1,
+   "v": 41,
+   "file": "Mark.1.41.puck.mp3",
+   "d": 7.0,
+   "chars": 117,
+   "h": "sha256:671e06e9149ec8aa"
+  },
+  "Mark.1.42": {
+   "ref": "มาระโก 1:42",
+   "osis": "Mark",
+   "c": 1,
+   "v": 42,
+   "file": "Mark.1.42.puck.mp3",
+   "d": 4.76,
+   "chars": 87,
+   "h": "sha256:08dc500026cadc03"
+  },
+  "Mark.1.43": {
+   "ref": "มาระโก 1:43",
+   "osis": "Mark",
+   "c": 1,
+   "v": 43,
+   "file": "Mark.1.43.puck.mp3",
+   "d": 2.96,
+   "chars": 52,
+   "h": "sha256:9e8368a0ab9b080d"
+  },
+  "Mark.1.44": {
+   "ref": "มาระโก 1:44",
+   "osis": "Mark",
+   "c": 1,
+   "v": 44,
+   "file": "Mark.1.44.puck.mp3",
+   "d": 8.36,
+   "chars": 178,
+   "h": "sha256:5b2085ee9c8e50aa"
+  },
+  "Mark.1.45": {
+   "ref": "มาระโก 1:45",
+   "osis": "Mark",
+   "c": 1,
+   "v": 45,
+   "file": "Mark.1.45.puck.mp3",
+   "d": 12.0,
+   "chars": 203,
+   "h": "sha256:ba39280254223fec"
+  },
+  "Mark.2.1": {
+   "ref": "มาระโก 2:1",
+   "osis": "Mark",
+   "c": 2,
+   "v": 1,
+   "file": "Mark.2.1.puck.mp3",
+   "d": 5.2,
+   "chars": 87,
+   "h": "sha256:a806a6db08d50564"
+  },
+  "Mark.2.2": {
+   "ref": "มาระโก 2:2",
+   "osis": "Mark",
+   "c": 2,
+   "v": 2,
+   "file": "Mark.2.2.puck.mp3",
+   "d": 6.96,
+   "chars": 129,
+   "h": "sha256:9afcb6b115ea071d"
+  },
+  "Mark.2.3": {
+   "ref": "มาระโก 2:3",
+   "osis": "Mark",
+   "c": 2,
+   "v": 3,
+   "file": "Mark.2.3.puck.mp3",
+   "d": 2.36,
+   "chars": 46,
+   "h": "sha256:c4126007598adc3f"
+  },
+  "Mark.2.4": {
+   "ref": "มาระโก 2:4",
+   "osis": "Mark",
+   "c": 2,
+   "v": 4,
+   "file": "Mark.2.4.puck.mp3",
+   "d": 8.08,
+   "chars": 170,
+   "h": "sha256:a9acf01d78db1b4a"
+  },
+  "Mark.2.5": {
+   "ref": "มาระโก 2:5",
+   "osis": "Mark",
+   "c": 2,
+   "v": 5,
+   "file": "Mark.2.5.puck.mp3",
+   "d": 5.16,
+   "chars": 84,
+   "h": "sha256:2f5fd6e2a47962f0"
+  },
+  "Mark.2.6": {
+   "ref": "มาระโก 2:6",
+   "osis": "Mark",
+   "c": 2,
+   "v": 6,
+   "file": "Mark.2.6.puck.mp3",
+   "d": 3.64,
+   "chars": 79,
+   "h": "sha256:abbe220542d6f14d"
+  },
+  "Mark.2.7": {
+   "ref": "มาระโก 2:7",
+   "osis": "Mark",
+   "c": 2,
+   "v": 7,
+   "file": "Mark.2.7.puck.mp3",
+   "d": 5.36,
+   "chars": 84,
+   "h": "sha256:772b53b698fe0933"
+  },
+  "Mark.2.8": {
+   "ref": "มาระโก 2:8",
+   "osis": "Mark",
+   "c": 2,
+   "v": 8,
+   "file": "Mark.2.8.puck.mp3",
+   "d": 8.24,
+   "chars": 146,
+   "h": "sha256:14e3a22a06b20e07"
+  },
+  "Mark.2.9": {
+   "ref": "มาระโก 2:9",
+   "osis": "Mark",
+   "c": 2,
+   "v": 9,
+   "file": "Mark.2.9.puck.mp3",
+   "d": 7.2,
+   "chars": 117,
+   "h": "sha256:dcd8c45b177af4dc"
+  },
+  "Mark.2.10": {
+   "ref": "มาระโก 2:10",
+   "osis": "Mark",
+   "c": 2,
+   "v": 10,
+   "file": "Mark.2.10.puck.mp3",
+   "d": 7.64,
+   "chars": 107,
+   "h": "sha256:646bd5cb13adc720"
+  },
+  "Mark.2.11": {
+   "ref": "มาระโก 2:11",
+   "osis": "Mark",
+   "c": 2,
+   "v": 11,
+   "file": "Mark.2.11.puck.mp3",
+   "d": 3.76,
+   "chars": 60,
+   "h": "sha256:cecef2bacca91233"
+  },
+  "Mark.2.12": {
+   "ref": "มาระโก 2:12",
+   "osis": "Mark",
+   "c": 2,
+   "v": 12,
+   "file": "Mark.2.12.puck.mp3",
+   "d": 10.0,
+   "chars": 167,
+   "h": "sha256:e153c3fc69583afd"
+  },
+  "Mark.2.13": {
+   "ref": "มาระโก 2:13",
+   "osis": "Mark",
+   "c": 2,
+   "v": 13,
+   "file": "Mark.2.13.puck.mp3",
+   "d": 4.48,
+   "chars": 84,
+   "h": "sha256:f22053ba3017fc0c"
+  },
+  "Mark.2.14": {
+   "ref": "มาระโก 2:14",
+   "osis": "Mark",
+   "c": 2,
+   "v": 14,
+   "file": "Mark.2.14.puck.mp3",
+   "d": 8.44,
+   "chars": 135,
+   "h": "sha256:f439fe007b9cb988"
+  },
+  "Mark.2.15": {
+   "ref": "มาระโก 2:15",
+   "osis": "Mark",
+   "c": 2,
+   "v": 15,
+   "file": "Mark.2.15.puck.mp3",
+   "d": 8.44,
+   "chars": 162,
+   "h": "sha256:7ee0c847473e813b"
+  },
+  "Mark.2.16": {
+   "ref": "มาระโก 2:16",
+   "osis": "Mark",
+   "c": 2,
+   "v": 16,
+   "file": "Mark.2.16.puck.mp3",
+   "d": 7.92,
+   "chars": 192,
+   "h": "sha256:e55212381bdbd4d4"
+  },
+  "Mark.2.17": {
+   "ref": "มาระโก 2:17",
+   "osis": "Mark",
+   "c": 2,
+   "v": 17,
+   "file": "Mark.2.17.puck.mp3",
+   "d": 9.44,
+   "chars": 176,
+   "h": "sha256:192659d130272f08"
+  },
+  "Mark.2.18": {
+   "ref": "มาระโก 2:18",
+   "osis": "Mark",
+   "c": 2,
+   "v": 18,
+   "file": "Mark.2.18.puck.mp3",
+   "d": 9.56,
+   "chars": 175,
+   "h": "sha256:9257ea4613f38c1a"
+  },
+  "Mark.2.19": {
+   "ref": "มาระโก 2:19",
+   "osis": "Mark",
+   "c": 2,
+   "v": 19,
+   "file": "Mark.2.19.puck.mp3",
+   "d": 7.88,
+   "chars": 142,
+   "h": "sha256:2ec0f962e1c0423e"
+  },
+  "Mark.2.20": {
+   "ref": "มาระโก 2:20",
+   "osis": "Mark",
+   "c": 2,
+   "v": 20,
+   "file": "Mark.2.20.puck.mp3",
+   "d": 5.04,
+   "chars": 109,
+   "h": "sha256:abbad2c1a4f8d16b"
+  },
+  "Mark.2.21": {
+   "ref": "มาระโก 2:21",
+   "osis": "Mark",
+   "c": 2,
+   "v": 21,
+   "file": "Mark.2.21.puck.mp3",
+   "d": 8.96,
+   "chars": 145,
+   "h": "sha256:17df2cb489ddc8d9"
+  },
+  "Mark.2.22": {
+   "ref": "มาระโก 2:22",
+   "osis": "Mark",
+   "c": 2,
+   "v": 22,
+   "file": "Mark.2.22.puck.mp3",
+   "d": 10.24,
+   "chars": 185,
+   "h": "sha256:a9a79b2f2e323d6b"
+  },
+  "Mark.2.23": {
+   "ref": "มาระโก 2:23",
+   "osis": "Mark",
+   "c": 2,
+   "v": 23,
+   "file": "Mark.2.23.puck.mp3",
+   "d": 5.68,
+   "chars": 124,
+   "h": "sha256:a4d004ba57690b1d"
+  },
+  "Mark.2.24": {
+   "ref": "มาระโก 2:24",
+   "osis": "Mark",
+   "c": 2,
+   "v": 24,
+   "file": "Mark.2.24.puck.mp3",
+   "d": 5.68,
+   "chars": 96,
+   "h": "sha256:48c717dd9d5c91ab"
+  },
+  "Mark.2.25": {
+   "ref": "มาระโก 2:25",
+   "osis": "Mark",
+   "c": 2,
+   "v": 25,
+   "file": "Mark.2.25.puck.mp3",
+   "d": 7.8,
+   "chars": 116,
+   "h": "sha256:3c2a68aba64b2686"
+  },
+  "Mark.2.26": {
+   "ref": "มาระโก 2:26",
+   "osis": "Mark",
+   "c": 2,
+   "v": 26,
+   "file": "Mark.2.26.puck.mp3",
+   "d": 9.8,
+   "chars": 190,
+   "h": "sha256:d0fde326fc88ac71"
+  },
+  "Mark.2.27": {
+   "ref": "มาระโก 2:27",
+   "osis": "Mark",
+   "c": 2,
+   "v": 27,
+   "file": "Mark.2.27.puck.mp3",
+   "d": 4.0,
+   "chars": 72,
+   "h": "sha256:d79a7b0658452816"
+  },
+  "Mark.2.28": {
+   "ref": "มาระโก 2:28",
+   "osis": "Mark",
+   "c": 2,
+   "v": 28,
+   "file": "Mark.2.28.puck.mp3",
+   "d": 2.8,
+   "chars": 54,
+   "h": "sha256:ffdf39b545fd5bdc"
+  },
+  "Mark.3.1": {
+   "ref": "มาระโก 3:1",
+   "osis": "Mark",
+   "c": 3,
+   "v": 1,
+   "file": "Mark.3.1.puck.mp3",
+   "d": 4.52,
+   "chars": 87,
+   "h": "sha256:e763676092472120"
+  },
+  "Mark.3.2": {
+   "ref": "มาระโก 3:2",
+   "osis": "Mark",
+   "c": 3,
+   "v": 2,
+   "file": "Mark.3.2.puck.mp3",
+   "d": 4.96,
+   "chars": 91,
+   "h": "sha256:2b35360d9dc50c0c"
+  },
+  "Mark.3.3": {
+   "ref": "มาระโก 3:3",
+   "osis": "Mark",
+   "c": 3,
+   "v": 3,
+   "file": "Mark.3.3.puck.mp3",
+   "d": 2.8,
+   "chars": 55,
+   "h": "sha256:c38aed4fabb2e417"
+  },
+  "Mark.3.4": {
+   "ref": "มาระโก 3:4",
+   "osis": "Mark",
+   "c": 3,
+   "v": 4,
+   "file": "Mark.3.4.puck.mp3",
+   "d": 6.52,
+   "chars": 125,
+   "h": "sha256:62e057eb126df8b9"
+  },
+  "Mark.3.5": {
+   "ref": "มาระโก 3:5",
+   "osis": "Mark",
+   "c": 3,
+   "v": 5,
+   "file": "Mark.3.5.puck.mp3",
+   "d": 10.88,
+   "chars": 210,
+   "h": "sha256:6d12d6d5820ab5b5"
+  },
+  "Mark.3.6": {
+   "ref": "มาระโก 3:6",
+   "osis": "Mark",
+   "c": 3,
+   "v": 6,
+   "file": "Mark.3.6.puck.mp3",
+   "d": 5.56,
+   "chars": 109,
+   "h": "sha256:7cafa30d24fb9ee2"
+  },
+  "Mark.3.7": {
+   "ref": "มาระโก 3:7",
+   "osis": "Mark",
+   "c": 3,
+   "v": 7,
+   "file": "Mark.3.7.puck.mp3",
+   "d": 6.68,
+   "chars": 106,
+   "h": "sha256:4de1ded876261983"
+  },
+  "Mark.3.8": {
+   "ref": "มาระโก 3:8",
+   "osis": "Mark",
+   "c": 3,
+   "v": 8,
+   "file": "Mark.3.8.puck.mp3",
+   "d": 11.0,
+   "chars": 152,
+   "h": "sha256:7e9e8a53fa7357f8"
+  },
+  "Mark.3.9": {
+   "ref": "มาระโก 3:9",
+   "osis": "Mark",
+   "c": 3,
+   "v": 9,
+   "file": "Mark.3.9.puck.mp3",
+   "d": 5.8,
+   "chars": 123,
+   "h": "sha256:9005b45366a3b96e"
+  },
+  "Mark.3.10": {
+   "ref": "มาระโก 3:10",
+   "osis": "Mark",
+   "c": 3,
+   "v": 10,
+   "file": "Mark.3.10.puck.mp3",
+   "d": 5.12,
+   "chars": 97,
+   "h": "sha256:cb2464d8c400048e"
+  },
+  "Mark.3.11": {
+   "ref": "มาระโก 3:11",
+   "osis": "Mark",
+   "c": 3,
+   "v": 11,
+   "file": "Mark.3.11.puck.mp3",
+   "d": 6.4,
+   "chars": 101,
+   "h": "sha256:e3f04e5a24c290df"
+  },
+  "Mark.3.12": {
+   "ref": "มาระโก 3:12",
+   "osis": "Mark",
+   "c": 3,
+   "v": 12,
+   "file": "Mark.3.12.puck.mp3",
+   "d": 2.56,
+   "chars": 59,
+   "h": "sha256:52bb5372f439b9e8"
+  },
+  "Mark.3.13": {
+   "ref": "มาระโก 3:13",
+   "osis": "Mark",
+   "c": 3,
+   "v": 13,
+   "file": "Mark.3.13.puck.mp3",
+   "d": 5.32,
+   "chars": 94,
+   "h": "sha256:4daab768982acae8"
+  },
+  "Mark.3.14": {
+   "ref": "มาระโก 3:14",
+   "osis": "Mark",
+   "c": 3,
+   "v": 14,
+   "file": "Mark.3.14.puck.mp3",
+   "d": 4.96,
+   "chars": 91,
+   "h": "sha256:0bef31fbe8a0f25b"
+  },
+  "Mark.3.15": {
+   "ref": "มาระโก 3:15",
+   "osis": "Mark",
+   "c": 3,
+   "v": 15,
+   "file": "Mark.3.15.puck.mp3",
+   "d": 4.4,
+   "chars": 64,
+   "h": "sha256:b2ecb708314df58f"
+  },
+  "Mark.3.16": {
+   "ref": "มาระโก 3:16",
+   "osis": "Mark",
+   "c": 3,
+   "v": 16,
+   "file": "Mark.3.16.puck.mp3",
+   "d": 2.52,
+   "chars": 39,
+   "h": "sha256:0e8b7dd3a1ecfb03"
+  },
+  "Mark.3.17": {
+   "ref": "มาระโก 3:17",
+   "osis": "Mark",
+   "c": 3,
+   "v": 17,
+   "file": "Mark.3.17.puck.mp3",
+   "d": 8.84,
+   "chars": 115,
+   "h": "sha256:76237d86b2b0b729"
+  },
+  "Mark.3.18": {
+   "ref": "มาระโก 3:18",
+   "osis": "Mark",
+   "c": 3,
+   "v": 18,
+   "file": "Mark.3.18.puck.mp3",
+   "d": 8.36,
+   "chars": 102,
+   "h": "sha256:d9b6eb713a568eea"
+  },
+  "Mark.3.19": {
+   "ref": "มาระโก 3:19",
+   "osis": "Mark",
+   "c": 3,
+   "v": 19,
+   "file": "Mark.3.19.puck.mp3",
+   "d": 5.08,
+   "chars": 69,
+   "h": "sha256:17b1cf5b3e2eb978"
+  },
+  "Mark.3.20": {
+   "ref": "มาระโก 3:20",
+   "osis": "Mark",
+   "c": 3,
+   "v": 20,
+   "file": "Mark.3.20.puck.mp3",
+   "d": 4.8,
+   "chars": 79,
+   "h": "sha256:2fa63ea4ec7d6f1b"
+  },
+  "Mark.3.21": {
+   "ref": "มาระโก 3:21",
+   "osis": "Mark",
+   "c": 3,
+   "v": 21,
+   "file": "Mark.3.21.puck.mp3",
+   "d": 5.68,
+   "chars": 85,
+   "h": "sha256:a15dc5b1516e6b18"
+  },
+  "Mark.3.22": {
+   "ref": "มาระโก 3:22",
+   "osis": "Mark",
+   "c": 3,
+   "v": 22,
+   "file": "Mark.3.22.puck.mp3",
+   "d": 8.44,
+   "chars": 126,
+   "h": "sha256:2ee23772887c2272"
+  },
+  "Mark.3.23": {
+   "ref": "มาระโก 3:23",
+   "osis": "Mark",
+   "c": 3,
+   "v": 23,
+   "file": "Mark.3.23.puck.mp3",
+   "d": 4.4,
+   "chars": 77,
+   "h": "sha256:6f9b4838792bcb8b"
+  },
+  "Mark.3.24": {
+   "ref": "มาระโก 3:24",
+   "osis": "Mark",
+   "c": 3,
+   "v": 24,
+   "file": "Mark.3.24.puck.mp3",
+   "d": 4.64,
+   "chars": 66,
+   "h": "sha256:ec60a9eb471ed09a"
+  },
+  "Mark.3.25": {
+   "ref": "มาระโก 3:25",
+   "osis": "Mark",
+   "c": 3,
+   "v": 25,
+   "file": "Mark.3.25.puck.mp3",
+   "d": 4.04,
+   "chars": 62,
+   "h": "sha256:f8ff4c06458b5058"
+  },
+  "Mark.3.26": {
+   "ref": "มาระโก 3:26",
+   "osis": "Mark",
+   "c": 3,
+   "v": 26,
+   "file": "Mark.3.26.puck.mp3",
+   "d": 6.12,
+   "chars": 86,
+   "h": "sha256:a292aae42bfc9473"
+  },
+  "Mark.3.27": {
+   "ref": "มาระโก 3:27",
+   "osis": "Mark",
+   "c": 3,
+   "v": 27,
+   "file": "Mark.3.27.puck.mp3",
+   "d": 7.36,
+   "chars": 134,
+   "h": "sha256:c64f2ce07ac248fc"
+  },
+  "Mark.3.28": {
+   "ref": "มาระโก 3:28",
+   "osis": "Mark",
+   "c": 3,
+   "v": 28,
+   "file": "Mark.3.28.puck.mp3",
+   "d": 8.56,
+   "chars": 139,
+   "h": "sha256:ffaff4ac845b0e90"
+  },
+  "Mark.3.29": {
+   "ref": "มาระโก 3:29",
+   "osis": "Mark",
+   "c": 3,
+   "v": 29,
+   "file": "Mark.3.29.puck.mp3",
+   "d": 5.76,
+   "chars": 113,
+   "h": "sha256:82ec870861eaab52"
+  },
+  "Mark.3.30": {
+   "ref": "มาระโก 3:30",
+   "osis": "Mark",
+   "c": 3,
+   "v": 30,
+   "file": "Mark.3.30.puck.mp3",
+   "d": 3.52,
+   "chars": 47,
+   "h": "sha256:5d771ff6eb8fe746"
+  },
+  "Mark.3.31": {
+   "ref": "มาระโก 3:31",
+   "osis": "Mark",
+   "c": 3,
+   "v": 31,
+   "file": "Mark.3.31.puck.mp3",
+   "d": 4.76,
+   "chars": 86,
+   "h": "sha256:67773c63566f64a9"
+  },
+  "Mark.3.32": {
+   "ref": "มาระโก 3:32",
+   "osis": "Mark",
+   "c": 3,
+   "v": 32,
+   "file": "Mark.3.32.puck.mp3",
+   "d": 7.36,
+   "chars": 138,
+   "h": "sha256:9ba1a9096d5414e3"
+  },
+  "Mark.3.33": {
+   "ref": "มาระโก 3:33",
+   "osis": "Mark",
+   "c": 3,
+   "v": 33,
+   "file": "Mark.3.33.puck.mp3",
+   "d": 3.2,
+   "chars": 54,
+   "h": "sha256:07fd84665c2a74e3"
+  },
+  "Mark.3.34": {
+   "ref": "มาระโก 3:34",
+   "osis": "Mark",
+   "c": 3,
+   "v": 34,
+   "file": "Mark.3.34.puck.mp3",
+   "d": 6.4,
+   "chars": 88,
+   "h": "sha256:3d717748cf235a55"
+  },
+  "Mark.3.35": {
+   "ref": "มาระโก 3:35",
+   "osis": "Mark",
+   "c": 3,
+   "v": 35,
+   "file": "Mark.3.35.puck.mp3",
+   "d": 4.68,
+   "chars": 71,
+   "h": "sha256:28ab0891c79e4798"
+  },
+  "Mark.4.1": {
+   "ref": "มาระโก 4:1",
+   "osis": "Mark",
+   "c": 4,
+   "v": 1,
+   "file": "Mark.4.1.puck.mp3",
+   "d": 10.08,
+   "chars": 181,
+   "h": "sha256:f98251b5b796873a"
+  },
+  "Mark.4.2": {
+   "ref": "มาระโก 4:2",
+   "osis": "Mark",
+   "c": 4,
+   "v": 2,
+   "file": "Mark.4.2.puck.mp3",
+   "d": 4.28,
+   "chars": 70,
+   "h": "sha256:af9820a38f6518ee"
+  },
+  "Mark.4.3": {
+   "ref": "มาระโก 4:3",
+   "osis": "Mark",
+   "c": 4,
+   "v": 3,
+   "file": "Mark.4.3.puck.mp3",
+   "d": 3.84,
+   "chars": 44,
+   "h": "sha256:a226de6db2948e67"
+  },
+  "Mark.4.4": {
+   "ref": "มาระโก 4:4",
+   "osis": "Mark",
+   "c": 4,
+   "v": 4,
+   "file": "Mark.4.4.puck.mp3",
+   "d": 4.72,
+   "chars": 76,
+   "h": "sha256:836897857011593a"
+  },
+  "Mark.4.5": {
+   "ref": "มาระโก 4:5",
+   "osis": "Mark",
+   "c": 4,
+   "v": 5,
+   "file": "Mark.4.5.puck.mp3",
+   "d": 7.08,
+   "chars": 121,
+   "h": "sha256:7476a6b0ad392549"
+  },
+  "Mark.4.6": {
+   "ref": "มาระโก 4:6",
+   "osis": "Mark",
+   "c": 4,
+   "v": 6,
+   "file": "Mark.4.6.puck.mp3",
+   "d": 5.04,
+   "chars": 86,
+   "h": "sha256:93720c40b30b19cc"
+  },
+  "Mark.4.7": {
+   "ref": "มาระโก 4:7",
+   "osis": "Mark",
+   "c": 4,
+   "v": 7,
+   "file": "Mark.4.7.puck.mp3",
+   "d": 5.48,
+   "chars": 92,
+   "h": "sha256:edeb7a6c69d112fe"
+  },
+  "Mark.4.8": {
+   "ref": "มาระโก 4:8",
+   "osis": "Mark",
+   "c": 4,
+   "v": 8,
+   "file": "Mark.4.8.puck.mp3",
+   "d": 8.92,
+   "chars": 161,
+   "h": "sha256:651bd4a000136cc7"
+  },
+  "Mark.4.9": {
+   "ref": "มาระโก 4:9",
+   "osis": "Mark",
+   "c": 4,
+   "v": 9,
+   "file": "Mark.4.9.puck.mp3",
+   "d": 3.0,
+   "chars": 50,
+   "h": "sha256:fbbb1f7d53237b0b"
+  },
+  "Mark.4.10": {
+   "ref": "มาระโก 4:10",
+   "osis": "Mark",
+   "c": 4,
+   "v": 10,
+   "file": "Mark.4.10.puck.mp3",
+   "d": 4.84,
+   "chars": 90,
+   "h": "sha256:bb10228050c4c6d3"
+  },
+  "Mark.4.11": {
+   "ref": "มาระโก 4:11",
+   "osis": "Mark",
+   "c": 4,
+   "v": 11,
+   "file": "Mark.4.11.puck.mp3",
+   "d": 6.4,
+   "chars": 126,
+   "h": "sha256:c1342379a50bf5d8"
+  },
+  "Mark.4.12": {
+   "ref": "มาระโก 4:12",
+   "osis": "Mark",
+   "c": 4,
+   "v": 12,
+   "file": "Mark.4.12.puck.mp3",
+   "d": 9.28,
+   "chars": 168,
+   "h": "sha256:6280ee274c88cf8f"
+  },
+  "Mark.4.13": {
+   "ref": "มาระโก 4:13",
+   "osis": "Mark",
+   "c": 4,
+   "v": 13,
+   "file": "Mark.4.13.puck.mp3",
+   "d": 6.68,
+   "chars": 97,
+   "h": "sha256:5f262947c025d961"
+  },
+  "Mark.4.14": {
+   "ref": "มาระโก 4:14",
+   "osis": "Mark",
+   "c": 4,
+   "v": 14,
+   "file": "Mark.4.14.puck.mp3",
+   "d": 1.36,
+   "chars": 25,
+   "h": "sha256:33f968b7e7115786"
+  },
+  "Mark.4.15": {
+   "ref": "มาระโก 4:15",
+   "osis": "Mark",
+   "c": 4,
+   "v": 15,
+   "file": "Mark.4.15.puck.mp3",
+   "d": 8.44,
+   "chars": 160,
+   "h": "sha256:14472758ed635951"
+  },
+  "Mark.4.16": {
+   "ref": "มาระโก 4:16",
+   "osis": "Mark",
+   "c": 4,
+   "v": 16,
+   "file": "Mark.4.16.puck.mp3",
+   "d": 7.12,
+   "chars": 134,
+   "h": "sha256:b002e9729bab1563"
+  },
+  "Mark.4.17": {
+   "ref": "มาระโก 4:17",
+   "osis": "Mark",
+   "c": 4,
+   "v": 17,
+   "file": "Mark.4.17.puck.mp3",
+   "d": 7.2,
+   "chars": 138,
+   "h": "sha256:61a8924fa7121b93"
+  },
+  "Mark.4.18": {
+   "ref": "มาระโก 4:18",
+   "osis": "Mark",
+   "c": 4,
+   "v": 18,
+   "file": "Mark.4.18.puck.mp3",
+   "d": 4.32,
+   "chars": 88,
+   "h": "sha256:892d4142dc3ccb00"
+  },
+  "Mark.4.19": {
+   "ref": "มาระโก 4:19",
+   "osis": "Mark",
+   "c": 4,
+   "v": 19,
+   "file": "Mark.4.19.puck.mp3",
+   "d": 8.28,
+   "chars": 144,
+   "h": "sha256:fbc76f36c2da5f0c"
+  },
+  "Mark.4.20": {
+   "ref": "มาระโก 4:20",
+   "osis": "Mark",
+   "c": 4,
+   "v": 20,
+   "file": "Mark.4.20.puck.mp3",
+   "d": 10.56,
+   "chars": 162,
+   "h": "sha256:31cc975494fcc8c1"
+  },
+  "Mark.4.21": {
+   "ref": "มาระโก 4:21",
+   "osis": "Mark",
+   "c": 4,
+   "v": 21,
+   "file": "Mark.4.21.puck.mp3",
+   "d": 6.24,
+   "chars": 101,
+   "h": "sha256:063762e80a237490"
+  },
+  "Mark.4.22": {
+   "ref": "มาระโก 4:22",
+   "osis": "Mark",
+   "c": 4,
+   "v": 22,
+   "file": "Mark.4.22.puck.mp3",
+   "d": 6.44,
+   "chars": 131,
+   "h": "sha256:e8afe3a7f92c1c0f"
+  },
+  "Mark.4.23": {
+   "ref": "มาระโก 4:23",
+   "osis": "Mark",
+   "c": 4,
+   "v": 23,
+   "file": "Mark.4.23.puck.mp3",
+   "d": 3.2,
+   "chars": 43,
+   "h": "sha256:0bb2397d24d7256a"
+  },
+  "Mark.4.24": {
+   "ref": "มาระโก 4:24",
+   "osis": "Mark",
+   "c": 4,
+   "v": 24,
+   "file": "Mark.4.24.puck.mp3",
+   "d": 9.4,
+   "chars": 145,
+   "h": "sha256:4102f8771e75aeb6"
+  },
+  "Mark.4.25": {
+   "ref": "มาระโก 4:25",
+   "osis": "Mark",
+   "c": 4,
+   "v": 25,
+   "file": "Mark.4.25.puck.mp3",
+   "d": 6.36,
+   "chars": 121,
+   "h": "sha256:344193c6a390ec92"
+  },
+  "Mark.4.26": {
+   "ref": "มาระโก 4:26",
+   "osis": "Mark",
+   "c": 4,
+   "v": 26,
+   "file": "Mark.4.26.puck.mp3",
+   "d": 3.48,
+   "chars": 69,
+   "h": "sha256:a34a45d9535c88f2"
+  },
+  "Mark.4.27": {
+   "ref": "มาระโก 4:27",
+   "osis": "Mark",
+   "c": 4,
+   "v": 27,
+   "file": "Mark.4.27.puck.mp3",
+   "d": 6.44,
+   "chars": 108,
+   "h": "sha256:739e9049f82dcddb"
+  },
+  "Mark.4.28": {
+   "ref": "มาระโก 4:28",
+   "osis": "Mark",
+   "c": 4,
+   "v": 28,
+   "file": "Mark.4.28.puck.mp3",
+   "d": 6.56,
+   "chars": 99,
+   "h": "sha256:8282f27de1b4cee5"
+  },
+  "Mark.4.29": {
+   "ref": "มาระโก 4:29",
+   "osis": "Mark",
+   "c": 4,
+   "v": 29,
+   "file": "Mark.4.29.puck.mp3",
+   "d": 4.84,
+   "chars": 93,
+   "h": "sha256:25787cba7f7ae790"
+  },
+  "Mark.4.30": {
+   "ref": "มาระโก 4:30",
+   "osis": "Mark",
+   "c": 4,
+   "v": 30,
+   "file": "Mark.4.30.puck.mp3",
+   "d": 4.92,
+   "chars": 86,
+   "h": "sha256:ce85ce5f73daf1ef"
+  },
+  "Mark.4.31": {
+   "ref": "มาระโก 4:31",
+   "osis": "Mark",
+   "c": 4,
+   "v": 31,
+   "file": "Mark.4.31.puck.mp3",
+   "d": 8.16,
+   "chars": 131,
+   "h": "sha256:8dce2115a4e81539"
+  },
+  "Mark.4.32": {
+   "ref": "มาระโก 4:32",
+   "osis": "Mark",
+   "c": 4,
+   "v": 32,
+   "file": "Mark.4.32.puck.mp3",
+   "d": 8.76,
+   "chars": 156,
+   "h": "sha256:7b0a4280b7c14783"
+  },
+  "Mark.4.33": {
+   "ref": "มาระโก 4:33",
+   "osis": "Mark",
+   "c": 4,
+   "v": 33,
+   "file": "Mark.4.33.puck.mp3",
+   "d": 4.08,
+   "chars": 80,
+   "h": "sha256:5219d6135fedc80a"
+  },
+  "Mark.4.34": {
+   "ref": "มาระโก 4:34",
+   "osis": "Mark",
+   "c": 4,
+   "v": 34,
+   "file": "Mark.4.34.puck.mp3",
+   "d": 6.12,
+   "chars": 102,
+   "h": "sha256:8767fbc025ab3b68"
+  },
+  "Mark.4.35": {
+   "ref": "มาระโก 4:35",
+   "osis": "Mark",
+   "c": 4,
+   "v": 35,
+   "file": "Mark.4.35.puck.mp3",
+   "d": 5.28,
+   "chars": 87,
+   "h": "sha256:56ca1f271c8f9774"
+  },
+  "Mark.4.36": {
+   "ref": "มาระโก 4:36",
+   "osis": "Mark",
+   "c": 4,
+   "v": 36,
+   "file": "Mark.4.36.puck.mp3",
+   "d": 5.96,
+   "chars": 114,
+   "h": "sha256:f29f511281ed1d71"
+  },
+  "Mark.4.37": {
+   "ref": "มาระโก 4:37",
+   "osis": "Mark",
+   "c": 4,
+   "v": 37,
+   "file": "Mark.4.37.puck.mp3",
+   "d": 6.68,
+   "chars": 99,
+   "h": "sha256:8acb99c6df5e9a63"
+  },
+  "Mark.4.38": {
+   "ref": "มาระโก 4:38",
+   "osis": "Mark",
+   "c": 4,
+   "v": 38,
+   "file": "Mark.4.38.puck.mp3",
+   "d": 7.0,
+   "chars": 132,
+   "h": "sha256:050a53974ce0b158"
+  },
+  "Mark.4.39": {
+   "ref": "มาระโก 4:39",
+   "osis": "Mark",
+   "c": 4,
+   "v": 39,
+   "file": "Mark.4.39.puck.mp3",
+   "d": 9.24,
+   "chars": 114,
+   "h": "sha256:9457c364da827019"
+  },
+  "Mark.4.40": {
+   "ref": "มาระโก 4:40",
+   "osis": "Mark",
+   "c": 4,
+   "v": 40,
+   "file": "Mark.4.40.puck.mp3",
+   "d": 3.92,
+   "chars": 75,
+   "h": "sha256:6657e0806e39815d"
+  },
+  "Mark.4.41": {
+   "ref": "มาระโก 4:41",
+   "osis": "Mark",
+   "c": 4,
+   "v": 41,
+   "file": "Mark.4.41.puck.mp3",
+   "d": 7.4,
+   "chars": 110,
+   "h": "sha256:5133955836040062"
+  },
+  "Mark.5.1": {
+   "ref": "มาระโก 5:1",
+   "osis": "Mark",
+   "c": 5,
+   "v": 1,
+   "file": "Mark.5.1.puck.mp3",
+   "d": 4.36,
+   "chars": 74,
+   "h": "sha256:e82f6304bb4fecdf"
+  },
+  "Mark.5.2": {
+   "ref": "มาระโก 5:2",
+   "osis": "Mark",
+   "c": 5,
+   "v": 2,
+   "file": "Mark.5.2.puck.mp3",
+   "d": 7.2,
+   "chars": 100,
+   "h": "sha256:35ffae96efefbb15"
+  },
+  "Mark.5.3": {
+   "ref": "มาระโก 5:3",
+   "osis": "Mark",
+   "c": 5,
+   "v": 3,
+   "file": "Mark.5.3.puck.mp3",
+   "d": 5.12,
+   "chars": 76,
+   "h": "sha256:5adb245eb84c9473"
+  },
+  "Mark.5.4": {
+   "ref": "มาระโก 5:4",
+   "osis": "Mark",
+   "c": 5,
+   "v": 4,
+   "file": "Mark.5.4.puck.mp3",
+   "d": 9.88,
+   "chars": 170,
+   "h": "sha256:8be19451ba636a20"
+  },
+  "Mark.5.5": {
+   "ref": "มาระโก 5:5",
+   "osis": "Mark",
+   "c": 5,
+   "v": 5,
+   "file": "Mark.5.5.puck.mp3",
+   "d": 7.44,
+   "chars": 109,
+   "h": "sha256:3dc6998afba97a65"
+  },
+  "Mark.5.6": {
+   "ref": "มาระโก 5:6",
+   "osis": "Mark",
+   "c": 5,
+   "v": 6,
+   "file": "Mark.5.6.puck.mp3",
+   "d": 4.24,
+   "chars": 58,
+   "h": "sha256:5e8d2edc6c96d5b9"
+  },
+  "Mark.5.7": {
+   "ref": "มาระโก 5:7",
+   "osis": "Mark",
+   "c": 5,
+   "v": 7,
+   "file": "Mark.5.7.puck.mp3",
+   "d": 7.08,
+   "chars": 148,
+   "h": "sha256:55d5a88d3648b99d"
+  },
+  "Mark.5.8": {
+   "ref": "มาระโก 5:8",
+   "osis": "Mark",
+   "c": 5,
+   "v": 8,
+   "file": "Mark.5.8.puck.mp3",
+   "d": 3.4,
+   "chars": 62,
+   "h": "sha256:f23f9db192f9d195"
+  },
+  "Mark.5.9": {
+   "ref": "มาระโก 5:9",
+   "osis": "Mark",
+   "c": 5,
+   "v": 9,
+   "file": "Mark.5.9.puck.mp3",
+   "d": 6.04,
+   "chars": 88,
+   "h": "sha256:48bbbecad84cbdcc"
+  },
+  "Mark.5.10": {
+   "ref": "มาระโก 5:10",
+   "osis": "Mark",
+   "c": 5,
+   "v": 10,
+   "file": "Mark.5.10.puck.mp3",
+   "d": 4.0,
+   "chars": 71,
+   "h": "sha256:5ec06d5db7ed62ef"
+  },
+  "Mark.5.11": {
+   "ref": "มาระโก 5:11",
+   "osis": "Mark",
+   "c": 5,
+   "v": 11,
+   "file": "Mark.5.11.puck.mp3",
+   "d": 3.44,
+   "chars": 63,
+   "h": "sha256:f20c325a4f19a7f2"
+  },
+  "Mark.5.12": {
+   "ref": "มาระโก 5:12",
+   "osis": "Mark",
+   "c": 5,
+   "v": 12,
+   "file": "Mark.5.12.puck.mp3",
+   "d": 6.4,
+   "chars": 88,
+   "h": "sha256:88499f3b5cfafe9b"
+  },
+  "Mark.5.13": {
+   "ref": "มาระโก 5:13",
+   "osis": "Mark",
+   "c": 5,
+   "v": 13,
+   "file": "Mark.5.13.puck.mp3",
+   "d": 11.88,
+   "chars": 197,
+   "h": "sha256:0438f9652c1c41c4"
+  },
+  "Mark.5.14": {
+   "ref": "มาระโก 5:14",
+   "osis": "Mark",
+   "c": 5,
+   "v": 14,
+   "file": "Mark.5.14.puck.mp3",
+   "d": 7.48,
+   "chars": 126,
+   "h": "sha256:238686431b20ae2c"
+  },
+  "Mark.5.15": {
+   "ref": "มาระโก 5:15",
+   "osis": "Mark",
+   "c": 5,
+   "v": 15,
+   "file": "Mark.5.15.puck.mp3",
+   "d": 9.08,
+   "chars": 156,
+   "h": "sha256:c695939f4a174d5e"
+  },
+  "Mark.5.16": {
+   "ref": "มาระโก 5:16",
+   "osis": "Mark",
+   "c": 5,
+   "v": 16,
+   "file": "Mark.5.16.puck.mp3",
+   "d": 5.88,
+   "chars": 103,
+   "h": "sha256:4d88a91ad246eed4"
+  },
+  "Mark.5.17": {
+   "ref": "มาระโก 5:17",
+   "osis": "Mark",
+   "c": 5,
+   "v": 17,
+   "file": "Mark.5.17.puck.mp3",
+   "d": 2.24,
+   "chars": 50,
+   "h": "sha256:063e805d347b8406"
+  },
+  "Mark.5.18": {
+   "ref": "มาระโก 5:18",
+   "osis": "Mark",
+   "c": 5,
+   "v": 18,
+   "file": "Mark.5.18.puck.mp3",
+   "d": 5.56,
+   "chars": 107,
+   "h": "sha256:5d643835117dac5c"
+  },
+  "Mark.5.19": {
+   "ref": "มาระโก 5:19",
+   "osis": "Mark",
+   "c": 5,
+   "v": 19,
+   "file": "Mark.5.19.puck.mp3",
+   "d": 8.28,
+   "chars": 161,
+   "h": "sha256:2afb58fd4f6ae0ae"
+  },
+  "Mark.5.20": {
+   "ref": "มาระโก 5:20",
+   "osis": "Mark",
+   "c": 5,
+   "v": 20,
+   "file": "Mark.5.20.puck.mp3",
+   "d": 6.4,
+   "chars": 115,
+   "h": "sha256:e8c51bd2d4378547"
+  },
+  "Mark.5.21": {
+   "ref": "มาระโก 5:21",
+   "osis": "Mark",
+   "c": 5,
+   "v": 21,
+   "file": "Mark.5.21.puck.mp3",
+   "d": 7.0,
+   "chars": 125,
+   "h": "sha256:c35324f1ab8bfd99"
+  },
+  "Mark.5.22": {
+   "ref": "มาระโก 5:22",
+   "osis": "Mark",
+   "c": 5,
+   "v": 22,
+   "file": "Mark.5.22.puck.mp3",
+   "d": 6.88,
+   "chars": 101,
+   "h": "sha256:bce162d2fc59b90a"
+  },
+  "Mark.5.23": {
+   "ref": "มาระโก 5:23",
+   "osis": "Mark",
+   "c": 5,
+   "v": 23,
+   "file": "Mark.5.23.puck.mp3",
+   "d": 8.0,
+   "chars": 154,
+   "h": "sha256:6ac31ee4c0d7c47a"
+  },
+  "Mark.5.24": {
+   "ref": "มาระโก 5:24",
+   "osis": "Mark",
+   "c": 5,
+   "v": 24,
+   "file": "Mark.5.24.puck.mp3",
+   "d": 5.2,
+   "chars": 93,
+   "h": "sha256:caea076a27a46c13"
+  },
+  "Mark.5.25": {
+   "ref": "มาระโก 5:25",
+   "osis": "Mark",
+   "c": 5,
+   "v": 25,
+   "file": "Mark.5.25.puck.mp3",
+   "d": 3.08,
+   "chars": 62,
+   "h": "sha256:80159a942cd1f1cc"
+  },
+  "Mark.5.26": {
+   "ref": "มาระโก 5:26",
+   "osis": "Mark",
+   "c": 5,
+   "v": 26,
+   "file": "Mark.5.26.puck.mp3",
+   "d": 7.6,
+   "chars": 122,
+   "h": "sha256:5290ba7403181cc9"
+  },
+  "Mark.5.27": {
+   "ref": "มาระโก 5:27",
+   "osis": "Mark",
+   "c": 5,
+   "v": 27,
+   "file": "Mark.5.27.puck.mp3",
+   "d": 5.36,
+   "chars": 98,
+   "h": "sha256:4c0102c59d02733d"
+  },
+  "Mark.5.28": {
+   "ref": "มาระโก 5:28",
+   "osis": "Mark",
+   "c": 5,
+   "v": 28,
+   "file": "Mark.5.28.puck.mp3",
+   "d": 3.76,
+   "chars": 65,
+   "h": "sha256:707903c9f1d98baf"
+  },
+  "Mark.5.29": {
+   "ref": "มาระโก 5:29",
+   "osis": "Mark",
+   "c": 5,
+   "v": 29,
+   "file": "Mark.5.29.puck.mp3",
+   "d": 6.4,
+   "chars": 111,
+   "h": "sha256:240de18551cd2ad9"
+  },
+  "Mark.5.30": {
+   "ref": "มาระโก 5:30",
+   "osis": "Mark",
+   "c": 5,
+   "v": 30,
+   "file": "Mark.5.30.puck.mp3",
+   "d": 7.28,
+   "chars": 142,
+   "h": "sha256:4182a29fb1a3b6f9"
+  },
+  "Mark.5.31": {
+   "ref": "มาระโก 5:31",
+   "osis": "Mark",
+   "c": 5,
+   "v": 31,
+   "file": "Mark.5.31.puck.mp3",
+   "d": 5.88,
+   "chars": 103,
+   "h": "sha256:2595bd51e55641c9"
+  },
+  "Mark.5.32": {
+   "ref": "มาระโก 5:32",
+   "osis": "Mark",
+   "c": 5,
+   "v": 32,
+   "file": "Mark.5.32.puck.mp3",
+   "d": 2.16,
+   "chars": 52,
+   "h": "sha256:48da7445e0df55ea"
+  },
+  "Mark.5.33": {
+   "ref": "มาระโก 5:33",
+   "osis": "Mark",
+   "c": 5,
+   "v": 33,
+   "file": "Mark.5.33.puck.mp3",
+   "d": 7.84,
+   "chars": 131,
+   "h": "sha256:e3b1575e2226261b"
+  },
+  "Mark.5.34": {
+   "ref": "มาระโก 5:34",
+   "osis": "Mark",
+   "c": 5,
+   "v": 34,
+   "file": "Mark.5.34.puck.mp3",
+   "d": 5.44,
+   "chars": 100,
+   "h": "sha256:24c149bdd9770f6d"
+  },
+  "Mark.5.35": {
+   "ref": "มาระโก 5:35",
+   "osis": "Mark",
+   "c": 5,
+   "v": 35,
+   "file": "Mark.5.35.puck.mp3",
+   "d": 7.6,
+   "chars": 140,
+   "h": "sha256:2cdaed8e1121cc60"
+  },
+  "Mark.5.36": {
+   "ref": "มาระโก 5:36",
+   "osis": "Mark",
+   "c": 5,
+   "v": 36,
+   "file": "Mark.5.36.puck.mp3",
+   "d": 7.64,
+   "chars": 125,
+   "h": "sha256:f9c046587c1c5bb2"
+  },
+  "Mark.5.37": {
+   "ref": "มาระโก 5:37",
+   "osis": "Mark",
+   "c": 5,
+   "v": 37,
+   "file": "Mark.5.37.puck.mp3",
+   "d": 4.04,
+   "chars": 83,
+   "h": "sha256:5895c10aba465579"
+  },
+  "Mark.5.38": {
+   "ref": "มาระโก 5:38",
+   "osis": "Mark",
+   "c": 5,
+   "v": 38,
+   "file": "Mark.5.38.puck.mp3",
+   "d": 4.48,
+   "chars": 89,
+   "h": "sha256:7f57df649fb6b2e7"
+  },
+  "Mark.5.39": {
+   "ref": "มาระโก 5:39",
+   "osis": "Mark",
+   "c": 5,
+   "v": 39,
+   "file": "Mark.5.39.puck.mp3",
+   "d": 6.16,
+   "chars": 116,
+   "h": "sha256:192b382fdddd2bf4"
+  },
+  "Mark.5.40": {
+   "ref": "มาระโก 5:40",
+   "osis": "Mark",
+   "c": 5,
+   "v": 40,
+   "file": "Mark.5.40.puck.mp3",
+   "d": 7.96,
+   "chars": 162,
+   "h": "sha256:b32ae8ab3a59bec4"
+  },
+  "Mark.5.41": {
+   "ref": "มาระโก 5:41",
+   "osis": "Mark",
+   "c": 5,
+   "v": 41,
+   "file": "Mark.5.41.puck.mp3",
+   "d": 7.08,
+   "chars": 121,
+   "h": "sha256:9d4a3a3540065102"
+  },
+  "Mark.5.42": {
+   "ref": "มาระโก 5:42",
+   "osis": "Mark",
+   "c": 5,
+   "v": 42,
+   "file": "Mark.5.42.puck.mp3",
+   "d": 6.24,
+   "chars": 109,
+   "h": "sha256:31ffd08399442bfd"
+  },
+  "Mark.5.43": {
+   "ref": "มาระโก 5:43",
+   "osis": "Mark",
+   "c": 5,
+   "v": 43,
+   "file": "Mark.5.43.puck.mp3",
+   "d": 5.0,
+   "chars": 114,
+   "h": "sha256:c11955fff55d6552"
+  },
+  "Mark.6.1": {
+   "ref": "มาระโก 6:1",
+   "osis": "Mark",
+   "c": 6,
+   "v": 1,
+   "file": "Mark.6.1.puck.mp3",
+   "d": 5.68,
+   "chars": 85,
+   "h": "sha256:67414bf14619a2d8"
+  },
+  "Mark.6.2": {
+   "ref": "มาระโก 6:2",
+   "osis": "Mark",
+   "c": 6,
+   "v": 2,
+   "file": "Mark.6.2.puck.mp3",
+   "d": 13.84,
+   "chars": 247,
+   "h": "sha256:b49e396a5df42363"
+  },
+  "Mark.6.3": {
+   "ref": "มาระโก 6:3",
+   "osis": "Mark",
+   "c": 6,
+   "v": 3,
+   "file": "Mark.6.3.puck.mp3",
+   "d": 8.68,
+   "chars": 152,
+   "h": "sha256:922bca223e7de1e8"
+  },
+  "Mark.6.4": {
+   "ref": "มาระโก 6:4",
+   "osis": "Mark",
+   "c": 6,
+   "v": 4,
+   "file": "Mark.6.4.puck.mp3",
+   "d": 7.08,
+   "chars": 131,
+   "h": "sha256:20d8b01f65f59448"
+  },
+  "Mark.6.5": {
+   "ref": "มาระโก 6:5",
+   "osis": "Mark",
+   "c": 6,
+   "v": 5,
+   "file": "Mark.6.5.puck.mp3",
+   "d": 4.92,
+   "chars": 101,
+   "h": "sha256:0803ef53c2b1b6e6"
+  },
+  "Mark.6.6": {
+   "ref": "มาระโก 6:6",
+   "osis": "Mark",
+   "c": 6,
+   "v": 6,
+   "file": "Mark.6.6.puck.mp3",
+   "d": 5.32,
+   "chars": 76,
+   "h": "sha256:ecf902e36c702bf9"
+  },
+  "Mark.6.7": {
+   "ref": "มาระโก 6:7",
+   "osis": "Mark",
+   "c": 6,
+   "v": 7,
+   "file": "Mark.6.7.puck.mp3",
+   "d": 6.44,
+   "chars": 124,
+   "h": "sha256:eb7a5b97c7f76afa"
+  },
+  "Mark.6.8": {
+   "ref": "มาระโก 6:8",
+   "osis": "Mark",
+   "c": 6,
+   "v": 8,
+   "file": "Mark.6.8.puck.mp3",
+   "d": 7.0,
+   "chars": 133,
+   "h": "sha256:7fd07c7b5f4e3d5e"
+  },
+  "Mark.6.9": {
+   "ref": "มาระโก 6:9",
+   "osis": "Mark",
+   "c": 6,
+   "v": 9,
+   "file": "Mark.6.9.puck.mp3",
+   "d": 3.88,
+   "chars": 47,
+   "h": "sha256:06c7ecf066cfed28"
+  },
+  "Mark.6.10": {
+   "ref": "มาระโก 6:10",
+   "osis": "Mark",
+   "c": 6,
+   "v": 10,
+   "file": "Mark.6.10.puck.mp3",
+   "d": 4.12,
+   "chars": 90,
+   "h": "sha256:aee7078eb846fd67"
+  },
+  "Mark.6.11": {
+   "ref": "มาระโก 6:11",
+   "osis": "Mark",
+   "c": 6,
+   "v": 11,
+   "file": "Mark.6.11.puck.mp3",
+   "d": 14.24,
+   "chars": 257,
+   "h": "sha256:c62c02fb7cd0751d"
+  },
+  "Mark.6.12": {
+   "ref": "มาระโก 6:12",
+   "osis": "Mark",
+   "c": 6,
+   "v": 12,
+   "file": "Mark.6.12.puck.mp3",
+   "d": 2.08,
+   "chars": 53,
+   "h": "sha256:f99972f6f478ef54"
+  },
+  "Mark.6.13": {
+   "ref": "มาระโก 6:13",
+   "osis": "Mark",
+   "c": 6,
+   "v": 13,
+   "file": "Mark.6.13.puck.mp3",
+   "d": 4.92,
+   "chars": 84,
+   "h": "sha256:d66e8f2a23a610b3"
+  },
+  "Mark.6.14": {
+   "ref": "มาระโก 6:14",
+   "osis": "Mark",
+   "c": 6,
+   "v": 14,
+   "file": "Mark.6.14.puck.mp3",
+   "d": 8.16,
+   "chars": 158,
+   "h": "sha256:4cdf8f01ca7a7518"
+  },
+  "Mark.6.15": {
+   "ref": "มาระโก 6:15",
+   "osis": "Mark",
+   "c": 6,
+   "v": 15,
+   "file": "Mark.6.15.puck.mp3",
+   "d": 5.96,
+   "chars": 93,
+   "h": "sha256:ac8d874c8f3a1f2c"
+  },
+  "Mark.6.16": {
+   "ref": "มาระโก 6:16",
+   "osis": "Mark",
+   "c": 6,
+   "v": 16,
+   "file": "Mark.6.16.puck.mp3",
+   "d": 7.2,
+   "chars": 97,
+   "h": "sha256:1d608f93ae23832d"
+  },
+  "Mark.6.17": {
+   "ref": "มาระโก 6:17",
+   "osis": "Mark",
+   "c": 6,
+   "v": 17,
+   "file": "Mark.6.17.puck.mp3",
+   "d": 8.2,
+   "chars": 149,
+   "h": "sha256:09f950c11845113b"
+  },
+  "Mark.6.18": {
+   "ref": "มาระโก 6:18",
+   "osis": "Mark",
+   "c": 6,
+   "v": 18,
+   "file": "Mark.6.18.puck.mp3",
+   "d": 4.0,
+   "chars": 83,
+   "h": "sha256:845ffecf0515d603"
+  },
+  "Mark.6.19": {
+   "ref": "มาระโก 6:19",
+   "osis": "Mark",
+   "c": 6,
+   "v": 19,
+   "file": "Mark.6.19.puck.mp3",
+   "d": 4.96,
+   "chars": 75,
+   "h": "sha256:79187c0bcd6efc66"
+  },
+  "Mark.6.20": {
+   "ref": "มาระโก 6:20",
+   "osis": "Mark",
+   "c": 6,
+   "v": 20,
+   "file": "Mark.6.20.puck.mp3",
+   "d": 8.64,
+   "chars": 151,
+   "h": "sha256:f222d6e5c94c677a"
+  },
+  "Mark.6.21": {
+   "ref": "มาระโก 6:21",
+   "osis": "Mark",
+   "c": 6,
+   "v": 21,
+   "file": "Mark.6.21.puck.mp3",
+   "d": 8.88,
+   "chars": 132,
+   "h": "sha256:fb6075bab27e05d3"
+  },
+  "Mark.6.22": {
+   "ref": "มาระโก 6:22",
+   "osis": "Mark",
+   "c": 6,
+   "v": 22,
+   "file": "Mark.6.22.puck.mp3",
+   "d": 11.04,
+   "chars": 191,
+   "h": "sha256:436684e850c4edb8"
+  },
+  "Mark.6.23": {
+   "ref": "มาระโก 6:23",
+   "osis": "Mark",
+   "c": 6,
+   "v": 23,
+   "file": "Mark.6.23.puck.mp3",
+   "d": 5.12,
+   "chars": 85,
+   "h": "sha256:139383920594babd"
+  },
+  "Mark.6.24": {
+   "ref": "มาระโก 6:24",
+   "osis": "Mark",
+   "c": 6,
+   "v": 24,
+   "file": "Mark.6.24.puck.mp3",
+   "d": 5.92,
+   "chars": 99,
+   "h": "sha256:af252a66f3f2ad81"
+  },
+  "Mark.6.25": {
+   "ref": "มาระโก 6:25",
+   "osis": "Mark",
+   "c": 6,
+   "v": 25,
+   "file": "Mark.6.25.puck.mp3",
+   "d": 6.4,
+   "chars": 139,
+   "h": "sha256:1ad7520857272936"
+  },
+  "Mark.6.26": {
+   "ref": "มาระโก 6:26",
+   "osis": "Mark",
+   "c": 6,
+   "v": 26,
+   "file": "Mark.6.26.puck.mp3",
+   "d": 6.56,
+   "chars": 117,
+   "h": "sha256:4ffaf2290fd0ce51"
+  },
+  "Mark.6.27": {
+   "ref": "มาระโก 6:27",
+   "osis": "Mark",
+   "c": 6,
+   "v": 27,
+   "file": "Mark.6.27.puck.mp3",
+   "d": 6.92,
+   "chars": 132,
+   "h": "sha256:1834918ff3753c51"
+  },
+  "Mark.6.28": {
+   "ref": "มาระโก 6:28",
+   "osis": "Mark",
+   "c": 6,
+   "v": 28,
+   "file": "Mark.6.28.puck.mp3",
+   "d": 5.28,
+   "chars": 107,
+   "h": "sha256:11af99b8d6f8bf5d"
+  },
+  "Mark.6.29": {
+   "ref": "มาระโก 6:29",
+   "osis": "Mark",
+   "c": 6,
+   "v": 29,
+   "file": "Mark.6.29.puck.mp3",
+   "d": 4.6,
+   "chars": 86,
+   "h": "sha256:75ae96ae747069f5"
+  },
+  "Mark.6.30": {
+   "ref": "มาระโก 6:30",
+   "osis": "Mark",
+   "c": 6,
+   "v": 30,
+   "file": "Mark.6.30.puck.mp3",
+   "d": 6.44,
+   "chars": 135,
+   "h": "sha256:2023f8d8612a1aab"
+  },
+  "Mark.6.31": {
+   "ref": "มาระโก 6:31",
+   "osis": "Mark",
+   "c": 6,
+   "v": 31,
+   "file": "Mark.6.31.puck.mp3",
+   "d": 8.52,
+   "chars": 149,
+   "h": "sha256:820018b6037fd430"
+  },
+  "Mark.6.32": {
+   "ref": "มาระโก 6:32",
+   "osis": "Mark",
+   "c": 6,
+   "v": 32,
+   "file": "Mark.6.32.puck.mp3",
+   "d": 3.2,
+   "chars": 61,
+   "h": "sha256:3652cff33200de64"
+  },
+  "Mark.6.33": {
+   "ref": "มาระโก 6:33",
+   "osis": "Mark",
+   "c": 6,
+   "v": 33,
+   "file": "Mark.6.33.puck.mp3",
+   "d": 7.8,
+   "chars": 138,
+   "h": "sha256:f88d3d795ac87c21"
+  },
+  "Mark.6.34": {
+   "ref": "มาระโก 6:34",
+   "osis": "Mark",
+   "c": 6,
+   "v": 34,
+   "file": "Mark.6.34.puck.mp3",
+   "d": 9.04,
+   "chars": 157,
+   "h": "sha256:a9f8ead5ef294acc"
+  },
+  "Mark.6.35": {
+   "ref": "มาระโก 6:35",
+   "osis": "Mark",
+   "c": 6,
+   "v": 35,
+   "file": "Mark.6.35.puck.mp3",
+   "d": 6.28,
+   "chars": 116,
+   "h": "sha256:f7f7da606a3a8d9e"
+  },
+  "Mark.6.36": {
+   "ref": "มาระโก 6:36",
+   "osis": "Mark",
+   "c": 6,
+   "v": 36,
+   "file": "Mark.6.36.puck.mp3",
+   "d": 5.8,
+   "chars": 131,
+   "h": "sha256:7e265e59bdd15f32"
+  },
+  "Mark.6.37": {
+   "ref": "มาระโก 6:37",
+   "osis": "Mark",
+   "c": 6,
+   "v": 37,
+   "file": "Mark.6.37.puck.mp3",
+   "d": 8.32,
+   "chars": 160,
+   "h": "sha256:dd6791329b119222"
+  },
+  "Mark.6.38": {
+   "ref": "มาระโก 6:38",
+   "osis": "Mark",
+   "c": 6,
+   "v": 38,
+   "file": "Mark.6.38.puck.mp3",
+   "d": 5.36,
+   "chars": 104,
+   "h": "sha256:43f936dfeb3a5bf0"
+  },
+  "Mark.6.39": {
+   "ref": "มาระโก 6:39",
+   "osis": "Mark",
+   "c": 6,
+   "v": 39,
+   "file": "Mark.6.39.puck.mp3",
+   "d": 4.12,
+   "chars": 77,
+   "h": "sha256:7d0e00f0a57e22b1"
+  },
+  "Mark.6.40": {
+   "ref": "มาระโก 6:40",
+   "osis": "Mark",
+   "c": 6,
+   "v": 40,
+   "file": "Mark.6.40.puck.mp3",
+   "d": 3.0,
+   "chars": 51,
+   "h": "sha256:7cdc9c8d01534134"
+  },
+  "Mark.6.41": {
+   "ref": "มาระโก 6:41",
+   "osis": "Mark",
+   "c": 6,
+   "v": 41,
+   "file": "Mark.6.41.puck.mp3",
+   "d": 10.32,
+   "chars": 193,
+   "h": "sha256:99a0f9a869ff5a55"
+  },
+  "Mark.6.42": {
+   "ref": "มาระโก 6:42",
+   "osis": "Mark",
+   "c": 6,
+   "v": 42,
+   "file": "Mark.6.42.puck.mp3",
+   "d": 2.8,
+   "chars": 29,
+   "h": "sha256:ff4314df0dbfb274"
+  },
+  "Mark.6.43": {
+   "ref": "มาระโก 6:43",
+   "osis": "Mark",
+   "c": 6,
+   "v": 43,
+   "file": "Mark.6.43.puck.mp3",
+   "d": 4.76,
+   "chars": 71,
+   "h": "sha256:112355d6bb5f5b74"
+  },
+  "Mark.6.44": {
+   "ref": "มาระโก 6:44",
+   "osis": "Mark",
+   "c": 6,
+   "v": 44,
+   "file": "Mark.6.44.puck.mp3",
+   "d": 3.48,
+   "chars": 48,
+   "h": "sha256:bcb16a5fd031f4e1"
+  },
+  "Mark.6.45": {
+   "ref": "มาระโก 6:45",
+   "osis": "Mark",
+   "c": 6,
+   "v": 45,
+   "file": "Mark.6.45.puck.mp3",
+   "d": 7.12,
+   "chars": 139,
+   "h": "sha256:1c32141e9f09004e"
+  },
+  "Mark.6.46": {
+   "ref": "มาระโก 6:46",
+   "osis": "Mark",
+   "c": 6,
+   "v": 46,
+   "file": "Mark.6.46.puck.mp3",
+   "d": 3.84,
+   "chars": 66,
+   "h": "sha256:22f8e8afa2fa1780"
+  },
+  "Mark.6.47": {
+   "ref": "มาระโก 6:47",
+   "osis": "Mark",
+   "c": 6,
+   "v": 47,
+   "file": "Mark.6.47.puck.mp3",
+   "d": 3.76,
+   "chars": 91,
+   "h": "sha256:5801c4ba2023469f"
+  },
+  "Mark.6.48": {
+   "ref": "มาระโก 6:48",
+   "osis": "Mark",
+   "c": 6,
+   "v": 48,
+   "file": "Mark.6.48.puck.mp3",
+   "d": 9.28,
+   "chars": 175,
+   "h": "sha256:de5c238d7f2ab6c9"
+  },
+  "Mark.6.49": {
+   "ref": "มาระโก 6:49",
+   "osis": "Mark",
+   "c": 6,
+   "v": 49,
+   "file": "Mark.6.49.puck.mp3",
+   "d": 5.12,
+   "chars": 92,
+   "h": "sha256:8dbfffcbb262022f"
+  },
+  "Mark.6.50": {
+   "ref": "มาระโก 6:50",
+   "osis": "Mark",
+   "c": 6,
+   "v": 50,
+   "file": "Mark.6.50.puck.mp3",
+   "d": 8.24,
+   "chars": 130,
+   "h": "sha256:a48d069e05dbd27e"
+  },
+  "Mark.6.51": {
+   "ref": "มาระโก 6:51",
+   "osis": "Mark",
+   "c": 6,
+   "v": 51,
+   "file": "Mark.6.51.puck.mp3",
+   "d": 5.64,
+   "chars": 110,
+   "h": "sha256:0faf297cbad6659b"
+  },
+  "Mark.6.52": {
+   "ref": "มาระโก 6:52",
+   "osis": "Mark",
+   "c": 6,
+   "v": 52,
+   "file": "Mark.6.52.puck.mp3",
+   "d": 3.88,
+   "chars": 76,
+   "h": "sha256:b4b911cbece89658"
+  },
+  "Mark.6.53": {
+   "ref": "มาระโก 6:53",
+   "osis": "Mark",
+   "c": 6,
+   "v": 53,
+   "file": "Mark.6.53.puck.mp3",
+   "d": 4.48,
+   "chars": 84,
+   "h": "sha256:b2125808e69f315f"
+  },
+  "Mark.6.54": {
+   "ref": "มาระโก 6:54",
+   "osis": "Mark",
+   "c": 6,
+   "v": 54,
+   "file": "Mark.6.54.puck.mp3",
+   "d": 4.4,
+   "chars": 74,
+   "h": "sha256:f036ef64ce68d684"
+  },
+  "Mark.6.55": {
+   "ref": "มาระโก 6:55",
+   "osis": "Mark",
+   "c": 6,
+   "v": 55,
+   "file": "Mark.6.55.puck.mp3",
+   "d": 5.44,
+   "chars": 114,
+   "h": "sha256:7bcf929012eccd09"
+  },
+  "Mark.6.56": {
+   "ref": "มาระโก 6:56",
+   "osis": "Mark",
+   "c": 6,
+   "v": 56,
+   "file": "Mark.6.56.puck.mp3",
+   "d": 11.44,
+   "chars": 221,
+   "h": "sha256:7d29e9c78793471b"
+  },
+  "Mark.7.1": {
+   "ref": "มาระโก 7:1",
+   "osis": "Mark",
+   "c": 7,
+   "v": 1,
+   "file": "Mark.7.1.puck.mp3",
+   "d": 4.56,
+   "chars": 96,
+   "h": "sha256:ad556f6b045bde7b"
+  },
+  "Mark.7.2": {
+   "ref": "มาระโก 7:2",
+   "osis": "Mark",
+   "c": 7,
+   "v": 2,
+   "file": "Mark.7.2.puck.mp3",
+   "d": 8.32,
+   "chars": 109,
+   "h": "sha256:8a685ecd085d1fc3"
+  },
+  "Mark.7.3": {
+   "ref": "มาระโก 7:3",
+   "osis": "Mark",
+   "c": 7,
+   "v": 3,
+   "file": "Mark.7.3.puck.mp3",
+   "d": 6.12,
+   "chars": 128,
+   "h": "sha256:ae1c7ce05215f570"
+  },
+  "Mark.7.4": {
+   "ref": "มาระโก 7:4",
+   "osis": "Mark",
+   "c": 7,
+   "v": 4,
+   "file": "Mark.7.4.puck.mp3",
+   "d": 9.84,
+   "chars": 207,
+   "h": "sha256:94d1f2e9e441a0b1"
+  },
+  "Mark.7.5": {
+   "ref": "มาระโก 7:5",
+   "osis": "Mark",
+   "c": 7,
+   "v": 5,
+   "file": "Mark.7.5.puck.mp3",
+   "d": 8.2,
+   "chars": 155,
+   "h": "sha256:bf0ea8fb6df295a9"
+  },
+  "Mark.7.6": {
+   "ref": "มาระโก 7:6",
+   "osis": "Mark",
+   "c": 7,
+   "v": 6,
+   "file": "Mark.7.6.puck.mp3",
+   "d": 9.32,
+   "chars": 152,
+   "h": "sha256:8af922c1b61a5f98"
+  },
+  "Mark.7.7": {
+   "ref": "มาระโก 7:7",
+   "osis": "Mark",
+   "c": 7,
+   "v": 7,
+   "file": "Mark.7.7.puck.mp3",
+   "d": 5.12,
+   "chars": 72,
+   "h": "sha256:4db86ecfbe90d7d0"
+  },
+  "Mark.7.8": {
+   "ref": "มาระโก 7:8",
+   "osis": "Mark",
+   "c": 7,
+   "v": 8,
+   "file": "Mark.7.8.puck.mp3",
+   "d": 9.2,
+   "chars": 153,
+   "h": "sha256:548fd16262ebd26f"
+  },
+  "Mark.7.9": {
+   "ref": "มาระโก 7:9",
+   "osis": "Mark",
+   "c": 7,
+   "v": 9,
+   "file": "Mark.7.9.puck.mp3",
+   "d": 6.0,
+   "chars": 99,
+   "h": "sha256:31d08442380e0017"
+  },
+  "Mark.7.10": {
+   "ref": "มาระโก 7:10",
+   "osis": "Mark",
+   "c": 7,
+   "v": 10,
+   "file": "Mark.7.10.puck.mp3",
+   "d": 8.0,
+   "chars": 124,
+   "h": "sha256:9fe39a74edb55310"
+  },
+  "Mark.7.11": {
+   "ref": "มาระโก 7:11",
+   "osis": "Mark",
+   "c": 7,
+   "v": 11,
+   "file": "Mark.7.11.puck.mp3",
+   "d": 8.2,
+   "chars": 147,
+   "h": "sha256:da0ec058069d6b25"
+  },
+  "Mark.7.12": {
+   "ref": "มาระโก 7:12",
+   "osis": "Mark",
+   "c": 7,
+   "v": 12,
+   "file": "Mark.7.12.puck.mp3",
+   "d": 4.12,
+   "chars": 74,
+   "h": "sha256:b7a116e6bebac257"
+  },
+  "Mark.7.13": {
+   "ref": "มาระโก 7:13",
+   "osis": "Mark",
+   "c": 7,
+   "v": 13,
+   "file": "Mark.7.13.puck.mp3",
+   "d": 5.16,
+   "chars": 104,
+   "h": "sha256:029459e770829100"
+  },
+  "Mark.7.14": {
+   "ref": "มาระโก 7:14",
+   "osis": "Mark",
+   "c": 7,
+   "v": 14,
+   "file": "Mark.7.14.puck.mp3",
+   "d": 5.92,
+   "chars": 94,
+   "h": "sha256:7568f13ce666658b"
+  },
+  "Mark.7.15": {
+   "ref": "มาระโก 7:15",
+   "osis": "Mark",
+   "c": 7,
+   "v": 15,
+   "file": "Mark.7.15.puck.mp3",
+   "d": 7.92,
+   "chars": 151,
+   "h": "sha256:489eaa2cce4b0154"
+  },
+  "Mark.7.16": {
+   "ref": "มาระโก 7:16",
+   "osis": "Mark",
+   "c": 7,
+   "v": 16,
+   "file": "Mark.7.16.puck.mp3",
+   "d": 2.28,
+   "chars": 42,
+   "h": "sha256:cda249ba3ed7c39a"
+  },
+  "Mark.7.17": {
+   "ref": "มาระโก 7:17",
+   "osis": "Mark",
+   "c": 7,
+   "v": 17,
+   "file": "Mark.7.17.puck.mp3",
+   "d": 4.76,
+   "chars": 100,
+   "h": "sha256:1a03a2f6273e3f05"
+  },
+  "Mark.7.18": {
+   "ref": "มาระโก 7:18",
+   "osis": "Mark",
+   "c": 7,
+   "v": 18,
+   "file": "Mark.7.18.puck.mp3",
+   "d": 7.72,
+   "chars": 135,
+   "h": "sha256:11d5d676560a660f"
+  },
+  "Mark.7.19": {
+   "ref": "มาระโก 7:19",
+   "osis": "Mark",
+   "c": 7,
+   "v": 19,
+   "file": "Mark.7.19.puck.mp3",
+   "d": 6.28,
+   "chars": 107,
+   "h": "sha256:b95f7b9c9424fc86"
+  },
+  "Mark.7.20": {
+   "ref": "มาระโก 7:20",
+   "osis": "Mark",
+   "c": 7,
+   "v": 20,
+   "file": "Mark.7.20.puck.mp3",
+   "d": 3.8,
+   "chars": 67,
+   "h": "sha256:9756668f88c82987"
+  },
+  "Mark.7.21": {
+   "ref": "มาระโก 7:21",
+   "osis": "Mark",
+   "c": 7,
+   "v": 21,
+   "file": "Mark.7.21.puck.mp3",
+   "d": 6.4,
+   "chars": 107,
+   "h": "sha256:599804bfabf269d2"
+  },
+  "Mark.7.22": {
+   "ref": "มาระโก 7:22",
+   "osis": "Mark",
+   "c": 7,
+   "v": 22,
+   "file": "Mark.7.22.puck.mp3",
+   "d": 7.04,
+   "chars": 95,
+   "h": "sha256:52d894a06ef870ec"
+  },
+  "Mark.7.23": {
+   "ref": "มาระโก 7:23",
+   "osis": "Mark",
+   "c": 7,
+   "v": 23,
+   "file": "Mark.7.23.puck.mp3",
+   "d": 3.64,
+   "chars": 59,
+   "h": "sha256:df4e9fbb5f77d189"
+  },
+  "Mark.7.24": {
+   "ref": "มาระโก 7:24",
+   "osis": "Mark",
+   "c": 7,
+   "v": 24,
+   "file": "Mark.7.24.puck.mp3",
+   "d": 8.88,
+   "chars": 159,
+   "h": "sha256:7d017b9a89bb9646"
+  },
+  "Mark.7.25": {
+   "ref": "มาระโก 7:25",
+   "osis": "Mark",
+   "c": 7,
+   "v": 25,
+   "file": "Mark.7.25.puck.mp3",
+   "d": 5.24,
+   "chars": 109,
+   "h": "sha256:62f636f28adf16b4"
+  },
+  "Mark.7.26": {
+   "ref": "มาระโก 7:26",
+   "osis": "Mark",
+   "c": 7,
+   "v": 26,
+   "file": "Mark.7.26.puck.mp3",
+   "d": 6.36,
+   "chars": 117,
+   "h": "sha256:fcc217b653f06c17"
+  },
+  "Mark.7.27": {
+   "ref": "มาระโก 7:27",
+   "osis": "Mark",
+   "c": 7,
+   "v": 27,
+   "file": "Mark.7.27.puck.mp3",
+   "d": 7.2,
+   "chars": 139,
+   "h": "sha256:12629465e1343596"
+  },
+  "Mark.7.28": {
+   "ref": "มาระโก 7:28",
+   "osis": "Mark",
+   "c": 7,
+   "v": 28,
+   "file": "Mark.7.28.puck.mp3",
+   "d": 5.56,
+   "chars": 95,
+   "h": "sha256:ab94d9ca60cb8ee1"
+  },
+  "Mark.7.29": {
+   "ref": "มาระโก 7:29",
+   "osis": "Mark",
+   "c": 7,
+   "v": 29,
+   "file": "Mark.7.29.puck.mp3",
+   "d": 4.6,
+   "chars": 88,
+   "h": "sha256:2327ad6f150e8a7f"
+  },
+  "Mark.7.30": {
+   "ref": "มาระโก 7:30",
+   "osis": "Mark",
+   "c": 7,
+   "v": 30,
+   "file": "Mark.7.30.puck.mp3",
+   "d": 5.92,
+   "chars": 101,
+   "h": "sha256:82e3bf8e0ceac145"
+  },
+  "Mark.7.31": {
+   "ref": "มาระโก 7:31",
+   "osis": "Mark",
+   "c": 7,
+   "v": 31,
+   "file": "Mark.7.31.puck.mp3",
+   "d": 6.96,
+   "chars": 131,
+   "h": "sha256:388590ee9486151f"
+  },
+  "Mark.7.32": {
+   "ref": "มาระโก 7:32",
+   "osis": "Mark",
+   "c": 7,
+   "v": 32,
+   "file": "Mark.7.32.puck.mp3",
+   "d": 6.32,
+   "chars": 113,
+   "h": "sha256:9256c44e6c7fa86a"
+  },
+  "Mark.7.33": {
+   "ref": "มาระโก 7:33",
+   "osis": "Mark",
+   "c": 7,
+   "v": 33,
+   "file": "Mark.7.33.puck.mp3",
+   "d": 5.72,
+   "chars": 117,
+   "h": "sha256:2fbf21747537db9a"
+  },
+  "Mark.7.34": {
+   "ref": "มาระโก 7:34",
+   "osis": "Mark",
+   "c": 7,
+   "v": 34,
+   "file": "Mark.7.34.puck.mp3",
+   "d": 5.04,
+   "chars": 84,
+   "h": "sha256:57143c3d18af3803"
+  },
+  "Mark.7.35": {
+   "ref": "มาระโก 7:35",
+   "osis": "Mark",
+   "c": 7,
+   "v": 35,
+   "file": "Mark.7.35.puck.mp3",
+   "d": 4.8,
+   "chars": 102,
+   "h": "sha256:5348657046917da1"
+  },
+  "Mark.7.36": {
+   "ref": "มาระโก 7:36",
+   "osis": "Mark",
+   "c": 7,
+   "v": 36,
+   "file": "Mark.7.36.puck.mp3",
+   "d": 6.76,
+   "chars": 123,
+   "h": "sha256:a25d40b11fa49a8a"
+  },
+  "Mark.7.37": {
+   "ref": "มาระโก 7:37",
+   "osis": "Mark",
+   "c": 7,
+   "v": 37,
+   "file": "Mark.7.37.puck.mp3",
+   "d": 7.72,
+   "chars": 123,
+   "h": "sha256:4232478e207f7f62"
+  },
+  "Mark.8.1": {
+   "ref": "มาระโก 8:1",
+   "osis": "Mark",
+   "c": 8,
+   "v": 1,
+   "file": "Mark.8.1.puck.mp3",
+   "d": 7.92,
+   "chars": 138,
+   "h": "sha256:f3c741b698e117dc"
+  },
+  "Mark.8.2": {
+   "ref": "มาระโก 8:2",
+   "osis": "Mark",
+   "c": 8,
+   "v": 2,
+   "file": "Mark.8.2.puck.mp3",
+   "d": 5.12,
+   "chars": 109,
+   "h": "sha256:09b25ca2af682bdd"
+  },
+  "Mark.8.3": {
+   "ref": "มาระโก 8:3",
+   "osis": "Mark",
+   "c": 8,
+   "v": 3,
+   "file": "Mark.8.3.puck.mp3",
+   "d": 4.88,
+   "chars": 110,
+   "h": "sha256:140e3efa69bb26d3"
+  },
+  "Mark.8.4": {
+   "ref": "มาระโก 8:4",
+   "osis": "Mark",
+   "c": 8,
+   "v": 4,
+   "file": "Mark.8.4.puck.mp3",
+   "d": 6.12,
+   "chars": 108,
+   "h": "sha256:48db5f030418d40c"
+  },
+  "Mark.8.5": {
+   "ref": "มาระโก 8:5",
+   "osis": "Mark",
+   "c": 8,
+   "v": 5,
+   "file": "Mark.8.5.puck.mp3",
+   "d": 2.8,
+   "chars": 65,
+   "h": "sha256:cf6123c8b31acb3b"
+  },
+  "Mark.8.6": {
+   "ref": "มาระโก 8:6",
+   "osis": "Mark",
+   "c": 8,
+   "v": 6,
+   "file": "Mark.8.6.puck.mp3",
+   "d": 10.0,
+   "chars": 190,
+   "h": "sha256:37d29f174ad45c5a"
+  },
+  "Mark.8.7": {
+   "ref": "มาระโก 8:7",
+   "osis": "Mark",
+   "c": 8,
+   "v": 7,
+   "file": "Mark.8.7.puck.mp3",
+   "d": 5.28,
+   "chars": 81,
+   "h": "sha256:dcf001eca8267d3e"
+  },
+  "Mark.8.8": {
+   "ref": "มาระโก 8:8",
+   "osis": "Mark",
+   "c": 8,
+   "v": 8,
+   "file": "Mark.8.8.puck.mp3",
+   "d": 5.04,
+   "chars": 90,
+   "h": "sha256:dd59c7a1b5e85848"
+  },
+  "Mark.8.9": {
+   "ref": "มาระโก 8:9",
+   "osis": "Mark",
+   "c": 8,
+   "v": 9,
+   "file": "Mark.8.9.puck.mp3",
+   "d": 3.76,
+   "chars": 69,
+   "h": "sha256:aeac6865dea356d4"
+  },
+  "Mark.8.10": {
+   "ref": "มาระโก 8:10",
+   "osis": "Mark",
+   "c": 8,
+   "v": 10,
+   "file": "Mark.8.10.puck.mp3",
+   "d": 5.6,
+   "chars": 95,
+   "h": "sha256:3e3b419df5680e3c"
+  },
+  "Mark.8.11": {
+   "ref": "มาระโก 8:11",
+   "osis": "Mark",
+   "c": 8,
+   "v": 11,
+   "file": "Mark.8.11.puck.mp3",
+   "d": 4.72,
+   "chars": 102,
+   "h": "sha256:e9cd94adf7c2379b"
+  },
+  "Mark.8.12": {
+   "ref": "มาระโก 8:12",
+   "osis": "Mark",
+   "c": 8,
+   "v": 12,
+   "file": "Mark.8.12.puck.mp3",
+   "d": 8.6,
+   "chars": 149,
+   "h": "sha256:beefc730f9a4628d"
+  },
+  "Mark.8.13": {
+   "ref": "มาระโก 8:13",
+   "osis": "Mark",
+   "c": 8,
+   "v": 13,
+   "file": "Mark.8.13.puck.mp3",
+   "d": 4.96,
+   "chars": 75,
+   "h": "sha256:a661df85f7828a9e"
+  },
+  "Mark.8.14": {
+   "ref": "มาระโก 8:14",
+   "osis": "Mark",
+   "c": 8,
+   "v": 14,
+   "file": "Mark.8.14.puck.mp3",
+   "d": 4.36,
+   "chars": 89,
+   "h": "sha256:8aeb162b6c8761d4"
+  },
+  "Mark.8.15": {
+   "ref": "มาระโก 8:15",
+   "osis": "Mark",
+   "c": 8,
+   "v": 15,
+   "file": "Mark.8.15.puck.mp3",
+   "d": 5.76,
+   "chars": 97,
+   "h": "sha256:2fdd4574eb47cf46"
+  },
+  "Mark.8.16": {
+   "ref": "มาระโก 8:16",
+   "osis": "Mark",
+   "c": 8,
+   "v": 16,
+   "file": "Mark.8.16.puck.mp3",
+   "d": 3.56,
+   "chars": 72,
+   "h": "sha256:fb8788800316fa17"
+  },
+  "Mark.8.17": {
+   "ref": "มาระโก 8:17",
+   "osis": "Mark",
+   "c": 8,
+   "v": 17,
+   "file": "Mark.8.17.puck.mp3",
+   "d": 10.52,
+   "chars": 159,
+   "h": "sha256:40a3443d864d7a2d"
+  },
+  "Mark.8.18": {
+   "ref": "มาระโก 8:18",
+   "osis": "Mark",
+   "c": 8,
+   "v": 18,
+   "file": "Mark.8.18.puck.mp3",
+   "d": 5.48,
+   "chars": 76,
+   "h": "sha256:d7943148a926323c"
+  },
+  "Mark.8.19": {
+   "ref": "มาระโก 8:19",
+   "osis": "Mark",
+   "c": 8,
+   "v": 19,
+   "file": "Mark.8.19.puck.mp3",
+   "d": 7.0,
+   "chars": 135,
+   "h": "sha256:3f1514e08e5fc76c"
+  },
+  "Mark.8.20": {
+   "ref": "มาระโก 8:20",
+   "osis": "Mark",
+   "c": 8,
+   "v": 20,
+   "file": "Mark.8.20.puck.mp3",
+   "d": 7.24,
+   "chars": 126,
+   "h": "sha256:0dadfc3f5808b27d"
+  },
+  "Mark.8.21": {
+   "ref": "มาระโก 8:21",
+   "osis": "Mark",
+   "c": 8,
+   "v": 21,
+   "file": "Mark.8.21.puck.mp3",
+   "d": 3.44,
+   "chars": 42,
+   "h": "sha256:8b306c9e46bebc11"
+  },
+  "Mark.8.22": {
+   "ref": "มาระโก 8:22",
+   "osis": "Mark",
+   "c": 8,
+   "v": 22,
+   "file": "Mark.8.22.puck.mp3",
+   "d": 5.6,
+   "chars": 82,
+   "h": "sha256:991d01e9c2693342"
+  },
+  "Mark.8.23": {
+   "ref": "มาระโก 8:23",
+   "osis": "Mark",
+   "c": 8,
+   "v": 23,
+   "file": "Mark.8.23.puck.mp3",
+   "d": 8.2,
+   "chars": 168,
+   "h": "sha256:8b5b7df05bfbb3c5"
+  },
+  "Mark.8.24": {
+   "ref": "มาระโก 8:24",
+   "osis": "Mark",
+   "c": 8,
+   "v": 24,
+   "file": "Mark.8.24.puck.mp3",
+   "d": 4.64,
+   "chars": 71,
+   "h": "sha256:5fe19c335c1e018b"
+  },
+  "Mark.8.25": {
+   "ref": "มาระโก 8:25",
+   "osis": "Mark",
+   "c": 8,
+   "v": 25,
+   "file": "Mark.8.25.puck.mp3",
+   "d": 6.72,
+   "chars": 105,
+   "h": "sha256:5c70df765c343d94"
+  },
+  "Mark.8.26": {
+   "ref": "มาระโก 8:26",
+   "osis": "Mark",
+   "c": 8,
+   "v": 26,
+   "file": "Mark.8.26.puck.mp3",
+   "d": 5.32,
+   "chars": 102,
+   "h": "sha256:ee667c87e1266199"
+  },
+  "Mark.8.27": {
+   "ref": "มาระโก 8:27",
+   "osis": "Mark",
+   "c": 8,
+   "v": 27,
+   "file": "Mark.8.27.puck.mp3",
+   "d": 8.0,
+   "chars": 138,
+   "h": "sha256:04662f00ce94fd34"
+  },
+  "Mark.8.28": {
+   "ref": "มาระโก 8:28",
+   "osis": "Mark",
+   "c": 8,
+   "v": 28,
+   "file": "Mark.8.28.puck.mp3",
+   "d": 5.68,
+   "chars": 91,
+   "h": "sha256:5af69a9511394ac5"
+  },
+  "Mark.8.29": {
+   "ref": "มาระโก 8:29",
+   "osis": "Mark",
+   "c": 8,
+   "v": 29,
+   "file": "Mark.8.29.puck.mp3",
+   "d": 5.52,
+   "chars": 86,
+   "h": "sha256:576373e682cef057"
+  },
+  "Mark.8.30": {
+   "ref": "มาระโก 8:30",
+   "osis": "Mark",
+   "c": 8,
+   "v": 30,
+   "file": "Mark.8.30.puck.mp3",
+   "d": 2.32,
+   "chars": 57,
+   "h": "sha256:b72eb5928e260606"
+  },
+  "Mark.8.31": {
+   "ref": "มาระโก 8:31",
+   "osis": "Mark",
+   "c": 8,
+   "v": 31,
+   "file": "Mark.8.31.puck.mp3",
+   "d": 9.56,
+   "chars": 182,
+   "h": "sha256:5524b47b8ae867b2"
+  },
+  "Mark.8.32": {
+   "ref": "มาระโก 8:32",
+   "osis": "Mark",
+   "c": 8,
+   "v": 32,
+   "file": "Mark.8.32.puck.mp3",
+   "d": 3.68,
+   "chars": 64,
+   "h": "sha256:e0e53029d4353e55"
+  },
+  "Mark.8.33": {
+   "ref": "มาระโก 8:33",
+   "osis": "Mark",
+   "c": 8,
+   "v": 33,
+   "file": "Mark.8.33.puck.mp3",
+   "d": 9.96,
+   "chars": 164,
+   "h": "sha256:82633e8fe073df34"
+  },
+  "Mark.8.34": {
+   "ref": "มาระโก 8:34",
+   "osis": "Mark",
+   "c": 8,
+   "v": 34,
+   "file": "Mark.8.34.puck.mp3",
+   "d": 8.4,
+   "chars": 164,
+   "h": "sha256:b1ffcdf1a2784a45"
+  },
+  "Mark.8.35": {
+   "ref": "มาระโก 8:35",
+   "osis": "Mark",
+   "c": 8,
+   "v": 35,
+   "file": "Mark.8.35.puck.mp3",
+   "d": 7.24,
+   "chars": 135,
+   "h": "sha256:050f7df59ef13b81"
+  },
+  "Mark.8.36": {
+   "ref": "มาระโก 8:36",
+   "osis": "Mark",
+   "c": 8,
+   "v": 36,
+   "file": "Mark.8.36.puck.mp3",
+   "d": 3.52,
+   "chars": 75,
+   "h": "sha256:b62883237217f901"
+  },
+  "Mark.8.37": {
+   "ref": "มาระโก 8:37",
+   "osis": "Mark",
+   "c": 8,
+   "v": 37,
+   "file": "Mark.8.37.puck.mp3",
+   "d": 2.4,
+   "chars": 50,
+   "h": "sha256:d372c7f2da163d5c"
+  },
+  "Mark.8.38": {
+   "ref": "มาระโก 8:38",
+   "osis": "Mark",
+   "c": 8,
+   "v": 38,
+   "file": "Mark.8.38.puck.mp3",
+   "d": 10.84,
+   "chars": 193,
+   "h": "sha256:0784ca5a29d07321"
+  },
+  "Mark.9.1": {
+   "ref": "มาระโก 9:1",
+   "osis": "Mark",
+   "c": 9,
+   "v": 1,
+   "file": "Mark.9.1.puck.mp3",
+   "d": 8.84,
+   "chars": 151,
+   "h": "sha256:7b8522c94269199e"
+  },
+  "Mark.9.2": {
+   "ref": "มาระโก 9:2",
+   "osis": "Mark",
+   "c": 9,
+   "v": 2,
+   "file": "Mark.9.2.puck.mp3",
+   "d": 8.76,
+   "chars": 179,
+   "h": "sha256:e3bedc6e4412294f"
+  },
+  "Mark.9.3": {
+   "ref": "มาระโก 9:3",
+   "osis": "Mark",
+   "c": 9,
+   "v": 3,
+   "file": "Mark.9.3.puck.mp3",
+   "d": 7.44,
+   "chars": 108,
+   "h": "sha256:c92a20ddb59ee643"
+  },
+  "Mark.9.4": {
+   "ref": "มาระโก 9:4",
+   "osis": "Mark",
+   "c": 9,
+   "v": 4,
+   "file": "Mark.9.4.puck.mp3",
+   "d": 4.36,
+   "chars": 68,
+   "h": "sha256:fe4af4bd50147ed3"
+  },
+  "Mark.9.5": {
+   "ref": "มาระโก 9:5",
+   "osis": "Mark",
+   "c": 9,
+   "v": 5,
+   "file": "Mark.9.5.puck.mp3",
+   "d": 8.4,
+   "chars": 132,
+   "h": "sha256:89b7dc0d4ce2e272"
+  },
+  "Mark.9.6": {
+   "ref": "มาระโก 9:6",
+   "osis": "Mark",
+   "c": 9,
+   "v": 6,
+   "file": "Mark.9.6.puck.mp3",
+   "d": 3.4,
+   "chars": 58,
+   "h": "sha256:334a2b10ac52da89"
+  },
+  "Mark.9.7": {
+   "ref": "มาระโก 9:7",
+   "osis": "Mark",
+   "c": 9,
+   "v": 7,
+   "file": "Mark.9.7.puck.mp3",
+   "d": 7.24,
+   "chars": 109,
+   "h": "sha256:fe171f084810513d"
+  },
+  "Mark.9.8": {
+   "ref": "มาระโก 9:8",
+   "osis": "Mark",
+   "c": 9,
+   "v": 8,
+   "file": "Mark.9.8.puck.mp3",
+   "d": 5.6,
+   "chars": 79,
+   "h": "sha256:8d62b3f4062f6809"
+  },
+  "Mark.9.9": {
+   "ref": "มาระโก 9:9",
+   "osis": "Mark",
+   "c": 9,
+   "v": 9,
+   "file": "Mark.9.9.puck.mp3",
+   "d": 8.76,
+   "chars": 169,
+   "h": "sha256:4ea5d18ee1f44437"
+  },
+  "Mark.9.10": {
+   "ref": "มาระโก 9:10",
+   "osis": "Mark",
+   "c": 9,
+   "v": 10,
+   "file": "Mark.9.10.puck.mp3",
+   "d": 4.76,
+   "chars": 87,
+   "h": "sha256:03d3936741d7f3c7"
+  },
+  "Mark.9.11": {
+   "ref": "มาระโก 9:11",
+   "osis": "Mark",
+   "c": 9,
+   "v": 11,
+   "file": "Mark.9.11.puck.mp3",
+   "d": 4.88,
+   "chars": 77,
+   "h": "sha256:095349a6db75dd2c"
+  },
+  "Mark.9.12": {
+   "ref": "มาระโก 9:12",
+   "osis": "Mark",
+   "c": 9,
+   "v": 12,
+   "file": "Mark.9.12.puck.mp3",
+   "d": 9.56,
+   "chars": 160,
+   "h": "sha256:59acc259e4956133"
+  },
+  "Mark.9.13": {
+   "ref": "มาระโก 9:13",
+   "osis": "Mark",
+   "c": 9,
+   "v": 13,
+   "file": "Mark.9.13.puck.mp3",
+   "d": 6.88,
+   "chars": 126,
+   "h": "sha256:c88565dac60adfb9"
+  },
+  "Mark.9.14": {
+   "ref": "มาระโก 9:14",
+   "osis": "Mark",
+   "c": 9,
+   "v": 14,
+   "file": "Mark.9.14.puck.mp3",
+   "d": 5.12,
+   "chars": 92,
+   "h": "sha256:919f24df1efec067"
+  },
+  "Mark.9.15": {
+   "ref": "มาระโก 9:15",
+   "osis": "Mark",
+   "c": 9,
+   "v": 15,
+   "file": "Mark.9.15.puck.mp3",
+   "d": 5.04,
+   "chars": 103,
+   "h": "sha256:09fdcf463fbeacbc"
+  },
+  "Mark.9.16": {
+   "ref": "มาระโก 9:16",
+   "osis": "Mark",
+   "c": 9,
+   "v": 16,
+   "file": "Mark.9.16.puck.mp3",
+   "d": 2.12,
+   "chars": 49,
+   "h": "sha256:bd23239ff728bb6a"
+  },
+  "Mark.9.17": {
+   "ref": "มาระโก 9:17",
+   "osis": "Mark",
+   "c": 9,
+   "v": 17,
+   "file": "Mark.9.17.puck.mp3",
+   "d": 5.28,
+   "chars": 88,
+   "h": "sha256:b7aed29b57755d92"
+  },
+  "Mark.9.18": {
+   "ref": "มาระโก 9:18",
+   "osis": "Mark",
+   "c": 9,
+   "v": 18,
+   "file": "Mark.9.18.puck.mp3",
+   "d": 10.6,
+   "chars": 174,
+   "h": "sha256:13790461d4e0e7ea"
+  },
+  "Mark.9.19": {
+   "ref": "มาระโก 9:19",
+   "osis": "Mark",
+   "c": 9,
+   "v": 19,
+   "file": "Mark.9.19.puck.mp3",
+   "d": 6.56,
+   "chars": 121,
+   "h": "sha256:29ac944ad1c5369c"
+  },
+  "Mark.9.20": {
+   "ref": "มาระโก 9:20",
+   "osis": "Mark",
+   "c": 9,
+   "v": 20,
+   "file": "Mark.9.20.puck.mp3",
+   "d": 8.64,
+   "chars": 145,
+   "h": "sha256:4362ec869c0b20c8"
+  },
+  "Mark.9.21": {
+   "ref": "มาระโก 9:21",
+   "osis": "Mark",
+   "c": 9,
+   "v": 21,
+   "file": "Mark.9.21.puck.mp3",
+   "d": 4.84,
+   "chars": 107,
+   "h": "sha256:2d990e8f097071ad"
+  },
+  "Mark.9.22": {
+   "ref": "มาระโก 9:22",
+   "osis": "Mark",
+   "c": 9,
+   "v": 22,
+   "file": "Mark.9.22.puck.mp3",
+   "d": 8.08,
+   "chars": 139,
+   "h": "sha256:d35afcedc2c5a231"
+  },
+  "Mark.9.23": {
+   "ref": "มาระโก 9:23",
+   "osis": "Mark",
+   "c": 9,
+   "v": 23,
+   "file": "Mark.9.23.puck.mp3",
+   "d": 4.84,
+   "chars": 85,
+   "h": "sha256:d6c49cea3fcb5b65"
+  },
+  "Mark.9.24": {
+   "ref": "มาระโก 9:24",
+   "osis": "Mark",
+   "c": 9,
+   "v": 24,
+   "file": "Mark.9.24.puck.mp3",
+   "d": 4.48,
+   "chars": 88,
+   "h": "sha256:7c92551a51d86935"
+  },
+  "Mark.9.25": {
+   "ref": "มาระโก 9:25",
+   "osis": "Mark",
+   "c": 9,
+   "v": 25,
+   "file": "Mark.9.25.puck.mp3",
+   "d": 11.72,
+   "chars": 187,
+   "h": "sha256:b6a57a8b9145268b"
+  },
+  "Mark.9.26": {
+   "ref": "มาระโก 9:26",
+   "osis": "Mark",
+   "c": 9,
+   "v": 26,
+   "file": "Mark.9.26.puck.mp3",
+   "d": 8.52,
+   "chars": 140,
+   "h": "sha256:f79bd0de549183b1"
+  },
+  "Mark.9.27": {
+   "ref": "มาระโก 9:27",
+   "osis": "Mark",
+   "c": 9,
+   "v": 27,
+   "file": "Mark.9.27.puck.mp3",
+   "d": 4.56,
+   "chars": 63,
+   "h": "sha256:ec2ca45ed968afb9"
+  },
+  "Mark.9.28": {
+   "ref": "มาระโก 9:28",
+   "osis": "Mark",
+   "c": 9,
+   "v": 28,
+   "file": "Mark.9.28.puck.mp3",
+   "d": 6.2,
+   "chars": 98,
+   "h": "sha256:b67cacde2c71f368"
+  },
+  "Mark.9.29": {
+   "ref": "มาระโก 9:29",
+   "osis": "Mark",
+   "c": 9,
+   "v": 29,
+   "file": "Mark.9.29.puck.mp3",
+   "d": 3.8,
+   "chars": 79,
+   "h": "sha256:61a4d5b2509a128b"
+  },
+  "Mark.9.30": {
+   "ref": "มาระโก 9:30",
+   "osis": "Mark",
+   "c": 9,
+   "v": 30,
+   "file": "Mark.9.30.puck.mp3",
+   "d": 4.08,
+   "chars": 86,
+   "h": "sha256:73a85fe3cc08d834"
+  },
+  "Mark.9.31": {
+   "ref": "มาระโก 9:31",
+   "osis": "Mark",
+   "c": 9,
+   "v": 31,
+   "file": "Mark.9.31.puck.mp3",
+   "d": 9.68,
+   "chars": 195,
+   "h": "sha256:948b0f3dc9748bd7"
+  },
+  "Mark.9.32": {
+   "ref": "มาระโก 9:32",
+   "osis": "Mark",
+   "c": 9,
+   "v": 32,
+   "file": "Mark.9.32.puck.mp3",
+   "d": 3.36,
+   "chars": 66,
+   "h": "sha256:c1dfef692c2053d2"
+  },
+  "Mark.9.33": {
+   "ref": "มาระโก 9:33",
+   "osis": "Mark",
+   "c": 9,
+   "v": 33,
+   "file": "Mark.9.33.puck.mp3",
+   "d": 6.2,
+   "chars": 118,
+   "h": "sha256:3504ece5579599b8"
+  },
+  "Mark.9.34": {
+   "ref": "มาระโก 9:34",
+   "osis": "Mark",
+   "c": 9,
+   "v": 34,
+   "file": "Mark.9.34.puck.mp3",
+   "d": 6.04,
+   "chars": 99,
+   "h": "sha256:cd4aab7f06c460a4"
+  },
+  "Mark.9.35": {
+   "ref": "มาระโก 9:35",
+   "osis": "Mark",
+   "c": 9,
+   "v": 35,
+   "file": "Mark.9.35.puck.mp3",
+   "d": 7.68,
+   "chars": 132,
+   "h": "sha256:da605a910e891b34"
+  },
+  "Mark.9.36": {
+   "ref": "มาระโก 9:36",
+   "osis": "Mark",
+   "c": 9,
+   "v": 36,
+   "file": "Mark.9.36.puck.mp3",
+   "d": 5.4,
+   "chars": 98,
+   "h": "sha256:7046731ad7c790c3"
+  },
+  "Mark.9.37": {
+   "ref": "มาระโก 9:37",
+   "osis": "Mark",
+   "c": 9,
+   "v": 37,
+   "file": "Mark.9.37.puck.mp3",
+   "d": 8.64,
+   "chars": 130,
+   "h": "sha256:b3493bafa721d6f1"
+  },
+  "Mark.9.38": {
+   "ref": "มาระโก 9:38",
+   "osis": "Mark",
+   "c": 9,
+   "v": 38,
+   "file": "Mark.9.38.puck.mp3",
+   "d": 8.56,
+   "chars": 148,
+   "h": "sha256:a2bd192efdf2c8ae"
+  },
+  "Mark.9.39": {
+   "ref": "มาระโก 9:39",
+   "osis": "Mark",
+   "c": 9,
+   "v": 39,
+   "file": "Mark.9.39.puck.mp3",
+   "d": 6.16,
+   "chars": 132,
+   "h": "sha256:480af595519d4591"
+  },
+  "Mark.9.40": {
+   "ref": "มาระโก 9:40",
+   "osis": "Mark",
+   "c": 9,
+   "v": 40,
+   "file": "Mark.9.40.puck.mp3",
+   "d": 2.64,
+   "chars": 45,
+   "h": "sha256:d9b5220780e7c2c8"
+  },
+  "Mark.9.41": {
+   "ref": "มาระโก 9:41",
+   "osis": "Mark",
+   "c": 9,
+   "v": 41,
+   "file": "Mark.9.41.puck.mp3",
+   "d": 7.72,
+   "chars": 148,
+   "h": "sha256:f228fb423d06535e"
+  },
+  "Mark.9.42": {
+   "ref": "มาระโก 9:42",
+   "osis": "Mark",
+   "c": 9,
+   "v": 42,
+   "file": "Mark.9.42.puck.mp3",
+   "d": 7.56,
+   "chars": 171,
+   "h": "sha256:d0dab35ca366cff3"
+  },
+  "Mark.9.43": {
+   "ref": "มาระโก 9:43",
+   "osis": "Mark",
+   "c": 9,
+   "v": 43,
+   "file": "Mark.9.43.puck.mp3",
+   "d": 10.12,
+   "chars": 177,
+   "h": "sha256:3f3924fcea5132e2"
+  },
+  "Mark.9.44": {
+   "ref": "มาระโก 9:44",
+   "osis": "Mark",
+   "c": 9,
+   "v": 44,
+   "file": "Mark.9.44.puck.mp3",
+   "d": 3.0,
+   "chars": 61,
+   "h": "sha256:05f55de63b6d86b9"
+  },
+  "Mark.9.45": {
+   "ref": "มาระโก 9:45",
+   "osis": "Mark",
+   "c": 9,
+   "v": 45,
+   "file": "Mark.9.45.puck.mp3",
+   "d": 10.44,
+   "chars": 194,
+   "h": "sha256:b6daab8b2dce51e0"
+  },
+  "Mark.9.46": {
+   "ref": "มาระโก 9:46",
+   "osis": "Mark",
+   "c": 9,
+   "v": 46,
+   "file": "Mark.9.46.puck.mp3",
+   "d": 3.0,
+   "chars": 61,
+   "h": "sha256:05f55de63b6d86b9"
+  },
+  "Mark.9.47": {
+   "ref": "มาระโก 9:47",
+   "osis": "Mark",
+   "c": 9,
+   "v": 47,
+   "file": "Mark.9.47.puck.mp3",
+   "d": 10.52,
+   "chars": 176,
+   "h": "sha256:ea57884977032b56"
+  },
+  "Mark.9.48": {
+   "ref": "มาระโก 9:48",
+   "osis": "Mark",
+   "c": 9,
+   "v": 48,
+   "file": "Mark.9.48.puck.mp3",
+   "d": 3.0,
+   "chars": 61,
+   "h": "sha256:05f55de63b6d86b9"
+  },
+  "Mark.9.49": {
+   "ref": "มาระโก 9:49",
+   "osis": "Mark",
+   "c": 9,
+   "v": 49,
+   "file": "Mark.9.49.puck.mp3",
+   "d": 4.8,
+   "chars": 86,
+   "h": "sha256:7487055fbb296765"
+  },
+  "Mark.9.50": {
+   "ref": "มาระโก 9:50",
+   "osis": "Mark",
+   "c": 9,
+   "v": 50,
+   "file": "Mark.9.50.puck.mp3",
+   "d": 8.96,
+   "chars": 143,
+   "h": "sha256:23c748a03d35fe4e"
+  },
+  "Mark.10.1": {
+   "ref": "มาระโก 10:1",
+   "osis": "Mark",
+   "c": 10,
+   "v": 1,
+   "file": "Mark.10.1.puck.mp3",
+   "d": 9.12,
+   "chars": 163,
+   "h": "sha256:5744bfc3282dadb6"
+  },
+  "Mark.10.2": {
+   "ref": "มาระโก 10:2",
+   "osis": "Mark",
+   "c": 10,
+   "v": 2,
+   "file": "Mark.10.2.puck.mp3",
+   "d": 6.4,
+   "chars": 95,
+   "h": "sha256:61a28165631e82f6"
+  },
+  "Mark.10.3": {
+   "ref": "มาระโก 10:3",
+   "osis": "Mark",
+   "c": 10,
+   "v": 3,
+   "file": "Mark.10.3.puck.mp3",
+   "d": 2.52,
+   "chars": 42,
+   "h": "sha256:1508ac60a4490862"
+  },
+  "Mark.10.4": {
+   "ref": "มาระโก 10:4",
+   "osis": "Mark",
+   "c": 10,
+   "v": 4,
+   "file": "Mark.10.4.puck.mp3",
+   "d": 4.64,
+   "chars": 86,
+   "h": "sha256:08967ba0b0b3c420"
+  },
+  "Mark.10.5": {
+   "ref": "มาระโก 10:5",
+   "osis": "Mark",
+   "c": 10,
+   "v": 5,
+   "file": "Mark.10.5.puck.mp3",
+   "d": 4.6,
+   "chars": 83,
+   "h": "sha256:0b09fbea58bbebd8"
+  },
+  "Mark.10.6": {
+   "ref": "มาระโก 10:6",
+   "osis": "Mark",
+   "c": 10,
+   "v": 6,
+   "file": "Mark.10.6.puck.mp3",
+   "d": 4.24,
+   "chars": 70,
+   "h": "sha256:e3dc2eb06d702737"
+  },
+  "Mark.10.7": {
+   "ref": "มาระโก 10:7",
+   "osis": "Mark",
+   "c": 10,
+   "v": 7,
+   "file": "Mark.10.7.puck.mp3",
+   "d": 4.36,
+   "chars": 81,
+   "h": "sha256:afed44d1cbf3889f"
+  },
+  "Mark.10.8": {
+   "ref": "มาระโก 10:8",
+   "osis": "Mark",
+   "c": 10,
+   "v": 8,
+   "file": "Mark.10.8.puck.mp3",
+   "d": 4.92,
+   "chars": 81,
+   "h": "sha256:4da9e2108cda8ecd"
+  },
+  "Mark.10.9": {
+   "ref": "มาระโก 10:9",
+   "osis": "Mark",
+   "c": 10,
+   "v": 9,
+   "file": "Mark.10.9.puck.mp3",
+   "d": 3.84,
+   "chars": 61,
+   "h": "sha256:fefa1383d479f8d1"
+  },
+  "Mark.10.10": {
+   "ref": "มาระโก 10:10",
+   "osis": "Mark",
+   "c": 10,
+   "v": 10,
+   "file": "Mark.10.10.puck.mp3",
+   "d": 3.8,
+   "chars": 66,
+   "h": "sha256:b0dd9d3eab0ea753"
+  },
+  "Mark.10.11": {
+   "ref": "มาระโก 10:11",
+   "osis": "Mark",
+   "c": 10,
+   "v": 11,
+   "file": "Mark.10.11.puck.mp3",
+   "d": 5.72,
+   "chars": 93,
+   "h": "sha256:b3d480da6deac5bb"
+  },
+  "Mark.10.12": {
+   "ref": "มาระโก 10:12",
+   "osis": "Mark",
+   "c": 10,
+   "v": 12,
+   "file": "Mark.10.12.puck.mp3",
+   "d": 4.88,
+   "chars": 83,
+   "h": "sha256:4eaa593b02b2ee7a"
+  },
+  "Mark.10.13": {
+   "ref": "มาระโก 10:13",
+   "osis": "Mark",
+   "c": 10,
+   "v": 13,
+   "file": "Mark.10.13.puck.mp3",
+   "d": 5.56,
+   "chars": 125,
+   "h": "sha256:86edc0eb545c1e8c"
+  },
+  "Mark.10.14": {
+   "ref": "มาระโก 10:14",
+   "osis": "Mark",
+   "c": 10,
+   "v": 14,
+   "file": "Mark.10.14.puck.mp3",
+   "d": 10.2,
+   "chars": 175,
+   "h": "sha256:19431484c6a7d7e0"
+  },
+  "Mark.10.15": {
+   "ref": "มาระโก 10:15",
+   "osis": "Mark",
+   "c": 10,
+   "v": 15,
+   "file": "Mark.10.15.puck.mp3",
+   "d": 7.0,
+   "chars": 120,
+   "h": "sha256:fc442b022badeba3"
+  },
+  "Mark.10.16": {
+   "ref": "มาระโก 10:16",
+   "osis": "Mark",
+   "c": 10,
+   "v": 16,
+   "file": "Mark.10.16.puck.mp3",
+   "d": 3.36,
+   "chars": 68,
+   "h": "sha256:7ab3f79b13bf6bbe"
+  },
+  "Mark.10.17": {
+   "ref": "มาระโก 10:17",
+   "osis": "Mark",
+   "c": 10,
+   "v": 17,
+   "file": "Mark.10.17.puck.mp3",
+   "d": 9.16,
+   "chars": 147,
+   "h": "sha256:72cb6536ef6cfc3f"
+  },
+  "Mark.10.18": {
+   "ref": "มาระโก 10:18",
+   "osis": "Mark",
+   "c": 10,
+   "v": 18,
+   "file": "Mark.10.18.puck.mp3",
+   "d": 6.68,
+   "chars": 75,
+   "h": "sha256:a88eee6f0d095a26"
+  },
+  "Mark.10.19": {
+   "ref": "มาระโก 10:19",
+   "osis": "Mark",
+   "c": 10,
+   "v": 19,
+   "file": "Mark.10.19.puck.mp3",
+   "d": 10.76,
+   "chars": 167,
+   "h": "sha256:5ed6a5987d2c019b"
+  },
+  "Mark.10.20": {
+   "ref": "มาระโก 10:20",
+   "osis": "Mark",
+   "c": 10,
+   "v": 20,
+   "file": "Mark.10.20.puck.mp3",
+   "d": 4.44,
+   "chars": 74,
+   "h": "sha256:7f47585d0bc9285a"
+  },
+  "Mark.10.21": {
+   "ref": "มาระโก 10:21",
+   "osis": "Mark",
+   "c": 10,
+   "v": 21,
+   "file": "Mark.10.21.puck.mp3",
+   "d": 11.92,
+   "chars": 199,
+   "h": "sha256:0e2071eb8d9894d0"
+  },
+  "Mark.10.22": {
+   "ref": "มาระโก 10:22",
+   "osis": "Mark",
+   "c": 10,
+   "v": 22,
+   "file": "Mark.10.22.puck.mp3",
+   "d": 5.68,
+   "chars": 103,
+   "h": "sha256:3eba8cf5d9625871"
+  },
+  "Mark.10.23": {
+   "ref": "มาระโก 10:23",
+   "osis": "Mark",
+   "c": 10,
+   "v": 23,
+   "file": "Mark.10.23.puck.mp3",
+   "d": 6.2,
+   "chars": 123,
+   "h": "sha256:bff0f1665ffc9442"
+  },
+  "Mark.10.24": {
+   "ref": "มาระโก 10:24",
+   "osis": "Mark",
+   "c": 10,
+   "v": 24,
+   "file": "Mark.10.24.puck.mp3",
+   "d": 10.24,
+   "chars": 150,
+   "h": "sha256:a4f48e84d13aa33b"
+  },
+  "Mark.10.25": {
+   "ref": "มาระโก 10:25",
+   "osis": "Mark",
+   "c": 10,
+   "v": 25,
+   "file": "Mark.10.25.puck.mp3",
+   "d": 6.28,
+   "chars": 103,
+   "h": "sha256:1db918db93efb0f6"
+  },
+  "Mark.10.26": {
+   "ref": "มาระโก 10:26",
+   "osis": "Mark",
+   "c": 10,
+   "v": 26,
+   "file": "Mark.10.26.puck.mp3",
+   "d": 3.64,
+   "chars": 73,
+   "h": "sha256:a9d8b263c42bfe52"
+  },
+  "Mark.10.27": {
+   "ref": "มาระโก 10:27",
+   "osis": "Mark",
+   "c": 10,
+   "v": 27,
+   "file": "Mark.10.27.puck.mp3",
+   "d": 7.0,
+   "chars": 114,
+   "h": "sha256:868118085443c02c"
+  },
+  "Mark.10.28": {
+   "ref": "มาระโก 10:28",
+   "osis": "Mark",
+   "c": 10,
+   "v": 28,
+   "file": "Mark.10.28.puck.mp3",
+   "d": 3.28,
+   "chars": 74,
+   "h": "sha256:2408934e3f9be25f"
+  },
+  "Mark.10.29": {
+   "ref": "มาระโก 10:29",
+   "osis": "Mark",
+   "c": 10,
+   "v": 29,
+   "file": "Mark.10.29.puck.mp3",
+   "d": 13.24,
+   "chars": 201,
+   "h": "sha256:38d3791dcfe680ae"
+  },
+  "Mark.10.30": {
+   "ref": "มาระโก 10:30",
+   "osis": "Mark",
+   "c": 10,
+   "v": 30,
+   "file": "Mark.10.30.puck.mp3",
+   "d": 10.08,
+   "chars": 172,
+   "h": "sha256:76f1dd4892e6f1f3"
+  },
+  "Mark.10.31": {
+   "ref": "มาระโก 10:31",
+   "osis": "Mark",
+   "c": 10,
+   "v": 31,
+   "file": "Mark.10.31.puck.mp3",
+   "d": 3.84,
+   "chars": 57,
+   "h": "sha256:4e1157aab77d5197"
+  },
+  "Mark.10.32": {
+   "ref": "มาระโก 10:32",
+   "osis": "Mark",
+   "c": 10,
+   "v": 32,
+   "file": "Mark.10.32.puck.mp3",
+   "d": 12.76,
+   "chars": 234,
+   "h": "sha256:76369dcde868dc78"
+  },
+  "Mark.10.33": {
+   "ref": "มาระโก 10:33",
+   "osis": "Mark",
+   "c": 10,
+   "v": 33,
+   "file": "Mark.10.33.puck.mp3",
+   "d": 8.32,
+   "chars": 179,
+   "h": "sha256:67f983bbc848ed39"
+  },
+  "Mark.10.34": {
+   "ref": "มาระโก 10:34",
+   "osis": "Mark",
+   "c": 10,
+   "v": 34,
+   "file": "Mark.10.34.puck.mp3",
+   "d": 7.0,
+   "chars": 97,
+   "h": "sha256:b7c08e9d4d0853ea"
+  },
+  "Mark.10.35": {
+   "ref": "มาระโก 10:35",
+   "osis": "Mark",
+   "c": 10,
+   "v": 35,
+   "file": "Mark.10.35.puck.mp3",
+   "d": 5.96,
+   "chars": 120,
+   "h": "sha256:a870982e5393a460"
+  },
+  "Mark.10.36": {
+   "ref": "มาระโก 10:36",
+   "osis": "Mark",
+   "c": 10,
+   "v": 36,
+   "file": "Mark.10.36.puck.mp3",
+   "d": 2.44,
+   "chars": 53,
+   "h": "sha256:5aedb0f42d923a71"
+  },
+  "Mark.10.37": {
+   "ref": "มาระโก 10:37",
+   "osis": "Mark",
+   "c": 10,
+   "v": 37,
+   "file": "Mark.10.37.puck.mp3",
+   "d": 7.56,
+   "chars": 113,
+   "h": "sha256:225cf5d7f6fb7647"
+  },
+  "Mark.10.38": {
+   "ref": "มาระโก 10:38",
+   "osis": "Mark",
+   "c": 10,
+   "v": 38,
+   "file": "Mark.10.38.puck.mp3",
+   "d": 9.04,
+   "chars": 166,
+   "h": "sha256:a1ca400201977c58"
+  },
+  "Mark.10.39": {
+   "ref": "มาระโก 10:39",
+   "osis": "Mark",
+   "c": 10,
+   "v": 39,
+   "file": "Mark.10.39.puck.mp3",
+   "d": 10.88,
+   "chars": 166,
+   "h": "sha256:afb8ebb5b37310d0"
+  },
+  "Mark.10.40": {
+   "ref": "มาระโก 10:40",
+   "osis": "Mark",
+   "c": 10,
+   "v": 40,
+   "file": "Mark.10.40.puck.mp3",
+   "d": 5.84,
+   "chars": 104,
+   "h": "sha256:06d27367971892ab"
+  },
+  "Mark.10.41": {
+   "ref": "มาระโก 10:41",
+   "osis": "Mark",
+   "c": 10,
+   "v": 41,
+   "file": "Mark.10.41.puck.mp3",
+   "d": 4.08,
+   "chars": 72,
+   "h": "sha256:a53c7adebb930220"
+  },
+  "Mark.10.42": {
+   "ref": "มาระโก 10:42",
+   "osis": "Mark",
+   "c": 10,
+   "v": 42,
+   "file": "Mark.10.42.puck.mp3",
+   "d": 9.48,
+   "chars": 173,
+   "h": "sha256:36ba4a82be87001b"
+  },
+  "Mark.10.43": {
+   "ref": "มาระโก 10:43",
+   "osis": "Mark",
+   "c": 10,
+   "v": 43,
+   "file": "Mark.10.43.puck.mp3",
+   "d": 4.36,
+   "chars": 100,
+   "h": "sha256:109ffb95dd1ab32f"
+  },
+  "Mark.10.44": {
+   "ref": "มาระโก 10:44",
+   "osis": "Mark",
+   "c": 10,
+   "v": 44,
+   "file": "Mark.10.44.puck.mp3",
+   "d": 4.28,
+   "chars": 75,
+   "h": "sha256:d2381e02548ce2c6"
+  },
+  "Mark.10.45": {
+   "ref": "มาระโก 10:45",
+   "osis": "Mark",
+   "c": 10,
+   "v": 45,
+   "file": "Mark.10.45.puck.mp3",
+   "d": 6.72,
+   "chars": 103,
+   "h": "sha256:37a05aea53fdb213"
+  },
+  "Mark.10.46": {
+   "ref": "มาระโก 10:46",
+   "osis": "Mark",
+   "c": 10,
+   "v": 46,
+   "file": "Mark.10.46.puck.mp3",
+   "d": 8.72,
+   "chars": 164,
+   "h": "sha256:9ca69e07ce0099e5"
+  },
+  "Mark.10.47": {
+   "ref": "มาระโก 10:47",
+   "osis": "Mark",
+   "c": 10,
+   "v": 47,
+   "file": "Mark.10.47.puck.mp3",
+   "d": 7.4,
+   "chars": 119,
+   "h": "sha256:5e4ca26901694af0"
+  },
+  "Mark.10.48": {
+   "ref": "มาระโก 10:48",
+   "osis": "Mark",
+   "c": 10,
+   "v": 48,
+   "file": "Mark.10.48.puck.mp3",
+   "d": 6.04,
+   "chars": 108,
+   "h": "sha256:ed9339cb5835efe1"
+  },
+  "Mark.10.49": {
+   "ref": "มาระโก 10:49",
+   "osis": "Mark",
+   "c": 10,
+   "v": 49,
+   "file": "Mark.10.49.puck.mp3",
+   "d": 7.16,
+   "chars": 120,
+   "h": "sha256:54cabe5d3f8bcf61"
+  },
+  "Mark.10.50": {
+   "ref": "มาระโก 10:50",
+   "osis": "Mark",
+   "c": 10,
+   "v": 50,
+   "file": "Mark.10.50.puck.mp3",
+   "d": 3.76,
+   "chars": 57,
+   "h": "sha256:023ed476cbcdab69"
+  },
+  "Mark.10.51": {
+   "ref": "มาระโก 10:51",
+   "osis": "Mark",
+   "c": 10,
+   "v": 51,
+   "file": "Mark.10.51.puck.mp3",
+   "d": 7.44,
+   "chars": 113,
+   "h": "sha256:951be28319b50f65"
+  },
+  "Mark.10.52": {
+   "ref": "มาระโก 10:52",
+   "osis": "Mark",
+   "c": 10,
+   "v": 52,
+   "file": "Mark.10.52.puck.mp3",
+   "d": 7.96,
+   "chars": 128,
+   "h": "sha256:9a7aaf6c1c7149a8"
+  },
+  "Mark.11.1": {
+   "ref": "มาระโก 11:1",
+   "osis": "Mark",
+   "c": 11,
+   "v": 1,
+   "file": "Mark.11.1.puck.mp3",
+   "d": 6.32,
+   "chars": 113,
+   "h": "sha256:ac28911d606ad19f"
+  },
+  "Mark.11.2": {
+   "ref": "มาระโก 11:2",
+   "osis": "Mark",
+   "c": 11,
+   "v": 2,
+   "file": "Mark.11.2.puck.mp3",
+   "d": 10.4,
+   "chars": 188,
+   "h": "sha256:742240c6fa8d6e2f"
+  },
+  "Mark.11.3": {
+   "ref": "มาระโก 11:3",
+   "osis": "Mark",
+   "c": 11,
+   "v": 3,
+   "file": "Mark.11.3.puck.mp3",
+   "d": 6.28,
+   "chars": 117,
+   "h": "sha256:59d2e540464a00a1"
+  },
+  "Mark.11.4": {
+   "ref": "มาระโก 11:4",
+   "osis": "Mark",
+   "c": 11,
+   "v": 4,
+   "file": "Mark.11.4.puck.mp3",
+   "d": 4.6,
+   "chars": 106,
+   "h": "sha256:562d632b0b7c4c15"
+  },
+  "Mark.11.5": {
+   "ref": "มาระโก 11:5",
+   "osis": "Mark",
+   "c": 11,
+   "v": 5,
+   "file": "Mark.11.5.puck.mp3",
+   "d": 4.24,
+   "chars": 89,
+   "h": "sha256:eaa25ade2d661a5b"
+  },
+  "Mark.11.6": {
+   "ref": "มาระโก 11:6",
+   "osis": "Mark",
+   "c": 11,
+   "v": 6,
+   "file": "Mark.11.6.puck.mp3",
+   "d": 3.44,
+   "chars": 63,
+   "h": "sha256:eaf2c7f7f92dc5c2"
+  },
+  "Mark.11.7": {
+   "ref": "มาระโก 11:7",
+   "osis": "Mark",
+   "c": 11,
+   "v": 7,
+   "file": "Mark.11.7.puck.mp3",
+   "d": 5.08,
+   "chars": 91,
+   "h": "sha256:0b7b1d1704bae1e0"
+  },
+  "Mark.11.8": {
+   "ref": "มาระโก 11:8",
+   "osis": "Mark",
+   "c": 11,
+   "v": 8,
+   "file": "Mark.11.8.puck.mp3",
+   "d": 6.04,
+   "chars": 123,
+   "h": "sha256:e37005ff3eee311d"
+  },
+  "Mark.11.9": {
+   "ref": "มาระโก 11:9",
+   "osis": "Mark",
+   "c": 11,
+   "v": 9,
+   "file": "Mark.11.9.puck.mp3",
+   "d": 6.36,
+   "chars": 116,
+   "h": "sha256:af729320cbc29db6"
+  },
+  "Mark.11.10": {
+   "ref": "มาระโก 11:10",
+   "osis": "Mark",
+   "c": 11,
+   "v": 10,
+   "file": "Mark.11.10.puck.mp3",
+   "d": 7.12,
+   "chars": 107,
+   "h": "sha256:e5a8f48fbaa55fe6"
+  },
+  "Mark.11.11": {
+   "ref": "มาระโก 11:11",
+   "osis": "Mark",
+   "c": 11,
+   "v": 11,
+   "file": "Mark.11.11.puck.mp3",
+   "d": 8.4,
+   "chars": 146,
+   "h": "sha256:769748ffdbe8e8db"
+  },
+  "Mark.11.12": {
+   "ref": "มาระโก 11:12",
+   "osis": "Mark",
+   "c": 11,
+   "v": 12,
+   "file": "Mark.11.12.puck.mp3",
+   "d": 3.2,
+   "chars": 65,
+   "h": "sha256:542ecf9cb35541f6"
+  },
+  "Mark.11.13": {
+   "ref": "มาระโก 11:13",
+   "osis": "Mark",
+   "c": 11,
+   "v": 13,
+   "file": "Mark.11.13.puck.mp3",
+   "d": 11.08,
+   "chars": 182,
+   "h": "sha256:27aa0237cc8f43ea"
+  },
+  "Mark.11.14": {
+   "ref": "มาระโก 11:14",
+   "osis": "Mark",
+   "c": 11,
+   "v": 14,
+   "file": "Mark.11.14.puck.mp3",
+   "d": 4.6,
+   "chars": 86,
+   "h": "sha256:ccd2aa9b1ca6965c"
+  },
+  "Mark.11.15": {
+   "ref": "มาระโก 11:15",
+   "osis": "Mark",
+   "c": 11,
+   "v": 15,
+   "file": "Mark.11.15.puck.mp3",
+   "d": 10.84,
+   "chars": 215,
+   "h": "sha256:c180e3851972717f"
+  },
+  "Mark.11.16": {
+   "ref": "มาระโก 11:16",
+   "osis": "Mark",
+   "c": 11,
+   "v": 16,
+   "file": "Mark.11.16.puck.mp3",
+   "d": 2.68,
+   "chars": 66,
+   "h": "sha256:6b60cb418e289d77"
+  },
+  "Mark.11.17": {
+   "ref": "มาระโก 11:17",
+   "osis": "Mark",
+   "c": 11,
+   "v": 17,
+   "file": "Mark.11.17.puck.mp3",
+   "d": 8.24,
+   "chars": 150,
+   "h": "sha256:fe246340a6c88d23"
+  },
+  "Mark.11.18": {
+   "ref": "มาระโก 11:18",
+   "osis": "Mark",
+   "c": 11,
+   "v": 18,
+   "file": "Mark.11.18.puck.mp3",
+   "d": 9.16,
+   "chars": 161,
+   "h": "sha256:bd93ca0a6518ea3a"
+  },
+  "Mark.11.19": {
+   "ref": "มาระโก 11:19",
+   "osis": "Mark",
+   "c": 11,
+   "v": 19,
+   "file": "Mark.11.19.puck.mp3",
+   "d": 3.16,
+   "chars": 43,
+   "h": "sha256:1563229af062932d"
+  },
+  "Mark.11.20": {
+   "ref": "มาระโก 11:20",
+   "osis": "Mark",
+   "c": 11,
+   "v": 20,
+   "file": "Mark.11.20.puck.mp3",
+   "d": 5.04,
+   "chars": 85,
+   "h": "sha256:be989d07e3c7d95a"
+  },
+  "Mark.11.21": {
+   "ref": "มาระโก 11:21",
+   "osis": "Mark",
+   "c": 11,
+   "v": 21,
+   "file": "Mark.11.21.puck.mp3",
+   "d": 6.76,
+   "chars": 96,
+   "h": "sha256:f9f2c52070fb4a23"
+  },
+  "Mark.11.22": {
+   "ref": "มาระโก 11:22",
+   "osis": "Mark",
+   "c": 11,
+   "v": 22,
+   "file": "Mark.11.22.puck.mp3",
+   "d": 2.6,
+   "chars": 40,
+   "h": "sha256:1fdc19f0fa69dc61"
+  },
+  "Mark.11.23": {
+   "ref": "มาระโก 11:23",
+   "osis": "Mark",
+   "c": 11,
+   "v": 23,
+   "file": "Mark.11.23.puck.mp3",
+   "d": 11.84,
+   "chars": 208,
+   "h": "sha256:63271442972a7603"
+  },
+  "Mark.11.24": {
+   "ref": "มาระโก 11:24",
+   "osis": "Mark",
+   "c": 11,
+   "v": 24,
+   "file": "Mark.11.24.puck.mp3",
+   "d": 6.92,
+   "chars": 125,
+   "h": "sha256:3830269132b4dc2e"
+  },
+  "Mark.11.25": {
+   "ref": "มาระโก 11:25",
+   "osis": "Mark",
+   "c": 11,
+   "v": 25,
+   "file": "Mark.11.25.puck.mp3",
+   "d": 7.56,
+   "chars": 154,
+   "h": "sha256:029cc6c8594794ba"
+  },
+  "Mark.11.26": {
+   "ref": "มาระโก 11:26",
+   "osis": "Mark",
+   "c": 11,
+   "v": 26,
+   "file": "Mark.11.26.puck.mp3",
+   "d": 4.08,
+   "chars": 91,
+   "h": "sha256:9af0c1bc78de7777"
+  },
+  "Mark.11.27": {
+   "ref": "มาระโก 11:27",
+   "osis": "Mark",
+   "c": 11,
+   "v": 27,
+   "file": "Mark.11.27.puck.mp3",
+   "d": 6.84,
+   "chars": 126,
+   "h": "sha256:ae4c2c58c1119190"
+  },
+  "Mark.11.28": {
+   "ref": "มาระโก 11:28",
+   "osis": "Mark",
+   "c": 11,
+   "v": 28,
+   "file": "Mark.11.28.puck.mp3",
+   "d": 6.4,
+   "chars": 124,
+   "h": "sha256:f7641be97f875609"
+  },
+  "Mark.11.29": {
+   "ref": "มาระโก 11:29",
+   "osis": "Mark",
+   "c": 11,
+   "v": 29,
+   "file": "Mark.11.29.puck.mp3",
+   "d": 6.16,
+   "chars": 117,
+   "h": "sha256:c082bd7049cc711c"
+  },
+  "Mark.11.30": {
+   "ref": "มาระโก 11:30",
+   "osis": "Mark",
+   "c": 11,
+   "v": 30,
+   "file": "Mark.11.30.puck.mp3",
+   "d": 4.36,
+   "chars": 64,
+   "h": "sha256:3fe907394e0bf2fd"
+  },
+  "Mark.11.31": {
+   "ref": "มาระโก 11:31",
+   "osis": "Mark",
+   "c": 11,
+   "v": 31,
+   "file": "Mark.11.31.puck.mp3",
+   "d": 7.2,
+   "chars": 121,
+   "h": "sha256:4662dc4791a301d7"
+  },
+  "Mark.11.32": {
+   "ref": "มาระโก 11:32",
+   "osis": "Mark",
+   "c": 11,
+   "v": 32,
+   "file": "Mark.11.32.puck.mp3",
+   "d": 6.2,
+   "chars": 95,
+   "h": "sha256:89260cab9374cd65"
+  },
+  "Mark.11.33": {
+   "ref": "มาระโก 11:33",
+   "osis": "Mark",
+   "c": 11,
+   "v": 33,
+   "file": "Mark.11.33.puck.mp3",
+   "d": 6.64,
+   "chars": 120,
+   "h": "sha256:77e0cbfd5ec933d3"
+  },
+  "Mark.12.1": {
+   "ref": "มาระโก 12:1",
+   "osis": "Mark",
+   "c": 12,
+   "v": 1,
+   "file": "Mark.12.1.puck.mp3",
+   "d": 11.28,
+   "chars": 191,
+   "h": "sha256:5d7fafc755d312e7"
+  },
+  "Mark.12.2": {
+   "ref": "มาระโก 12:2",
+   "osis": "Mark",
+   "c": 12,
+   "v": 2,
+   "file": "Mark.12.2.puck.mp3",
+   "d": 5.84,
+   "chars": 112,
+   "h": "sha256:2b7c3645c6d773d3"
+  },
+  "Mark.12.3": {
+   "ref": "มาระโก 12:3",
+   "osis": "Mark",
+   "c": 12,
+   "v": 3,
+   "file": "Mark.12.3.puck.mp3",
+   "d": 2.64,
+   "chars": 49,
+   "h": "sha256:323a86cece790241"
+  },
+  "Mark.12.4": {
+   "ref": "มาระโก 12:4",
+   "osis": "Mark",
+   "c": 12,
+   "v": 4,
+   "file": "Mark.12.4.puck.mp3",
+   "d": 7.64,
+   "chars": 132,
+   "h": "sha256:8e498bb18236725a"
+  },
+  "Mark.12.5": {
+   "ref": "มาระโก 12:5",
+   "osis": "Mark",
+   "c": 12,
+   "v": 5,
+   "file": "Mark.12.5.puck.mp3",
+   "d": 6.12,
+   "chars": 92,
+   "h": "sha256:8b5960ad6d8ac39e"
+  },
+  "Mark.12.6": {
+   "ref": "มาระโก 12:6",
+   "osis": "Mark",
+   "c": 12,
+   "v": 6,
+   "file": "Mark.12.6.puck.mp3",
+   "d": 6.68,
+   "chars": 106,
+   "h": "sha256:1b540cfc42be066f"
+  },
+  "Mark.12.7": {
+   "ref": "มาระโก 12:7",
+   "osis": "Mark",
+   "c": 12,
+   "v": 7,
+   "file": "Mark.12.7.puck.mp3",
+   "d": 6.48,
+   "chars": 116,
+   "h": "sha256:6f6ca212b5d03ab2"
+  },
+  "Mark.12.8": {
+   "ref": "มาระโก 12:8",
+   "osis": "Mark",
+   "c": 12,
+   "v": 8,
+   "file": "Mark.12.8.puck.mp3",
+   "d": 2.68,
+   "chars": 60,
+   "h": "sha256:cd12c37e44c3bdaa"
+  },
+  "Mark.12.9": {
+   "ref": "มาระโก 12:9",
+   "osis": "Mark",
+   "c": 12,
+   "v": 9,
+   "file": "Mark.12.9.puck.mp3",
+   "d": 6.52,
+   "chars": 124,
+   "h": "sha256:70229c2c6efc6f1a"
+  },
+  "Mark.12.10": {
+   "ref": "มาระโก 12:10",
+   "osis": "Mark",
+   "c": 12,
+   "v": 10,
+   "file": "Mark.12.10.puck.mp3",
+   "d": 5.56,
+   "chars": 109,
+   "h": "sha256:c72f2ad1c1af536f"
+  },
+  "Mark.12.11": {
+   "ref": "มาระโก 12:11",
+   "osis": "Mark",
+   "c": 12,
+   "v": 11,
+   "file": "Mark.12.11.puck.mp3",
+   "d": 3.36,
+   "chars": 54,
+   "h": "sha256:235c48c660f5c64d"
+  },
+  "Mark.12.12": {
+   "ref": "มาระโก 12:12",
+   "osis": "Mark",
+   "c": 12,
+   "v": 12,
+   "file": "Mark.12.12.puck.mp3",
+   "d": 7.16,
+   "chars": 143,
+   "h": "sha256:9c1364de15f50542"
+  },
+  "Mark.12.13": {
+   "ref": "มาระโก 12:13",
+   "osis": "Mark",
+   "c": 12,
+   "v": 13,
+   "file": "Mark.12.13.puck.mp3",
+   "d": 4.48,
+   "chars": 94,
+   "h": "sha256:7c0e2ee6ba810d4c"
+  },
+  "Mark.12.14": {
+   "ref": "มาระโก 12:14",
+   "osis": "Mark",
+   "c": 12,
+   "v": 14,
+   "file": "Mark.12.14.puck.mp3",
+   "d": 13.28,
+   "chars": 212,
+   "h": "sha256:6ce4e06fde9914db"
+  },
+  "Mark.12.15": {
+   "ref": "มาระโก 12:15",
+   "osis": "Mark",
+   "c": 12,
+   "v": 15,
+   "file": "Mark.12.15.puck.mp3",
+   "d": 9.56,
+   "chars": 146,
+   "h": "sha256:5dc42651618040bf"
+  },
+  "Mark.12.16": {
+   "ref": "มาระโก 12:16",
+   "osis": "Mark",
+   "c": 12,
+   "v": 16,
+   "file": "Mark.12.16.puck.mp3",
+   "d": 5.68,
+   "chars": 102,
+   "h": "sha256:4fd222e11089a1b2"
+  },
+  "Mark.12.17": {
+   "ref": "มาระโก 12:17",
+   "osis": "Mark",
+   "c": 12,
+   "v": 17,
+   "file": "Mark.12.17.puck.mp3",
+   "d": 7.72,
+   "chars": 135,
+   "h": "sha256:51b94c62e53d7623"
+  },
+  "Mark.12.18": {
+   "ref": "มาระโก 12:18",
+   "osis": "Mark",
+   "c": 12,
+   "v": 18,
+   "file": "Mark.12.18.puck.mp3",
+   "d": 5.92,
+   "chars": 91,
+   "h": "sha256:938002dddeb3d7fd"
+  },
+  "Mark.12.19": {
+   "ref": "มาระโก 12:19",
+   "osis": "Mark",
+   "c": 12,
+   "v": 19,
+   "file": "Mark.12.19.puck.mp3",
+   "d": 11.0,
+   "chars": 186,
+   "h": "sha256:6f8b4f1732d733a3"
+  },
+  "Mark.12.20": {
+   "ref": "มาระโก 12:20",
+   "osis": "Mark",
+   "c": 12,
+   "v": 20,
+   "file": "Mark.12.20.puck.mp3",
+   "d": 4.8,
+   "chars": 78,
+   "h": "sha256:720863abb4001b38"
+  },
+  "Mark.12.21": {
+   "ref": "มาระโก 12:21",
+   "osis": "Mark",
+   "c": 12,
+   "v": 21,
+   "file": "Mark.12.21.puck.mp3",
+   "d": 5.04,
+   "chars": 82,
+   "h": "sha256:979611a5189263a7"
+  },
+  "Mark.12.22": {
+   "ref": "มาระโก 12:22",
+   "osis": "Mark",
+   "c": 12,
+   "v": 22,
+   "file": "Mark.12.22.puck.mp3",
+   "d": 5.64,
+   "chars": 77,
+   "h": "sha256:0008bcabc192bdb6"
+  },
+  "Mark.12.23": {
+   "ref": "มาระโก 12:23",
+   "osis": "Mark",
+   "c": 12,
+   "v": 23,
+   "file": "Mark.12.23.puck.mp3",
+   "d": 5.48,
+   "chars": 102,
+   "h": "sha256:0dc401dee2ac4080"
+  },
+  "Mark.12.24": {
+   "ref": "มาระโก 12:24",
+   "osis": "Mark",
+   "c": 12,
+   "v": 24,
+   "file": "Mark.12.24.puck.mp3",
+   "d": 6.24,
+   "chars": 107,
+   "h": "sha256:3c6138dac74ae270"
+  },
+  "Mark.12.25": {
+   "ref": "มาระโก 12:25",
+   "osis": "Mark",
+   "c": 12,
+   "v": 25,
+   "file": "Mark.12.25.puck.mp3",
+   "d": 6.52,
+   "chars": 115,
+   "h": "sha256:eaf0ba7c2062285c"
+  },
+  "Mark.12.26": {
+   "ref": "มาระโก 12:26",
+   "osis": "Mark",
+   "c": 12,
+   "v": 26,
+   "file": "Mark.12.26.puck.mp3",
+   "d": 10.24,
+   "chars": 192,
+   "h": "sha256:480d0cd1882b08a9"
+  },
+  "Mark.12.27": {
+   "ref": "มาระโก 12:27",
+   "osis": "Mark",
+   "c": 12,
+   "v": 27,
+   "file": "Mark.12.27.puck.mp3",
+   "d": 4.28,
+   "chars": 84,
+   "h": "sha256:eb7d9d19bbab63d4"
+  },
+  "Mark.12.28": {
+   "ref": "มาระโก 12:28",
+   "osis": "Mark",
+   "c": 12,
+   "v": 28,
+   "file": "Mark.12.28.puck.mp3",
+   "d": 8.32,
+   "chars": 159,
+   "h": "sha256:02ea6397798501be"
+  },
+  "Mark.12.29": {
+   "ref": "มาระโก 12:29",
+   "osis": "Mark",
+   "c": 12,
+   "v": 29,
+   "file": "Mark.12.29.puck.mp3",
+   "d": 5.24,
+   "chars": 83,
+   "h": "sha256:b2079fbbd07e1482"
+  },
+  "Mark.12.30": {
+   "ref": "มาระโก 12:30",
+   "osis": "Mark",
+   "c": 12,
+   "v": 30,
+   "file": "Mark.12.30.puck.mp3",
+   "d": 9.08,
+   "chars": 153,
+   "h": "sha256:b97052710bdb2123"
+  },
+  "Mark.12.31": {
+   "ref": "มาระโก 12:31",
+   "osis": "Mark",
+   "c": 12,
+   "v": 31,
+   "file": "Mark.12.31.puck.mp3",
+   "d": 6.68,
+   "chars": 119,
+   "h": "sha256:e648d544629f11b4"
+  },
+  "Mark.12.32": {
+   "ref": "มาระโก 12:32",
+   "osis": "Mark",
+   "c": 12,
+   "v": 32,
+   "file": "Mark.12.32.puck.mp3",
+   "d": 6.4,
+   "chars": 107,
+   "h": "sha256:17104bc0137b0db6"
+  },
+  "Mark.12.33": {
+   "ref": "มาระโก 12:33",
+   "osis": "Mark",
+   "c": 12,
+   "v": 33,
+   "file": "Mark.12.33.puck.mp3",
+   "d": 10.52,
+   "chars": 207,
+   "h": "sha256:0a48de998c99601f"
+  },
+  "Mark.12.34": {
+   "ref": "มาระโก 12:34",
+   "osis": "Mark",
+   "c": 12,
+   "v": 34,
+   "file": "Mark.12.34.puck.mp3",
+   "d": 7.28,
+   "chars": 139,
+   "h": "sha256:605174d264f7bafa"
+  },
+  "Mark.12.35": {
+   "ref": "มาระโก 12:35",
+   "osis": "Mark",
+   "c": 12,
+   "v": 35,
+   "file": "Mark.12.35.puck.mp3",
+   "d": 6.4,
+   "chars": 113,
+   "h": "sha256:d1bdc0230f10ad6d"
+  },
+  "Mark.12.36": {
+   "ref": "มาระโก 12:36",
+   "osis": "Mark",
+   "c": 12,
+   "v": 36,
+   "file": "Mark.12.36.puck.mp3",
+   "d": 8.16,
+   "chars": 148,
+   "h": "sha256:5abe3fc38f20a38c"
+  },
+  "Mark.12.37": {
+   "ref": "มาระโก 12:37",
+   "osis": "Mark",
+   "c": 12,
+   "v": 37,
+   "file": "Mark.12.37.puck.mp3",
+   "d": 6.64,
+   "chars": 102,
+   "h": "sha256:7d7036e15a8386c0"
+  },
+  "Mark.12.38": {
+   "ref": "มาระโก 12:38",
+   "osis": "Mark",
+   "c": 12,
+   "v": 38,
+   "file": "Mark.12.38.puck.mp3",
+   "d": 7.44,
+   "chars": 130,
+   "h": "sha256:4cb1583903155409"
+  },
+  "Mark.12.39": {
+   "ref": "มาระโก 12:39",
+   "osis": "Mark",
+   "c": 12,
+   "v": 39,
+   "file": "Mark.12.39.puck.mp3",
+   "d": 4.76,
+   "chars": 74,
+   "h": "sha256:9b77e011bfe9faf4"
+  },
+  "Mark.12.40": {
+   "ref": "มาระโก 12:40",
+   "osis": "Mark",
+   "c": 12,
+   "v": 40,
+   "file": "Mark.12.40.puck.mp3",
+   "d": 7.6,
+   "chars": 112,
+   "h": "sha256:99007ccfc03bb093"
+  },
+  "Mark.12.41": {
+   "ref": "มาระโก 12:41",
+   "osis": "Mark",
+   "c": 12,
+   "v": 41,
+   "file": "Mark.12.41.puck.mp3",
+   "d": 8.4,
+   "chars": 125,
+   "h": "sha256:87620a77b30ac4ff"
+  },
+  "Mark.12.42": {
+   "ref": "มาระโก 12:42",
+   "osis": "Mark",
+   "c": 12,
+   "v": 42,
+   "file": "Mark.12.42.puck.mp3",
+   "d": 6.8,
+   "chars": 85,
+   "h": "sha256:b003583075069c96"
+  },
+  "Mark.12.43": {
+   "ref": "มาระโก 12:43",
+   "osis": "Mark",
+   "c": 12,
+   "v": 43,
+   "file": "Mark.12.43.puck.mp3",
+   "d": 9.28,
+   "chars": 155,
+   "h": "sha256:c24020c3027f2981"
+  },
+  "Mark.12.44": {
+   "ref": "มาระโก 12:44",
+   "osis": "Mark",
+   "c": 12,
+   "v": 44,
+   "file": "Mark.12.44.puck.mp3",
+   "d": 5.92,
+   "chars": 105,
+   "h": "sha256:4aa99a77ea088afa"
+  },
+  "Mark.13.1": {
+   "ref": "มาระโก 13:1",
+   "osis": "Mark",
+   "c": 13,
+   "v": 1,
+   "file": "Mark.13.1.puck.mp3",
+   "d": 7.32,
+   "chars": 126,
+   "h": "sha256:dd73b8d2debec071"
+  },
+  "Mark.13.2": {
+   "ref": "มาระโก 13:2",
+   "osis": "Mark",
+   "c": 13,
+   "v": 2,
+   "file": "Mark.13.2.puck.mp3",
+   "d": 6.8,
+   "chars": 135,
+   "h": "sha256:c11b89dde361a70b"
+  },
+  "Mark.13.3": {
+   "ref": "มาระโก 13:3",
+   "osis": "Mark",
+   "c": 13,
+   "v": 3,
+   "file": "Mark.13.3.puck.mp3",
+   "d": 5.92,
+   "chars": 105,
+   "h": "sha256:c74c6b6b6513a821"
+  },
+  "Mark.13.4": {
+   "ref": "มาระโก 13:4",
+   "osis": "Mark",
+   "c": 13,
+   "v": 4,
+   "file": "Mark.13.4.puck.mp3",
+   "d": 5.92,
+   "chars": 103,
+   "h": "sha256:09648d80ffc6b767"
+  },
+  "Mark.13.5": {
+   "ref": "มาระโก 13:5",
+   "osis": "Mark",
+   "c": 13,
+   "v": 5,
+   "file": "Mark.13.5.puck.mp3",
+   "d": 4.12,
+   "chars": 79,
+   "h": "sha256:2c76ef09aac0b9a8"
+  },
+  "Mark.13.6": {
+   "ref": "มาระโก 13:6",
+   "osis": "Mark",
+   "c": 13,
+   "v": 6,
+   "file": "Mark.13.6.puck.mp3",
+   "d": 4.52,
+   "chars": 76,
+   "h": "sha256:6c6780e3b00f4364"
+  },
+  "Mark.13.7": {
+   "ref": "มาระโก 13:7",
+   "osis": "Mark",
+   "c": 13,
+   "v": 7,
+   "file": "Mark.13.7.puck.mp3",
+   "d": 6.56,
+   "chars": 108,
+   "h": "sha256:6e68d3450d881e66"
+  },
+  "Mark.13.8": {
+   "ref": "มาระโก 13:8",
+   "osis": "Mark",
+   "c": 13,
+   "v": 8,
+   "file": "Mark.13.8.puck.mp3",
+   "d": 9.64,
+   "chars": 193,
+   "h": "sha256:8c67b67c96ca7d5a"
+  },
+  "Mark.13.9": {
+   "ref": "มาระโก 13:9",
+   "osis": "Mark",
+   "c": 13,
+   "v": 9,
+   "file": "Mark.13.9.puck.mp3",
+   "d": 9.84,
+   "chars": 175,
+   "h": "sha256:c37f0d68ee364e80"
+  },
+  "Mark.13.10": {
+   "ref": "มาระโก 13:10",
+   "osis": "Mark",
+   "c": 13,
+   "v": 10,
+   "file": "Mark.13.10.puck.mp3",
+   "d": 3.52,
+   "chars": 56,
+   "h": "sha256:3c30c495df0c4635"
+  },
+  "Mark.13.11": {
+   "ref": "มาระโก 13:11",
+   "osis": "Mark",
+   "c": 13,
+   "v": 11,
+   "file": "Mark.13.11.puck.mp3",
+   "d": 11.8,
+   "chars": 204,
+   "h": "sha256:c349d99311e54474"
+  },
+  "Mark.13.12": {
+   "ref": "มาระโก 13:12",
+   "osis": "Mark",
+   "c": 13,
+   "v": 12,
+   "file": "Mark.13.12.puck.mp3",
+   "d": 7.2,
+   "chars": 141,
+   "h": "sha256:ca272e70d2acbb00"
+  },
+  "Mark.13.13": {
+   "ref": "มาระโก 13:13",
+   "osis": "Mark",
+   "c": 13,
+   "v": 13,
+   "file": "Mark.13.13.puck.mp3",
+   "d": 5.08,
+   "chars": 93,
+   "h": "sha256:4f3ea14516451152"
+  },
+  "Mark.13.14": {
+   "ref": "มาระโก 13:14",
+   "osis": "Mark",
+   "c": 13,
+   "v": 14,
+   "file": "Mark.13.14.puck.mp3",
+   "d": 11.0,
+   "chars": 195,
+   "h": "sha256:32924a54241804ac"
+  },
+  "Mark.13.15": {
+   "ref": "มาระโก 13:15",
+   "osis": "Mark",
+   "c": 13,
+   "v": 15,
+   "file": "Mark.13.15.puck.mp3",
+   "d": 6.28,
+   "chars": 96,
+   "h": "sha256:a6f8d513f1ee1fdd"
+  },
+  "Mark.13.16": {
+   "ref": "มาระโก 13:16",
+   "osis": "Mark",
+   "c": 13,
+   "v": 16,
+   "file": "Mark.13.16.puck.mp3",
+   "d": 3.76,
+   "chars": 62,
+   "h": "sha256:bfcfcd2fc4274bf9"
+  },
+  "Mark.13.17": {
+   "ref": "มาระโก 13:17",
+   "osis": "Mark",
+   "c": 13,
+   "v": 17,
+   "file": "Mark.13.17.puck.mp3",
+   "d": 4.84,
+   "chars": 80,
+   "h": "sha256:726e2706cfb76871"
+  },
+  "Mark.13.18": {
+   "ref": "มาระโก 13:18",
+   "osis": "Mark",
+   "c": 13,
+   "v": 18,
+   "file": "Mark.13.18.puck.mp3",
+   "d": 1.6,
+   "chars": 45,
+   "h": "sha256:3538a240ff5f3dc3"
+  },
+  "Mark.13.19": {
+   "ref": "มาระโก 13:19",
+   "osis": "Mark",
+   "c": 13,
+   "v": 19,
+   "file": "Mark.13.19.puck.mp3",
+   "d": 8.8,
+   "chars": 162,
+   "h": "sha256:815deffc499cfc27"
+  },
+  "Mark.13.20": {
+   "ref": "มาระโก 13:20",
+   "osis": "Mark",
+   "c": 13,
+   "v": 20,
+   "file": "Mark.13.20.puck.mp3",
+   "d": 8.84,
+   "chars": 151,
+   "h": "sha256:3372efa2a0580ef8"
+  },
+  "Mark.13.21": {
+   "ref": "มาระโก 13:21",
+   "osis": "Mark",
+   "c": 13,
+   "v": 21,
+   "file": "Mark.13.21.puck.mp3",
+   "d": 4.6,
+   "chars": 90,
+   "h": "sha256:31e1c9be59e5d153"
+  },
+  "Mark.13.22": {
+   "ref": "มาระโก 13:22",
+   "osis": "Mark",
+   "c": 13,
+   "v": 22,
+   "file": "Mark.13.22.puck.mp3",
+   "d": 9.32,
+   "chars": 142,
+   "h": "sha256:a5564210addb3b95"
+  },
+  "Mark.13.23": {
+   "ref": "มาระโก 13:23",
+   "osis": "Mark",
+   "c": 13,
+   "v": 23,
+   "file": "Mark.13.23.puck.mp3",
+   "d": 3.84,
+   "chars": 62,
+   "h": "sha256:bed267763973dd17"
+  },
+  "Mark.13.24": {
+   "ref": "มาระโก 13:24",
+   "osis": "Mark",
+   "c": 13,
+   "v": 24,
+   "file": "Mark.13.24.puck.mp3",
+   "d": 6.04,
+   "chars": 101,
+   "h": "sha256:c7fd06d3eab208a1"
+  },
+  "Mark.13.25": {
+   "ref": "มาระโก 13:25",
+   "osis": "Mark",
+   "c": 13,
+   "v": 25,
+   "file": "Mark.13.25.puck.mp3",
+   "d": 4.76,
+   "chars": 94,
+   "h": "sha256:58626a4c2e024bcd"
+  },
+  "Mark.13.26": {
+   "ref": "มาระโก 13:26",
+   "osis": "Mark",
+   "c": 13,
+   "v": 26,
+   "file": "Mark.13.26.puck.mp3",
+   "d": 4.76,
+   "chars": 78,
+   "h": "sha256:92a4ecf51b5971f7"
+  },
+  "Mark.13.27": {
+   "ref": "มาระโก 13:27",
+   "osis": "Mark",
+   "c": 13,
+   "v": 27,
+   "file": "Mark.13.27.puck.mp3",
+   "d": 8.6,
+   "chars": 146,
+   "h": "sha256:aab935525afb1f52"
+  },
+  "Mark.13.28": {
+   "ref": "มาระโก 13:28",
+   "osis": "Mark",
+   "c": 13,
+   "v": 28,
+   "file": "Mark.13.28.puck.mp3",
+   "d": 8.6,
+   "chars": 140,
+   "h": "sha256:83703707672d5fcd"
+  },
+  "Mark.13.29": {
+   "ref": "มาระโก 13:29",
+   "osis": "Mark",
+   "c": 13,
+   "v": 29,
+   "file": "Mark.13.29.puck.mp3",
+   "d": 6.88,
+   "chars": 95,
+   "h": "sha256:93ead79c946e3e4d"
+  },
+  "Mark.13.30": {
+   "ref": "มาระโก 13:30",
+   "osis": "Mark",
+   "c": 13,
+   "v": 30,
+   "file": "Mark.13.30.puck.mp3",
+   "d": 6.92,
+   "chars": 94,
+   "h": "sha256:e32c9fb8bba0171d"
+  },
+  "Mark.13.31": {
+   "ref": "มาระโก 13:31",
+   "osis": "Mark",
+   "c": 13,
+   "v": 31,
+   "file": "Mark.13.31.puck.mp3",
+   "d": 3.92,
+   "chars": 65,
+   "h": "sha256:fe13b24407f9557d"
+  },
+  "Mark.13.32": {
+   "ref": "มาระโก 13:32",
+   "osis": "Mark",
+   "c": 13,
+   "v": 32,
+   "file": "Mark.13.32.puck.mp3",
+   "d": 7.6,
+   "chars": 107,
+   "h": "sha256:7a111d9e4bc2851c"
+  },
+  "Mark.13.33": {
+   "ref": "มาระโก 13:33",
+   "osis": "Mark",
+   "c": 13,
+   "v": 33,
+   "file": "Mark.13.33.puck.mp3",
+   "d": 4.0,
+   "chars": 65,
+   "h": "sha256:9df1e7a0670cfe11"
+  },
+  "Mark.13.34": {
+   "ref": "มาระโก 13:34",
+   "osis": "Mark",
+   "c": 13,
+   "v": 34,
+   "file": "Mark.13.34.puck.mp3",
+   "d": 9.32,
+   "chars": 181,
+   "h": "sha256:6c654ba9292f2a0f"
+  },
+  "Mark.13.35": {
+   "ref": "มาระโก 13:35",
+   "osis": "Mark",
+   "c": 13,
+   "v": 35,
+   "file": "Mark.13.35.puck.mp3",
+   "d": 7.72,
+   "chars": 154,
+   "h": "sha256:c6e5909a952da7e7"
+  },
+  "Mark.13.36": {
+   "ref": "มาระโก 13:36",
+   "osis": "Mark",
+   "c": 13,
+   "v": 36,
+   "file": "Mark.13.36.puck.mp3",
+   "d": 3.2,
+   "chars": 50,
+   "h": "sha256:c07ff998460a8cb1"
+  },
+  "Mark.13.37": {
+   "ref": "มาระโก 13:37",
+   "osis": "Mark",
+   "c": 13,
+   "v": 37,
+   "file": "Mark.13.37.puck.mp3",
+   "d": 3.4,
+   "chars": 36,
+   "h": "sha256:1a7a969714f978ac"
+  },
+  "Mark.14.1": {
+   "ref": "มาระโก 14:1",
+   "osis": "Mark",
+   "c": 14,
+   "v": 1,
+   "file": "Mark.14.1.puck.mp3",
+   "d": 9.72,
+   "chars": 171,
+   "h": "sha256:022271134efe7a49"
+  },
+  "Mark.14.2": {
+   "ref": "มาระโก 14:2",
+   "osis": "Mark",
+   "c": 14,
+   "v": 2,
+   "file": "Mark.14.2.puck.mp3",
+   "d": 4.4,
+   "chars": 86,
+   "h": "sha256:09f739002a883b84"
+  },
+  "Mark.14.3": {
+   "ref": "มาระโก 14:3",
+   "osis": "Mark",
+   "c": 14,
+   "v": 3,
+   "file": "Mark.14.3.puck.mp3",
+   "d": 12.16,
+   "chars": 203,
+   "h": "sha256:614a4aa76a2693ef"
+  },
+  "Mark.14.4": {
+   "ref": "มาระโก 14:4",
+   "osis": "Mark",
+   "c": 14,
+   "v": 4,
+   "file": "Mark.14.4.puck.mp3",
+   "d": 6.84,
+   "chars": 100,
+   "h": "sha256:2d388aabf83c59c9"
+  },
+  "Mark.14.5": {
+   "ref": "มาระโก 14:5",
+   "osis": "Mark",
+   "c": 14,
+   "v": 5,
+   "file": "Mark.14.5.puck.mp3",
+   "d": 6.64,
+   "chars": 119,
+   "h": "sha256:8a16317d7408ab12"
+  },
+  "Mark.14.6": {
+   "ref": "มาระโก 14:6",
+   "osis": "Mark",
+   "c": 14,
+   "v": 6,
+   "file": "Mark.14.6.puck.mp3",
+   "d": 5.84,
+   "chars": 90,
+   "h": "sha256:8f948e095f8a63e9"
+  },
+  "Mark.14.7": {
+   "ref": "มาระโก 14:7",
+   "osis": "Mark",
+   "c": 14,
+   "v": 7,
+   "file": "Mark.14.7.puck.mp3",
+   "d": 7.16,
+   "chars": 119,
+   "h": "sha256:3e32fad3d9aea981"
+  },
+  "Mark.14.8": {
+   "ref": "มาระโก 14:8",
+   "osis": "Mark",
+   "c": 14,
+   "v": 8,
+   "file": "Mark.14.8.puck.mp3",
+   "d": 5.76,
+   "chars": 81,
+   "h": "sha256:d1d3d58895992228"
+  },
+  "Mark.14.9": {
+   "ref": "มาระโก 14:9",
+   "osis": "Mark",
+   "c": 14,
+   "v": 9,
+   "file": "Mark.14.9.puck.mp3",
+   "d": 9.12,
+   "chars": 172,
+   "h": "sha256:8c40f560920e561d"
+  },
+  "Mark.14.10": {
+   "ref": "มาระโก 14:10",
+   "osis": "Mark",
+   "c": 14,
+   "v": 10,
+   "file": "Mark.14.10.puck.mp3",
+   "d": 6.32,
+   "chars": 109,
+   "h": "sha256:aab7000d7b4e5bd3"
+  },
+  "Mark.14.11": {
+   "ref": "มาระโก 14:11",
+   "osis": "Mark",
+   "c": 14,
+   "v": 11,
+   "file": "Mark.14.11.puck.mp3",
+   "d": 6.24,
+   "chars": 117,
+   "h": "sha256:35541c5440ede4cc"
+  },
+  "Mark.14.12": {
+   "ref": "มาระโก 14:12",
+   "osis": "Mark",
+   "c": 14,
+   "v": 12,
+   "file": "Mark.14.12.puck.mp3",
+   "d": 9.44,
+   "chars": 169,
+   "h": "sha256:9278c559e03a6ffb"
+  },
+  "Mark.14.13": {
+   "ref": "มาระโก 14:13",
+   "osis": "Mark",
+   "c": 14,
+   "v": 13,
+   "file": "Mark.14.13.puck.mp3",
+   "d": 8.48,
+   "chars": 136,
+   "h": "sha256:489a7dc6f138736e"
+  },
+  "Mark.14.14": {
+   "ref": "มาระโก 14:14",
+   "osis": "Mark",
+   "c": 14,
+   "v": 14,
+   "file": "Mark.14.14.puck.mp3",
+   "d": 8.12,
+   "chars": 151,
+   "h": "sha256:2b92736bcc48de36"
+  },
+  "Mark.14.15": {
+   "ref": "มาระโก 14:15",
+   "osis": "Mark",
+   "c": 14,
+   "v": 15,
+   "file": "Mark.14.15.puck.mp3",
+   "d": 5.24,
+   "chars": 89,
+   "h": "sha256:f2cb04aea9854edb"
+  },
+  "Mark.14.16": {
+   "ref": "มาระโก 14:16",
+   "osis": "Mark",
+   "c": 14,
+   "v": 16,
+   "file": "Mark.14.16.puck.mp3",
+   "d": 5.6,
+   "chars": 120,
+   "h": "sha256:dea0baa1eef5bf63"
+  },
+  "Mark.14.17": {
+   "ref": "มาระโก 14:17",
+   "osis": "Mark",
+   "c": 14,
+   "v": 17,
+   "file": "Mark.14.17.puck.mp3",
+   "d": 2.44,
+   "chars": 44,
+   "h": "sha256:6b3adadbe557f91e"
+  },
+  "Mark.14.18": {
+   "ref": "มาระโก 14:18",
+   "osis": "Mark",
+   "c": 14,
+   "v": 18,
+   "file": "Mark.14.18.puck.mp3",
+   "d": 8.08,
+   "chars": 116,
+   "h": "sha256:0dbf59db141e903d"
+  },
+  "Mark.14.19": {
+   "ref": "มาระโก 14:19",
+   "osis": "Mark",
+   "c": 14,
+   "v": 19,
+   "file": "Mark.14.19.puck.mp3",
+   "d": 7.44,
+   "chars": 104,
+   "h": "sha256:133729f4ab32463e"
+  },
+  "Mark.14.20": {
+   "ref": "มาระโก 14:20",
+   "osis": "Mark",
+   "c": 14,
+   "v": 20,
+   "file": "Mark.14.20.puck.mp3",
+   "d": 4.6,
+   "chars": 76,
+   "h": "sha256:f94605600b4e3f61"
+  },
+  "Mark.14.21": {
+   "ref": "มาระโก 14:21",
+   "osis": "Mark",
+   "c": 14,
+   "v": 21,
+   "file": "Mark.14.21.puck.mp3",
+   "d": 9.12,
+   "chars": 165,
+   "h": "sha256:a7dd07688615aec5"
+  },
+  "Mark.14.22": {
+   "ref": "มาระโก 14:22",
+   "osis": "Mark",
+   "c": 14,
+   "v": 22,
+   "file": "Mark.14.22.puck.mp3",
+   "d": 7.84,
+   "chars": 136,
+   "h": "sha256:5aeb16075cd7768e"
+  },
+  "Mark.14.23": {
+   "ref": "มาระโก 14:23",
+   "osis": "Mark",
+   "c": 14,
+   "v": 23,
+   "file": "Mark.14.23.puck.mp3",
+   "d": 4.44,
+   "chars": 85,
+   "h": "sha256:610967b2ec2b7b7f"
+  },
+  "Mark.14.24": {
+   "ref": "มาระโก 14:24",
+   "osis": "Mark",
+   "c": 14,
+   "v": 24,
+   "file": "Mark.14.24.puck.mp3",
+   "d": 5.52,
+   "chars": 85,
+   "h": "sha256:04a0e338392d98aa"
+  },
+  "Mark.14.25": {
+   "ref": "มาระโก 14:25",
+   "osis": "Mark",
+   "c": 14,
+   "v": 25,
+   "file": "Mark.14.25.puck.mp3",
+   "d": 8.4,
+   "chars": 127,
+   "h": "sha256:176ea4aa39d6b833"
+  },
+  "Mark.14.26": {
+   "ref": "มาระโก 14:26",
+   "osis": "Mark",
+   "c": 14,
+   "v": 26,
+   "file": "Mark.14.26.puck.mp3",
+   "d": 3.4,
+   "chars": 64,
+   "h": "sha256:5c3f29bec87b127b"
+  },
+  "Mark.14.27": {
+   "ref": "มาระโก 14:27",
+   "osis": "Mark",
+   "c": 14,
+   "v": 27,
+   "file": "Mark.14.27.puck.mp3",
+   "d": 7.44,
+   "chars": 160,
+   "h": "sha256:a36a85d1df86abb5"
+  },
+  "Mark.14.28": {
+   "ref": "มาระโก 14:28",
+   "osis": "Mark",
+   "c": 14,
+   "v": 28,
+   "file": "Mark.14.28.puck.mp3",
+   "d": 3.56,
+   "chars": 66,
+   "h": "sha256:2127aaa143074911"
+  },
+  "Mark.14.29": {
+   "ref": "มาระโก 14:29",
+   "osis": "Mark",
+   "c": 14,
+   "v": 29,
+   "file": "Mark.14.29.puck.mp3",
+   "d": 4.72,
+   "chars": 71,
+   "h": "sha256:1918252ad9d28c89"
+  },
+  "Mark.14.30": {
+   "ref": "มาระโก 14:30",
+   "osis": "Mark",
+   "c": 14,
+   "v": 30,
+   "file": "Mark.14.30.puck.mp3",
+   "d": 9.0,
+   "chars": 141,
+   "h": "sha256:0bfc8bcf0d53e534"
+  },
+  "Mark.14.31": {
+   "ref": "มาระโก 14:31",
+   "osis": "Mark",
+   "c": 14,
+   "v": 31,
+   "file": "Mark.14.31.puck.mp3",
+   "d": 7.0,
+   "chars": 103,
+   "h": "sha256:6758562e394b752d"
+  },
+  "Mark.14.32": {
+   "ref": "มาระโก 14:32",
+   "osis": "Mark",
+   "c": 14,
+   "v": 32,
+   "file": "Mark.14.32.puck.mp3",
+   "d": 5.32,
+   "chars": 99,
+   "h": "sha256:2c24d817ecc30716"
+  },
+  "Mark.14.33": {
+   "ref": "มาระโก 14:33",
+   "osis": "Mark",
+   "c": 14,
+   "v": 33,
+   "file": "Mark.14.33.puck.mp3",
+   "d": 4.68,
+   "chars": 89,
+   "h": "sha256:3c4a098d8da56130"
+  },
+  "Mark.14.34": {
+   "ref": "มาระโก 14:34",
+   "osis": "Mark",
+   "c": 14,
+   "v": 34,
+   "file": "Mark.14.34.puck.mp3",
+   "d": 6.4,
+   "chars": 88,
+   "h": "sha256:253dedc992a02b28"
+  },
+  "Mark.14.35": {
+   "ref": "มาระโก 14:35",
+   "osis": "Mark",
+   "c": 14,
+   "v": 35,
+   "file": "Mark.14.35.puck.mp3",
+   "d": 6.24,
+   "chars": 121,
+   "h": "sha256:be3581bffeb020ee"
+  },
+  "Mark.14.36": {
+   "ref": "มาระโก 14:36",
+   "osis": "Mark",
+   "c": 14,
+   "v": 36,
+   "file": "Mark.14.36.puck.mp3",
+   "d": 8.16,
+   "chars": 137,
+   "h": "sha256:81ef85c6d2c62b5a"
+  },
+  "Mark.14.37": {
+   "ref": "มาระโก 14:37",
+   "osis": "Mark",
+   "c": 14,
+   "v": 37,
+   "file": "Mark.14.37.puck.mp3",
+   "d": 5.92,
+   "chars": 106,
+   "h": "sha256:6e46ce5bd3d36144"
+  },
+  "Mark.14.38": {
+   "ref": "มาระโก 14:38",
+   "osis": "Mark",
+   "c": 14,
+   "v": 38,
+   "file": "Mark.14.38.puck.mp3",
+   "d": 6.72,
+   "chars": 109,
+   "h": "sha256:9d63de0b08598c81"
+  },
+  "Mark.14.39": {
+   "ref": "มาระโก 14:39",
+   "osis": "Mark",
+   "c": 14,
+   "v": 39,
+   "file": "Mark.14.39.puck.mp3",
+   "d": 3.2,
+   "chars": 53,
+   "h": "sha256:a6aba163c678c7a5"
+  },
+  "Mark.14.40": {
+   "ref": "มาระโก 14:40",
+   "osis": "Mark",
+   "c": 14,
+   "v": 40,
+   "file": "Mark.14.40.puck.mp3",
+   "d": 5.84,
+   "chars": 115,
+   "h": "sha256:8e1c8ac2c0fa705b"
+  },
+  "Mark.14.41": {
+   "ref": "มาระโก 14:41",
+   "osis": "Mark",
+   "c": 14,
+   "v": 41,
+   "file": "Mark.14.41.puck.mp3",
+   "d": 12.28,
+   "chars": 170,
+   "h": "sha256:1597ba6775730712"
+  },
+  "Mark.14.42": {
+   "ref": "มาระโก 14:42",
+   "osis": "Mark",
+   "c": 14,
+   "v": 42,
+   "file": "Mark.14.42.puck.mp3",
+   "d": 3.64,
+   "chars": 62,
+   "h": "sha256:10266c7bdb75c258"
+  },
+  "Mark.14.43": {
+   "ref": "มาระโก 14:43",
+   "osis": "Mark",
+   "c": 14,
+   "v": 43,
+   "file": "Mark.14.43.puck.mp3",
+   "d": 10.44,
+   "chars": 173,
+   "h": "sha256:2e61b8dd50ac8dbf"
+  },
+  "Mark.14.44": {
+   "ref": "มาระโก 14:44",
+   "osis": "Mark",
+   "c": 14,
+   "v": 44,
+   "file": "Mark.14.44.puck.mp3",
+   "d": 8.04,
+   "chars": 127,
+   "h": "sha256:0af66000c42f7d60"
+  },
+  "Mark.14.45": {
+   "ref": "มาระโก 14:45",
+   "osis": "Mark",
+   "c": 14,
+   "v": 45,
+   "file": "Mark.14.45.puck.mp3",
+   "d": 6.28,
+   "chars": 86,
+   "h": "sha256:33df9d2ef54088d1"
+  },
+  "Mark.14.46": {
+   "ref": "มาระโก 14:46",
+   "osis": "Mark",
+   "c": 14,
+   "v": 46,
+   "file": "Mark.14.46.puck.mp3",
+   "d": 2.32,
+   "chars": 44,
+   "h": "sha256:1ff616d328a752ed"
+  },
+  "Mark.14.47": {
+   "ref": "มาระโก 14:47",
+   "osis": "Mark",
+   "c": 14,
+   "v": 47,
+   "file": "Mark.14.47.puck.mp3",
+   "d": 6.68,
+   "chars": 118,
+   "h": "sha256:5ea6fa8ca42e520f"
+  },
+  "Mark.14.48": {
+   "ref": "มาระโก 14:48",
+   "osis": "Mark",
+   "c": 14,
+   "v": 48,
+   "file": "Mark.14.48.puck.mp3",
+   "d": 5.84,
+   "chars": 96,
+   "h": "sha256:1b2e223c1f4e82e6"
+  },
+  "Mark.14.49": {
+   "ref": "มาระโก 14:49",
+   "osis": "Mark",
+   "c": 14,
+   "v": 49,
+   "file": "Mark.14.49.puck.mp3",
+   "d": 7.36,
+   "chars": 126,
+   "h": "sha256:eab4603cdf3a5461"
+  },
+  "Mark.14.50": {
+   "ref": "มาระโก 14:50",
+   "osis": "Mark",
+   "c": 14,
+   "v": 50,
+   "file": "Mark.14.50.puck.mp3",
+   "d": 1.72,
+   "chars": 28,
+   "h": "sha256:739f44894d2e1086"
+  },
+  "Mark.14.51": {
+   "ref": "มาระโก 14:51",
+   "osis": "Mark",
+   "c": 14,
+   "v": 51,
+   "file": "Mark.14.51.puck.mp3",
+   "d": 6.84,
+   "chars": 124,
+   "h": "sha256:697cb58f7f111f5a"
+  },
+  "Mark.14.52": {
+   "ref": "มาระโก 14:52",
+   "osis": "Mark",
+   "c": 14,
+   "v": 52,
+   "file": "Mark.14.52.puck.mp3",
+   "d": 3.48,
+   "chars": 53,
+   "h": "sha256:54cfb99ea3b5f6aa"
+  },
+  "Mark.14.53": {
+   "ref": "มาระโก 14:53",
+   "osis": "Mark",
+   "c": 14,
+   "v": 53,
+   "file": "Mark.14.53.puck.mp3",
+   "d": 5.84,
+   "chars": 114,
+   "h": "sha256:9638f24501b7b41d"
+  },
+  "Mark.14.54": {
+   "ref": "มาระโก 14:54",
+   "osis": "Mark",
+   "c": 14,
+   "v": 54,
+   "file": "Mark.14.54.puck.mp3",
+   "d": 8.76,
+   "chars": 168,
+   "h": "sha256:d145ae5e8960cc3e"
+  },
+  "Mark.14.55": {
+   "ref": "มาระโก 14:55",
+   "osis": "Mark",
+   "c": 14,
+   "v": 55,
+   "file": "Mark.14.55.puck.mp3",
+   "d": 6.32,
+   "chars": 111,
+   "h": "sha256:6d9a84d9e51d3219"
+  },
+  "Mark.14.56": {
+   "ref": "มาระโก 14:56",
+   "osis": "Mark",
+   "c": 14,
+   "v": 56,
+   "file": "Mark.14.56.puck.mp3",
+   "d": 4.52,
+   "chars": 92,
+   "h": "sha256:8c47545008e16185"
+  },
+  "Mark.14.57": {
+   "ref": "มาระโก 14:57",
+   "osis": "Mark",
+   "c": 14,
+   "v": 57,
+   "file": "Mark.14.57.puck.mp3",
+   "d": 3.44,
+   "chars": 59,
+   "h": "sha256:6d5b0b12d157cc77"
+  },
+  "Mark.14.58": {
+   "ref": "มาระโก 14:58",
+   "osis": "Mark",
+   "c": 14,
+   "v": 58,
+   "file": "Mark.14.58.puck.mp3",
+   "d": 6.84,
+   "chars": 132,
+   "h": "sha256:1152c829e8c0d814"
+  },
+  "Mark.14.59": {
+   "ref": "มาระโก 14:59",
+   "osis": "Mark",
+   "c": 14,
+   "v": 59,
+   "file": "Mark.14.59.puck.mp3",
+   "d": 2.28,
+   "chars": 38,
+   "h": "sha256:0686b5e7b27346b7"
+  },
+  "Mark.14.60": {
+   "ref": "มาระโก 14:60",
+   "osis": "Mark",
+   "c": 14,
+   "v": 60,
+   "file": "Mark.14.60.puck.mp3",
+   "d": 7.72,
+   "chars": 122,
+   "h": "sha256:b9722fb6b90c2794"
+  },
+  "Mark.14.61": {
+   "ref": "มาระโก 14:61",
+   "osis": "Mark",
+   "c": 14,
+   "v": 61,
+   "file": "Mark.14.61.puck.mp3",
+   "d": 5.88,
+   "chars": 121,
+   "h": "sha256:7832245581f29efd"
+  },
+  "Mark.14.62": {
+   "ref": "มาระโก 14:62",
+   "osis": "Mark",
+   "c": 14,
+   "v": 62,
+   "file": "Mark.14.62.puck.mp3",
+   "d": 6.64,
+   "chars": 122,
+   "h": "sha256:6c3f9be26f3db311"
+  },
+  "Mark.14.63": {
+   "ref": "มาระโก 14:63",
+   "osis": "Mark",
+   "c": 14,
+   "v": 63,
+   "file": "Mark.14.63.puck.mp3",
+   "d": 5.08,
+   "chars": 83,
+   "h": "sha256:411d12d7282a195c"
+  },
+  "Mark.14.64": {
+   "ref": "มาระโก 14:64",
+   "osis": "Mark",
+   "c": 14,
+   "v": 64,
+   "file": "Mark.14.64.puck.mp3",
+   "d": 6.4,
+   "chars": 95,
+   "h": "sha256:5aa3c058e206c624"
+  },
+  "Mark.14.65": {
+   "ref": "มาระโก 14:65",
+   "osis": "Mark",
+   "c": 14,
+   "v": 65,
+   "file": "Mark.14.65.puck.mp3",
+   "d": 8.96,
+   "chars": 161,
+   "h": "sha256:958754abe8c9e208"
+  },
+  "Mark.14.66": {
+   "ref": "มาระโก 14:66",
+   "osis": "Mark",
+   "c": 14,
+   "v": 66,
+   "file": "Mark.14.66.puck.mp3",
+   "d": 4.96,
+   "chars": 78,
+   "h": "sha256:1842b54aeaa5f2ea"
+  },
+  "Mark.14.67": {
+   "ref": "มาระโก 14:67",
+   "osis": "Mark",
+   "c": 14,
+   "v": 67,
+   "file": "Mark.14.67.puck.mp3",
+   "d": 5.36,
+   "chars": 103,
+   "h": "sha256:8305333a9830118e"
+  },
+  "Mark.14.68": {
+   "ref": "มาระโก 14:68",
+   "osis": "Mark",
+   "c": 14,
+   "v": 68,
+   "file": "Mark.14.68.puck.mp3",
+   "d": 7.24,
+   "chars": 128,
+   "h": "sha256:13b8e6d7afc5581a"
+  },
+  "Mark.14.69": {
+   "ref": "มาระโก 14:69",
+   "osis": "Mark",
+   "c": 14,
+   "v": 69,
+   "file": "Mark.14.69.puck.mp3",
+   "d": 4.76,
+   "chars": 83,
+   "h": "sha256:581f633559347192"
+  },
+  "Mark.14.70": {
+   "ref": "มาระโก 14:70",
+   "osis": "Mark",
+   "c": 14,
+   "v": 70,
+   "file": "Mark.14.70.puck.mp3",
+   "d": 9.28,
+   "chars": 163,
+   "h": "sha256:9afbd0f65dd63c4e"
+  },
+  "Mark.14.71": {
+   "ref": "มาระโก 14:71",
+   "osis": "Mark",
+   "c": 14,
+   "v": 71,
+   "file": "Mark.14.71.puck.mp3",
+   "d": 5.4,
+   "chars": 78,
+   "h": "sha256:95e2ad1095ceb6f8"
+  },
+  "Mark.14.72": {
+   "ref": "มาระโก 14:72",
+   "osis": "Mark",
+   "c": 14,
+   "v": 72,
+   "file": "Mark.14.72.puck.mp3",
+   "d": 11.44,
+   "chars": 187,
+   "h": "sha256:452631f369d7e023"
+  },
+  "Mark.15.1": {
+   "ref": "มาระโก 15:1",
+   "osis": "Mark",
+   "c": 15,
+   "v": 1,
+   "file": "Mark.15.1.puck.mp3",
+   "d": 9.68,
+   "chars": 178,
+   "h": "sha256:028b95330785f6f4"
+  },
+  "Mark.15.2": {
+   "ref": "มาระโก 15:2",
+   "osis": "Mark",
+   "c": 15,
+   "v": 2,
+   "file": "Mark.15.2.puck.mp3",
+   "d": 4.12,
+   "chars": 76,
+   "h": "sha256:04f3b1b2ebb49fc5"
+  },
+  "Mark.15.3": {
+   "ref": "มาระโก 15:3",
+   "osis": "Mark",
+   "c": 15,
+   "v": 3,
+   "file": "Mark.15.3.puck.mp3",
+   "d": 2.2,
+   "chars": 45,
+   "h": "sha256:eb0ba989a94fb308"
+  },
+  "Mark.15.4": {
+   "ref": "มาระโก 15:4",
+   "osis": "Mark",
+   "c": 15,
+   "v": 4,
+   "file": "Mark.15.4.puck.mp3",
+   "d": 5.4,
+   "chars": 91,
+   "h": "sha256:d85c6ffb2e0c2e31"
+  },
+  "Mark.15.5": {
+   "ref": "มาระโก 15:5",
+   "osis": "Mark",
+   "c": 15,
+   "v": 5,
+   "file": "Mark.15.5.puck.mp3",
+   "d": 4.36,
+   "chars": 58,
+   "h": "sha256:d997865e7baee0d0"
+  },
+  "Mark.15.6": {
+   "ref": "มาระโก 15:6",
+   "osis": "Mark",
+   "c": 15,
+   "v": 6,
+   "file": "Mark.15.6.puck.mp3",
+   "d": 4.4,
+   "chars": 85,
+   "h": "sha256:b7b52c680ee1e348"
+  },
+  "Mark.15.7": {
+   "ref": "มาระโก 15:7",
+   "osis": "Mark",
+   "c": 15,
+   "v": 7,
+   "file": "Mark.15.7.puck.mp3",
+   "d": 7.12,
+   "chars": 114,
+   "h": "sha256:4ac3d70b1b66f26c"
+  },
+  "Mark.15.8": {
+   "ref": "มาระโก 15:8",
+   "osis": "Mark",
+   "c": 15,
+   "v": 8,
+   "file": "Mark.15.8.puck.mp3",
+   "d": 4.88,
+   "chars": 78,
+   "h": "sha256:0a16acef739415b4"
+  },
+  "Mark.15.9": {
+   "ref": "มาระโก 15:9",
+   "osis": "Mark",
+   "c": 15,
+   "v": 9,
+   "file": "Mark.15.9.puck.mp3",
+   "d": 5.04,
+   "chars": 86,
+   "h": "sha256:3d0d1d186d901817"
+  },
+  "Mark.15.10": {
+   "ref": "มาระโก 15:10",
+   "osis": "Mark",
+   "c": 15,
+   "v": 10,
+   "file": "Mark.15.10.puck.mp3",
+   "d": 3.16,
+   "chars": 70,
+   "h": "sha256:f19c70e372ba668f"
+  },
+  "Mark.15.11": {
+   "ref": "มาระโก 15:11",
+   "osis": "Mark",
+   "c": 15,
+   "v": 11,
+   "file": "Mark.15.11.puck.mp3",
+   "d": 4.84,
+   "chars": 96,
+   "h": "sha256:f767ced3fab7a546"
+  },
+  "Mark.15.12": {
+   "ref": "มาระโก 15:12",
+   "osis": "Mark",
+   "c": 15,
+   "v": 12,
+   "file": "Mark.15.12.puck.mp3",
+   "d": 5.04,
+   "chars": 91,
+   "h": "sha256:5b9315f872168876"
+  },
+  "Mark.15.13": {
+   "ref": "มาระโก 15:13",
+   "osis": "Mark",
+   "c": 15,
+   "v": 13,
+   "file": "Mark.15.13.puck.mp3",
+   "d": 1.96,
+   "chars": 36,
+   "h": "sha256:7e063634e04e4ffc"
+  },
+  "Mark.15.14": {
+   "ref": "มาระโก 15:14",
+   "osis": "Mark",
+   "c": 15,
+   "v": 14,
+   "file": "Mark.15.14.puck.mp3",
+   "d": 6.2,
+   "chars": 97,
+   "h": "sha256:159240ef2fad84c4"
+  },
+  "Mark.15.15": {
+   "ref": "มาระโก 15:15",
+   "osis": "Mark",
+   "c": 15,
+   "v": 15,
+   "file": "Mark.15.15.puck.mp3",
+   "d": 7.6,
+   "chars": 132,
+   "h": "sha256:9eef03f64233b06f"
+  },
+  "Mark.15.16": {
+   "ref": "มาระโก 15:16",
+   "osis": "Mark",
+   "c": 15,
+   "v": 16,
+   "file": "Mark.15.16.puck.mp3",
+   "d": 6.64,
+   "chars": 111,
+   "h": "sha256:5166c5149ddc392b"
+  },
+  "Mark.15.17": {
+   "ref": "มาระโก 15:17",
+   "osis": "Mark",
+   "c": 15,
+   "v": 17,
+   "file": "Mark.15.17.puck.mp3",
+   "d": 4.0,
+   "chars": 80,
+   "h": "sha256:dc06baa9b60393fc"
+  },
+  "Mark.15.18": {
+   "ref": "มาระโก 15:18",
+   "osis": "Mark",
+   "c": 15,
+   "v": 18,
+   "file": "Mark.15.18.puck.mp3",
+   "d": 3.84,
+   "chars": 51,
+   "h": "sha256:c7de69beab03bdbe"
+  },
+  "Mark.15.19": {
+   "ref": "มาระโก 15:19",
+   "osis": "Mark",
+   "c": 15,
+   "v": 19,
+   "file": "Mark.15.19.puck.mp3",
+   "d": 4.76,
+   "chars": 92,
+   "h": "sha256:ff2962a42109b95c"
+  },
+  "Mark.15.20": {
+   "ref": "มาระโก 15:20",
+   "osis": "Mark",
+   "c": 15,
+   "v": 20,
+   "file": "Mark.15.20.puck.mp3",
+   "d": 7.44,
+   "chars": 127,
+   "h": "sha256:0c82cd3f15455a69"
+  },
+  "Mark.15.21": {
+   "ref": "มาระโก 15:21",
+   "osis": "Mark",
+   "c": 15,
+   "v": 21,
+   "file": "Mark.15.21.puck.mp3",
+   "d": 9.68,
+   "chars": 153,
+   "h": "sha256:018545228c93255b"
+  },
+  "Mark.15.22": {
+   "ref": "มาระโก 15:22",
+   "osis": "Mark",
+   "c": 15,
+   "v": 22,
+   "file": "Mark.15.22.puck.mp3",
+   "d": 5.88,
+   "chars": 99,
+   "h": "sha256:01de6af3ca107318"
+  },
+  "Mark.15.23": {
+   "ref": "มาระโก 15:23",
+   "osis": "Mark",
+   "c": 15,
+   "v": 23,
+   "file": "Mark.15.23.puck.mp3",
+   "d": 4.52,
+   "chars": 71,
+   "h": "sha256:bfcde1113b36053a"
+  },
+  "Mark.15.24": {
+   "ref": "มาระโก 15:24",
+   "osis": "Mark",
+   "c": 15,
+   "v": 24,
+   "file": "Mark.15.24.puck.mp3",
+   "d": 6.84,
+   "chars": 97,
+   "h": "sha256:9b611d379200db4d"
+  },
+  "Mark.15.25": {
+   "ref": "มาระโก 15:25",
+   "osis": "Mark",
+   "c": 15,
+   "v": 25,
+   "file": "Mark.15.25.puck.mp3",
+   "d": 2.24,
+   "chars": 46,
+   "h": "sha256:da87df22ee2d0340"
+  },
+  "Mark.15.26": {
+   "ref": "มาระโก 15:26",
+   "osis": "Mark",
+   "c": 15,
+   "v": 26,
+   "file": "Mark.15.26.puck.mp3",
+   "d": 6.08,
+   "chars": 82,
+   "h": "sha256:a7a6ab455da2fe19"
+  },
+  "Mark.15.27": {
+   "ref": "มาระโก 15:27",
+   "osis": "Mark",
+   "c": 15,
+   "v": 27,
+   "file": "Mark.15.27.puck.mp3",
+   "d": 4.52,
+   "chars": 80,
+   "h": "sha256:abff0d5324dc348c"
+  },
+  "Mark.15.28": {
+   "ref": "มาระโก 15:28",
+   "osis": "Mark",
+   "c": 15,
+   "v": 28,
+   "file": "Mark.15.28.puck.mp3",
+   "d": 4.28,
+   "chars": 76,
+   "h": "sha256:a29cd1769f71b6aa"
+  },
+  "Mark.15.29": {
+   "ref": "มาระโก 15:29",
+   "osis": "Mark",
+   "c": 15,
+   "v": 29,
+   "file": "Mark.15.29.puck.mp3",
+   "d": 7.76,
+   "chars": 127,
+   "h": "sha256:c5385d92146350b4"
+  },
+  "Mark.15.30": {
+   "ref": "มาระโก 15:30",
+   "osis": "Mark",
+   "c": 15,
+   "v": 30,
+   "file": "Mark.15.30.puck.mp3",
+   "d": 2.72,
+   "chars": 45,
+   "h": "sha256:7e343e83d6ffa087"
+  },
+  "Mark.15.31": {
+   "ref": "มาระโก 15:31",
+   "osis": "Mark",
+   "c": 15,
+   "v": 31,
+   "file": "Mark.15.31.puck.mp3",
+   "d": 7.12,
+   "chars": 121,
+   "h": "sha256:8b15c9a7fdf374a9"
+  },
+  "Mark.15.32": {
+   "ref": "มาระโก 15:32",
+   "osis": "Mark",
+   "c": 15,
+   "v": 32,
+   "file": "Mark.15.32.puck.mp3",
+   "d": 8.84,
+   "chars": 152,
+   "h": "sha256:b6e6e266d44e6287"
+  },
+  "Mark.15.33": {
+   "ref": "มาระโก 15:33",
+   "osis": "Mark",
+   "c": 15,
+   "v": 33,
+   "file": "Mark.15.33.puck.mp3",
+   "d": 5.4,
+   "chars": 90,
+   "h": "sha256:7342bb2dfe5e19b2"
+  },
+  "Mark.15.34": {
+   "ref": "มาระโก 15:34",
+   "osis": "Mark",
+   "c": 15,
+   "v": 34,
+   "file": "Mark.15.34.puck.mp3",
+   "d": 11.76,
+   "chars": 161,
+   "h": "sha256:a1cecb1cf5467807"
+  },
+  "Mark.15.35": {
+   "ref": "มาระโก 15:35",
+   "osis": "Mark",
+   "c": 15,
+   "v": 35,
+   "file": "Mark.15.35.puck.mp3",
+   "d": 5.0,
+   "chars": 85,
+   "h": "sha256:0f198a53c9afdc8c"
+  },
+  "Mark.15.36": {
+   "ref": "มาระโก 15:36",
+   "osis": "Mark",
+   "c": 15,
+   "v": 36,
+   "file": "Mark.15.36.puck.mp3",
+   "d": 9.68,
+   "chars": 163,
+   "h": "sha256:021315e8ecc1d03f"
+  },
+  "Mark.15.37": {
+   "ref": "มาระโก 15:37",
+   "osis": "Mark",
+   "c": 15,
+   "v": 37,
+   "file": "Mark.15.37.puck.mp3",
+   "d": 4.4,
+   "chars": 58,
+   "h": "sha256:46c26a36e263ed8e"
+  },
+  "Mark.15.38": {
+   "ref": "มาระโก 15:38",
+   "osis": "Mark",
+   "c": 15,
+   "v": 38,
+   "file": "Mark.15.38.puck.mp3",
+   "d": 3.72,
+   "chars": 66,
+   "h": "sha256:f8fc53c74329d2f4"
+  },
+  "Mark.15.39": {
+   "ref": "มาระโก 15:39",
+   "osis": "Mark",
+   "c": 15,
+   "v": 39,
+   "file": "Mark.15.39.puck.mp3",
+   "d": 10.24,
+   "chars": 147,
+   "h": "sha256:c2380eb117ebab67"
+  },
+  "Mark.15.40": {
+   "ref": "มาระโก 15:40",
+   "osis": "Mark",
+   "c": 15,
+   "v": 40,
+   "file": "Mark.15.40.puck.mp3",
+   "d": 7.16,
+   "chars": 141,
+   "h": "sha256:fa2c2fa69ba8e525"
+  },
+  "Mark.15.41": {
+   "ref": "มาระโก 15:41",
+   "osis": "Mark",
+   "c": 15,
+   "v": 41,
+   "file": "Mark.15.41.puck.mp3",
+   "d": 5.32,
+   "chars": 113,
+   "h": "sha256:5dba9deec3b08cee"
+  },
+  "Mark.15.42": {
+   "ref": "มาระโก 15:42",
+   "osis": "Mark",
+   "c": 15,
+   "v": 42,
+   "file": "Mark.15.42.puck.mp3",
+   "d": 5.32,
+   "chars": 99,
+   "h": "sha256:6a3b20df2d05be10"
+  },
+  "Mark.15.43": {
+   "ref": "มาระโก 15:43",
+   "osis": "Mark",
+   "c": 15,
+   "v": 43,
+   "file": "Mark.15.43.puck.mp3",
+   "d": 9.52,
+   "chars": 158,
+   "h": "sha256:f64c3182ae776302"
+  },
+  "Mark.15.44": {
+   "ref": "มาระโก 15:44",
+   "osis": "Mark",
+   "c": 15,
+   "v": 44,
+   "file": "Mark.15.44.puck.mp3",
+   "d": 6.52,
+   "chars": 127,
+   "h": "sha256:1c95ae1d3156f826"
+  },
+  "Mark.15.45": {
+   "ref": "มาระโก 15:45",
+   "osis": "Mark",
+   "c": 15,
+   "v": 45,
+   "file": "Mark.15.45.puck.mp3",
+   "d": 4.76,
+   "chars": 68,
+   "h": "sha256:ee4cdbe7b4c9f41f"
+  },
+  "Mark.15.46": {
+   "ref": "มาระโก 15:46",
+   "osis": "Mark",
+   "c": 15,
+   "v": 46,
+   "file": "Mark.15.46.puck.mp3",
+   "d": 9.12,
+   "chars": 179,
+   "h": "sha256:f89d1f03173e3813"
+  },
+  "Mark.15.47": {
+   "ref": "มาระโก 15:47",
+   "osis": "Mark",
+   "c": 15,
+   "v": 47,
+   "file": "Mark.15.47.puck.mp3",
+   "d": 4.96,
+   "chars": 67,
+   "h": "sha256:765fe65716de08f6"
+  },
+  "Mark.16.1": {
+   "ref": "มาระโก 16:1",
+   "osis": "Mark",
+   "c": 16,
+   "v": 1,
+   "file": "Mark.16.1.puck.mp3",
+   "d": 7.24,
+   "chars": 135,
+   "h": "sha256:79c81995bb9d14c7"
+  },
+  "Mark.16.2": {
+   "ref": "มาระโก 16:2",
+   "osis": "Mark",
+   "c": 16,
+   "v": 2,
+   "file": "Mark.16.2.puck.mp3",
+   "d": 4.8,
+   "chars": 86,
+   "h": "sha256:ed70f8b2683abb31"
+  },
+  "Mark.16.3": {
+   "ref": "มาระโก 16:3",
+   "osis": "Mark",
+   "c": 16,
+   "v": 3,
+   "file": "Mark.16.3.puck.mp3",
+   "d": 4.64,
+   "chars": 99,
+   "h": "sha256:d23fadccd2c6847c"
+  },
+  "Mark.16.4": {
+   "ref": "มาระโก 16:4",
+   "osis": "Mark",
+   "c": 16,
+   "v": 4,
+   "file": "Mark.16.4.puck.mp3",
+   "d": 4.64,
+   "chars": 73,
+   "h": "sha256:c4ec2b9459e5bba2"
+  },
+  "Mark.16.5": {
+   "ref": "มาระโก 16:5",
+   "osis": "Mark",
+   "c": 16,
+   "v": 5,
+   "file": "Mark.16.5.puck.mp3",
+   "d": 7.4,
+   "chars": 118,
+   "h": "sha256:f55c96350f2ad0ae"
+  },
+  "Mark.16.6": {
+   "ref": "มาระโก 16:6",
+   "osis": "Mark",
+   "c": 16,
+   "v": 6,
+   "file": "Mark.16.6.puck.mp3",
+   "d": 10.24,
+   "chars": 153,
+   "h": "sha256:454c94c572ca04d5"
+  },
+  "Mark.16.7": {
+   "ref": "มาระโก 16:7",
+   "osis": "Mark",
+   "c": 16,
+   "v": 7,
+   "file": "Mark.16.7.puck.mp3",
+   "d": 7.32,
+   "chars": 116,
+   "h": "sha256:9e08da47f612db76"
+  },
+  "Mark.16.8": {
+   "ref": "มาระโก 16:8",
+   "osis": "Mark",
+   "c": 16,
+   "v": 8,
+   "file": "Mark.16.8.puck.mp3",
+   "d": 7.8,
+   "chars": 138,
+   "h": "sha256:128805ab2e3c364d"
+  },
+  "Mark.16.9": {
+   "ref": "มาระโก 16:9",
+   "osis": "Mark",
+   "c": 16,
+   "v": 9,
+   "file": "Mark.16.9.puck.mp3",
+   "d": 8.52,
+   "chars": 134,
+   "h": "sha256:b2ec71ede3deb8cc"
+  },
+  "Mark.16.10": {
+   "ref": "มาระโก 16:10",
+   "osis": "Mark",
+   "c": 16,
+   "v": 10,
+   "file": "Mark.16.10.puck.mp3",
+   "d": 4.92,
+   "chars": 72,
+   "h": "sha256:3c84d72625fbd009"
+  },
+  "Mark.16.11": {
+   "ref": "มาระโก 16:11",
+   "osis": "Mark",
+   "c": 16,
+   "v": 11,
+   "file": "Mark.16.11.puck.mp3",
+   "d": 4.24,
+   "chars": 77,
+   "h": "sha256:e7d2bbd6f29053ba"
+  },
+  "Mark.16.12": {
+   "ref": "มาระโก 16:12",
+   "osis": "Mark",
+   "c": 16,
+   "v": 12,
+   "file": "Mark.16.12.puck.mp3",
+   "d": 6.52,
+   "chars": 112,
+   "h": "sha256:3abc4cc983e9f64c"
+  },
+  "Mark.16.13": {
+   "ref": "มาระโก 16:13",
+   "osis": "Mark",
+   "c": 16,
+   "v": 13,
+   "file": "Mark.16.13.puck.mp3",
+   "d": 4.64,
+   "chars": 73,
+   "h": "sha256:9036562e157c031c"
+  },
+  "Mark.16.14": {
+   "ref": "มาระโก 16:14",
+   "osis": "Mark",
+   "c": 16,
+   "v": 14,
+   "file": "Mark.16.14.puck.mp3",
+   "d": 10.28,
+   "chars": 209,
+   "h": "sha256:614217e5380c4d07"
+  },
+  "Mark.16.15": {
+   "ref": "มาระโก 16:15",
+   "osis": "Mark",
+   "c": 16,
+   "v": 15,
+   "file": "Mark.16.15.puck.mp3",
+   "d": 4.76,
+   "chars": 87,
+   "h": "sha256:a03a4dbe855b1d8f"
+  },
+  "Mark.16.16": {
+   "ref": "มาระโก 16:16",
+   "osis": "Mark",
+   "c": 16,
+   "v": 16,
+   "file": "Mark.16.16.puck.mp3",
+   "d": 5.6,
+   "chars": 88,
+   "h": "sha256:c0c47bdaf1f6fbeb"
+  },
+  "Mark.16.17": {
+   "ref": "มาระโก 16:17",
+   "osis": "Mark",
+   "c": 16,
+   "v": 17,
+   "file": "Mark.16.17.puck.mp3",
+   "d": 7.56,
+   "chars": 119,
+   "h": "sha256:8111cbc178653a73"
+  },
+  "Mark.16.18": {
+   "ref": "มาระโก 16:18",
+   "osis": "Mark",
+   "c": 16,
+   "v": 18,
+   "file": "Mark.16.18.puck.mp3",
+   "d": 7.84,
+   "chars": 149,
+   "h": "sha256:5a481b3e2bac7e75"
+  },
+  "Mark.16.19": {
+   "ref": "มาระโก 16:19",
+   "osis": "Mark",
+   "c": 16,
+   "v": 19,
+   "file": "Mark.16.19.puck.mp3",
+   "d": 6.28,
+   "chars": 113,
+   "h": "sha256:997af3f6cb0afed6"
+  },
+  "Mark.16.20": {
+   "ref": "มาระโก 16:20",
+   "osis": "Mark",
+   "c": 16,
+   "v": 20,
+   "file": "Mark.16.20.puck.mp3",
+   "d": 6.68,
+   "chars": 123,
+   "h": "sha256:4b16e6bae19bdefc"
+  }
+ },
+ "gaps": []
+}

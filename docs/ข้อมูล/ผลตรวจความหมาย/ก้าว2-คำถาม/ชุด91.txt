@@ -1,0 +1,57 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 239
+ที่อยู่: ISA 45:3
+ข้อความต้นฉบับ: וְנָתַתִּ֤י לְךָ֙ אוֹצְר֣וֹת חֹ֔שֶׁךְ וּמַטְמֻנֵ֖י מִסְתָּרִ֑ים לְמַ֣עַן תֵּדַ֗ע כִּֽי־אֲנִ֧י יְהוָ֛ה הַקּוֹרֵ֥א בְשִׁמְךָ֖ אֱלֹהֵ֥י יִשְׂרָאֵֽל׃
+คำที่ถาม: מַטְמֻנֵ֖י   (รูปตั้งต้น מַטְמֹן · ชนิดคำ noun)
+ตัวเลือก:
+  A) valuable objects in a person's possession, that are usually kept invisible from others to keep them safe [คำแปลสั้น: hidden treasure]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 240
+ที่อยู่: PSA 147:3
+ข้อความต้นฉบับ: הָ֭רֹפֵא לִשְׁב֣וּרֵי לֵ֑ב וּ֝מְחַבֵּ֗שׁ לְעַצְּבוֹתָֽם׃
+คำที่ถาม: ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) process by which humans experience a physical or emotional state of discomfort or anguish [คำแปลสั้น: pain, trouble, suffering, sorrow]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 241
+ที่อยู่: SNG 8:7
+ข้อความต้นฉบับ: מַ֣יִם רַבִּ֗ים לֹ֤א יֽוּכְלוּ֙ לְכַבּ֣וֹת אֶת־הָֽאַהֲבָ֔ה וּנְהָר֖וֹת לֹ֣א יִשְׁטְפ֑וּהָ אִם־יִתֵּ֨ן אִ֜ישׁ אֶת־כָּל־ה֤וֹן בֵּיתוֹ֙ בָּאַהֲבָ֔ה בּ֖וֹז יָב֥וּזוּ לֽוֹ׃ס
+คำที่ถาม: לֹ֤א   (รูปตั้งต้น לֹא · ชนิดคำ particle)
+ตัวเลือก:
+  A) a marker negating a proposition [คำแปลสั้น: not, no]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 242
+ที่อยู่: DAN 4:26
+ข้อความต้นฉบับ: לִקְצָ֥ת יַרְחִ֖ין תְּרֵֽי־עֲשַׂ֑ר עַל־הֵיכַ֧ל מַלְכוּתָ֛א דִּ֥י בָבֶ֖ל מְהַלֵּ֥ךְ הֲוָֽה׃
+คำที่ถาม: עֲשַׂ֑ר   (รูปตั้งต้น עֲשַׂר · ชนิดคำ adjective)
+ตัวเลือก:
+  A) state in which a countable entity is ten in number [คำแปลสั้น: ten]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 243
+ที่อยู่: 1KI 22:16
+ข้อความต้นฉบับ: וַיֹּ֤אמֶר אֵלָיו֙ הַמֶּ֔לֶךְ עַד־כַּמֶּ֥ה פְעָמִ֖ים אֲנִ֣י מַשְׁבִּעֶ֑ךָ אֲ֠שֶׁר לֹֽא־תְדַבֵּ֥ר אֵלַ֛י רַק־אֱמֶ֖ת בְּשֵׁ֥ם יְהוָֽה׃
+คำที่ถาม: רַק   (รูปตั้งต้น רַק · ชนิดคำ particle)
+ตัวเลือก:
+  A) state in which an object has opposite surface or sides relatively close together [คำแปลสั้น: thin, fine, gaunt]
+  B) meaning unsure [คำแปลสั้น: NO DATA YET]
+  C) particle marking an element as prominent, as if limiting the focus to a restricted number of entities [คำแปลสั้น: nothing but, abundantly, utterly]
+  D) particle limiting the focus to one element and so enhancing its truth value [คำแปลสั้น: surely]
+  E) particle marking an element as contrastive, and so limiting the scope or impact of what was stated before [คำแปลสั้น: but]
+  F) particle marking an element as representing a limited number of entities [คำแปลสั้น: only, just, except]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

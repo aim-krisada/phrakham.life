@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>แนวคิดม้วนเดียว — แบบให้ดูของพระคำ.ชีวิต รุ่น 3</title>
+<!--
+  แบบให้ดู ⛔ ไม่ใช่เว็บจริง · ไฟล์เดียวจบ ⛔ ไม่ต้องต่อเน็ต ⇒ ดับเบิลคลิกเปิดได้เลย
+  ตัวบทไทยเป็นของจริง ฉบับ TCV 2025 ยกมาจากข้อมูลรุ่น 2 ⛔ ไม่ได้แต่งขึ้น
+  เหตุผลของทุกอย่างที่เห็นในนี้อยู่ที่ docs/แนวคิดออกแบบ.md ⛔ ไม่เล่าซ้ำในไฟล์นี้
+-->
+<style>
+/* ---------- สีกับตัวอักษร ---------- */
+:root{
+  --พื้น:#FAF6F0;          /* พื้นสีครีมของรุ่น 2 */
+  --หมึก:#2B2118;          /* ตัวบท ⇒ ทาบกับพื้นได้เกินเกณฑ์ 7:1 ที่เรารับมา */
+  --หมึกจาง:#5A4F42;       /* คำอธิบายรอง */
+  --เน้น:#6B3410;          /* ลิงก์กับของที่กดได้ ⇒ 9.6:1 */
+  --เส้น:#E0D6C8;
+  --ริม:#8C7A4E;           /* เลขข้อกับเลขบทที่ริม */
+  --เลือก:#F0E6D6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:#3A3A3A;
+  color:var(--หมึก);
+  font-family:"Sarabun","Noto Sans Thai",system-ui,sans-serif;
+  font-size:17px;
+}
+
+/* ---------- แถบควบคุมของแบบให้ดู ⛔ ไม่ใช่ส่วนของเว็บจริง ---------- */
+#แถบดู{
+  position:sticky;top:0;z-index:99;
+  background:#141414;color:#fff;
+  padding:10px 12px;
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+}
+#แถบดู .ป้าย{font-size:13px;color:#C9C2B6;margin-right:6px}
+#แถบดู button{
+  min-height:44px;min-width:44px;padding:0 14px;   /* ปุ่ม 44 จุด ตามกฎบ้านเรา */
+  background:#2E2E2E;color:#fff;border:1px solid #555;border-radius:8px;
+  font:inherit;font-size:15px;cursor:pointer;
+}
+#แถบดู button[aria-pressed="true"]{background:#fff;color:#141414;border-color:#fff;font-weight:600}
+#แถบดู button:focus-visible{outline:3px solid #FFD479;outline-offset:2px}
+
+/* ---------- กรอบจอ ---------- */
+#เวที{display:flex;justify-content:center;padding:18px 10px 60px}
+#จอ{
+  width:100%;max-width:820px;
+  background:var(--พื้น);
+  /* ⚠️ ต้องเป็น clip ⛔ ห้ามใช้ hidden — hidden ทำให้กล่องนี้กลายเป็นตัวเลื่อน
+     ⇒ ของที่ตั้ง position:sticky ข้างในจะไปเกาะกับกล่องนี้แทนที่จะเกาะกับจอ ⇒ เม็ดเลขบทหลุดหาย */
+  border-radius:14px;overflow:clip;
+  box-shadow:0 10px 40px rgba(0,0,0,.45);
+}
+body.มือถือ #จอ{max-width:320px}
+
+/* ---------- หัวเว็บ ---------- */
+header.บน{
+  position:sticky;top:var(--บนแถบ,0px);z-index:20;
+  background:var(--พื้น);border-bottom:1px solid var(--เส้น);
+  display:flex;align-items:center;gap:6px;
+  padding:6px 10px;
+}
+header.บน .ชื่อ{font-weight:700;color:var(--เน้น);font-size:17px;white-space:nowrap}
+header.บน .ที่อยู่ตอนนี{
+  flex:1;text-align:center;color:var(--หมึกจาง);font-size:14px;
+}
+.ปุ่มบน{
+  min-height:44px;min-width:44px;padding:0 12px;
+  background:transparent;border:1px solid var(--เส้น);border-radius:8px;
+  color:var(--เน้น);font:inherit;font-size:15px;cursor:pointer;white-space:nowrap;
+}
+.ปุ่มบน:focus-visible{outline:3px solid var(--เน้น);outline-offset:2px}
+body.มือถือ header.บน .ที่อยู่ตอนนี{font-size:13px}
+
+/* ---------- ตัวบท ---------- */
+main{padding:14px 18px 40px}
+body.มือถือ main{padding:12px 14px 40px}
+.ตัวบท{
+  max-width:34em;margin:0 auto;padding-left:30px;   /* เว้นไว้ให้เม็ดเลขบทอย่างเดียว ⛔ ไม่มีรางหมุดแล้ว */              /* กว้างไม่เกิน 80 ตัวอักษร ตามกฎ */
+  line-height:1.85;                          /* ไทยต้องการมากกว่า 1.5 เพราะมีสระบนล่าง */
+  font-size:19px;
+}
+body.มือถือ .ตัวบท{font-size:18px;padding-left:24px}
+.ย่อหน้า{margin:0 0 1.15em}
+.เลขข้อ{
+  color:var(--ริม);font-size:.62em;vertical-align:.5em;
+  margin-right:.15em;user-select:none;
+}
+/* ---------- ⭐ ชิปบทที่เกาะอยู่ริมซ้าย และเปลี่ยนตามการเลื่อน ----------
+   พี่เอมเคาะ 5 ก.ย. 2569 ว่าแถบบนบอกแค่ "ชื่อเล่ม" ⇒ เลขบทไปอยู่ริมซ้ายที่เดียว
+   ⇒ ชิปนี้เกาะอยู่กับที่ขณะเลื่อน แล้วเปลี่ยนเลขเองเมื่อข้ามเข้าบทใหม่
+   ⇒ ⛔ โผล่เฉพาะตอนที่ผู้อ่านเปิด "แสดงเลขบท/ข้อ" ไว้ */
+.ชั้นบท{position:sticky;top:var(--บนหัว,56px);height:0;z-index:5}
+.ชิปบท{
+  position:absolute;left:0;top:0;
+  width:26px;height:26px;display:flex;align-items:center;justify-content:center;
+  background:var(--ริม);color:#fff;border-radius:999px;
+  font-size:14px;font-weight:700;line-height:1;
+}
+.ตัวบท.ไม่มีเลข .ชั้นบท{display:none}
+
+/* ⭐ รอยต่อบท — ⛔ ไม่มีเลขบทตัวใหญ่ที่ริมแล้ว
+   พี่เอมเคาะ 5 ก.ย. 2569 ว่าเลขบทมีที่อยู่เดียวคือชิปที่เกาะริมซ้าย
+   ⇒ ที่รอยต่อ เลขข้อจึงเขียนเต็มเป็น 4:1 แทนที่จะเป็น 1 เฉย ๆ ⇒ เล็ก ไม่ขวาง แต่ชี้จุดได้แม่น */
+.รอยบท{margin-top:1.5em}
+.เลขข้อ.เต็ม{font-size:.68em}
+.หัวตอน{                                     /* หัวข้อย่อยจาก TCV ⇒ ฝั่งข้อมูลบอกว่ามี 1,994 อัน */
+  font-weight:700;color:var(--หมึก);font-size:.86em;
+  margin:1.8em 0 .5em;letter-spacing:.01em;
+}
+/* ⭐ ซ่อนหัวข้อย่อย — พี่เอมสั่ง 5 ก.ย. 2569 ว่าเลือกแสดงหรือซ่อนได้
+   ⚠️ ซ่อน "จากสายตา" เท่านั้น ⛔ ไม่ลบออกจากหน้า
+   ⇒ เพราะคนที่ใช้โปรแกรมอ่านจอ ใช้หัวข้อเป็นทางกระโดดในหน้ายาว ๆ
+   ⇒ ลบทิ้งเมื่อไร เขาจะเดินในหน้ายาวทั้งเล่มไม่ได้เลย */
+.ตัวบท.ไม่มีหัวข้อ .หัวตอน{
+  position:absolute;width:1px;height:1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;margin:0;padding:0;
+}
+
+/* ---------- ⭐ การจัดวาง — ใช้ชื่อและค่าเดียวกับรุ่น 2 ----------
+   รุ่น 2 แยกไว้ 2 เรื่องที่ไม่เกี่ยวกัน และแยกถูกแล้ว ⇒ ผมเคยยุบรวมเป็นปุ่มเดียว ซึ่งผิด
+   ① การจัดวาง ⇒ flow · verse · para (ค่าเริ่มต้น para)
+   ② แสดงเลขบท/ข้อ ⇒ เปิดปิดแยกต่างหาก
+   ⇒ ⛔ ห้ามยุบสองเรื่องนี้เป็นปุ่มเดียว เพราะ "ไม่มีเลข + แยกตามข้อ" เป็นคู่ที่ใช้จริง */
+.ข้อ{display:inline}
+.ตัวบท.ไม่มีเลข .เลขข้อ{display:none}
+.ตัวบท.จว-verse .ข้อ{display:block;margin-bottom:.35em}   /* แยกตามข้อ ⇒ ข้อละบรรทัด */
+/* ไหลต่อเนื่อง ⇒ ย่อหน้าหายไปหมด เหลือเนื้อติดกันเป็นพืดแบบต้นฉบับเดิม */
+.ตัวบท.จว-flow .ย่อหน้า{display:inline;margin:0}
+.ตัวบท.จว-flow .กล่องรู้{display:block}
+.ตัวบท.จว-flow .ชั้นบท{position:static;height:auto;margin-bottom:.6em}
+
+/* ⭐ กล่องความรู้ทำเป็น "การ์ด" ให้เห็นชัดว่าตรงไหนคือของที่กางออกมา
+   พี่เอมทัก 6 ก.ย. 2569 ว่า "ไม่ชัดว่าส่วนไหนเป็น collapsible น่าจะใส่ card"
+   ⇒ ยกโครงการ์ดของรุ่น 2 มาทั้งชุด (`.wexp` ใน pk-expand.css) ⛔ ไม่ออกแบบใหม่
+   ⇒ มีขอบรอบตัว · มีแถบหัวสีเข้มกว่า · มีปุ่มปิด ⇒ 3 อย่างนี้ทำให้ขอบเขตของการ์ดชัดในตัวเอง */
+.กล่องรู้{
+  margin:.7em 0 1.1em;
+  border:1px solid #D8B25A;border-radius:10px;
+  background:#FFFDF7;overflow:hidden;
+  font-size:15px;line-height:1.7;
+  box-shadow:0 2px 6px rgba(139,69,19,.08);
+}
+body.มือถือ .กล่องรู้{font-size:14px}
+.กล่องรู้ .หัวการ์ด{
+  display:flex;align-items:center;gap:8px;
+  background:#F7E9C9;border-bottom:1px solid #E8D49E;
+  padding:.35em .5em .35em .8em;
+}
+.กล่องรู้ .ชนิด{flex:1;min-width:0;font-size:.82em;color:#7A5B1E;font-weight:700}
+.กล่องรู้ .ปิดการ์ด{
+  flex:none;min-width:44px;min-height:44px;
+  background:none;border:0;border-radius:8px;cursor:pointer;
+  font:inherit;font-size:20px;line-height:1;color:#7A5B1E;
+}
+.กล่องรู้ .ปิดการ์ด:hover{background:#E8D49E;color:#5C3D0A}
+.กล่องรู้ .ปิดการ์ด:focus-visible{outline:3px solid var(--เน้น);outline-offset:-3px}
+.กล่องรู้ .เนื้อการ์ด{padding:.7em .8em .8em}
+.กล่องรู้ .หัว{display:block;font-weight:700;margin-bottom:.35em;color:var(--หมึก)}
+.กล่องรู้ p{margin:0 0 .6em}
+.กล่องรู้ p:last-child{margin-bottom:0}
+.กล่องรู้ .ไปอ่าน{color:var(--เน้น);font-weight:600;text-decoration:underline;
+  text-underline-offset:.25em;display:inline-block;min-height:44px;line-height:44px}
+.กล่องรู้ .ไปอ่าน:focus-visible{outline:3px solid var(--เน้น);outline-offset:2px}
+.กล่องรู้ .รูปแทน{background:var(--เลือก);border-radius:8px;height:120px;
+  display:flex;align-items:center;justify-content:center;font-size:38px;margin-bottom:.6em}
+
+/* ---------- ท้ายตอน ความรู้ประกอบมาหาคนอ่าน ---------- */
+.ความรู้{max-width:34em;margin:2.4em auto 0;border-top:2px solid var(--เส้น);padding-top:1em}
+.ความรู้ h2{font-size:15px;color:var(--หมึกจาง);margin:0 0 .7em;font-weight:600}
+.การ์ด{
+  display:flex;gap:12px;align-items:flex-start;
+  border:1px solid var(--เส้น);border-radius:10px;background:#fff;
+  padding:12px;margin-bottom:10px;text-decoration:none;color:inherit;
+  min-height:44px;
+}
+.การ์ด:hover,.การ์ด:focus-visible{border-color:var(--เน้น);background:var(--เลือก)}
+.การ์ด:focus-visible{outline:3px solid var(--เน้น);outline-offset:2px}
+.การ์ด .รูป{width:56px;height:56px;flex:none;border-radius:8px;background:var(--เลือก);
+  display:flex;align-items:center;justify-content:center;font-size:26px}
+.การ์ด .ชนิด{display:block;font-size:12px;color:var(--ริม);margin-bottom:2px}
+.การ์ด .หัว{display:block;font-weight:600;font-size:15px;line-height:1.45}
+
+/* ---------- แผ่นที่เลื่อนขึ้นมา (เมนู กับ เลือกเล่ม) ---------- */
+.แผ่น{border-top:1px solid var(--เส้น);background:#fff;padding:14px 16px 22px}
+.แผ่น h2{margin:.2em 0 .8em;font-size:14px;color:var(--หมึกจาง);font-weight:600}
+.รายการ{list-style:none;margin:0;padding:0}
+.รายการ li{border-bottom:1px solid var(--เส้น)}
+.รายการ li:last-child{border-bottom:0}
+.รายการ a{
+  display:flex;align-items:center;gap:10px;
+  min-height:52px;padding:6px 4px;text-decoration:none;color:var(--เน้น);font-size:17px;
+}
+.รายการ a:focus-visible{outline:3px solid var(--เน้น);outline-offset:-3px}
+.รายการ .รอง{color:var(--หมึกจาง);font-size:13px;margin-left:auto;text-align:right}
+.หัวกลุ่ม{font-weight:700;color:var(--หมึก);font-size:13px;margin:1.4em 0 .3em}
+
+/* ขนาดตัวอักษร ⇒ ลด/เพิ่มทีละขั้น ตามชุด 7 ขั้นของรุ่น 2 */
+.แถวขนาด{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.ปุ่มขนาด{
+  min-width:52px;min-height:52px;font-size:22px;line-height:1;
+  background:#fff;border:1px solid var(--เส้น);border-radius:8px;
+  color:var(--เน้น);font-family:inherit;cursor:pointer;
+}
+.ปุ่มขนาด.กว้าง{min-width:auto;padding:0 14px;font-size:15px}
+.ปุ่มขนาด:focus-visible{outline:3px solid var(--เน้น);outline-offset:2px}
+.ปุ่มขนาด[disabled]{opacity:.4;cursor:default}
+.เลขขนาด{min-width:64px;text-align:center;font-weight:700;font-size:17px;color:var(--หมึก)}
+
+/* ตารางเล่ม */
+.ตารางเล่ม{display:grid;grid-template-columns:repeat(auto-fill,minmax(88px,1fr));gap:8px}
+.ตารางเล่ม button{
+  min-height:48px;padding:6px 4px;
+  background:#fff;border:1px solid var(--เส้น);border-radius:8px;
+  color:var(--เน้น);font:inherit;font-size:15px;cursor:pointer;
+}
+.ตารางเล่ม button[aria-pressed="true"]{background:var(--เน้น);color:#fff;border-color:var(--เน้น)}
+.ตารางเล่ม button:focus-visible{outline:3px solid var(--เน้น);outline-offset:2px}
+.ตารางบท{display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:6px;margin-top:12px}
+.ตารางบท a{
+  display:flex;align-items:center;justify-content:center;
+  min-height:48px;background:#fff;border:1px solid var(--เส้น);border-radius:8px;
+  color:var(--เน้น);text-decoration:none;font-size:16px;
+}
+.ตารางบท a:focus-visible{outline:3px solid var(--เน้น);outline-offset:2px}
+
+/* ---------- คำอธิบายใต้จอ ⛔ ไม่ใช่ส่วนของเว็บ ---------- */
+#หมายเหตุ{max-width:820px;margin:16px auto 0;color:#DCD6CC;font-size:14px;line-height:1.8}
+#หมายเหตุ b{color:#fff}
+#หมายเหตุ .กล่อง{background:#242424;border:1px solid #444;border-radius:10px;padding:14px 16px}
+#หมายเหตุ p{margin:.5em 0}
+
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div id="แถบดู">
+  <span class="ป้าย">แถบนี้มีไว้ดูแบบเท่านั้น ⛔ ไม่ใช่ส่วนของเว็บ</span>
+  <button type="button" data-chak="อ่าน"   aria-pressed="true">หน้าอ่าน</button>
+  <button type="button" data-chak="เมนู"   aria-pressed="false">เมนู 3 หัว</button>
+  <button type="button" data-chak="เล่ม"   aria-pressed="false">เลือกเล่ม</button>
+  <button type="button" data-chak="ตั้งค่า"  aria-pressed="false">ตั้งค่าการอ่าน</button>
+  <button type="button" data-chak="ความรู้" aria-pressed="false">ท้ายบท</button>
+  <button type="button" id="สลับจอ" aria-pressed="false">จอมือถือ 320</button>
+</div>
+
+<div id="เวที">
+ <div id="จอ">
+
+  <header class="บน">
+    <span class="ชื่อ">พระคำ.ชีวิต</span>
+    <!-- ⭐ แถบบนบอกแค่ "กำลังอ่านเล่มไหน" ⛔ ไม่บอกเลขบท ⇒ เลขบทอยู่ที่ริมซ้ายที่เดียว -->
+    <span class="ที่อยู่ตอนนี" id="ที่อยู่ตอนนี">มาระโก</span>
+    <button class="ปุ่มบน" type="button" data-chak="เล่ม">เลือกเล่ม</button>
+    <button class="ปุ่มบน" type="button" data-chak="เมนู">เมนู</button>
+  </header>
+
+  <!-- ============ ฉาก 1 · หน้าอ่าน ============
+       ⛔ ไม่มีรางและไม่มีหมุดแล้ว — พี่เอมเคาะ 5 ก.ย. 2569 และที่ปรึกษาเห็นตรงกัน
+       ⇒ "ตัวคำในเนื้อ" เป็นปุ่มเอง ⇒ ขีดเส้นใต้ไว้ กดแล้วคำนั้นได้พื้นไฮไลต์
+       ⇒ กล่องกางออก "ท้ายข้อที่คำนั้นอยู่" ⛔ ไม่ผ่ากลางประโยค ⛔ ไม่ไปกองท้ายย่อหน้า -->
+  <main id="ฉาก-อ่าน">
+
+    <div class="ป้ายช่วง">
+      <span>ลิงก์ที่คุณกดมา พาคุณมาที่</span>
+      <span class="ชิป">มาระโก 4:1</span>
+      <span>⇒ เลื่อนขึ้นลงอ่านต่อได้ตามใจ</span>
+      <button type="button" id="ปิดช่วง">ปิดข้อความนี้</button>
+    </div>
+
+    <div class="ตัวบท" id="ตัวบท">
+
+      <!-- เม็ดเลขบทที่เกาะริมซ้ายและเปลี่ยนเลขตามการเลื่อน -->
+      <div class="ชั้นบท"><span class="ชิปบท" id="ชิปบท">3</span></div>
+
+      <p class="มีต่อข้างบน">↑ เลื่อนขึ้นไปอ่านตั้งแต่ต้นเล่มได้</p>
+
+      <div class="ย่อหน้า">
+        <span class="ข้อ" data-ref="3.28"><span class="เลขข้อ">28</span>เรา​บอก​ความ​จริง​ท่าน​ว่า มนุษย์​จะ​ได้​รับ​การ​ยก​โทษ​จาก​บาป​และ​คำ​หมิ่น​ประมาท​ทั้ง​หมด​ของ​ตน </span>
+        <span class="ข้อ" data-ref="3.29"><span class="เลขข้อ">29</span>แต่​ใคร​พูด​หมิ่น​พระวิญญาณ​บริสุทธิ์ จะ​ไม่​มี​วัน​ได้​รับ​การ​ยก​โทษ และ​มี​ความ​ผิด​บาป​ติด​ตัว​ตลอด​กาล”</span>
+      </div>
+      <div class="ย่อหน้า">
+        <span class="ข้อ" data-ref="3.30"><span class="เลขข้อ">30</span>พระองค์​พูด​เช่น​นี้​เพราะ​พวก​เขา​พูด​ว่า “พระองค์​มี​วิญญาณ​โสโครก”</span>
+      </div>
+
+      <h2 class="หัวตอน">แม่และพี่น้องของพระเยซู</h2>
+
+      <div class="ย่อหน้า">
+        <span class="ข้อ" data-ref="3.31"><span class="เลขข้อ">31</span>แม่​กับ​พวก​น้อง​ชาย​ของ​พระเยซู​มา​ถึง พวก​เขา​ยืน​อยู่​ด้าน​นอก​และ​บอก​คน​ให้​เข้า​ไป​เรียก​พระองค์ </span>
+        <span class="ข้อ" data-ref="3.32"><span class="เลขข้อ">32</span>ฝูงชน​นั่ง​อยู่​รอบ​พระเยซู และ​พวก​เขา​บอก​พระองค์​ว่า “แม่​กับ​พวก​น้อง​ชาย​ของ​ท่าน​อยู่​ด้าน​นอก​มอง​หา​ท่าน”</span>
+      </div>
+      <div class="ย่อหน้า">
+        <span class="ข้อ" data-ref="3.33"><span class="เลขข้อ">33</span>พระองค์​ถาม​ว่า “ใคร​คือ​แม่​และ​พี่​น้อง​ของ​เรา”</span>
+      </div>
+      <div class="ย่อหน้า">
+        <span class="ข้อ" data-ref="3.34"><span class="เลขข้อ">34</span>แล้ว​พระองค์​ก็​มอง​ดู​คน​ที่​นั่ง​อยู่​รอบ​ตัว และ​พูด​ว่า “นี่​คือ​แม่​และ​พี่​น้อง​ของ​เรา </span>
+        <span class="ข้อ" data-ref="3.35"><span class="เลขข้อ">35</span>ใคร​ก็​ตาม​ที่​ทำ​ตาม​ความ​ประสงค์​ของ​พระเจ้า คน​นั้น​คือ​พี่​น้อง​ชาย​หญิง​และ​แม่​ของ​เรา”</span>
+      </div>
+
+      <h2 class="หัวตอน">อุปมาเรื่องดินสี่แบบ</h2>
+
+      <!-- ย่อหน้าเดียวยาว 8 ข้อ ⇒ ต้นฉบับแปลแบ่งไว้อย่างนี้จริง (ขึ้นย่อหน้าใหม่ที่ข้อ 1 กับ 9) -->
+      <div class="ย่อหน้า รอยบท" id="จุดบท4">
+        <span class="ข้อ" data-ref="4.1"><span class="เลขข้อ เต็ม">4:1</span><button class="ปุ่มตอน" type="button" aria-expanded="false" aria-controls="รู้-1">💡 บทความ: ดินสี่แบบ</button>พระเยซู​สอน​ที่​ริม​ทะเลสาบ​อีก​ครั้ง ฝูง​ชน​รุม​ล้อม​พระองค์​แน่น​จน​พระองค์​ต้อง​ลง​ไป​นั่ง​ใน​เรือ ขณะ​ที่​ฝูง​ชน​อยู่​ริม​ฝั่ง </span>
+        <div class="กล่องรู้" id="รู้-1" hidden>
+          <div class="หัวการ์ด">
+            <span class="ชนิด">✍️ เล่าประสบการณ์ · มาระโก 4:1-20</span>
+            <button class="ปิดการ์ด" type="button" data-ปิด="รู้-1" aria-label="ปิดคำอธิบาย">×</button>
+          </div>
+          <div class="เนื้อการ์ด">
+            <span class="หัว">ดินสี่แบบ กับคำถามที่ผมทิ้งค้างไว้สองข้อ</span>
+            <p>พระเยซูไม่ได้เล่าเรื่องการทำนา พระองค์เล่าเรื่องใจคนสี่แบบ และทิ้งคำถามไว้ว่าเรารับพระคำเข้าไปแล้วมันทำงานต่ออย่างไร</p>
+            <a class="ไปอ่าน" href="#">อ่านทั้งบทความ →</a>
+          </div>
+        </div>
+        <span class="ข้อ" data-ref="4.2"><span class="เลขข้อ">2</span>พระองค์​สอน​พวก​เขา​หลาย​สิ่ง​ด้วย​อุปมา​ว่า </span>
+        <span class="ข้อ" data-ref="4.3"><span class="เลขข้อ">3</span>“จง​ฟัง! มี​ชาว​นา​คน​หนึ่ง​ออก​ไป​หว่าน​เมล็ด​พืช </span>
+        <span class="ข้อ" data-ref="4.4"><span class="เลขข้อ">4</span>ขณะ​ที่​หว่าน บาง​เมล็ด​ก็​ตก​ตาม​ทาง และ​นก​ก็​มา​จิก​กิน​หมด </span>
+        <span class="ข้อ" data-ref="4.5"><span class="เลขข้อ">5</span>บาง​เมล็ด​ตก​บน<button class="คำ" type="button" aria-expanded="false" aria-controls="รู้-2">พื้น​ดิน​ปน​หิน<span class="ป้ายคำ" aria-hidden="true">🖼️</span></button> ซึ่ง​มี​เนื้อ​ดิน​น้อย จึง​งอก​ขึ้น​เร็ว​เพราะ​ดิน​ตื้น </span>
+        <span class="ข้อ" data-ref="4.6"><span class="เลขข้อ">6</span>แต่​เมื่อ​แดด​เผา​ก็​เหี่ยว​ไป​เพราะ​ไม่​หยั่ง​ราก​ลึก </span>
+        <div class="กล่องรู้" id="รู้-2" hidden>
+          <div class="หัวการ์ด">
+            <span class="ชนิด">🖼️ ภาพประกอบ · ข้อ 5</span>
+            <button class="ปิดการ์ด" type="button" data-ปิด="รู้-2" aria-label="ปิดคำอธิบาย">×</button>
+          </div>
+          <div class="เนื้อการ์ด">
+            <div class="รูปแทน" aria-hidden="true">🪨</div>
+            <span class="หัว">ดินตื้นบนชั้นหิน</span>
+            <p>ชั้นหินปูนอยู่ใต้ผิวดินราวหนึ่งฝ่ามือ รากจึงลงไปได้แค่นั้น พอแดดจัดน้ำหมดเร็ว ต้นที่งอกไวที่สุดจึงตายก่อน</p>
+          </div>
+        </div>
+        <span class="ข้อ" data-ref="4.7"><span class="เลขข้อ">7</span>บาง​เมล็ด​ตก​กลาง<button class="คำ" type="button" aria-expanded="false" aria-controls="รู้-3">พง​หนาม<span class="ป้ายคำ" aria-hidden="true">🖼️</span></button> พง​หนาม​ก็​เติบโต​รัด​พืช​นั้น จึง​ไม่​เกิด​ผล </span>
+        <div class="กล่องรู้" id="รู้-3" hidden>
+          <div class="หัวการ์ด">
+            <span class="ชนิด">🖼️ ภาพประกอบ · ข้อ 7</span>
+            <button class="ปิดการ์ด" type="button" data-ปิด="รู้-3" aria-label="ปิดคำอธิบาย">×</button>
+          </div>
+          <div class="เนื้อการ์ด">
+            <div class="รูปแทน" aria-hidden="true">🌿</div>
+            <span class="หัว">พงหนามที่ขึ้นแซมในทุ่งนา</span>
+            <p>หนามพวกนี้ตัดแล้วยังงอกจากรากเดิม ชาวนาจึงไถกลบไปก่อนหว่าน แต่รากที่เหลือใต้ดินโตขึ้นมาพร้อมเมล็ดพืชเสมอ</p>
+          </div>
+        </div>
+        <span class="ข้อ" data-ref="4.8"><span class="เลขข้อ">8</span>แต่​ยัง​มี​เมล็ด​บาง​ส่วน​ตก​บน​ดิน​ดี งอก​ขึ้น​มา เติบโต​และ​เกิด​ผล​สาม​สิบ​เท่า หก​สิบ​เท่า หรือ​ร้อย​เท่า”</span>
+      </div>
+      <div class="ย่อหน้า">
+        <span class="ข้อ" data-ref="4.9"><span class="เลขข้อ">9</span>แล้ว​พระเยซู​พูด​ว่า “ใคร​มี​หู จง​ฟัง​เถิด”</span>
+      </div>
+
+      <p class="มีต่อข้างบน" style="margin-top:1.4em">↓ เลื่อนลงอ่านต่อได้จนจบเล่ม</p>
+    </div>
+  </main>
+  <!-- ============ ฉาก 2 · เมนู 3 หัว ============ -->
+  <div class="แผ่น" id="ฉาก-เมนู" hidden>
+    <h2>เมนู</h2>
+    <p class="หัวกลุ่ม">อ่าน</p>
+    <ul class="รายการ">
+      <li><a href="#">อ่านต่อจากที่ค้างไว้ <span class="รอง">มาระโก 4</span></a></li>
+      <li><a href="#">เลือกเล่มและบท <span class="รอง">66 เล่ม</span></a></li>
+      <li><a href="#">สารบัญทั้งเว็บ <span class="รอง">ทุกหน้า</span></a></li>
+      <li><a href="#" data-chak="ตั้งค่า">ตั้งค่าการอ่าน <span class="รอง">ตัวอักษร · การแบ่ง</span></a></li>
+    </ul>
+    <p class="หัวกลุ่ม">เกี่ยวกับเรา</p>
+    <ul class="รายการ">
+      <li><a href="#">แหล่งข้อมูล <span class="รอง">11 แหล่ง</span></a></li>
+      <li><a href="#">การประมวลผล <span class="รอง">เชื่อได้แค่ไหน</span></a></li>
+      <li><a href="#">เรื่องของเรา</a></li>
+      <li><a href="#">วิธีใช้</a></li>
+    </ul>
+    <p class="หัวกลุ่ม">ความรู้ประกอบ</p>
+    <ul class="รายการ">
+      <li><a href="#">เล่าประสบการณ์ <span class="รอง">19 บทความ</span></a></li>
+      <li><a href="#">ภูมิหลังพระคัมภีร์ <span class="รอง">4 เรื่อง</span></a></li>
+      <li><a href="#">ภาพประกอบ <span class="รอง">25 ภาพ</span></a></li>
+      <li><a href="#">เครื่องมือช่วยอ่าน <span class="รอง">3 เรื่อง</span></a></li>
+      <li><a href="#">เพลง <span class="รอง">เว็บแยก</span></a></li>
+    </ul>
+  </div>
+
+  <!-- ============ ฉาก · ตั้งค่าการอ่าน ============
+       พี่เอมถาม 5 ก.ย. 2569 ว่าเปิดปิดการแบ่งตามบทข้อได้ไหม ⇒ ได้ 3 ระดับ
+       ⛔ ปุ่มพวกนี้ไม่อยู่บนหน้าอ่าน เพราะจะไปแย่งที่กับตัวบท ⇒ เก็บไว้ในแผ่นนี้ -->
+  <div class="แผ่น" id="ฉาก-ตั้งค่า" hidden>
+    <h2>การจัดวาง ⇒ <b>ชื่อกับค่าเดียวกับรุ่น 2 เป๊ะ</b> ⛔ ไม่ตั้งชื่อใหม่</h2>
+    <div class="ตารางเล่ม" id="ปุ่มจัดวาง">
+      <button type="button" data-จว="flow"  aria-pressed="false">ไหลต่อเนื่อง</button>
+      <button type="button" data-จว="verse" aria-pressed="false">แยกตามข้อ</button>
+      <button type="button" data-จว="para"  aria-pressed="true">แยกตามย่อหน้า</button>
+    </div>
+    <p style="font-size:13px;color:var(--หมึกจาง);margin:.9em 0 0">
+      <b>ไหลต่อเนื่อง</b> ⇒ ⛔ ไม่มีย่อหน้าเลย ติดกันเป็นพืด ⇒ <b>ใกล้ต้นฉบับเดิมที่สุด</b><br>
+      <b>แยกตามข้อ</b> ⇒ ข้อละบรรทัด ⇒ ไว้เทียบบรรทัดกับภาษาเดิม<br>
+      <b>แยกตามย่อหน้า</b> ⇒ ค่าเริ่มต้น ⇒ <b>อ่านง่ายที่สุด</b> เพราะคนแปลจัดย่อหน้าไว้ให้แล้ว
+    </p>
+
+    <h2 style="margin-top:1.6em">ชั้นที่คนใส่เพิ่มทีหลัง ⇒ <b>เปิดปิดได้ทุกชั้น</b></h2>
+    <div class="ตารางเล่ม" id="ปุ่มเลข">
+      <button type="button" data-เลข="เปิด" aria-pressed="true">แสดงเลขบท/ข้อ</button>
+      <button type="button" data-เลข="ปิด"  aria-pressed="false">ซ่อนเลขบท/ข้อ</button>
+    </div>
+    <div class="ตารางเล่ม" id="ปุ่มหัวข้อ" style="margin-top:8px">
+      <button type="button" data-หัวข้อ="เปิด" aria-pressed="true">แสดงหัวข้อย่อย</button>
+      <button type="button" data-หัวข้อ="ปิด"  aria-pressed="false">ซ่อนหัวข้อย่อย</button>
+    </div>
+    <p style="font-size:13px;color:var(--หมึกจาง);margin:.9em 0 0">
+      <b>หัวข้อย่อย</b> เช่น <i>อุปมาเรื่องดินสี่แบบ</i> ⇒ กองบรรณาธิการฉบับแปลเป็นคนตั้ง ⛔ ไม่ได้อยู่ในต้นฉบับ
+      ⇒ ฉบับไทย TCV มีอยู่ <b>1,994 หัวข้อ</b>
+    </p>
+    <p style="font-size:13px;color:var(--ริม);margin:.7em 0 0">
+      ⭐ <b>สามชั้นนี้แยกปุ่มกัน</b> ⇒ ย่อหน้า · หัวข้อย่อย · เลขบทข้อ ⇒ ปิดครบสามชั้นเมื่อไร คือพระคัมภีร์ในรูปที่คนเขียนเขียนออกมา<br>
+      ⚠️ ซ่อนหัวข้อคือ <b>ซ่อนจากสายตาเท่านั้น</b> ⛔ ไม่ลบออกจากหน้า ⇒ คนที่ใช้โปรแกรมอ่านจอยังใช้หัวข้อกระโดดในหน้ายาว ๆ ได้
+    </p>
+
+    <h2 style="margin-top:1.6em">ขนาดตัวอักษร ⇒ <b>ใช้ 7 ขั้นของรุ่น 2</b> ⛔ ไม่ใช่ 3 ขั้น</h2>
+    <div class="แถวขนาด">
+      <button class="ปุ่มขนาด" type="button" id="ขนาดลด" aria-label="ตัวอักษรเล็กลง">−</button>
+      <output class="เลขขนาด" id="เลขขนาด" aria-live="polite">100%</output>
+      <button class="ปุ่มขนาด" type="button" id="ขนาดเพิ่ม" aria-label="ตัวอักษรใหญ่ขึ้น">+</button>
+      <button class="ปุ่มขนาด กว้าง" type="button" id="ขนาดคืน">คืนค่าเดิม</button>
+    </div>
+    <p style="font-size:13px;color:var(--ริม);margin:.7em 0 0">
+      85% · 100% · 115% · 130% · 150% · 175% · <b>200%</b> ⇒ ยกมาจาก <code>pk-fontsize.js</code> ของรุ่น 2 ตรง ๆ ⛔ ไม่เขียนใหม่
+      ⇒ ต้องขึ้นถึง <b>200%</b> เพราะมาตรฐานที่เรารับมาบังคับว่าต้องอ่านออกที่ 200%
+    </p>
+
+    <h2 style="margin-top:1.8em">⏳ ของที่รุ่น 2 มี และจะรับมาแน่ ⛔ แต่ยังไม่ออกแบบในรอบนี้</h2>
+    <ul class="รายการ" style="font-size:15px">
+      <li><a href="#" onclick="return false" style="color:var(--หมึกจาง);cursor:default">ปุ่ม αע เปิดปิดภาษาเดิม กรีก ฮีบรู</a></li>
+      <li><a href="#" onclick="return false" style="color:var(--หมึกจาง);cursor:default">เลือกฉบับแปล <span class="รอง">เลือกได้หลายฉบับพร้อมกัน</span></a></li>
+      <li><a href="#" onclick="return false" style="color:var(--หมึกจาง);cursor:default">แสดงเลข Strong <span class="รอง">รหัสต่อคำ</span></a></li>
+      <li><a href="#" onclick="return false" style="color:var(--หมึกจาง);cursor:default">แสดงรหัสไวยากรณ์ <span class="รอง">รหัสต่อคำ</span></a></li>
+      <li><a href="#" onclick="return false" style="color:var(--หมึกจาง);cursor:default">สัญลักษณ์ <span class="รอง">ไวยากรณ์+การเน้น · เฉพาะไวยากรณ์ · เฉพาะการเน้น</span></a></li>
+      <li><a href="#" onclick="return false" style="color:var(--หมึกจาง);cursor:default">ฟังเสียงอ่าน · บันทึกเป็น PDF</a></li>
+    </ul>
+    <p style="font-size:13px;color:var(--หมึกจาง);margin:.7em 0 0">
+      ⇒ รวมกับ 3 ปุ่มข้างบนแล้ว หน้าอ่านมีของให้ตั้งค่า <b>9 เรื่อง</b> ⇒ <b>นี่คือโจทย์ใหญ่ของรอบออกแบบถัดไป</b>
+    </p>
+  </div>
+
+  <!-- ============ ฉาก 3 · เลือกเล่ม ============ -->
+  <div class="แผ่น" id="ฉาก-เล่ม" hidden>
+    <h2>กดเล่ม แล้วกดบท ⇒ 2 ครั้งจากตรงนี้</h2>
+    <div class="ตารางเล่ม" id="ตารางเล่ม"></div>
+    <div id="ส่วนบท">
+      <h2 style="margin-top:1.2em">มาระโก มี 16 บท</h2>
+      <div class="ตารางบท" id="ตารางบท"></div>
+    </div>
+  </div>
+
+  <!-- ============ ฉาก 4 · ท้ายบท — บัญชีของหมุด ⛔ ไม่ใช่เนื้อซ้ำ ============
+       พี่เอมทักว่า "ดูจบแล้วค่อยรู้อาจไม่ดีเท่า" ⇒ ตัวจริงย้ายไปอยู่ที่ตัวคำในเนื้อแล้ว
+       ท้ายบทเหลือหน้าที่เดียวคือ **บอกว่าบทนี้มีคำอธิบายกี่จุด** ⇒ กดแล้วเด้งกลับขึ้นไปที่คำนั้น -->
+  <div id="ฉาก-ความรู้" hidden>
+    <main>
+      <div class="ตัวบท">
+        <div class="ย่อหน้า"><span class="เลขข้อ">9</span>แล้ว​พระเยซู​พูด​ว่า “ใคร​มี​หู จง​ฟัง​เถิด”</div>
+      </div>
+      <div class="ความรู้">
+        <h2>บทนี้มีคำอธิบาย 3 จุด ⇒ กดเพื่อกลับไปที่จุดนั้น</h2>
+        <a class="การ์ด" href="#">
+          <span class="รูป" aria-hidden="true">✍️</span>
+          <span><span class="ชนิด">ข้อ 1 · เล่าประสบการณ์</span>
+          <span class="หัว">ดินสี่แบบ กับคำถามที่ผมทิ้งค้างไว้สองข้อ</span></span>
+        </a>
+        <a class="การ์ด" href="#">
+          <span class="รูป" aria-hidden="true">🖼️</span>
+          <span><span class="ชนิด">ข้อ 5 · ภาพประกอบ</span>
+          <span class="หัว">ดินตื้นบนชั้นหิน</span></span>
+        </a>
+        <a class="การ์ด" href="#">
+          <span class="รูป" aria-hidden="true">🖼️</span>
+          <span><span class="ชนิด">ข้อ 7 · ภาพประกอบ</span>
+          <span class="หัว">พงหนามที่ขึ้นแซมในทุ่งนา</span></span>
+        </a>
+        <p style="font-size:13px;color:var(--หมึกจาง);margin-top:1em">
+          ⛔ ตรงนี้ไม่มีเนื้ออธิบายซ้ำ มีแต่ทางกลับไปหาจุดที่มันอยู่ ⇒ ความจริงมีเจ้าของที่เดียว
+        </p>
+      </div>
+    </main>
+  </div>
+
+ </div>
+</div>
+
+<div id="หมายเหตุ">
+ <div class="กล่อง">
+  <p><b>ตัวบทเป็นของจริง</b> ฉบับ TCV 2025 มาระโก 3:31 ถึง 4:9 ยกมาจากข้อมูลรุ่น 2 ⛔ ไม่ได้แต่งขึ้น</p>
+  <p><b>ตรงที่อยากให้ดูที่สุด</b></p>
+  <p><b>จุดที่ 1 เม็ดเลขบทที่เกาะอยู่ริมซ้าย</b> ⇒ แถบบนบอกแค่ <b>มาระโก</b> ⛔ ไม่บอกเลขบท ⇒ เลขบทมีที่อยู่เดียวคือเม็ดที่ริมซ้าย ⇒ <b>เลื่อนหน้าลงไปดู</b> เม็ดจะเปลี่ยนจาก 3 เป็น 4 เองตอนข้ามเข้าบทใหม่</p>
+  <p><b>จุดที่ 2 รอยต่อบท</b> ⇒ ตัวบทไหลต่อไปเลย ⛔ ไม่มีเส้นขวาง ⛔ ไม่มีเลขตัวใหญ่ ⇒ ที่รอยต่อ เลขข้อเขียนเต็มเป็น <b>4:1</b> แทนที่จะเป็น 1 เฉย ๆ ⇒ เล็ก ไม่ขวาง แต่ชี้จุดได้แม่น</p>
+  <p><b>จุดที่ 3 ตัวคำในเนื้อเป็นปุ่มเอง</b> ⇒ คำว่า <b>พื้นดินปนหิน</b> (ข้อ 5) กับ <b>พงหนาม</b> (ข้อ 7) มีสัญลักษณ์ 🖼️ ต่อท้ายคำ ⛔ ไม่ขีดเส้นใต้ ⇒ <b>กดดู</b> ⇒ คำนั้นจะได้พื้นไฮไลต์ และกล่องกางออก <b>ท้ายข้อนั้นพอดี</b> ⛔ ไม่ผ่ากลางประโยค ⛔ ไม่ไปกองท้ายย่อหน้า ⛔ ไม่ใช่ป็อปอัป</p>
+  <p><b>ความรู้ระดับทั้งตอน</b> ⇒ เม็ดยาเล็ก ๆ <b>💡 บทความ: ดินสี่แบบ</b> ต่อจากเลขข้อ 4:1 ⇒ เพราะบทความผูกกับทั้งช่วง 4:1-20 ⛔ ไม่มีคำเดียวให้เกาะ</p>
+  <p><b>ทำไมเลิกใช้หมุดที่ราง</b> ⇒ ที่ปรึกษาชี้ว่าโปรแกรมอ่านจอจะอ่านหมุดว่า “ปุ่ม” เฉย ๆ ซึ่งกำกวม ⇒ พอปุ่มคือตัวคำ มันจะอ่านว่า <i>“พื้นดินปนหิน ปุ่ม พับอยู่”</i> ⇒ และรางกินความกว้างจอมือถือไป 30 จุดฟรี ๆ</p>
+  <p><b>ที่ยังไม่มีในแบบนี้</b> ⇒ ภาษาเดิม · สัญลักษณ์สีของรุ่น 2 · การสลับฉบับแปล · ปุ่มเสียง ⇒ แบบนี้ตอบคำถามเดียวคือ <b>โครงกับการไหลของตัวบท</b></p>
+ </div>
+</div>
+
+<script>
+// ---------- สลับฉาก ----------
+var ฉากทั้งหมด = ['อ่าน','เมนู','เล่ม','ความรู้','ตั้งค่า'];
+function เปิดฉาก(ชื่อ){
+  ฉากทั้งหมด.forEach(function(ฉ){
+    var ก = document.getElementById('ฉาก-'+ฉ);
+    if(ก) ก.hidden = (ฉ !== ชื่อ);
+  });
+  // ปุ่มบนแถบดูต้องบอกสถานะให้ตรง ⇒ aria-pressed ที่เปลี่ยนจริง
+  var ปุ่ม = document.querySelectorAll('#แถบดู button[data-chak]');
+  for(var i=0;i<ปุ่ม.length;i++){
+    ปุ่ม[i].setAttribute('aria-pressed', String(ปุ่ม[i].getAttribute('data-chak') === ชื่อ));
+  }
+}
+var ปุ่มฉาก = document.querySelectorAll('[data-chak]');
+for(var i=0;i<ปุ่มฉาก.length;i++){
+  (function(ป){
+    ป.addEventListener('click', function(e){
+      if(ป.tagName === 'A') e.preventDefault();
+      เปิดฉาก(ป.getAttribute('data-chak'));
+    });
+  })(ปุ่มฉาก[i]);
+}
+
+// ---------- จุดที่เปิดมา — บอกด้วยคำอย่างเดียว ⇒ ปิดได้ ----------
+function วางหมุด(){ /* ⛔ ไม่มีหมุดให้วางแล้ว ⇒ ตัวคำเป็นปุ่มเอง ⇒ ไม่ต้องวัดตำแหน่ง */ }
+document.getElementById('ปิดช่วง').addEventListener('click', function(){
+  this.parentNode.hidden = true;
+});
+
+// ---------- ⭐ ระดับการแบ่ง กับ ขนาดตัวอักษร ----------
+var ตัวบท = document.getElementById('ตัวบท');
+function ตั้งกลุ่มปุ่ม(ที่เก็บ, คีย์, ทำงาน){
+  var ป = document.querySelectorAll('#'+ที่เก็บ+' button');
+  for(var i=0;i<ป.length;i++){
+    (function(ปุ่ม){
+      ปุ่ม.addEventListener('click', function(){
+        for(var k=0;k<ป.length;k++){ ป[k].setAttribute('aria-pressed','false'); }
+        ปุ่ม.setAttribute('aria-pressed','true');
+        ทำงาน(ปุ่ม.getAttribute('data-'+คีย์));
+      });
+    })(ป[i]);
+  }
+}
+// การจัดวางกับเลขข้อเป็นคนละเรื่อง ⇒ เก็บแยกกัน แล้วค่อยประกอบเป็น class
+var จัดวางอยู่ = 'para', โชว์เลข = true, โชว์หัวข้อ = true;
+function ทาคลาส(){
+  ตัวบท.className = 'ตัวบท จว-' + จัดวางอยู่
+    + (โชว์เลข ? '' : ' ไม่มีเลข')
+    + (โชว์หัวข้อ ? '' : ' ไม่มีหัวข้อ');
+  วางหมุด();                                  // บรรทัดขยับ ⇒ หมุดต้องขยับตาม
+}
+ตั้งกลุ่มปุ่ม('ปุ่มจัดวาง','จว',   function(ค่า){ จัดวางอยู่ = ค่า; ทาคลาส(); });
+ตั้งกลุ่มปุ่ม('ปุ่มเลข','เลข',     function(ค่า){ โชว์เลข = (ค่า === 'เปิด'); ทาคลาส(); });
+ตั้งกลุ่มปุ่ม('ปุ่มหัวข้อ','หัวข้อ', function(ค่า){ โชว์หัวข้อ = (ค่า === 'เปิด'); ทาคลาส(); });
+ทาคลาส();
+
+// ---------- ขนาดตัวอักษร 7 ขั้น ⇒ ชุดเดียวกับ pk-fontsize.js ของรุ่น 2 ----------
+var ขั้นขนาด = [0.85, 1, 1.15, 1.30, 1.50, 1.75, 2.0];
+var ฐานพิกเซล = 19, ดัชนีขนาด = 1;
+function ใช้ขนาด(){
+  ตัวบท.style.fontSize = (ฐานพิกเซล * ขั้นขนาด[ดัชนีขนาด]).toFixed(1) + 'px';
+  document.getElementById('เลขขนาด').textContent = Math.round(ขั้นขนาด[ดัชนีขนาด] * 100) + '%';
+  document.getElementById('ขนาดลด').disabled = (ดัชนีขนาด === 0);
+  document.getElementById('ขนาดเพิ่ม').disabled = (ดัชนีขนาด === ขั้นขนาด.length - 1);
+  วางหมุด();
+}
+document.getElementById('ขนาดลด').addEventListener('click', function(){ if(ดัชนีขนาด>0){ ดัชนีขนาด--; ใช้ขนาด(); } });
+document.getElementById('ขนาดเพิ่ม').addEventListener('click', function(){ if(ดัชนีขนาด<ขั้นขนาด.length-1){ ดัชนีขนาด++; ใช้ขนาด(); } });
+document.getElementById('ขนาดคืน').addEventListener('click', function(){ ดัชนีขนาด = 1; ใช้ขนาด(); });
+ใช้ขนาด();
+
+// ---------- ⭐ กดคำหรือปุ่มตอน แล้วกล่องกางออก "ท้ายข้อนั้น" ----------
+// ท่า Disclosure ของ ARIA APG ⇒ ปุ่มจริง + aria-expanded ที่ตรงกับของที่เห็นบนจอ
+// ⛔ ไม่ใช้ป็อปอัป เพราะป็อปอัปทับตัวบท ซึ่งขัดกับหลักข้อ 1 ที่ว่าตัวบทเป็นพระเอก
+var หมุดทั้งหมด = document.querySelectorAll('.คำ, .ปุ่มตอน');
+for(var h=0; h<หมุดทั้งหมด.length; h++){
+  (function(ปุ่ม){
+    ปุ่ม.addEventListener('click', function(){
+      var กล่อง = document.getElementById(ปุ่ม.getAttribute('aria-controls'));
+      var กางอยู่ = ปุ่ม.getAttribute('aria-expanded') === 'true';
+      ปุ่ม.setAttribute('aria-expanded', String(!กางอยู่));
+      กล่อง.hidden = กางอยู่;
+    });
+  })(หมุดทั้งหมด[h]);
+}
+
+// ปุ่ม × ในแถบหัวการ์ด ⇒ ปิดแล้ว **คืนโฟกัสกลับไปที่คำเดิมเสมอ** (ที่ปรึกษาเตือนไว้)
+var ปุ่มปิดการ์ด = document.querySelectorAll('.ปิดการ์ด');
+for(var c=0;c<ปุ่มปิดการ์ด.length;c++){
+  (function(ป){
+    ป.addEventListener('click', function(){
+      var รหัส = ป.getAttribute('data-ปิด');
+      document.getElementById(รหัส).hidden = true;
+      var ตัวเปิด = document.querySelector('[aria-controls="'+รหัส+'"]');
+      if(ตัวเปิด){ ตัวเปิด.setAttribute('aria-expanded','false'); ตัวเปิด.focus(); }
+    });
+  })(ปุ่มปิดการ์ด[c]);
+}
+
+// ---------- สลับขนาดจอ ----------
+var ปุ่มจอ = document.getElementById('สลับจอ');
+ปุ่มจอ.addEventListener('click', function(){
+  var มือถือ = document.body.classList.toggle('มือถือ');
+  ปุ่มจอ.setAttribute('aria-pressed', String(มือถือ));
+  ปุ่มจอ.textContent = มือถือ ? 'จอคอม' : 'จอมือถือ 320';
+});
+
+// ---------- สร้างตารางเล่ม (เอามาพอให้เห็นท่า ⛔ ไม่ครบ 66) ----------
+var รายชื่อเล่ม = ['ปฐมกาล','อพยพ','เลวีนิติ','กันดารวิถี','เฉลยธรรมบัญญัติ','โยชูวา',
+  'ผู้วินิจฉัย','นางรูธ','สดุดี','สุภาษิต','อิสยาห์','เยเรมีย์',
+  'มัทธิว','มาระโก','ลูกา','ยอห์น','กิจการ','โรม'];
+var ที่เก็บเล่ม = document.getElementById('ตารางเล่ม');
+รายชื่อเล่ม.forEach(function(ชื่อ){
+  var ป = document.createElement('button');
+  ป.type = 'button';
+  ป.textContent = ชื่อ;
+  ป.setAttribute('aria-pressed', String(ชื่อ === 'มาระโก'));
+  ป.addEventListener('click', function(){
+    var ทั้งหมด = ที่เก็บเล่ม.querySelectorAll('button');
+    for(var k=0;k<ทั้งหมด.length;k++){ ทั้งหมด[k].setAttribute('aria-pressed','false'); }
+    ป.setAttribute('aria-pressed','true');
+  });
+  ที่เก็บเล่ม.appendChild(ป);
+});
+var ที่เก็บบท = document.getElementById('ตารางบท');
+for(var b=1;b<=16;b++){
+  var a = document.createElement('a');
+  a.href = '#'; a.textContent = b;
+  a.addEventListener('click', function(e){ e.preventDefault(); เปิดฉาก('อ่าน'); });
+  ที่เก็บบท.appendChild(a);
+}
+
+// ---------- ⭐ ชิปบทเปลี่ยนเลขตามการเลื่อน ----------
+// แถบบนบอกแค่ชื่อเล่ม ⛔ ไม่แตะเลขบท ⇒ เลขบทมีที่อยู่เดียวคือชิปที่ริมซ้าย
+var ชิปบท = document.getElementById('ชิปบท');
+var จุดบท4 = document.getElementById('จุดบท4');
+function ตั้งความสูงเกาะ(){
+  // แถบดำเป็นของแบบให้ดูเท่านั้น ⇒ ของจริงไม่มี ⇒ วัดเอาตอนรัน ⛔ ไม่ฝังตัวเลขไว้
+  var สูงแถบ = document.getElementById('แถบดู').offsetHeight;
+  var สูงหัว = document.querySelector('header.บน').offsetHeight;
+  document.documentElement.style.setProperty('--บนแถบ', สูงแถบ + 'px');
+  document.documentElement.style.setProperty('--บนหัว', (สูงแถบ + สูงหัว + 8) + 'px');
+}
+function อัปเดตชิปบท(){
+  if(!จุดบท4 || document.getElementById('ฉาก-อ่าน').hidden) return;
+  var เส้น = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--บนหัว')) || 56;
+  ชิปบท.textContent = (จุดบท4.getBoundingClientRect().top <= เส้น + 14) ? '4' : '3';
+}
+window.addEventListener('scroll', อัปเดตชิปบท, {passive:true});
+window.addEventListener('resize', function(){ ตั้งความสูงเกาะ(); อัปเดตชิปบท(); });
+// วัดอีกครั้งหลังฟอนต์โหลดเสร็จ ⇒ ความสูงแถบหัวเปลี่ยนได้หลังฟอนต์มา
+window.addEventListener('load', function(){ ตั้งความสูงเกาะ(); อัปเดตชิปบท(); });
+ตั้งความสูงเกาะ();
+อัปเดตชิปบท();
+</script>
+</body>
+</html>

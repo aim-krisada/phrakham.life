@@ -1,0 +1,57 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 292
+ที่อยู่: 1SA 28:8
+ข้อความต้นฉบับ: וַיִּתְחַפֵּ֣שׂ שָׁא֗וּל וַיִּלְבַּשׁ֙ בְּגָדִ֣ים אֲחֵרִ֔ים וַיֵּ֣לֶךְ ה֗וּא וּשְׁנֵ֤י אֲנָשִׁים֙ עִמּ֔וֹ וַיָּבֹ֥אוּ אֶל־הָאִשָּׁ֖ה לָ֑יְלָה וַיֹּ֗אמֶר קָֽסֳמִי־נָ֥אלִי֙ בָּא֔וֹב וְהַ֣עֲלִי לִ֔י אֵ֥ת אֲשֶׁר־אֹמַ֖ר אֵלָֽיִךְ׃
+คำที่ถาม: שָׁא֗וּל   (รูปตั้งต้น שָׁאוּל · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · son of Kish; tribe of Benjamin; · first king of Israel [คำแปลสั้น: Saul]
+  B) man; · son of Simeon [คำแปลสั้น: Shaul]
+  C) man; · king of Edom [คำแปลสั้น: Shaul]
+  D) man; · son of Uzziah; descendant of Kohath; tribe of Levi; · ancestor of Samuel [คำแปลสั้น: Shaul]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 293
+ที่อยู่: 2CH 29:23
+ข้อความต้นฉบับ: וַיַּגִּ֨ישׁוּ֙ אֶת־שְׂעִירֵ֣י הַֽחַטָּ֔את לִפְנֵ֥י הַמֶּ֖לֶךְ וְהַקָּהָ֑ל וַיִּסְמְכ֥וּ יְדֵיהֶ֖ם עֲלֵיהֶֽם׃
+คำที่ถาม: הֶ֖ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally: to send out (one's) hand; hence: action by which humans straighten their arm in a certain direction [คำแปลสั้น: to stretch out (one's hand)]
+  B) the lower part of the upper limb of the human body, which in some contexts may include the full arm, · apart from basic human activities such as holding, giving and taking, working, beating, also used in rituals around blessings, oaths, and prayer; · used figuratively in expressions involving strength, control, responsibility, punishment; · possibly used as a euphemism for the male genitals [คำแปลสั้น: hand, wrist, forearm, arm]
+  C) literally: to stretch out (one's) hand (to do something); hence: action by which humans take a conscious decision to perform a certain event [คำแปลสั้น: to stretch out (one's) hand > to lift a hand (to do something)]
+  D) literally: to lay (one's) hand on (one's) mouth; hence: action by which humans purposefully refrain from speaking up [คำแปลสั้น: to keep (one's) mouth shut]
+  E) literally: hand, used metonymically to denote the owner of the hand; hence: the person who is the originator of a particular event [คำแปลสั้น: hand (as metonym), person]
+  F) literally: hand; hence: action by which humans or deities exert strength and power [คำแปลสั้น: hand, arm, strength]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 294
+ที่อยู่: PSA 89:5
+ข้อความต้นฉบับ: עַד־ע֭וֹלָם אָכִ֣ין זַרְעֶ֑ךָ וּבָנִ֨יתִי לְדֹר־וָד֖וֹר כִּסְאֲךָ֣ סֶֽלָה׃
+คำที่ถาม: אָכִ֣ין   (รูปตั้งต้น כּוּן · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to be established; hence: state in which something is morally and/or ethically right [คำแปลสั้น: to be right]
+  B) literally: to be established; hence: process by which plans are realized as intended [คำแปลสั้น: to succeed]
+  C) literally: to be established; hence: causative process by which deities help humans to find security and stability [คำแปลสั้น: to establish, to secure]
+  D) causative action where humans or deities make objects ready for use [คำแปลสั้น: to prepare, to make ready, to make provisions (for something)]
+  E) state in which an object is firmly and immovably located in a certain place [คำแปลสั้น: to be in place]
+  F) literally: to be established; hence: state in which someone's heart or spirit is committed to following the will of God [คำแปลสั้น: steadfast]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 295
+ที่อยู่: AMO 1:5
+ข้อความต้นฉบับ: וְשָֽׁבַרְתִּי֙ בְּרִ֣יחַ דַּמֶּ֔שֶׂק וְהִכְרַתִּ֤י יוֹשֵׁב֙ מִבִּקְעַת־אָ֔וֶן וְתוֹמֵ֥ךְ שֵׁ֖בֶט מִבֵּ֣ית עֶ֑דֶן וְגָל֧וּ עַם־אֲרָ֛ם קִ֖ירָה אָמַ֥ר יְהוָֽה׃פ
+คำที่ถาม: אָ֔וֶן   (รูปตั้งต้น אָוֶן · ชนิดคำ noun)
+ตัวเลือก:
+  A) location; probably to be identified with the Biqah Valley in present-day Lebanon (Andersen/Freedman) [คำแปลสั้น: Valley of Aven]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

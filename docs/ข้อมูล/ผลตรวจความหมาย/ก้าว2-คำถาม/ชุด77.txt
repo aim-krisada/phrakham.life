@@ -1,0 +1,47 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 180
+ที่อยู่: 2KI 11:15
+ข้อความต้นฉบับ: וַיְצַו֩ יְהוֹיָדָ֨ע הַכֹּהֵ֜ן אֶת־שָׂרֵ֥י הַמֵּא֣וֹת׀פְּקֻדֵ֣י הַחַ֗יִל וַיֹּ֤אמֶר אֲלֵיהֶם֙ הוֹצִ֤יאוּ אֹתָהּ֙ אֶל־מִבֵּ֣ית לַשְּׂדֵרֹ֔ת וְהַבָּ֥א אַחֲרֶ֖יהָ הָמֵ֣ת בֶּחָ֑רֶב כִּ֚י אָמַ֣ר הַכֹּהֵ֔ן אַל־תּוּמַ֖ת בֵּ֥ית יְהוָֽה׃
+คำที่ถาม: פְּקֻדֵ֣י   (รูปตั้งต้น פָּקַד · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans carefully observe a relatively large group of people or objects, · with the purpose of determining their number, establishing whether everyone is present, or, in the case of an army, to get to know their fighting strength [คำแปลสั้น: to count, to number, to muster, to hold a roll-call]
+  B) literally: appointee; hence: someone who has been appointed to a position of leadership [คำแปลสั้น: commander, overseer]
+  C) literally: to muster; hence: action by which deities or humans take notice of the misfortune or suffering of (other) humans, plants, or objects and intervene in order to help [คำแปลสั้น: to take notice, to be mindful (of someone, something)]
+  D) literally: to place; hence: causative process by which humans or deities cause suffering to come upon (other) humans [คำแปลสั้น: to bring (harm) upon]
+  E) action by which humans or deities carefully observe a person, group, or object · with the purpose of determining their well-being, condition, and/or integrity, and often followed by certain decisions as to how to proceed [คำแปลสั้น: to observe, to visit, to inspect, to test]
+  F) literally: to place; hence: action by which humans give a command to (other) humans or deities [คำแปลสั้น: to give a command, to issue a decree, to prescribe]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 181
+ที่อยู่: 1CH 7:22
+ข้อความต้นฉบับ: וַיִּתְאַבֵּ֛ל אֶפְרַ֥יִם אֲבִיהֶ֖ם יָמִ֣ים רַבִּ֑ים וַיָּבֹ֥אוּ אֶחָ֖יו לְנַחֲמֽוֹ׃
+คำที่ถาม: ו   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) marker identifying the activity that follows as one of a range of similar activities [คำแปลสั้น: any]
+  B) son of one's father, whether from the same mother or not [คำแปลสั้น: brother, half-brother]
+  C) close relative, such as one's uncle's son and one's brother's son, or someone else regarded as closely related [คำแปลสั้น: brother, cousin, nephew, kinsman, relative]
+  D) exclamation expressing grief and dismay [คำแปลสั้น: brother! alas!]
+  E) expression denoting a situation in which two people or objects that are regarded as masculine are involved in a reciprocal event [คำแปลสั้น: a man ... his brother > one ... each other]
+  F) fellow member of the same group of people, not necessarily relatives, sharing a bond of affection, employment, or a common purpose [คำแปลสั้น: brother, friend, companion, colleague]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 182
+ที่อยู่: 1SA 31:6
+ข้อความต้นฉบับ: וַיָּ֣מָת שָׁא֡וּל וּשְׁלֹ֣שֶׁת בָּנָיו֩ וְנֹשֵׂ֨א כֵלָ֜יו גַּ֧ם כָּל־אֲנָשָׁ֛יו בַּיּ֥וֹם הַה֖וּא יַחְדָּֽו׃
+คำที่ถาม: ו   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) human-made object of any kind, usually specified by the context, · of various makings · and made for various purposes [คำแปลสั้น: object, vessel, instrument, tool, utensil, weapon, article, bag, furnishing]
+  B) literally: tool; hence: a plan made to achieve a certain goal · in the same way as a tool is used to create a certain object [คำแปลสั้น: device, plan, scheme]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

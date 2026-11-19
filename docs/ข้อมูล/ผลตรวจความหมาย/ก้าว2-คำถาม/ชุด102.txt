@@ -1,0 +1,55 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 288
+ที่อยู่: 1SA 5:10
+ข้อความต้นฉบับ: וַֽיְשַׁלְּח֛וּ אֶת־אֲר֥וֹן הָאֱלֹהִ֖ים עֶקְר֑וֹן וַיְהִ֗י כְּב֨וֹא אֲר֤וֹן הָאֱלֹהִים֙ עֶקְר֔וֹן וַיִּזְעֲק֨וּ הָֽעֶקְרֹנִ֜ים לֵאמֹ֗ר הֵסַ֤בּוּ אֵלַי֙ אֶת־אֲרוֹן֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל לַהֲמִיתֵ֖נִי וְאֶת־עַמִּֽי׃
+คำที่ถาม: אֲרוֹן֙   (รูปตั้งต้น אֲרוֹן · ชนิดคำ noun)
+ตัวเลือก:
+  A) relatively large wooden box · used for storage [คำแปลสั้น: box, chest, coffin]
+  B) wooden box, overlaid with gold and with a golden cover with cherubs, normally placed behind the veil in the tabernacle or temple, but also carried along during military campaigns; · symbolizing the presence of YHWH among his people and used to store the two tablets with the law of God and other objects representing important events in the history of Israel [คำแปลสั้น: ark]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 289
+ที่อยู่: PSA 106:33
+ข้อความต้นฉบับ: כִּֽי־הִמְר֥וּ אֶת־רוּח֑וֹ וַ֝יְבַטֵּ֗א בִּשְׂפָתָֽיו׃
+คำที่ถาม: יְבַטֵּ֗א   (รูปตั้งต้น בטא · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans speak without due consideration as to attitude or content [คำแปลสั้น: rash speaking, rash words]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 290
+ที่อยู่: JOS 8:29
+ข้อความต้นฉบับ: וְאֶת־מֶ֧לֶךְ הָעַ֛י תָּלָ֥ה עַל־הָעֵ֖ץ עַד־עֵ֣ת הָעָ֑רֶב וּכְב֣וֹא הַשֶּׁמֶשׁ֩ צִוָּ֨ה יְהוֹשֻׁ֜עַ וַיֹּרִ֧ידוּ אֶת־נִבְלָת֣וֹ מִן־הָעֵ֗ץ וַיַּשְׁלִ֤יכוּ אוֹתָהּ֙ אֶל־פֶּ֨תַח֙ שַׁ֣עַר הָעִ֔יר וַיָּקִ֤ימוּ עָלָיו֙ גַּל־אֲבָנִ֣ים גָּד֔וֹל עַ֖ד הַיּ֥וֹם הַזֶּֽה׃פ
+คำที่ถาม: יֹּרִ֧ידוּ   (รูปตั้งต้น יָרַד · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to descend on one's skull; hence: state in which humans are held responsible for their deeds [คำแปลสั้น: to come down on one's skull]
+  B) literally: to bring down; hence: causative process by which humans or deities cause (other) humans to lose their power or social status [คำแปลสั้น: to bring down]
+  C) process by which tears flow in copious amounts from the eyes of humans · as a result of deep sorrow [คำแปลสั้น: to weep profusely]
+  D) causative action by which humans or deities cause objects to move from a place that is relatively high in elevation to a relatively lower place [คำแปลสั้น: to lower, to let down, to take down, to bring down, to take off (ornaments)]
+  E) literally: to bring down; causative action by which humans cause a construction to collapse to be taken apart [คำแปลสั้น: to bring down]
+  F) literally: to cause or allow someone's grey hair to descend into the netherworld; hence: causative process by which humans cause or allow an old person to die, usually under difficult circumstances [คำแปลสั้น: to bring (someone's) grey head down, to send down (someone's) grey head]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 291
+ที่อยู่: EXO 25:39
+ข้อความต้นฉบับ: כִּכָּ֛ר זָהָ֥ב טָה֖וֹר יַעֲשֶׂ֣ה אֹתָ֑הּ אֵ֥ת כָּל־הַכֵּלִ֖ים הָאֵֽלֶּה׃
+คำที่ถาม: יַעֲשֶׂ֣ה   (รูปตั้งต้น עָשָׂה · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which human or deities produce an object, either personally or by others on behalf of them [คำแปลสั้น: to make, to create, to produce, to build]
+  B) literally: to do; hence; action by which humans and engaged in a specific activity, usually in the service of someone else [คำแปลสั้น: to work]
+  C) literally: to make (possessions); hence: action by which humans obtain possessions [คำแปลสั้น: to acquire, to get, to obtain]
+  D) causative action by which humans cause an event to happen to people or objects for a specific purpose [คำแปลสั้น: to use, to treat]
+  E) action by which humans consult the spirits of deceased persons, either directly or through the intermediary of a professional; · an activity forbidden in the law of Moses [คำแปลสั้น: to deal with spirits of the dead and mediums]
+  F) literally: to make (ready); hence: causative action by which humans take an object and do what needs to be done to make it ready for a certain purpose [คำแปลสั้น: to prepare]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

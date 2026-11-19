@@ -1,0 +1,54 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 415
+ที่อยู่: JHN 20:15
+ข้อความต้นฉบับ: λέγει αὐτῇ Ἰησοῦς·Γύναι,τί κλαίεις;τίνα ζητεῖς;ἐκείνη δοκοῦσα ὅτι ὁ κηπουρός ἐστιν λέγει αὐτῷ·Κύριε,εἰ σὺ ἐβάστασας αὐτόν,εἰπέ μοι ποῦ ἔθηκας αὐτόν,κἀγὼ αὐτὸν ἀρῶ.
+คำที่ถาม: εἰπέ   (รูปตั้งต้น λέγω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to speak or talk, with apparent focus upon the content of what is said [คำแปลสั้น: to say, to talk, to tell, to speak]
+  B) (an idiom, literally: to speak to oneself) to think about something without communicating the content to others [คำแปลสั้น: to think to oneself, to say to oneself (often used to introduce a direct quotation of one’s thoughts)]
+  C) to use an attribution in speaking of a person [คำแปลสั้น: to call, to name]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 416
+ที่อยู่: MAT 26:73
+ข้อความต้นฉบับ: μετὰ μικρὸν δὲ προσελθόντες οἱ ἑστῶτες εἶπον τῷ Πέτρῳ·Ἀληθῶς καὶ σὺ ἐξ αὐτῶν εἶ,καὶ γὰρ ἡ λαλιά σου δῆλόν σε ποιεῖ·
+คำที่ถาม: αὐτῶν   (รูปตั้งต้น αὐτός · ชนิดคำ pron)
+ตัวเลือก:
+  A) a marker of emphasis by calling attention to the distinctiveness of the lexical item with which it occurs (used for all persons, genders, and numbers)001 [คำแปลสั้น: -self, -selves (for example, myself, yourself, yourselves, ourselves, himself, herself, itself, themselves)]
+  B) a reference to a definite person or persons spoken or written about (with an added feature of emphasis in the nominative forms) [คำแปลสั้น: he, him, she, her, it, they, them]
+  C) pertaining to that which is identical to something [คำแปลสั้น: same]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 417
+ที่อยู่: 2CO 8:24
+ข้อความต้นฉบับ: τὴν οὖν ἔνδειξιν τῆς ἀγάπης ὑμῶν καὶ ἡμῶν καυχήσεως ὑπὲρ ὑμῶν εἰς αὐτοὺς ἐνδεικνύμενοι εἰς πρόσωπον τῶν ἐκκλησιῶν.
+คำที่ถาม: εἰς   (รูปตั้งต้น εἰς · ชนิดคำ prep)
+ตัวเลือก:
+  A) a marker of result, with the probable implication of a preceding process [คำแปลสั้น: with the result that, so that as a result, to cause]
+  B) a marker of an involved experiencer [คำแปลสั้น: to, toward, for]
+  C) a marker of the means by which one event makes another event possible004 [คำแปลสั้น: by means of, through, by]
+  D) (with the dative) a marker of objects which serve as symbolic substitutes for supernatural persons or powers presumed to act as guarantors of compliance with oaths [คำแปลสั้น: by]
+  E) a position within an area determined by other objects and distributed among such objects003 [คำแปลสั้น: among, with]
+  F) (an idiom, literally: to come into knowledge) to come to understand the meaning of something, with special emphasis upon the process [คำแปลสั้น: to come to understand, to come to know]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 418
+ที่อยู่: GAL 4:19
+ข้อความต้นฉบับ: τέκνα μου,οὓς πάλιν ὠδίνω μέχρις οὗ μορφωθῇ Χριστὸς ἐν ὑμῖν·
+คำที่ถาม: ὑμῖν   (รูปตั้งต้น σύ · ชนิดคำ pron)
+ตัวเลือก:
+  A) a reference to the receptors of a message, whether oral or written (with an added feature of emphasis in the form ὑμεῖς) [คำแปลสั้น: you, your]
+  B) a reference to a receptor of a message (with an added feature of emphasis in the form σύ) [คำแปลสั้น: you]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

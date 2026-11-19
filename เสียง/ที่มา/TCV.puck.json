@@ -1,0 +1,5347 @@
+{
+ "v": 1,
+ "version": "TCV",
+ "voice": "th-TH-Chirp3-HD-Puck",
+ "languageCode": "th-TH",
+ "rateHz": 24000,
+ "bitrate": "48k",
+ "engine": "Google Cloud Text-to-Speech v1 text:synthesize",
+ "generator": "tools/พ่นเสียงพระคำ.py TCV --คืนนี้",
+ "generated": "2026-11-19",
+ "dir": "",
+ "source": {
+  "name": "พระคริสตธรรมคัมภีร์ ฉบับ Thai Common Version 2025 (TCV)",
+  "publisher": "Biblica, Inc.",
+  "url": "https://www.open.bible/bibles/biblica-open-thai-common-version-2025",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.th",
+  "adapted": true,
+  "adaptedLicense": "CC BY-SA 4.0",
+  "notice": "ข้อความจาก พระคริสตธรรมคัมภีร์ ฉบับ Thai Common Version 2025 (TCV) © Biblica, Inc.\nเผยแพร่ภายใต้สัญญาอนุญาต CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/deed.th\nต้นฉบับ: https://www.open.bible/bibles/biblica-open-thai-common-version-2025\nเสียงอ่านนี้ดัดแปลงจากข้อความข้างต้น (แปลงเป็นเสียงพูด) และเผยแพร่ภายใต้ CC BY-SA 4.0 เช่นกัน\nเผยแพร่ตามสภาพ ไม่มีการรับประกันใด ๆ ทั้งสิ้น (ดูข้อ 5 ของสัญญาอนุญาต)"
+ },
+ "verses": {
+  "Matt.1.1": {
+   "ref": "มัทธิว 1:1",
+   "osis": "Matt",
+   "c": 1,
+   "v": 1,
+   "file": "Matt.1.1.puck.mp3",
+   "d": 7.0,
+   "chars": 89,
+   "h": "sha256:221ca892739bd293"
+  },
+  "Matt.1.2": {
+   "ref": "มัทธิว 1:2",
+   "osis": "Matt",
+   "c": 1,
+   "v": 2,
+   "file": "Matt.1.2.puck.mp3",
+   "d": 8.56,
+   "chars": 84,
+   "h": "sha256:e6e9f1668bb3d8e5"
+  },
+  "Matt.1.3": {
+   "ref": "มัทธิว 1:3",
+   "osis": "Matt",
+   "c": 1,
+   "v": 3,
+   "file": "Matt.1.3.puck.mp3",
+   "d": 8.96,
+   "chars": 94,
+   "h": "sha256:0fff0f5e7b1df0f5"
+  },
+  "Matt.1.4": {
+   "ref": "มัทธิว 1:4",
+   "osis": "Matt",
+   "c": 1,
+   "v": 4,
+   "file": "Matt.1.4.puck.mp3",
+   "d": 7.04,
+   "chars": 71,
+   "h": "sha256:61aea606cec73bef"
+  },
+  "Matt.1.5": {
+   "ref": "มัทธิว 1:5",
+   "osis": "Matt",
+   "c": 1,
+   "v": 5,
+   "file": "Matt.1.5.puck.mp3",
+   "d": 10.12,
+   "chars": 97,
+   "h": "sha256:95c07c54a95a66a9"
+  },
+  "Matt.1.6": {
+   "ref": "มัทธิว 1:6",
+   "osis": "Matt",
+   "c": 1,
+   "v": 6,
+   "file": "Matt.1.6.puck.mp3",
+   "d": 9.08,
+   "chars": 97,
+   "h": "sha256:b08a74630f51b8c1"
+  },
+  "Matt.1.7": {
+   "ref": "มัทธิว 1:7",
+   "osis": "Matt",
+   "c": 1,
+   "v": 7,
+   "file": "Matt.1.7.puck.mp3",
+   "d": 7.52,
+   "chars": 77,
+   "h": "sha256:62df1b6874b0b4c5"
+  },
+  "Matt.1.8": {
+   "ref": "มัทธิว 1:8",
+   "osis": "Matt",
+   "c": 1,
+   "v": 8,
+   "file": "Matt.1.8.puck.mp3",
+   "d": 10.84,
+   "chars": 77,
+   "h": "sha256:2abd62fe8cf1fd93"
+  },
+  "Matt.1.9": {
+   "ref": "มัทธิว 1:9",
+   "osis": "Matt",
+   "c": 1,
+   "v": 9,
+   "file": "Matt.1.9.puck.mp3",
+   "d": 8.0,
+   "chars": 71,
+   "h": "sha256:fbafd37482b6e148"
+  },
+  "Matt.1.10": {
+   "ref": "มัทธิว 1:10",
+   "osis": "Matt",
+   "c": 1,
+   "v": 10,
+   "file": "Matt.1.10.puck.mp3",
+   "d": 7.72,
+   "chars": 76,
+   "h": "sha256:53fcf13caf687429"
+  },
+  "Matt.1.11": {
+   "ref": "มัทธิว 1:11",
+   "osis": "Matt",
+   "c": 1,
+   "v": 11,
+   "file": "Matt.1.11.puck.mp3",
+   "d": 5.68,
+   "chars": 75,
+   "h": "sha256:7348d2b75c58135d"
+  },
+  "Matt.1.12": {
+   "ref": "มัทธิว 1:12",
+   "osis": "Matt",
+   "c": 1,
+   "v": 12,
+   "file": "Matt.1.12.puck.mp3",
+   "d": 7.64,
+   "chars": 91,
+   "h": "sha256:707966dff8296e20"
+  },
+  "Matt.1.13": {
+   "ref": "มัทธิว 1:13",
+   "osis": "Matt",
+   "c": 1,
+   "v": 13,
+   "file": "Matt.1.13.puck.mp3",
+   "d": 8.68,
+   "chars": 80,
+   "h": "sha256:d2b785aab986dd1f"
+  },
+  "Matt.1.14": {
+   "ref": "มัทธิว 1:14",
+   "osis": "Matt",
+   "c": 1,
+   "v": 14,
+   "file": "Matt.1.14.puck.mp3",
+   "d": 8.4,
+   "chars": 65,
+   "h": "sha256:e66b99f62ede031c"
+  },
+  "Matt.1.15": {
+   "ref": "มัทธิว 1:15",
+   "osis": "Matt",
+   "c": 1,
+   "v": 15,
+   "file": "Matt.1.15.puck.mp3",
+   "d": 8.36,
+   "chars": 76,
+   "h": "sha256:5f0b5e7483b56a59"
+  },
+  "Matt.1.16": {
+   "ref": "มัทธิว 1:16",
+   "osis": "Matt",
+   "c": 1,
+   "v": 16,
+   "file": "Matt.1.16.puck.mp3",
+   "d": 7.48,
+   "chars": 81,
+   "h": "sha256:1ce38c500bcbffdc"
+  },
+  "Matt.1.17": {
+   "ref": "มัทธิว 1:17",
+   "osis": "Matt",
+   "c": 1,
+   "v": 17,
+   "file": "Matt.1.17.puck.mp3",
+   "d": 14.76,
+   "chars": 170,
+   "h": "sha256:65f56de82ec22f01"
+  },
+  "Matt.1.18": {
+   "ref": "มัทธิว 1:18",
+   "osis": "Matt",
+   "c": 1,
+   "v": 18,
+   "file": "Matt.1.18.puck.mp3",
+   "d": 16.08,
+   "chars": 193,
+   "h": "sha256:257cea1d32ca8efc"
+  },
+  "Matt.1.19": {
+   "ref": "มัทธิว 1:19",
+   "osis": "Matt",
+   "c": 1,
+   "v": 19,
+   "file": "Matt.1.19.puck.mp3",
+   "d": 10.88,
+   "chars": 135,
+   "h": "sha256:423db9e5057be6c8"
+  },
+  "Matt.1.20": {
+   "ref": "มัทธิว 1:20",
+   "osis": "Matt",
+   "c": 1,
+   "v": 20,
+   "file": "Matt.1.20.puck.mp3",
+   "d": 17.36,
+   "chars": 213,
+   "h": "sha256:f27865409cd41298"
+  },
+  "Matt.1.21": {
+   "ref": "มัทธิว 1:21",
+   "osis": "Matt",
+   "c": 1,
+   "v": 21,
+   "file": "Matt.1.21.puck.mp3",
+   "d": 8.92,
+   "chars": 115,
+   "h": "sha256:431079ce07a4ba4d"
+  },
+  "Matt.1.22": {
+   "ref": "มัทธิว 1:22",
+   "osis": "Matt",
+   "c": 1,
+   "v": 22,
+   "file": "Matt.1.22.puck.mp3",
+   "d": 6.04,
+   "chars": 75,
+   "h": "sha256:7ffad91343bfa166"
+  },
+  "Matt.1.23": {
+   "ref": "มัทธิว 1:23",
+   "osis": "Matt",
+   "c": 1,
+   "v": 23,
+   "file": "Matt.1.23.puck.mp3",
+   "d": 9.36,
+   "chars": 97,
+   "h": "sha256:19769339cedde2e6"
+  },
+  "Matt.1.24": {
+   "ref": "มัทธิว 1:24",
+   "osis": "Matt",
+   "c": 1,
+   "v": 24,
+   "file": "Matt.1.24.puck.mp3",
+   "d": 7.64,
+   "chars": 100,
+   "h": "sha256:f0a8247e135dbcfb"
+  },
+  "Matt.1.25": {
+   "ref": "มัทธิว 1:25",
+   "osis": "Matt",
+   "c": 1,
+   "v": 25,
+   "file": "Matt.1.25.puck.mp3",
+   "d": 6.96,
+   "chars": 77,
+   "h": "sha256:c8e42e2216f172f4"
+  },
+  "Matt.2.1": {
+   "ref": "มัทธิว 2:1",
+   "osis": "Matt",
+   "c": 2,
+   "v": 1,
+   "file": "Matt.2.1.puck.mp3",
+   "d": 9.48,
+   "chars": 120,
+   "h": "sha256:386579b596752a6f"
+  },
+  "Matt.2.2": {
+   "ref": "มัทธิว 2:2",
+   "osis": "Matt",
+   "c": 2,
+   "v": 2,
+   "file": "Matt.2.2.puck.mp3",
+   "d": 7.84,
+   "chars": 110,
+   "h": "sha256:ee964e48ccc8595b"
+  },
+  "Matt.2.3": {
+   "ref": "มัทธิว 2:3",
+   "osis": "Matt",
+   "c": 2,
+   "v": 3,
+   "file": "Matt.2.3.puck.mp3",
+   "d": 6.04,
+   "chars": 77,
+   "h": "sha256:e7b4569a5af974db"
+  },
+  "Matt.2.4": {
+   "ref": "มัทธิว 2:4",
+   "osis": "Matt",
+   "c": 2,
+   "v": 4,
+   "file": "Matt.2.4.puck.mp3",
+   "d": 9.52,
+   "chars": 119,
+   "h": "sha256:ad104ca9795e439e"
+  },
+  "Matt.2.5": {
+   "ref": "มัทธิว 2:5",
+   "osis": "Matt",
+   "c": 2,
+   "v": 5,
+   "file": "Matt.2.5.puck.mp3",
+   "d": 5.72,
+   "chars": 65,
+   "h": "sha256:8c07cdae0db0a672"
+  },
+  "Matt.2.6": {
+   "ref": "มัทธิว 2:6",
+   "osis": "Matt",
+   "c": 2,
+   "v": 6,
+   "file": "Matt.2.6.puck.mp3",
+   "d": 12.04,
+   "chars": 168,
+   "h": "sha256:e185eadb83b55caf"
+  },
+  "Matt.2.7": {
+   "ref": "มัทธิว 2:7",
+   "osis": "Matt",
+   "c": 2,
+   "v": 7,
+   "file": "Matt.2.7.puck.mp3",
+   "d": 9.28,
+   "chars": 90,
+   "h": "sha256:0f3a8d59db308d11"
+  },
+  "Matt.2.8": {
+   "ref": "มัทธิว 2:8",
+   "osis": "Matt",
+   "c": 2,
+   "v": 8,
+   "file": "Matt.2.8.puck.mp3",
+   "d": 10.0,
+   "chars": 130,
+   "h": "sha256:cb72efc3eca74d19"
+  },
+  "Matt.2.9": {
+   "ref": "มัทธิว 2:9",
+   "osis": "Matt",
+   "c": 2,
+   "v": 9,
+   "file": "Matt.2.9.puck.mp3",
+   "d": 8.96,
+   "chars": 117,
+   "h": "sha256:d7748e19c06ea193"
+  },
+  "Matt.2.10": {
+   "ref": "มัทธิว 2:10",
+   "osis": "Matt",
+   "c": 2,
+   "v": 10,
+   "file": "Matt.2.10.puck.mp3",
+   "d": 3.04,
+   "chars": 40,
+   "h": "sha256:7c8a6d917f4fc1f5"
+  },
+  "Matt.2.11": {
+   "ref": "มัทธิว 2:11",
+   "osis": "Matt",
+   "c": 2,
+   "v": 11,
+   "file": "Matt.2.11.puck.mp3",
+   "d": 11.92,
+   "chars": 130,
+   "h": "sha256:b160d4b3b1af8e6d"
+  },
+  "Matt.2.12": {
+   "ref": "มัทธิว 2:12",
+   "osis": "Matt",
+   "c": 2,
+   "v": 12,
+   "file": "Matt.2.12.puck.mp3",
+   "d": 7.52,
+   "chars": 83,
+   "h": "sha256:5179b333b93e14b7"
+  },
+  "Matt.2.13": {
+   "ref": "มัทธิว 2:13",
+   "osis": "Matt",
+   "c": 2,
+   "v": 13,
+   "file": "Matt.2.13.puck.mp3",
+   "d": 17.44,
+   "chars": 211,
+   "h": "sha256:b5595fda98690d05"
+  },
+  "Matt.2.14": {
+   "ref": "มัทธิว 2:14",
+   "osis": "Matt",
+   "c": 2,
+   "v": 14,
+   "file": "Matt.2.14.puck.mp3",
+   "d": 5.0,
+   "chars": 59,
+   "h": "sha256:f2326d7a6aacc280"
+  },
+  "Matt.2.15": {
+   "ref": "มัทธิว 2:15",
+   "osis": "Matt",
+   "c": 2,
+   "v": 15,
+   "file": "Matt.2.15.puck.mp3",
+   "d": 11.6,
+   "chars": 143,
+   "h": "sha256:e9db2a444268cc29"
+  },
+  "Matt.2.16": {
+   "ref": "มัทธิว 2:16",
+   "osis": "Matt",
+   "c": 2,
+   "v": 16,
+   "file": "Matt.2.16.puck.mp3",
+   "d": 15.84,
+   "chars": 175,
+   "h": "sha256:73c3f30a93ac1f85"
+  },
+  "Matt.2.17": {
+   "ref": "มัทธิว 2:17",
+   "osis": "Matt",
+   "c": 2,
+   "v": 17,
+   "file": "Matt.2.17.puck.mp3",
+   "d": 4.68,
+   "chars": 56,
+   "h": "sha256:f706637b6e7a9959"
+  },
+  "Matt.2.18": {
+   "ref": "มัทธิว 2:18",
+   "osis": "Matt",
+   "c": 2,
+   "v": 18,
+   "file": "Matt.2.18.puck.mp3",
+   "d": 9.4,
+   "chars": 116,
+   "h": "sha256:08db8fca070d9093"
+  },
+  "Matt.2.19": {
+   "ref": "มัทธิว 2:19",
+   "osis": "Matt",
+   "c": 2,
+   "v": 19,
+   "file": "Matt.2.19.puck.mp3",
+   "d": 8.84,
+   "chars": 95,
+   "h": "sha256:172f99176f8664a8"
+  },
+  "Matt.2.20": {
+   "ref": "มัทธิว 2:20",
+   "osis": "Matt",
+   "c": 2,
+   "v": 20,
+   "file": "Matt.2.20.puck.mp3",
+   "d": 8.2,
+   "chars": 99,
+   "h": "sha256:4e2ab82ee42d9300"
+  },
+  "Matt.2.21": {
+   "ref": "มัทธิว 2:21",
+   "osis": "Matt",
+   "c": 2,
+   "v": 21,
+   "file": "Matt.2.21.puck.mp3",
+   "d": 5.68,
+   "chars": 50,
+   "h": "sha256:bb022c4869e816b1"
+  },
+  "Matt.2.22": {
+   "ref": "มัทธิว 2:22",
+   "osis": "Matt",
+   "c": 2,
+   "v": 22,
+   "file": "Matt.2.22.puck.mp3",
+   "d": 11.4,
+   "chars": 139,
+   "h": "sha256:fc4c1e05eb6ee472"
+  },
+  "Matt.2.23": {
+   "ref": "มัทธิว 2:23",
+   "osis": "Matt",
+   "c": 2,
+   "v": 23,
+   "file": "Matt.2.23.puck.mp3",
+   "d": 9.04,
+   "chars": 120,
+   "h": "sha256:9c240e8fb90a1a85"
+  },
+  "Matt.3.1": {
+   "ref": "มัทธิว 3:1",
+   "osis": "Matt",
+   "c": 3,
+   "v": 1,
+   "file": "Matt.3.1.puck.mp3",
+   "d": 6.32,
+   "chars": 69,
+   "h": "sha256:5bfd8ec7c306e0d1"
+  },
+  "Matt.3.2": {
+   "ref": "มัทธิว 3:2",
+   "osis": "Matt",
+   "c": 3,
+   "v": 2,
+   "file": "Matt.3.2.puck.mp3",
+   "d": 4.96,
+   "chars": 55,
+   "h": "sha256:2e259fd91324ae20"
+  },
+  "Matt.3.3": {
+   "ref": "มัทธิว 3:3",
+   "osis": "Matt",
+   "c": 3,
+   "v": 3,
+   "file": "Matt.3.3.puck.mp3",
+   "d": 11.68,
+   "chars": 158,
+   "h": "sha256:68a43e4efbe2079e"
+  },
+  "Matt.3.4": {
+   "ref": "มัทธิว 3:4",
+   "osis": "Matt",
+   "c": 3,
+   "v": 4,
+   "file": "Matt.3.4.puck.mp3",
+   "d": 7.44,
+   "chars": 80,
+   "h": "sha256:8372c403ee053b85"
+  },
+  "Matt.3.5": {
+   "ref": "มัทธิว 3:5",
+   "osis": "Matt",
+   "c": 3,
+   "v": 5,
+   "file": "Matt.3.5.puck.mp3",
+   "d": 5.24,
+   "chars": 67,
+   "h": "sha256:badb0e412b022325"
+  },
+  "Matt.3.6": {
+   "ref": "มัทธิว 3:6",
+   "osis": "Matt",
+   "c": 3,
+   "v": 6,
+   "file": "Matt.3.6.puck.mp3",
+   "d": 5.16,
+   "chars": 69,
+   "h": "sha256:0d8ed824ad18b1df"
+  },
+  "Matt.3.7": {
+   "ref": "มัทธิว 3:7",
+   "osis": "Matt",
+   "c": 3,
+   "v": 7,
+   "file": "Matt.3.7.puck.mp3",
+   "d": 12.84,
+   "chars": 158,
+   "h": "sha256:cf4fdf5c9ae8cdb8"
+  },
+  "Matt.3.8": {
+   "ref": "มัทธิว 3:8",
+   "osis": "Matt",
+   "c": 3,
+   "v": 8,
+   "file": "Matt.3.8.puck.mp3",
+   "d": 2.68,
+   "chars": 29,
+   "h": "sha256:ec633f808db17066"
+  },
+  "Matt.3.9": {
+   "ref": "มัทธิว 3:9",
+   "osis": "Matt",
+   "c": 3,
+   "v": 9,
+   "file": "Matt.3.9.puck.mp3",
+   "d": 10.28,
+   "chars": 122,
+   "h": "sha256:ddd0587f7a1045a5"
+  },
+  "Matt.3.10": {
+   "ref": "มัทธิว 3:10",
+   "osis": "Matt",
+   "c": 3,
+   "v": 10,
+   "file": "Matt.3.10.puck.mp3",
+   "d": 7.72,
+   "chars": 73,
+   "h": "sha256:9adedd3eb7df78a4"
+  },
+  "Matt.3.11": {
+   "ref": "มัทธิว 3:11",
+   "osis": "Matt",
+   "c": 3,
+   "v": 11,
+   "file": "Matt.3.11.puck.mp3",
+   "d": 17.36,
+   "chars": 200,
+   "h": "sha256:149c9e0d9664b5cd"
+  },
+  "Matt.3.12": {
+   "ref": "มัทธิว 3:12",
+   "osis": "Matt",
+   "c": 3,
+   "v": 12,
+   "file": "Matt.3.12.puck.mp3",
+   "d": 9.2,
+   "chars": 118,
+   "h": "sha256:35b2786c667c25cf"
+  },
+  "Matt.3.13": {
+   "ref": "มัทธิว 3:13",
+   "osis": "Matt",
+   "c": 3,
+   "v": 13,
+   "file": "Matt.3.13.puck.mp3",
+   "d": 6.28,
+   "chars": 71,
+   "h": "sha256:b6d064f760ee893e"
+  },
+  "Matt.3.14": {
+   "ref": "มัทธิว 3:14",
+   "osis": "Matt",
+   "c": 3,
+   "v": 14,
+   "file": "Matt.3.14.puck.mp3",
+   "d": 8.8,
+   "chars": 100,
+   "h": "sha256:fc637f20d15bb315"
+  },
+  "Matt.3.15": {
+   "ref": "มัทธิว 3:15",
+   "osis": "Matt",
+   "c": 3,
+   "v": 15,
+   "file": "Matt.3.15.puck.mp3",
+   "d": 10.04,
+   "chars": 129,
+   "h": "sha256:1c52057627da8f3e"
+  },
+  "Matt.3.16": {
+   "ref": "มัทธิว 3:16",
+   "osis": "Matt",
+   "c": 3,
+   "v": 16,
+   "file": "Matt.3.16.puck.mp3",
+   "d": 9.64,
+   "chars": 127,
+   "h": "sha256:92457004f22cc5dd"
+  },
+  "Matt.3.17": {
+   "ref": "มัทธิว 3:17",
+   "osis": "Matt",
+   "c": 3,
+   "v": 17,
+   "file": "Matt.3.17.puck.mp3",
+   "d": 6.44,
+   "chars": 72,
+   "h": "sha256:4a4fef70ab6da1e0"
+  },
+  "Matt.4.1": {
+   "ref": "มัทธิว 4:1",
+   "osis": "Matt",
+   "c": 4,
+   "v": 1,
+   "file": "Matt.4.1.puck.mp3",
+   "d": 5.44,
+   "chars": 59,
+   "h": "sha256:8968c8abd9a56a6e"
+  },
+  "Matt.4.2": {
+   "ref": "มัทธิว 4:2",
+   "osis": "Matt",
+   "c": 4,
+   "v": 2,
+   "file": "Matt.4.2.puck.mp3",
+   "d": 5.2,
+   "chars": 56,
+   "h": "sha256:73fdde9ed8a8df02"
+  },
+  "Matt.4.3": {
+   "ref": "มัทธิว 4:3",
+   "osis": "Matt",
+   "c": 4,
+   "v": 3,
+   "file": "Matt.4.3.puck.mp3",
+   "d": 8.92,
+   "chars": 105,
+   "h": "sha256:cbbae5387b6f5924"
+  },
+  "Matt.4.4": {
+   "ref": "มัทธิว 4:4",
+   "osis": "Matt",
+   "c": 4,
+   "v": 4,
+   "file": "Matt.4.4.puck.mp3",
+   "d": 9.04,
+   "chars": 119,
+   "h": "sha256:2a1112953b2a5bce"
+  },
+  "Matt.4.5": {
+   "ref": "มัทธิว 4:5",
+   "osis": "Matt",
+   "c": 4,
+   "v": 5,
+   "file": "Matt.4.5.puck.mp3",
+   "d": 7.12,
+   "chars": 71,
+   "h": "sha256:21b39729c3d55e04"
+  },
+  "Matt.4.6": {
+   "ref": "มัทธิว 4:6",
+   "osis": "Matt",
+   "c": 4,
+   "v": 6,
+   "file": "Matt.4.6.puck.mp3",
+   "d": 15.56,
+   "chars": 193,
+   "h": "sha256:41f95b6bf6f4ec16"
+  },
+  "Matt.4.7": {
+   "ref": "มัทธิว 4:7",
+   "osis": "Matt",
+   "c": 4,
+   "v": 7,
+   "file": "Matt.4.7.puck.mp3",
+   "d": 7.88,
+   "chars": 86,
+   "h": "sha256:10c05ac62a5f8f7e"
+  },
+  "Matt.4.8": {
+   "ref": "มัทธิว 4:8",
+   "osis": "Matt",
+   "c": 4,
+   "v": 8,
+   "file": "Matt.4.8.puck.mp3",
+   "d": 9.88,
+   "chars": 114,
+   "h": "sha256:8aabc1e31785bfa9"
+  },
+  "Matt.4.9": {
+   "ref": "มัทธิว 4:9",
+   "osis": "Matt",
+   "c": 4,
+   "v": 9,
+   "file": "Matt.4.9.puck.mp3",
+   "d": 4.36,
+   "chars": 54,
+   "h": "sha256:4c56600436212b8e"
+  },
+  "Matt.4.10": {
+   "ref": "มัทธิว 4:10",
+   "osis": "Matt",
+   "c": 4,
+   "v": 10,
+   "file": "Matt.4.10.puck.mp3",
+   "d": 12.4,
+   "chars": 131,
+   "h": "sha256:62a4d4c0a73913a7"
+  },
+  "Matt.4.11": {
+   "ref": "มัทธิว 4:11",
+   "osis": "Matt",
+   "c": 4,
+   "v": 11,
+   "file": "Matt.4.11.puck.mp3",
+   "d": 4.88,
+   "chars": 57,
+   "h": "sha256:64d9680bd7750fc2"
+  },
+  "Matt.4.12": {
+   "ref": "มัทธิว 4:12",
+   "osis": "Matt",
+   "c": 4,
+   "v": 12,
+   "file": "Matt.4.12.puck.mp3",
+   "d": 5.96,
+   "chars": 62,
+   "h": "sha256:ab15ec85e09eb854"
+  },
+  "Matt.4.13": {
+   "ref": "มัทธิว 4:13",
+   "osis": "Matt",
+   "c": 4,
+   "v": 13,
+   "file": "Matt.4.13.puck.mp3",
+   "d": 9.32,
+   "chars": 97,
+   "h": "sha256:f519bcd62e340766"
+  },
+  "Matt.4.14": {
+   "ref": "มัทธิว 4:14",
+   "osis": "Matt",
+   "c": 4,
+   "v": 14,
+   "file": "Matt.4.14.puck.mp3",
+   "d": 4.12,
+   "chars": 58,
+   "h": "sha256:b4cacf61f7e47a77"
+  },
+  "Matt.4.15": {
+   "ref": "มัทธิว 4:15",
+   "osis": "Matt",
+   "c": 4,
+   "v": 15,
+   "file": "Matt.4.15.puck.mp3",
+   "d": 8.24,
+   "chars": 81,
+   "h": "sha256:b43889f194a7651f"
+  },
+  "Matt.4.16": {
+   "ref": "มัทธิว 4:16",
+   "osis": "Matt",
+   "c": 4,
+   "v": 16,
+   "file": "Matt.4.16.puck.mp3",
+   "d": 9.8,
+   "chars": 125,
+   "h": "sha256:8a8dbfd0a20c0429"
+  },
+  "Matt.4.17": {
+   "ref": "มัทธิว 4:17",
+   "osis": "Matt",
+   "c": 4,
+   "v": 17,
+   "file": "Matt.4.17.puck.mp3",
+   "d": 6.32,
+   "chars": 80,
+   "h": "sha256:7642ad86b30e7d4a"
+  },
+  "Matt.4.18": {
+   "ref": "มัทธิว 4:18",
+   "osis": "Matt",
+   "c": 4,
+   "v": 18,
+   "file": "Matt.4.18.puck.mp3",
+   "d": 13.4,
+   "chars": 133,
+   "h": "sha256:de414e650f16b333"
+  },
+  "Matt.4.19": {
+   "ref": "มัทธิว 4:19",
+   "osis": "Matt",
+   "c": 4,
+   "v": 19,
+   "file": "Matt.4.19.puck.mp3",
+   "d": 5.68,
+   "chars": 66,
+   "h": "sha256:167ef1be7fc6e809"
+  },
+  "Matt.4.20": {
+   "ref": "มัทธิว 4:20",
+   "osis": "Matt",
+   "c": 4,
+   "v": 20,
+   "file": "Matt.4.20.puck.mp3",
+   "d": 3.76,
+   "chars": 35,
+   "h": "sha256:0f73e675ed54c2ef"
+  },
+  "Matt.4.21": {
+   "ref": "มัทธิว 4:21",
+   "osis": "Matt",
+   "c": 4,
+   "v": 21,
+   "file": "Matt.4.21.puck.mp3",
+   "d": 10.84,
+   "chars": 134,
+   "h": "sha256:af207fe5cef985f1"
+  },
+  "Matt.4.22": {
+   "ref": "มัทธิว 4:22",
+   "osis": "Matt",
+   "c": 4,
+   "v": 22,
+   "file": "Matt.4.22.puck.mp3",
+   "d": 4.72,
+   "chars": 55,
+   "h": "sha256:b7e1c37f5019ca84"
+  },
+  "Matt.4.23": {
+   "ref": "มัทธิว 4:23",
+   "osis": "Matt",
+   "c": 4,
+   "v": 23,
+   "file": "Matt.4.23.puck.mp3",
+   "d": 10.12,
+   "chars": 125,
+   "h": "sha256:d6952f177d78f966"
+  },
+  "Matt.4.24": {
+   "ref": "มัทธิว 4:24",
+   "osis": "Matt",
+   "c": 4,
+   "v": 24,
+   "file": "Matt.4.24.puck.mp3",
+   "d": 13.8,
+   "chars": 166,
+   "h": "sha256:b006e451131234b4"
+  },
+  "Matt.4.25": {
+   "ref": "มัทธิว 4:25",
+   "osis": "Matt",
+   "c": 4,
+   "v": 25,
+   "file": "Matt.4.25.puck.mp3",
+   "d": 8.72,
+   "chars": 101,
+   "h": "sha256:d99922f52f95ff85"
+  },
+  "Matt.5.1": {
+   "ref": "มัทธิว 5:1",
+   "osis": "Matt",
+   "c": 5,
+   "v": 1,
+   "file": "Matt.5.1.puck.mp3",
+   "d": 7.52,
+   "chars": 73,
+   "h": "sha256:f9140c19e0e921e6"
+  },
+  "Matt.5.2": {
+   "ref": "มัทธิว 5:2",
+   "osis": "Matt",
+   "c": 5,
+   "v": 2,
+   "file": "Matt.5.2.puck.mp3",
+   "d": 4.36,
+   "chars": 61,
+   "h": "sha256:9421bde19d63d3cb"
+  },
+  "Matt.5.3": {
+   "ref": "มัทธิว 5:3",
+   "osis": "Matt",
+   "c": 5,
+   "v": 3,
+   "file": "Matt.5.3.puck.mp3",
+   "d": 5.6,
+   "chars": 63,
+   "h": "sha256:709d401f6bfbc22d"
+  },
+  "Matt.5.4": {
+   "ref": "มัทธิว 5:4",
+   "osis": "Matt",
+   "c": 5,
+   "v": 4,
+   "file": "Matt.5.4.puck.mp3",
+   "d": 4.16,
+   "chars": 55,
+   "h": "sha256:c855b16802d8c1fe"
+  },
+  "Matt.5.5": {
+   "ref": "มัทธิว 5:5",
+   "osis": "Matt",
+   "c": 5,
+   "v": 5,
+   "file": "Matt.5.5.puck.mp3",
+   "d": 4.52,
+   "chars": 61,
+   "h": "sha256:6690aff634e59296"
+  },
+  "Matt.5.6": {
+   "ref": "มัทธิว 5:6",
+   "osis": "Matt",
+   "c": 5,
+   "v": 6,
+   "file": "Matt.5.6.puck.mp3",
+   "d": 5.4,
+   "chars": 60,
+   "h": "sha256:8fae343c5f4d9e47"
+  },
+  "Matt.5.7": {
+   "ref": "มัทธิว 5:7",
+   "osis": "Matt",
+   "c": 5,
+   "v": 7,
+   "file": "Matt.5.7.puck.mp3",
+   "d": 4.08,
+   "chars": 51,
+   "h": "sha256:dde0050d1e3fec76"
+  },
+  "Matt.5.8": {
+   "ref": "มัทธิว 5:8",
+   "osis": "Matt",
+   "c": 5,
+   "v": 8,
+   "file": "Matt.5.8.puck.mp3",
+   "d": 4.8,
+   "chars": 55,
+   "h": "sha256:1729a8fb26bdb4a6"
+  },
+  "Matt.5.9": {
+   "ref": "มัทธิว 5:9",
+   "osis": "Matt",
+   "c": 5,
+   "v": 9,
+   "file": "Matt.5.9.puck.mp3",
+   "d": 4.04,
+   "chars": 56,
+   "h": "sha256:a2f871bee8e03679"
+  },
+  "Matt.5.10": {
+   "ref": "มัทธิว 5:10",
+   "osis": "Matt",
+   "c": 5,
+   "v": 10,
+   "file": "Matt.5.10.puck.mp3",
+   "d": 5.64,
+   "chars": 76,
+   "h": "sha256:935fb6bb02650f0b"
+  },
+  "Matt.5.11": {
+   "ref": "มัทธิว 5:11",
+   "osis": "Matt",
+   "c": 5,
+   "v": 11,
+   "file": "Matt.5.11.puck.mp3",
+   "d": 4.96,
+   "chars": 70,
+   "h": "sha256:6310a2bdd03ab1ae"
+  },
+  "Matt.5.12": {
+   "ref": "มัทธิว 5:12",
+   "osis": "Matt",
+   "c": 5,
+   "v": 12,
+   "file": "Matt.5.12.puck.mp3",
+   "d": 10.48,
+   "chars": 132,
+   "h": "sha256:1531fa343a8e2d4a"
+  },
+  "Matt.5.13": {
+   "ref": "มัทธิว 5:13",
+   "osis": "Matt",
+   "c": 5,
+   "v": 13,
+   "file": "Matt.5.13.puck.mp3",
+   "d": 11.56,
+   "chars": 142,
+   "h": "sha256:a0e2e9d32e72f067"
+  },
+  "Matt.5.14": {
+   "ref": "มัทธิว 5:14",
+   "osis": "Matt",
+   "c": 5,
+   "v": 14,
+   "file": "Matt.5.14.puck.mp3",
+   "d": 5.52,
+   "chars": 64,
+   "h": "sha256:85b39bc0fefdcdd7"
+  },
+  "Matt.5.15": {
+   "ref": "มัทธิว 5:15",
+   "osis": "Matt",
+   "c": 5,
+   "v": 15,
+   "file": "Matt.5.15.puck.mp3",
+   "d": 7.28,
+   "chars": 90,
+   "h": "sha256:3acdc0b58aa8c150"
+  },
+  "Matt.5.16": {
+   "ref": "มัทธิว 5:16",
+   "osis": "Matt",
+   "c": 5,
+   "v": 16,
+   "file": "Matt.5.16.puck.mp3",
+   "d": 9.16,
+   "chars": 123,
+   "h": "sha256:0d1d4e633f58e5b7"
+  },
+  "Matt.5.17": {
+   "ref": "มัทธิว 5:17",
+   "osis": "Matt",
+   "c": 5,
+   "v": 17,
+   "file": "Matt.5.17.puck.mp3",
+   "d": 8.24,
+   "chars": 97,
+   "h": "sha256:2ae6abc705dff22c"
+  },
+  "Matt.5.18": {
+   "ref": "มัทธิว 5:18",
+   "osis": "Matt",
+   "c": 5,
+   "v": 18,
+   "file": "Matt.5.18.puck.mp3",
+   "d": 11.76,
+   "chars": 140,
+   "h": "sha256:a0b1e3450cad2275"
+  },
+  "Matt.5.19": {
+   "ref": "มัทธิว 5:19",
+   "osis": "Matt",
+   "c": 5,
+   "v": 19,
+   "file": "Matt.5.19.puck.mp3",
+   "d": 13.84,
+   "chars": 193,
+   "h": "sha256:eff65e638b36f56a"
+  },
+  "Matt.5.20": {
+   "ref": "มัทธิว 5:20",
+   "osis": "Matt",
+   "c": 5,
+   "v": 20,
+   "file": "Matt.5.20.puck.mp3",
+   "d": 9.68,
+   "chars": 122,
+   "h": "sha256:a9ff1013613fe896"
+  },
+  "Matt.5.21": {
+   "ref": "มัทธิว 5:21",
+   "osis": "Matt",
+   "c": 5,
+   "v": 21,
+   "file": "Matt.5.21.puck.mp3",
+   "d": 7.6,
+   "chars": 83,
+   "h": "sha256:7a2ed73625f301c0"
+  },
+  "Matt.5.22": {
+   "ref": "มัทธิว 5:22",
+   "osis": "Matt",
+   "c": 5,
+   "v": 22,
+   "file": "Matt.5.22.puck.mp3",
+   "d": 11.68,
+   "chars": 141,
+   "h": "sha256:0c6f3470e09bf04a"
+  },
+  "Matt.5.23": {
+   "ref": "มัทธิว 5:23",
+   "osis": "Matt",
+   "c": 5,
+   "v": 23,
+   "file": "Matt.5.23.puck.mp3",
+   "d": 7.76,
+   "chars": 92,
+   "h": "sha256:aa1aecbd5855f576"
+  },
+  "Matt.5.24": {
+   "ref": "มัทธิว 5:24",
+   "osis": "Matt",
+   "c": 5,
+   "v": 24,
+   "file": "Matt.5.24.puck.mp3",
+   "d": 7.0,
+   "chars": 77,
+   "h": "sha256:bbe036851a15dc60"
+  },
+  "Matt.5.25": {
+   "ref": "มัทธิว 5:25",
+   "osis": "Matt",
+   "c": 5,
+   "v": 25,
+   "file": "Matt.5.25.puck.mp3",
+   "d": 12.72,
+   "chars": 150,
+   "h": "sha256:5e808a2b330aed9b"
+  },
+  "Matt.5.26": {
+   "ref": "มัทธิว 5:26",
+   "osis": "Matt",
+   "c": 5,
+   "v": 26,
+   "file": "Matt.5.26.puck.mp3",
+   "d": 5.4,
+   "chars": 67,
+   "h": "sha256:5e4aff488e48093e"
+  },
+  "Matt.5.27": {
+   "ref": "มัทธิว 5:27",
+   "osis": "Matt",
+   "c": 5,
+   "v": 27,
+   "file": "Matt.5.27.puck.mp3",
+   "d": 3.8,
+   "chars": 39,
+   "h": "sha256:40dd01a23ae9bce7"
+  },
+  "Matt.5.28": {
+   "ref": "มัทธิว 5:28",
+   "osis": "Matt",
+   "c": 5,
+   "v": 28,
+   "file": "Matt.5.28.puck.mp3",
+   "d": 7.4,
+   "chars": 75,
+   "h": "sha256:7f0dfb9b092daefb"
+  },
+  "Matt.5.29": {
+   "ref": "มัทธิว 5:29",
+   "osis": "Matt",
+   "c": 5,
+   "v": 29,
+   "file": "Matt.5.29.puck.mp3",
+   "d": 9.32,
+   "chars": 106,
+   "h": "sha256:c4ad8921e2b6bf7a"
+  },
+  "Matt.5.30": {
+   "ref": "มัทธิว 5:30",
+   "osis": "Matt",
+   "c": 5,
+   "v": 30,
+   "file": "Matt.5.30.puck.mp3",
+   "d": 8.4,
+   "chars": 104,
+   "h": "sha256:f5f1b26d0094abd4"
+  },
+  "Matt.5.31": {
+   "ref": "มัทธิว 5:31",
+   "osis": "Matt",
+   "c": 5,
+   "v": 31,
+   "file": "Matt.5.31.puck.mp3",
+   "d": 4.96,
+   "chars": 56,
+   "h": "sha256:62ed62b955d70c2f"
+  },
+  "Matt.5.32": {
+   "ref": "มัทธิว 5:32",
+   "osis": "Matt",
+   "c": 5,
+   "v": 32,
+   "file": "Matt.5.32.puck.mp3",
+   "d": 10.04,
+   "chars": 130,
+   "h": "sha256:682c5cc1ce26e87a"
+  },
+  "Matt.5.33": {
+   "ref": "มัทธิว 5:33",
+   "osis": "Matt",
+   "c": 5,
+   "v": 33,
+   "file": "Matt.5.33.puck.mp3",
+   "d": 8.96,
+   "chars": 106,
+   "h": "sha256:127e89c073bdf9e3"
+  },
+  "Matt.5.34": {
+   "ref": "มัทธิว 5:34",
+   "osis": "Matt",
+   "c": 5,
+   "v": 34,
+   "file": "Matt.5.34.puck.mp3",
+   "d": 6.68,
+   "chars": 71,
+   "h": "sha256:d35c6504d82fb639"
+  },
+  "Matt.5.35": {
+   "ref": "มัทธิว 5:35",
+   "osis": "Matt",
+   "c": 5,
+   "v": 35,
+   "file": "Matt.5.35.puck.mp3",
+   "d": 9.52,
+   "chars": 133,
+   "h": "sha256:11f6ff1e5a0870b5"
+  },
+  "Matt.5.36": {
+   "ref": "มัทธิว 5:36",
+   "osis": "Matt",
+   "c": 5,
+   "v": 36,
+   "file": "Matt.5.36.puck.mp3",
+   "d": 6.88,
+   "chars": 93,
+   "h": "sha256:8593bb67f731d713"
+  },
+  "Matt.5.37": {
+   "ref": "มัทธิว 5:37",
+   "osis": "Matt",
+   "c": 5,
+   "v": 37,
+   "file": "Matt.5.37.puck.mp3",
+   "d": 5.12,
+   "chars": 70,
+   "h": "sha256:af16ca36898553ca"
+  },
+  "Matt.5.38": {
+   "ref": "มัทธิว 5:38",
+   "osis": "Matt",
+   "c": 5,
+   "v": 38,
+   "file": "Matt.5.38.puck.mp3",
+   "d": 5.08,
+   "chars": 57,
+   "h": "sha256:db42896a6d5e05b2"
+  },
+  "Matt.5.39": {
+   "ref": "มัทธิว 5:39",
+   "osis": "Matt",
+   "c": 5,
+   "v": 39,
+   "file": "Matt.5.39.puck.mp3",
+   "d": 6.64,
+   "chars": 85,
+   "h": "sha256:b2a5e90c685160f3"
+  },
+  "Matt.5.40": {
+   "ref": "มัทธิว 5:40",
+   "osis": "Matt",
+   "c": 5,
+   "v": 40,
+   "file": "Matt.5.40.puck.mp3",
+   "d": 4.2,
+   "chars": 57,
+   "h": "sha256:19f7f7ae2d27ebfb"
+  },
+  "Matt.5.41": {
+   "ref": "มัทธิว 5:41",
+   "osis": "Matt",
+   "c": 5,
+   "v": 41,
+   "file": "Matt.5.41.puck.mp3",
+   "d": 4.72,
+   "chars": 53,
+   "h": "sha256:170029be471e584e"
+  },
+  "Matt.5.42": {
+   "ref": "มัทธิว 5:42",
+   "osis": "Matt",
+   "c": 5,
+   "v": 42,
+   "file": "Matt.5.42.puck.mp3",
+   "d": 5.36,
+   "chars": 58,
+   "h": "sha256:e8578219e815fc66"
+  },
+  "Matt.5.43": {
+   "ref": "มัทธิว 5:43",
+   "osis": "Matt",
+   "c": 5,
+   "v": 43,
+   "file": "Matt.5.43.puck.mp3",
+   "d": 5.56,
+   "chars": 62,
+   "h": "sha256:c408caa237171b23"
+  },
+  "Matt.5.44": {
+   "ref": "มัทธิว 5:44",
+   "osis": "Matt",
+   "c": 5,
+   "v": 44,
+   "file": "Matt.5.44.puck.mp3",
+   "d": 5.72,
+   "chars": 53,
+   "h": "sha256:a991794a3ce20a59"
+  },
+  "Matt.5.45": {
+   "ref": "มัทธิว 5:45",
+   "osis": "Matt",
+   "c": 5,
+   "v": 45,
+   "file": "Matt.5.45.puck.mp3",
+   "d": 9.52,
+   "chars": 118,
+   "h": "sha256:d9e2ea99aa693418"
+  },
+  "Matt.5.46": {
+   "ref": "มัทธิว 5:46",
+   "osis": "Matt",
+   "c": 5,
+   "v": 46,
+   "file": "Matt.5.46.puck.mp3",
+   "d": 7.24,
+   "chars": 84,
+   "h": "sha256:6792c3898a97f573"
+  },
+  "Matt.5.47": {
+   "ref": "มัทธิว 5:47",
+   "osis": "Matt",
+   "c": 5,
+   "v": 47,
+   "file": "Matt.5.47.puck.mp3",
+   "d": 8.88,
+   "chars": 107,
+   "h": "sha256:8d0ee947113db5d4"
+  },
+  "Matt.5.48": {
+   "ref": "มัทธิว 5:48",
+   "osis": "Matt",
+   "c": 5,
+   "v": 48,
+   "file": "Matt.5.48.puck.mp3",
+   "d": 5.04,
+   "chars": 51,
+   "h": "sha256:fde42219fb9853d4"
+  },
+  "Matt.6.1": {
+   "ref": "มัทธิว 6:1",
+   "osis": "Matt",
+   "c": 6,
+   "v": 1,
+   "file": "Matt.6.1.puck.mp3",
+   "d": 8.56,
+   "chars": 113,
+   "h": "sha256:ad0b31b4f7c67fa2"
+  },
+  "Matt.6.2": {
+   "ref": "มัทธิว 6:2",
+   "osis": "Matt",
+   "c": 6,
+   "v": 2,
+   "file": "Matt.6.2.puck.mp3",
+   "d": 14.72,
+   "chars": 173,
+   "h": "sha256:8c93337291987fd4"
+  },
+  "Matt.6.3": {
+   "ref": "มัทธิว 6:3",
+   "osis": "Matt",
+   "c": 6,
+   "v": 3,
+   "file": "Matt.6.3.puck.mp3",
+   "d": 5.08,
+   "chars": 61,
+   "h": "sha256:90e5e7ce2738cfe4"
+  },
+  "Matt.6.4": {
+   "ref": "มัทธิว 6:4",
+   "osis": "Matt",
+   "c": 6,
+   "v": 4,
+   "file": "Matt.6.4.puck.mp3",
+   "d": 7.72,
+   "chars": 95,
+   "h": "sha256:3cf595e64acd325a"
+  },
+  "Matt.6.5": {
+   "ref": "มัทธิว 6:5",
+   "osis": "Matt",
+   "c": 6,
+   "v": 5,
+   "file": "Matt.6.5.puck.mp3",
+   "d": 12.96,
+   "chars": 152,
+   "h": "sha256:3cdd950c0833afce"
+  },
+  "Matt.6.6": {
+   "ref": "มัทธิว 6:6",
+   "osis": "Matt",
+   "c": 6,
+   "v": 6,
+   "file": "Matt.6.6.puck.mp3",
+   "d": 12.52,
+   "chars": 157,
+   "h": "sha256:57e0750252d37500"
+  },
+  "Matt.6.7": {
+   "ref": "มัทธิว 6:7",
+   "osis": "Matt",
+   "c": 6,
+   "v": 7,
+   "file": "Matt.6.7.puck.mp3",
+   "d": 7.68,
+   "chars": 89,
+   "h": "sha256:a8c08b493516519b"
+  },
+  "Matt.6.8": {
+   "ref": "มัทธิว 6:8",
+   "osis": "Matt",
+   "c": 6,
+   "v": 8,
+   "file": "Matt.6.8.puck.mp3",
+   "d": 6.16,
+   "chars": 72,
+   "h": "sha256:abd47c0388d29b51"
+  },
+  "Matt.6.9": {
+   "ref": "มัทธิว 6:9",
+   "osis": "Matt",
+   "c": 6,
+   "v": 9,
+   "file": "Matt.6.9.puck.mp3",
+   "d": 8.4,
+   "chars": 100,
+   "h": "sha256:909de5d20f21498b"
+  },
+  "Matt.6.10": {
+   "ref": "มัทธิว 6:10",
+   "osis": "Matt",
+   "c": 6,
+   "v": 10,
+   "file": "Matt.6.10.puck.mp3",
+   "d": 6.76,
+   "chars": 89,
+   "h": "sha256:25d5db5d9c217c26"
+  },
+  "Matt.6.11": {
+   "ref": "มัทธิว 6:11",
+   "osis": "Matt",
+   "c": 6,
+   "v": 11,
+   "file": "Matt.6.11.puck.mp3",
+   "d": 2.92,
+   "chars": 37,
+   "h": "sha256:6519e163e21f5aa3"
+  },
+  "Matt.6.12": {
+   "ref": "มัทธิว 6:12",
+   "osis": "Matt",
+   "c": 6,
+   "v": 12,
+   "file": "Matt.6.12.puck.mp3",
+   "d": 4.36,
+   "chars": 52,
+   "h": "sha256:1590b16a3c82d31a"
+  },
+  "Matt.6.13": {
+   "ref": "มัทธิว 6:13",
+   "osis": "Matt",
+   "c": 6,
+   "v": 13,
+   "file": "Matt.6.13.puck.mp3",
+   "d": 5.2,
+   "chars": 54,
+   "h": "sha256:882844fb0241541f"
+  },
+  "Matt.6.14": {
+   "ref": "มัทธิว 6:14",
+   "osis": "Matt",
+   "c": 6,
+   "v": 14,
+   "file": "Matt.6.14.puck.mp3",
+   "d": 6.48,
+   "chars": 69,
+   "h": "sha256:a3f0777a155e6653"
+  },
+  "Matt.6.15": {
+   "ref": "มัทธิว 6:15",
+   "osis": "Matt",
+   "c": 6,
+   "v": 15,
+   "file": "Matt.6.15.puck.mp3",
+   "d": 6.6,
+   "chars": 79,
+   "h": "sha256:11b8ca93dae05af4"
+  },
+  "Matt.6.16": {
+   "ref": "มัทธิว 6:16",
+   "osis": "Matt",
+   "c": 6,
+   "v": 16,
+   "file": "Matt.6.16.puck.mp3",
+   "d": 12.08,
+   "chars": 156,
+   "h": "sha256:72568f10504f6347"
+  },
+  "Matt.6.17": {
+   "ref": "มัทธิว 6:17",
+   "osis": "Matt",
+   "c": 6,
+   "v": 17,
+   "file": "Matt.6.17.puck.mp3",
+   "d": 5.32,
+   "chars": 56,
+   "h": "sha256:08821990d68742bf"
+  },
+  "Matt.6.18": {
+   "ref": "มัทธิว 6:18",
+   "osis": "Matt",
+   "c": 6,
+   "v": 18,
+   "file": "Matt.6.18.puck.mp3",
+   "d": 12.68,
+   "chars": 146,
+   "h": "sha256:7e2427e9291a5daf"
+  },
+  "Matt.6.19": {
+   "ref": "มัทธิว 6:19",
+   "osis": "Matt",
+   "c": 6,
+   "v": 19,
+   "file": "Matt.6.19.puck.mp3",
+   "d": 8.12,
+   "chars": 95,
+   "h": "sha256:cc636af2327aa60e"
+  },
+  "Matt.6.20": {
+   "ref": "มัทธิว 6:20",
+   "osis": "Matt",
+   "c": 6,
+   "v": 20,
+   "file": "Matt.6.20.puck.mp3",
+   "d": 7.76,
+   "chars": 90,
+   "h": "sha256:65f3e681627ec023"
+  },
+  "Matt.6.21": {
+   "ref": "มัทธิว 6:21",
+   "osis": "Matt",
+   "c": 6,
+   "v": 21,
+   "file": "Matt.6.21.puck.mp3",
+   "d": 4.04,
+   "chars": 54,
+   "h": "sha256:d3bac892f5685c59"
+  },
+  "Matt.6.22": {
+   "ref": "มัทธิว 6:22",
+   "osis": "Matt",
+   "c": 6,
+   "v": 22,
+   "file": "Matt.6.22.puck.mp3",
+   "d": 7.12,
+   "chars": 74,
+   "h": "sha256:dd792f8d41c25535"
+  },
+  "Matt.6.23": {
+   "ref": "มัทธิว 6:23",
+   "osis": "Matt",
+   "c": 6,
+   "v": 23,
+   "file": "Matt.6.23.puck.mp3",
+   "d": 9.72,
+   "chars": 106,
+   "h": "sha256:c55f565b6e0e2414"
+  },
+  "Matt.6.24": {
+   "ref": "มัทธิว 6:24",
+   "osis": "Matt",
+   "c": 6,
+   "v": 24,
+   "file": "Matt.6.24.puck.mp3",
+   "d": 12.4,
+   "chars": 161,
+   "h": "sha256:860e41d177a5ffc5"
+  },
+  "Matt.6.25": {
+   "ref": "มัทธิว 6:25",
+   "osis": "Matt",
+   "c": 6,
+   "v": 25,
+   "file": "Matt.6.25.puck.mp3",
+   "d": 15.64,
+   "chars": 156,
+   "h": "sha256:db9c7ae5bdad60d4"
+  },
+  "Matt.6.26": {
+   "ref": "มัทธิว 6:26",
+   "osis": "Matt",
+   "c": 6,
+   "v": 26,
+   "file": "Matt.6.26.puck.mp3",
+   "d": 11.96,
+   "chars": 146,
+   "h": "sha256:b97bb47cf8e01425"
+  },
+  "Matt.6.27": {
+   "ref": "มัทธิว 6:27",
+   "osis": "Matt",
+   "c": 6,
+   "v": 27,
+   "file": "Matt.6.27.puck.mp3",
+   "d": 5.32,
+   "chars": 66,
+   "h": "sha256:5a3d062fce47b203"
+  },
+  "Matt.6.28": {
+   "ref": "มัทธิว 6:28",
+   "osis": "Matt",
+   "c": 6,
+   "v": 28,
+   "file": "Matt.6.28.puck.mp3",
+   "d": 9.16,
+   "chars": 97,
+   "h": "sha256:ff7cab35042e897f"
+  },
+  "Matt.6.29": {
+   "ref": "มัทธิว 6:29",
+   "osis": "Matt",
+   "c": 6,
+   "v": 29,
+   "file": "Matt.6.29.puck.mp3",
+   "d": 8.56,
+   "chars": 83,
+   "h": "sha256:167552ca3bcce9e3"
+  },
+  "Matt.6.30": {
+   "ref": "มัทธิว 6:30",
+   "osis": "Matt",
+   "c": 6,
+   "v": 30,
+   "file": "Matt.6.30.puck.mp3",
+   "d": 11.8,
+   "chars": 157,
+   "h": "sha256:3cdc6030b73e7ed8"
+  },
+  "Matt.6.31": {
+   "ref": "มัทธิว 6:31",
+   "osis": "Matt",
+   "c": 6,
+   "v": 31,
+   "file": "Matt.6.31.puck.mp3",
+   "d": 4.32,
+   "chars": 66,
+   "h": "sha256:463b31228d1fec78"
+  },
+  "Matt.6.32": {
+   "ref": "มัทธิว 6:32",
+   "osis": "Matt",
+   "c": 6,
+   "v": 32,
+   "file": "Matt.6.32.puck.mp3",
+   "d": 8.2,
+   "chars": 104,
+   "h": "sha256:28063f3c8dcbdfe7"
+  },
+  "Matt.6.33": {
+   "ref": "มัทธิว 6:33",
+   "osis": "Matt",
+   "c": 6,
+   "v": 33,
+   "file": "Matt.6.33.puck.mp3",
+   "d": 7.56,
+   "chars": 100,
+   "h": "sha256:2eae78c78334d8aa"
+  },
+  "Matt.6.34": {
+   "ref": "มัทธิว 6:34",
+   "osis": "Matt",
+   "c": 6,
+   "v": 34,
+   "file": "Matt.6.34.puck.mp3",
+   "d": 8.32,
+   "chars": 97,
+   "h": "sha256:baec71d365bfadfb"
+  },
+  "Matt.7.1": {
+   "ref": "มัทธิว 7:1",
+   "osis": "Matt",
+   "c": 7,
+   "v": 1,
+   "file": "Matt.7.1.puck.mp3",
+   "d": 3.56,
+   "chars": 45,
+   "h": "sha256:ee769b375b7d65f5"
+  },
+  "Matt.7.2": {
+   "ref": "มัทธิว 7:2",
+   "osis": "Matt",
+   "c": 7,
+   "v": 2,
+   "file": "Matt.7.2.puck.mp3",
+   "d": 7.4,
+   "chars": 96,
+   "h": "sha256:baa607d5622fc4a7"
+  },
+  "Matt.7.3": {
+   "ref": "มัทธิว 7:3",
+   "osis": "Matt",
+   "c": 7,
+   "v": 3,
+   "file": "Matt.7.3.puck.mp3",
+   "d": 6.0,
+   "chars": 78,
+   "h": "sha256:2d78e21aec2bc4e5"
+  },
+  "Matt.7.4": {
+   "ref": "มัทธิว 7:4",
+   "osis": "Matt",
+   "c": 7,
+   "v": 4,
+   "file": "Matt.7.4.puck.mp3",
+   "d": 7.96,
+   "chars": 99,
+   "h": "sha256:cf5ab9b8c05626d1"
+  },
+  "Matt.7.5": {
+   "ref": "มัทธิว 7:5",
+   "osis": "Matt",
+   "c": 7,
+   "v": 5,
+   "file": "Matt.7.5.puck.mp3",
+   "d": 7.32,
+   "chars": 95,
+   "h": "sha256:78a789a98ba47dbb"
+  },
+  "Matt.7.6": {
+   "ref": "มัทธิว 7:6",
+   "osis": "Matt",
+   "c": 7,
+   "v": 6,
+   "file": "Matt.7.6.puck.mp3",
+   "d": 9.2,
+   "chars": 118,
+   "h": "sha256:8370e99da358ac8d"
+  },
+  "Matt.7.7": {
+   "ref": "มัทธิว 7:7",
+   "osis": "Matt",
+   "c": 7,
+   "v": 7,
+   "file": "Matt.7.7.puck.mp3",
+   "d": 6.6,
+   "chars": 58,
+   "h": "sha256:b1c5de0c18cb60ef"
+  },
+  "Matt.7.8": {
+   "ref": "มัทธิว 7:8",
+   "osis": "Matt",
+   "c": 7,
+   "v": 8,
+   "file": "Matt.7.8.puck.mp3",
+   "d": 6.2,
+   "chars": 69,
+   "h": "sha256:e35eea026b34b890"
+  },
+  "Matt.7.9": {
+   "ref": "มัทธิว 7:9",
+   "osis": "Matt",
+   "c": 7,
+   "v": 9,
+   "file": "Matt.7.9.puck.mp3",
+   "d": 3.12,
+   "chars": 36,
+   "h": "sha256:a83b573233262ec0"
+  },
+  "Matt.7.10": {
+   "ref": "มัทธิว 7:10",
+   "osis": "Matt",
+   "c": 7,
+   "v": 10,
+   "file": "Matt.7.10.puck.mp3",
+   "d": 2.28,
+   "chars": 19,
+   "h": "sha256:9301d2732ee5d997"
+  },
+  "Matt.7.11": {
+   "ref": "มัทธิว 7:11",
+   "osis": "Matt",
+   "c": 7,
+   "v": 11,
+   "file": "Matt.7.11.puck.mp3",
+   "d": 9.28,
+   "chars": 122,
+   "h": "sha256:231096f6448e66e6"
+  },
+  "Matt.7.12": {
+   "ref": "มัทธิว 7:12",
+   "osis": "Matt",
+   "c": 7,
+   "v": 12,
+   "file": "Matt.7.12.puck.mp3",
+   "d": 9.56,
+   "chars": 133,
+   "h": "sha256:446104dd10c24b08"
+  },
+  "Matt.7.13": {
+   "ref": "มัทธิว 7:13",
+   "osis": "Matt",
+   "c": 7,
+   "v": 13,
+   "file": "Matt.7.13.puck.mp3",
+   "d": 7.92,
+   "chars": 89,
+   "h": "sha256:6b363851eade72c9"
+  },
+  "Matt.7.14": {
+   "ref": "มัทธิว 7:14",
+   "osis": "Matt",
+   "c": 7,
+   "v": 14,
+   "file": "Matt.7.14.puck.mp3",
+   "d": 4.84,
+   "chars": 55,
+   "h": "sha256:30a6e1d8d483ba6f"
+  },
+  "Matt.7.15": {
+   "ref": "มัทธิว 7:15",
+   "osis": "Matt",
+   "c": 7,
+   "v": 15,
+   "file": "Matt.7.15.puck.mp3",
+   "d": 9.28,
+   "chars": 88,
+   "h": "sha256:a4f0d86317e61b5f"
+  },
+  "Matt.7.16": {
+   "ref": "มัทธิว 7:16",
+   "osis": "Matt",
+   "c": 7,
+   "v": 16,
+   "file": "Matt.7.16.puck.mp3",
+   "d": 10.6,
+   "chars": 114,
+   "h": "sha256:21a2740fec28f529"
+  },
+  "Matt.7.17": {
+   "ref": "มัทธิว 7:17",
+   "osis": "Matt",
+   "c": 7,
+   "v": 17,
+   "file": "Matt.7.17.puck.mp3",
+   "d": 6.8,
+   "chars": 67,
+   "h": "sha256:1d96bf740365f578"
+  },
+  "Matt.7.18": {
+   "ref": "มัทธิว 7:18",
+   "osis": "Matt",
+   "c": 7,
+   "v": 18,
+   "file": "Matt.7.18.puck.mp3",
+   "d": 4.32,
+   "chars": 44,
+   "h": "sha256:06b75d542593cace"
+  },
+  "Matt.7.19": {
+   "ref": "มัทธิว 7:19",
+   "osis": "Matt",
+   "c": 7,
+   "v": 19,
+   "file": "Matt.7.19.puck.mp3",
+   "d": 4.76,
+   "chars": 48,
+   "h": "sha256:0862aa1b44e6bd0b"
+  },
+  "Matt.7.20": {
+   "ref": "มัทธิว 7:20",
+   "osis": "Matt",
+   "c": 7,
+   "v": 20,
+   "file": "Matt.7.20.puck.mp3",
+   "d": 4.64,
+   "chars": 48,
+   "h": "sha256:004686cc1bda32a5"
+  },
+  "Matt.7.21": {
+   "ref": "มัทธิว 7:21",
+   "osis": "Matt",
+   "c": 7,
+   "v": 21,
+   "file": "Matt.7.21.puck.mp3",
+   "d": 12.48,
+   "chars": 169,
+   "h": "sha256:421ac6e6b08f8e1e"
+  },
+  "Matt.7.22": {
+   "ref": "มัทธิว 7:22",
+   "osis": "Matt",
+   "c": 7,
+   "v": 22,
+   "file": "Matt.7.22.puck.mp3",
+   "d": 13.36,
+   "chars": 170,
+   "h": "sha256:0275253f9731441a"
+  },
+  "Matt.7.23": {
+   "ref": "มัทธิว 7:23",
+   "osis": "Matt",
+   "c": 7,
+   "v": 23,
+   "file": "Matt.7.23.puck.mp3",
+   "d": 7.24,
+   "chars": 78,
+   "h": "sha256:aff07cc316bbb5db"
+  },
+  "Matt.7.24": {
+   "ref": "มัทธิว 7:24",
+   "osis": "Matt",
+   "c": 7,
+   "v": 24,
+   "file": "Matt.7.24.puck.mp3",
+   "d": 8.2,
+   "chars": 95,
+   "h": "sha256:d6a90f0787a49a30"
+  },
+  "Matt.7.25": {
+   "ref": "มัทธิว 7:25",
+   "osis": "Matt",
+   "c": 7,
+   "v": 25,
+   "file": "Matt.7.25.puck.mp3",
+   "d": 7.04,
+   "chars": 80,
+   "h": "sha256:75ee7bc5d79df4d6"
+  },
+  "Matt.7.26": {
+   "ref": "มัทธิว 7:26",
+   "osis": "Matt",
+   "c": 7,
+   "v": 26,
+   "file": "Matt.7.26.puck.mp3",
+   "d": 7.2,
+   "chars": 78,
+   "h": "sha256:9b5e05f0d0a628ac"
+  },
+  "Matt.7.27": {
+   "ref": "มัทธิว 7:27",
+   "osis": "Matt",
+   "c": 7,
+   "v": 27,
+   "file": "Matt.7.27.puck.mp3",
+   "d": 6.24,
+   "chars": 70,
+   "h": "sha256:bb87aa2e3c19d35e"
+  },
+  "Matt.7.28": {
+   "ref": "มัทธิว 7:28",
+   "osis": "Matt",
+   "c": 7,
+   "v": 28,
+   "file": "Matt.7.28.puck.mp3",
+   "d": 4.76,
+   "chars": 56,
+   "h": "sha256:29140965423a3006"
+  },
+  "Matt.7.29": {
+   "ref": "มัทธิว 7:29",
+   "osis": "Matt",
+   "c": 7,
+   "v": 29,
+   "file": "Matt.7.29.puck.mp3",
+   "d": 6.0,
+   "chars": 73,
+   "h": "sha256:88ed60357ea7059b"
+  },
+  "Matt.8.1": {
+   "ref": "มัทธิว 8:1",
+   "osis": "Matt",
+   "c": 8,
+   "v": 1,
+   "file": "Matt.8.1.puck.mp3",
+   "d": 4.48,
+   "chars": 48,
+   "h": "sha256:76f155a828bf1646"
+  },
+  "Matt.8.2": {
+   "ref": "มัทธิว 8:2",
+   "osis": "Matt",
+   "c": 8,
+   "v": 2,
+   "file": "Matt.8.2.puck.mp3",
+   "d": 10.6,
+   "chars": 123,
+   "h": "sha256:31f4613ea39259c9"
+  },
+  "Matt.8.3": {
+   "ref": "มัทธิว 8:3",
+   "osis": "Matt",
+   "c": 8,
+   "v": 3,
+   "file": "Matt.8.3.puck.mp3",
+   "d": 9.88,
+   "chars": 103,
+   "h": "sha256:888866e339971d88"
+  },
+  "Matt.8.4": {
+   "ref": "มัทธิว 8:4",
+   "osis": "Matt",
+   "c": 8,
+   "v": 4,
+   "file": "Matt.8.4.puck.mp3",
+   "d": 13.12,
+   "chars": 156,
+   "h": "sha256:b109acc2478a7ef0"
+  },
+  "Matt.8.5": {
+   "ref": "มัทธิว 8:5",
+   "osis": "Matt",
+   "c": 8,
+   "v": 5,
+   "file": "Matt.8.5.puck.mp3",
+   "d": 6.04,
+   "chars": 70,
+   "h": "sha256:b4aa305e1ff0804c"
+  },
+  "Matt.8.6": {
+   "ref": "มัทธิว 8:6",
+   "osis": "Matt",
+   "c": 8,
+   "v": 6,
+   "file": "Matt.8.6.puck.mp3",
+   "d": 8.76,
+   "chars": 98,
+   "h": "sha256:d5684e9845a3ced3"
+  },
+  "Matt.8.7": {
+   "ref": "มัทธิว 8:7",
+   "osis": "Matt",
+   "c": 8,
+   "v": 7,
+   "file": "Matt.8.7.puck.mp3",
+   "d": 3.68,
+   "chars": 41,
+   "h": "sha256:b4250c1bdc614987"
+  },
+  "Matt.8.8": {
+   "ref": "มัทธิว 8:8",
+   "osis": "Matt",
+   "c": 8,
+   "v": 8,
+   "file": "Matt.8.8.puck.mp3",
+   "d": 10.4,
+   "chars": 134,
+   "h": "sha256:e242d63507be9696"
+  },
+  "Matt.8.9": {
+   "ref": "มัทธิว 8:9",
+   "osis": "Matt",
+   "c": 8,
+   "v": 9,
+   "file": "Matt.8.9.puck.mp3",
+   "d": 15.04,
+   "chars": 151,
+   "h": "sha256:fc6b4ee6ba85beda"
+  },
+  "Matt.8.10": {
+   "ref": "มัทธิว 8:10",
+   "osis": "Matt",
+   "c": 8,
+   "v": 10,
+   "file": "Matt.8.10.puck.mp3",
+   "d": 11.6,
+   "chars": 154,
+   "h": "sha256:0b24e3cc00c7fadf"
+  },
+  "Matt.8.11": {
+   "ref": "มัทธิว 8:11",
+   "osis": "Matt",
+   "c": 8,
+   "v": 11,
+   "file": "Matt.8.11.puck.mp3",
+   "d": 12.92,
+   "chars": 126,
+   "h": "sha256:f86eb0b13390aa69"
+  },
+  "Matt.8.12": {
+   "ref": "มัทธิว 8:12",
+   "osis": "Matt",
+   "c": 8,
+   "v": 12,
+   "file": "Matt.8.12.puck.mp3",
+   "d": 7.68,
+   "chars": 94,
+   "h": "sha256:39eef50eae74e265"
+  },
+  "Matt.8.13": {
+   "ref": "มัทธิว 8:13",
+   "osis": "Matt",
+   "c": 8,
+   "v": 13,
+   "file": "Matt.8.13.puck.mp3",
+   "d": 9.28,
+   "chars": 96,
+   "h": "sha256:2cf5eb86a8e540d4"
+  },
+  "Matt.8.14": {
+   "ref": "มัทธิว 8:14",
+   "osis": "Matt",
+   "c": 8,
+   "v": 14,
+   "file": "Matt.8.14.puck.mp3",
+   "d": 5.68,
+   "chars": 74,
+   "h": "sha256:4dbb9010dfcb525e"
+  },
+  "Matt.8.15": {
+   "ref": "มัทธิว 8:15",
+   "osis": "Matt",
+   "c": 8,
+   "v": 15,
+   "file": "Matt.8.15.puck.mp3",
+   "d": 6.64,
+   "chars": 76,
+   "h": "sha256:0df1e09337c61a61"
+  },
+  "Matt.8.16": {
+   "ref": "มัทธิว 8:16",
+   "osis": "Matt",
+   "c": 8,
+   "v": 16,
+   "file": "Matt.8.16.puck.mp3",
+   "d": 9.4,
+   "chars": 98,
+   "h": "sha256:7023c746d5da894d"
+  },
+  "Matt.8.17": {
+   "ref": "มัทธิว 8:17",
+   "osis": "Matt",
+   "c": 8,
+   "v": 17,
+   "file": "Matt.8.17.puck.mp3",
+   "d": 9.48,
+   "chars": 118,
+   "h": "sha256:9416edf109dae6ab"
+  },
+  "Matt.8.18": {
+   "ref": "มัทธิว 8:18",
+   "osis": "Matt",
+   "c": 8,
+   "v": 18,
+   "file": "Matt.8.18.puck.mp3",
+   "d": 4.64,
+   "chars": 66,
+   "h": "sha256:3ffd175b749943a4"
+  },
+  "Matt.8.19": {
+   "ref": "มัทธิว 8:19",
+   "osis": "Matt",
+   "c": 8,
+   "v": 19,
+   "file": "Matt.8.19.puck.mp3",
+   "d": 7.0,
+   "chars": 91,
+   "h": "sha256:74a2dc7a4d877de2"
+  },
+  "Matt.8.20": {
+   "ref": "มัทธิว 8:20",
+   "osis": "Matt",
+   "c": 8,
+   "v": 20,
+   "file": "Matt.8.20.puck.mp3",
+   "d": 8.52,
+   "chars": 84,
+   "h": "sha256:46f43f68659d72ee"
+  },
+  "Matt.8.21": {
+   "ref": "มัทธิว 8:21",
+   "osis": "Matt",
+   "c": 8,
+   "v": 21,
+   "file": "Matt.8.21.puck.mp3",
+   "d": 5.96,
+   "chars": 79,
+   "h": "sha256:48b8e3fc04025482"
+  },
+  "Matt.8.22": {
+   "ref": "มัทธิว 8:22",
+   "osis": "Matt",
+   "c": 8,
+   "v": 22,
+   "file": "Matt.8.22.puck.mp3",
+   "d": 5.92,
+   "chars": 58,
+   "h": "sha256:5451204ad9e8c0a5"
+  },
+  "Matt.8.23": {
+   "ref": "มัทธิว 8:23",
+   "osis": "Matt",
+   "c": 8,
+   "v": 23,
+   "file": "Matt.8.23.puck.mp3",
+   "d": 4.12,
+   "chars": 46,
+   "h": "sha256:453541409c867e60"
+  },
+  "Matt.8.24": {
+   "ref": "มัทธิว 8:24",
+   "osis": "Matt",
+   "c": 8,
+   "v": 24,
+   "file": "Matt.8.24.puck.mp3",
+   "d": 7.8,
+   "chars": 78,
+   "h": "sha256:9c3d55b14f63ffd8"
+  },
+  "Matt.8.25": {
+   "ref": "มัทธิว 8:25",
+   "osis": "Matt",
+   "c": 8,
+   "v": 25,
+   "file": "Matt.8.25.puck.mp3",
+   "d": 7.48,
+   "chars": 87,
+   "h": "sha256:a9bdc4044f0134fc"
+  },
+  "Matt.8.26": {
+   "ref": "มัทธิว 8:26",
+   "osis": "Matt",
+   "c": 8,
+   "v": 26,
+   "file": "Matt.8.26.puck.mp3",
+   "d": 9.2,
+   "chars": 104,
+   "h": "sha256:71bc54e6c1fdf7dd"
+  },
+  "Matt.8.27": {
+   "ref": "มัทธิว 8:27",
+   "osis": "Matt",
+   "c": 8,
+   "v": 27,
+   "file": "Matt.8.27.puck.mp3",
+   "d": 6.8,
+   "chars": 79,
+   "h": "sha256:23522528bdb7f60c"
+  },
+  "Matt.8.28": {
+   "ref": "มัทธิว 8:28",
+   "osis": "Matt",
+   "c": 8,
+   "v": 28,
+   "file": "Matt.8.28.puck.mp3",
+   "d": 10.36,
+   "chars": 128,
+   "h": "sha256:4e905e934702abe4"
+  },
+  "Matt.8.29": {
+   "ref": "มัทธิว 8:29",
+   "osis": "Matt",
+   "c": 8,
+   "v": 29,
+   "file": "Matt.8.29.puck.mp3",
+   "d": 9.12,
+   "chars": 108,
+   "h": "sha256:2515a5851e45a910"
+  },
+  "Matt.8.30": {
+   "ref": "มัทธิว 8:30",
+   "osis": "Matt",
+   "c": 8,
+   "v": 30,
+   "file": "Matt.8.30.puck.mp3",
+   "d": 4.04,
+   "chars": 44,
+   "h": "sha256:181a8d774118e667"
+  },
+  "Matt.8.31": {
+   "ref": "มัทธิว 8:31",
+   "osis": "Matt",
+   "c": 8,
+   "v": 31,
+   "file": "Matt.8.31.puck.mp3",
+   "d": 7.8,
+   "chars": 83,
+   "h": "sha256:748cc1a2134adc37"
+  },
+  "Matt.8.32": {
+   "ref": "มัทธิว 8:32",
+   "osis": "Matt",
+   "c": 8,
+   "v": 32,
+   "file": "Matt.8.32.puck.mp3",
+   "d": 12.84,
+   "chars": 112,
+   "h": "sha256:3b03c1ee8fcd8e76"
+  },
+  "Matt.8.33": {
+   "ref": "มัทธิว 8:33",
+   "osis": "Matt",
+   "c": 8,
+   "v": 33,
+   "file": "Matt.8.33.puck.mp3",
+   "d": 7.88,
+   "chars": 102,
+   "h": "sha256:3a1ac5cd13579cbd"
+  },
+  "Matt.8.34": {
+   "ref": "มัทธิว 8:34",
+   "osis": "Matt",
+   "c": 8,
+   "v": 34,
+   "file": "Matt.8.34.puck.mp3",
+   "d": 6.64,
+   "chars": 80,
+   "h": "sha256:128a3d7e85f78bc0"
+  },
+  "Matt.9.1": {
+   "ref": "มัทธิว 9:1",
+   "osis": "Matt",
+   "c": 9,
+   "v": 1,
+   "file": "Matt.9.1.puck.mp3",
+   "d": 3.68,
+   "chars": 37,
+   "h": "sha256:f75cb0ffbe8609fb"
+  },
+  "Matt.9.2": {
+   "ref": "มัทธิว 9:2",
+   "osis": "Matt",
+   "c": 9,
+   "v": 2,
+   "file": "Matt.9.2.puck.mp3",
+   "d": 11.8,
+   "chars": 148,
+   "h": "sha256:134b57b97680bb30"
+  },
+  "Matt.9.3": {
+   "ref": "มัทธิว 9:3",
+   "osis": "Matt",
+   "c": 9,
+   "v": 3,
+   "file": "Matt.9.3.puck.mp3",
+   "d": 6.16,
+   "chars": 77,
+   "h": "sha256:2c621f609c3ca3b0"
+  },
+  "Matt.9.4": {
+   "ref": "มัทธิว 9:4",
+   "osis": "Matt",
+   "c": 9,
+   "v": 4,
+   "file": "Matt.9.4.puck.mp3",
+   "d": 5.36,
+   "chars": 60,
+   "h": "sha256:dd9fdd4e17b08bbf"
+  },
+  "Matt.9.5": {
+   "ref": "มัทธิว 9:5",
+   "osis": "Matt",
+   "c": 9,
+   "v": 5,
+   "file": "Matt.9.5.puck.mp3",
+   "d": 7.76,
+   "chars": 85,
+   "h": "sha256:2fb1cce9c2ff1ab2"
+  },
+  "Matt.9.6": {
+   "ref": "มัทธิว 9:6",
+   "osis": "Matt",
+   "c": 9,
+   "v": 6,
+   "file": "Matt.9.6.puck.mp3",
+   "d": 11.8,
+   "chars": 152,
+   "h": "sha256:b673351360cb6796"
+  },
+  "Matt.9.7": {
+   "ref": "มัทธิว 9:7",
+   "osis": "Matt",
+   "c": 9,
+   "v": 7,
+   "file": "Matt.9.7.puck.mp3",
+   "d": 2.52,
+   "chars": 30,
+   "h": "sha256:477c977a9ee155ee"
+  },
+  "Matt.9.8": {
+   "ref": "มัทธิว 9:8",
+   "osis": "Matt",
+   "c": 9,
+   "v": 8,
+   "file": "Matt.9.8.puck.mp3",
+   "d": 6.76,
+   "chars": 72,
+   "h": "sha256:f9afc53e8b33ded4"
+  },
+  "Matt.9.9": {
+   "ref": "มัทธิว 9:9",
+   "osis": "Matt",
+   "c": 9,
+   "v": 9,
+   "file": "Matt.9.9.puck.mp3",
+   "d": 12.08,
+   "chars": 138,
+   "h": "sha256:ac477d2f5ba18ebf"
+  },
+  "Matt.9.10": {
+   "ref": "มัทธิว 9:10",
+   "osis": "Matt",
+   "c": 9,
+   "v": 10,
+   "file": "Matt.9.10.puck.mp3",
+   "d": 9.52,
+   "chars": 104,
+   "h": "sha256:818909e0bea4dd23"
+  },
+  "Matt.9.11": {
+   "ref": "มัทธิว 9:11",
+   "osis": "Matt",
+   "c": 9,
+   "v": 11,
+   "file": "Matt.9.11.puck.mp3",
+   "d": 9.16,
+   "chars": 97,
+   "h": "sha256:b911f98839a7ed85"
+  },
+  "Matt.9.12": {
+   "ref": "มัทธิว 9:12",
+   "osis": "Matt",
+   "c": 9,
+   "v": 12,
+   "file": "Matt.9.12.puck.mp3",
+   "d": 6.4,
+   "chars": 69,
+   "h": "sha256:d5088e0189afe081"
+  },
+  "Matt.9.13": {
+   "ref": "มัทธิว 9:13",
+   "osis": "Matt",
+   "c": 9,
+   "v": 13,
+   "file": "Matt.9.13.puck.mp3",
+   "d": 10.76,
+   "chars": 140,
+   "h": "sha256:8ad3e86ef8a2a3e2"
+  },
+  "Matt.9.14": {
+   "ref": "มัทธิว 9:14",
+   "osis": "Matt",
+   "c": 9,
+   "v": 14,
+   "file": "Matt.9.14.puck.mp3",
+   "d": 9.6,
+   "chars": 100,
+   "h": "sha256:888363cc35003ee0"
+  },
+  "Matt.9.15": {
+   "ref": "มัทธิว 9:15",
+   "osis": "Matt",
+   "c": 9,
+   "v": 15,
+   "file": "Matt.9.15.puck.mp3",
+   "d": 12.4,
+   "chars": 140,
+   "h": "sha256:dddf007b20a61503"
+  },
+  "Matt.9.16": {
+   "ref": "มัทธิว 9:16",
+   "osis": "Matt",
+   "c": 9,
+   "v": 16,
+   "file": "Matt.9.16.puck.mp3",
+   "d": 6.68,
+   "chars": 89,
+   "h": "sha256:306cc61683388f80"
+  },
+  "Matt.9.17": {
+   "ref": "มัทธิว 9:17",
+   "osis": "Matt",
+   "c": 9,
+   "v": 17,
+   "file": "Matt.9.17.puck.mp3",
+   "d": 17.36,
+   "chars": 180,
+   "h": "sha256:8e563319a1db969a"
+  },
+  "Matt.9.18": {
+   "ref": "มัทธิว 9:18",
+   "osis": "Matt",
+   "c": 9,
+   "v": 18,
+   "file": "Matt.9.18.puck.mp3",
+   "d": 11.2,
+   "chars": 142,
+   "h": "sha256:14713e9c72717c8a"
+  },
+  "Matt.9.19": {
+   "ref": "มัทธิว 9:19",
+   "osis": "Matt",
+   "c": 9,
+   "v": 19,
+   "file": "Matt.9.19.puck.mp3",
+   "d": 3.64,
+   "chars": 38,
+   "h": "sha256:4b60e8d5b6c5beaf"
+  },
+  "Matt.9.20": {
+   "ref": "มัทธิว 9:20",
+   "osis": "Matt",
+   "c": 9,
+   "v": 20,
+   "file": "Matt.9.20.puck.mp3",
+   "d": 7.56,
+   "chars": 89,
+   "h": "sha256:10a9fa72330fdf15"
+  },
+  "Matt.9.21": {
+   "ref": "มัทธิว 9:21",
+   "osis": "Matt",
+   "c": 9,
+   "v": 21,
+   "file": "Matt.9.21.puck.mp3",
+   "d": 5.12,
+   "chars": 63,
+   "h": "sha256:adc5ce5da73e0143"
+  },
+  "Matt.9.22": {
+   "ref": "มัทธิว 9:22",
+   "osis": "Matt",
+   "c": 9,
+   "v": 22,
+   "file": "Matt.9.22.puck.mp3",
+   "d": 10.56,
+   "chars": 112,
+   "h": "sha256:f7c5e1e8b40ba3af"
+  },
+  "Matt.9.23": {
+   "ref": "มัทธิว 9:23",
+   "osis": "Matt",
+   "c": 9,
+   "v": 23,
+   "file": "Matt.9.23.puck.mp3",
+   "d": 7.0,
+   "chars": 84,
+   "h": "sha256:132c96b592f9cfb2"
+  },
+  "Matt.9.24": {
+   "ref": "มัทธิว 9:24",
+   "osis": "Matt",
+   "c": 9,
+   "v": 24,
+   "file": "Matt.9.24.puck.mp3",
+   "d": 7.12,
+   "chars": 91,
+   "h": "sha256:bc7fd9d59ce112f2"
+  },
+  "Matt.9.25": {
+   "ref": "มัทธิว 9:25",
+   "osis": "Matt",
+   "c": 9,
+   "v": 25,
+   "file": "Matt.9.25.puck.mp3",
+   "d": 6.88,
+   "chars": 82,
+   "h": "sha256:cf6669326fd9e33b"
+  },
+  "Matt.9.26": {
+   "ref": "มัทธิว 9:26",
+   "osis": "Matt",
+   "c": 9,
+   "v": 26,
+   "file": "Matt.9.26.puck.mp3",
+   "d": 3.0,
+   "chars": 32,
+   "h": "sha256:ebb3d745becd6172"
+  },
+  "Matt.9.27": {
+   "ref": "มัทธิว 9:27",
+   "osis": "Matt",
+   "c": 9,
+   "v": 27,
+   "file": "Matt.9.27.puck.mp3",
+   "d": 9.6,
+   "chars": 106,
+   "h": "sha256:06ac9544dfcb3113"
+  },
+  "Matt.9.28": {
+   "ref": "มัทธิว 9:28",
+   "osis": "Matt",
+   "c": 9,
+   "v": 28,
+   "file": "Matt.9.28.puck.mp3",
+   "d": 11.32,
+   "chars": 141,
+   "h": "sha256:2c9c77dcca78ebef"
+  },
+  "Matt.9.29": {
+   "ref": "มัทธิว 9:29",
+   "osis": "Matt",
+   "c": 9,
+   "v": 29,
+   "file": "Matt.9.29.puck.mp3",
+   "d": 5.32,
+   "chars": 68,
+   "h": "sha256:26174e3cdc37ffcf"
+  },
+  "Matt.9.30": {
+   "ref": "มัทธิว 9:30",
+   "osis": "Matt",
+   "c": 9,
+   "v": 30,
+   "file": "Matt.9.30.puck.mp3",
+   "d": 5.92,
+   "chars": 72,
+   "h": "sha256:2cf69bc3e1edfd0d"
+  },
+  "Matt.9.31": {
+   "ref": "มัทธิว 9:31",
+   "osis": "Matt",
+   "c": 9,
+   "v": 31,
+   "file": "Matt.9.31.puck.mp3",
+   "d": 3.52,
+   "chars": 53,
+   "h": "sha256:19959bba77a11141"
+  },
+  "Matt.9.32": {
+   "ref": "มัทธิว 9:32",
+   "osis": "Matt",
+   "c": 9,
+   "v": 32,
+   "file": "Matt.9.32.puck.mp3",
+   "d": 7.4,
+   "chars": 73,
+   "h": "sha256:e80652dac3acedd6"
+  },
+  "Matt.9.33": {
+   "ref": "มัทธิว 9:33",
+   "osis": "Matt",
+   "c": 9,
+   "v": 33,
+   "file": "Matt.9.33.puck.mp3",
+   "d": 8.32,
+   "chars": 100,
+   "h": "sha256:7ee93f2b1809dc07"
+  },
+  "Matt.9.34": {
+   "ref": "มัทธิว 9:34",
+   "osis": "Matt",
+   "c": 9,
+   "v": 34,
+   "file": "Matt.9.34.puck.mp3",
+   "d": 5.2,
+   "chars": 52,
+   "h": "sha256:54a90a3e204db030"
+  },
+  "Matt.9.35": {
+   "ref": "มัทธิว 9:35",
+   "osis": "Matt",
+   "c": 9,
+   "v": 35,
+   "file": "Matt.9.35.puck.mp3",
+   "d": 11.04,
+   "chars": 132,
+   "h": "sha256:80eb152419d19cb3"
+  },
+  "Matt.9.36": {
+   "ref": "มัทธิว 9:36",
+   "osis": "Matt",
+   "c": 9,
+   "v": 36,
+   "file": "Matt.9.36.puck.mp3",
+   "d": 7.56,
+   "chars": 90,
+   "h": "sha256:aa4d229dceab5a66"
+  },
+  "Matt.9.37": {
+   "ref": "มัทธิว 9:37",
+   "osis": "Matt",
+   "c": 9,
+   "v": 37,
+   "file": "Matt.9.37.puck.mp3",
+   "d": 6.36,
+   "chars": 70,
+   "h": "sha256:4c4aa99e1de29b6d"
+  },
+  "Matt.9.38": {
+   "ref": "มัทธิว 9:38",
+   "osis": "Matt",
+   "c": 9,
+   "v": 38,
+   "file": "Matt.9.38.puck.mp3",
+   "d": 6.36,
+   "chars": 86,
+   "h": "sha256:53c4f79a411e27e4"
+  },
+  "Matt.10.1": {
+   "ref": "มัทธิว 10:1",
+   "osis": "Matt",
+   "c": 10,
+   "v": 1,
+   "file": "Matt.10.1.puck.mp3",
+   "d": 11.0,
+   "chars": 122,
+   "h": "sha256:570122b5a268616e"
+  },
+  "Matt.10.2": {
+   "ref": "มัทธิว 10:2",
+   "osis": "Matt",
+   "c": 10,
+   "v": 2,
+   "file": "Matt.10.2.puck.mp3",
+   "d": 12.28,
+   "chars": 127,
+   "h": "sha256:288a3594e3aa07bd"
+  },
+  "Matt.10.3": {
+   "ref": "มัทธิว 10:3",
+   "osis": "Matt",
+   "c": 10,
+   "v": 3,
+   "file": "Matt.10.3.puck.mp3",
+   "d": 7.24,
+   "chars": 76,
+   "h": "sha256:8fbad740350d9e94"
+  },
+  "Matt.10.4": {
+   "ref": "มัทธิว 10:4",
+   "osis": "Matt",
+   "c": 10,
+   "v": 4,
+   "file": "Matt.10.4.puck.mp3",
+   "d": 4.52,
+   "chars": 49,
+   "h": "sha256:55449e68f1488f63"
+  },
+  "Matt.10.5": {
+   "ref": "มัทธิว 10:5",
+   "osis": "Matt",
+   "c": 10,
+   "v": 5,
+   "file": "Matt.10.5.puck.mp3",
+   "d": 8.44,
+   "chars": 103,
+   "h": "sha256:e4e4b03be28c018a"
+  },
+  "Matt.10.6": {
+   "ref": "มัทธิว 10:6",
+   "osis": "Matt",
+   "c": 10,
+   "v": 6,
+   "file": "Matt.10.6.puck.mp3",
+   "d": 2.76,
+   "chars": 29,
+   "h": "sha256:d01f5bc42bf03038"
+  },
+  "Matt.10.7": {
+   "ref": "มัทธิว 10:7",
+   "osis": "Matt",
+   "c": 10,
+   "v": 7,
+   "file": "Matt.10.7.puck.mp3",
+   "d": 4.44,
+   "chars": 57,
+   "h": "sha256:044bab7c1eac9535"
+  },
+  "Matt.10.8": {
+   "ref": "มัทธิว 10:8",
+   "osis": "Matt",
+   "c": 10,
+   "v": 8,
+   "file": "Matt.10.8.puck.mp3",
+   "d": 9.4,
+   "chars": 100,
+   "h": "sha256:ba97df3eb3a8daed"
+  },
+  "Matt.10.9": {
+   "ref": "มัทธิว 10:9",
+   "osis": "Matt",
+   "c": 10,
+   "v": 9,
+   "file": "Matt.10.9.puck.mp3",
+   "d": 3.72,
+   "chars": 40,
+   "h": "sha256:b59f66a9f2be2417"
+  },
+  "Matt.10.10": {
+   "ref": "มัทธิว 10:10",
+   "osis": "Matt",
+   "c": 10,
+   "v": 10,
+   "file": "Matt.10.10.puck.mp3",
+   "d": 8.36,
+   "chars": 109,
+   "h": "sha256:b8377ffbb0db166c"
+  },
+  "Matt.10.11": {
+   "ref": "มัทธิว 10:11",
+   "osis": "Matt",
+   "c": 10,
+   "v": 11,
+   "file": "Matt.10.11.puck.mp3",
+   "d": 7.6,
+   "chars": 93,
+   "h": "sha256:5bcc751478367258"
+  },
+  "Matt.10.12": {
+   "ref": "มัทธิว 10:12",
+   "osis": "Matt",
+   "c": 10,
+   "v": 12,
+   "file": "Matt.10.12.puck.mp3",
+   "d": 3.44,
+   "chars": 35,
+   "h": "sha256:8929c3f1ed7ef89f"
+  },
+  "Matt.10.13": {
+   "ref": "มัทธิว 10:13",
+   "osis": "Matt",
+   "c": 10,
+   "v": 13,
+   "file": "Matt.10.13.puck.mp3",
+   "d": 8.44,
+   "chars": 106,
+   "h": "sha256:c0683ea6710335a8"
+  },
+  "Matt.10.14": {
+   "ref": "มัทธิว 10:14",
+   "osis": "Matt",
+   "c": 10,
+   "v": 14,
+   "file": "Matt.10.14.puck.mp3",
+   "d": 7.04,
+   "chars": 87,
+   "h": "sha256:f6b6ed205ae1417f"
+  },
+  "Matt.10.15": {
+   "ref": "มัทธิว 10:15",
+   "osis": "Matt",
+   "c": 10,
+   "v": 15,
+   "file": "Matt.10.15.puck.mp3",
+   "d": 7.12,
+   "chars": 85,
+   "h": "sha256:318c67499b2215bd"
+  },
+  "Matt.10.16": {
+   "ref": "มัทธิว 10:16",
+   "osis": "Matt",
+   "c": 10,
+   "v": 16,
+   "file": "Matt.10.16.puck.mp3",
+   "d": 9.68,
+   "chars": 94,
+   "h": "sha256:749ea684ce30673c"
+  },
+  "Matt.10.17": {
+   "ref": "มัทธิว 10:17",
+   "osis": "Matt",
+   "c": 10,
+   "v": 17,
+   "file": "Matt.10.17.puck.mp3",
+   "d": 5.52,
+   "chars": 63,
+   "h": "sha256:2bc7cff2b4c8647f"
+  },
+  "Matt.10.18": {
+   "ref": "มัทธิว 10:18",
+   "osis": "Matt",
+   "c": 10,
+   "v": 18,
+   "file": "Matt.10.18.puck.mp3",
+   "d": 7.4,
+   "chars": 96,
+   "h": "sha256:57235d958e8c4dde"
+  },
+  "Matt.10.19": {
+   "ref": "มัทธิว 10:19",
+   "osis": "Matt",
+   "c": 10,
+   "v": 19,
+   "file": "Matt.10.19.puck.mp3",
+   "d": 6.16,
+   "chars": 82,
+   "h": "sha256:5e4d962acfd640f0"
+  },
+  "Matt.10.20": {
+   "ref": "มัทธิว 10:20",
+   "osis": "Matt",
+   "c": 10,
+   "v": 20,
+   "file": "Matt.10.20.puck.mp3",
+   "d": 5.56,
+   "chars": 68,
+   "h": "sha256:f777de2cfc1e72b8"
+  },
+  "Matt.10.21": {
+   "ref": "มัทธิว 10:21",
+   "osis": "Matt",
+   "c": 10,
+   "v": 21,
+   "file": "Matt.10.21.puck.mp3",
+   "d": 8.56,
+   "chars": 83,
+   "h": "sha256:77537c1656201558"
+  },
+  "Matt.10.22": {
+   "ref": "มัทธิว 10:22",
+   "osis": "Matt",
+   "c": 10,
+   "v": 22,
+   "file": "Matt.10.22.puck.mp3",
+   "d": 4.32,
+   "chars": 57,
+   "h": "sha256:3b133499b8fbacf7"
+  },
+  "Matt.10.23": {
+   "ref": "มัทธิว 10:23",
+   "osis": "Matt",
+   "c": 10,
+   "v": 23,
+   "file": "Matt.10.23.puck.mp3",
+   "d": 8.92,
+   "chars": 117,
+   "h": "sha256:4fbebe3da9d7db96"
+  },
+  "Matt.10.24": {
+   "ref": "มัทธิว 10:24",
+   "osis": "Matt",
+   "c": 10,
+   "v": 24,
+   "file": "Matt.10.24.puck.mp3",
+   "d": 3.4,
+   "chars": 44,
+   "h": "sha256:b2a972cfe4376e9a"
+  },
+  "Matt.10.25": {
+   "ref": "มัทธิว 10:25",
+   "osis": "Matt",
+   "c": 10,
+   "v": 25,
+   "file": "Matt.10.25.puck.mp3",
+   "d": 10.8,
+   "chars": 135,
+   "h": "sha256:655e42e5e7c25a0d"
+  },
+  "Matt.10.26": {
+   "ref": "มัทธิว 10:26",
+   "osis": "Matt",
+   "c": 10,
+   "v": 26,
+   "file": "Matt.10.26.puck.mp3",
+   "d": 7.36,
+   "chars": 85,
+   "h": "sha256:e04f2527b8887ec3"
+  },
+  "Matt.10.27": {
+   "ref": "มัทธิว 10:27",
+   "osis": "Matt",
+   "c": 10,
+   "v": 27,
+   "file": "Matt.10.27.puck.mp3",
+   "d": 7.56,
+   "chars": 90,
+   "h": "sha256:13230999dbc098c9"
+  },
+  "Matt.10.28": {
+   "ref": "มัทธิว 10:28",
+   "osis": "Matt",
+   "c": 10,
+   "v": 28,
+   "file": "Matt.10.28.puck.mp3",
+   "d": 9.52,
+   "chars": 107,
+   "h": "sha256:17c51a66a6e95cde"
+  },
+  "Matt.10.29": {
+   "ref": "มัทธิว 10:29",
+   "osis": "Matt",
+   "c": 10,
+   "v": 29,
+   "file": "Matt.10.29.puck.mp3",
+   "d": 9.28,
+   "chars": 107,
+   "h": "sha256:f3928207f77d7de8"
+  },
+  "Matt.10.30": {
+   "ref": "มัทธิว 10:30",
+   "osis": "Matt",
+   "c": 10,
+   "v": 30,
+   "file": "Matt.10.30.puck.mp3",
+   "d": 3.72,
+   "chars": 38,
+   "h": "sha256:3c9e030fcbaf2f18"
+  },
+  "Matt.10.31": {
+   "ref": "มัทธิว 10:31",
+   "osis": "Matt",
+   "c": 10,
+   "v": 31,
+   "file": "Matt.10.31.puck.mp3",
+   "d": 4.56,
+   "chars": 47,
+   "h": "sha256:6841b8aba0eabbd7"
+  },
+  "Matt.10.32": {
+   "ref": "มัทธิว 10:32",
+   "osis": "Matt",
+   "c": 10,
+   "v": 32,
+   "file": "Matt.10.32.puck.mp3",
+   "d": 6.4,
+   "chars": 67,
+   "h": "sha256:876fe6bcee8eb816"
+  },
+  "Matt.10.33": {
+   "ref": "มัทธิว 10:33",
+   "osis": "Matt",
+   "c": 10,
+   "v": 33,
+   "file": "Matt.10.33.puck.mp3",
+   "d": 6.4,
+   "chars": 79,
+   "h": "sha256:d64748812425f336"
+  },
+  "Matt.10.34": {
+   "ref": "มัทธิว 10:34",
+   "osis": "Matt",
+   "c": 10,
+   "v": 34,
+   "file": "Matt.10.34.puck.mp3",
+   "d": 6.52,
+   "chars": 72,
+   "h": "sha256:b42eb729590fe2e7"
+  },
+  "Matt.10.35": {
+   "ref": "มัทธิว 10:35",
+   "osis": "Matt",
+   "c": 10,
+   "v": 35,
+   "file": "Matt.10.35.puck.mp3",
+   "d": 8.32,
+   "chars": 80,
+   "h": "sha256:6d2f2abeb829f2e5"
+  },
+  "Matt.10.36": {
+   "ref": "มัทธิว 10:36",
+   "osis": "Matt",
+   "c": 10,
+   "v": 36,
+   "file": "Matt.10.36.puck.mp3",
+   "d": 2.2,
+   "chars": 26,
+   "h": "sha256:f44825e3cd729c89"
+  },
+  "Matt.10.37": {
+   "ref": "มัทธิว 10:37",
+   "osis": "Matt",
+   "c": 10,
+   "v": 37,
+   "file": "Matt.10.37.puck.mp3",
+   "d": 7.76,
+   "chars": 95,
+   "h": "sha256:8d2f00868c72e9bb"
+  },
+  "Matt.10.38": {
+   "ref": "มัทธิว 10:38",
+   "osis": "Matt",
+   "c": 10,
+   "v": 38,
+   "file": "Matt.10.38.puck.mp3",
+   "d": 4.44,
+   "chars": 52,
+   "h": "sha256:31388ce46e1896b0"
+  },
+  "Matt.10.39": {
+   "ref": "มัทธิว 10:39",
+   "osis": "Matt",
+   "c": 10,
+   "v": 39,
+   "file": "Matt.10.39.puck.mp3",
+   "d": 6.92,
+   "chars": 70,
+   "h": "sha256:1a178f4a646a269f"
+  },
+  "Matt.10.40": {
+   "ref": "มัทธิว 10:40",
+   "osis": "Matt",
+   "c": 10,
+   "v": 40,
+   "file": "Matt.10.40.puck.mp3",
+   "d": 6.6,
+   "chars": 70,
+   "h": "sha256:391ac17c6258b5b2"
+  },
+  "Matt.10.41": {
+   "ref": "มัทธิว 10:41",
+   "osis": "Matt",
+   "c": 10,
+   "v": 41,
+   "file": "Matt.10.41.puck.mp3",
+   "d": 11.84,
+   "chars": 150,
+   "h": "sha256:370fd0ec9825ec02"
+  },
+  "Matt.10.42": {
+   "ref": "มัทธิว 10:42",
+   "osis": "Matt",
+   "c": 10,
+   "v": 42,
+   "file": "Matt.10.42.puck.mp3",
+   "d": 8.92,
+   "chars": 118,
+   "h": "sha256:d0afcdda9c59a6b4"
+  },
+  "Matt.11.1": {
+   "ref": "มัทธิว 11:1",
+   "osis": "Matt",
+   "c": 11,
+   "v": 1,
+   "file": "Matt.11.1.puck.mp3",
+   "d": 9.32,
+   "chars": 106,
+   "h": "sha256:6f19f05509321f36"
+  },
+  "Matt.11.2": {
+   "ref": "มัทธิว 11:2",
+   "osis": "Matt",
+   "c": 11,
+   "v": 2,
+   "file": "Matt.11.2.puck.mp3",
+   "d": 6.88,
+   "chars": 92,
+   "h": "sha256:f457f8390ba2cc91"
+  },
+  "Matt.11.3": {
+   "ref": "มัทธิว 11:3",
+   "osis": "Matt",
+   "c": 11,
+   "v": 3,
+   "file": "Matt.11.3.puck.mp3",
+   "d": 4.64,
+   "chars": 66,
+   "h": "sha256:60bafc3c6e0786fd"
+  },
+  "Matt.11.4": {
+   "ref": "มัทธิว 11:4",
+   "osis": "Matt",
+   "c": 11,
+   "v": 4,
+   "file": "Matt.11.4.puck.mp3",
+   "d": 4.88,
+   "chars": 62,
+   "h": "sha256:7451afeba44a4043"
+  },
+  "Matt.11.5": {
+   "ref": "มัทธิว 11:5",
+   "osis": "Matt",
+   "c": 11,
+   "v": 5,
+   "file": "Matt.11.5.puck.mp3",
+   "d": 10.48,
+   "chars": 117,
+   "h": "sha256:5920e99496e6cf6d"
+  },
+  "Matt.11.6": {
+   "ref": "มัทธิว 11:6",
+   "osis": "Matt",
+   "c": 11,
+   "v": 6,
+   "file": "Matt.11.6.puck.mp3",
+   "d": 3.56,
+   "chars": 44,
+   "h": "sha256:e98abb890cf0ce11"
+  },
+  "Matt.11.7": {
+   "ref": "มัทธิว 11:7",
+   "osis": "Matt",
+   "c": 11,
+   "v": 7,
+   "file": "Matt.11.7.puck.mp3",
+   "d": 11.6,
+   "chars": 126,
+   "h": "sha256:f6ef223d27667967"
+  },
+  "Matt.11.8": {
+   "ref": "มัทธิว 11:8",
+   "osis": "Matt",
+   "c": 11,
+   "v": 8,
+   "file": "Matt.11.8.puck.mp3",
+   "d": 9.44,
+   "chars": 111,
+   "h": "sha256:7fe51bc523f1c22b"
+  },
+  "Matt.11.9": {
+   "ref": "มัทธิว 11:9",
+   "osis": "Matt",
+   "c": 11,
+   "v": 9,
+   "file": "Matt.11.9.puck.mp3",
+   "d": 10.04,
+   "chars": 97,
+   "h": "sha256:a4874f27cc3c3d27"
+  },
+  "Matt.11.10": {
+   "ref": "มัทธิว 11:10",
+   "osis": "Matt",
+   "c": 11,
+   "v": 10,
+   "file": "Matt.11.10.puck.mp3",
+   "d": 6.88,
+   "chars": 91,
+   "h": "sha256:70f10780a7ba0bcb"
+  },
+  "Matt.11.11": {
+   "ref": "มัทธิว 11:11",
+   "osis": "Matt",
+   "c": 11,
+   "v": 11,
+   "file": "Matt.11.11.puck.mp3",
+   "d": 10.68,
+   "chars": 147,
+   "h": "sha256:7a1d1ebd6d83d5b4"
+  },
+  "Matt.11.12": {
+   "ref": "มัทธิว 11:12",
+   "osis": "Matt",
+   "c": 11,
+   "v": 12,
+   "file": "Matt.11.12.puck.mp3",
+   "d": 11.72,
+   "chars": 120,
+   "h": "sha256:35574d03bcf528e9"
+  },
+  "Matt.11.13": {
+   "ref": "มัทธิว 11:13",
+   "osis": "Matt",
+   "c": 11,
+   "v": 13,
+   "file": "Matt.11.13.puck.mp3",
+   "d": 6.88,
+   "chars": 76,
+   "h": "sha256:4a869c6c1e2b6dc9"
+  },
+  "Matt.11.14": {
+   "ref": "มัทธิว 11:14",
+   "osis": "Matt",
+   "c": 11,
+   "v": 14,
+   "file": "Matt.11.14.puck.mp3",
+   "d": 4.92,
+   "chars": 56,
+   "h": "sha256:65c2bd055749e74b"
+  },
+  "Matt.11.15": {
+   "ref": "มัทธิว 11:15",
+   "osis": "Matt",
+   "c": 11,
+   "v": 15,
+   "file": "Matt.11.15.puck.mp3",
+   "d": 2.52,
+   "chars": 16,
+   "h": "sha256:73c9a5cd6bc9bac0"
+  },
+  "Matt.11.16": {
+   "ref": "มัทธิว 11:16",
+   "osis": "Matt",
+   "c": 11,
+   "v": 16,
+   "file": "Matt.11.16.puck.mp3",
+   "d": 7.4,
+   "chars": 89,
+   "h": "sha256:4f130a132e2fcd63"
+  },
+  "Matt.11.17": {
+   "ref": "มัทธิว 11:17",
+   "osis": "Matt",
+   "c": 11,
+   "v": 17,
+   "file": "Matt.11.17.puck.mp3",
+   "d": 5.68,
+   "chars": 69,
+   "h": "sha256:5baa957eacbc2215"
+  },
+  "Matt.11.18": {
+   "ref": "มัทธิว 11:18",
+   "osis": "Matt",
+   "c": 11,
+   "v": 18,
+   "file": "Matt.11.18.puck.mp3",
+   "d": 4.84,
+   "chars": 60,
+   "h": "sha256:c31fe4cacad3581b"
+  },
+  "Matt.11.19": {
+   "ref": "มัทธิว 11:19",
+   "osis": "Matt",
+   "c": 11,
+   "v": 19,
+   "file": "Matt.11.19.puck.mp3",
+   "d": 14.44,
+   "chars": 173,
+   "h": "sha256:e861a1faf4c5b3a8"
+  },
+  "Matt.11.20": {
+   "ref": "มัทธิว 11:20",
+   "osis": "Matt",
+   "c": 11,
+   "v": 20,
+   "file": "Matt.11.20.puck.mp3",
+   "d": 8.32,
+   "chars": 111,
+   "h": "sha256:79e4dbfb7d51adea"
+  },
+  "Matt.11.21": {
+   "ref": "มัทธิว 11:21",
+   "osis": "Matt",
+   "c": 11,
+   "v": 21,
+   "file": "Matt.11.21.puck.mp3",
+   "d": 15.32,
+   "chars": 167,
+   "h": "sha256:b05f95fde311d86b"
+  },
+  "Matt.11.22": {
+   "ref": "มัทธิว 11:22",
+   "osis": "Matt",
+   "c": 11,
+   "v": 22,
+   "file": "Matt.11.22.puck.mp3",
+   "d": 7.32,
+   "chars": 72,
+   "h": "sha256:e524fd5d12e761b1"
+  },
+  "Matt.11.23": {
+   "ref": "มัทธิว 11:23",
+   "osis": "Matt",
+   "c": 11,
+   "v": 23,
+   "file": "Matt.11.23.puck.mp3",
+   "d": 16.0,
+   "chars": 189,
+   "h": "sha256:270bc6695d8d433a"
+  },
+  "Matt.11.24": {
+   "ref": "มัทธิว 11:24",
+   "osis": "Matt",
+   "c": 11,
+   "v": 24,
+   "file": "Matt.11.24.puck.mp3",
+   "d": 5.8,
+   "chars": 69,
+   "h": "sha256:10fc0aac1a2b0034"
+  },
+  "Matt.11.25": {
+   "ref": "มัทธิว 11:25",
+   "osis": "Matt",
+   "c": 11,
+   "v": 25,
+   "file": "Matt.11.25.puck.mp3",
+   "d": 13.72,
+   "chars": 169,
+   "h": "sha256:c630c67913c5c049"
+  },
+  "Matt.11.26": {
+   "ref": "มัทธิว 11:26",
+   "osis": "Matt",
+   "c": 11,
+   "v": 26,
+   "file": "Matt.11.26.puck.mp3",
+   "d": 3.88,
+   "chars": 42,
+   "h": "sha256:ee60e8116bf8ae3c"
+  },
+  "Matt.11.27": {
+   "ref": "มัทธิว 11:27",
+   "osis": "Matt",
+   "c": 11,
+   "v": 27,
+   "file": "Matt.11.27.puck.mp3",
+   "d": 11.4,
+   "chars": 141,
+   "h": "sha256:e539baa9ab13a708"
+  },
+  "Matt.11.28": {
+   "ref": "มัทธิว 11:28",
+   "osis": "Matt",
+   "c": 11,
+   "v": 28,
+   "file": "Matt.11.28.puck.mp3",
+   "d": 5.4,
+   "chars": 63,
+   "h": "sha256:04e0618193ae1f28"
+  },
+  "Matt.11.29": {
+   "ref": "มัทธิว 11:29",
+   "osis": "Matt",
+   "c": 11,
+   "v": 29,
+   "file": "Matt.11.29.puck.mp3",
+   "d": 8.32,
+   "chars": 85,
+   "h": "sha256:8b6bf324a8b411b9"
+  },
+  "Matt.11.30": {
+   "ref": "มัทธิว 11:30",
+   "osis": "Matt",
+   "c": 11,
+   "v": 30,
+   "file": "Matt.11.30.puck.mp3",
+   "d": 3.44,
+   "chars": 40,
+   "h": "sha256:e2802393f4d2ceab"
+  },
+  "Matt.12.1": {
+   "ref": "มัทธิว 12:1",
+   "osis": "Matt",
+   "c": 12,
+   "v": 1,
+   "file": "Matt.12.1.puck.mp3",
+   "d": 7.56,
+   "chars": 75,
+   "h": "sha256:278dc6ee8de05489"
+  },
+  "Matt.12.2": {
+   "ref": "มัทธิว 12:2",
+   "osis": "Matt",
+   "c": 12,
+   "v": 2,
+   "file": "Matt.12.2.puck.mp3",
+   "d": 7.24,
+   "chars": 71,
+   "h": "sha256:8e958e0e7ebf16f9"
+  },
+  "Matt.12.3": {
+   "ref": "มัทธิว 12:3",
+   "osis": "Matt",
+   "c": 12,
+   "v": 3,
+   "file": "Matt.12.3.puck.mp3",
+   "d": 5.12,
+   "chars": 69,
+   "h": "sha256:aa74d75457adfe42"
+  },
+  "Matt.12.4": {
+   "ref": "มัทธิว 12:4",
+   "osis": "Matt",
+   "c": 12,
+   "v": 4,
+   "file": "Matt.12.4.puck.mp3",
+   "d": 8.52,
+   "chars": 108,
+   "h": "sha256:000c5a6f3f22fa4a"
+  },
+  "Matt.12.5": {
+   "ref": "มัทธิว 12:5",
+   "osis": "Matt",
+   "c": 12,
+   "v": 5,
+   "file": "Matt.12.5.puck.mp3",
+   "d": 9.24,
+   "chars": 115,
+   "h": "sha256:989d56b4d8c6f212"
+  },
+  "Matt.12.6": {
+   "ref": "มัทธิว 12:6",
+   "osis": "Matt",
+   "c": 12,
+   "v": 6,
+   "file": "Matt.12.6.puck.mp3",
+   "d": 3.16,
+   "chars": 43,
+   "h": "sha256:ab8cb38b64e73596"
+  },
+  "Matt.12.7": {
+   "ref": "มัทธิว 12:7",
+   "osis": "Matt",
+   "c": 12,
+   "v": 7,
+   "file": "Matt.12.7.puck.mp3",
+   "d": 8.44,
+   "chars": 112,
+   "h": "sha256:a5f91b59c980c1f1"
+  },
+  "Matt.12.8": {
+   "ref": "มัทธิว 12:8",
+   "osis": "Matt",
+   "c": 12,
+   "v": 8,
+   "file": "Matt.12.8.puck.mp3",
+   "d": 3.8,
+   "chars": 51,
+   "h": "sha256:7891fe7dc163e507"
+  },
+  "Matt.12.9": {
+   "ref": "มัทธิว 12:9",
+   "osis": "Matt",
+   "c": 12,
+   "v": 9,
+   "file": "Matt.12.9.puck.mp3",
+   "d": 3.84,
+   "chars": 45,
+   "h": "sha256:22c36e5a4af7ed10"
+  },
+  "Matt.12.10": {
+   "ref": "มัทธิว 12:10",
+   "osis": "Matt",
+   "c": 12,
+   "v": 10,
+   "file": "Matt.12.10.puck.mp3",
+   "d": 10.16,
+   "chars": 120,
+   "h": "sha256:3a78baaaf75f1464"
+  },
+  "Matt.12.11": {
+   "ref": "มัทธิว 12:11",
+   "osis": "Matt",
+   "c": 12,
+   "v": 11,
+   "file": "Matt.12.11.puck.mp3",
+   "d": 9.64,
+   "chars": 101,
+   "h": "sha256:d3955412ae8b0adf"
+  },
+  "Matt.12.12": {
+   "ref": "มัทธิว 12:12",
+   "osis": "Matt",
+   "c": 12,
+   "v": 12,
+   "file": "Matt.12.12.puck.mp3",
+   "d": 7.92,
+   "chars": 79,
+   "h": "sha256:189554111c706ac4"
+  },
+  "Matt.12.13": {
+   "ref": "มัทธิว 12:13",
+   "osis": "Matt",
+   "c": 12,
+   "v": 13,
+   "file": "Matt.12.13.puck.mp3",
+   "d": 8.48,
+   "chars": 110,
+   "h": "sha256:ef470a42e4a1d305"
+  },
+  "Matt.12.14": {
+   "ref": "มัทธิว 12:14",
+   "osis": "Matt",
+   "c": 12,
+   "v": 14,
+   "file": "Matt.12.14.puck.mp3",
+   "d": 5.16,
+   "chars": 48,
+   "h": "sha256:5e2ee29c39908226"
+  },
+  "Matt.12.15": {
+   "ref": "มัทธิว 12:15",
+   "osis": "Matt",
+   "c": 12,
+   "v": 15,
+   "file": "Matt.12.15.puck.mp3",
+   "d": 9.0,
+   "chars": 99,
+   "h": "sha256:dbfa112dda899d0d"
+  },
+  "Matt.12.16": {
+   "ref": "มัทธิว 12:16",
+   "osis": "Matt",
+   "c": 12,
+   "v": 16,
+   "file": "Matt.12.16.puck.mp3",
+   "d": 3.44,
+   "chars": 46,
+   "h": "sha256:103c2136a9704c97"
+  },
+  "Matt.12.17": {
+   "ref": "มัทธิว 12:17",
+   "osis": "Matt",
+   "c": 12,
+   "v": 17,
+   "file": "Matt.12.17.puck.mp3",
+   "d": 5.96,
+   "chars": 65,
+   "h": "sha256:1964f4e55661e0e7"
+  },
+  "Matt.12.18": {
+   "ref": "มัทธิว 12:18",
+   "osis": "Matt",
+   "c": 12,
+   "v": 18,
+   "file": "Matt.12.18.puck.mp3",
+   "d": 9.4,
+   "chars": 128,
+   "h": "sha256:f934930294404f15"
+  },
+  "Matt.12.19": {
+   "ref": "มัทธิว 12:19",
+   "osis": "Matt",
+   "c": 12,
+   "v": 19,
+   "file": "Matt.12.19.puck.mp3",
+   "d": 5.04,
+   "chars": 63,
+   "h": "sha256:9bf425c86845105b"
+  },
+  "Matt.12.20": {
+   "ref": "มัทธิว 12:20",
+   "osis": "Matt",
+   "c": 12,
+   "v": 20,
+   "file": "Matt.12.20.puck.mp3",
+   "d": 7.64,
+   "chars": 96,
+   "h": "sha256:f87064645a96e32d"
+  },
+  "Matt.12.21": {
+   "ref": "มัทธิว 12:21",
+   "osis": "Matt",
+   "c": 12,
+   "v": 21,
+   "file": "Matt.12.21.puck.mp3",
+   "d": 2.6,
+   "chars": 34,
+   "h": "sha256:d15e38bbc6081b26"
+  },
+  "Matt.12.22": {
+   "ref": "มัทธิว 12:22",
+   "osis": "Matt",
+   "c": 12,
+   "v": 22,
+   "file": "Matt.12.22.puck.mp3",
+   "d": 10.24,
+   "chars": 108,
+   "h": "sha256:dfabe5354c726b96"
+  },
+  "Matt.12.23": {
+   "ref": "มัทธิว 12:23",
+   "osis": "Matt",
+   "c": 12,
+   "v": 23,
+   "file": "Matt.12.23.puck.mp3",
+   "d": 5.68,
+   "chars": 58,
+   "h": "sha256:07062528196e36cb"
+  },
+  "Matt.12.24": {
+   "ref": "มัทธิว 12:24",
+   "osis": "Matt",
+   "c": 12,
+   "v": 24,
+   "file": "Matt.12.24.puck.mp3",
+   "d": 6.04,
+   "chars": 66,
+   "h": "sha256:bf513e730b60ebfb"
+  },
+  "Matt.12.25": {
+   "ref": "มัทธิว 12:25",
+   "osis": "Matt",
+   "c": 12,
+   "v": 25,
+   "file": "Matt.12.25.puck.mp3",
+   "d": 10.84,
+   "chars": 124,
+   "h": "sha256:b93e7c0e0335e520"
+  },
+  "Matt.12.26": {
+   "ref": "มัทธิว 12:26",
+   "osis": "Matt",
+   "c": 12,
+   "v": 26,
+   "file": "Matt.12.26.puck.mp3",
+   "d": 6.72,
+   "chars": 82,
+   "h": "sha256:79e1a2f869f9e9e4"
+  },
+  "Matt.12.27": {
+   "ref": "มัทธิว 12:27",
+   "osis": "Matt",
+   "c": 12,
+   "v": 27,
+   "file": "Matt.12.27.puck.mp3",
+   "d": 8.6,
+   "chars": 100,
+   "h": "sha256:e64140362fbf8f4f"
+  },
+  "Matt.12.28": {
+   "ref": "มัทธิว 12:28",
+   "osis": "Matt",
+   "c": 12,
+   "v": 28,
+   "file": "Matt.12.28.puck.mp3",
+   "d": 6.76,
+   "chars": 73,
+   "h": "sha256:65e3c00c2203c4e2"
+  },
+  "Matt.12.29": {
+   "ref": "มัทธิว 12:29",
+   "osis": "Matt",
+   "c": 12,
+   "v": 29,
+   "file": "Matt.12.29.puck.mp3",
+   "d": 9.4,
+   "chars": 117,
+   "h": "sha256:3feb1e75bc29661e"
+  },
+  "Matt.12.30": {
+   "ref": "มัทธิว 12:30",
+   "osis": "Matt",
+   "c": 12,
+   "v": 30,
+   "file": "Matt.12.30.puck.mp3",
+   "d": 6.28,
+   "chars": 72,
+   "h": "sha256:a68e7776d5b7fb31"
+  },
+  "Matt.12.31": {
+   "ref": "มัทธิว 12:31",
+   "osis": "Matt",
+   "c": 12,
+   "v": 31,
+   "file": "Matt.12.31.puck.mp3",
+   "d": 10.0,
+   "chars": 110,
+   "h": "sha256:1ca7039b03fe873e"
+  },
+  "Matt.12.32": {
+   "ref": "มัทธิว 12:32",
+   "osis": "Matt",
+   "c": 12,
+   "v": 32,
+   "file": "Matt.12.32.puck.mp3",
+   "d": 10.96,
+   "chars": 131,
+   "h": "sha256:b6cf78017c9f532c"
+  },
+  "Matt.12.33": {
+   "ref": "มัทธิว 12:33",
+   "osis": "Matt",
+   "c": 12,
+   "v": 33,
+   "file": "Matt.12.33.puck.mp3",
+   "d": 9.36,
+   "chars": 84,
+   "h": "sha256:04b9b29970e3ccd5"
+  },
+  "Matt.12.34": {
+   "ref": "มัทธิว 12:34",
+   "osis": "Matt",
+   "c": 12,
+   "v": 34,
+   "file": "Matt.12.34.puck.mp3",
+   "d": 8.04,
+   "chars": 92,
+   "h": "sha256:bcff26b4ec16c0ec"
+  },
+  "Matt.12.35": {
+   "ref": "มัทธิว 12:35",
+   "osis": "Matt",
+   "c": 12,
+   "v": 35,
+   "file": "Matt.12.35.puck.mp3",
+   "d": 9.32,
+   "chars": 98,
+   "h": "sha256:d1f53629e36a6103"
+  },
+  "Matt.12.36": {
+   "ref": "มัทธิว 12:36",
+   "osis": "Matt",
+   "c": 12,
+   "v": 36,
+   "file": "Matt.12.36.puck.mp3",
+   "d": 6.8,
+   "chars": 78,
+   "h": "sha256:f6c70ab78efdb827"
+  },
+  "Matt.12.37": {
+   "ref": "มัทธิว 12:37",
+   "osis": "Matt",
+   "c": 12,
+   "v": 37,
+   "file": "Matt.12.37.puck.mp3",
+   "d": 4.12,
+   "chars": 53,
+   "h": "sha256:d52d7f4dc9e90047"
+  },
+  "Matt.12.38": {
+   "ref": "มัทธิว 12:38",
+   "osis": "Matt",
+   "c": 12,
+   "v": 38,
+   "file": "Matt.12.38.puck.mp3",
+   "d": 7.72,
+   "chars": 88,
+   "h": "sha256:6f839dc988bc58de"
+  },
+  "Matt.12.39": {
+   "ref": "มัทธิว 12:39",
+   "osis": "Matt",
+   "c": 12,
+   "v": 39,
+   "file": "Matt.12.39.puck.mp3",
+   "d": 12.16,
+   "chars": 135,
+   "h": "sha256:21e605a8b063cb38"
+  },
+  "Matt.12.40": {
+   "ref": "มัทธิว 12:40",
+   "osis": "Matt",
+   "c": 12,
+   "v": 40,
+   "file": "Matt.12.40.puck.mp3",
+   "d": 9.44,
+   "chars": 88,
+   "h": "sha256:fc7f509c137845a4"
+  },
+  "Matt.12.41": {
+   "ref": "มัทธิว 12:41",
+   "osis": "Matt",
+   "c": 12,
+   "v": 41,
+   "file": "Matt.12.41.puck.mp3",
+   "d": 12.4,
+   "chars": 160,
+   "h": "sha256:d0c987d44f5e2351"
+  },
+  "Matt.12.42": {
+   "ref": "มัทธิว 12:42",
+   "osis": "Matt",
+   "c": 12,
+   "v": 42,
+   "file": "Matt.12.42.puck.mp3",
+   "d": 13.04,
+   "chars": 174,
+   "h": "sha256:2555caaaee281e5a"
+  },
+  "Matt.12.43": {
+   "ref": "มัทธิว 12:43",
+   "osis": "Matt",
+   "c": 12,
+   "v": 43,
+   "file": "Matt.12.43.puck.mp3",
+   "d": 6.12,
+   "chars": 82,
+   "h": "sha256:af6205079e588a2f"
+  },
+  "Matt.12.44": {
+   "ref": "มัทธิว 12:44",
+   "osis": "Matt",
+   "c": 12,
+   "v": 44,
+   "file": "Matt.12.44.puck.mp3",
+   "d": 10.24,
+   "chars": 116,
+   "h": "sha256:16285c78080d2d9d"
+  },
+  "Matt.12.45": {
+   "ref": "มัทธิว 12:45",
+   "osis": "Matt",
+   "c": 12,
+   "v": 45,
+   "file": "Matt.12.45.puck.mp3",
+   "d": 14.12,
+   "chars": 172,
+   "h": "sha256:2aa24d7f03638059"
+  },
+  "Matt.12.46": {
+   "ref": "มัทธิว 12:46",
+   "osis": "Matt",
+   "c": 12,
+   "v": 46,
+   "file": "Matt.12.46.puck.mp3",
+   "d": 8.24,
+   "chars": 89,
+   "h": "sha256:a1b81f330ec233f9"
+  },
+  "Matt.12.47": {
+   "ref": "มัทธิว 12:47",
+   "osis": "Matt",
+   "c": 12,
+   "v": 47,
+   "file": "Matt.12.47.puck.mp3",
+   "d": 6.08,
+   "chars": 79,
+   "h": "sha256:46d7e254e0fc7c75"
+  },
+  "Matt.12.48": {
+   "ref": "มัทธิว 12:48",
+   "osis": "Matt",
+   "c": 12,
+   "v": 48,
+   "file": "Matt.12.48.puck.mp3",
+   "d": 3.52,
+   "chars": 41,
+   "h": "sha256:72886cc14118c8e6"
+  },
+  "Matt.12.49": {
+   "ref": "มัทธิว 12:49",
+   "osis": "Matt",
+   "c": 12,
+   "v": 49,
+   "file": "Matt.12.49.puck.mp3",
+   "d": 6.04,
+   "chars": 68,
+   "h": "sha256:168adc52bfe8ee6e"
+  },
+  "Matt.12.50": {
+   "ref": "มัทธิว 12:50",
+   "osis": "Matt",
+   "c": 12,
+   "v": 50,
+   "file": "Matt.12.50.puck.mp3",
+   "d": 7.32,
+   "chars": 84,
+   "h": "sha256:235f9a50c4bd5146"
+  },
+  "Matt.13.1": {
+   "ref": "มัทธิว 13:1",
+   "osis": "Matt",
+   "c": 13,
+   "v": 1,
+   "file": "Matt.13.1.puck.mp3",
+   "d": 3.8,
+   "chars": 50,
+   "h": "sha256:348c278c8842d897"
+  },
+  "Matt.13.2": {
+   "ref": "มัทธิว 13:2",
+   "osis": "Matt",
+   "c": 13,
+   "v": 2,
+   "file": "Matt.13.2.puck.mp3",
+   "d": 6.64,
+   "chars": 65,
+   "h": "sha256:ea752ae0f22a70d3"
+  },
+  "Matt.13.3": {
+   "ref": "มัทธิว 13:3",
+   "osis": "Matt",
+   "c": 13,
+   "v": 3,
+   "file": "Matt.13.3.puck.mp3",
+   "d": 7.2,
+   "chars": 75,
+   "h": "sha256:a68382c035338f2a"
+  },
+  "Matt.13.4": {
+   "ref": "มัทธิว 13:4",
+   "osis": "Matt",
+   "c": 13,
+   "v": 4,
+   "file": "Matt.13.4.puck.mp3",
+   "d": 4.28,
+   "chars": 48,
+   "h": "sha256:48ebf9e6397cbeff"
+  },
+  "Matt.13.5": {
+   "ref": "มัทธิว 13:5",
+   "osis": "Matt",
+   "c": 13,
+   "v": 5,
+   "file": "Matt.13.5.puck.mp3",
+   "d": 6.08,
+   "chars": 68,
+   "h": "sha256:35c03893c7e6193b"
+  },
+  "Matt.13.6": {
+   "ref": "มัทธิว 13:6",
+   "osis": "Matt",
+   "c": 13,
+   "v": 6,
+   "file": "Matt.13.6.puck.mp3",
+   "d": 2.6,
+   "chars": 38,
+   "h": "sha256:a5d70e980e3c316d"
+  },
+  "Matt.13.7": {
+   "ref": "มัทธิว 13:7",
+   "osis": "Matt",
+   "c": 13,
+   "v": 7,
+   "file": "Matt.13.7.puck.mp3",
+   "d": 4.52,
+   "chars": 45,
+   "h": "sha256:e29ac39387b0481a"
+  },
+  "Matt.13.8": {
+   "ref": "มัทธิว 13:8",
+   "osis": "Matt",
+   "c": 13,
+   "v": 8,
+   "file": "Matt.13.8.puck.mp3",
+   "d": 8.64,
+   "chars": 83,
+   "h": "sha256:e374fa82d5108cd8"
+  },
+  "Matt.13.9": {
+   "ref": "มัทธิว 13:9",
+   "osis": "Matt",
+   "c": 13,
+   "v": 9,
+   "file": "Matt.13.9.puck.mp3",
+   "d": 1.64,
+   "chars": 18,
+   "h": "sha256:21317cda8ca49511"
+  },
+  "Matt.13.10": {
+   "ref": "มัทธิว 13:10",
+   "osis": "Matt",
+   "c": 13,
+   "v": 10,
+   "file": "Matt.13.10.puck.mp3",
+   "d": 6.04,
+   "chars": 64,
+   "h": "sha256:c3730407313538ce"
+  },
+  "Matt.13.11": {
+   "ref": "มัทธิว 13:11",
+   "osis": "Matt",
+   "c": 13,
+   "v": 11,
+   "file": "Matt.13.11.puck.mp3",
+   "d": 6.4,
+   "chars": 78,
+   "h": "sha256:4d8a5d69914dc756"
+  },
+  "Matt.13.12": {
+   "ref": "มัทธิว 13:12",
+   "osis": "Matt",
+   "c": 13,
+   "v": 12,
+   "file": "Matt.13.12.puck.mp3",
+   "d": 8.08,
+   "chars": 82,
+   "h": "sha256:0e0b60606ab81885"
+  },
+  "Matt.13.13": {
+   "ref": "มัทธิว 13:13",
+   "osis": "Matt",
+   "c": 13,
+   "v": 13,
+   "file": "Matt.13.13.puck.mp3",
+   "d": 8.44,
+   "chars": 104,
+   "h": "sha256:3556b61dfa2cba7b"
+  },
+  "Matt.13.14": {
+   "ref": "มัทธิว 13:14",
+   "osis": "Matt",
+   "c": 13,
+   "v": 14,
+   "file": "Matt.13.14.puck.mp3",
+   "d": 10.64,
+   "chars": 128,
+   "h": "sha256:124ffe1d8290c9d1"
+  },
+  "Matt.13.15": {
+   "ref": "มัทธิว 13:15",
+   "osis": "Matt",
+   "c": 13,
+   "v": 15,
+   "file": "Matt.13.15.puck.mp3",
+   "d": 14.52,
+   "chars": 160,
+   "h": "sha256:4b6b818be5eaf1c9"
+  },
+  "Matt.13.16": {
+   "ref": "มัทธิว 13:16",
+   "osis": "Matt",
+   "c": 13,
+   "v": 16,
+   "file": "Matt.13.16.puck.mp3",
+   "d": 6.4,
+   "chars": 64,
+   "h": "sha256:ce69e5c8a150cccf"
+  },
+  "Matt.13.17": {
+   "ref": "มัทธิว 13:17",
+   "osis": "Matt",
+   "c": 13,
+   "v": 17,
+   "file": "Matt.13.17.puck.mp3",
+   "d": 11.52,
+   "chars": 135,
+   "h": "sha256:e8ac4ba4e729b7f5"
+  },
+  "Matt.13.18": {
+   "ref": "มัทธิว 13:18",
+   "osis": "Matt",
+   "c": 13,
+   "v": 18,
+   "file": "Matt.13.18.puck.mp3",
+   "d": 3.56,
+   "chars": 41,
+   "h": "sha256:9cbd102fe9a20f7b"
+  },
+  "Matt.13.19": {
+   "ref": "มัทธิว 13:19",
+   "osis": "Matt",
+   "c": 13,
+   "v": 19,
+   "file": "Matt.13.19.puck.mp3",
+   "d": 10.68,
+   "chars": 134,
+   "h": "sha256:22de6039e54f6436"
+  },
+  "Matt.13.20": {
+   "ref": "มัทธิว 13:20",
+   "osis": "Matt",
+   "c": 13,
+   "v": 20,
+   "file": "Matt.13.20.puck.mp3",
+   "d": 6.16,
+   "chars": 76,
+   "h": "sha256:3f53970c522c3c91"
+  },
+  "Matt.13.21": {
+   "ref": "มัทธิว 13:21",
+   "osis": "Matt",
+   "c": 13,
+   "v": 21,
+   "file": "Matt.13.21.puck.mp3",
+   "d": 8.52,
+   "chars": 110,
+   "h": "sha256:bd0b87746b21fcec"
+  },
+  "Matt.13.22": {
+   "ref": "มัทธิว 13:22",
+   "osis": "Matt",
+   "c": 13,
+   "v": 22,
+   "file": "Matt.13.22.puck.mp3",
+   "d": 9.76,
+   "chars": 118,
+   "h": "sha256:4989187a76cdf587"
+  },
+  "Matt.13.23": {
+   "ref": "มัทธิว 13:23",
+   "osis": "Matt",
+   "c": 13,
+   "v": 23,
+   "file": "Matt.13.23.puck.mp3",
+   "d": 10.44,
+   "chars": 111,
+   "h": "sha256:b95054ce037a187e"
+  },
+  "Matt.13.24": {
+   "ref": "มัทธิว 13:24",
+   "osis": "Matt",
+   "c": 13,
+   "v": 24,
+   "file": "Matt.13.24.puck.mp3",
+   "d": 7.16,
+   "chars": 91,
+   "h": "sha256:aa303dc042bd1096"
+  },
+  "Matt.13.25": {
+   "ref": "มัทธิว 13:25",
+   "osis": "Matt",
+   "c": 13,
+   "v": 25,
+   "file": "Matt.13.25.puck.mp3",
+   "d": 7.64,
+   "chars": 69,
+   "h": "sha256:b61d4ca2eb16bb03"
+  },
+  "Matt.13.26": {
+   "ref": "มัทธิว 13:26",
+   "osis": "Matt",
+   "c": 13,
+   "v": 26,
+   "file": "Matt.13.26.puck.mp3",
+   "d": 4.8,
+   "chars": 42,
+   "h": "sha256:8efde4752d3eb16c"
+  },
+  "Matt.13.27": {
+   "ref": "มัทธิว 13:27",
+   "osis": "Matt",
+   "c": 13,
+   "v": 27,
+   "file": "Matt.13.27.puck.mp3",
+   "d": 8.48,
+   "chars": 91,
+   "h": "sha256:f42ba854bbc6db9e"
+  },
+  "Matt.13.28": {
+   "ref": "มัทธิว 13:28",
+   "osis": "Matt",
+   "c": 13,
+   "v": 28,
+   "file": "Matt.13.28.puck.mp3",
+   "d": 6.28,
+   "chars": 68,
+   "h": "sha256:568f9522b9f9b182"
+  },
+  "Matt.13.29": {
+   "ref": "มัทธิว 13:29",
+   "osis": "Matt",
+   "c": 13,
+   "v": 29,
+   "file": "Matt.13.29.puck.mp3",
+   "d": 5.84,
+   "chars": 67,
+   "h": "sha256:ed1b2de6cd7c5921"
+  },
+  "Matt.13.30": {
+   "ref": "มัทธิว 13:30",
+   "osis": "Matt",
+   "c": 13,
+   "v": 30,
+   "file": "Matt.13.30.puck.mp3",
+   "d": 12.68,
+   "chars": 158,
+   "h": "sha256:0d02742cb0304510"
+  },
+  "Matt.13.31": {
+   "ref": "มัทธิว 13:31",
+   "osis": "Matt",
+   "c": 13,
+   "v": 31,
+   "file": "Matt.13.31.puck.mp3",
+   "d": 7.24,
+   "chars": 95,
+   "h": "sha256:b0254688972db501"
+  },
+  "Matt.13.32": {
+   "ref": "มัทธิว 13:32",
+   "osis": "Matt",
+   "c": 13,
+   "v": 32,
+   "file": "Matt.13.32.puck.mp3",
+   "d": 6.88,
+   "chars": 89,
+   "h": "sha256:8f1ceacd9a96a914"
+  },
+  "Matt.13.33": {
+   "ref": "มัทธิว 13:33",
+   "osis": "Matt",
+   "c": 13,
+   "v": 33,
+   "file": "Matt.13.33.puck.mp3",
+   "d": 10.0,
+   "chars": 136,
+   "h": "sha256:92010bcec4a999a8"
+  },
+  "Matt.13.34": {
+   "ref": "มัทธิว 13:34",
+   "osis": "Matt",
+   "c": 13,
+   "v": 34,
+   "file": "Matt.13.34.puck.mp3",
+   "d": 7.28,
+   "chars": 86,
+   "h": "sha256:74343ea9bb0739e3"
+  },
+  "Matt.13.35": {
+   "ref": "มัทธิว 13:35",
+   "osis": "Matt",
+   "c": 13,
+   "v": 35,
+   "file": "Matt.13.35.puck.mp3",
+   "d": 8.6,
+   "chars": 122,
+   "h": "sha256:364742218f0bf235"
+  },
+  "Matt.13.36": {
+   "ref": "มัทธิว 13:36",
+   "osis": "Matt",
+   "c": 13,
+   "v": 36,
+   "file": "Matt.13.36.puck.mp3",
+   "d": 9.68,
+   "chars": 103,
+   "h": "sha256:b939d7e20cd0e655"
+  },
+  "Matt.13.37": {
+   "ref": "มัทธิว 13:37",
+   "osis": "Matt",
+   "c": 13,
+   "v": 37,
+   "file": "Matt.13.37.puck.mp3",
+   "d": 4.32,
+   "chars": 51,
+   "h": "sha256:f12ee3d14d38d471"
+  },
+  "Matt.13.38": {
+   "ref": "มัทธิว 13:38",
+   "osis": "Matt",
+   "c": 13,
+   "v": 38,
+   "file": "Matt.13.38.puck.mp3",
+   "d": 7.72,
+   "chars": 75,
+   "h": "sha256:a4294696925db148"
+  },
+  "Matt.13.39": {
+   "ref": "มัทธิว 13:39",
+   "osis": "Matt",
+   "c": 13,
+   "v": 39,
+   "file": "Matt.13.39.puck.mp3",
+   "d": 7.48,
+   "chars": 86,
+   "h": "sha256:bcdb640238f4216f"
+  },
+  "Matt.13.40": {
+   "ref": "มัทธิว 13:40",
+   "osis": "Matt",
+   "c": 13,
+   "v": 40,
+   "file": "Matt.13.40.puck.mp3",
+   "d": 4.6,
+   "chars": 56,
+   "h": "sha256:b96dad711079c509"
+  },
+  "Matt.13.41": {
+   "ref": "มัทธิว 13:41",
+   "osis": "Matt",
+   "c": 13,
+   "v": 41,
+   "file": "Matt.13.41.puck.mp3",
+   "d": 8.2,
+   "chars": 118,
+   "h": "sha256:4fbc86156f700c5b"
+  },
+  "Matt.13.42": {
+   "ref": "มัทธิว 13:42",
+   "osis": "Matt",
+   "c": 13,
+   "v": 42,
+   "file": "Matt.13.42.puck.mp3",
+   "d": 5.32,
+   "chars": 63,
+   "h": "sha256:1ae1a0b698bb049b"
+  },
+  "Matt.13.43": {
+   "ref": "มัทธิว 13:43",
+   "osis": "Matt",
+   "c": 13,
+   "v": 43,
+   "file": "Matt.13.43.puck.mp3",
+   "d": 7.24,
+   "chars": 87,
+   "h": "sha256:af4ee580eb7fdcf0"
+  },
+  "Matt.13.44": {
+   "ref": "มัทธิว 13:44",
+   "osis": "Matt",
+   "c": 13,
+   "v": 44,
+   "file": "Matt.13.44.puck.mp3",
+   "d": 11.08,
+   "chars": 138,
+   "h": "sha256:ca19395a1a35036a"
+  },
+  "Matt.13.45": {
+   "ref": "มัทธิว 13:45",
+   "osis": "Matt",
+   "c": 13,
+   "v": 45,
+   "file": "Matt.13.45.puck.mp3",
+   "d": 6.4,
+   "chars": 68,
+   "h": "sha256:304396cddd9704e8"
+  },
+  "Matt.13.46": {
+   "ref": "มัทธิว 13:46",
+   "osis": "Matt",
+   "c": 13,
+   "v": 46,
+   "file": "Matt.13.46.puck.mp3",
+   "d": 6.28,
+   "chars": 74,
+   "h": "sha256:95e34b6dd18809e9"
+  },
+  "Matt.13.47": {
+   "ref": "มัทธิว 13:47",
+   "osis": "Matt",
+   "c": 13,
+   "v": 47,
+   "file": "Matt.13.47.puck.mp3",
+   "d": 6.48,
+   "chars": 76,
+   "h": "sha256:03b3563e369be7fe"
+  },
+  "Matt.13.48": {
+   "ref": "มัทธิว 13:48",
+   "osis": "Matt",
+   "c": 13,
+   "v": 48,
+   "file": "Matt.13.48.puck.mp3",
+   "d": 7.6,
+   "chars": 89,
+   "h": "sha256:23a05252bc82256e"
+  },
+  "Matt.13.49": {
+   "ref": "มัทธิว 13:49",
+   "osis": "Matt",
+   "c": 13,
+   "v": 49,
+   "file": "Matt.13.49.puck.mp3",
+   "d": 5.92,
+   "chars": 66,
+   "h": "sha256:1f751931963e0c58"
+  },
+  "Matt.13.50": {
+   "ref": "มัทธิว 13:50",
+   "osis": "Matt",
+   "c": 13,
+   "v": 50,
+   "file": "Matt.13.50.puck.mp3",
+   "d": 5.76,
+   "chars": 66,
+   "h": "sha256:21aa2ae1d76d4893"
+  },
+  "Matt.13.51": {
+   "ref": "มัทธิว 13:51",
+   "osis": "Matt",
+   "c": 13,
+   "v": 51,
+   "file": "Matt.13.51.puck.mp3",
+   "d": 6.28,
+   "chars": 74,
+   "h": "sha256:91eaf133f11462f0"
+  },
+  "Matt.13.52": {
+   "ref": "มัทธิว 13:52",
+   "osis": "Matt",
+   "c": 13,
+   "v": 52,
+   "file": "Matt.13.52.puck.mp3",
+   "d": 11.36,
+   "chars": 153,
+   "h": "sha256:b1c20940817f8a44"
+  },
+  "Matt.13.53": {
+   "ref": "มัทธิว 13:53",
+   "osis": "Matt",
+   "c": 13,
+   "v": 53,
+   "file": "Matt.13.53.puck.mp3",
+   "d": 4.0,
+   "chars": 45,
+   "h": "sha256:4c8b5f7cd3df5ea0"
+  },
+  "Matt.13.54": {
+   "ref": "มัทธิว 13:54",
+   "osis": "Matt",
+   "c": 13,
+   "v": 54,
+   "file": "Matt.13.54.puck.mp3",
+   "d": 11.76,
+   "chars": 131,
+   "h": "sha256:31bfb1c8362ef812"
+  },
+  "Matt.13.55": {
+   "ref": "มัทธิว 13:55",
+   "osis": "Matt",
+   "c": 13,
+   "v": 55,
+   "file": "Matt.13.55.puck.mp3",
+   "d": 11.56,
+   "chars": 98,
+   "h": "sha256:60426fbc2cb5c5ca"
+  },
+  "Matt.13.56": {
+   "ref": "มัทธิว 13:56",
+   "osis": "Matt",
+   "c": 13,
+   "v": 56,
+   "file": "Matt.13.56.puck.mp3",
+   "d": 6.2,
+   "chars": 71,
+   "h": "sha256:22b8322793073ad0"
+  },
+  "Matt.13.57": {
+   "ref": "มัทธิว 13:57",
+   "osis": "Matt",
+   "c": 13,
+   "v": 57,
+   "file": "Matt.13.57.puck.mp3",
+   "d": 10.16,
+   "chars": 121,
+   "h": "sha256:58baa8797f7bfe05"
+  },
+  "Matt.13.58": {
+   "ref": "มัทธิว 13:58",
+   "osis": "Matt",
+   "c": 13,
+   "v": 58,
+   "file": "Matt.13.58.puck.mp3",
+   "d": 5.76,
+   "chars": 70,
+   "h": "sha256:c30a1418d4ca1eb0"
+  },
+  "Matt.14.1": {
+   "ref": "มัทธิว 14:1",
+   "osis": "Matt",
+   "c": 14,
+   "v": 1,
+   "file": "Matt.14.1.puck.mp3",
+   "d": 5.0,
+   "chars": 52,
+   "h": "sha256:a7eeeaff68b294bd"
+  },
+  "Matt.14.2": {
+   "ref": "มัทธิว 14:2",
+   "osis": "Matt",
+   "c": 14,
+   "v": 2,
+   "file": "Matt.14.2.puck.mp3",
+   "d": 9.36,
+   "chars": 111,
+   "h": "sha256:3793953e1c1f072a"
+  },
+  "Matt.14.3": {
+   "ref": "มัทธิว 14:3",
+   "osis": "Matt",
+   "c": 14,
+   "v": 3,
+   "file": "Matt.14.3.puck.mp3",
+   "d": 6.28,
+   "chars": 71,
+   "h": "sha256:ae0acfa5512be012"
+  },
+  "Matt.14.4": {
+   "ref": "มัทธิว 14:4",
+   "osis": "Matt",
+   "c": 14,
+   "v": 4,
+   "file": "Matt.14.4.puck.mp3",
+   "d": 4.76,
+   "chars": 66,
+   "h": "sha256:1eb20a9d3dea0554"
+  },
+  "Matt.14.5": {
+   "ref": "มัทธิว 14:5",
+   "osis": "Matt",
+   "c": 14,
+   "v": 5,
+   "file": "Matt.14.5.puck.mp3",
+   "d": 6.28,
+   "chars": 71,
+   "h": "sha256:2aded6fdac94a347"
+  },
+  "Matt.14.6": {
+   "ref": "มัทธิว 14:6",
+   "osis": "Matt",
+   "c": 14,
+   "v": 6,
+   "file": "Matt.14.6.puck.mp3",
+   "d": 7.0,
+   "chars": 75,
+   "h": "sha256:d0cabfd420bc6b3d"
+  },
+  "Matt.14.7": {
+   "ref": "มัทธิว 14:7",
+   "osis": "Matt",
+   "c": 14,
+   "v": 7,
+   "file": "Matt.14.7.puck.mp3",
+   "d": 3.32,
+   "chars": 41,
+   "h": "sha256:7dfe28fbf3c8899f"
+  },
+  "Matt.14.8": {
+   "ref": "มัทธิว 14:8",
+   "osis": "Matt",
+   "c": 14,
+   "v": 8,
+   "file": "Matt.14.8.puck.mp3",
+   "d": 6.0,
+   "chars": 76,
+   "h": "sha256:c3ba245b92e0a2be"
+  },
+  "Matt.14.9": {
+   "ref": "มัทธิว 14:9",
+   "osis": "Matt",
+   "c": 14,
+   "v": 9,
+   "file": "Matt.14.9.puck.mp3",
+   "d": 7.48,
+   "chars": 91,
+   "h": "sha256:9cc7b1197bd880ec"
+  },
+  "Matt.14.10": {
+   "ref": "มัทธิว 14:10",
+   "osis": "Matt",
+   "c": 14,
+   "v": 10,
+   "file": "Matt.14.10.puck.mp3",
+   "d": 1.6,
+   "chars": 21,
+   "h": "sha256:1523dcef351e742d"
+  },
+  "Matt.14.11": {
+   "ref": "มัทธิว 14:11",
+   "osis": "Matt",
+   "c": 14,
+   "v": 11,
+   "file": "Matt.14.11.puck.mp3",
+   "d": 6.12,
+   "chars": 57,
+   "h": "sha256:d01276b372357b90"
+  },
+  "Matt.14.12": {
+   "ref": "มัทธิว 14:12",
+   "osis": "Matt",
+   "c": 14,
+   "v": 12,
+   "file": "Matt.14.12.puck.mp3",
+   "d": 4.68,
+   "chars": 50,
+   "h": "sha256:0065c4c54dd3c870"
+  },
+  "Matt.14.13": {
+   "ref": "มัทธิว 14:13",
+   "osis": "Matt",
+   "c": 14,
+   "v": 13,
+   "file": "Matt.14.13.puck.mp3",
+   "d": 10.92,
+   "chars": 120,
+   "h": "sha256:eb9b955016fe0ee2"
+  },
+  "Matt.14.14": {
+   "ref": "มัทธิว 14:14",
+   "osis": "Matt",
+   "c": 14,
+   "v": 14,
+   "file": "Matt.14.14.puck.mp3",
+   "d": 7.4,
+   "chars": 83,
+   "h": "sha256:83d21cbf9c6db1ee"
+  },
+  "Matt.14.15": {
+   "ref": "มัทธิว 14:15",
+   "osis": "Matt",
+   "c": 14,
+   "v": 15,
+   "file": "Matt.14.15.puck.mp3",
+   "d": 11.08,
+   "chars": 126,
+   "h": "sha256:34b7d00aea048d93"
+  },
+  "Matt.14.16": {
+   "ref": "มัทธิว 14:16",
+   "osis": "Matt",
+   "c": 14,
+   "v": 16,
+   "file": "Matt.14.16.puck.mp3",
+   "d": 6.4,
+   "chars": 73,
+   "h": "sha256:665c1fe668a91a1b"
+  },
+  "Matt.14.17": {
+   "ref": "มัทธิว 14:17",
+   "osis": "Matt",
+   "c": 14,
+   "v": 17,
+   "file": "Matt.14.17.puck.mp3",
+   "d": 4.68,
+   "chars": 49,
+   "h": "sha256:e13917bf13596098"
+  },
+  "Matt.14.18": {
+   "ref": "มัทธิว 14:18",
+   "osis": "Matt",
+   "c": 14,
+   "v": 18,
+   "file": "Matt.14.18.puck.mp3",
+   "d": 2.8,
+   "chars": 27,
+   "h": "sha256:737f7b652f0bb98b"
+  },
+  "Matt.14.19": {
+   "ref": "มัทธิว 14:19",
+   "osis": "Matt",
+   "c": 14,
+   "v": 19,
+   "file": "Matt.14.19.puck.mp3",
+   "d": 13.4,
+   "chars": 153,
+   "h": "sha256:b73f8edf0a2a012d"
+  },
+  "Matt.14.20": {
+   "ref": "มัทธิว 14:20",
+   "osis": "Matt",
+   "c": 14,
+   "v": 20,
+   "file": "Matt.14.20.puck.mp3",
+   "d": 4.64,
+   "chars": 62,
+   "h": "sha256:f793d47df3633080"
+  },
+  "Matt.14.21": {
+   "ref": "มัทธิว 14:21",
+   "osis": "Matt",
+   "c": 14,
+   "v": 21,
+   "file": "Matt.14.21.puck.mp3",
+   "d": 5.76,
+   "chars": 61,
+   "h": "sha256:2d58444badcc362a"
+  },
+  "Matt.14.22": {
+   "ref": "มัทธิว 14:22",
+   "osis": "Matt",
+   "c": 14,
+   "v": 22,
+   "file": "Matt.14.22.puck.mp3",
+   "d": 7.12,
+   "chars": 68,
+   "h": "sha256:4ef1fc9da15eaf68"
+  },
+  "Matt.14.23": {
+   "ref": "มัทธิว 14:23",
+   "osis": "Matt",
+   "c": 14,
+   "v": 23,
+   "file": "Matt.14.23.puck.mp3",
+   "d": 6.16,
+   "chars": 73,
+   "h": "sha256:ed72cc44a98cbe32"
+  },
+  "Matt.14.24": {
+   "ref": "มัทธิว 14:24",
+   "osis": "Matt",
+   "c": 14,
+   "v": 24,
+   "file": "Matt.14.24.puck.mp3",
+   "d": 5.56,
+   "chars": 62,
+   "h": "sha256:98f88c102cd4541a"
+  },
+  "Matt.14.25": {
+   "ref": "มัทธิว 14:25",
+   "osis": "Matt",
+   "c": 14,
+   "v": 25,
+   "file": "Matt.14.25.puck.mp3",
+   "d": 4.0,
+   "chars": 43,
+   "h": "sha256:1ffdb88e6e4af037"
+  },
+  "Matt.14.26": {
+   "ref": "มัทธิว 14:26",
+   "osis": "Matt",
+   "c": 14,
+   "v": 26,
+   "file": "Matt.14.26.puck.mp3",
+   "d": 6.76,
+   "chars": 65,
+   "h": "sha256:fd670d102b20eda9"
+  },
+  "Matt.14.27": {
+   "ref": "มัทธิว 14:27",
+   "osis": "Matt",
+   "c": 14,
+   "v": 27,
+   "file": "Matt.14.27.puck.mp3",
+   "d": 5.8,
+   "chars": 64,
+   "h": "sha256:d100335bc3507492"
+  },
+  "Matt.14.28": {
+   "ref": "มัทธิว 14:28",
+   "osis": "Matt",
+   "c": 14,
+   "v": 28,
+   "file": "Matt.14.28.puck.mp3",
+   "d": 7.56,
+   "chars": 84,
+   "h": "sha256:ccc281bd29b67006"
+  },
+  "Matt.14.29": {
+   "ref": "มัทธิว 14:29",
+   "osis": "Matt",
+   "c": 14,
+   "v": 29,
+   "file": "Matt.14.29.puck.mp3",
+   "d": 6.32,
+   "chars": 64,
+   "h": "sha256:60256e2f5bcf3759"
+  },
+  "Matt.14.30": {
+   "ref": "มัทธิว 14:30",
+   "osis": "Matt",
+   "c": 14,
+   "v": 30,
+   "file": "Matt.14.30.puck.mp3",
+   "d": 6.8,
+   "chars": 88,
+   "h": "sha256:271b6f31021c4723"
+  },
+  "Matt.14.31": {
+   "ref": "มัทธิว 14:31",
+   "osis": "Matt",
+   "c": 14,
+   "v": 31,
+   "file": "Matt.14.31.puck.mp3",
+   "d": 6.88,
+   "chars": 76,
+   "h": "sha256:5ccbdc366d01bd69"
+  },
+  "Matt.14.32": {
+   "ref": "มัทธิว 14:32",
+   "osis": "Matt",
+   "c": 14,
+   "v": 32,
+   "file": "Matt.14.32.puck.mp3",
+   "d": 3.6,
+   "chars": 40,
+   "h": "sha256:19c4a4b4a38ea524"
+  },
+  "Matt.14.33": {
+   "ref": "มัทธิว 14:33",
+   "osis": "Matt",
+   "c": 14,
+   "v": 33,
+   "file": "Matt.14.33.puck.mp3",
+   "d": 6.44,
+   "chars": 79,
+   "h": "sha256:4bf49afb093c4ae7"
+  },
+  "Matt.14.34": {
+   "ref": "มัทธิว 14:34",
+   "osis": "Matt",
+   "c": 14,
+   "v": 34,
+   "file": "Matt.14.34.puck.mp3",
+   "d": 3.52,
+   "chars": 45,
+   "h": "sha256:4e1e9a6781c96822"
+  },
+  "Matt.14.35": {
+   "ref": "มัทธิว 14:35",
+   "osis": "Matt",
+   "c": 14,
+   "v": 35,
+   "file": "Matt.14.35.puck.mp3",
+   "d": 6.16,
+   "chars": 69,
+   "h": "sha256:5420663753240473"
+  },
+  "Matt.14.36": {
+   "ref": "มัทธิว 14:36",
+   "osis": "Matt",
+   "c": 14,
+   "v": 36,
+   "file": "Matt.14.36.puck.mp3",
+   "d": 7.2,
+   "chars": 71,
+   "h": "sha256:8a8c9629cc5efc83"
+  },
+  "Matt.15.1": {
+   "ref": "มัทธิว 15:1",
+   "osis": "Matt",
+   "c": 15,
+   "v": 1,
+   "file": "Matt.15.1.puck.mp3",
+   "d": 6.0,
+   "chars": 60,
+   "h": "sha256:48c1494d43902132"
+  },
+  "Matt.15.2": {
+   "ref": "มัทธิว 15:2",
+   "osis": "Matt",
+   "c": 15,
+   "v": 2,
+   "file": "Matt.15.2.puck.mp3",
+   "d": 6.64,
+   "chars": 73,
+   "h": "sha256:9e0fa088f00c8e48"
+  },
+  "Matt.15.3": {
+   "ref": "มัทธิว 15:3",
+   "osis": "Matt",
+   "c": 15,
+   "v": 3,
+   "file": "Matt.15.3.puck.mp3",
+   "d": 6.36,
+   "chars": 86,
+   "h": "sha256:e9981286e2f6bca2"
+  },
+  "Matt.15.4": {
+   "ref": "มัทธิว 15:4",
+   "osis": "Matt",
+   "c": 15,
+   "v": 4,
+   "file": "Matt.15.4.puck.mp3",
+   "d": 7.12,
+   "chars": 84,
+   "h": "sha256:3ea6e4a199af491d"
+  },
+  "Matt.15.5": {
+   "ref": "มัทธิว 15:5",
+   "osis": "Matt",
+   "c": 15,
+   "v": 5,
+   "file": "Matt.15.5.puck.mp3",
+   "d": 9.16,
+   "chars": 106,
+   "h": "sha256:e23ae9b87bb35ed9"
+  },
+  "Matt.15.6": {
+   "ref": "มัทธิว 15:6",
+   "osis": "Matt",
+   "c": 15,
+   "v": 6,
+   "file": "Matt.15.6.puck.mp3",
+   "d": 9.24,
+   "chars": 115,
+   "h": "sha256:62ea5ededa6fc170"
+  },
+  "Matt.15.7": {
+   "ref": "มัทธิว 15:7",
+   "osis": "Matt",
+   "c": 15,
+   "v": 7,
+   "file": "Matt.15.7.puck.mp3",
+   "d": 6.0,
+   "chars": 60,
+   "h": "sha256:a02a18aaaa5936f3"
+  },
+  "Matt.15.8": {
+   "ref": "มัทธิว 15:8",
+   "osis": "Matt",
+   "c": 15,
+   "v": 8,
+   "file": "Matt.15.8.puck.mp3",
+   "d": 4.08,
+   "chars": 43,
+   "h": "sha256:2f2c758fa41474a7"
+  },
+  "Matt.15.9": {
+   "ref": "มัทธิว 15:9",
+   "osis": "Matt",
+   "c": 15,
+   "v": 9,
+   "file": "Matt.15.9.puck.mp3",
+   "d": 6.64,
+   "chars": 72,
+   "h": "sha256:502d4d5aaf22e66c"
+  },
+  "Matt.15.10": {
+   "ref": "มัทธิว 15:10",
+   "osis": "Matt",
+   "c": 15,
+   "v": 10,
+   "file": "Matt.15.10.puck.mp3",
+   "d": 4.76,
+   "chars": 50,
+   "h": "sha256:9ae97386e15f1ab2"
+  },
+  "Matt.15.11": {
+   "ref": "มัทธิว 15:11",
+   "osis": "Matt",
+   "c": 15,
+   "v": 11,
+   "file": "Matt.15.11.puck.mp3",
+   "d": 6.32,
+   "chars": 93,
+   "h": "sha256:249bc3175cd7c5f4"
+  },
+  "Matt.15.12": {
+   "ref": "มัทธิว 15:12",
+   "osis": "Matt",
+   "c": 15,
+   "v": 12,
+   "file": "Matt.15.12.puck.mp3",
+   "d": 7.96,
+   "chars": 80,
+   "h": "sha256:20293349f3add0c2"
+  },
+  "Matt.15.13": {
+   "ref": "มัทธิว 15:13",
+   "osis": "Matt",
+   "c": 15,
+   "v": 13,
+   "file": "Matt.15.13.puck.mp3",
+   "d": 6.6,
+   "chars": 75,
+   "h": "sha256:b14584da14e26f8d"
+  },
+  "Matt.15.14": {
+   "ref": "มัทธิว 15:14",
+   "osis": "Matt",
+   "c": 15,
+   "v": 14,
+   "file": "Matt.15.14.puck.mp3",
+   "d": 7.6,
+   "chars": 76,
+   "h": "sha256:cb5fd0245e3e2b5f"
+  },
+  "Matt.15.15": {
+   "ref": "มัทธิว 15:15",
+   "osis": "Matt",
+   "c": 15,
+   "v": 15,
+   "file": "Matt.15.15.puck.mp3",
+   "d": 4.68,
+   "chars": 43,
+   "h": "sha256:62e3d16d65b8a746"
+  },
+  "Matt.15.16": {
+   "ref": "มัทธิว 15:16",
+   "osis": "Matt",
+   "c": 15,
+   "v": 16,
+   "file": "Matt.15.16.puck.mp3",
+   "d": 3.88,
+   "chars": 41,
+   "h": "sha256:6b944a5e0e08b943"
+  },
+  "Matt.15.17": {
+   "ref": "มัทธิว 15:17",
+   "osis": "Matt",
+   "c": 15,
+   "v": 17,
+   "file": "Matt.15.17.puck.mp3",
+   "d": 5.0,
+   "chars": 58,
+   "h": "sha256:c5fa09049881d0f3"
+  },
+  "Matt.15.18": {
+   "ref": "มัทธิว 15:18",
+   "osis": "Matt",
+   "c": 15,
+   "v": 18,
+   "file": "Matt.15.18.puck.mp3",
+   "d": 4.6,
+   "chars": 57,
+   "h": "sha256:21fd752132ee848c"
+  },
+  "Matt.15.19": {
+   "ref": "มัทธิว 15:19",
+   "osis": "Matt",
+   "c": 15,
+   "v": 19,
+   "file": "Matt.15.19.puck.mp3",
+   "d": 11.56,
+   "chars": 109,
+   "h": "sha256:ca88e20ba5fb1241"
+  },
+  "Matt.15.20": {
+   "ref": "มัทธิว 15:20",
+   "osis": "Matt",
+   "c": 15,
+   "v": 20,
+   "file": "Matt.15.20.puck.mp3",
+   "d": 6.84,
+   "chars": 80,
+   "h": "sha256:e26408174a5a3d9a"
+  },
+  "Matt.15.21": {
+   "ref": "มัทธิว 15:21",
+   "osis": "Matt",
+   "c": 15,
+   "v": 21,
+   "file": "Matt.15.21.puck.mp3",
+   "d": 4.48,
+   "chars": 44,
+   "h": "sha256:7d4f4729046c3b47"
+  },
+  "Matt.15.22": {
+   "ref": "มัทธิว 15:22",
+   "osis": "Matt",
+   "c": 15,
+   "v": 22,
+   "file": "Matt.15.22.puck.mp3",
+   "d": 12.16,
+   "chars": 142,
+   "h": "sha256:227785f810c81770"
+  },
+  "Matt.15.23": {
+   "ref": "มัทธิว 15:23",
+   "osis": "Matt",
+   "c": 15,
+   "v": 23,
+   "file": "Matt.15.23.puck.mp3",
+   "d": 7.56,
+   "chars": 93,
+   "h": "sha256:8801bd7448106940"
+  },
+  "Matt.15.24": {
+   "ref": "มัทธิว 15:24",
+   "osis": "Matt",
+   "c": 15,
+   "v": 24,
+   "file": "Matt.15.24.puck.mp3",
+   "d": 4.2,
+   "chars": 57,
+   "h": "sha256:1088bd8fad7829c6"
+  },
+  "Matt.15.25": {
+   "ref": "มัทธิว 15:25",
+   "osis": "Matt",
+   "c": 15,
+   "v": 25,
+   "file": "Matt.15.25.puck.mp3",
+   "d": 4.4,
+   "chars": 59,
+   "h": "sha256:7c219c4ad45b7ab8"
+  },
+  "Matt.15.26": {
+   "ref": "มัทธิว 15:26",
+   "osis": "Matt",
+   "c": 15,
+   "v": 26,
+   "file": "Matt.15.26.puck.mp3",
+   "d": 4.6,
+   "chars": 56,
+   "h": "sha256:f6058c4704f23dbd"
+  },
+  "Matt.15.27": {
+   "ref": "มัทธิว 15:27",
+   "osis": "Matt",
+   "c": 15,
+   "v": 27,
+   "file": "Matt.15.27.puck.mp3",
+   "d": 7.44,
+   "chars": 93,
+   "h": "sha256:c5decaeaadf95afd"
+  },
+  "Matt.15.28": {
+   "ref": "มัทธิว 15:28",
+   "osis": "Matt",
+   "c": 15,
+   "v": 28,
+   "file": "Matt.15.28.puck.mp3",
+   "d": 8.72,
+   "chars": 113,
+   "h": "sha256:edb8f1fd466c48a5"
+  },
+  "Matt.15.29": {
+   "ref": "มัทธิว 15:29",
+   "osis": "Matt",
+   "c": 15,
+   "v": 29,
+   "file": "Matt.15.29.puck.mp3",
+   "d": 7.28,
+   "chars": 69,
+   "h": "sha256:3e2251c57ee5b545"
+  },
+  "Matt.15.30": {
+   "ref": "มัทธิว 15:30",
+   "osis": "Matt",
+   "c": 15,
+   "v": 30,
+   "file": "Matt.15.30.puck.mp3",
+   "d": 11.64,
+   "chars": 121,
+   "h": "sha256:0aeca884a4e9227e"
+  },
+  "Matt.15.31": {
+   "ref": "มัทธิว 15:31",
+   "osis": "Matt",
+   "c": 15,
+   "v": 31,
+   "file": "Matt.15.31.puck.mp3",
+   "d": 11.0,
+   "chars": 126,
+   "h": "sha256:d784903b878e858f"
+  },
+  "Matt.15.32": {
+   "ref": "มัทธิว 15:32",
+   "osis": "Matt",
+   "c": 15,
+   "v": 32,
+   "file": "Matt.15.32.puck.mp3",
+   "d": 14.04,
+   "chars": 161,
+   "h": "sha256:9d15db59de98e884"
+  },
+  "Matt.15.33": {
+   "ref": "มัทธิว 15:33",
+   "osis": "Matt",
+   "c": 15,
+   "v": 33,
+   "file": "Matt.15.33.puck.mp3",
+   "d": 7.32,
+   "chars": 78,
+   "h": "sha256:b4981337e06f4653"
+  },
+  "Matt.15.34": {
+   "ref": "มัทธิว 15:34",
+   "osis": "Matt",
+   "c": 15,
+   "v": 34,
+   "file": "Matt.15.34.puck.mp3",
+   "d": 8.24,
+   "chars": 80,
+   "h": "sha256:0633ad5120e1cdf2"
+  },
+  "Matt.15.35": {
+   "ref": "มัทธิว 15:35",
+   "osis": "Matt",
+   "c": 15,
+   "v": 35,
+   "file": "Matt.15.35.puck.mp3",
+   "d": 2.56,
+   "chars": 31,
+   "h": "sha256:480462042ae28d5a"
+  },
+  "Matt.15.36": {
+   "ref": "มัทธิว 15:36",
+   "osis": "Matt",
+   "c": 15,
+   "v": 36,
+   "file": "Matt.15.36.puck.mp3",
+   "d": 10.24,
+   "chars": 111,
+   "h": "sha256:f90ffc41778e2ba4"
+  },
+  "Matt.15.37": {
+   "ref": "มัทธิว 15:37",
+   "osis": "Matt",
+   "c": 15,
+   "v": 37,
+   "file": "Matt.15.37.puck.mp3",
+   "d": 6.68,
+   "chars": 73,
+   "h": "sha256:c69da79a2a22260a"
+  },
+  "Matt.15.38": {
+   "ref": "มัทธิว 15:38",
+   "osis": "Matt",
+   "c": 15,
+   "v": 38,
+   "file": "Matt.15.38.puck.mp3",
+   "d": 3.92,
+   "chars": 48,
+   "h": "sha256:6ea7a3a728a176b4"
+  },
+  "Matt.15.39": {
+   "ref": "มัทธิว 15:39",
+   "osis": "Matt",
+   "c": 15,
+   "v": 39,
+   "file": "Matt.15.39.puck.mp3",
+   "d": 5.84,
+   "chars": 59,
+   "h": "sha256:3790080cbc8c2ccd"
+  }
+ },
+ "gaps": [],
+ "redo": {},
+ "nights": [
+  {
+   "date": "2026-11-15",
+   "chapters": [
+    "Matt.1"
+   ],
+   "chars": 2476
+  },
+  {
+   "date": "2026-11-16",
+   "chapters": [
+    "Matt.2",
+    "Matt.3",
+    "Matt.4",
+    "Matt.5",
+    "Matt.6"
+   ],
+   "chars": 14136
+  },
+  {
+   "date": "2026-11-17",
+   "chapters": [
+    "Matt.7",
+    "Matt.8",
+    "Matt.9",
+    "Matt.10"
+   ],
+   "chars": 12483
+  },
+  {
+   "date": "2026-11-19",
+   "chapters": [
+    "Matt.11",
+    "Matt.12",
+    "Matt.13",
+    "Matt.14",
+    "Matt.15"
+   ],
+   "chars": 13214
+  }
+ ]
+}

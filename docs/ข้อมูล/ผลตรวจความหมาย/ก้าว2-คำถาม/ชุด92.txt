@@ -1,0 +1,55 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 244
+ที่อยู่: 1KI 20:10
+ข้อความต้นฉบับ: וַיִּשְׁלַ֤ח אֵלָיו֙ בֶּן־הֲדַ֔ד וַיֹּ֕אמֶר כֹּֽה־יַעֲשׂ֥וּן לִ֛י אֱלֹהִ֖ים וְכֹ֣ה יוֹסִ֑פוּ אִם־יִשְׂפֹּק֙ עֲפַ֣ר שֹׁמְר֔וֹן לִשְׁעָלִ֕ים לְכָל־הָעָ֖ם אֲשֶׁ֥ר בְּרַגְלָֽי׃
+คำที่ถาม: הֲדַ֔ד   (รูปตั้งต้น בֶּןהֲדַד · ชนิดคำ noun)
+ตัวเลือก:
+  A) various men; · kings of Syria [คำแปลสั้น: Ben-Hadad]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 245
+ที่อยู่: ZEC 5:7
+ข้อความต้นฉบับ: וְהִנֵּ֛ה כִּכַּ֥ר עֹפֶ֖רֶת נִשֵּׂ֑את וְזֹאת֙ אִשָּׁ֣ה אַחַ֔ת יוֹשֶׁ֖בֶת בְּת֥וֹךְ הָאֵיפָֽה׃
+คำที่ถาม: אֵיפָֽה   (รูปตั้งต้น אֵיפָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) a container with the capacity of 1 ephah (see [a]) [คำแปลสั้น: basket, tub, barrel]
+  B) a unit of dry measure of which the exact quantity is unknown and ranges between 20 and 40 liters; one ephah equals 10 omer [คำแปลสั้น: ephah]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 246
+ที่อยู่: NEH 4:5
+ข้อความต้นฉบับ: וַיֹּאמְר֣וּ צָרֵ֗ינוּ לֹ֤א יֵדְעוּ֙ וְלֹ֣א יִרְא֔וּ עַ֛ד אֲשֶׁר־נָב֥וֹא אֶל־תּוֹכָ֖ם וַהֲרַגְנ֑וּם וְהִשְׁבַּ֖תְנוּ אֶת־הַמְּלָאכָֽה׃
+คำที่ถาม: יֵדְעוּ֙   (รูปตั้งต้น יָדַע · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to know; hence: action by which humans or deities associate with (other) humans [คำแปลสั้น: to associate, to have something to do (with)]
+  B) literally: to know; hence: state in which humans are endowed with knowledge, often through experience [คำแปลสั้น: to have knowledge, to be experienced]
+  C) literally: to know; hence: state in which humans have the experience, skill, and expertise to carry out a particular activity [คำแปลสั้น: to know how, to be skilful at]
+  D) process by which humans or deities acquire information about other humans, deities, or certain facts, which is stored in the mind [คำแปลสั้น: to learn, to find out, to know]
+  E) action by which humans or deities reveal information about themselves to (other) humans [คำแปลสั้น: to make oneself known]
+  F) causative process by which humans or deities cause (other) humans to acquire information about (other) humans, deities, or certain facts, which is stored in the mind [คำแปลสั้น: to make known, to show, to inform, to tell, to teach]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 247
+ที่อยู่: JOB 30:10
+ข้อความต้นฉบับ: תִּֽ֭עֲבוּנִי רָ֣חֲקוּ מֶ֑נִּי וּ֝מִפָּנַ֗י לֹא־חָ֥שְׂכוּ רֹֽק׃
+คำที่ถาม: חָ֥שְׂכוּ   (รูปตั้งต้น חָשַׂךְ · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which human or deities keep something to themselves, refusing to give it to someone else [คำแปลสั้น: to withhold, to hold back]
+  B) literally: not to withhold spit; action by which humans are unwilling to restrain themselves from spitting at somebody; · associated with contempt [คำแปลสั้น: to not withhold spit (from someone)]
+  C) literally: to withhold; hence: action by which humans keep part of their body to themselves, refusing to use it to perform a particular event [คำแปลสั้น: to withhold, to hold back, to be reluctant]
+  D) causative action by which humans or deities cause an event to happen with less intensity [คำแปลสั้น: to hold back]
+  E) causative action by which events reduce the intensity of a certain state or process [คำแปลสั้น: to reduce, to assuage]
+  F) literally: to withhold the rod; hence: action by which humans refrain from administering punishment to someone else [คำแปลสั้น: to withhold the rod, to be reluctant to punish]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

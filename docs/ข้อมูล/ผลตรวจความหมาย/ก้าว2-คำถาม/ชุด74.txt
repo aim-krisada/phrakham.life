@@ -1,0 +1,59 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 167
+ที่อยู่: EXO 39:38
+ข้อความต้นฉบับ: וְאֵת֙ מִזְבַּ֣ח הַזָּהָ֔ב וְאֵת֙ שֶׁ֣מֶן הַמִּשְׁחָ֔ה וְאֵ֖ת קְטֹ֣רֶת הַסַּמִּ֑ים וְאֵ֕ת מָסַ֖ךְ פֶּ֥תַח הָאֹֽהֶל׃
+คำที่ถาม: אֵת֙   (รูปตั้งต้น אֵת · ชนิดคำ particle)
+ตัวเลือก:
+  A) marker identifying the entity that is directly targeted by the event in focus, and which usually is already part of the cognitive context; described in syntactic terms as the direct object marker; untranslatable in English unless accompanied by a suffix [คำแปลสั้น: -]
+  B) particle linking two entities and denoting that X and Y function as one single entity in the proposition in focus [คำแปลสั้น: with, together with]
+  C) exact meaning unknown; possibly: wooden handle with an iron head that has both an adze and a chisel as its ends; · used for breaking up moderately hard soil to make it ready for cultivation [คำแปลสั้น: mattock]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 168
+ที่อยู่: ZEC 11:10
+ข้อความต้นฉบับ: וָאֶקַּ֤ח אֶת־מַקְלִי֙ אֶת־נֹ֔עַם וָאֶגְדַּ֖ע אֹת֑וֹ לְהָפֵיר֙ אֶת־בְּרִיתִ֔י אֲשֶׁ֥ר כָּרַ֖תִּי אֶת־כָּל־הָעַמִּֽים׃
+คำที่ถาม: נֹ֔עַם   (รูปตั้งต้น נֹעַם · ชนิดคำ noun)
+ตัวเลือก:
+  A) state in which a deity has qualities that inspire love and appreciation [คำแปลสั้น: loveliness]
+  B) state in which deities are well disposed towards humans [คำแปลสั้น: favor]
+  C) state in which conditions and circumstances have qualities that inspire appreciation [คำแปลสั้น: pleasantness, delight]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 169
+ที่อยู่: JOS 13:10
+ข้อความต้นฉบับ: וְכֹ֗ל עָרֵי֙ סִיחוֹן֙ מֶ֣לֶךְ הָאֱמֹרִ֔י אֲשֶׁ֥ר מָלַ֖ךְ בְּחֶשְׁבּ֑וֹן עַד־גְּב֖וּל בְּנֵ֥י עַמּֽוֹן׃
+คำที่ถาม: מָלַ֖ךְ   (รูปตั้งต้น מָלַךְ · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: (one's) heart is consulted; hence: action by which humans reflect on a matter for a certain time before making a decision [คำแปลสั้น: to ponder, to consider]
+  B) causative action by which humans or deities place (other) humans in a position of royal authority over a group of people [คำแปลสั้น: to make king, to make queen]
+  C) process by which a nation grows in power and begins to assert its authority over other nations [คำแปลสั้น: to rise to power]
+  D) state in which humans or deities are in a position of royal authority over a group of people [คำแปลสั้น: to reign, to be king, to be queen, to become king, to become queen]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 170
+ที่อยู่: DAN 3:27
+ข้อความต้นฉบับ: וּ֠מִֽתְכַּנְּשִׁין אֲחַשְׁדַּרְפְּנַיָּ֞א סִגְנַיָּ֣א וּפַחֲוָתָא֮ וְהַדָּבְרֵ֣י מַלְכָּא֒ חָזַ֣יִן לְגֻבְרַיָּ֣א אִלֵּ֡ךְ דִּי֩ לָֽא־שְׁלֵ֨ט נוּרָ֜א בְּגֶשְׁמְה֗וֹן וּשְׂעַ֤ר רֵֽאשְׁהוֹן֙ לָ֣א הִתְחָרַ֔ךְ וְסָרְבָּלֵיה֖וֹן לָ֣א שְׁנ֑וֹ וְרֵ֣יחַ נ֔וּר לָ֥א עֲדָ֖ת בְּהֽוֹן׃
+คำที่ถาม: אֲחַשְׁדַּרְפְּנַיָּ֞   (รูปตั้งต้น אֲחַשְׁדַּרְפַּן · ชนิดคำ noun)
+ตัวเลือก:
+  A) person in charge of part of the Babylonian and Persian empires [คำแปลสั้น: governor, satrap]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 171
+ที่อยู่: NUM 26:49
+ข้อความต้นฉบับ: לְיֵ֕צֶר מִשְׁפַּ֖חַת הַיִּצְרִ֑י לְשִׁלֵּ֕ם מִשְׁפַּ֖חַת הַשִּׁלֵּמִֽי׃
+คำที่ถาม: מִשְׁפַּ֖חַת   (รูปตั้งต้น מִשְׁפַּחַת · ชนิดคำ noun)
+ตัวเลือก:
+  A) a particular group or class of either people (as in a clan or tribe) or animals (as in a genus or species) that share common characteristics [คำแปลสั้น: genus, kind (of animals), clan, family]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

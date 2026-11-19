@@ -1,0 +1,55 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 419
+ที่อยู่: MRK 9:31
+ข้อความต้นฉบับ: ἐδίδασκεν γὰρ τοὺς μαθητὰς αὐτοῦ καὶ ἔλεγεν αὐτοῖς ὅτι Ὁ υἱὸς τοῦ ἀνθρώπου παραδίδοται εἰς χεῖρας ἀνθρώπων,καὶ ἀποκτενοῦσιν αὐτόν,καὶ ἀποκτανθεὶς μετὰ τρεῖς ἡμέρας ἀναστήσεται.
+คำที่ถาม: ἀναστήσεται   (รูปตั้งต้น ἀνίστημι · ชนิดคำ verb)
+ตัวเลือก:
+  A) to cause someone to stand up [คำแปลสั้น: to cause to stand, to raise up]
+  B) to come back to life after having once died [คำแปลสั้น: to come back to life, to live again, to be resurrected, resurrection]
+  C) to rise up in open defiance of authority, with the presumed intention to overthrow it or to act in complete opposition to its demands001 [คำแปลสั้น: to rebel against, to revolt, to engage in insurrection, rebellion]
+  D) to assume a standing position [คำแปลสั้น: to stand up]
+  E) to move away from a reference point, with the possible implication of ‘getting up and leaving’ [คำแปลสั้น: to depart, to go away from, to leave]
+  F) to come into existence, with the implication of assuming a place or position [คำแปลสั้น: to come into existence, to appear, to arise]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 420
+ที่อยู่: 2TH 3:12
+ข้อความต้นฉบับ: τοῖς δὲ τοιούτοις παραγγέλλομεν καὶ παρακαλοῦμεν ἐν κυρίῳ Ἰησοῦ Χριστῷ ἵνα μετὰ ἡσυχίας ἐργαζόμενοι τὸν ἑαυτῶν ἄρτον ἐσθίωσιν.
+คำที่ถาม: ἐν   (รูปตั้งต้น ἐν · ชนิดคำ prep)
+ตัวเลือก:
+  A) a very brief period of time [คำแปลสั้น: a very short while, quickly (in combination with the preposition ἐν)]
+  B) (an idiom: in truth) pertaining to being a real or actual event or state008 [คำแปลสั้น: actually, really]
+  C) a marker of a point of time which is simultaneous to or overlaps with another point of time007 [คำแปลสั้น: when, at the time of]
+  D) a marker of objects which serve as symbolic substitutes for supernatural persons or powers presumed to act as guarantors of compliance with oaths [คำแปลสั้น: by]
+  E) a marker of close personal association [คำแปลสั้น: in, one with, in union with, joined closely to]
+  F) (with the dative) a marker of an immediate instrument [คำแปลสั้น: by, with]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 421
+ที่อยู่: MAT 13:10
+ข้อความต้นฉบับ: Καὶ προσελθόντες οἱ μαθηταὶ εἶπαν αὐτῷ·Διὰ τί ἐν παραβολαῖς λαλεῖς αὐτοῖς;
+คำที่ถาม: λαλεῖς   (รูปตั้งต้น λαλέω · ชนิดคำ verb)
+ตัวเลือก:
+  A) (an idiom, literally: to speak to the ear) to speak quietly and presumably to a restricted audience [คำแปลสั้น: to whisper, to speak quietly]
+  B) to speak or talk, with the possible implication of more informal usage (though this cannot be clearly and consistently shown from NT contexts) [คำแปลสั้น: to speak, to say, to talk, to tell]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 422
+ที่อยู่: ACT 11:28
+ข้อความต้นฉบับ: ἀναστὰς δὲ εἷς ἐξ αὐτῶν ὀνόματι Ἅγαβος ἐσήμανεν διὰ τοῦ πνεύματος λιμὸν μεγάλην μέλλειν ἔσεσθαι ἐφ’ὅλην τὴν οἰκουμένην·ἥτις ἐγένετο ἐπὶ Κλαυδίου.
+คำที่ถาม: μεγάλην   (รูปตั้งต้น μέγας · ชนิดคำ adj)
+ตัวเลือก:
+  A) the upper range of a scale of extent, with the possible implication of importance in relevant contexts [คำแปลสั้น: great, greatly, greatness, to a great degree, intense, terrible]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

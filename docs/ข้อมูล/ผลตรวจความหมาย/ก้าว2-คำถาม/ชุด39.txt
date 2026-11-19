@@ -1,0 +1,56 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 78
+ที่อยู่: 2CH 9:18
+ข้อความต้นฉบับ: וְשֵׁ֣שׁ מַעֲל֣וֹת לַ֠כִּסֵּא וְכֶ֨בֶשׁ בַּזָּהָ֤ב לַכִּסֵּא֙ מָאֳחָזִ֔ים וְיָד֛וֹת מִזֶּ֥ה וּמִזֶּ֖ה עַל־מְק֣וֹם הַשָּׁ֑בֶת וּשְׁנַ֣יִם אֲרָי֔וֹת עֹמְדִ֖ים אֵ֥צֶל הַיָּדֽוֹת׃
+คำที่ถาม: כִּסֵּא   (รูปตั้งต้น כִּסֵּא · ชนิดคำ noun)
+ตัวเลือก:
+  A) large elaborate seat used by people in a position of authority or wealth [คำแปลสั้น: chair, seat, throne]
+  B) the throne representing someone's position as monarch or judge [คำแปลสั้น: rule, reign, authority]
+  C) literally: throne; hence: a position at a royal court that is represented by an actual seat, and the way this seat is placed represents the actual status of the person sitting on it relative to others [คำแปลสั้น: seat]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 79
+ที่อยู่: 1KI 14:10
+ข้อความต้นฉบับ: לָכֵ֗ן הִנְנִ֨י מֵבִ֤יא רָעָה֙ אֶל־בֵּ֣ית יָרָבְעָ֔ם וְהִכְרַתִּ֤י לְיָֽרָבְעָם֙ מַשְׁתִּ֣ין בְּקִ֔יר עָצ֥וּר וְעָז֖וּב בְּיִשְׂרָאֵ֑ל וּבִֽעַרְתִּי֙ אַחֲרֵ֣י בֵית־יָרָבְעָ֔ם כַּאֲשֶׁ֛ר יְבַעֵ֥ר הַגָּלָ֖ל עַד־תֻּמּֽוֹ׃
+คำที่ถาม: עָז֖וּב   (รูปตั้งต้น עָזַב · ชนิดคำ verb)
+ตัวเลือก:
+  A) state in which humans are not or no longer in a state of bondage [คำแปลสั้น: free]
+  B) action by which humans stop resisting a certain event from happening [คำแปลสั้น: to release]
+  C) action by which humans or deities suspend their commitment to a certain pattern of behavior [คำแปลสั้น: to reject]
+  D) action by which animals, humans, or deities suspend their commitment to (other) objects, animals, humans, or deities, either temporarily or permanently [คำแปลสั้น: to desert, to abandon, to forsake]
+  E) causative action by which humans restore an object to make it function again in the way it has functioned before [คำแปลสั้น: to restore]
+  F) action by which humans or deities move away from an object, person, or place [คำแปลสั้น: to leave, to leave behind, to desert]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 80
+ที่อยู่: 1KI 8:50
+ข้อความต้นฉบับ: וְסָלַחְתָּ֤ לְעַמְּךָ֙ אֲשֶׁ֣ר חָֽטְאוּ־לָ֔ךְ וּלְכָל־פִּשְׁעֵיהֶ֖ם אֲשֶׁ֣ר פָּשְׁעוּ־בָ֑ךְ וּנְתַתָּ֧ם לְרַחֲמִ֛ים לִפְנֵ֥י שֹׁבֵיהֶ֖ם וְרִֽחֲמֽוּם׃
+คำที่ถาม: אֲשֶׁ֣ר   (รูปตั้งต้น אֲשֶׁר · ชนิดคำ particle)
+ตัวเลือก:
+  A) a linker introducing a propostion that contains the content of what precedes [คำแปลสั้น: that]
+  B) a linker indicating that one proposition is the purpose or result or another [คำแปลสั้น: so that]
+  C) a linker introducing a proposition that gives additional information regarding an explicit or implicit object, location, time, or manner [คำแปลสั้น: that, which, where, when, how]
+  D) state in which an event is presented as the motivation, cause, or reason for another event [คำแปลสั้น: because, for, in that]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 81
+ที่อยู่: ISA 15:8
+ข้อความต้นฉบับ: כִּֽי־הִקִּ֥יפָה הַזְּעָקָ֖ה אֶת־גְּב֣וּל מוֹאָ֑ב עַד־אֶגְלַ֨יִם֙ יִלְלָתָ֔הּ וּבְאֵ֥ר אֵילִ֖ים יִלְלָתָֽהּ׃
+คำที่ถาม: אֶת   (รูปตั้งต้น אֵת · ชนิดคำ particle)
+ตัวเลือก:
+  A) exact meaning unknown; possibly: wooden handle with an iron head that has both an adze and a chisel as its ends; · used for breaking up moderately hard soil to make it ready for cultivation [คำแปลสั้น: mattock]
+  B) particle linking two entities and denoting that X and Y function as one single entity in the proposition in focus [คำแปลสั้น: with, together with]
+  C) marker identifying the entity that is directly targeted by the event in focus, and which usually is already part of the cognitive context; described in syntactic terms as the direct object marker; untranslatable in English unless accompanied by a suffix [คำแปลสั้น: -]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

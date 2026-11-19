@@ -1,0 +1,57 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 87
+ที่อยู่: GEN 49:14
+ข้อความต้นฉบับ: יִשָּׂשכָ֖ר חֲמֹ֣ר גָּ֑רֶם רֹבֵ֖ץ בֵּ֥ין הַֽמִּשְׁפְּתָֽיִם׃
+คำที่ถาม: מִּשְׁפְּתָֽיִם   (รูปตั้งต้น מִשְׁפְּתַיִם · ชนิดคำ noun)
+ตัวเลือก:
+  A) meaning unsure; possibly: area enclosed by a stone wall or hedge made of branches and thorns, with a narrow opening which can be closed with brush or by the shepherd’s body; · used for keeping sheep at night to protect them from thieves or wild animals [คำแปลสั้น: sheep pen, sheepfold]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 88
+ที่อยู่: ISA 51:4
+ข้อความต้นฉบับ: הַקְשִׁ֤יבוּ אֵלַי֙ עַמִּ֔י וּלְאוּמִּ֖י אֵלַ֣י הַאֲזִ֑ינוּ כִּ֤י תוֹרָה֙ מֵאִתִּ֣י תֵצֵ֔א וּמִשְׁפָּטִ֔י לְא֥וֹר עַמִּ֖ים אַרְגִּֽיעַ׃
+คำที่ถาม: עַמִּ֖ים   (รูปตั้งต้น עַם · ชนิดคำ noun)
+ตัวเลือก:
+  A) a relatively large body of people united by a common location, descent, religion, language, activity, or fate [คำแปลสั้น: people]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 89
+ที่อยู่: EZK 24:21
+ข้อความต้นฉบับ: אֱמֹ֣ר׀לְבֵ֣ית יִשְׂרָאֵ֗ל כֹּֽה־אָמַר֮ אֲדֹנָ֣י יְהוִה֒ הִנְנִ֨י מְחַלֵּ֤ל אֶת־מִקְדָּשִׁי֙ גְּא֣וֹן עֻזְּכֶ֔ם מַחְמַ֥ד עֵֽינֵיכֶ֖ם וּמַחְמַ֣ל נַפְשְׁכֶ֑ם וּבְנֵיכֶ֧ם וּבְנֽוֹתֵיכֶ֛ם אֲשֶׁ֥ר עֲזַבְתֶּ֖ם בַּחֶ֥רֶב יִפֹּֽלוּ׃
+คำที่ถาม: כֶ֔ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally: strong; hence: state in which a state or process takes place with intensity [คำแปลสั้น: strong, mighty]
+  B) state in which an object is able to withstand force [คำแปลสั้น: strong, mighty]
+  C) literally: strength; hence: a group of people that have come into existence and are being kept safe by someone's strength [คำแปลสั้น: strength > people]
+  D) state in which a person, supernatural being, animal, substance, or force has the ability to exert great force [คำแปลสั้น: strength, might]
+  E) literally: hardness of face; hence: state in which humans are without compassion · which shows in their facial expression [คำแปลสั้น: grimness, mercilessness]
+  F) literally: strength; hence: a construction that is strong and able to resist attacks [คำแปลสั้น: stronghold]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 90
+ที่อยู่: DEU 28:44
+ข้อความต้นฉบับ: ה֣וּא יַלְוְךָ֔ וְאַתָּ֖ה לֹ֣א תַלְוֶ֑נּוּ ה֚וּא יִהְיֶ֣ה לְרֹ֔אשׁ וְאַתָּ֖ה תִּֽהְיֶ֥ה לְזָנָֽב׃
+คำที่ถาม: לֹ֣א   (รูปตั้งต้น לֹא · ชนิดคำ particle)
+ตัวเลือก:
+  A) a marker negating a proposition [คำแปลสั้น: not, no]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 91
+ที่อยู่: GEN 28:2
+ข้อความต้นฉบับ: ק֥וּם לֵךְ֙ פַּדֶּ֣נָֽה אֲרָ֔ם בֵּ֥יתָה בְתוּאֵ֖ל אֲבִ֣י אִמֶּ֑ךָ וְקַח־לְךָ֤ מִשָּׁם֙ אִשָּׁ֔ה מִבְּנ֥וֹת לָבָ֖ן אֲחִ֥י אִמֶּֽךָ׃
+คำที่ถาม: פַּדֶּ֣נָֽ   (รูปตั้งต้น פַּדָּן · ชนิดคำ noun)
+ตัวเลือก:
+  A) land, also known as Aram Naharaim; · located in upper Mesopotamia, around the great bend of the Euphrates River in northern Syria; · ancestral home of Abraham’s family (ABD) [คำแปลสั้น: Paddan-Aram, Mesopotamia]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

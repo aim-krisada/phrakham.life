@@ -1,0 +1,59 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 92
+ที่อยู่: GEN 40:11
+ข้อความต้นฉบับ: וְכ֥וֹס פַּרְעֹ֖ה בְּיָדִ֑י וָאֶקַּ֣ח אֶת־הָֽעֲנָבִ֗ים וָֽאֶשְׂחַ֤ט אֹתָם֙ אֶל־כּ֣וֹס פַּרְעֹ֔ה וָאֶתֵּ֥ן אֶת־הַכּ֖וֹס עַל־כַּ֥ף פַּרְעֹֽה׃
+คำที่ถาม: אֶקַּ֣ח   (รูปตั้งต้น לָקַח · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans or animals take hold of an inanimate object for a certain purpose [คำแปลสั้น: to take, to receive]
+  B) literally: to take (something) away; hence: causative action by which deities cause objects to disappear from existence [คำแปลสั้น: to take away]
+  C) literally: to take; hence: causative action by which humans or deities take objects or people from a certain location and bring them to a specific place [คำแปลสั้น: to bring, to fetch, to get]
+  D) literally: to take; hence: action by which humans or deities take possession of objects, either or not by force [คำแปลสั้น: to take, to receive, to acquire, to obtain, to keep, to seize, to capture]
+  E) literally: to take; hence: action by which humans or deities take control of (other) humans or animals for a certain purpose [คำแปลสั้น: to take, to seize]
+  F) literally: to take words (along); hence: action by which humans reflect on what they will say [คำแปลสั้น: to take words (along), to reflect on what to say]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 93
+ที่อยู่: EZK 4:13
+ข้อความต้นฉบับ: וַיֹּ֣אמֶר יְהוָ֔ה כָּ֣כָה יֹאכְל֧וּ בְנֵֽי־יִשְׂרָאֵ֛ל אֶת־לַחְמָ֖ם טָמֵ֑א בַּגּוֹיִ֕ם אֲשֶׁ֥ר אַדִּיחֵ֖ם שָֽׁם׃
+คำที่ถาม: בְנֵֽי   (รูปตั้งต้น בֵּן · ชนิดคำ noun)
+ตัวเลือก:
+  A) people of relatively young age [คำแปลสั้น: youth, young person]
+  B) literally: children of a town, region, nation; hence: people, animals, or products that are inhabitants of or originating from a place, town, region, or nation, · as if they were the offspring of that place [คำแปลสั้น: inhabitants of, originating from]
+  C) member of a larger group of related people or objects, · referred to as a child of that larger group [คำแปลสั้น: child > part]
+  D) see גַּיְא [คำแปลสั้น: Valley of the Son of Hinnom]
+  E) title used to address a person (male if in singular) who is regarded with some degree of affection, · as if he were the speaker's child [คำแปลสั้น: my son, my children]
+  F) direct or indirect human offspring, either male or indeterminate, either biologically or through adoption [คำแปลสั้น: son, child, descendant]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 94
+ที่อยู่: PSA 119:67
+ข้อความต้นฉบับ: טֶ֣רֶם אֶ֭עֱנֶה אֲנִ֣י שֹׁגֵ֑ג וְ֝עַתָּ֗ה אִמְרָתְךָ֥ שָׁמָֽרְתִּי׃
+คำที่ถาม: אֶ֭עֱנֶה   (รูปตั้งต้น עָנָה · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to be bowed down; hence: state in which humans are suffering hardship and trouble and unable to help themselves [คำแปลสั้น: to be afflicted, to be bothered, to be daunted]
+  B) literally: to humble (one's) self; hence: action by which humans refrain from ingesting food · and so humiliate themselves before a deity [คำแปลสั้น: to humble oneself by fasting]
+  C) literally: to be bowed down; hence: process by which an activity is forcefully put to an end [คำแปลสั้น: to be stilled]
+  D) action by which humans provide evidence in court [คำแปลสั้น: to testify, to give evidence]
+  E) action by which humans produce musical sounds with their voice, often as a celebratory response, either set to a prescribed tune or spontaneous [คำแปลสั้น: to sing]
+  F) literally: to bow down; hence: action by which humans put themselves in a lowered status or position with respect to other humans or deities [คำแปลสั้น: to humble oneself, to submit]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 95
+ที่อยู่: GEN 41:50
+ข้อความต้นฉบับ: וּלְיוֹסֵ֤ף יֻלַּד֙ שְׁנֵ֣י בָנִ֔ים בְּטֶ֥רֶם תָּב֖וֹא שְׁנַ֣ת הָרָעָ֑ב אֲשֶׁ֤ר יָֽלְדָה־לּוֹ֙ אָֽסְנַ֔ת בַּת־פּ֥וֹטִי פֶ֖רַע כֹּהֵ֥ן אֽוֹן׃
+คำที่ถาม: פּ֥וֹטִי   (รูปตั้งต้น פּוֹטִי פֶרַע · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · priest of On; father of Asenath, wife of Joseph [คำแปลสั้น: Potiphera]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

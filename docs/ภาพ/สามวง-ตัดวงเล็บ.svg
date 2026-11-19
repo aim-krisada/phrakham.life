@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 770" width="800" height="770" font-family="Sarabun, Tahoma, sans-serif">
+<rect width="800" height="770" fill="#ffffff"/>
+<text x="400" y="34" text-anchor="middle" font-size="23" font-weight="700" fill="#222">คำง่ายภาษาไทย 3 ชุด — แบบตัดวงเล็บ</text>
+<rect x="150" y="51" width="15" height="15" rx="3" fill="#2d6cdf" fill-opacity="0.35" stroke="#2d6cdf" stroke-width="2"/>
+<text x="176" y="64" font-size="16" font-weight="700" fill="#2d6cdf">ชุด ก · สพฐ. 2554 (ป.1-3) · ทั้งชุด 1,567 คำ</text>
+<rect x="150" y="75" width="15" height="15" rx="3" fill="#d9534f" fill-opacity="0.35" stroke="#d9534f" stroke-width="2"/>
+<text x="176" y="88" font-size="16" font-weight="700" fill="#d9534f">ชุด ข · สระบุรี 2568 (ป.1-6) · ทั้งชุด 5,885 คำ</text>
+<rect x="150" y="99" width="15" height="15" rx="3" fill="#3c9a5f" fill-opacity="0.35" stroke="#3c9a5f" stroke-width="2"/>
+<text x="176" y="112" font-size="16" font-weight="700" fill="#3c9a5f">ชุด ค · เกียรติชัย 2558 · ทั้งชุด 1,027 คำ</text>
+<circle cx="300" cy="390" r="170" fill="#2d6cdf" fill-opacity="0.18" stroke="#2d6cdf" stroke-width="3"/>
+<text x="205" y="300" text-anchor="middle" font-size="34" font-weight="700" fill="#2d6cdf" fill-opacity="0.5">ก</text>
+<circle cx="500" cy="390" r="170" fill="#d9534f" fill-opacity="0.18" stroke="#d9534f" stroke-width="3"/>
+<text x="595" y="300" text-anchor="middle" font-size="34" font-weight="700" fill="#d9534f" fill-opacity="0.5">ข</text>
+<circle cx="400" cy="560" r="170" fill="#3c9a5f" fill-opacity="0.18" stroke="#3c9a5f" stroke-width="3"/>
+<text x="400" y="710" text-anchor="middle" font-size="34" font-weight="700" fill="#3c9a5f" fill-opacity="0.5">ค</text>
+<text x="222" y="358" text-anchor="middle" font-size="25" font-weight="700" fill="#111">285</text>
+<text x="578" y="358" text-anchor="middle" font-size="25" font-weight="700" fill="#111">4,563</text>
+<text x="400" y="655" text-anchor="middle" font-size="25" font-weight="700" fill="#111">287</text>
+<text x="400" y="332" text-anchor="middle" font-size="25" font-weight="700" fill="#111">680</text>
+<text x="292" y="526" text-anchor="middle" font-size="25" font-weight="700" fill="#111">98</text>
+<text x="508" y="526" text-anchor="middle" font-size="25" font-weight="700" fill="#111">138</text>
+<text x="400" y="465" text-anchor="middle" font-size="25" font-weight="700" fill="#111">504</text>
+<text x="400" y="758" text-anchor="middle" font-size="16" fill="#444">ตัวเลขในภาพคือคำที่อยู่เฉพาะเขตนั้น · รวมทั้งสามชุดไม่นับซ้ำ 6,555 คำ</text>
+</svg>

@@ -1,0 +1,66 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 350
+ที่อยู่: ACT 9:15
+ข้อความต้นฉบับ: εἶπεν δὲ πρὸς αὐτὸν ὁ κύριος·Πορεύου,ὅτι σκεῦος ἐκλογῆς ἐστίν μοι οὗτος τοῦ βαστάσαι τὸ ὄνομά μου ἐνώπιον ἐθνῶν τε καὶ βασιλέων υἱῶν τε Ἰσραήλ,
+คำที่ถาม: κύριος   (รูปตั้งต้น κύριος · ชนิดคำ noun)
+ตัวเลือก:
+  A) a title of respect used in addressing or speaking of a man [คำแปลสั้น: sir, mister]
+  B) one who owns and controls property, including especially servants and slaves, with important supplementary semantic components of high status and respect [คำแปลสั้น: owner, master, lord]
+  C) (an idiom, literally: to his own master he stands or falls, probably a familiar adage) whether one maintains one’s status or relationship to a master depends on the master's judgment or evaluation [คำแปลสั้น: honor or disgrace depends on the person whom one serves]
+  D) (a title for God and for Christ) one who exercises supernatural authority over mankind (see also 37.51) [คำแปลสั้น: Lord, Ruler, One who commands]
+  E) one who rules or exercises authority over others [คำแปลสั้น: ruler, master, lord]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 351
+ที่อยู่: LUK 19:1
+ข้อความต้นฉบับ: Καὶ εἰσελθὼν διήρχετο τὴν Ἰεριχώ.
+คำที่ถาม: Καὶ   (รูปตั้งต้น καί · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of an additive relation which is not coordinate [คำแปลสั้น: and, and also, also, in addition, even]
+  B) a marker of coordinate relations [คำแปลสั้น: and]
+  C) a marker of a totality of two closely related elements [คำแปลสั้น: both … and]
+  D) marker of a sequence of closely related events [คำแปลสั้น: and, and then]
+  E) a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]
+  F) a marker of emphasis, involving surprise and unexpectedness [คำแปลสั้น: then, indeed, how is it then, yet]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 352
+ที่อยู่: PHP 1:13
+ข้อความต้นฉบับ: ὥστε τοὺς δεσμούς μου φανεροὺς ἐν Χριστῷ γενέσθαι ἐν ὅλῳ τῷ πραιτωρίῳ καὶ τοῖς λοιποῖς πᾶσιν,
+คำที่ถาม: καὶ   (รูปตั้งต้น καί · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of coordinate relations [คำแปลสั้น: and]
+  B) marker of a sequence of closely related events [คำแปลสั้น: and, and then]
+  C) a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]
+  D) a marker of emphasis, involving surprise and unexpectedness [คำแปลสั้น: then, indeed, how is it then, yet]
+  E) a marker of an additive relation which is not coordinate [คำแปลสั้น: and, and also, also, in addition, even]
+  F) a marker of a totality of two closely related elements [คำแปลสั้น: both … and]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 353
+ที่อยู่: 1CO 15:28
+ข้อความต้นฉบับ: ὅταν δὲ ὑποταγῇ αὐτῷ τὰ πάντα,τότε αὐτὸς ὁ υἱὸς ὑποταγήσεται τῷ ὑποτάξαντι αὐτῷ τὰ πάντα,ἵνα ᾖ ὁ θεὸς πάντα ἐν πᾶσιν.
+คำที่ถาม: πᾶσιν   (รูปตั้งต้น πᾶς · ชนิดคำ adj)
+ตัวเลือก:
+  A) the totality of any object, mass, collective, or extension001 [คำแปลสั้น: all, every, each, whole]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 354
+ที่อยู่: LUK 15:4
+ข้อความต้นฉบับ: Τίς ἄνθρωπος ἐξ ὑμῶν ἔχων ἑκατὸν πρόβατα καὶ ἀπολέσας ἐξ αὐτῶν ἓν οὐ καταλείπει τὰ ἐνενήκοντα ἐννέα ἐν τῇ ἐρήμῳ καὶ πορεύεται ἐπὶ τὸ ἀπολωλὸς ἕως εὕρῃ αὐτό;
+คำที่ถาม: ἐρήμῳ   (รูปตั้งต้น ἔρημος · ชนิดคำ adj)
+ตัวเลือก:
+  A) a largely uninhabited region, normally with sparse vegetation (in contrast with πόλις[a] ‘a population center,’ 1.88) [คำแปลสั้น: desert, wilderness, lonely place]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

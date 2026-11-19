@@ -1,0 +1,26 @@
+You are checking a Bible-study data set, not writing devotional material.
+
+Reference: ISA 22.23
+Language: Biblical Hebrew
+Whole word as printed in the text: וּתְקַעְתִּ֥יו
+Our source data cuts that word into 3 piece(s), in this order:
+  piece 1: וּ   gloss: and
+  piece 2: תְקַעְתִּ֥י   gloss: drive
+  piece 3: ו   gloss: him
+We are asking about piece number 3: ו
+Interlinear gloss of that piece in our source data: him
+Lemma our source data gives for that piece: הוּא
+
+Our data attaches to that piece one dictionary entry:
+  dictionary headword: תקע
+  glosses: to plunge; to thrust; to drive
+  definition: = causative action by which someone causes a sharp object to penetrate another object
+
+Question: is that attached meaning really the meaning of that piece of the word,
+and of the whole word, at this reference?
+
+Answer in this shape:
+1. First line: YES or NO or PARTLY.
+2. Then at most four sentences saying what the piece actually means, what the whole
+   word means here, and whether the attached dictionary entry is the right entry.
+Do not quote more than the single word above from the Bible text.

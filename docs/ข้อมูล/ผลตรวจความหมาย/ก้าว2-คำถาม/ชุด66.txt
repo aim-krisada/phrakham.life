@@ -1,0 +1,49 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 138
+ที่อยู่: 1SA 9:19
+ข้อความต้นฉบับ: וַיַּ֨עַן שְׁמוּאֵ֜ל אֶת־שָׁא֗וּל וַיֹּ֨אמֶר֙ אָנֹכִ֣י הָרֹאֶ֔ה עֲלֵ֤ה לְפָנַי֙ הַבָּמָ֔ה וַאֲכַלְתֶּ֥ם עִמִּ֖י הַיּ֑וֹם וְשִׁלַּחְתִּ֣יךָ בַבֹּ֔קֶר וְכֹ֛ל אֲשֶׁ֥ר בִּֽלְבָבְךָ֖ אַגִּ֥יד לָֽךְ׃
+คำที่ถาม: ךָ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) causative action by which humans or deities allow (other) humans to leave a certain place and go home [คำแปลสั้น: to let go, to dismiss, to send (someone) on his way, to free, to release]
+  B) literally: to send out one's hair; hence: causative action by which humans allow their hair to grow long [คำแปลสั้น: to let one's hair grow long]
+  C) literally: to send away one's feet; hence, possible: causative action by which humans thrust aside the feet of someone who is standing up · in order to make that person fall down; · seen as an act of aggression [คำแปลสั้น: to thrust aside (someone's) feet > to send (someone) sprawling]
+  D) causative action by which humans or deities send one or more people -- though the people sent are not mentioned explicitly -- to a certain individual or place in order to perform a certain task [คำแปลสั้น: to send word (to someone)]
+  E) causative action by which humans remove an object that is attached to part of their body [คำแปลสั้น: to cast off, to throw off]
+  F) causative action by which humans or deities send people -- though the people sent are not mentioned explicitly -- to summon another person or group [คำแปลสั้น: to send for (someone), to summon]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 139
+ที่อยู่: GEN 45:24
+ข้อความต้นฉบับ: וַיְשַׁלַּ֥ח אֶת־אֶחָ֖יו וַיֵּלֵ֑כוּ וַיֹּ֣אמֶר אֲלֵהֶ֔ם אַֽל־תִּרְגְּז֖וּ בַּדָּֽרֶךְ׃
+คำที่ถาม: דָּֽרֶךְ   (รูปตั้งต้น דֶּרֶךְ · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: way(s) (of God); hence: causative action by which a deity brings a living being into existence [คำแปลสั้น: works]
+  B) literally: road; hence: a referent pointing to the space to or from which a person or thing moves or faces, · understood as the road between that person or thing and the point in focus [คำแปลสั้น: direction]
+  C) road · leading through Transjordan along the desert border, connecting Damascus with the Gulf of Aqabah [คำแปลสั้น: King's Highway]
+  D) literally: road; hence: action by which humans are travelling from one place to another, often with a certain goal [คำแปลสั้น: journey, errand, mission]
+  E) an open space connecting different places, · used for travelling and transportation; · often extended to denote our life as a journey from birth to death, and the totality of our activities during our lives [คำแปลสั้น: road, way, path, track]
+  F) literally: road; hence: a space between walls · serving to connect two different points in a building [คำแปลสั้น: way, passage, corridor]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 140
+ที่อยู่: EZR 6:3
+ข้อความต้นฉบับ: בִּשְׁנַ֨ת חֲדָ֜ה לְכ֣וֹרֶשׁ מַלְכָּ֗א כּ֣וֹרֶשׁ מַלְכָּא֮ שָׂ֣ם טְעֵם֒ בֵּית־אֱלָהָ֤א בִֽירוּשְׁלֶם֙ בַּיְתָ֣א יִתְבְּנֵ֔א אֲתַר֙ דִּֽי־דָבְחִ֣ין דִּבְחִ֔ין וְאֻשּׁ֖וֹהִי מְסֽוֹבְלִ֑ין רוּמֵהּ֙ אַמִּ֣ין שִׁתִּ֔ין פְּתָיֵ֖הּ אַמִּ֥ין שִׁתִּֽין׃
+คำที่ถาม: רוּמֵ   (รูปตั้งต้น רוּם · ชนิดคำ noun)
+ตัวเลือก:
+  A) vertical height of an object [คำแปลสั้น: height, stature]
+  B) literally: height; hence: state in which humans have an elevated status in their own eyes which cannot be justified [คำแปลสั้น: haughtiness, pride]
+  C) literally: (one's) eyes being high; hence: state in which humans consider themselves greater than justified which becomes visible by the way they look around them [คำแปลสั้น: haughty look, proud look]
+  D) literally: height of (one's) heart; hence: state in which humans consider themselves greater than justified [คำแปลสั้น: haughty thinking, proud mindset]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

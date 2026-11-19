@@ -1,0 +1,53 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 265
+ที่อยู่: ISA 4:4
+ข้อความต้นฉบับ: אִ֣ם׀רָחַ֣ץ אֲדֹנָ֗י אֵ֚ת צֹאַ֣ת בְּנוֹת־צִיּ֔וֹן וְאֶת־דְּמֵ֥י יְרוּשָׁלִַ֖ם יָדִ֣יחַ מִקִּרְבָּ֑הּ בְּר֥וּחַ מִשְׁפָּ֖ט וּבְר֥וּחַ בָּעֵֽר׃
+คำที่ถาม: אֵ֚ת   (รูปตั้งต้น אֵת · ชนิดคำ particle)
+ตัวเลือก:
+  A) particle linking two entities and denoting that X and Y function as one single entity in the proposition in focus [คำแปลสั้น: with, together with]
+  B) exact meaning unknown; possibly: wooden handle with an iron head that has both an adze and a chisel as its ends; · used for breaking up moderately hard soil to make it ready for cultivation [คำแปลสั้น: mattock]
+  C) marker identifying the entity that is directly targeted by the event in focus, and which usually is already part of the cognitive context; described in syntactic terms as the direct object marker; untranslatable in English unless accompanied by a suffix [คำแปลสั้น: -]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 266
+ที่อยู่: JER 41:8
+ข้อความต้นฉบับ: וַעֲשָׂרָ֨ה אֲנָשִׁ֜ים נִמְצְאוּ־בָ֗ם וַיֹּאמְר֤וּ אֶל־יִשְׁמָעֵאל֙ אַל־תְּמִתֵ֔נוּ כִּֽי־יֶשׁ־לָ֤נוּ מַטְמֹנִים֙ בַּשָּׂדֶ֔ה חִטִּ֥ים וּשְׂעֹרִ֖ים וְשֶׁ֣מֶן וּדְבָ֑שׁ וַיֶּחְדַּ֕ל וְלֹ֥א הֱמִיתָ֖ם בְּת֥וֹךְ אֲחֵיהֶֽם׃
+คำที่ถาม: עֲשָׂרָ֨ה   (รูปตั้งต้น עֲשָׂרָה · ชนิดคำ adjective)
+ตัวเลือก:
+  A) state in which a countable entity is twenty in number [คำแปลสั้น: twenty]
+  B) state in which a countable entity is ten in number [คำแปลสั้น: ten]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 267
+ที่อยู่: EZK 37:2
+ข้อความต้นฉบับ: וְהֶעֱבִירַ֥נִי עֲלֵיהֶ֖ם סָבִ֣יב׀סָבִ֑יב וְהִנֵּ֨ה רַבּ֤וֹת מְאֹד֙ עַל־פְּנֵ֣י הַבִּקְעָ֔ה וְהִנֵּ֖ה יְבֵשׁ֥וֹת מְאֹֽד׃
+คำที่ถาม: הֶעֱבִירַ֥   (รูปตั้งต้น עָבַר · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to cause to pass (to someone else); hence: causative action by which humans cause the possessions of one person to be transferred to another person [คำแปลสั้น: to transfer (possessions)]
+  B) literally: to cause (people) to pass to (a certain place); hence: causative action by which people in authority assign other people to work at a certain place [คำแปลสั้น: to assign]
+  C) literally: to cause (one's children) to pass through the fire; hence: action by which humans sacrifce their children to a deity; · which is regarded as a grave sin [คำแปลสั้น: to sacrifice]
+  D) literally: to pass by (an event); hence: action by which humans participate in an activity without being invited to do so [คำแปลสั้น: to meddle]
+  E) causative action by which humans or deities cause (other) humans or animals to cross the distance between one place and another [คำแปลสั้น: to cause to pass]
+  F) state in which deities experience deep anger [คำแปลสั้น: to be angry]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 268
+ที่อยู่: 1CH 6:42
+ข้อความต้นฉบับ: וְלִבְנֵ֣י אַהֲרֹ֗ן נָתְנוּ֙ אֶת־עָרֵ֣י הַמִּקְלָ֔ט אֶת־חֶבְר֥וֹן וְאֶת־לִבְנָ֖ה וְאֶת־מִגְרָשֶׁ֑יהָ וְאֶת־יַתִּ֥ר וְאֶֽת־אֶשְׁתְּמֹ֖עַ וְאֶת־מִגְרָשֶֽׁיהָ׃
+คำที่ถาม: אֶשְׁתְּמֹ֖עַ   (รูปตั้งต้น אֶשְׁתְּמֹעַ · ชนิดคำ noun)
+ตัวเลือก:
+  A) town, also known as Eshtemoh; · located in the hill country; territory of Judah; · assigned to clan of Aaron, tribe of Levi [คำแปลสั้น: Eshtemoa]
+  B) man; · son of Ishbah, tribe of Judah [คำแปลสั้น: Eshtemoa]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

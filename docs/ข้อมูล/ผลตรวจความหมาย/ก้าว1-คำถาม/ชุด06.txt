@@ -1,0 +1,68 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 26
+ที่อยู่: PSA 5:7
+ข้อความต้นฉบับ: תְּאַבֵּד֮ דֹּבְרֵ֪י כָ֫זָ֥ב אִישׁ־דָּמִ֥ים וּמִרְמָ֗ה יְתָ֘עֵ֥ב׀יְהוָֽה׃
+คำที่ถาม: יְהוָֽה   (รูปตั้งต้น יהוה · ชนิดคำ noun)
+ตัวเลือก:
+  A) deity; · God of Israel who revealed himself to Moses [คำแปลสั้น: YHWH]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 27
+ที่อยู่: JOB 13:10
+ข้อความต้นฉบับ: הוֹכֵ֣חַ יוֹכִ֣יחַ אֶתְכֶ֑ם אִם־בַּ֝סֵּ֗תֶר פָּנִ֥ים תִּשָּׂאֽוּן׃
+คำที่ถาม: סֵּ֗תֶר   (รูปตั้งต้น סֵתֶר · ชนิดคำ noun)
+ตัวเลือก:
+  A) state in which knowledge, an object, or an action is kept hidden or unknown from others [คำแปลสั้น: secret, secrecy]
+  B) literally: (one's) shelter; hence: a title for God as the one who provides a hiding place for his people [คำแปลสั้น: Shelter]
+  C) state in which people, animals, or objects are in a location where they cannot be readily seen or where danger cannot reach them [คำแปลสั้น: cover, shelter, disguise]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 28
+ที่อยู่: EZK 1:26
+ข้อความต้นฉบับ: וּמִמַּ֗עַל לָרָקִ֨יעַ֙ אֲשֶׁ֣ר עַל־רֹאשָׁ֔ם כְּמַרְאֵ֥ה אֶֽבֶן־סַפִּ֖יר דְּמ֣וּת כִּסֵּ֑א וְעַל֙ דְּמ֣וּת הַכִּסֵּ֔א דְּמ֞וּת כְּמַרְאֵ֥ה אָדָ֛ם עָלָ֖יו מִלְמָֽעְלָה׃
+คำที่ถาม: מַרְאֵ֥ה   (รูปตั้งต้น מַרְאֶה · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: bad to look at; hence: state in which an animal is considered unpleasant to look at [คำแปลสั้น: ugly]
+  B) literally: a person of sight; hence: a person of an imposing size [คำแปลสั้น: huge person]
+  C) experience by which humans see something in a dream or trance, or as a supernatural apparition [คำแปลสั้น: vision]
+  D) literally: appearance; hence: state in which someone speak in plain language which can be readily understood [คำแปลสั้น: plain, clear]
+  E) literally: good to look at; hence: state in which humans or animals are considered pleasant to look at [คำแปลสั้น: beautiful, handsome, good-looking]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 29
+ที่อยู่: PRO 2:18
+ข้อความต้นฉบับ: כִּ֤י שָׁ֣חָה אֶל־מָ֣וֶת בֵּיתָ֑הּ וְאֶל־רְ֝פָאִ֗ים מַעְגְּלֹתֶֽיהָ׃
+คำที่ถาม: הּ   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally: to take (someone) out of (something else); causative action by which God creates a human body out of something else [คำแปลสั้น: to take from]
+  B) literally: to cause (one's) anger to turn (towards someone); hence: action by which humans express their anger in words or actions [คำแปลสั้น: to vent (one's) anger]
+  C) causative action by which humans or deities make sure that an object is safe from harm; · by observing the object and the surrounding area carefully and intervening when necessary [คำแปลสั้น: to watch over, to guard, to be in charge of, to take care of, to protect, to tend, to keep]
+  D) literally: to bring back vengeance; hence: causative action by which deities find relief from their anger by inflicting punishment [คำแปลสั้น: to take vengeance]
+  E) literally: to cause (someone's) heart to turn aside; hence: causative action by which humans or deities cause (other) humans to focus their thoughts and attention on a person, deity or activity [คำแปลสั้น: to cause (someone's) heart to turn, to cause (someone) to focus their attention]
+  F) process by which humans or deities follow a certain pattern of behavior, · which is described as their journey through life [คำแปลสั้น: to go > to act, to behave]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 30
+ที่อยู่: NUM 14:29
+ข้อความต้นฉบับ: בַּמִּדְבָּ֣ר הַ֠זֶּה יִפְּל֨וּ פִגְרֵיכֶ֜ם וְכָל־פְּקֻדֵיכֶם֙ לְכָל־מִסְפַּרְכֶ֔ם מִבֶּ֛ן עֶשְׂרִ֥ים שָׁנָ֖ה וָמָ֑עְלָה אֲשֶׁ֥ר הֲלִֽינֹתֶ֖ם עָלָֽי׃
+คำที่ถาม: מִסְפַּרְ   (รูปตั้งต้น מִסְפָּר · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: to come to the youth of youths; hence, possibly: process by which a young woman reaches the time when her body becomes mature [คำแปลสั้น: to reach full womanhood]
+  B) literally: to take a wife (for someone else); hence: action by which a man contracts a marriage with a woman on behalf of someone else [คำแปลสั้น: to take a wife (for someone else)]
+  C) literally: to turn (something); hence: causative action by which humans prepare an object to be used for a certain purpose [คำแปลสั้น: to clear, to prepare]
+  D) exact meaning unsure; possible: causative action by which humans in authority cause other humans move from place to place in a certain area [คำแปลสั้น: to cause to roam]
+  E) action by which humans or deities engage in a particular action [คำแปลสั้น: to do, to perform, to commit, to practice, to observe, to celebrate, to keep]
+  F) literally: to bring (an event); hence: causative process by which deities cause events to take place [คำแปลสั้น: to bring, to bring about, to cause to happen]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

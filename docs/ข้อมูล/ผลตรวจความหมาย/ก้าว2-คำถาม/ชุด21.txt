@@ -1,0 +1,49 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 44
+ที่อยู่: 1CH 17:19
+ข้อความต้นฉบับ: יְהוָ֕ה בַּעֲב֤וּר עַבְדְּךָ֙ וּֽכְלִבְּךָ֔ עָשִׂ֕יתָ אֵ֥ת כָּל־הַגְּדוּלָּ֖ה הַזֹּ֑את לְהֹדִ֖יעַ אֶת־כָּל־הַגְּדֻלּֽוֹת׃
+คำที่ถาม: זֹּ֑את   (รูปตั้งต้น זֹאת · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) a marker highlighting an object or event [คำแปลสั้น: this]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 45
+ที่อยู่: ISA 2:4
+ข้อความต้นฉบับ: וְשָׁפַט֙ בֵּ֣ין הַגּוֹיִ֔ם וְהוֹכִ֖יחַ לְעַמִּ֣ים רַבִּ֑ים וְכִתְּת֨וּ חַרְבוֹתָ֜ם לְאִתִּ֗ים וַחֲנִיתֽוֹתֵיהֶם֙ לְמַזְמֵר֔וֹת לֹא־יִשָּׂ֨א ג֤וֹי אֶל־גּוֹי֙ חֶ֔רֶב וְלֹא־יִלְמְד֥וּ ע֖וֹד מִלְחָמָֽה׃פ
+คำที่ถาม: ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) sharp object; · made out of iron or flint; · used as tool for various purposes [คำแปลสั้น: chisel, knife]
+  B) offensive weapon consisting of long blade for cutting or thrusting or both, and hilt with hand-guard; · made out of iron; · used in warfare; · symbol of aggression and punishment [คำแปลสั้น: sword]
+  C) a long, heavy object, · made of wood and covered on one end with metal, · rammed by soldiers against the wall or gate of a city under siege; it sometimes had a point since the purpose of the ramming was to wedge a hole in the wall; others were blunt on the end; it could be held and swung by soldiers, or sometimes it was suspended by ropes from a moveable wooden tower [คำแปลสั้น: battering-ram]
+  D) action by which humans are engaged in an armed conflict with other humans, accompanied by deeds of aggression [คำแปลสั้น: sword > war]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 46
+ที่อยู่: 2CH 11:16
+ข้อความต้นฉบับ: וְאַחֲרֵיהֶ֗ם מִכֹּל֙ שִׁבְטֵ֣י יִשְׂרָאֵ֔ל הַנֹּֽתְנִים֙ אֶת־לְבָבָ֔ם לְבַקֵּ֕שׁ אֶת־יְהוָ֖ה אֱלֹהֵ֣י יִשְׂרָאֵ֑ל בָּ֚אוּ יְר֣וּשָׁלִַ֔ם לִזְבּ֕וֹחַ לַיהוָ֖ה אֱלֹהֵ֥י אֲבוֹתֵיהֶֽם׃
+คำที่ถาม: אֶת   (รูปตั้งต้น אֵת · ชนิดคำ particle)
+ตัวเลือก:
+  A) particle linking two entities and denoting that X and Y function as one single entity in the proposition in focus [คำแปลสั้น: with, together with]
+  B) exact meaning unknown; possibly: wooden handle with an iron head that has both an adze and a chisel as its ends; · used for breaking up moderately hard soil to make it ready for cultivation [คำแปลสั้น: mattock]
+  C) marker identifying the entity that is directly targeted by the event in focus, and which usually is already part of the cognitive context; described in syntactic terms as the direct object marker; untranslatable in English unless accompanied by a suffix [คำแปลสั้น: -]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 47
+ที่อยู่: 2CH 28:3
+ข้อความต้นฉบับ: וְה֥וּא הִקְטִ֖יר בְּגֵ֣יא בֶן־הִנֹּ֑ם וַיַּבְעֵ֤ר אֶת־בָּנָיו֙ בָּאֵ֔שׁ כְּתֹֽעֲבוֹת֙ הַגּוֹיִ֔ם אֲשֶׁר֙ הֹרִ֣ישׁ יְהוָ֔ה מִפְּנֵ֖י בְּנֵ֥י יִשְׂרָאֵֽל׃
+คำที่ถาม: הִנֹּ֑ם   (รูปตั้งต้น הִנֹּם · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: valley of the son of Hinnom; valley, · located west and south of Jerusalem; · infamous for the idol worship that took place there [คำแปลสั้น: Valley of (the son of) Hinnom]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

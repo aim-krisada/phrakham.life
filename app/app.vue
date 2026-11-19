@@ -1,0 +1,32 @@
+<script setup lang="ts">
+const cfg = useRuntimeConfig()
+// ตอนรันในเครื่องไม่มีค่าพวกนี้ ⇒ บอกตรง ๆ ว่าเป็นของในเครื่อง
+// ⛔ ไม่เว้นว่าง เพราะช่องว่างอ่านได้ว่า "ตัวประทับหาย" ซึ่งคนละเรื่องกัน
+const sha = computed(() => cfg.public.commitShort || 'ในเครื่อง')
+// ⭐ เวลาของคอมมิต เป็นเวลาไทย (ใบงาน https://aimgit.aimagin.com/v3/phrakham/-/issues/101 ข้อ 17)
+//   ⇒ ⛔ เวลาของคอมมิต ⛔ ไม่ใช่เวลาที่ท่อสร้างเว็บ ⇒ เหตุผลอยู่ที่ `nuxt.config.ts` ⛔ ไม่จดซ้ำที่นี่
+const เวลา = computed(() => String(cfg.public.commitTimeTh || ''))
+const เวลาเครื่อง = computed(() => String(cfg.public.commitTime || ''))
+</script>
+
+<template>
+  <div class="pk-หน้า">
+    <main>
+      <NuxtPage />
+    </main>
+
+    <!--
+      ⭐ ตัวประทับ — ที่ทดลองต้องบอกได้เองว่ากำลังแสดงคอมมิตไหน (WPA.08 ของที่ต้องส่งข้อ 1)
+      ⛔ ห้ามเอา `id="sha"` ออก — `ข้อกำหนดโปรเจกต์.md` หัวข้อ "ตัวประทับ" เป็นเจ้าของกติกานี้
+        และคนที่อ่านป้ายนี้ไปใช้คือ v3/way `tools/ทะเบียนที่เฝ้า.json` ช่อง `_ระหว่างนี้ตรวจด้วยคน`
+    -->
+    <!-- ⭐ ใบ https://aimgit.aimagin.com/v3/phrakham/-/issues/165 ข้อ 2 ⇒ @krisada 10 พ.ย. 2569 ⇒ เหลือแค่ *คอมมิต 9c31742f · 10 พ.ย. 2569 04:33 น.*
+           ⇒ ตัดคำว่า *สาขา* กับ *เวลาคอมมิต:* ⇒ ไอดี `sha` กับ `เวลาคอมมิต` ยังอยู่ (คนอ่านป้ายคือท่อ CI กับ v3/way) ⇒ ตัวเฝ้าคือ `tools/ด่านท้ายหน้า.mjs` ข้อ ⑥ -->
+    <footer class="pk-ตราประทับ">
+      คอมมิต <code id="sha">{{ sha }}</code> ·
+      <!-- ⭐ `datetime` เก็บค่าดิบของกิตแล็บ ⇒ เครื่องอ่านได้ และท่อ CI เทียบกับ `CI_COMMIT_TIMESTAMP` ได้ตรง ๆ -->
+      <time v-if="เวลา" id="เวลาคอมมิต" :datetime="เวลาเครื่อง">{{ เวลา }}</time
+      ><code v-else id="เวลาคอมมิต">ในเครื่อง</code>
+    </footer>
+  </div>
+</template>

@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 24
+ที่อยู่: 1CH 27:14
+ข้อความต้นฉบับ: עַשְׁתֵּֽי־עָשָׂר֙ לְעַשְׁתֵּ֣י־עָשָׂ֣ר הַחֹ֔דֶשׁ בְּנָיָ֥ה הַפִּרְעָתוֹנִ֖י מִן־בְּנֵ֣י אֶפְרָ֑יִם וְעַל֙ מַחֲלֻקְתּ֔וֹ עֶשְׂרִ֥ים וְאַרְבָּעָ֖ה אָֽלֶף׃ס
+คำที่ถาม: בְּנָיָ֥ה   (รูปตั้งต้น בְּנָיָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) man, also known as Benaiahu; · father of Pelatiah; time of Ezekiel [คำแปลสั้น: Benaiah, Benaiahu]
+  B) man; · descendant of Parosh; · married a non-Israelite woman; after exile [คำแปลสั้น: Benaiah]
+  C) man; · descendant of Bani; · married a foreign wife; after exile [คำแปลสั้น: Benaiah]
+  D) man, also known as Benaiahu; · from Pirathon; · warrior; time of David [คำแปลสั้น: Benaiah, Benaiahu]
+  E) man; · descendant of Pahath-Moab; · married a non-Israelite woman; after exile [คำแปลสั้น: Benaiah]
+  F) man; · tribe of Simeon [คำแปลสั้น: Benaiah]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 25
+ที่อยู่: 2KI 21:1
+ข้อความต้นฉบับ: בֶּן־שְׁתֵּ֨ים עֶשְׂרֵ֤ה שָׁנָה֙ מְנַשֶּׁ֣ה בְמָלְכ֔וֹ וַחֲמִשִּׁ֤ים וְחָמֵשׁ֙ שָׁנָ֔ה מָלַ֖ךְ בִּירוּשָׁלִָ֑ם וְשֵׁ֥ם אִמּ֖וֹ חֶפְצִי־בָֽהּ׃
+คำที่ถาม: בָֽהּ   (รูปตั้งต้น חֶפְצִיבָהּ · ชนิดคำ noun)
+ตัวเลือก:
+  A) new name of Zion, given to her by God after the exile [คำแปลสั้น: Hephzibah]
+  B) woman; · wife of king Hezekiah; mother of king Manasseh [คำแปลสั้น: Hephzibah]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 26
+ที่อยู่: PSA 128:1
+ข้อความต้นฉบับ: שִׁ֗יר הַֽמַּ֫עֲל֥וֹתאַ֭שְׁרֵי כָּל־יְרֵ֣א יְהוָ֑ה הַ֝הֹלֵ֗ךְ בִּדְרָכָֽיו׃
+คำที่ถาม: אַ֭שְׁרֵי   (รูปตั้งต้น אֶשֶׁר · ชนิดคำ noun)
+ตัวเลือก:
+  A) state of being considered fortunate and blessed by God; · accompanied by an attitude of admiration [คำแปลสั้น: happiness, blessedness]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 27
+ที่อยู่: EZR 2:61
+ข้อความต้นฉบับ: וּמִבְּנֵי֙ הַכֹּ֣הֲנִ֔ים בְּנֵ֥י חֳבַיָּ֖ה בְּנֵ֣י הַקּ֑וֹץ בְּנֵ֣י בַרְזִלַּ֗י אֲשֶׁ֣ר לָ֠קַח מִבְּנ֞וֹת בַּרְזִלַּ֤י הַגִּלְעָדִי֙ אִשָּׁ֔ה וַיִּקָּרֵ֖א עַל־שְׁמָֽם׃
+คำที่ถาม: חֳבַיָּ֖ה   (รูปตั้งต้น חֲבַיָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · family head; priests; after exile [คำแปลสั้น: Habaiah, Hobaiah]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 28
+ที่อยู่: EZK 7:19
+ข้อความต้นฉบับ: כַּסְפָּ֞ם בַּחוּצ֣וֹת יַשְׁלִ֗יכוּ וּזְהָבָם֮ לְנִדָּ֣ה יִֽהְיֶה֒ כַּסְפָּ֨ם וּזְהָבָ֜ם לֹֽא־יוּכַ֣ל לְהַצִּילָ֗ם בְּיוֹם֙ עֶבְרַ֣ת יְהוָ֔ה נַפְשָׁם֙ לֹ֣א יְשַׂבֵּ֔עוּ וּמֵעֵיהֶ֖ם לֹ֣א יְמַלֵּ֑אוּ כִּֽי־מִכְשׁ֥וֹל עֲוֺנָ֖ם הָיָֽה׃
+คำที่ถาม: הֶ֖ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally the bowels or inner parts of a human body; sometimes used collectively to refer to all the internal organs and even the whole being, and sometimes used to refer to a specific part of the human body, for example, the stomach, the heart, the womb, the soul, the breast, the genitals; · associated with emotions such as anguish but also compassion [คำแปลสั้น: bowels, interior, belly]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

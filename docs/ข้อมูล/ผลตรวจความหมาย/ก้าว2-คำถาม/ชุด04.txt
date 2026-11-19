@@ -1,0 +1,64 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 331
+ที่อยู่: ACT 26:29
+ข้อความต้นฉบับ: ὁ δὲ Παῦλος·Εὐξαίμην ἂν τῷ θεῷ καὶ ἐν ὀλίγῳ καὶ ἐν μεγάλῳ οὐ μόνον σὲ ἀλλὰ καὶ πάντας τοὺς ἀκούοντάς μου σήμερον γενέσθαι τοιούτους ὁποῖος καὶ ἐγώ εἰμι παρεκτὸς τῶν δεσμῶν τούτων.
+คำที่ถาม: μόνον   (รูปตั้งต้น μόνος · ชนิดคำ adj)
+ตัวเลือก:
+  A) the only entity in a class [คำแปลสั้น: only one, alone]
+  B) the only item of a class in a place [คำแปลสั้น: alone, all by oneself]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 332
+ที่อยู่: EPH 4:25
+ข้อความต้นฉบับ: Διὸ ἀποθέμενοι τὸ ψεῦδος λαλεῖτε ἀλήθειαν ἕκαστος μετὰ τοῦ πλησίον αὐτοῦ,ὅτι ἐσμὲν ἀλλήλων μέλη.
+คำที่ถาม: μετὰ   (รูปตั้งต้น μετά · ชนิดคำ prep)
+ตัวเลือก:
+  A) a marker of the experiencer of an event, with the added implication of association [คำแปลสั้น: with, to]
+  B) a marker of a relation in which one thing is combined with another [คำแปลสั้น: with, combined with]
+  C) a marker of means, with the probable additional implication of attendant circumstance (see μετά[d] ‘with,’ 89.79) [คำแปลสั้น: by means of, with, through]
+  D) a marker of a point of time closely associated with a prior point of time [คำแปลสั้น: after]
+  E) a marker of circumstances which contribute significantly to the context of the principal event002 [คำแปลสั้น: with, in]
+  F) a position within an area determined by other objects and distributed among such objects004 [คำแปลสั้น: among, with]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 333
+ที่อยู่: LUK 24:46
+ข้อความต้นฉบับ: καὶ εἶπεν αὐτοῖς ὅτι οὕτως γέγραπται παθεῖν τὸν χριστὸν καὶ ἀναστῆναι ἐκ νεκρῶν τῇ τρίτῃ ἡμέρᾳ,
+คำที่ถาม: γέγραπται   (รูปตั้งต้น γράφω · ชนิดคำ verb)
+ตัวเลือก:
+  A) a particular passage of the OT002 [คำแปลสั้น: Scripture, Scripture passage]
+  B) (pl; ῶν f) the sacred writings of the OT [คำแปลสั้น: the Scriptures, the holy writings]
+  C) a particular portion or unit of discourse001 [คำแปลสั้น: passage, part of a document, part of Scripture]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 334
+ที่อยู่: GAL 5:4
+ข้อความต้นฉบับ: κατηργήθητε ἀπὸ Χριστοῦ οἵτινες ἐν νόμῳ δικαιοῦσθε,τῆς χάριτος ἐξεπέσατε.
+คำที่ถาม: χάριτος   (รูปตั้งต้น χάρις · ชนิดคำ noun)
+ตัวเลือก:
+  A) a favorable attitude toward someone or something [คำแปลสั้น: favor, good will]
+  B) (derivative of χαρίζομαι[a] ‘to give graciously and generously,’ 57.102) that which is given freely and generously [คำแปลสั้น: gift, gracious gift]
+  C) to show kindness to someone, with the implication of graciousness on the part of the one showing such kindness [คำแปลสั้น: to show kindness, to manifest graciousness toward, kindness, graciousness, grace]
+  D) an expression of thankfulness001 [คำแปลสั้น: thanks]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 335
+ที่อยู่: JAS 1:14
+ข้อความต้นฉบับ: ἕκαστος δὲ πειράζεται ὑπὸ τῆς ἰδίας ἐπιθυμίας ἐξελκόμενος καὶ δελεαζόμενος·
+คำที่ถาม: ἐπιθυμίας   (รูปตั้งต้น ἐπιθυμία · ชนิดคำ noun)
+ตัวเลือก:
+  A) to greatly desire to do or have something [คำแปลสั้น: to long for, to desire very much]
+  B) to strongly desire to have what belongs to someone else and/or to engage in an activity which is morally wrong [คำแปลสั้น: to covet, to lust, evil desires, lust, desire]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

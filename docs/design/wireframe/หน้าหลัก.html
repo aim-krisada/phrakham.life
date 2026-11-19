@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>โครงร่างหน้าหลัก พระคำ.ชีวิต — ใบงาน #33</title>
+<!--
+  โครงร่างหน้าหลักของ พระคำ.ชีวิต รุ่น 3 — ใบงาน v3/phrakham#33
+
+  ไฟล์นี้ไม่ใช่ของทิ้ง พี่เอมสั่งเอง 30 ส.ค. 2569 ว่าจะแก้ซ้ำหลายรอบ
+  แล้วสุดท้ายจึงค่อยแปลงเป็นหน้าเว็บจริง
+
+  กติกาของไฟล์นี้
+  - ไฟล์เดียวจบ ไม่ดึงของจากอินเทอร์เน็ตเลย ดับเบิลคลิกเปิดได้ทันที
+  - ขาวดำล้วน เพราะรอบนี้คุยเรื่องการวางของ ยังไม่คุยเรื่องความสวย
+  - ขนาดตัวอักษรกับความสูงปุ่มเป็นของจริง ไม่ใช่กล่องเทาที่ไม่มีมาตราส่วน
+    เหตุผล Gemini เตือนว่ากับดักของโครงร่างขาวดำ คือคนตรวจเผลออนุมัติของที่เล็กเกินไป
+  - เนื้อความเป็นข้อความหลอก แต่ยาวพอ ๆ ของจริง จะได้เห็นว่าล้นไหม
+
+  ตัวเลขความสูงของหน้า เจ้าของคือ tools/วัดโครงร่าง.mjs
+  สั่ง node tools/วัดโครงร่าง.mjs แล้วมันวัดให้เอง ที่นี่จึงไม่จดตัวเลขซ้ำ
+
+  แบบ ข ยกของเดิมจากเว็บรุ่น 2 มาใช้ ตามที่พี่เอมเลือก 30 ส.ค. 2569
+  ของเดิมอยู่ C:\gl\krisada\phrakham.life2 อ่านอย่างเดียว
+  ไฟล์นี้ไม่ใช่โค้ดของเว็บจริง เว็บจริงอยู่โฟลเดอร์ app และใบนี้ไม่แตะ
+-->
+<style>
+  /* แผงควบคุมของโครงร่าง ไม่ใช่ส่วนหนึ่งของแบบ */
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, "Segoe UI", "Leelawadee UI", sans-serif;
+    background: #e9e9e9;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  .แผง {
+    position: sticky; top: 0; z-index: 10;
+    background: #2b2b2b; color: #fff;
+    padding: .75rem 1rem;
+    border-bottom: 3px solid #000;
+  }
+  .แผง h1 { font-size: 1rem; margin: 0 0 .5rem; font-weight: 700; }
+  .แผง .คำเตือน { font-size: .8rem; color: #ccc; margin: 0 0 .6rem; }
+  .กลุ่ม { display: inline-flex; flex-wrap: wrap; gap: .35rem; margin: 0 1.2rem .35rem 0; align-items: center; }
+  .กลุ่ม > span { font-size: .8rem; color: #bbb; margin-right: .2rem; }
+  .แผง button {
+    font: inherit; font-size: .85rem;
+    background: #4a4a4a; color: #fff;
+    border: 1px solid #777; border-radius: 4px;
+    padding: .4rem .7rem; cursor: pointer; min-height: 34px;
+  }
+  .แผง button[aria-pressed="true"] { background: #fff; color: #000; border-color: #fff; font-weight: 700; }
+  .แผง button:focus-visible { outline: 3px solid #ffd400; outline-offset: 2px; }
+
+  .เวที { padding: 1.5rem 1rem 4rem; display: flex; justify-content: center; }
+  .จอ {
+    background: #fff;
+    border: 2px solid #555;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    overflow: hidden;
+  }
+  .จอ[data-ขนาด="มือถือ"]  { width: 320px; }
+  .จอ[data-ขนาด="จอคอม"] { width: 1000px; max-width: 100%; }
+  .ป้ายจอ {
+    background: #555; color: #fff;
+    font-size: .75rem; padding: .2rem .5rem; letter-spacing: .02em;
+    display: flex; justify-content: space-between;
+  }
+  /* กล่องนี้คือตัวหน้าเว็บล้วน ๆ ตัววัดความสูงจับกล่องนี้กล่องเดียว
+     แถบป้ายข้างบนกับเส้นขอบเป็นของแผงควบคุม จึงไม่ถูกนับ */
+  .ตัวหน้าเว็บ { position: relative; }
+
+  /* ── โครงร่าง ขาวดำล้วน ขนาดเป็นของจริง ───────────────────── */
+  .หน้า { padding: 1.25rem 1rem 1.5rem; font-size: 17px; }
+  .จอ[data-ขนาด="จอคอม"] .หน้า { padding: 2rem; max-width: 44rem; margin: 0 auto; }
+
+  .หัวหน้า { padding: .7rem 1rem .2rem; border-bottom: 1px solid #ddd; }
+  .จอ[data-ขนาด="จอคอม"] .หัวหน้า { padding: 1rem 2rem .4rem; }
+  .ชื่อเว็บ { font-size: .95rem; letter-spacing: .04em; color: #444; }
+  a.ชื่อเว็บ {
+    display: inline-flex; align-items: center; min-height: 44px;
+    text-decoration: underline; color: #1a1a1a;
+  }
+
+  .หน้า h1 { font-size: 1.6rem; line-height: 1.35; margin: 0 0 1.1rem; }
+  .หน้า p  { margin: 0 0 1rem; }
+  .จอ[data-ขนาด="จอคอม"] .หน้า p { max-width: 40rem; }
+
+  .ปุ่มหลัก {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; min-height: 48px;
+    font: inherit; font-size: 1.05rem; font-weight: 700;
+    background: #333; color: #fff;
+    border: 2px solid #000; border-radius: 6px;
+    padding: .6rem 1.2rem; cursor: pointer; text-decoration: none;
+  }
+  .จอ[data-ขนาด="จอคอม"] .ปุ่มหลัก { width: auto; min-width: 18rem; }
+  .ปุ่มรอง {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; min-height: 48px; margin-bottom: .5rem;
+    font: inherit; font-size: 1rem;
+    background: #f2f2f2; color: #1a1a1a;
+    border: 1px solid #888; border-radius: 6px;
+    padding: .6rem .9rem; cursor: pointer; text-align: left;
+  }
+
+  /* ── เม็ดยาของเดิม ปุ่มเลือกเล่มกับช่องพิมพ์ติดกันเป็นชิ้นเดียว ──
+     ของเดิมทำแบบนี้ พี่เอมบอกว่าชอบของเดิม จึงไม่แยกออกจากกัน
+     ต่างจากของเดิมอยู่จุดเดียว คือปุ่มมีข้อความกำกับที่มองเห็น
+     ของเดิมเป็นรูปหนังสือล้วน ซึ่งคนไม่คุ้นเดาไม่ออกว่ากดแล้วได้อะไร */
+  .ป้ายช่อง { display: block; font-size: .95rem; margin-bottom: .35rem; }
+  .เม็ดยา { display: flex; align-items: stretch; margin-bottom: .6rem; }
+  .เม็ดยา .ปุ่มเลือกเล่ม {
+    flex: none; min-height: 48px;
+    font: inherit; font-size: .95rem;
+    background: #f2f2f2; color: #1a1a1a;
+    border: 1px solid #888; border-right: none;
+    border-radius: 6px 0 0 6px;
+    padding: .5rem .7rem; cursor: pointer; white-space: nowrap;
+  }
+  .เม็ดยา .ช่องพิมพ์ {
+    flex: 1 1 auto; min-width: 0; min-height: 48px;
+    font: inherit; font-size: 1rem;
+    border: 1px solid #888; border-radius: 0 6px 6px 0;
+    padding: .6rem .7rem; background: #fafafa;
+  }
+  .ช่องพิมพ์ {
+    width: 100%; min-height: 48px;
+    font: inherit; font-size: 1rem;
+    border: 1px solid #888; border-radius: 6px; padding: .6rem .9rem;
+    background: #fafafa;
+  }
+
+  .รายชื่อเล่ม {
+    display: grid; grid-template-columns: 1fr 1fr; gap: .4rem;
+    margin: 0 0 1rem; padding: .6rem;
+    border: 1px dashed #999; background: #fafafa;
+  }
+  .จอ[data-ขนาด="มือถือ"] .รายชื่อเล่ม { max-height: 15rem; overflow-y: auto; }
+  .จอ[data-ขนาด="จอคอม"] .รายชื่อเล่ม { grid-template-columns: repeat(5, 1fr); }
+  .เล่ม {
+    font: inherit; font-size: .95rem; min-height: 44px;
+    background: #fff; border: 1px solid #999; border-radius: 4px;
+    padding: .35rem .4rem; cursor: pointer;
+  }
+
+  .เครื่องมือ {
+    display: flex; gap: .4rem; align-items: center;
+    padding: .5rem; margin: 0 0 1rem;
+    border: 1px solid #888; background: #f2f2f2; border-radius: 6px;
+  }
+  .เครื่องมือ button {
+    font: inherit; font-size: .9rem; min-height: 44px; min-width: 44px;
+    background: #fff; border: 1px solid #888; border-radius: 4px;
+    padding: .3rem .6rem; cursor: pointer; white-space: nowrap;
+  }
+  .เครื่องมือ button[aria-pressed="true"] { background: #333; color: #fff; }
+  .เครื่องมือ .ยืด { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+
+  .ข้อ { display: flex; gap: .6rem; margin-bottom: .8rem; }
+  .ข้อ .เลข { font-size: .8rem; color: #555; min-width: 1.6rem; padding-top: .25rem; }
+
+  /* ท้ายหน้ามีทุกหน้า เป็นพวงลิงก์ของทั้งเว็บ
+     หน้าที่เปิดอยู่ไม่เป็นลิงก์ เพราะลิงก์ที่พากลับมาหน้าเดิมทำให้คนงง */
+  .ท้ายหน้า {
+    margin-top: 2rem; padding-top: .8rem;
+    border-top: 1px solid #999;
+    font-size: .9rem;
+  }
+  .ท้ายหน้า nav { display: flex; flex-wrap: wrap; gap: 0 .5rem; align-items: center; }
+  .ท้ายหน้า a, .ลิงก์รอง {
+    display: inline-flex; align-items: center; min-height: 44px;
+    color: #1a1a1a;
+  }
+  .ท้ายหน้า .หน้านี้ { display: inline-flex; align-items: center; min-height: 44px; color: #555; }
+  .ท้ายหน้า .คั่น { color: #999; }
+  .ลิงก์รอง { margin-top: .2rem; }
+  /* 24 จุดขั้นต่ำ ห้ามลด กันนิ้วกดพลาดไปโดนบรรทัดที่ไม่ใช่ลิงก์ */
+  .ท้ายหน้า .ตราประทับ { font-size: .78rem; color: #666; margin-top: 24px; }
+
+  .หลอก { font-size: .75rem; color: #777; font-style: italic; }
+  .นับกด {
+    background: #fffbe6; border: 1px solid #d9c97a;
+    padding: .5rem .7rem; font-size: .85rem; margin: 0 0 1rem;
+  }
+  .กลับ {
+    display: inline-flex; align-items: center; min-height: 44px;
+    font: inherit; font-size: .85rem; background: none; border: none;
+    text-decoration: underline; cursor: pointer; color: #1a1a1a;
+  }
+
+  /* ── หน้าต่างเลือกพระธรรม ยกท่ามาจากของเดิม ──────────────────
+     ของเดิมทำเรื่องแป้นพิมพ์ไว้ครบแล้ว โครงร่างนี้ทำตามให้เห็นว่าได้จริง
+     คือเปิดแล้วโฟกัสวิ่งเข้าไปในกล่อง ปิดแล้วกลับมาที่ปุ่มเดิม
+     Tab วนอยู่ในกล่อง Escape ปิดได้ และแท็บสองอันเดินด้วยลูกศรได้ */
+  .ฉากหลัง {
+    position: absolute; inset: 0; background: rgba(0,0,0,.45);
+    display: flex; align-items: stretch; justify-content: center; padding: .5rem;
+  }
+  .กล่อง {
+    background: #fff; border: 2px solid #333; border-radius: 6px;
+    width: 100%; display: flex; flex-direction: column; overflow: hidden;
+  }
+  .กล่องหัว { display: flex; align-items: center; justify-content: space-between; padding: .4rem .6rem; border-bottom: 1px solid #ccc; }
+  .กล่องหัว h2 { font-size: 1rem; margin: 0; }
+  .ปิดกล่อง { font: inherit; font-size: 1.2rem; min-height: 44px; min-width: 44px; background: none; border: 1px solid #888; border-radius: 4px; cursor: pointer; }
+  .แท็บแถว { display: flex; gap: .3rem; padding: .5rem .6rem 0; }
+  .แท็บ {
+    flex: 1 1 0; font: inherit; font-size: .95rem; min-height: 44px;
+    background: #f2f2f2; border: 1px solid #888; border-bottom: none;
+    border-radius: 6px 6px 0 0; cursor: pointer;
+  }
+  .แท็บ[aria-selected="true"] { background: #333; color: #fff; font-weight: 700; }
+  .เส้นทาง { padding: .3rem .6rem; font-size: .85rem; color: #444; }
+  .เส้นทาง button { font: inherit; font-size: .85rem; min-height: 44px; background: none; border: none; text-decoration: underline; cursor: pointer; }
+  .กล่องเนื้อ { padding: .5rem .6rem .7rem; overflow-y: auto; }
+  .ตาราง { display: grid; gap: .4rem; }
+  .ตาราง.เล่มกริด { grid-template-columns: 1fr 1fr; }
+  .ตาราง.เลขกริด { grid-template-columns: repeat(4, 1fr); }
+  .ตาราง button {
+    font: inherit; font-size: .95rem; min-height: 48px;
+    background: #fff; border: 1px solid #999; border-radius: 4px; cursor: pointer;
+  }
+  .ตาราง button.กว้าง { grid-column: 1 / -1; font-weight: 700; background: #f2f2f2; }
+
+  .ปุ่มหลัก:focus-visible, .ปุ่มรอง:focus-visible, .เล่ม:focus-visible,
+  .ท้ายหน้า a:focus-visible, .เครื่องมือ button:focus-visible,
+  .ลิงก์รอง:focus-visible, a.ชื่อเว็บ:focus-visible, .กลับ:focus-visible,
+  .เม็ดยา .ปุ่มเลือกเล่ม:focus-visible, .ช่องพิมพ์:focus-visible,
+  .แท็บ:focus-visible, .ปิดกล่อง:focus-visible, .ตาราง button:focus-visible,
+  .เส้นทาง button:focus-visible {
+    outline: 3px solid #000; outline-offset: 2px;
+  }
+
+  .อธิบาย {
+    max-width: 1000px; margin: 0 auto; padding: 1.5rem 1rem 3rem;
+    font-size: .9rem; color: #333;
+  }
+  .อธิบาย h2 { font-size: 1rem; }
+  .อธิบาย table { border-collapse: collapse; width: 100%; }
+  .อธิบาย th, .อธิบาย td { border: 1px solid #aaa; padding: .4rem .5rem; text-align: left; vertical-align: top; }
+  .อธิบาย th { background: #ddd; }
+  .อธิบาย code { background: #ddd; padding: .1rem .3rem; }
+</style>
+</head>
+<body>
+
+<div class="แผง">
+  <h1>โครงร่างหน้าหลัก พระคำ.ชีวิต — ใบงาน #33</h1>
+  <p class="คำเตือน">
+    แถบดำนี้เป็นแผงควบคุมของโครงร่าง ไม่ใช่ส่วนหนึ่งของแบบ ·
+    ขาวดำล้วนตั้งใจ ยังไม่คุยเรื่องสี · แต่ขนาดตัวอักษรกับความสูงปุ่มเป็นของจริง
+  </p>
+  <div class="กลุ่ม" role="group" aria-label="เลือกแบบ">
+    <span>ดูแบบ</span>
+    <button type="button" data-แบบ="ก" aria-pressed="true">ก · หน้าต้อนรับบาง</button>
+    <button type="button" data-แบบ="ข" aria-pressed="false">ข · แบบที่พี่เอมเลือก</button>
+    <button type="button" data-แบบ="ค" aria-pressed="false">ค · หน้าอ่านคือหน้าแรก</button>
+  </div>
+  <div class="กลุ่ม" role="group" aria-label="เลือกขนาดจอ">
+    <span>ดูบน</span>
+    <button type="button" data-ขนาด="มือถือ" aria-pressed="true">มือถือ 320 จุด</button>
+    <button type="button" data-ขนาด="จอคอม" aria-pressed="false">จอคอม</button>
+  </div>
+  <div class="กลุ่ม">
+    <button type="button" id="เริ่มใหม่">เริ่มใหม่</button>
+  </div>
+</div>
+
+<div class="เวที">
+  <div class="จอ" id="จอ" data-ขนาด="มือถือ">
+    <div class="ป้ายจอ"><span id="ป้ายซ้าย">มือถือ 320 จุด</span><span id="ป้ายขวา">แบบ ก</span></div>
+    <div class="ตัวหน้าเว็บ" id="หน้าจอ"></div>
+  </div>
+</div>
+
+<div class="อธิบาย">
+  <h2>อ่านโครงร่างนี้อย่างไร</h2>
+  <p>
+    กดปุ่มในแถบดำเพื่อสลับดูทั้ง 3 แบบ และสลับระหว่างจอมือถือ 320 จุดกับจอคอม
+    ของในหน้ากดได้จริง ลองกดจนถึงตัวบทดู แล้วดูกล่องเหลืองที่นับว่ากดมากี่ครั้งแล้ว
+  </p>
+
+  <h2>ตัวนับบอกอะไร และไม่บอกอะไร</h2>
+  <p>
+    ตัวนับบอกแค่ว่าเร็วแค่ไหน มันไม่ได้บอกว่าคนใช้งงหรือเปล่า
+    เอาไว้เทียบระหว่างแบบเท่านั้น อย่าใช้ตัดสินคนเดียว
+    (Gemini ทักเรื่องนี้ไว้ในการหารือ)
+  </p>
+
+  <h2>ความสูงของหน้าอยู่ที่ไหน</h2>
+  <p>
+    ตัวเลขความสูงของหน้าไม่ได้จดไว้ในหน้านี้ เพราะจดด้วยมือแล้วเคยผิดมาแล้ว
+    เจ้าของตัวเลขคือไฟล์ <code>tools/วัดโครงร่าง.mjs</code>
+    สั่ง <code>node tools/วัดโครงร่าง.mjs</code> แล้วมันวัดให้เองทั้ง 3 แบบ
+  </p>
+
+  <h2>3 แบบต่างกันตรงไหน</h2>
+  <table>
+    <tr><th>แบบ</th><th>หน้าแรกเป็นอะไร</th><th>กดกี่ครั้งกว่าจะถึงตัวบท</th></tr>
+    <tr><td>ก</td><td>หน้าต้อนรับบาง ๆ ปุ่มเดียว</td><td>3 ครั้ง</td></tr>
+    <tr><td>ข</td><td>ประตูที่มีช่องพิมพ์กับปุ่มเลือกเล่มแบบเว็บรุ่นเก่า</td><td>4 ครั้ง เท่าของเดิม หรือพิมพ์แล้วกด 1 ครั้ง</td></tr>
+    <tr><td>ค</td><td>ไม่มีหน้าต้อนรับ เปิดมาเจอตัวบทเลย</td><td>0 ครั้ง ถ้าอ่านเล่มเดิม</td></tr>
+  </table>
+  <p>
+    พี่เอมเลือกแบบ ข เมื่อ 30 ส.ค. 2569
+    เหตุผลเต็ม ๆ อยู่ที่ไฟล์ <code>docs/design/หน้าหลัก.md</code> ในคำขอรวมเดียวกัน
+  </p>
+</div>
+
+<script>
+// ── สถานะของโครงร่าง เป็นของโครงร่างอย่างเดียว ────────────────
+// ไม่ได้บอกว่าเว็บจริงต้องเขียนแบบนี้
+const สถานะ = {
+  แบบ: 'ก', ขนาด: 'มือถือ', ฉาก: 'แรก',
+  พันธสัญญา: null, เล่ม: null, กด: 0,
+  กล่องเปิด: false, ขั้น: 'เล่ม', พธ: 'ใหม่', เล่มที่เลือก: null, บทที่เลือก: null,
+}
+
+// ชื่อเล่มกับจำนวนบท เป็นข้อเท็จจริงของสารบบพระคัมภีร์
+const เล่มเดิม = [['ปฐมกาล',50],['อพยพ',40],['เลวีนิติ',27],['กันดารวิถี',36],['เฉลยธรรมบัญญัติ',34],['โยชูวา',24],['ผู้วินิจฉัย',21],['นางรูธ',4],['1 ซามูเอล',31],['2 ซามูเอล',24],['1 พงศ์กษัตริย์',22],['2 พงศ์กษัตริย์',25],['1 พงศาวดาร',29],['2 พงศาวดาร',36],['เอสรา',10],['เนหะมีย์',13],['เอสเธอร์',10],['โยบ',42],['สดุดี',150],['สุภาษิต',31],['ปัญญาจารย์',12],['เพลงซาโลมอน',8],['อิสยาห์',66],['เยเรมีย์',52],['เพลงคร่ำครวญ',5],['เอเสเคียล',48],['ดาเนียล',12],['โฮเชยา',14],['โยเอล',3],['อาโมส',9],['โอบาดีห์',1],['โยนาห์',4],['มีคาห์',7],['นาฮูม',3],['ฮาบากุก',3],['เศฟันยาห์',3],['ฮักกัย',2],['เศคาริยาห์',14],['มาลาคี',4]]
+const เล่มใหม่ = [['มัทธิว',28],['มาระโก',16],['ลูกา',24],['ยอห์น',21],['กิจการ',28],['โรม',16],['1 โครินธ์',16],['2 โครินธ์',13],['กาลาเทีย',6],['เอเฟซัส',6],['ฟีลิปปี',4],['โคโลสี',4],['1 เธสะโลนิกา',5],['2 เธสะโลนิกา',3],['1 ทิโมธี',6],['2 ทิโมธี',4],['ทิตัส',3],['ฟีเลโมน',1],['ฮีบรู',13],['ยากอบ',5],['1 เปโตร',5],['2 เปโตร',3],['1 ยอห์น',5],['2 ยอห์น',1],['3 ยอห์น',1],['ยูดา',1],['วิวรณ์',22]]
+
+// ข้อความหลอก ไม่ใช่พระคัมภีร์จริง ยาวพอ ๆ ของจริงเพื่อดูว่าล้นไหม
+const ข้อหลอก = [
+  'ข้อความหลอกความยาวประมาณหนึ่งข้อจริง เอาไว้ดูว่าบรรทัดตกลงมาแล้วยังอ่านสบายอยู่ไหมบนจอแคบ',
+  'ข้อความหลอกอีกข้อหนึ่งที่ยาวกว่าเดิมเล็กน้อย เพื่อให้เห็นว่าเมื่อข้อยาวขึ้นแล้วเลขข้อทางซ้ายยังอยู่ตรงที่เดิมหรือเปล่า',
+  'ข้อความหลอกข้อสั้น',
+  'ข้อความหลอกข้อยาวมากที่ตั้งใจให้ยาวกว่าปกติหลายเท่า เพื่อทดสอบว่าเมื่อผู้อ่านปรับตัวอักษรให้ใหญ่ขึ้นแล้วเนื้อจะยังไม่ล้นออกนอกขอบจอ และยังไม่ต้องเลื่อนซ้ายขวาเพื่ออ่านให้จบบรรทัด',
+  'ข้อความหลอกปิดท้ายเพื่อให้หน้ามีความยาวใกล้ของจริง'
+]
+
+const ประโยคบอกหน้าที่ = 'อ่านพระคัมภีร์ไทย เทียบกับภาษาเดิม ฟรี ตรวจสอบที่มาได้ทุกคำ'
+
+function หนี(s) { return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])) }
+
+// ท้ายหน้ามีทุกหน้า เป็นพวงลิงก์ของทั้งเว็บ คือทางเข้าทางที่สอง
+// หน้าที่เปิดอยู่ไม่เป็นลิงก์ และบอกเครื่องอ่านหน้าจอว่านี่คือหน้าปัจจุบัน
+function ท้ายหน้า() {
+  const อยู่ที่ = สถานะ.ฉาก === 'แหล่ง' ? 'แหล่ง' : (สถานะ.ฉาก === 'อ่าน' ? 'อ่าน' : 'แรก')
+  const รายการ = []
+  if (สถานะ.แบบ !== 'ค') รายการ.push(['แรก', 'หน้าแรก'])
+  รายการ.push(['อ่าน', 'อ่านพระคัมภีร์'], ['แหล่ง', 'แหล่งข้อมูล'])
+  const ชิ้น = รายการ.map(([คีย์, ป้าย]) =>
+    คีย์ === อยู่ที่
+      ? `<span class="หน้านี้" aria-current="page">${ป้าย}</span>`
+      : `<a href="#${คีย์}" data-ไป="${คีย์}">${ป้าย}</a>`)
+  return `
+  <footer class="ท้ายหน้า">
+    <nav aria-label="ลิงก์ของทั้งเว็บ">${ชิ้น.join('<span class="คั่น">·</span>')}</nav>
+    <div class="ตราประทับ">คอมมิต abc1234 · สาขา main</div>
+  </footer>`
+}
+
+function กล่องนับ() {
+  if (สถานะ.กด === 0) return ''
+  return `<div class="นับกด">กดมาแล้ว <strong>${สถานะ.กด}</strong> ครั้ง นับจากเปิดเว็บ</div>`
+}
+
+function รายชื่อ(ชุด) {
+  return `<div class="รายชื่อเล่ม">` +
+    ชุด.map(([b]) => `<button type="button" class="เล่ม" data-เล่ม="${หนี(b)}">${หนี(b)}</button>`).join('') +
+    `</div>`
+}
+
+function หน้าอ่าน() {
+  const ชื่อ = สถานะ.เล่ม || 'ยอห์น'
+  const บท = สถานะ.บทที่เลือก || 1
+  // แบบ ค ไม่มีหน้าแรกให้กลับ เพราะหน้าอ่านคือหน้าแรกอยู่แล้ว
+  const กลับ = (สถานะ.แบบ === 'ค') ? '' : '<a href="#แรก" class="กลับ" data-ไป="แรก">← กลับหน้าแรก</a>'
+  return `
+    ${กลับ}
+    ${กล่องนับ()}
+    <div class="เครื่องมือ">
+      <button type="button" data-กด="เลือกเล่ม">เลือกเล่ม</button>
+      <button type="button" class="ยืด" data-กด="อ้างอิง">พิมพ์อ้างอิง</button>
+      <button type="button" data-กด="ภาษาเดิม" aria-pressed="false">ภาษาเดิม</button>
+    </div>
+    <h1>${หนี(ชื่อ)} บทที่ ${บท}</h1>
+    <p class="หลอก">ข้อความข้างล่างเป็นของหลอก ไม่ใช่พระคัมภีร์จริง</p>
+    ${ข้อหลอก.map((t, i) => `<div class="ข้อ"><span class="เลข">${i + 1}</span><span>${หนี(t)}</span></div>`).join('')}
+    ${ท้ายหน้า()}`
+}
+
+function หน้าแหล่ง() {
+  return `
+    <a href="#แรก" class="กลับ" data-ไป="แรก">← กลับหน้าแรก</a>
+    <h1>เว็บนี้เอาพระคัมภีร์มาจากไหน</h1>
+    <p>
+      หน้านี้ <strong>มีอยู่จริงแล้ว</strong> ที่ <code>/sources</code> และผ่านงานตรวจมาแล้ว
+      ใบ #33 ไม่แก้หน้านี้เลยแม้แต่บรรทัดเดียว
+    </p>
+    <p>โครงร่างนี้พามาถึงตรงนี้เพื่อให้เห็นว่า <strong>ทางเข้ามันอยู่ตรงไหน</strong> เท่านั้น</p>
+    ${ท้ายหน้า()}`
+}
+
+// ── หน้าต่างเลือกพระธรรม ยกท่ามาจากเว็บรุ่น 2 ──────────────────
+function กล่องเลือกเล่ม() {
+  if (!สถานะ.กล่องเปิด) return ''
+  let เนื้อ = ''
+  let ทาง = ''
+  if (สถานะ.ขั้น === 'เล่ม') {
+    const ชุด = สถานะ.พธ === 'เดิม' ? เล่มเดิม : เล่มใหม่
+    เนื้อ = `<div class="ตาราง เล่มกริด">` +
+      ชุด.map(([b]) => `<button type="button" data-กล่องเล่ม="${หนี(b)}">${หนี(b)}</button>`).join('') + `</div>`
+  } else if (สถานะ.ขั้น === 'บท') {
+    const ชุด = [...เล่มเดิม, ...เล่มใหม่].find(([b]) => b === สถานะ.เล่มที่เลือก)
+    const จำนวนบท = ชุด ? ชุด[1] : 1
+    ทาง = `<div class="เส้นทาง"><button type="button" data-กล่องกลับ="เล่ม">← พระธรรม</button> / <span aria-current="step">${หนี(สถานะ.เล่มที่เลือก)}</span></div>`
+    let ปุ่ม = ''
+    for (let c = 1; c <= จำนวนบท; c++) ปุ่ม += `<button type="button" data-กล่องบท="${c}">${c}</button>`
+    เนื้อ = `<div class="ตาราง เลขกริด">${ปุ่ม}</div>`
+  } else if (สถานะ.ขั้น === 'ข้อ') {
+    // ขั้นที่ 3 ของเดิม เลือกข้อเริ่ม หรือกดปุ่มกว้างเพื่อเอาทั้งบท
+    // จำนวนข้อในโครงร่างนี้เป็นเลขหลอก ของจริงมาจากไฟล์รายชื่อหนังสือ
+    ทาง = `<div class="เส้นทาง">` +
+      `<button type="button" data-กล่องกลับ="เล่ม">← พระธรรม</button> / ` +
+      `<button type="button" data-กล่องกลับ="บท">${หนี(สถานะ.เล่มที่เลือก)}</button> / ` +
+      `<span aria-current="step">บท ${สถานะ.บทที่เลือก}</span></div>`
+    let ปุ่ม = `<button type="button" class="กว้าง" data-กล่องข้อ="ทั้งบท">ทั้งบท</button>`
+    for (let v = 1; v <= 30; v++) ปุ่ม += `<button type="button" data-กล่องข้อ="${v}">${v}</button>`
+    เนื้อ = `<div class="ตาราง เลขกริด">${ปุ่ม}</div>`
+  }
+  const แท็บ = สถานะ.ขั้น === 'เล่ม' ? `
+    <div class="แท็บแถว" role="tablist" aria-label="พันธสัญญา" id="แท็บแถว">
+      <button type="button" class="แท็บ" role="tab" data-พธ="เดิม" aria-selected="${สถานะ.พธ === 'เดิม'}">พันธสัญญาเดิม</button>
+      <button type="button" class="แท็บ" role="tab" data-พธ="ใหม่" aria-selected="${สถานะ.พธ === 'ใหม่'}">พันธสัญญาใหม่</button>
+    </div>` : ''
+  return `
+    <div class="ฉากหลัง" id="ฉากหลัง">
+      <div class="กล่อง" role="dialog" aria-modal="true" aria-labelledby="หัวกล่อง">
+        <div class="กล่องหัว">
+          <h2 id="หัวกล่อง">เลือกพระธรรม</h2>
+          <button type="button" class="ปิดกล่อง" data-ปิดกล่อง aria-label="ปิด">×</button>
+        </div>
+        ${แท็บ}${ทาง}
+        <div class="กล่องเนื้อ">${เนื้อ}</div>
+      </div>
+    </div>`
+}
+
+function วาด() {
+  let html = ''
+
+  if (สถานะ.ฉาก === 'แหล่ง') {
+    html = หน้าแหล่ง()
+  } else if (สถานะ.ฉาก === 'อ่าน') {
+    html = หน้าอ่าน()
+  } else if (สถานะ.แบบ === 'ก') {
+    if (สถานะ.ฉาก === 'เลือก') {
+      html = `
+        <a href="#แรก" class="กลับ" data-ไป="แรก">← กลับหน้าแรก</a>
+        ${กล่องนับ()}
+        <h1>เลือกพระธรรม</h1>
+        <button type="button" class="ปุ่มรอง" data-พธแถบ="เดิม" aria-expanded="${สถานะ.พันธสัญญา === 'เดิม'}">
+          <span>พันธสัญญาเดิม</span><span>39 เล่ม</span></button>
+        ${สถานะ.พันธสัญญา === 'เดิม' ? รายชื่อ(เล่มเดิม) : ''}
+        <button type="button" class="ปุ่มรอง" data-พธแถบ="ใหม่" aria-expanded="${สถานะ.พันธสัญญา === 'ใหม่'}">
+          <span>พันธสัญญาใหม่</span><span>27 เล่ม</span></button>
+        ${สถานะ.พันธสัญญา === 'ใหม่' ? รายชื่อ(เล่มใหม่) : ''}
+        ${ท้ายหน้า()}`
+    } else {
+      html = `
+        <h1>${หนี(ประโยคบอกหน้าที่)}</h1>
+        <p>
+          เราไม่ได้แปลพระคัมภีร์เอง ทุกคำที่คุณอ่านบนเว็บนี้เป็นงานที่คนอื่นตั้งใจทำไว้
+          แล้วเปิดให้เราหยิบมาต่อกัน คุณตรวจได้เองทุกคำว่ามาจากไหน
+        </p>
+        <a href="#เลือก" class="ปุ่มหลัก" data-ไป="เลือก">เริ่มอ่านพระคัมภีร์</a>
+        <a href="#แหล่ง" class="ลิงก์รอง" data-ไป="แหล่ง">แหล่งข้อมูล</a>
+        ${ท้ายหน้า()}`
+    }
+  } else if (สถานะ.แบบ === 'ข') {
+    // แบบที่พี่เอมเลือก ยกช่องพิมพ์กับปุ่มเลือกเล่มของเว็บรุ่นเก่ามาใช้
+    // ป้ายเหนือช่องเป็นของที่เติมเข้ามา เพราะของเดิมไม่มีป้ายที่มองเห็น
+    // ซึ่งเป็นข้อบกพร่องที่ต้องซ่อม ไม่ใช่การรื้อของที่พี่เอมชอบ
+    html = `
+      <h1>${หนี(ประโยคบอกหน้าที่)}</h1>
+      <p>เราไม่ได้แปลพระคัมภีร์เอง ทุกคำที่คุณอ่านเป็นงานที่คนอื่นตั้งใจทำไว้</p>
+      ${กล่องนับ()}
+      <label class="ป้ายช่อง" for="ช่องอ้างอิง">อยากอ่านตอนไหน เช่น ยอห์น 3:16</label>
+      <div class="เม็ดยา">
+        <button type="button" class="ปุ่มเลือกเล่ม" data-เปิดกล่อง aria-haspopup="dialog" aria-expanded="${สถานะ.กล่องเปิด}">เลือกเล่ม</button>
+        <input class="ช่องพิมพ์" id="ช่องอ้างอิง" type="text" placeholder="ยอห์น 3:16">
+      </div>
+      <a href="#แหล่ง" class="ลิงก์รอง" data-ไป="แหล่ง">แหล่งข้อมูล</a>
+      ${ท้ายหน้า()}`
+  } else {
+    // แบบ ค เปิดมาเจอหน้าอ่านเลย ไม่มีหน้าต้อนรับ
+    html = หน้าอ่าน()
+  }
+
+  const อยู่หน้าแรก = (สถานะ.ฉาก === 'แรก') || (สถานะ.แบบ === 'ค' && สถานะ.ฉาก === 'อ่าน')
+  const ชื่อเว็บ = อยู่หน้าแรก
+    ? `<span class="ชื่อเว็บ">พระคำ.ชีวิต</span>`
+    : `<a class="ชื่อเว็บ" href="#แรก" data-ไป="แรก">พระคำ.ชีวิต</a>`
+
+  // ตอนกล่องเปิด ต้องซ่อนของข้างหลังจากเครื่องอ่านหน้าจอ
+  // ไม่งั้นมันจะแอบอ่านของนอกกล่องที่คนมองไม่เห็นแล้ว
+  const ซ่อน = สถานะ.กล่องเปิด ? ' aria-hidden="true"' : ''
+  document.getElementById('หน้าจอ').innerHTML =
+    `<div${ซ่อน}><header class="หัวหน้า">${ชื่อเว็บ}</header>`
+    + `<main class="หน้า">${html}</main></div>`
+    + กล่องเลือกเล่ม()
+
+  document.getElementById('ป้ายขวา').textContent = 'แบบ ' + สถานะ.แบบ
+  document.getElementById('ป้ายซ้าย').textContent =
+    สถานะ.ขนาด === 'มือถือ' ? 'มือถือ 320 จุด' : 'จอคอม'
+  document.getElementById('จอ').dataset['ขนาด'] = สถานะ.ขนาด
+
+  if (สถานะ.กล่องเปิด) {
+    const แรก = document.querySelector('#ฉากหลัง .ตาราง button, #ฉากหลัง .แท็บ[aria-selected="true"]')
+    if (แรก) แรก.focus()
+  }
+}
+
+function ตั้งแบบ(b) {
+  สถานะ.แบบ = b
+  สถานะ.ฉาก = (b === 'ค') ? 'อ่าน' : 'แรก'
+  สถานะ.พันธสัญญา = null; สถานะ.เล่ม = null; สถานะ.กด = 0
+  สถานะ.กล่องเปิด = false; สถานะ.ขั้น = 'เล่ม'; สถานะ.พธ = 'ใหม่'
+  สถานะ.เล่มที่เลือก = null; สถานะ.บทที่เลือก = null
+  document.querySelectorAll('[data-แบบ]').forEach(el =>
+    el.setAttribute('aria-pressed', String(el.dataset['แบบ'] === b)))
+  วาด()
+}
+
+document.querySelectorAll('[data-แบบ]').forEach(el =>
+  el.addEventListener('click', () => ตั้งแบบ(el.dataset['แบบ'])))
+
+document.querySelectorAll('.แผง [data-ขนาด]').forEach(el =>
+  el.addEventListener('click', () => {
+    สถานะ.ขนาด = el.dataset['ขนาด']
+    document.querySelectorAll('.แผง [data-ขนาด]').forEach(b =>
+      b.setAttribute('aria-pressed', String(b.dataset['ขนาด'] === สถานะ.ขนาด)))
+    วาด()
+  }))
+
+document.getElementById('เริ่มใหม่').addEventListener('click', () => ตั้งแบบ(สถานะ.แบบ))
+
+let ปุ่มที่เปิดกล่อง = null
+
+document.getElementById('หน้าจอ').addEventListener('click', (e) => {
+  const t = e.target.closest('[data-ไป], [data-พธแถบ], [data-เล่ม], [data-กด], [data-เปิดกล่อง], [data-ปิดกล่อง], [data-พธ], [data-กล่องเล่ม], [data-กล่องบท], [data-กล่องข้อ], [data-กล่องกลับ]')
+  if (!t) return
+  e.preventDefault()
+
+  if (t.hasAttribute('data-เปิดกล่อง')) {
+    ปุ่มที่เปิดกล่อง = t
+    สถานะ.กด++; สถานะ.กล่องเปิด = true; สถานะ.ขั้น = 'เล่ม'
+  } else if (t.hasAttribute('data-ปิดกล่อง')) {
+    ปิดกล่อง()
+    return
+  } else if (t.dataset['พธ']) {
+    สถานะ.พธ = t.dataset['พธ']
+  } else if (t.dataset['กล่องเล่ม']) {
+    สถานะ.กด++; สถานะ.เล่มที่เลือก = t.dataset['กล่องเล่ม']; สถานะ.ขั้น = 'บท'
+  } else if (t.dataset['กล่องกลับ']) {
+    สถานะ.ขั้น = t.dataset['กล่องกลับ']
+  } else if (t.dataset['กล่องบท']) {
+    สถานะ.กด++; สถานะ.บทที่เลือก = +t.dataset['กล่องบท']; สถานะ.ขั้น = 'ข้อ'
+  } else if (t.dataset['กล่องข้อ']) {
+    สถานะ.กด++; สถานะ.เล่ม = สถานะ.เล่มที่เลือก
+    สถานะ.กล่องเปิด = false; สถานะ.ฉาก = 'อ่าน'
+  } else if (t.dataset['ไป']) {
+    const ไป = t.dataset['ไป']
+    if (ไป === 'แรก') { สถานะ.กด = 0; สถานะ.พันธสัญญา = null }
+    else if (ไป !== 'แหล่ง') { สถานะ.กด++ }
+    สถานะ.ฉาก = ไป === 'แหล่ง' ? 'แหล่ง'
+      : (ไป === 'แรก' ? (สถานะ.แบบ === 'ค' ? 'อ่าน' : 'แรก') : ไป)
+  } else if (t.dataset['พธแถบ']) {
+    สถานะ.กด++
+    สถานะ.พันธสัญญา = (สถานะ.พันธสัญญา === t.dataset['พธแถบ']) ? null : t.dataset['พธแถบ']
+  } else if (t.dataset['เล่ม']) {
+    สถานะ.กด++; สถานะ.เล่ม = t.dataset['เล่ม']; สถานะ.ฉาก = 'อ่าน'
+  } else if (t.dataset['กด']) {
+    // ปุ่มบนแถบเครื่องมือของหน้าอ่าน โครงร่างนี้แค่สลับสถานะให้เห็น ยังไม่ทำงานจริง
+    const on = t.getAttribute('aria-pressed')
+    if (on !== null) t.setAttribute('aria-pressed', on === 'true' ? 'false' : 'true')
+    return
+  }
+  วาด()
+})
+
+function ปิดกล่อง() {
+  สถานะ.กล่องเปิด = false
+  วาด()
+  if (ปุ่มที่เปิดกล่อง) {
+    const กลับไปที่ = document.querySelector('[data-เปิดกล่อง]')
+    if (กลับไปที่) กลับไปที่.focus()
+  }
+}
+
+// แป้นพิมพ์ในกล่อง Escape ปิด · Tab วนอยู่ในกล่อง · ลูกศรเดินระหว่างแท็บ
+document.addEventListener('keydown', (e) => {
+  if (!สถานะ.กล่องเปิด) return
+  if (e.key === 'Escape') { e.preventDefault(); ปิดกล่อง(); return }
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    const แท็บ = [...document.querySelectorAll('#ฉากหลัง .แท็บ')]
+    const i = แท็บ.indexOf(document.activeElement)
+    if (i >= 0) {
+      e.preventDefault()
+      const ถัดไป = แท็บ[(i + (e.key === 'ArrowRight' ? 1 : แท็บ.length - 1)) % แท็บ.length]
+      สถานะ.พธ = ถัดไป.dataset['พธ']
+      วาด()
+      const ใหม่ = document.querySelector(`#ฉากหลัง .แท็บ[data-พธ="${สถานะ.พธ}"]`)
+      if (ใหม่) ใหม่.focus()
+    }
+    return
+  }
+  if (e.key !== 'Tab') return
+  const ได้โฟกัส = [...document.querySelectorAll('#ฉากหลัง button, #ฉากหลัง input')]
+  if (!ได้โฟกัส.length) return
+  const แรก = ได้โฟกัส[0], สุดท้าย = ได้โฟกัส[ได้โฟกัส.length - 1]
+  if (e.shiftKey && document.activeElement === แรก) { e.preventDefault(); สุดท้าย.focus() }
+  else if (!e.shiftKey && document.activeElement === สุดท้าย) { e.preventDefault(); แรก.focus() }
+})
+
+วาด()
+</script>
+</body>
+</html>

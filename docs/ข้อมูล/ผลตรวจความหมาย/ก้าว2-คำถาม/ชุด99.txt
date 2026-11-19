@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 274
+ที่อยู่: SNG 5:3
+ข้อความต้นฉบับ: פָּשַׁ֨טְתִּי֙ אֶת־כֻּתָּנְתִּ֔י אֵיכָ֖כָה אֶלְבָּשֶׁ֑נָּה רָחַ֥צְתִּי אֶת־רַגְלַ֖י אֵיכָ֥כָה אֲטַנְּפֵֽם׃
+คำที่ถาม: אֵיכָ֖כָה   (รูปตั้งต้น אֵיכָכָה · ชนิดคำ particle)
+ตัวเลือก:
+  A) referent to the way in which an event is performed; · normally with the intention of finding out how, but often used in rhetorical questions in order to express one's conviction that that event in question cannot be performed at all (under the given circumstances) [คำแปลสั้น: how?]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 275
+ที่อยู่: SNG 5:14
+ข้อความต้นฉบับ: יָדָיו֙ גְּלִילֵ֣י זָהָ֔ב מְמֻלָּאִ֖ים בַּתַּרְשִׁ֑ישׁ מֵעָיו֙ עֶ֣שֶׁת שֵׁ֔ן מְעֻלֶּ֖פֶת סַפִּירִֽים׃
+คำที่ถาม: ו֙   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) literally the bowels or inner parts of a human body; sometimes used collectively to refer to all the internal organs and even the whole being, and sometimes used to refer to a specific part of the human body, for example, the stomach, the heart, the womb, the soul, the breast, the genitals; · associated with emotions such as anguish but also compassion [คำแปลสั้น: bowels, interior, belly]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 276
+ที่อยู่: AMO 9:13
+ข้อความต้นฉบับ: הִנֵּ֨ה יָמִ֤ים בָּאִים֙ נְאֻם־יְהוָ֔ה וְנִגַּ֤שׁ חוֹרֵשׁ֙ בַּקֹּצֵ֔ר וְדֹרֵ֥ךְ עֲנָבִ֖ים בְּמֹשֵׁ֣ךְ הַזָּ֑רַע וְהִטִּ֤יפוּ הֶֽהָרִים֙ עָסִ֔יס וְכָל־הַגְּבָע֖וֹת תִּתְמוֹגַֽגְנָה׃
+คำที่ถาม: עָסִ֔יס   (รูปตั้งต้น עָסִיס · ชนิดคำ noun)
+ตัวเลือก:
+  A) dark red alcoholic liquid; · made out of grapes through the process of fermentation and probably still relatively fresh; · used as beverage; · associated with agriculture, joy, and well-being, but also with drunkenness; also used in metaphors for aggression and sex [คำแปลสั้น: must, fresh wine]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 277
+ที่อยู่: EXO 36:2
+ข้อความต้นฉบับ: וַיִּקְרָ֣א מֹשֶׁ֗ה אֶל־בְּצַלְאֵ֘לוְאֶל־אָֽהֳלִיאָב֒ וְאֶל֙ כָּל־אִ֣ישׁ חֲכַם־לֵ֔ב אֲשֶׁ֨ר נָתַ֧ן יְהוָ֛ה חָכְמָ֖ה בְּלִבּ֑וֹ כֹּ֚ל אֲשֶׁ֣ר נְשָׂא֣וֹ לִבּ֔וֹ לְקָרְבָ֥ה אֶל־הַמְּלָאכָ֖ה לַעֲשֹׂ֥ת אֹתָֽהּ׃
+คำที่ถาม: קָרְבָ֥ה   (รูปตั้งต้น קָרַב · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to approach; hence: action by which humans have sexual intercourse with others [คำแปลสั้น: to approach, to have intercourse]
+  B) literally: to draw near; hence: state in which a person is about to perform an activity [คำแปลสั้น: to be about (to do something)]
+  C) process by which a moment in time is about to happen [คำแปลสั้น: to come near, to approach]
+  D) action by which humans entrust themselves to a deity [คำแปลสั้น: to draw near]
+  E) action by which humans or animals move to a location relatively close to the location in focus [คำแปลสั้น: to approach, to come near, to come forward]
+  F) literally: to stay close (to oneself) [คำแปลสั้น: to keep (one's) distance]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 278
+ที่อยู่: EXO 35:35
+ข้อความต้นฉบับ: מִלֵּ֨א אֹתָ֜ם חָכְמַת־לֵ֗ב לַעֲשׂוֹת֮ כָּל־מְלֶ֣אכֶת חָרָ֣שׁ׀וְחֹשֵׁב֒ וְרֹקֵ֞ם בַּתְּכֵ֣לֶת וּבָֽאַרְגָּמָ֗ן בְּתוֹלַ֧עַת הַשָּׁנִ֛י וּבַשֵּׁ֖שׁ וְאֹרֵ֑ג עֹשֵׂי֙ כָּל־מְלָאכָ֔ה וְחֹשְׁבֵ֖י מַחֲשָׁבֹֽת׃
+คำที่ถาม: תוֹלַ֧עַת   (รูปตั้งต้น תֹּולַעַת · ชนิดคำ noun)
+ตัวเลือก:
+  A) a general term for worms of all kinds; · associated with uncleanness, decay, and insignificance [คำแปลสั้น: worm, maggot]
+  B) crimson yarn, made with a dye derived from a small worm; · associated with the process of atonement for sin and uncleanness [คำแปลสั้น: crimson yarn]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

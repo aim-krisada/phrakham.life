@@ -1,0 +1,46 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 145
+ที่อยู่: 1KI 1:34
+ข้อความต้นฉบับ: וּמָשַׁ֣ח אֹת֣וֹ שָׁ֠ם צָד֨וֹק הַכֹּהֵ֜ן וְנָתָ֧ן הַנָּבִ֛יא לְמֶ֖לֶךְ עַל־יִשְׂרָאֵ֑ל וּתְקַעְתֶּם֙ בַּשּׁוֹפָ֔ר וַאֲמַרְתֶּ֕ם יְחִ֖י הַמֶּ֥לֶךְ שְׁלֹמֹֽה׃
+คำที่ถาม: שָׁ֠ם   (รูปตั้งต้น שָׁם · ชนิดคำ adverb)
+ตัวเลือก:
+  A) literally: there (but without a specifc location to refer to); hence: marker drawing the reader's attention to an event [คำแปลสั้น: behold!]
+  B) literally: there ... there ...; hence: a reference to a variety of locations [คำแปลสั้น: here ... there ...]
+  C) literally: there (but without a specific location to refer to); hence: marker identifying a certain event as real [คำแปลสั้น: there is]
+  D) a reference to a location specified in the immediate context [คำแปลสั้น: there]
+  E) literally: there; hence: a reference to a point of time specified in the immediate context [คำแปลสั้น: then, at that time]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 146
+ที่อยู่: 1KI 17:17
+ข้อความต้นฉบับ: וַיְהִ֗י אַחַר֙ הַדְּבָרִ֣ים הָאֵ֔לֶּה חָלָ֕ה בֶּן־הָאִשָּׁ֖ה בַּעֲלַ֣ת הַבָּ֑יִת וַיְהִ֤י חָלְיוֹ֙ חָזָ֣ק מְאֹ֔ד עַ֛ד אֲשֶׁ֥ר לֹא־נֽוֹתְרָה־בּ֖וֹ נְשָׁמָֽה׃
+คำที่ถาม: בָּ֑יִת   (รูปตั้งต้น בַּיִת · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: to dwell in houses of clay; hence: state of being a mortal human being, living in a body that is bound to return to dust one day [คำแปลสั้น: to dwell in houses of clay > to be a mortal human being]
+  B) literally: house; hence: a group of people associated with a house, such as the family living there, or the descendants of the head of the household [คำแปลสั้น: household, family, descendants, dynasty]
+  C) construction surrounded by walls and covered with a roof; · normally made of stones, wood, or clay; · to be used as living quarters, for storage, as a prison, as a sanctuary, etc.; sometimes used to denote a smaller part of a large construction [คำแปลสั้น: house]
+  D) literally: house (of an object); hence: an object that serves as a holder or container of another object, · as if it were its house [คำแปลสั้น: holder, container]
+  E) literally: house (of an object); hence: a place that is associated with a certain class people that live there, or objects that are found there [คำแปลสั้น: place]
+  F) relation linking a proposition to a location: the part of an object that is visible from the perspective of someone located within that object [คำแปลสั้น: inside]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 147
+ที่อยู่: JOS 4:1
+ข้อความต้นฉบับ: וַיְהִי֙ כַּאֲשֶׁר־תַּ֣מּוּ כָל־הַגּ֔וֹי לַעֲב֖וֹר אֶת־הַיַּרְדֵּ֑ןפוַיֹּ֣אמֶר יְהוָ֔ה אֶל־יְהוֹשֻׁ֖עַ לֵאמֹֽר׃
+คำที่ถาม: גּ֔וֹי   (รูปตั้งต้น גּוֹי · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: a nation; hence: a group of people pursuing a common goal [คำแปลสั้น: people, band]
+  B) a large body of people united by common descent, religion, or language, inhabiting a particular state or territory, led by one common leader; often referring to the non-Israelite nations, especially when used in plural [คำแปลสั้น: nation]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

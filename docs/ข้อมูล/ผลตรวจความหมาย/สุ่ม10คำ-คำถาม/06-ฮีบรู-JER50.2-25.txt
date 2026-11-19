@@ -1,0 +1,25 @@
+You are checking a Bible-study data set, not writing devotional material.
+
+Reference: JER 50.2
+Language: Biblical Hebrew
+Whole word as printed in the text: גִּלּוּלֶֽיהָ
+Our source data cuts that word into 2 piece(s), in this order:
+  piece 1: גִּלּוּלֶֽי   gloss: idols
+  piece 2: הָ   gloss: her
+We are asking about piece number 2: הָ
+Interlinear gloss of that piece in our source data: her
+Lemma our source data gives for that piece: הוּא
+
+Our data attaches to that piece one dictionary entry:
+  dictionary headword: גִּלּוּל
+  glosses: image; idol
+  definition: = a physical likeness or representation of a person, animal, or thing; ◄ usually made from stone or wood overlaid with gold or silver; ► functioning as an object of non-sanctioned worship
+
+Question: is that attached meaning really the meaning of that piece of the word,
+and of the whole word, at this reference?
+
+Answer in this shape:
+1. First line: YES or NO or PARTLY.
+2. Then at most four sentences saying what the piece actually means, what the whole
+   word means here, and whether the attached dictionary entry is the right entry.
+Do not quote more than the single word above from the Bible text.

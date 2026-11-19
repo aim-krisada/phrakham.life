@@ -1,0 +1,52 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 207
+ที่อยู่: ISA 1:3
+ข้อความต้นฉบับ: יָדַ֥ע שׁוֹר֙ קֹנֵ֔הוּ וַחֲמ֖וֹר אֵב֣וּס בְּעָלָ֑יו יִשְׂרָאֵל֙ לֹ֣א יָדַ֔ע עַמִּ֖י לֹ֥א הִתְבּוֹנָֽן׃
+คำที่ถาม: אֵב֣וּס   (รูปตั้งต้น אֵבוּס · ชนิดคำ noun)
+ตัวเลือก:
+  A) exact meaning unsure; possibly: long container, · made of wood or stone; · used for putting food for one's domestic animals [คำแปลสั้น: crib, manger, feed trough]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 208
+ที่อยู่: JOB 30:13
+ข้อความต้นฉบับ: נָתְס֗וּ נְֽתִיבָ֫תִ֥י לְהַוָּתִ֥י יֹעִ֑ילוּ לֹ֖א עֹזֵ֣ר לָֽמוֹ׃
+คำที่ถาม: נְֽתִיבָ֫תִ֥   (รูปตั้งต้น נְתִיבָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: path; hence: pattern of behavior, with a primary focus on moral and ethical behavior, · understood as a journey through life [คำแปลสั้น: way > conduct]
+  B) poetic term; a open space connecting different places, possibly slightly more narrow than a road (see 02401801500032), · used for travelling and transportation; · often extended to denote our life as a journey from birth to death, and the totality of our activities during our lives [คำแปลสั้น: path]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 209
+ที่อยู่: ISA 57:12
+ข้อความต้นฉบับ: אֲנִ֥י אַגִּ֖יד צִדְקָתֵ֑ךְ וְאֶֽת־מַעֲשַׂ֖יִךְ וְלֹ֥א יוֹעִילֽוּךְ׃
+คำที่ถาม: אֶֽת   (รูปตั้งต้น אֵת · ชนิดคำ particle)
+ตัวเลือก:
+  A) particle linking two entities and denoting that X and Y function as one single entity in the proposition in focus [คำแปลสั้น: with, together with]
+  B) exact meaning unknown; possibly: wooden handle with an iron head that has both an adze and a chisel as its ends; · used for breaking up moderately hard soil to make it ready for cultivation [คำแปลสั้น: mattock]
+  C) marker identifying the entity that is directly targeted by the event in focus, and which usually is already part of the cognitive context; described in syntactic terms as the direct object marker; untranslatable in English unless accompanied by a suffix [คำแปลสั้น: -]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 210
+ที่อยู่: NUM 15:20
+ข้อความต้นฉบับ: רֵאשִׁית֙ עֲרִסֹ֣תֵכֶ֔ם חַלָּ֖ה תָּרִ֣ימוּ תְרוּמָ֑ה כִּתְרוּמַ֣ת גֹּ֔רֶן כֵּ֖ן תָּרִ֥ימוּ אֹתָֽהּ׃
+คำที่ถาม: תָּרִ֣ימוּ   (รูปตั้งต้น רוּם · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to lift up; hence: causative process by which humans are forced to stop engaging in an activity [คำแปลสั้น: to take away, to cease]
+  B) literally: lifted up voice; hence: action by which humans speak more loudly than usual [คำแปลสั้น: loudly]
+  C) causative action by which humans or animals construct something in a place high above the earth [คำแปลสั้น: to cause to be high]
+  D) literally: to lift up; hence: causative action by which humans devote certain things to a deity [คำแปลสั้น: to present]
+  E) literally: (one's) eyes are high; hence: state in which humans consider themselves greater than justified which becomes visible by the way they look around them [คำแปลสั้น: proud eyes]
+  F) literally: to raise (one's hand or foot); hence: to do anything, even if it were as insignificant as raising one's hand or foot [คำแปลสั้น: to lift one's foot > to do anything at all]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

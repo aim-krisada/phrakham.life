@@ -1,0 +1,59 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 82
+ที่อยู่: EXO 13:21
+ข้อความต้นฉบับ: וַֽיהוָ֡ה הֹלֵךְ֩ לִפְנֵיהֶ֨ם יוֹמָ֜ם בְּעַמּ֤וּד עָנָן֙ לַנְחֹתָ֣ם הַדֶּ֔רֶךְ וְלַ֛יְלָה בְּעַמּ֥וּד אֵ֖שׁ לְהָאִ֣יר לָהֶ֑ם לָלֶ֖כֶת יוֹמָ֥ם וָלָֽיְלָה׃
+คำที่ถาม: לָֽיְלָה   (รูปตั้งต้น לַיְלָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) the time of day that is characterized by darkness; · associated with sleep, fear, evil, and hardship [คำแปลสั้น: night]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 83
+ที่อยู่: JOL 1:12
+ข้อความต้นฉบับ: הַגֶּ֣פֶן הוֹבִ֔ישָׁה וְהַתְּאֵנָ֖ה אֻמְלָ֑לָה רִמּ֞וֹן גַּם־תָּמָ֣ר וְתַפּ֗וּחַ כָּל־עֲצֵ֤י הַשָּׂדֶה֙ יָבֵ֔שׁוּ כִּֽי־הֹבִ֥ישׁ שָׂשׂ֖וֹן מִן־בְּנֵ֥י אָדָֽם׃ס
+คำที่ถาม: הֹבִ֥ישׁ   (รูปตั้งต้น יָבֵשׁ · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which someone takes much more time than expected to do something; · possibly with an implicit connotation of bringing some sort of disappointment to those expecting [คำแปลสั้น: to delay, to be delayed]
+  B) state in which someone has forfeited the respect of the community, due to a situation that is not in accordance to someone's status [คำแปลสั้น: to be ashamed]
+  C) state in which someone has forfeited the respect of the community, due to a situation that is not in accordance to someone's status [คำแปลสั้น: to be ashamed, to come to shame, to be put to shame, to be disappointed]
+  D) state of being without water or moisture; · possibly with an implicit connotation of shame [คำแปลสั้น: to dry up]
+  E) causative action by which someone causes someone else to forfeit the respect of the community, by provoking a situation that is not in accordance to that person's status [คำแปลสั้น: to put to shame, to bring shame]
+  F) probably a pun on יבשׁ "to dry up": state in which an event does not happen as expected · as if it withers before coming to fruition and those who are waiting for it are disappointed [คำแปลสั้น: to fail, to come to naught]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 84
+ที่อยู่: ISA 60:1
+ข้อความต้นฉบับ: ק֥וּמִי א֖וֹרִי כִּ֣י בָ֣א אוֹרֵ֑ךְ וּכְב֥וֹד יְהוָ֖ה עָלַ֥יִךְ זָרָֽח׃
+คำที่ถาม: יְהוָ֖ה   (รูปตั้งต้น יהוה · ชนิดคำ noun)
+ตัวเลือก:
+  A) deity; · God of Israel who revealed himself to Moses [คำแปลสั้น: YHWH]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 85
+ที่อยู่: EXO 30:14
+ข้อความต้นฉบับ: כֹּ֗ל הָעֹבֵר֙ עַל־הַפְּקֻדִ֔ים מִבֶּ֛ן עֶשְׂרִ֥ים שָׁנָ֖ה וָמָ֑עְלָה יִתֵּ֖ן תְּרוּמַ֥ת יְהוָֽה׃
+คำที่ถาม: תְּרוּמַ֥ת   (รูปตั้งต้น תְּרוּמָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) causative action by which humans give other humans an object of some value, · with the purpose of influencing or persuading them [คำแปลสั้น: gift, bribe]
+  B) a generic term for an offering made to a deity [คำแปลสั้น: gift, offering, contribution]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 86
+ที่อยู่: 2CH 28:4
+ข้อความต้นฉบับ: וַיְזַבֵּ֧חַ וַיְקַטֵּ֛ר בַּבָּמ֖וֹת וְעַל־הַגְּבָע֑וֹת וְתַ֖חַת כָּל־עֵ֥ץ רַעֲנָֽן׃
+คำที่ถาม: יְקַטֵּ֛ר   (รูปตั้งต้น קָטַר · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which humans cause smoke to have a strong scent · by burning spices along with the object that is being burned; · regarded as pleasing to the God or the gods [คำแปลสั้น: (people moving like a column of) perfumed (smoke)]
+  B) causative action by which humans set alight and cause smoke to rise from the sacrificial fat parts of an animal, of grain and other offerings, including incense · as an offering to a deity [คำแปลสั้น: to set alight, to burn]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

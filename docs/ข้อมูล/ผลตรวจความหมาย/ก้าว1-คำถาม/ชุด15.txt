@@ -1,0 +1,25 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 1 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 25
+ที่อยู่: PRO 28:14
+ข้อความต้นฉบับ: אַשְׁרֵ֣י אָ֭דָם מְפַחֵ֣ד תָּמִ֑יד וּמַקְשֶׁ֥ה לִ֝בּ֗וֹ יִפּ֥וֹל בְּרָעָֽה׃
+คำที่ถาม: מַקְשֶׁ֥ה   (รูปตั้งต้น קָשָׁה · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which someone observes something carefully, with the intention of seeing through the outward appearance of things and grasping their essence, and so gain knowledge and understanding [คำแปลสั้น: to look closely, to take note, to pay attention, to consider, to understand, to draw understanding]
+  B) literally: to find (for someone); hence: state in which people or objects are available in sufficient quantity [คำแปลสั้น: to suffice]
+  C) literally: to cause to stand; hence: causative action by which humans assign roles and responsibilities to other humans [คำแปลสั้น: to set, to install]
+  D) literally: to pursue; hence: action by which humans do their utmost to achieve a certain condition or type of behavior [คำแปลสั้น: to pursue (a type of behavior)]
+  E) literally: to fall; hence: process by which an individual or nation loses power, prosperity or status [คำแปลสั้น: to fall]
+  F) to cause an object to have a relatively even and regular surface, free from perceptible projections or lumps or indentations [คำแปลสั้น: to make smooth]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

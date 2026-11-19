@@ -1,0 +1,163 @@
+ที่อยู่คำ	รหัสชิ้นส่วน	ลำดับในข้อที่ UBS ใช้	ตัวอักษรฮีบรู	รูปตั้งต้นของ MACULA	ชนิดคำ	บทบาทของชิ้นส่วน	คำแปลอังกฤษของ MACULA	ต่อ UBS ติดไหม	รูปตั้งต้นของ UBS	ชั้นความหมายที่ UBS ชี้	คำแปลอังกฤษของชั้นนั้น	คำนิยามของชั้นนั้น	ชั้นอื่นที่ชี้มาที่คำเดียวกัน	ถ้าไม่ติด เพราะอะไร
+PSA 32:1!1	o190320010011	1	לְ	לְ	prep	preposition	of	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:1!1	o190320010012	2	דָוִ֗ד	דָּוִד	noun	noun	David	ติด	דָּוִד	001591001001000	David	= man; ◄ son of {L:Jesse<SDBH:יִשַׁי>}; ► king of {L:Israel<SDBH:יִשְׂרָאֵל>}		
+PSA 32:1!2	o190320010021	3	מַ֫שְׂכִּ֥יל	מַשְׂכִּיל	noun	noun	a.poem	ติด	מַשְׂכִּיל	004499001001000	maskil	= the meaning of this word is uncertain and can only be deduced from its etymology; possible interpretations include: a song that shows understanding, by which the understanding either refers to the structure or to the contents of this song; or: a song that gives understanding; or: a meditation		
+PSA 32:1!3	o190320010031	4	אַשְׁרֵ֥י	אֶשֶׁר	ij	noun	how.blessed!	ติด	אַשְׁרֵי	000778001001000	happiness · blessedness	= state of being considered fortunate and blessed by God; ≈ accompanied by an attitude of admiration		
+PSA 32:1!4	o190320010041	5	נְֽשׂוּי	נָשָׂא	verb	verb	[is.one.who.is].forgiven	ติด	נשׂא	004931001012000	to forgive · to pardon	literally: to beadr; hence: = action by which humans or deities let go of any anger or resentment with regard to the wrongdoing or sin of (other) humans		
+PSA 32:1!5	o190320010051	6	פֶּ֗שַׁע	פֶּשַׁע	noun	noun	of.transgression	ติด	פֶּשַׁע	006061001001000	rebellion · offense · crime · transgression	= action by which humans or groups defy an authority or a standard of behavior; by extension, can also refer to the punishment or guilt incurred from a trangression		
+PSA 32:1!6	o190320010061	7	כְּס֣וּי	כָּסָה	verb	verb	[is.one.who.is].covered	ติด	כסה	003370001012000	to cover > to forgive	literally: to cover; hence: = action by which humans or deities no longer hold (other) humans responsible for certain actions		
+PSA 32:1!7	o190320010071	8	חֲטָאָֽה	חֲטָאָה	noun	noun	of.sin	ติด	חֲטָאָה	002218001001000	guilt	= state in which a human being is responsible for a wrongful act against God or someone else, whether committed on purpose or not, ► which may require atonement, restitution, and/or retribution		
+PSA 32:2!1	o190320020011	1	אַ֥שְֽׁרֵי	אֶשֶׁר	ij	noun	how.blessed!	ติด	אַשְׁרֵי	000778001001000	happiness · blessedness	= state of being considered fortunate and blessed by God; ≈ accompanied by an attitude of admiration		
+PSA 32:2!2	o190320020021	2	אָדָ֗ם	אָדָם	noun	noun	[is].a.person	ติด	אָדָם	000124001001000	human · humankind · human being(s)	= human being as an individual or as a class of living creatures; sometimes explicitly subdivided between {L:male<SDBH:זָכָר>} and {L:female<SDBH:נְקֵבָה>}; ≈ associated with mortality		
+PSA 32:2!3	o190320020031	3	לֹ֤א	לֹא	adv	particle	[whom].not	ติด	לֹא	003491001001000	not · no	= a marker negating a proposition		
+PSA 32:2!4	o190320020041	4	יַחְשֹׁ֬ב	חָשַׁב	verb	verb	he.reckons	ติด	חשׁב	002580001009000	to consider someone guilty of something · to credit someone for something	= state in which humans or deities hold the opinion that an event or situation is to be considered a particular person's responsibility		
+PSA 32:2!5	o190320020051	5	יְהוָ֣ה	יהוה	noun	noun	Yahweh	ติด	יהוה	002827001001000	YHWH	= deity; ► God of Israel who revealed himself to Moses		
+PSA 32:2!6	o190320020061	6	ל֣	לְ	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:2!6	o190320020062		וֹ	הוּא	pron	suffix	him	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:2!7	o190320020071	7	עָוֺ֑ן	עָוֺן	noun	noun	iniquity	ติด	עָוֹן	005307001001000	iniquity	= a deed of deliberate wrongdoing resulting in a state of guilt which requires punishment		
+PSA 32:2!8	o190320020081	8	וְ	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:2!8	o190320020082	9	אֵ֖ין	אַיִן	adv	particle	there.[is].not	ไม่ติด						ง เล่มมีคำนี้ แต่ไม่ได้อ้างถึงข้อนี้
+PSA 32:2!9	o190320020091	10	בְּ	בְּ	prep	preposition	in	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:2!9	o190320020092	11	רוּח֣	רוּחַ	noun	noun	spirit	ติด	רוּחַ	006724001003000	(human) spirit · mind	= inner person of a human or celestial being, associated with emotions, such as joy, grief, worry, courage, anger, willingness, jealousy, etc., but also with inner qualities such as wisdom		
+PSA 32:2!9	o190320020093		וֹ	הוּא	pron	suffix	his	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:2!10	o190320020101	12	רְמִיָּה	רְמִיָּה	noun	noun	deceit	ติด	רְמִיָּה	006830002001000	falsehood · deceit · treachery	= action by which humans say or do things that are false in order to deceive or mislead others		
+PSA 32:3!1	o190320030011	1	כִּֽי	כִּי	cj	conjunction	(dm)	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:3!2	o190320030021	2	הֶ֭חֱרַשְׁתִּי	חָרֵשׁ	verb	verb	I.kept.silent	ติด	חרשׁ	002568002002000	to be silent · to keep silent	= action by which humans or deities purposely refrain from responding, either with words or with actions		
+PSA 32:3!3	o190320030031	3	בָּל֣וּ	בָּלָה	verb	verb	they.became.worn.out	ติด	בלה	001010001001000	to wear out · to become worn out · to waste away	= process by which objects lose their quality and strength due to continued use; ≈ used figuratively to denote the loss of a person's vitality		
+PSA 32:3!4	o190320030041	4	עֲצָמָ֑	עֶצֶם	noun	noun	bones	ติด	עֶצֶם	005617001002000	bones > body	literally: bones; hence: = the physical body of a human being		
+PSA 32:3!4	o190320030042		י	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:3!5	o190320030051	5	בְּ֝	בְּ	prep	preposition	in	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:3!5	o190320030052	6	שַׁאֲגָתִ֗	שְׁאָגָה	noun	noun	my.cry	ติด	שְׁאָגָה	007129001001000	roar · groaning	= action by which animals, humans, or deities produce a full, deep, prolonged sound as made by a lion		
+PSA 32:3!5	o190320030053		י	הוּא	pron	suffix	of.distress	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:3!6	o190320030061	7	כָּל	כֹּל	noun	noun	all	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:3!7	o190320030071	8	הַ	הַ	art	particle	the	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:3!7	o190320030072	9	יּֽוֹם	יוֹם	noun	noun	day	ติด	יֹום	002858001010000	always · all the time · continually	literally: all the day; hence: = process by which an event or pattern of events takes place for an extended time, without interruption		
+PSA 32:4!1	o190320040011	1	כִּ֤י	כִּי	cj	conjunction	(dm)	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:4!2	o190320040021	2	יוֹמָ֣ם	יוֹמָם	adv	adverb	by.day	ติด	יֹומָם	002859001001000	by day	= during the daytime		
+PSA 32:4!3	o190320040031	3	וָ	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:4!3	o190320040032	4	לַיְלָה֮	לַיְלָה	noun	noun	night	ติด	לַיְלָה	003585001001000	night	= the time of day that is characterized by darkness; ≈ associated with sleep, fear, evil, and hardship		
+PSA 32:4!4	o190320040041	5	תִּכְבַּ֥ד	כָּבֵד	verb	verb	it.was.heavy	ติด	כבד	003224001003000	to chastise	literally: (someone's) hand is heavy (against someone else); hence: = action by which a deity is chastising humans		
+PSA 32:4!5	o190320040051	6	עָלַ֗	עַל	prep	preposition	on	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:4!5	o190320040052		י	הוּא	pron	suffix	me	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:4!6	o190320040061	7	יָ֫דֶ֥	יָד	noun	noun	hand	ติด	יָד	002791001034000	hand · impactful involvement	literally: hand; hence: = action by which humans or deities engage in an act of violence against (other) humans		
+PSA 32:4!6	o190320040062		ךָ	הוּא	pron	suffix	your	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:4!7	o190320040071	8	נֶהְפַּ֥ךְ	הָפַךְ	verb	verb	it.was.changed	ติด	הפך	001859001007000	to change	= process by which events take on a different nature		
+PSA 32:4!8	o190320040081	9	לְשַׁדִּ֑	לָשָׁד	noun	noun	juice	ติด	לָשָׁד	003627002001000	strength · vigor	= state in which humans have physical strength		
+PSA 32:4!8	o190320040082		י	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:4!9	o190320040091	10	בְּ	בְּ	prep	preposition	by.[the]	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:4!9	o190320040092	11	חַרְבֹ֖נֵי	חֵרָבוֹן	noun	noun	dry.heat(s)	ติด	חֲרָבֹון	002514001001000	drought	= extended period of dry weather, often with high temperatures, ► which may result in a shortage of water		
+PSA 32:4!10	o190320040101	12	קַ֣יִץ	קַיִץ	noun	noun	of.summer	ติด	קַיִץ	006465001001000	summer	= hot season of the year, opposite of {L:חֹרֶף<SDBH:חֹרֶף>}; ► time when most crops are harvested and preparations are made for the cold season; ≈ sometimes associated with excessive heat and drought, and also with hard work		
+PSA 32:4!11	o190320040111	13	סֶֽלָה	סֶלָה	ij	particle	Selah	ติด	סֶלָה	005089001001000	sela	meaning unclear, possibly: = a musical term, the exact significance of which is unknown		
+PSA 32:5!1	o190320050011	1	חַטָּאתִ֨	חַטָּאת	noun	noun	sin	ติด	חַטָּאת	002221001001000	sin	= action by which a human being commits a wrongful act against God or someone else, whether on purpose or not, ► which may require atonement, restitution, and/or retribution		
+PSA 32:5!1	o190320050012		י	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:5!2	o190320050021	2	אוֹדִ֪יעֲ	יָדַע	verb	verb	I	ติด	ידע	002810001003000	to make known · to show · to inform · to tell · to teach	= causative process by which humans or deities cause (other) humans to acquire information about (other) humans, deities, or certain facts, which is stored in the mind		
+PSA 32:5!2	o190320050022		ךָ֡	הוּא	pron	suffix	made.known.to.you	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:5!3	o190320050031	3	וַ	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:5!3	o190320050032	4	עֲוֺ֘נִ֤	עָוֺן	noun	noun	iniquity	ติด	עָוֹן	005307001001000	iniquity	= a deed of deliberate wrongdoing resulting in a state of guilt which requires punishment		
+PSA 32:5!3	o190320050033		י	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:5!4	o190320050041	5	לֹֽא	לֹא	adv	particle	not	ติด	לֹא	003491001001000	not · no	= a marker negating a proposition		
+PSA 32:5!5	o190320050051	6	כִסִּ֗יתִי	כָּסָה	verb	verb	I.covered	ติด	כסה	003370001013000	to conceal	literally: to cover (information); hence: = causative action by which humans or deities keep certain information hidden from others		
+PSA 32:5!6	o190320050061	7	אָמַ֗רְתִּי	אָמַר	verb	verb	I.said	ติด	אמר	000511001001000	to say · to speak · to tell · to command · to think · to call	= action by which humans and deities utter words; this can happen within their minds and be inaudible to others, but in most cases the words are spoken out loud in order to communicate something to others; usually directly followed by the actual words that are spoken		
+PSA 32:5!7	o190320050071	8	אוֹדֶ֤ה	יָדָה	verb	verb	I.will.confess	ติด	ידה	002796001002000	to confess · to make confession	= action by which humans publicly admit their own shortcomings before God, or the shortcomings of the people they represent		
+PSA 32:5!8	o190320050081	9	עֲלֵ֣י	עַל	prep	preposition	on	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:5!9	o190320050091	10	פְ֭שָׁעַ	פֶּשַׁע	noun	noun	transgressions	ติด	פֶּשַׁע	006061001001000	rebellion · offense · crime · transgression	= action by which humans or groups defy an authority or a standard of behavior; by extension, can also refer to the punishment or guilt incurred from a trangression		
+PSA 32:5!9	o190320050092		י	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:5!10	o190320050101	11	לַ	לְ	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:5!10	o190320050102	12	יהוָ֑ה	יהוה	noun	noun	Yahweh	ติด	יהוה	002827001001000	YHWH	= deity; ► God of Israel who revealed himself to Moses		
+PSA 32:5!11	o190320050111	13	וְ	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:5!11	o190320050112	14	אַתָּ֨ה	אַתָּה	pron	pronoun	you	ติด	אַתָּה	000796001001000	you	= referent to a male participant that is addressed in a discourse		
+PSA 32:5!12	o190320050121	15	נָ֘שָׂ֤אתָ	נָשָׂא	verb	verb	you.forgave	ติด	נשׂא	004931001012000	to forgive · to pardon	literally: to beadr; hence: = action by which humans or deities let go of any anger or resentment with regard to the wrongdoing or sin of (other) humans		
+PSA 32:5!13	o190320050131	16	עֲוֺ֖ן	עָוֺן	noun	noun	the.guilt	ติด	עָוֹן	005307001001000	iniquity	= a deed of deliberate wrongdoing resulting in a state of guilt which requires punishment		
+PSA 32:5!14	o190320050141	17	חַטָּאתִ֣	חַטָּאת	noun	noun	my.sin	ติด	חַטָּאת	002221001001000	sin	= action by which a human being commits a wrongful act against God or someone else, whether on purpose or not, ► which may require atonement, restitution, and/or retribution		
+PSA 32:5!14	o190320050142		י	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:5!15	o190320050151	18	סֶֽלָה	סֶלָה	ij	particle	Selah	ติด	סֶלָה	005089001001000	sela	meaning unclear, possibly: = a musical term, the exact significance of which is unknown		
+PSA 32:6!1	o190320060011	1	עַל	עַל	prep	preposition	on	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:6!2	o190320060021	2	זֹ֡את	זֹאת	adj	pronoun	this	ติด	זֶה	001934001001000	this	= a marker highlighting an object or event	001935001001000	
+PSA 32:6!3	o190320060031	3	יִתְפַּלֵּ֬ל	פָּלַל	verb	verb	let.him.pray	ติด	פלל	005904002001000	to pray · to intercede	= action by which humans speak to a deity, often by raising their hands, ► requesting help or expressing their thankfulness		
+PSA 32:6!4	o190320060041	4	כָּל	כֹּל	noun	noun	every	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:6!5	o190320060051	5	חָסִ֨יד	חָסִיד	adj	adjective	faithful.[person]	ติด	חָסִיד	002419001001000	loyal person · faithful person · godly person	= someone who practices חֶסֶד, who is committed towards fulfilling his/her obligations; these may be obligations defined within the context of a covenant or agreement, or moral obligations to do well to someone who did well to you before		
+PSA 32:6!6	o190320060061	6	אֵלֶי	אֶל	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:6!6	o190320060062		ךָ֮	הוּא	pron	suffix	you	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:6!7	o190320060071	7	לְ	לְ	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:6!7	o190320060072	8	עֵ֪ת	עֵת	noun	noun	the.time	ติด	עֵת	005747001001000	time · moment · period · season · age	= a shorter or longer moment in the passage of time		
+PSA 32:6!8	o190320060081	9	מְ֫צֹ֥א	מָצָא	verb	verb	finds	ติด	מצא	004288001004000	to find (God)	= process by which humans on a spiritual journey find God		
+PSA 32:6!9	o190320060091	10	רַ֗ק	רַק	adv	particle	certainly	ติด	רַק	006926002005000	surely	= particle limiting the focus to one element and so enhancing its truth value		
+PSA 32:6!10	o190320060101	11	לְ֭	לְ	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:6!10	o190320060102	12	שֵׁטֶף	שֶׁטֶף	noun	noun	a.flood	ติด	שֶׁטֶף	007319001001000	torrent · flood	= a large quantity of water moving with great and potentially destructive power; ≈ often used as an image for overwhelming danger, destruction, or military strength		
+PSA 32:6!11	o190320060111	13	מַ֣יִם	מַיִם	noun	noun	of.waters	ติด	מַיִם	003957001001000	water	= water as the indispensible liquid on which the existence of all life depends, used for drinking, preparing food, washing, irrigating, etc.; found under the earth, on the earth, and above the earth; sometimes used as a euphemism to denote certain body liquids; ≈ associated with abundance and refreshment, but also with instability, and danger, etc.		
+PSA 32:6!12	o190320060121	14	רַבִּ֑ים	רַב	adj	adjective	many	ติด	רַב	006660001002000	many · numerous	= state in which objects or events are numerous in quantity or frequency		
+PSA 32:6!13	o190320060131	15	אֵ֝לָ֗י	אֶל	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:6!13	o190320060132		ו	הוּא	pron	suffix	him	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:6!14	o190320060141	16	לֹ֣א	לֹא	adv	particle	not	ติด	לֹא	003491001001000	not · no	= a marker negating a proposition		
+PSA 32:6!15	o190320060151	17	יַגִּֽיעוּ	נָגַע	verb	verb	they.will.reach	ติด	נגע	004644001008000	to come · to arrive · to reach	literally: to touch; hence: = process or action by which humans or substances arrive at a certain location		
+PSA 32:7!1	o190320070011	1	אַתָּ֤ה	אַתָּה	pron	pronoun	you	ติด	אַתָּה	000796001001000	you	= referent to a male participant that is addressed in a discourse		
+PSA 32:7!2	o190320070021	2	סֵ֥תֶר	סֵתֶר	noun	noun	[are].a.hiding.place	ติด	סֵתֶר	005190001003000	Shelter	literally: (one's) shelter; hence: = a title for God as the one who provides a hiding place for his people		
+PSA 32:7!3	o190320070031	3	לִ	לְ	prep	preposition		ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:7!3	o190320070032		י֮	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:7!4	o190320070041	4	מִ	מִן	prep	preposition	from	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:7!4	o190320070042	5	צַּ֪ר	צַר	adj	adjective	distress	ติด	צַר	006322001003000	distress	= a process by which humans go through extremely difficult circumstances, resulting in severe anxiety, ◄ as if one were confined to a narrow and cramped space from which there is no escape		
+PSA 32:7!5	o190320070051	6	תִּ֫צְּרֵ֥	נָצַר	verb	verb	you	ติด	נצר	004900001008000	to watch over · to guard · to be in charge of · to take care of · to protect · to tend · to keep	= causative action by which humans or deities make sure that an object is safe from harm; ◄ by observing the object and the surrounding area carefully and intervening when necessary		
+PSA 32:7!5	o190320070052		נִי	הוּא	pron	suffix	will.preserve.me	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:7!6	o190320070061	7	רָנֵּ֥י	רֹן	noun	noun	shouts	ติด	רֹן	006841001001000	shout	= action by which humans raise their voice ► to give expression to an emotion of joy		
+PSA 32:7!7	o190320070071	8	פַלֵּ֑ט	פַּלֵּט	verb	verb	of.deliverance	ติด	פלט	005888001002000	to rescue · to deliver	= causative action by which deities remove humans from a dangerous or life-threatening situation		
+PSA 32:7!8	o190320070081	9	תְּס֖וֹבְבֵ֣	סָבַב	verb	verb	you	ติด	סבב	004988001027000	to surround (someone with something) · to cause (something) to happen in full measure	literally: to surround (someone with an an activity); hence: = causative process by which humans or deities cause (other) humans to undergo a certain activity in full measure		
+PSA 32:7!8	o190320070082		נִי	הוּא	pron	suffix	will.surround.me	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:7!9	o190320070091	10	סֶֽלָה	סֶלָה	ij	particle	Selah	ติด	סֶלָה	005089001001000	sela	meaning unclear, possibly: = a musical term, the exact significance of which is unknown		
+PSA 32:8!1	o190320080011	1	אַשְׂכִּֽילְ	שָׂכַל	verb	verb	I	ติด	שׂכל	007043002002000	to make wise · to give understanding · to instruct	= causative action or process by which humans, deities, or plants cause humans to have the ability to understand things		
+PSA 32:8!1	o190320080012		ךָ֨	הוּא	pron	suffix	will.instruct.you	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:8!2	o190320080021	2	וְֽ	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:8!2	o190320080022	3	אוֹרְ	יָרָה	verb	verb	I	ติด	ירה	003097003001000	to direct · to teach · to instruct · to show	= causative action by which humans or deities cause (other) humans to acquire knowledge, a skill, or a certain type of behavior		
+PSA 32:8!2	o190320080023		ךָ֗	הוּא	pron	suffix	will.teach.you	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:8!3	o190320080031	4	בְּ	בְּ	prep	preposition	(in).[the]	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:8!3	o190320080032	5	דֶֽרֶךְ	דֶּרֶךְ	noun	noun	way	ติด	דֶּרֶךְ	001719001004000	way · conduct	literally: way; hence: = pattern of behavior, with a primary focus on moral and ethical behavior, ◄ understood as a journey through life		
+PSA 32:8!4	o190320080041	6	ז֥וּ	זוּ	rel	particle	which	ไม่ติด						ง เล่มมีคำนี้ แต่ไม่ได้อ้างถึงข้อนี้
+PSA 32:8!5	o190320080051	7	תֵלֵ֑ךְ	הלך	verb	verb	you.will.go	ติด	הלך	001824001005000	to go > to act · to behave	= process by which humans or deities follow a certain pattern of behavior, ◄ which is described as their journey through life		
+PSA 32:8!6	o190320080061	8	אִֽיעֲצָ֖ה	יָעַץ	verb	verb	I.will.give.counsel	ติด	יעץ	003012001003000	to advise · to give advice	= action by which humans or deities give information to others to help them exercise their minds to determine how they are going to achieve a particular purpose		
+PSA 32:8!7	o190320080071	9	עָלֶ֣י	עַל	prep	preposition	[will	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:8!7	o190320080072		ךָ	הוּא	pron	suffix	be].on.you	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:8!8	o190320080081	10	עֵינִֽ	עַיִן	noun	noun	eye	ติด	עַיִן	005397001001000	eye	= one of two parts of the body of humans and animals that is used to see things, after which the observed information is stored and processed in the mind; sparkling when the body is healthy and strong, but dim when weak or sick; the eyes also play a significant role in determining whether a person is considered beautiful or not; eyes can reflect both an attitude of compassion and a sentiment of malice; ≈ high eyes are associated with pride, whereas lowly eyes are connected with humility; a good eye is associated with generosity, whereas an evil eye denotes stinginess; winking the eye is associated with underhanded practices		
+PSA 32:8!8	o190320080082		י	הוּא	pron	suffix	my	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:9!1	o190320090011	1	אַל	אַל	adv	particle	do.not	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!2	o190320090021	2	תִּֽהְי֤וּ	הָיָה	verb	verb	be	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!3	o190320090031	3	כְּ	כְּ	prep	preposition	like	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!3	o190320090032	4	ס֥וּס	סוּס	noun	noun	a.horse	ติด	סוּס	005031001001000	horse	= large domesticated solid-hoofed quadruped; stockily built in comparison to today's horses, with shorter heads and thicker necks; about 122–142 cm tall, and 2.1 m long; its coat varies from dark to pale brown; it eats plants; ◄ Equus caballus; ► used in battle, both to ride and for pulling chariots; ≈ symbolic of military might; associated with the sun, which was said to ride across the sky in a chariot		
+PSA 32:9!4	o190320090041	5	כְּ	כְּ	prep	preposition	like	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!4	o190320090042	6	פֶרֶד֮	פֶּרֶד	noun	noun	a.mule	ติด	פֶּרֶד	005991001001000	mule	= male or female offspring of a male donkey and a female horse (or, but less common, a male horse and a female donkey); stronger than a donkey and more resistant to diseases than horses and donkeys; infertile; usually dark brown in color; has bigger ears than the parent horse; ► used for riding and as pack animals; ≈ associated with a lack of understanding		
+PSA 32:9!5	o190320090051	7	אֵ֤ין	אַיִן	adv	particle	[which].there.[is].not	ไม่ติด						ง เล่มมีคำนี้ แต่ไม่ได้อ้างถึงข้อนี้
+PSA 32:9!6	o190320090061	8	הָ֫בִ֥ין	בִּין	verb	verb	understanding	ติด	בין	000924001002000	to consider · to pay heed · to perceive · to realize · to understand · to distinguish	= process by which someone gains knowledge and understanding by observing carefully in order to see through the outward appearance of things and grasp their essence		
+PSA 32:9!7	o190320090071	9	בְּ	בְּ	prep	preposition	with	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!7	o190320090072	10	מֶֽתֶג	מֶתֶג	noun	noun	bridle	ติด	מֶתֶג	004558001001000	bit	= short bar, ◄ usually made of metal, ► placed in the mouth of a horse; its ends, which project from the mouth of the animal, are attached to ropes or leather straps that fit over the head as the {L:bridle<SDBH:רֶסֶן>}; used to steer the horse; ≈ associated with control and, indirectly, with lack of wisdom		
+PSA 32:9!8	o190320090081	11	וָ	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!8	o190320090082	12	רֶ֣סֶן	רֶסֶן	noun	noun	halter	ติด	רֶסֶן	006849001001000	bridle	= set of ropes or leather straps; ► fitted over the head of a horse and connected to the {L:bit<SDBH:מֶתֶג>}; used to steer the horse		
+PSA 32:9!9	o190320090091	13	עֶדְי֣	עֲדִי	noun	noun	trapping[s]	ติด	עֲדִי	005253001002000	trappings	meaning unsure; possibly: = the ornamental harness of a horse, consisting of {L:bit<SDBH:מֶתֶג>} and {L:bridle<SDBH:רֶסֶן>}	005253003001000 005253004001000	
+PSA 32:9!9	o190320090092		וֹ	הוּא	pron	suffix	its	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:9!10	o190320090101	14	לִ	לְ	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!10	o190320090102	15	בְל֑וֹם	בָּלַם	verb	verb	restrain	ติด	בלם	001024001001000	to curb · to control	= action by which someone establishes control over an animal; ► in order to restrain its movements		
+PSA 32:9!11	o190320090111	16	בַּ֝֗ל	בַּל	adv	particle	not	ติด	בַּל	001002001001000	not	= a marker negating a proposition		
+PSA 32:9!12	o190320090121	17	קְרֹ֣ב	קָרַב	verb	verb	to.draw.near	ติด	קרב	006564001001000	to approach · to come near · to come forward	= action by which humans or animals move to a location relatively close to the location in focus		
+PSA 32:9!13	o190320090131	18	אֵלֶֽי	אֶל	prep	preposition	to	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:9!13	o190320090132		ךָ	הוּא	pron	suffix	you	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:10!1	o190320100011	1	רַבִּ֥ים	רַב	adj	adjective	many	ติด	רַב	006660001002000	many · numerous	= state in which objects or events are numerous in quantity or frequency		
+PSA 32:10!2	o190320100021	2	מַכְאוֹבִ֗ים	מַכְאוֹב	noun	noun	pains	ติด	מַכְאֹוב	003970001002000	sorrow · grief	literally: pain; hence: = state in which humans experience a deep sense of grief, ◄ as if wounded in spirit		
+PSA 32:10!3	o190320100031	3	לָ	לְ	prep	preposition	[belong].to.(the)	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:10!3	o190320100031ה	4		הַ	art	particle	wicked	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:10!3	o190320100032	5	רָ֫שָׁ֥ע	רָשָׁע	adj	adjective	[person]	ติด	רָשָׁע	006952001001000	wicked, evil · guilty · in the wrong	= state in which a person's behavior is inconsistent with the requirements of the law, either in a specific matter that is under dispute or as one's general mode of behavior		
+PSA 32:10!4	o190320100041	6	וְ	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:10!4	o190320100042	7	הַ	הַ	art	particle	the.[one	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:10!4	o190320100043	8	בּוֹטֵ֥חַ	בָּטַח	verb	verb	who].trusts	ติด	בטח	000914001002000	to trust · to rely · to depend	= state in which humans have confidence in someone or something else and show that by their actions; ≈ usually regarded as negative when the object is human, always positive when the object is YHWH		
+PSA 32:10!5	o190320100051	9	בַּ	בְּ	prep	preposition	in	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:10!5	o190320100052	10	יהוָ֑ה	יהוה	noun	noun	Yahweh	ติด	יהוה	002827001001000	YHWH	= deity; ► God of Israel who revealed himself to Moses		
+PSA 32:10!6	o190320100061	11	חֶ֝֗סֶד	חֶסֶד	noun	noun	covenant.loyalty	ติด	חֶסֶד	002414001001000	loyalty · faithfulness · devotion	= state in which humans or deities are committed towards fulfilling their obligations and show that by their actions; these obligations include responsibilities towards kinspeople, spouses, friends, covenant partners, and people to whom one is indebted as a result of favors received		
+PSA 32:10!7	o190320100071	12	יְסוֹבְבֶֽ	סָבַב	verb	verb	it	ติด	סבב	004988001026000	to be surrounded (with something) · to happen in full measure	literally: (an activity) surrounds (someone); hence: = process by which humans undergo a certain activity in full measure		
+PSA 32:10!7	o190320100072		נּוּ	הוּא	pron	suffix	will.surround.him	ไม่ติด						ก คำต่อท้าย เล่มไม่นับเป็นตำแหน่ง
+PSA 32:11!1	o190320110011	1	שִׂמְח֬וּ	שָׂמַח	verb	verb	rejoice	ติด	שׂמח	007057001001000	to rejoice	= state in which humans and deities feel and show great joy		
+PSA 32:11!2	o190320110021	2	בַֽ	בְּ	prep	preposition	in	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:11!2	o190320110022	3	יהוָ֣ה	יהוה	noun	noun	Yahweh	ติด	יהוה	002827001001000	YHWH	= deity; ► God of Israel who revealed himself to Moses		
+PSA 32:11!3	o190320110031	4	וְ֭	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:11!3	o190320110032	5	גִילוּ	גִּיל	verb	verb	be.glad	ติด	גיל	001398001001000	to rejoice · to be glad	mainly in poetical texts: = state in which humans feel and show great joy		
+PSA 32:11!4	o190320110041	6	צַדִּיקִ֑ים	צַדִּיק	adj	adjective	O.righteous.[people]	ติด	צַדִּיק	006135001001000	righteous · just · right · in the right · innocent	= state in which a person's or deity's behavior is fully consistent with the requirements of the law, either in a specific matter that is under dispute or as one's general mode of behavior		
+PSA 32:11!5	o190320110051	7	וְ֝	וְ	cj	conjunction	and	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:11!5	o190320110052	8	הַרְנִ֗ינוּ	רָנַן	verb	verb	shout.for.joy	ติด	רנן	006844001002000	to shout for joy	= action by which humans raise their voice, ► to give expression to an emotion of joy		
+PSA 32:11!6	o190320110061	9	כָּל	כֹּל	noun	noun	O.all	ไม่ติด						ข เล่มไม่มีรายการของคำนี้เลย
+PSA 32:11!7	o190320110071	10	יִשְׁרֵי	יָשָׁר	adj	adjective	[people].upright	ติด	יָשָׁר	003190001005000	upright one	= person whose behavior is morally and ethically right		
+PSA 32:11!8	o190320110081	11	לֵֽב	לֵב	noun	noun	of.heart	ติด	לֵב	003500001002000	heart · mind · attention · courage	literally: heart; hence: = the seat of knowledge, human reasoning, planning, intelligence, skill, affection and hatred, desire and satisfaction, humility and pride, courage and fear, joy and grief		

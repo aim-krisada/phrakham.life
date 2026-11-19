@@ -1,0 +1,62 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 432
+ที่อยู่: MAT 23:34
+ข้อความต้นฉบับ: διὰ τοῦτο ἰδοὺ ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς·ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε,καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν·
+คำที่ถาม: ἐξ   (รูปตั้งต้น ἐκ · ชนิดคำ prep)
+ตัวเลือก:
+  A) a marker of a point of time which is simultaneous to or overlaps with another point of time003 [คำแปลสั้น: when, at the time of]
+  B) an exceedingly long period of time from an assumed beginning up to the present [คำแปลสั้น: since all time, from all ages past, from the beginning of time]
+  C) pertaining to being hostile toward [คำแปลสั้น: hostile, one who is hostile]
+  D) (an idiom, literally: to sit on the right side of) to be in a position of high status [คำแปลสั้น: to sit on the right side of, to be granted high position]
+  E) a marker of a part of a whole, whether consisting of countables or of mass [คำแปลสั้น: one of, one among, a part of]
+  F) a marker of the substance of which something consists or out of which it is made [คำแปลสั้น: of, consisting of, out of, made of]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 433
+ที่อยู่: MRK 13:10
+ข้อความต้นฉบับ: καὶ εἰς πάντα τὰ ἔθνη πρῶτον δεῖ κηρυχθῆναι τὸ εὐαγγέλιον.
+คำที่ถาม: δεῖ   (รูปตั้งต้น δέω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to be that which must necessarily take place, often with the implication of inevitability [คำแปลสั้น: to be necessary, must]
+  B) to be something which should be done as the result of compulsion, whether internal (as a matter of duty) or external (law, custom, and circumstances) [คำแปลสั้น: should, ought, to have to do]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 434
+ที่อยู่: ACT 27:23
+ข้อความต้นฉบับ: παρέστη γάρ μοι ταύτῃ τῇ νυκτὶ τοῦ θεοῦ,οὗ εἰμι,ᾧ καὶ λατρεύω,ἄγγελος
+คำที่ถาม: μοι   (รูปตั้งต้น ἐγώ · ชนิดคำ pron)
+ตัวเลือก:
+  A) a reference to the speaker (with an added feature of emphasis in the form ἐγώ) [คำแปลสั้น: I, I indeed]
+  B) a reference to the speaker or writer and those associated with him or her, either including or excluding the audience (with an added feature of emphasis in the form ἡμεῖς) [คำแปลสั้น: we, us]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 435
+ที่อยู่: LUK 17:10
+ข้อความต้นฉบับ: οὕτως καὶ ὑμεῖς,ὅταν ποιήσητε πάντα τὰ διαταχθέντα ὑμῖν,λέγετε ὅτι Δοῦλοι ἀχρεῖοί ἐσμεν,ὃ ὠφείλομεν ποιῆσαι πεποιήκαμεν.
+คำที่ถาม: οὕτως   (รูปตั้งต้น οὕτω(ς) · ชนิดคำ adv)
+ตัวเลือก:
+  A) referring to that which follows (compare 61.9) [คำแปลสั้น: the following, as follows]
+  B) with reference to that which precedes [คำแปลสั้น: so, thus, in this way]
+  C) a relatively high degree, presumably in keeping with the context [คำแปลสั้น: so, so much]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 436
+ที่อยู่: 2CO 1:8
+ข้อความต้นฉบับ: Οὐ γὰρ θέλομεν ὑμᾶς ἀγνοεῖν,ἀδελφοί,ὑπὲρ τῆς θλίψεως ἡμῶν τῆς γενομένης ἐν τῇ Ἀσίᾳ,ὅτι καθ’ὑπερβολὴν ὑπὲρ δύναμιν ἐβαρήθημεν,ὥστε ἐξαπορηθῆναι ἡμᾶς καὶ τοῦ ζῆν·
+คำที่ถาม: ὥστε   (รูปตั้งต้น ὥστε · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of result, often in contexts implying an intended or indirect purpose001 [คำแปลสั้น: therefore, (so) accordingly, as a result, so that, so then, and so]
+  B) a marker of purpose, with the implication that what has preceded serves as a means [คำแปลสั้น: then, in order to, so that]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

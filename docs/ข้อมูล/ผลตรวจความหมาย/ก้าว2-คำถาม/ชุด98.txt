@@ -1,0 +1,64 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 269
+ที่อยู่: EXO 21:26
+ข้อความต้นฉบับ: וְכִֽי־יַכֶּ֨ה אִ֜ישׁ אֶת־עֵ֥ין עַבְדּ֛וֹ אֽוֹ־אֶת־עֵ֥ין אֲמָת֖וֹ וְשִֽׁחֲתָ֑הּ לַֽחָפְשִׁ֥י יְשַׁלְּחֶ֖נּוּ תַּ֥חַת עֵינֽוֹ׃ס
+คำที่ถาม: עַבְדּ֛   (รูปตั้งต้น עֶבֶד · ชนิดคำ noun)
+ตัวเลือก:
+  A) inanimate object created by God and therefore bound by his laws as if it were a human being [คำแปลสั้น: servant]
+  B) man who is under the authority of someone else as that person's legal property, employee, subject, or vassal; or someone who presents himself as such when speaking to someone of importance or praying to God [คำแปลสั้น: slave, servant, officer, official, subject, vassal]
+  C) class of slaves working in the temple; · possibly captives of war set apart for service in the temple by Solomon [คำแปลสั้น: slaves of Solomon, servants of Solomon]
+  D) man; · father of Gaal; time of the Judges [คำแปลสั้น: Ebed]
+  E) man; · son of Jonathan; descendant of Adin; · one of the family heads who accompanied Ezra back to Jerusalem after the exile [คำแปลสั้น: Ebed]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 270
+ที่อยู่: EZK 5:1
+ข้อความต้นฉบับ: וְאַתָּ֨ה בֶן־אָדָ֜ם קַח־לְךָ֣׀חֶ֣רֶב חַדָּ֗ה תַּ֤עַר הַגַּלָּבִים֙ תִּקָּחֶ֣נָּה לָּ֔ךְ וְהַעֲבַרְתָּ֥ עַל־רֹאשְׁךָ֖ וְעַל־זְקָנֶ֑ךָ וְלָקַחְתָּ֥ לְךָ֛ מֹאזְנֵ֥י מִשְׁקָ֖ל וְחִלַּקְתָּֽם׃
+คำที่ถาม: מִשְׁקָ֖ל   (รูปตั้งต้น מִשְׁקָל · ชนิดคำ noun)
+ตัวเลือก:
+  A) a measure of the heaviness of an object [คำแปลสั้น: weight]
+  B) literally: by weight; hence: process by which objects are carefully weighed because of their scarcity [คำแปลสั้น: by weight]
+  C) literally: the weight (of a set of objects); hence: the totality of a set of objects [คำแปลสั้น: totality]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 271
+ที่อยู่: 2CH 33:6
+ข้อความต้นฉบับ: וְהוּא֩ הֶעֱבִ֨יר אֶת־בָּנָ֤יו בָּאֵשׁ֙ בְּגֵ֣י בֶן־הִנֹּ֔ם וְעוֹנֵ֤ן וְנִחֵשׁ֙ וְֽכִשֵּׁ֔ף וְעָ֥שָׂה א֖וֹב וְיִדְּעוֹנִ֑י הִרְבָּ֗ה לַעֲשׂ֥וֹת הָרַ֛ע בְּעֵינֵ֥י יְהוָ֖ה לְהַכְעִיסֽוֹ׃
+คำที่ถาม: הִנֹּ֔ם   (รูปตั้งต้น הִנֹּם · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: valley of the son of Hinnom; valley, · located west and south of Jerusalem; · infamous for the idol worship that took place there [คำแปลสั้น: Valley of (the son of) Hinnom]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 272
+ที่อยู่: LEV 5:6
+ข้อความต้นฉบับ: וְהֵבִ֣יא אֶת־אֲשָׁמ֣וֹ לַיהוָ֡ה עַ֣ל חַטָּאתוֹ֩ אֲשֶׁ֨ר חָטָ֜א נְקֵבָ֨ה מִן־הַצֹּ֥אן כִּשְׂבָּ֛ה אֽוֹ־שְׂעִירַ֥ת עִזִּ֖ים לְחַטָּ֑את וְכִפֶּ֥ר עָלָ֛יו הַכֹּהֵ֖ן מֵחַטָּאתֽוֹ׃
+คำที่ถาม: עִזִּ֖ים   (รูปตั้งต้น עֵז · ชนิดคำ noun)
+ตัวเลือก:
+  A) goat's hair used for weaving cloth [คำแปลสั้น: goat's hair]
+  B) a fairly small, female domestic animal, usually black and with floppy ears, hooves and relatively short hair, and usually found in one single flock with sheep; · raised for its milk, meat, and skin; a clean animal and therefore to be eaten [คำแปลสั้น: she-goat]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 273
+ที่อยู่: 1KI 6:31
+ข้อความต้นฉบับ: וְאֵת֙ פֶּ֣תַח הַדְּבִ֔יר עָשָׂ֖ה דַּלְת֣וֹת עֲצֵי־שָׁ֑מֶן הָאַ֥יִל מְזוּז֖וֹת חֲמִשִֽׁית׃
+คำที่ถาม: דַּלְת֣וֹת   (รูปตั้งต้น דֶּלֶת · ชนิดคำ noun)
+ตัวเลือก:
+  A) person who lacks the committment and ability to resist temptations, · as a door gives easy access to intruders [คำแปลสั้น: door > weak-willed person]
+  B) one part of a door that consist of two elements [คำแปลสั้น: leaf (of a double door)]
+  C) something that provides or prevents access · as if it were a door [คำแปลสั้น: door > opening]
+  D) vertical division of written text on a scroll [คำแปลสั้น: column]
+  E) cover for a receptacle [คำแปลสั้น: lid]
+  F) a hinged barrier at the entrance to a town, building, or room; · usually made out of wood, but occasionally also out of metal; · provides or prevents access; · sometimes associated with vulnerability [คำแปลสั้น: door]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

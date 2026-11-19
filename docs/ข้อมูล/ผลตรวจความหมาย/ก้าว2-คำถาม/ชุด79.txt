@@ -1,0 +1,61 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 188
+ที่อยู่: EZR 6:17
+ข้อความต้นฉบับ: וְהַקְרִ֗בוּ לַחֲנֻכַּת֮ בֵּית־אֱלָהָ֣א דְנָה֒ תּוֹרִ֣ין מְאָ֔ה דִּכְרִ֣ין מָאתַ֔יִן אִמְּרִ֖ין אַרְבַּ֣ע מְאָ֑ה וּצְפִירֵ֨י עִזִּ֜ין לְחַטָּאָ֤ה עַל־כָּל־יִשְׂרָאֵל֙ תְּרֵֽי־עֲשַׂ֔ר לְמִנְיָ֖ן שִׁבְטֵ֥י יִשְׂרָאֵֽל׃
+คำที่ถาม: דִּכְרִ֣ין   (รูปตั้งต้น דְּכַר · ชนิดคำ noun)
+ตัวเลือก:
+  A) male herbivorous mammal with four legs; · |iovis ladicaudata|i*, fat-tailed sheep; · clean animal, used for sacrifice, source of meat, hides, wool, and horns; · associated with strength and leadership [คำแปลสั้น: ram]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 189
+ที่อยู่: PRO 4:1
+ข้อความต้นฉบับ: שִׁמְע֣וּ בָ֭נִים מ֣וּסַר אָ֑ב וְ֝הַקְשִׁ֗יבוּ לָדַ֥עַת בִּינָֽה׃
+คำที่ถาม: בָ֭נִים   (รูปตั้งต้น בֵּן · ชนิดคำ noun)
+ตัวเลือก:
+  A) see בֶּן־יְמִינִי [คำแปลสั้น: Benjaminite]
+  B) title used to address a person (male if in singular) who is regarded with some degree of affection, · as if he were the speaker's child [คำแปลสั้น: my son, my children]
+  C) literally: son (of a number of years); hence: state in which humans and animals have a certain age, · referred to as a child of a certain number of years [คำแปลสั้น: at the age of ...]
+  D) direct or indirect human offspring, either male or indeterminate, either biologically or through adoption [คำแปลสั้น: son, child, descendant]
+  E) see גַּיְא [คำแปลสั้น: Valley of the Son of Hinnom]
+  F) state of being associated with a certain attribute, attitude, or behavior, · referred to as a child of that attribute, attitude, or behavior [คำแปลสั้น: one who is ..., one that is ...]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 190
+ที่อยู่: MIC 6:14
+ข้อความต้นฉบับ: אַתָּ֤ה תֹאכַל֙ וְלֹ֣א תִשְׂבָּ֔ע וְיֶשְׁחֲךָ֖ בְּקִרְבֶּ֑ךָ וְתַסֵּג֙ וְלֹ֣א תַפְלִ֔יט וַאֲשֶׁ֥ר תְּפַלֵּ֖ט לַחֶ֥רֶב אֶתֵּֽן׃
+คำที่ถาม: אַתָּ֤ה   (รูปตั้งต้น אַתָּה · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) referent to a male participant that is addressed in a discourse [คำแปลสั้น: you]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 191
+ที่อยู่: RUT 2:20
+ข้อความต้นฉบับ: וַתֹּ֨אמֶר נָעֳמִ֜י לְכַלָּתָ֗הּ בָּר֥וּךְ הוּא֙ לַיהוָ֔ה אֲשֶׁר֙ לֹא־עָזַ֣ב חַסְדּ֔וֹ אֶת־הַחַיִּ֖ים וְאֶת־הַמֵּתִ֑ים וַתֹּ֧אמֶר לָ֣הּ נָעֳמִ֗י קָר֥וֹב לָ֨נוּ֙ הָאִ֔ישׁ מִֽגֹּאֲלֵ֖נוּ הֽוּא׃
+คำที่ถาม: חַיִּ֖ים   (รูปตั้งต้น חַי · ชนิดคำ adjective)
+ตัวเลือก:
+  A) literally: coming to life again; hence: recurring [คำแปลสั้น: next, renewal]
+  B) state in which humans and deities are alive and well, · which, for humans, requires the presence of air to breathe and food to eat; · life is regarded as more than a mere physical condition; in many cases it includes health, strength, and some degree of prosperity [คำแปลสั้น: alive, living]
+  C) state in which objects have recently attained a particular state [คำแปลสั้น: raw, fresh, green]
+  D) state in which humans are in a good physical condition [คำแปลสั้น: to be healthy, to be strong, to be vigorous]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 192
+ที่อยู่: 1CH 16:22
+ข้อความต้นฉบับ: אַֽל־תִּגְּעוּ֙ בִּמְשִׁיחָ֔י וּבִנְבִיאַ֖י אַל־תָּרֵֽעוּ׃פ
+คำที่ถาม: מְשִׁיחָ֔   (รูปตั้งต้น מָשִׁיחַ · ชนิดคำ adjective)
+ตัวเลือก:
+  A) a (non-eschatological) religious leader appointed by God and anointed with oil by a prophet or priest [คำแปลสั้น: anointed (one)]
+  B) a (non-eschatological) ruler appointed by God and anointed with oil by a prophet or priest [คำแปลสั้น: anointed (one)]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

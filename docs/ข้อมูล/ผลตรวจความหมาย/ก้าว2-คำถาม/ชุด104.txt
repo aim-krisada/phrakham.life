@@ -1,0 +1,61 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 296
+ที่อยู่: 2KI 12:5
+ข้อความต้นฉบับ: וַיֹּ֨אמֶר יְהוֹאָ֜שׁ אֶל־הַכֹּהֲנִ֗ים כֹּל֩ כֶּ֨סֶף הַקֳּדָשִׁ֜ים אֲשֶׁר־יוּבָ֤א בֵית־יְהוָה֙ כֶּ֣סֶף עוֹבֵ֔ר אִ֕ישׁ כֶּ֥סֶף נַפְשׁ֖וֹת עֶרְכּ֑וֹ כָּל־כֶּ֗סֶף אֲשֶׁ֤ר יַֽעֲלֶה֙ עַ֣ל לֶב־אִ֔ישׁ לְהָבִ֖יא בֵּ֥ית יְהוָֽה׃
+คำที่ถาม: אִ֕ישׁ   (รูปตั้งต้น אִישׁ · ชนิดคำ noun)
+ตัวเลือก:
+  A) a male adult animal or human being [คำแปลสั้น: man, male, husband]
+  B) referent referring to each and every individual in a group of people or objects [คำแปลสั้น: each]
+  C) member of the tribe of Benjamin [คำแปลสั้น: Benjaminite]
+  D) literally: person of battle; person of military age, trained and experienced in warfare; · associated with strength and bravery [คำแปลสั้น: warrior]
+  E) literally: person of spirit; hence: a person endowed with the Spirit of God and has prophetic gifts [คำแปลสั้น: inspired man]
+  F) literally: to come among people; hence, probably: state in which people have reached an advanced age, meaning, among other things, that they are too old for military duty [คำแปลสั้น: to be advanced in years]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 297
+ที่อยู่: PSA 92:7
+ข้อความต้นฉบับ: אִֽישׁ־בַּ֭עַר לֹ֣א יֵדָ֑ע וּ֝כְסִ֗יל לֹא־יָבִ֥ין אֶת־זֹֽאת׃
+คำที่ถาม: זֹֽאת   (รูปตั้งต้น זֹאת · ชนิดคำ pronoun)
+ตัวเลือก:
+  A) a marker highlighting an object or event [คำแปลสั้น: this]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 298
+ที่อยู่: PSA 64:4
+ข้อความต้นฉบับ: אֲשֶׁ֤ר שָׁנְנ֣וּ כַחֶ֣רֶב לְשׁוֹנָ֑ם דָּרְכ֥וּ חִ֝צָּ֗ם דָּבָ֥ר מָֽר׃
+คำที่ถาม: דָּבָ֥ר   (รูปตั้งต้น דָּבָר · ชนิดคำ noun)
+ตัวเลือก:
+  A) words spoken by humans and deities and, in certain cases, written down [คำแปลสั้น: words, message]
+  B) any kind of object [คำแปลสั้น: thing]
+  C) literally: word; hence: a collection of words spoken by humans and deities and, in certain cases, written down [คำแปลสั้น: word, words, message]
+  D) literally: events; hence: a written account of important historical events [คำแปลสั้น: chronicles, annals]
+  E) literally: a thing; hence: any kind of event [คำแปลสั้น: thing, event, matter]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 299
+ที่อยู่: 1CH 7:28
+ข้อความต้นฉบับ: וַאֲחֻזָּתָם֙ וּמֹ֣שְׁבוֹתָ֔ם בֵּֽית־אֵ֖ל וּבְנֹתֶ֑יהָ וְלַמִּזְרָ֣ח נַעֲרָ֔ן וְלַֽמַּעֲרָ֗ב גֶּ֤זֶר וּבְנֹתֶ֨יהָ֙ וּשְׁכֶ֣ם וּבְנֹתֶ֔יהָ עַד־עַיָּ֖ה וּבְנֹתֶֽיהָ׃
+คำที่ถาม: עַיָּ֖ה   (รูปตั้งต้น עַיָּה · ชนิดคำ noun)
+ตัวเลือก:
+  A) town, probably to be identified with Ai; · near Bethel, territory of Ephraim [คำแปลสั้น: Ayyah, Ai]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 300
+ที่อยู่: PRO 6:12
+ข้อความต้นฉบับ: אָדָ֣ם בְּ֭לִיַּעַל אִ֣ישׁ אָ֑וֶן ה֝וֹלֵ֗ךְ עִקְּשׁ֥וּת פֶּֽה׃
+คำที่ถาม: עִקְּשׁ֥וּת   (รูปตั้งต้น עִקְּשׁוּת · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: crookedness (of an event); hence: state in which an event differs from the general standard and is therefore unacceptable [คำแปลสั้น: crookedness]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

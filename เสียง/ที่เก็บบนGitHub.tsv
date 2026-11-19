@@ -1,0 +1,54 @@
+# ⭐⭐ ผังที่เก็บเสียงอ่านพระคำบน GitHub Pages ⇒ **ไฟล์ของฉบับไหน เล่มไหน อยู่ที่เก็บไหน เขียนไว้ที่นี่ที่เดียว**
+#
+# ใบงาน https://aimgit.aimagin.com/v3/phrakham/-/issues/171
+#   ⇒ พี่เอมเคาะ 15 พ.ย. 2569 (note 31659) ⇒ เสียงย้ายออกจากตัวเว็บไปอยู่บน GitHub Pages ⇒ Pages ให้ที่ละไม่เกิน 1 GB
+#   ⇒ พี่เอมเคาะเพิ่ม 15 พ.ย. 2569 ⇒ **ที่เก็บแยกตามฉบับ** ⇒ ชื่อฉบับอยู่ในชื่อที่เก็บ ⇒ ⛔ ไม่มีที่เก็บไหนปนสองฉบับ
+#     ⇒ ทุกฉบับแบ่งเล่มเหมือนกัน 3 กลุ่ม ⇒ ฉบับละ 3 ที่เก็บ ⇒ ชื่อ `phrakham-audio-<ฉบับตัวเล็ก>-<กลุ่ม>`
+#     ⇒ ในที่เก็บ ไฟล์อยู่ที่รากตรง ๆ ⇒ ⛔ ไม่มีโฟลเดอร์ฉบับ (`LSV/`) ซ้อนข้างใน เพราะชื่อที่เก็บบอกฉบับแล้ว
+#
+# ## ใครอ่านไฟล์นี้
+#   ⇒ `tools/ที่เก็บเสียงบนGitHub.py` ⇒ ตัวอ่านตัวเดียว ⇒ คัดลอกเสียงลงที่เก็บของฉบับกับกลุ่มนั้น แล้วส่งขึ้น GitHub
+#   ⇒ `tools/สร้างรายการเสียง.py` ⇒ ช่อง `ที่อยู่` ครบทุกแถว ⇒ ใส่ `ฐานของฉบับ` ลงรายการเสียง ⇒ หน้าเว็บขอไฟล์จาก GitHub
+#   ⇒ `tools/ทำเสียงTCVรายคืน.py` ⇒ ช่อง `ที่อยู่` ครบ ⇒ ส่งเสียงคืนนั้นขึ้นที่เก็บก่อนเปิดคำขอรวม
+#   ⇒ ด่านคือ `tools/ด่านที่เก็บเสียงบนGitHub.py` ⇒ ทุกฉบับมี 3 ที่เก็บ แบ่งเล่มเหมือนกัน 66 เล่มพอดี ⇒ ไฟล์ของฉบับหนึ่ง ⛔ ไม่ไปตกที่เก็บของฉบับอื่น
+#
+# ## ⛔⛔ ช่อง `ที่อยู่`
+#   ⇒ **ว่างทุกแถว = ยังไม่ย้าย** ⇒ เว็บใช้ `/audio/` ในตัวเว็บเหมือนเดิม ⇒ ตัวสร้างเว็บยังคัดลอก mp3 เข้าเว็บ
+#   ⇒ **ครบทุกแถว = ย้ายแล้ว** ⇒ หน้าเว็บขอไฟล์จาก GitHub ⇒ ตัวสร้างเว็บ ⛔ ไม่คัดลอก mp3 แล้ว
+#   ⇒ ⛔ **มีบางแถว = ด่านแดง และตัวพ่นรายการหยุด** ⇒ เว็บที่ครึ่งหนึ่งอยู่ที่นี่ครึ่งหนึ่งอยู่ที่โน่น ตรวจยากและพังเงียบได้
+#   ⇒ ⛔ **เติมได้หลังส่งไฟล์ครบแล้วเท่านั้น** ⇒ สั่ง `--ตรวจบนเว็บ` ของ `tools/ที่เก็บเสียงบนGitHub.py` ให้ผ่านก่อน
+#   ⇒ รูปต้องเป็น `https://<เจ้าของ>.github.io/<ชื่อที่เก็บ>/` ตรงกับช่อง `ที่เก็บ` ⇒ ด่านเทียบให้
+#
+# ## ⭐ ทำไมแบ่งเล่มแบบนี้ ⇒ วัดจากของจริง 15 พ.ย. 2569
+#   ⇒ ไบต์ต่อตัวอักษรวัดจากเสียงมาระโกของแต่ละฉบับ ⇒ TCV ราว 541 · THKJV 515 · LSV 362 · WEB 355
+#   ⇒ คูณกับตัวอักษรของฉบับนั้นใน `_data/เนื้อบท.json.gz` ⇒ ขนาดเมื่อครบทั้งเล่ม เป็น MB
+#     | กลุ่ม | เล่ม | TCV | THKJV | WEB | LSV |
+#     | ot1 | ปฐมกาล ถึง 2 พงศ์กษัตริย์ 12 เล่ม | 611 | 658 | 504 | 535 |
+#     | ot2 | 1 พงศาวดาร ถึง มาลาคี 27 เล่ม | 720 | 788 | 567 | 583 |
+#     | nt | มัทธิว ถึง วิวรณ์ 27 เล่ม | 426 | 471 | 325 | 346 |
+#   ⇒ ตัดที่ 2 พงศ์กษัตริย์ เพราะเป็นรอยต่อของพระคัมภีร์ที่คนรู้จัก ⇒ และสองกลุ่มของพันธสัญญาเดิมขนาดใกล้กัน
+#   ⇒ ด่านคิดตัวเลขนี้ใหม่เองทุกท่อ ⛔ ไม่เชื่อตัวเลขในคอมเมนต์นี้
+#
+# ## ⭐ ที่ว่างที่เหลือ
+#   ⇒ ⚠️ THKJV ot2 ใช้ราว 79% ของ 1 GB ⇒ ใกล้เส้นของแผน 800 MB ที่สุด ⇒ ถ้าวันหนึ่งด่านแดงที่ข้อ ③ ⇒ แบ่งกลุ่มนี้เป็นสองที่
+#   ⇒ **เสียงที่สองของฉบับเดียวกัน** (คนละผู้อ่าน) ⇒ ⛔ ไม่พอ ⇒ ต้องเปิดที่เก็บชุดใหม่อีกชุด ⇒ ด่านแดงก่อนที่เก็บไหนเกิน 900 MB
+#   ⇒ **ฉบับใหม่** ⇒ เพิ่ม 3 แถวของฉบับนั้น ⇒ ไฟล์ของฉบับที่ไม่มีแถว ⇒ ตัวส่งหยุด และบอกชื่อที่เก็บที่ต้องสร้าง
+#
+# ## ชื่อที่เก็บ
+#   ⇒ ขั้นตอนของพี่เอมอยู่ที่ `docs/เสียงบนGitHub-ที่พี่เอมต้องทำ.md`
+#   ⇒ ⛔ ชื่อต้องเป็นรูป `phrakham-audio-<ฉบับตัวเล็ก>-<กลุ่ม>` ⇒ ด่านเทียบให้
+#
+# ช่อง ⇒ ฉบับ (ชื่อเดียวกับในรายการเสียง) · กลุ่ม · ที่เก็บ (เจ้าของ/ชื่อ บน GitHub) · ที่อยู่ (ว่างจนกว่าจะย้าย) · เล่ม (รหัสเล่มแบบ USX คั่นด้วยช่องว่าง)
+ฉบับ	กลุ่ม	ที่เก็บ	ที่อยู่	เล่ม
+TCV	ot1	aim-krisada/phrakham-audio-tcv-ot1	https://aim-krisada.github.io/phrakham-audio-tcv-ot1/	GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI
+TCV	ot2	aim-krisada/phrakham-audio-tcv-ot2	https://aim-krisada.github.io/phrakham-audio-tcv-ot2/	1CH 2CH EZR NEH EST JOB PSA PRO ECC SNG ISA JER LAM EZK DAN HOS JOL AMO OBA JON MIC NAM HAB ZEP HAG ZEC MAL
+TCV	nt	aim-krisada/phrakham-audio-tcv-nt	https://aim-krisada.github.io/phrakham-audio-tcv-nt/	MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JUD REV
+THKJV	ot1	aim-krisada/phrakham-audio-thkjv-ot1	https://aim-krisada.github.io/phrakham-audio-thkjv-ot1/	GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI
+THKJV	ot2	aim-krisada/phrakham-audio-thkjv-ot2	https://aim-krisada.github.io/phrakham-audio-thkjv-ot2/	1CH 2CH EZR NEH EST JOB PSA PRO ECC SNG ISA JER LAM EZK DAN HOS JOL AMO OBA JON MIC NAM HAB ZEP HAG ZEC MAL
+THKJV	nt	aim-krisada/phrakham-audio-thkjv-nt	https://aim-krisada.github.io/phrakham-audio-thkjv-nt/	MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JUD REV
+WEB	ot1	aim-krisada/phrakham-audio-web-ot1	https://aim-krisada.github.io/phrakham-audio-web-ot1/	GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI
+WEB	ot2	aim-krisada/phrakham-audio-web-ot2	https://aim-krisada.github.io/phrakham-audio-web-ot2/	1CH 2CH EZR NEH EST JOB PSA PRO ECC SNG ISA JER LAM EZK DAN HOS JOL AMO OBA JON MIC NAM HAB ZEP HAG ZEC MAL
+WEB	nt	aim-krisada/phrakham-audio-web-nt	https://aim-krisada.github.io/phrakham-audio-web-nt/	MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JUD REV
+LSV	ot1	aim-krisada/phrakham-audio-lsv-ot1	https://aim-krisada.github.io/phrakham-audio-lsv-ot1/	GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI
+LSV	ot2	aim-krisada/phrakham-audio-lsv-ot2	https://aim-krisada.github.io/phrakham-audio-lsv-ot2/	1CH 2CH EZR NEH EST JOB PSA PRO ECC SNG ISA JER LAM EZK DAN HOS JOL AMO OBA JON MIC NAM HAB ZEP HAG ZEC MAL
+LSV	nt	aim-krisada/phrakham-audio-lsv-nt	https://aim-krisada.github.io/phrakham-audio-lsv-nt/	MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JUD REV

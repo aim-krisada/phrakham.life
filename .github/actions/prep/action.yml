@@ -1,0 +1,54 @@
+# ขั้นเตรียมที่ทุกงานในท่อตรวจใช้ร่วมกัน ⇒ เรียกจาก .github/workflows/gates.yml ที่ tools/สร้างท่อGitHub.py สร้าง
+# ⇒ แยกออกมาเพราะเขียนซ้ำ 228 งานแล้วไฟล์ท่อใหญ่เกินที่ GitHub จะอ่านไหว
+name: เตรียมงาน
+description: ตั้งตัวแปรของกิตแล็บ · หยิบไฟล์ LFS จากแคช · ไบต์จริงของ _data ถ้างานขอ
+inputs:
+  lfs-key:
+    description: ชื่อแคชของไฟล์ LFS จากงาน lfs
+    required: true
+  data:
+    description: "'1' = งานนี้ตั้ง GIT_LFS_SKIP_SMUDGE=0 บนอัมกิต ⇒ ต้องได้ไบต์จริงของ _data/"
+    required: false
+    default: '0'
+runs:
+  using: composite
+  steps:
+    # ⭐ ตัวแปรของกิตแล็บที่เครื่องมือในที่เก็บนี้อ่าน ⇒ เติมจากค่าของ GitHub ที่ความหมายตรงกัน
+    #   ⇒ CI_COMMIT_TIMESTAMP คือเวลาของคอมมิต ⛔ ไม่ใช่เวลาที่ท่อวิ่ง (เหตุผลอยู่ที่ nuxt.config.ts)
+    #   ⇒ คำขอรวม = merge_request_event ⇒ กิตแล็บ ⛔ ไม่ตั้ง CI_COMMIT_BRANCH ในคำขอรวม ⇒ ที่นี่ก็ไม่ตั้ง
+    - name: ตัวแปรของกิตแล็บ
+      shell: bash
+      env:
+        SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        REF: ${{ github.head_ref || github.ref_name }}
+        EVENT: ${{ github.event_name }}
+        DEFAULT: ${{ github.event.repository.default_branch }}
+        PROJECT: ${{ github.server_url }}/${{ github.repository }}
+        RUN: ${{ github.run_id }}
+      run: |
+        {
+          echo "CI=true"
+          echo "CI_COMMIT_SHA=$SHA"
+          echo "CI_COMMIT_SHORT_SHA=${SHA:0:8}"
+          echo "CI_COMMIT_TIMESTAMP=$(git log -1 --format=%cI "$SHA")"
+          echo "CI_COMMIT_REF_NAME=$REF"
+          echo "CI_DEFAULT_BRANCH=$DEFAULT"
+          echo "CI_PIPELINE_ID=$RUN"
+          echo "CI_PROJECT_URL=$PROJECT"
+          if [ "$EVENT" = pull_request ]; then
+            echo "CI_PIPELINE_SOURCE=merge_request_event"
+          else
+            echo "CI_PIPELINE_SOURCE=push"
+            echo "CI_COMMIT_BRANCH=$REF"
+          fi
+        } >> "$GITHUB_ENV"
+    - name: หยิบไฟล์ LFS จากแคช
+      uses: actions/cache/restore@v4
+      with:
+        path: .git/lfs/objects
+        key: ${{ inputs.lfs-key }}
+        fail-on-cache-miss: true
+    - name: ไบต์จริงของ _data (เหมือน GIT_LFS_SKIP_SMUDGE=0 บนอัมกิต)
+      if: inputs.data == '1'
+      shell: bash
+      run: git lfs checkout _data

@@ -1,0 +1,58 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 39
+ที่อยู่: 2SA 11:3
+ข้อความต้นฉบับ: וַיִּשְׁלַ֣ח דָּוִ֔ד וַיִּדְרֹ֖שׁ לָֽאִשָּׁ֑ה וַיֹּ֗אמֶר הֲלוֹא־זֹאת֙ בַּת־שֶׁ֣בַע בַּת־אֱלִיעָ֔ם אֵ֖שֶׁת אוּרִיָּ֥ה הַחִתִּֽי׃
+คำที่ถาม: שֶׁ֣בַע   (รูปตั้งต้น בַּתשֶׁבַע · ชนิดคำ adjective)
+ตัวเลือก:
+  A) woman, also known as Bath-Shua; · daughter of Eliam (also known as Ammiel); wife of Uriah, and later of David [คำแปลสั้น: Bathsheba]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 40
+ที่อยู่: JOB 38:3
+ข้อความต้นฉบับ: אֱזָר־נָ֣א כְגֶ֣בֶר חֲלָצֶ֑יךָ וְ֝אֶשְׁאָלְךָ֗ וְהוֹדִיעֵֽנִי׃
+คำที่ถาม: חֲלָצֶ֑י   (รูปตั้งต้น חָלָץ · ชนิดคำ noun)
+ตัวเลือก:
+  A) area located on both sides of spine between false ribs and hip-bone; · part of human body; · often used to indicate the entire waist region of the body; euphemism for male genitals [คำแปลสั้น: loins]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 41
+ที่อยู่: 2CH 5:1
+ข้อความต้นฉบับ: וַתִּשְׁלַם֙ כָּל־הַמְּלָאכָ֔ה אֲשֶׁר־עָשָׂ֥ה שְׁלֹמֹ֖ה לְבֵ֣ית יְהוָ֑הסוַיָּבֵ֨א שְׁלֹמֹ֜ה אֶת־קָדְשֵׁ֣י׀דָּוִ֣יד אָבִ֗יו וְאֶת־הַכֶּ֤סֶף וְאֶת־הַזָּהָב֙ וְאֶת־כָּל־הַכֵּלִ֔ים נָתַ֕ן בְּאֹצְר֖וֹת בֵּ֥ית הָאֱלֹהִֽים׃פ
+คำที่ถาม: אֶת   (รูปตั้งต้น אֵת · ชนิดคำ particle)
+ตัวเลือก:
+  A) marker identifying the entity that is directly targeted by the event in focus, and which usually is already part of the cognitive context; described in syntactic terms as the direct object marker; untranslatable in English unless accompanied by a suffix [คำแปลสั้น: -]
+  B) exact meaning unknown; possibly: wooden handle with an iron head that has both an adze and a chisel as its ends; · used for breaking up moderately hard soil to make it ready for cultivation [คำแปลสั้น: mattock]
+  C) particle linking two entities and denoting that X and Y function as one single entity in the proposition in focus [คำแปลสั้น: with, together with]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 42
+ที่อยู่: GEN 36:25
+ข้อความต้นฉบับ: וְאֵ֥לֶּה בְנֵֽי־עֲנָ֖ה דִּשֹׁ֑ן וְאָהֳלִיבָמָ֖ה בַּת־עֲנָֽה׃
+คำที่ถาม: עֲנָֽה   (รูปตั้งต้น עֲנָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · son of Zibeon, son of Seir [คำแปลสั้น: Anah]
+  B) woman; · daughter of Zibeon; mother of Oholibamah, wife of Esau [คำแปลสั้น: Anah]
+  C) man; · son of Seir [คำแปลสั้น: Anah]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 43
+ที่อยู่: EXO 6:19
+ข้อความต้นฉบับ: וּבְנֵ֥י מְרָרִ֖י מַחְלִ֣י וּמוּשִׁ֑י אֵ֛לֶּה מִשְׁפְּחֹ֥ת הַלֵּוִ֖י לְתֹלְדֹתָֽם׃
+คำที่ถาม: ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) a written record about the descendants of a particular person [คำแปลสั้น: record, story]
+  B) the relative order in which children of the same father were born [คำแปลสั้น: order of birth]
+  C) a family relationship between the descendants of a common ancestor [คำแปลสั้น: line, genealogy]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,61 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 114
+ที่อยู่: EXO 37:16
+ข้อความต้นฉบับ: וַיַּ֜עַשׂ אֶֽת־הַכֵּלִ֣ים׀אֲשֶׁ֣ר עַל־הַשֻּׁלְחָ֗ן אֶת־קְעָרֹתָ֤יו וְאֶת־כַּפֹּתָיו֙ וְאֵת֙ מְנַקִּיֹּתָ֔יו וְאֶת־הַקְּשָׂוֺ֔ת אֲשֶׁ֥ר יֻסַּ֖ךְ בָּהֵ֑ן זָהָ֖ב טָהֽוֹר׃פ
+คำที่ถาม: ו   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) small bowl, made of gold, · used for libations in the sanctuary [คำแปลสั้น: libation vessel]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 115
+ที่อยู่: 2SA 6:11
+ข้อความต้นฉบับ: וַיֵּשֶׁב֩ אֲר֨וֹן יְהוָ֜ה בֵּ֣ית עֹבֵ֥ד אֱדֹ֛ם הַגִּתִּ֖י שְׁלֹשָׁ֣ה חֳדָשִׁ֑ים וַיְבָ֧רֶךְ יְהוָ֛ה אֶת־עֹבֵ֥ד אֱדֹ֖ם וְאֶת־כָּל־בֵּיתֽוֹ׃
+คำที่ถาม: עֹבֵ֥ד   (รูปตั้งต้น עֹבֵד אֱדוֹם · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · son of Jeduthun; tribe of Levi; · gatekeeper for the ark and harp player [คำแปลสั้น: Obed-Edom]
+  B) man; · from Gath; · who kept the ark of the covenant stored in his house after the death of Uzzah [คำแปลสั้น: Obed-Edom]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 116
+ที่อยู่: JER 32:23
+ข้อความต้นฉบับ: וַיָּבֹ֜אוּ וַיִּֽרְשׁ֣וּ אֹתָ֗הּ וְלֹֽא־שָׁמְע֤וּ בְקוֹלֶ֨ךָ֙ וּבְתוֹרָתְךָ֣ לֹא־הָלָ֔כוּ אֵת֩ כָּל־אֲשֶׁ֨ר צִוִּ֧יתָה לָהֶ֛ם לַעֲשׂ֖וֹת לֹ֣א עָשׂ֑וּ וַתַּקְרֵ֣א אֹתָ֔ם אֵ֥ת כָּל־הָרָעָ֖ה הַזֹּֽאת׃
+คำที่ถาม: צִוִּ֧יתָה   (รูปตั้งต้น צָוָה · ชนิดคำ verb)
+ตัวเลือก:
+  A) causative action by which deities or humans in a position of authority prescribe or instruct (other) humans how to behave or respond to a situation [คำแปลสั้น: to give orders, to order, to command, to charge, to instruct]
+  B) causative action with which a person is instructed how to behave or respond to a situation by a higher authority, either human or divine [คำแปลสั้น: to be commanded, ordered]
+  C) someone who has been put into a position of authority, and is now able to prescribe the actions of others [คำแปลสั้น: commander]
+  D) causative action with which a person puts one's house in order, that is, one's belongs and affairs, in anticipation of dying [คำแปลสั้น: to set a house, affairs in order > to prepare to die]
+  E) causative action by which God or God's power is called up for rescue or refuge [คำแปลสั้น: to summon, to command > to show (strength)]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 117
+ที่อยู่: GEN 36:42
+ข้อความต้นฉบับ: אַלּ֥וּף קְנַ֛ז אַלּ֥וּף תֵּימָ֖ן אַלּ֥וּף מִבְצָֽר׃
+คำที่ถาม: מִבְצָֽר   (รูปตั้งต้น מִבְצָר · ชนิดคำ noun)
+ตัวเลือก:
+  A) area that has been fortified with the help of a strong and solid wall and possibly other defense works; · associated with security [คำแปลสั้น: fortress, stronghold]
+  B) population center that has been fortified with the help of a strong and solid wall and possibly other defense works; · associated with security [คำแปลสั้น: fortified city, walled city]
+  C) man; · chief of Edom [คำแปลสั้น: Mibzar]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 118
+ที่อยู่: 2CH 34:27
+ข้อความต้นฉบับ: יַ֠עַן רַךְ־לְבָ֨בְךָ֜ וַתִּכָּנַ֣ע׀מִלִּפְנֵ֣י אֱלֹהִ֗ים בְּשָׁמְעֲךָ֤ אֶת־דְּבָרָיו֙ עַל־הַמָּק֤וֹם הַזֶּה֙ וְעַל־יֹ֣שְׁבָ֔יו וַתִּכָּנַ֣ע לְפָנַ֔י וַתִּקְרַ֥ע אֶת־בְּגָדֶ֖יךָ וַתֵּ֣בְךְּ לְפָנָ֑י וְגַם־אֲנִ֥י שָׁמַ֖עְתִּי נְאֻם־יְהוָֽה׃
+คำที่ถาม: תִּכָּנַ֣ע   (รูปตั้งต้น כָּנַע · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which humans show a low estimate of their own importance, usually before a deity [คำแปลสั้น: to humble oneself]
+  B) literally: to humble; hence: causative process by which humans or deities bring (other) humans and areas under their authority and control, usually using force [คำแปลสั้น: to subdue]
+  C) causative process by which deities cause humans to have a lower estimate of their own importance, usually through punishment [คำแปลสั้น: to humble]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

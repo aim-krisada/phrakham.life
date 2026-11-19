@@ -1,0 +1,68 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 33
+ที่อยู่: 1PE 4:4
+ข้อความต้นฉบับ: ἐν ᾧ ξενίζονται μὴ συντρεχόντων ὑμῶν εἰς τὴν αὐτὴν τῆς ἀσωτίας ἀνάχυσιν,βλασφημοῦντες·
+คำที่ถาม: ἀσωτίας   (รูปตั้งต้น ἀσωτία · ชนิดคำ noun)
+ตัวเลือก:
+  A) behavior which shows lack of concern or thought for the consequences of an action [คำแปลสั้น: senseless deeds, reckless deeds, recklessness]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 34
+ที่อยู่: REV 8:9
+ข้อความต้นฉบับ: καὶ ἀπέθανε τὸ τρίτον τῶν κτισμάτων τῶν ἐν τῇ θαλάσσῃ,τὰ ἔχοντα ψυχάς,καὶ τὸ τρίτον τῶν πλοίων διεφθάρησαν.
+คำที่ถาม: διεφθάρησαν   (รูปตั้งต้น διαφθείρω · ชนิดคำ verb)
+ตัวเลือก:
+  A) a marker of new information, either concerning participants in an episode or concerning the episode itself (occurring normally in the formulas ἐγένετο δέ or καὶ ἐγένετο004 [คำแปลสั้น: there was, and it happened that]
+  B) space above the earth, including the vault arching high over the earth from one horizon to another, as well as the sun, moon, and stars [คำแปลสั้น: sky]
+  C) to cause to happen, used particularly in relationship to physical events001 [คำแปลสั้น: to make, to cause, to give, to produce]
+  D) (an idiom, literally: to have in common) to share with one another equitably [คำแปลสั้น: to share, to share with one another]
+  E) (an idiom, literally: to acquire one’s soul or to acquire one’s life) to save oneself from grave danger or death [คำแปลสั้น: to save oneself, to protect oneself]
+  F) (an idiom, literally: the blood pours out) to die, with the implication of a sacrificial purpose [คำแปลสั้น: to die as a sacrifice, sacrificial death]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 35
+ที่อยู่: 2CO 2:2
+ข้อความต้นฉบับ: εἰ γὰρ ἐγὼ λυπῶ ὑμᾶς,καὶ τίς ὁ εὐφραίνων με εἰ μὴ ὁ λυπούμενος ἐξ ἐμοῦ;
+คำที่ถาม: γὰρ   (รูปตั้งต้น γάρ · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]
+  B) a marker of cause or reason between events, though in some contexts the relation is often remote or tenuous [คำแปลสั้น: for, because]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 36
+ที่อยู่: 1TH 4:12
+ข้อความต้นฉบับ: ἵνα περιπατῆτε εὐσχημόνως πρὸς τοὺς ἔξω καὶ μηδενὸς χρείαν ἔχητε.
+คำที่ถาม: περιπατῆτε   (รูปตั้งต้น περιπατέω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to make a serious declaration on the basis of presumed personal knowledge001 [คำแปลสั้น: to declare, to assert, to testify]
+  B) a marker of a causative relation, with otherwise almost empty semantic content [คำแปลสั้น: to cause, to bring about, to produce]
+  C) a title with Messianic implications used by Jesus concerning himself [คำแปลสั้น: Son of Man]
+  D) the totality of any object, mass, collective, or extension001 [คำแปลสั้น: all, every, each, whole]
+  E) any one of many different supernatural beings regarded as having authority or control over some aspect of the universe or human activity [คำแปลสั้น: god]
+  F) a degree which surpasses in some manner a point on an explicit or implicit scale of extent [คำแปลสั้น: more, more than, to a greater degree, even more]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 37
+ที่อยู่: LUK 11:30
+ข้อความต้นฉบับ: καθὼς γὰρ ἐγένετο Ἰωνᾶς τοῖς Νινευίταις σημεῖον,οὕτως ἔσται καὶ ὁ υἱὸς τοῦ ἀνθρώπου τῇ γενεᾷ ταύτῃ.
+คำที่ถาม: σημεῖον   (รูปตั้งต้น σημεῖον · ชนิดคำ noun)
+ตัวเลือก:
+  A) (an idiom, literally: to sit on the right side of) to be in a position of high status [คำแปลสั้น: to sit on the right side of, to be granted high position]
+  B) (figurative extension of meaning of πατήρ[a] ‘father,’ 10.14) an archetype anticipating a later reality and suggesting a derivative relationship004 [คำแปลสั้น: archetype, father, spiritual father]
+  C) a building consisting of one or more rooms and normally serving as a dwelling place (οἶκος[a] also includes certain public buildings, for example, a temple. The extension of οἶκος[a] to include temples may be the result of speaking of a temple as the dwelling place of the deity.) [คำแปลสั้น: house, temple, sanctuary]
+  D) a reference to an entity regarded as a part of the discourse setting,001 with pejorative meaning in certain contexts002 [คำแปลสั้น: this, this one]
+  E) (an idiom, literally: if it should happen) a marker of a degree of probability [คำแปลสั้น: probably]
+  F) (derivative of δύναμις[a] ‘ability,’ 74.1) to be able to do or to experience something [คำแปลสั้น: can, to be able to]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

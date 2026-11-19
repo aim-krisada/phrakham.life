@@ -1,0 +1,57 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 301
+ที่อยู่: EZK 23:20
+ข้อความต้นฉบับ: וַֽתַּעְגְּבָ֔ה עַ֖ל פִּֽלַגְשֵׁיהֶ֑ם אֲשֶׁ֤ר בְּשַׂר־חֲמוֹרִים֙ בְּשָׂרָ֔ם וְזִרְמַ֥ת סוּסִ֖ים זִרְמָתָֽם׃
+คำที่ถาม: פִּֽלַגְשֵׁי   (รูปตั้งต้น פִּלֶגֶשׁ · ชนิดคำ noun)
+ตัวเลือก:
+  A) a woman who lives with a man but has lower status than his wife or wives [คำแปลสั้น: concubine]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 302
+ที่อยู่: DEU 31:22
+ข้อความต้นฉบับ: וַיִּכְתֹּ֥ב מֹשֶׁ֛ה אֶת־הַשִּׁירָ֥ה הַזֹּ֖את בַּיּ֣וֹם הַה֑וּא וַֽיְלַמְּדָ֖הּ אֶת־בְּנֵ֥י יִשְׂרָאֵֽל׃
+คำที่ถาม: שִּׁירָ֥ה   (รูปตั้งต้น שִׁירָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) words set to a set or improvised tune, whether accompanied by musical instruments and dancing or not [คำแปลสั้น: song]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 303
+ที่อยู่: 1CH 4:21
+ข้อความต้นฉบับ: בְּנֵי֙ שֵׁלָ֣ה בֶן־יְהוּדָ֔ה עֵ֚ר אֲבִ֣י לֵכָ֔ה וְלַעְדָּ֖ה אֲבִ֣י מָרֵשָׁ֑ה וּמִשְׁפְּח֛וֹת בֵּית־עֲבֹדַ֥ת הַבֻּ֖ץ לְבֵ֥ית אַשְׁבֵּֽעַ׃
+คำที่ถาม: בֵ֥ית   (รูปตั้งต้น בַּיִת · ชนิดคำ noun)
+ตัวเลือก:
+  A) town; · territory of Judah; · its inhabitants were experts in weaving cloth [คำแปลสั้น: Beth-Ashbea]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 304
+ที่อยู่: 1CH 11:13
+ข้อความต้นฉบับ: הֽוּא־הָיָ֨ה עִם־דָּוִ֜יד בַּפַּ֣ס דַּמִּ֗ים וְהַפְּלִשְׁתִּים֙ נֶאֱסְפוּ־שָׁ֣םלַמִּלְחָמָ֔ה וַתְּהִ֛י חֶלְקַ֥ת הַשָּׂדֶ֖ה מְלֵאָ֣ה שְׂעוֹרִ֑ים וְהָעָ֥ם נָ֖סוּ מִפְּנֵ֥י פְלִשְׁתִּֽים׃
+คำที่ถาม: דַּמִּ֗ים   (รูปตั้งต้น פַּס דַּמִּים · ชนิดคำ noun)
+ตัวเลือก:
+  A) location, also known as Ephes-Dammim; · located between Socoh and Azekah, territory of Judah [คำแปลสั้น: Pas-Dammim]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 305
+ที่อยู่: AMO 2:10
+ข้อความต้นฉบับ: וְאָנֹכִ֛י הֶעֱלֵ֥יתִי אֶתְכֶ֖ם מֵאֶ֣רֶץ מִצְרָ֑יִם וָאוֹלֵ֨ךְ אֶתְכֶ֤ם בַּמִּדְבָּר֙ אַרְבָּעִ֣ים שָׁנָ֔ה לָרֶ֖שֶׁת אֶת־אֶ֥רֶץ הָאֱמֹרִֽי׃
+คำที่ถาม: הֶעֱלֵ֥יתִי   (รูปตั้งต้น עָלָה · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to come up; hence: process by which certain information is recorded in a scroll [คำแปลสั้น: to be entered]
+  B) literally: to come up in (one's) heart or spirit; hence: process by which humans or deities start processing something in their minds [คำแปลสั้น: to come to mind]
+  C) literally: to be brought up over the lip; hence: process by which people become the object of other people's conversations [คำแปลสั้น: to become an object of gossip]
+  D) literally: to make go up; hence: causative process by which humans offer a burnt-offering and cause its smoke to go up [คำแปลสั้น: to offer, to sacrifice]
+  E) literally: to cause to go up; hence: causative process by which an object is caused to appear on top of or over another one [คำแปลสั้น: to cover]
+  F) literally: to bring up; hence: causative action by which a mother brings her child to adulthood [คำแปลสั้น: to rear]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

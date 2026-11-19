@@ -1,0 +1,2540 @@
+{
+ "คำอธิบาย": "ข้อสอบปรนัยกับคำตอบที่ควรได้ ⇒ เครื่องพ่น ⛔ ไม่ได้พิมพ์ด้วยมือ",
+ "เมล็ดสุ่ม": 49,
+ "ตัวเลือกสูงสุด": 6,
+ "ป้ายไม่มีอันไหนเข้า": "X",
+ "ชุดคำถาม": [
+  {
+   "ชุด": 1,
+   "ไฟล์": "ชุด01.txt",
+   "ฝั่ง": "ฮีบรู",
+   "เลขข้อสอบ": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "ชุด": 2,
+   "ไฟล์": "ชุด02.txt",
+   "ฝั่ง": "ฮีบรู",
+   "เลขข้อสอบ": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "ชุด": 3,
+   "ไฟล์": "ชุด03.txt",
+   "ฝั่ง": "ฮีบรู",
+   "เลขข้อสอบ": [
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  {
+   "ชุด": 4,
+   "ไฟล์": "ชุด04.txt",
+   "ฝั่ง": "ฮีบรู",
+   "เลขข้อสอบ": [
+    16,
+    17,
+    18,
+    19,
+    20
+   ]
+  },
+  {
+   "ชุด": 5,
+   "ไฟล์": "ชุด05.txt",
+   "ฝั่ง": "ฮีบรู",
+   "เลขข้อสอบ": [
+    21,
+    22,
+    23,
+    24,
+    25
+   ],
+   "ยกเลิก": "ยาวเกินจนตัวตรวจคืนของเปล่า ⇒ แบ่งเป็นชุด [14, 15]"
+  },
+  {
+   "ชุด": 6,
+   "ไฟล์": "ชุด06.txt",
+   "ฝั่ง": "ฮีบรู",
+   "เลขข้อสอบ": [
+    26,
+    27,
+    28,
+    29,
+    30
+   ]
+  },
+  {
+   "ชุด": 7,
+   "ไฟล์": "ชุด07.txt",
+   "ฝั่ง": "ฮีบรู",
+   "เลขข้อสอบ": [
+    31,
+    32
+   ]
+  },
+  {
+   "ชุด": 8,
+   "ไฟล์": "ชุด08.txt",
+   "ฝั่ง": "กรีก",
+   "เลขข้อสอบ": [
+    33,
+    34,
+    35,
+    36,
+    37
+   ]
+  },
+  {
+   "ชุด": 9,
+   "ไฟล์": "ชุด09.txt",
+   "ฝั่ง": "กรีก",
+   "เลขข้อสอบ": [
+    38,
+    39,
+    40,
+    41,
+    42
+   ],
+   "ยกเลิก": "ยาวเกินจนตัวตรวจคืนของเปล่า ⇒ แบ่งเป็นชุด [16, 17]"
+  },
+  {
+   "ชุด": 10,
+   "ไฟล์": "ชุด10.txt",
+   "ฝั่ง": "กรีก",
+   "เลขข้อสอบ": [
+    43,
+    44,
+    45,
+    46,
+    47
+   ]
+  },
+  {
+   "ชุด": 11,
+   "ไฟล์": "ชุด11.txt",
+   "ฝั่ง": "กรีก",
+   "เลขข้อสอบ": [
+    48,
+    49,
+    50,
+    51,
+    52
+   ]
+  },
+  {
+   "ชุด": 12,
+   "ไฟล์": "ชุด12.txt",
+   "ฝั่ง": "กรีก",
+   "เลขข้อสอบ": [
+    53,
+    54,
+    55,
+    56,
+    57
+   ]
+  },
+  {
+   "ชุด": 13,
+   "ไฟล์": "ชุด13.txt",
+   "ฝั่ง": "กรีก",
+   "เลขข้อสอบ": [
+    58,
+    59,
+    60
+   ]
+  },
+  {
+   "ชุด": 14,
+   "ฝั่ง": "ฮีบรู",
+   "ไฟล์": "ชุด14.txt",
+   "เลขข้อสอบ": [
+    21,
+    22,
+    23,
+    24
+   ],
+   "แบ่งมาจากชุด": 5
+  },
+  {
+   "ชุด": 15,
+   "ฝั่ง": "ฮีบรู",
+   "ไฟล์": "ชุด15.txt",
+   "เลขข้อสอบ": [
+    25
+   ],
+   "แบ่งมาจากชุด": 5
+  },
+  {
+   "ชุด": 16,
+   "ฝั่ง": "กรีก",
+   "ไฟล์": "ชุด16.txt",
+   "เลขข้อสอบ": [
+    38,
+    39,
+    40,
+    41
+   ],
+   "แบ่งมาจากชุด": 9
+  },
+  {
+   "ชุด": 17,
+   "ฝั่ง": "กรีก",
+   "ไฟล์": "ชุด17.txt",
+   "เลขข้อสอบ": [
+    42
+   ],
+   "แบ่งมาจากชุด": 9
+  }
+ ],
+ "ข้อสอบ": [
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "ISA 48:3",
+   "เล่ม": "ISA",
+   "บท": "48",
+   "ข้อ": "3",
+   "ลำดับคำ": 1,
+   "คำเดิม": "רִֽאשֹׁנוֹת֙",
+   "รูปตั้งต้น": "רִאשׁוֹן",
+   "ชนิดคำ": "adjective",
+   "แปลอังกฤษของต้นฉบับ": "former",
+   "รหัสความหมายที่เราแปะ": "006657001001000",
+   "คำในพจนานุกรม": "רִאשֹׁון",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "006657001002000",
+     "ข้อความ": "state of authority within a group of people [คำแปลสั้น: leading]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "006657001001000",
+     "ข้อความ": "state in which a countable entity is the first or the previous in a range [คำแปลสั้น: first, former, formost, previous]"
+    }
+   ],
+   "คำตอบที่ควรได้": "B",
+   "เลขข้อสอบ": 1
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "PSA 62:5",
+   "เล่ม": "PSA",
+   "บท": "62",
+   "ข้อ": "5",
+   "ลำดับคำ": 15,
+   "คำเดิม": "קִרְבָּ֗",
+   "รูปตั้งต้น": "קֶרֶב",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "hearts",
+   "รหัสความหมายที่เราแปะ": "006566001003000",
+   "คำในพจนานุกรม": "קֶרֶב",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 6,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "007414001006000",
+     "ข้อความ": "literally: to complete (an event); hence: causative action by which deities cause a situation to come to an end [คำแปลสั้น: to bring to an end]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000396001009000",
+     "ข้อความ": "process by which an event takes place with great intensity, evoking an association with God [คำแปลสั้น: mighty, exceedingly, great (in intensity)]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "003181001001000",
+     "ข้อความ": "a state in which a human or deity helps a human in need to be safe / a safe state [คำแปลสั้น: safety, welfare, prosperity, victory, salvation, deliverance]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "006488001003000",
+     "ข้อความ": "state in which an event is regarded as relatively unimportant, not requiring much effort or thought [คำแปลสั้น: to be a trivial matter, to be of no consequence, to come easy]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a marker negating a proposition [คำแปลสั้น: not, no]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "006967001003000",
+     "ข้อความ": "literally: lifted up state in which humans or deities have an elevated status, either in their own eyes or in the eyes of other people, · which can either be good or bad, depending on whether this status is justified [คำแปลสั้น: high status, honor, dignity]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 2
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "JDG 5:11",
+   "เล่ม": "JDG",
+   "บท": "5",
+   "ข้อ": "11",
+   "ลำดับคำ": 1,
+   "คำเดิม": "קּ֣וֹל",
+   "รูปตั้งต้น": "קוֹל",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "sound",
+   "รหัสความหมายที่เราแปะ": "006417001001000",
+   "คำในพจนานุกรม": "קֹול",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 11,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "006417001009000",
+     "ข้อความ": "literally: voice; hence: process by which information is passed on within a community [คำแปลสั้น: report, news, proclamation]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "006417001003000",
+     "ข้อความ": "literally: one voice; hence: action by which a group of people do things in one accord [คำแปลสั้น: in unison]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "006417001007000",
+     "ข้อความ": "literally: to raise (one's) voice; hence: action by which humans raise their voice. · either in order to shout or to speak [คำแปลสั้น: to shout]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "006417001010000",
+     "ข้อความ": "literally: to make (one's) voice kind; hence: actions by which humans speak in a kind and gracious way · in order to win a favorable attitude from other humans [คำแปลสั้น: to speak kindly, to speak charmingly]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "006417001008000",
+     "ข้อความ": "literally: voice; hence: action by which humans or deities utter words [คำแปลสั้น: words]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 3
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "NEH 3:10",
+   "เล่ม": "NEH",
+   "บท": "3",
+   "ข้อ": "10",
+   "ลำดับคำ": 6,
+   "คำเดิม": "בֶן",
+   "รูปตั้งต้น": "בֵּן",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "son",
+   "รหัสความหมายที่เราแปะ": "001040001001000",
+   "คำในพจนานุกรม": "בֵּן",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 14,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001040002001000",
+     "ข้อความ": "man; · Levite; time of king David [คำแปลสั้น: Ben]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001040001006000",
+     "ข้อความ": "literally: son (of a number of years); hence: state in which humans and animals have a certain age, · referred to as a child of a certain number of years [คำแปลสั้น: at the age of ...]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001040001007000",
+     "ข้อความ": "state of being associated with a certain time of day, · referred to as a child of that time [คำแปลสั้น: one that is ...]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "001040001005000",
+     "ข้อความ": "literally: children of a town, region, nation; hence: people, animals, or products that are inhabitants of or originating from a place, town, region, or nation, · as if they were the offspring of that place [คำแปลสั้น: inhabitants of, originating from]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001040001008000",
+     "ข้อความ": "state of being associated with a certain attribute, attitude, or behavior, · referred to as a child of that attribute, attitude, or behavior [คำแปลสั้น: one who is ..., one that is ...]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 4
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "PSA 6:7",
+   "เล่ม": "PSA",
+   "บท": "6",
+   "ข้อ": "7",
+   "ลำดับคำ": 8,
+   "คำเดิม": "מִטָּתִ֑",
+   "รูปตั้งต้น": "מִטָּה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "bed",
+   "รหัสความหมายที่เราแปะ": "003926001001000",
+   "คำในพจนานุกรม": "מִטָּה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003926001002000",
+     "ข้อความ": "a bed-like structure used to transport important people, either in lying or sitting position [คำแปลสั้น: bier, litter]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "003926001001000",
+     "ข้อความ": "a low platform standing on four legs, a bit longer than the length of a man, and about 70-80 centimeters wide; · used by people of means to sit or sleep on [คำแปลสั้น: couch, bed]"
+    }
+   ],
+   "คำตอบที่ควรได้": "B",
+   "เลขข้อสอบ": 5
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "EXO 27:1",
+   "เล่ม": "EXO",
+   "บท": "27",
+   "ข้อ": "1",
+   "ลำดับคำ": 14,
+   "คำเดิม": "רָב֤וּעַ",
+   "รูปตั้งต้น": "רָבַע",
+   "ชนิดคำ": "verb",
+   "แปลอังกฤษของต้นฉบับ": "square",
+   "รหัสความหมายที่เราแปะ": "006676002001000",
+   "คำในพจนานุกรม": "רבע",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 4,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "006676001001000",
+     "ข้อความ": "action by which humans assume a horizontal position [คำแปลสั้น: to lie down]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "006676001003000",
+     "ข้อความ": "literally: to cause to lie down; hence: causative action by which humans cause animals to copulate with each other [คำแปลสั้น: to cause to mate]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "006676002001000",
+     "ข้อความ": "state in which an object has four sides of equal size [คำแปลสั้น: square]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "006676001002000",
+     "ข้อความ": "literally: to lie down; hence: actions by which humans assume a horizontal position to order to copulate with an animal [คำแปลสั้น: to mate, to have intercourse]"
+    }
+   ],
+   "คำตอบที่ควรได้": "C",
+   "เลขข้อสอบ": 6
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "JOB 31:40",
+   "เล่ม": "JOB",
+   "บท": "31",
+   "ข้อ": "40",
+   "ลำดับคำ": 5,
+   "คำเดิม": "תַֽחַת",
+   "รูปตั้งต้น": "תַּחַת",
+   "ชนิดคำ": "preposition",
+   "แปลอังกฤษของต้นฉบับ": "instead of",
+   "รหัสความหมายที่เราแปะ": "007784001005000",
+   "คำในพจนานุกรม": "תַּחַת",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 12,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "007784001002000",
+     "ข้อความ": "literally: what is under (something); hence: the place where humans or objects are located [คำแปลสั้น: place, site]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "007784001008000",
+     "ข้อความ": "literally: under (an event); hence: state in which an event is presented as the motivation, cause, or reason for another event [คำแปลสั้น: because]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "007784001006000",
+     "ข้อความ": "literally: under (an event); hence: state in which an event happens simultaneously with another event [คำแปลสั้น: when ... happens, under, amid]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "007784001007000",
+     "ข้อความ": "literally: under (an event); hence: state in which an event is presented as the motivation, cause, or reason for another event [คำแปลสั้น: because]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "007784002003000",
+     "ข้อความ": "man; · son of Bered; from the tribe of Ephraim [คำแปลสั้น: Tahath]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 7
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "1KI 11:18",
+   "เล่ม": "1KI",
+   "บท": "11",
+   "ข้อ": "18",
+   "ลำดับคำ": 9,
+   "คำเดิม": "אֲנָשִׁ֨ים",
+   "รูปตั้งต้น": "אִישׁ",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "men",
+   "รหัสความหมายที่เราแปะ": "000354001001000",
+   "คำในพจนานุกรม": "אִישׁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 12,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "007784001008000",
+     "ข้อความ": "literally: under (an event); hence: state in which an event is presented as the motivation, cause, or reason for another event [คำแปลสั้น: because]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001297001001000",
+     "ข้อความ": "a group of armed humans equipped for fighting on land, whose main purpose is to execute swift attacks and loot and plunder as much as they can; sometimes also used to denote a unit of a more regular army [คำแปลสั้น: band of raiders, troops]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000511001003000",
+     "ข้อความ": "action by which humans give verbal instructions regarding something [คำแปลสั้น: to assign]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "002849001002000",
+     "ข้อความ": "man; · son of Seraiah; tribe of Judah; · founder of Ge-Harashim [คำแปลสั้น: Joab]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001040002001000",
+     "ข้อความ": "man; · Levite; time of king David [คำแปลสั้น: Ben]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "003570001001000",
+     "ข้อความ": "a staple food · made from a dough of water and either wheat or barley then baked; · together with water considered the very basis of life, often used to refer to food in general [คำแปลสั้น: bread, food]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 8
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "GEN 8:2",
+   "เล่ม": "GEN",
+   "บท": "8",
+   "ข้อ": "2",
+   "ลำดับคำ": 11,
+   "คำเดิม": "גֶּ֖שֶׁם",
+   "รูปตั้งต้น": "גֶּשֶׁם",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "rain",
+   "รหัสความหมายที่เราแปะ": "001519001001000",
+   "คำในพจนานุกรม": "גֶּשֶׁם",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001519002001000",
+     "ข้อความ": "man, also known as Gashmu; · Arab; · opponent of Nehemiah; after exile [คำแปลสั้น: Geshem]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001519001001000",
+     "ข้อความ": "water that has fallen as rain [คำแปลสั้น: rain]"
+    }
+   ],
+   "คำตอบที่ควรได้": "B",
+   "เลขข้อสอบ": 9
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "AMO 4:13",
+   "เล่ม": "AMO",
+   "บท": "4",
+   "ข้อ": "13",
+   "ลำดับคำ": 20,
+   "คำเดิม": "בָּ֣מֳתֵי",
+   "รูปตั้งต้น": "בָּמָה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "heights",
+   "รหัสความหมายที่เราแปะ": "001036001002000",
+   "คำในพจนานุกรม": "בָּמָה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 3,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001036001002000",
+     "ข้อความ": "literally: the back (of an area); hence: the highest situated parts of a certain location, often representing the entire location [คำแปลสั้น: heights, hills]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001036001001000",
+     "ข้อความ": "rear surface of the body [คำแปลสั้น: back]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001036001003000",
+     "ข้อความ": "place of worship, often situated in an elevated location, but not necessarily so [คำแปลสั้น: high place, place of worship]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 10
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "1CH 10:1",
+   "เล่ม": "1CH",
+   "บท": "10",
+   "ข้อ": "1",
+   "ลำดับคำ": 7,
+   "คำเดิม": "אִֽישׁ",
+   "รูปตั้งต้น": "אִישׁ",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "men",
+   "รหัสความหมายที่เราแปะ": "000354001002000",
+   "คำในพจนานุกรม": "אִישׁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 12,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000354001012000",
+     "ข้อความ": "literally: person drawing the sword; hence: soldier armed with a sword [คำแปลสั้น: swordsman]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000354001011000",
+     "ข้อความ": "literally: person of battle; person of military age, trained and experienced in warfare; · associated with strength and bravery [คำแปลสั้น: warrior]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000354001004000",
+     "ข้อความ": "member of the tribe of Benjamin [คำแปลสั้น: Benjaminite]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "000354001008000",
+     "ข้อความ": "literally: person of God; hence: a person who is in a special relationship with God and has prophetic gifts [คำแปลสั้น: man of God]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "000354001005000",
+     "ข้อความ": "referent referring to each and every individual in a group of people or objects [คำแปลสั้น: each]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 11
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "1CH 18:5",
+   "เล่ม": "1CH",
+   "บท": "18",
+   "ข้อ": "5",
+   "ลำดับคำ": 18,
+   "คำเดิม": "אֶ֖לֶף",
+   "รูปตั้งต้น": "אֶלֶף",
+   "ชนิดคำ": "adjective",
+   "แปลอังกฤษของต้นฉบับ": "thousand",
+   "รหัสความหมายที่เราแปะ": "000468002001000",
+   "คำในพจนานุกรม": "אֶלֶף",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 4,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000468002002000",
+     "ข้อความ": "group of interrelated families [คำแปลสั้น: clan]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000468003001000",
+     "ข้อความ": "town; · territory of Benjamin [คำแปลสั้น: Eleph, Haeleph]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000468001001000",
+     "ข้อความ": "generic term for domesticated oxen, both male and female; · kept for milk and used for plowing [คำแปลสั้น: cows, cattle]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 12
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "EZR 4:24",
+   "เล่ม": "EZR",
+   "บท": "4",
+   "ข้อ": "24",
+   "ลำดับคำ": 14,
+   "คำเดิม": "שְׁנַ֣ת",
+   "รูปตั้งต้น": "שְׁנָה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "year",
+   "รหัสความหมายที่เราแปะ": "007528002001000",
+   "คำในพจนานุกรม": "שְׁנָה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "007528001001000",
+     "ข้อความ": "state in which humans are asleep [คำแปลสั้น: sleep]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "007528002001000",
+     "ข้อความ": "the time period representing a full cycle of seasons, calculated as a sequence of twelve months, though adjusted on a regular basis by adding a thirteenth month [คำแปลสั้น: year]"
+    }
+   ],
+   "คำตอบที่ควรได้": "B",
+   "เลขข้อสอบ": 13
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "EST 3:14",
+   "เล่ม": "EST",
+   "บท": "3",
+   "ข้อ": "14",
+   "ลำดับคำ": 23,
+   "คำเดิม": "זֶּֽה",
+   "รูปตั้งต้น": "זֶה",
+   "ชนิดคำ": "pronoun",
+   "แปลอังกฤษของต้นฉบับ": "that",
+   "รหัสความหมายที่เราแปะ": "001934001001000",
+   "คำในพจนานุกรม": "זֶה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001934001001000",
+     "ข้อความ": "a marker highlighting an object or event [คำแปลสั้น: this]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 14
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "EXO 23:8",
+   "เล่ม": "EXO",
+   "บท": "23",
+   "ข้อ": "8",
+   "ลำดับคำ": 2,
+   "คำเดิม": "לֹ֣א",
+   "รูปตั้งต้น": "לֹא",
+   "ชนิดคำ": "particle",
+   "แปลอังกฤษของต้นฉบับ": "not",
+   "รหัสความหมายที่เราแปะ": "003491001001000",
+   "คำในพจนานุกรม": "לֹא",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a marker negating a proposition [คำแปลสั้น: not, no]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 15
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "LEV 5:18",
+   "เล่ม": "LEV",
+   "บท": "5",
+   "ข้อ": "18",
+   "ลำดับคำ": 20,
+   "คำเดิม": "כֹּהֵ֜ן",
+   "รูปตั้งต้น": "כֹּהֵן",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "priest",
+   "รหัสความหมายที่เราแปะ": "003257001001000",
+   "คำในพจนานุกรม": "כֹּהֵן",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003257001001000",
+     "ข้อความ": "person ordained and consecrated to perform religious services on behalf of others [คำแปลสั้น: priest]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 16
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "LEV 8:21",
+   "เล่ม": "LEV",
+   "บท": "8",
+   "ข้อ": "21",
+   "ลำดับคำ": 18,
+   "คำเดิม": "אַ֜יִל",
+   "รูปตั้งต้น": "אַיִל",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "ram",
+   "รหัสความหมายที่เราแปะ": "000330001001000",
+   "คำในพจนานุกรม": "אַיִל",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 4,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000330002001000",
+     "ข้อความ": "a relatively short side wall projecting from the main wall of a building, either to create side chambers or to hold a door frame; alternatively this could be a pillar that stands flush with the wall or with the sides of an entrance way; it could also be the verticle part of a door frame [คำแปลสั้น: side wall, entrance, jamb]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000330003001000",
+     "ข้อความ": "tree, more commonly known as אֵלָה, with a broad crown, heavy branches, and thick trunk; may reach a height of 7.5 to 9 m.; sheds its leaves; has small an inconspicuous flowers; · pictacia terebinthus; · its stem contains aromatic turpentine, a resinous juice, which flows out when the bark is cut; it provides pleasant shade; · imposing tree, preferred place to sit under and enjoy the shade, associated with cultic worship [คำแปลสั้น: terebinth]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000330001001000",
+     "ข้อความ": "male herbivorous mammal with four legs; · |iovis ladicaudata|i*, fat-tailed sheep; · clean animal, used for sacrifice, source of meat, hides, wool, and horns; · associated with strength and leadership [คำแปลสั้น: ram]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "000330001002000",
+     "ข้อความ": "person who has a position of leadership [คำแปลสั้น: leader, chief]"
+    }
+   ],
+   "คำตอบที่ควรได้": "C",
+   "เลขข้อสอบ": 17
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "PSA 49:16",
+   "เล่ม": "PSA",
+   "บท": "49",
+   "ข้อ": "16",
+   "ลำดับคำ": 11,
+   "คำเดิม": "סֶֽלָה",
+   "รูปตั้งต้น": "סֶלָה",
+   "ชนิดคำ": "particle",
+   "แปลอังกฤษของต้นฉบับ": "selah",
+   "รหัสความหมายที่เราแปะ": "005089001001000",
+   "คำในพจนานุกรม": "סֶלָה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "006640001005000",
+     "ข้อความ": "literally: to see the light; hence: state in which humans are alive [คำแปลสั้น: to see the light > to live]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "004988001036000",
+     "ข้อความ": "literally: to turn back (someone's) heart; hence: causative action by which deities cause humans to change their way of thinking [คำแปลสั้น: to turn (someone's) heart back, to win back (someone's allegiance)]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "003619001021000",
+     "ข้อความ": "literally: to take; hence: state in which humans or deities are willing to accept what is offered to them, whether it is a physical gift, an oath, a promise, or words [คำแปลสั้น: to accept]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "006852001005000",
+     "ข้อความ": "state of an event or an object that is very difficult or painful or harmful; also used to describe the attitude or emotion in reaction to such an event [คำแปลสั้น: harm, misery, trouble, disaster, evil]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "006078001001000",
+     "ข้อความ": "process by which objects open up · in order to give access to something located inside or to create a passage [คำแปลสั้น: to open, to open up]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "000005001003000",
+     "ข้อความ": "action by which someone decides to stop searching for an object that is not located in its expected place [คำแปลสั้น: to give up as lost]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 18
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "JOL 1:11",
+   "เล่ม": "JOL",
+   "บท": "1",
+   "ข้อ": "11",
+   "ลำดับคำ": 5,
+   "คำเดิม": "חִטָּ֖ה",
+   "รูปตั้งต้น": "חִטָּה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "wheat",
+   "รหัสความหมายที่เราแปะ": "002224001001000",
+   "คำในพจนานุกรม": "חִטָּה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "004840001001000",
+     "ข้อความ": "the period of a person's life ranging from early childhood to adulthood [คำแปลสั้น: youth]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000867001029000",
+     "ข้อความ": "literally: to bring (information) to (someone); hence: causative process by which humans cause (other) humans or deities to receive information about a certain event, either directly or indirectly [คำแปลสั้น: to bring]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "003957001002000",
+     "ข้อความ": "one of the gates of Jerusalem [คำแปลสั้น: Water Gate]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "006104002001000",
+     "ข้อความ": "one of the city gates of Jerusalem, · through which small cattle could be taken [คำแปลสั้น: Sheep Gate]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "000931001003000",
+     "ข้อความ": "literally: house (of an object); hence: an object that serves as a holder or container of another object, · as if it were its house [คำแปลสั้น: holder, container]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "006562001002000",
+     "ข้อความ": "action by which humans speak written words aloud [คำแปลสั้น: to read, to recite]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 19
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "EZK 43:9",
+   "เล่ม": "EZK",
+   "บท": "43",
+   "ข้อ": "9",
+   "ลำดับคำ": 6,
+   "คำเดิม": "פִגְרֵ֥י",
+   "รูปตั้งต้น": "פֶּגֶר",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "corpses",
+   "รหัสความหมายที่เราแปะ": "005787001001000",
+   "คำในพจนานุกรม": "פֶּגֶר",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "005787001001000",
+     "ข้อความ": "body of an animal or human that has died or been killed; · source of pollution and impurity [คำแปลสั้น: corpse, carcass]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 20
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "GEN 24:61",
+   "เล่ม": "GEN",
+   "บท": "24",
+   "ข้อ": "61",
+   "ลำดับคำ": 15,
+   "คำเดิม": "אִ֑ישׁ",
+   "รูปตั้งต้น": "אִישׁ",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "man",
+   "รหัสความหมายที่เราแปะ": "000354001001000",
+   "คำในพจนานุกรม": "אִישׁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 12,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000354001006000",
+     "ข้อความ": "literally: to come among people; hence, probably: state in which people have reached an advanced age, meaning, among other things, that they are too old for military duty [คำแปลสั้น: to be advanced in years]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000354001002000",
+     "ข้อความ": "singlular only: a specific group of people united for a common purpose, distinguishing this group from other groups referred to in the same context [คำแปลสั้น: people, men]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000354001005000",
+     "ข้อความ": "referent referring to each and every individual in a group of people or objects [คำแปลสั้น: each]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "000354001011000",
+     "ข้อความ": "literally: person of battle; person of military age, trained and experienced in warfare; · associated with strength and bravery [คำแปลสั้น: warrior]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "000354001010000",
+     "ข้อความ": "literally: person of in between; hence: a soldier who fights in single combat on behalf of the entire army [คำแปลสั้น: champion]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 21
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "HOS 10:13",
+   "เล่ม": "HOS",
+   "บท": "10",
+   "ข้อ": "13",
+   "ลำดับคำ": 3,
+   "คำเดิม": "ה",
+   "รูปตั้งต้น": "ה",
+   "ชนิดคำ": "suffix",
+   "แปลอังกฤษของต้นฉบับ": "",
+   "รหัสความหมายที่เราแปะ": "005303001001000",
+   "คำในพจนานุกรม": "עַוְלָה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "สรรพนามต่อท้ายเกาะคำหลัก",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "007239001002000",
+     "ข้อความ": "causative action by which humans or deities cause objects to become similar to another objects [คำแปลสั้น: to make like]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "006419001028000",
+     "ข้อความ": "literally: to arise; hence: action by which humans or deities position themselves in a standing position in a certain location [คำแปลสั้น: to take position, to stand]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "006419001012000",
+     "ข้อความ": "literally: to raise up (a pattern of behavior over someone); hence: causative action by which humans in a position of authority prescribe a certain pattern of behavior to other humans [คำแปลสั้น: to oblige]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "002669001006000",
+     "ข้อความ": "literally: goodness; state in which people go through a time of relative prosperity [คำแปลสั้น: prosperity, well-being]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "004122001002000",
+     "ข้อความ": "a generic term for an offering made to a deity [คำแปลสั้น: offering]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "001719001010000",
+     "ข้อความ": "road · leading through Transjordan along the desert border, connecting Damascus with the Gulf of Aqabah [คำแปลสั้น: King's Highway]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 22
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "NUM 10:15",
+   "เล่ม": "NUM",
+   "บท": "10",
+   "ข้อ": "15",
+   "ลำดับคำ": 2,
+   "คำเดิม": "צְבָ֔א",
+   "รูปตั้งต้น": "צָבָא",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "division",
+   "รหัสความหมายที่เราแปะ": "006109001004000",
+   "คำในพจนานุกรม": "צָבָא",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 7,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "006109001005000",
+     "ข้อความ": "collective of all celestial bodies that give light; · created by God; · often worshiped by people, contrary to God's law; · in Daniel 8 possibly used as a metaphor for the people of God [คำแปลสั้น: host of heaven, sun, moon, and stars]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "006109001003000",
+     "ข้อความ": "person who is fit for military service [คำแปลสั้น: soldier fit for war]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "006109001001000",
+     "ข้อความ": "state of being in the service of the community; · sometimes associated with suffering and heavy labor [คำแปลสั้น: work, service]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "006109001007000",
+     "ข้อความ": "literally: \"YHWH (or one of the other names of God or a combination thereof) of Hosts\"; hence: epithet of God with focus on his being in charge of the host of heavenly beings surrounding his throne, praising him, and carrying out his will in earth; · as an epithet it relates to God's power and control of the cosmos as the divine king and warrior [คำแปลสั้น: of Hosts, Almighty One]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "006109001002000",
+     "ข้อความ": "state of serving as a soldier in active combat [คำแปลสั้น: war, campaign, battle]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 23
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "ISA 22:11",
+   "เล่ม": "ISA",
+   "บท": "22",
+   "ข้อ": "11",
+   "ลำดับคำ": 9,
+   "คำเดิม": "בְּרֵכָ֣ה",
+   "รูปตั้งต้น": "בְּרֵכָה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "pool",
+   "รหัสความหมายที่เราแปะ": "001191001001000",
+   "คำในพจนานุกรม": "בְּרֵכָה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001191001001000",
+     "ข้อความ": "relatively large reservoir · dug by human hands · to collect water; place where many public activities take place [คำแปลสั้น: pool]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 24
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "PRO 28:14",
+   "เล่ม": "PRO",
+   "บท": "28",
+   "ข้อ": "14",
+   "ลำดับคำ": 5,
+   "คำเดิม": "מַקְשֶׁ֥ה",
+   "รูปตั้งต้น": "קָשָׁה",
+   "ชนิดคำ": "verb",
+   "แปลอังกฤษของต้นฉบับ": "hardens",
+   "รหัสความหมายที่เราแปะ": "006622001005000",
+   "คำในพจนานุกรม": "קשׁה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 9,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000924001003000",
+     "ข้อความ": "action by which someone observes something carefully, with the intention of seeing through the outward appearance of things and grasping their essence, and so gain knowledge and understanding [คำแปลสั้น: to look closely, to take note, to pay attention, to consider, to understand, to draw understanding]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "004288001018000",
+     "ข้อความ": "literally: to find (for someone); hence: state in which people or objects are available in sufficient quantity [คำแปลสั้น: to suffice]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "006419001030000",
+     "ข้อความ": "literally: to cause to stand; hence: causative action by which humans assign roles and responsibilities to other humans [คำแปลสั้น: to set, to install]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "006711001005000",
+     "ข้อความ": "literally: to pursue; hence: action by which humans do their utmost to achieve a certain condition or type of behavior [คำแปลสั้น: to pursue (a type of behavior)]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "004873001046000",
+     "ข้อความ": "literally: to fall; hence: process by which an individual or nation loses power, prosperity or status [คำแปลสั้น: to fall]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "002314002001000",
+     "ข้อความ": "to cause an object to have a relatively even and regular surface, free from perceptible projections or lumps or indentations [คำแปลสั้น: to make smooth]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 25
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "PSA 5:7",
+   "เล่ม": "PSA",
+   "บท": "5",
+   "ข้อ": "7",
+   "ลำดับคำ": 8,
+   "คำเดิม": "יְהוָֽה",
+   "รูปตั้งต้น": "יהוה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "LORD",
+   "รหัสความหมายที่เราแปะ": "002827001001000",
+   "คำในพจนานุกรม": "יהוה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "002827001001000",
+     "ข้อความ": "deity; · God of Israel who revealed himself to Moses [คำแปลสั้น: YHWH]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 26
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "JOB 13:10",
+   "เล่ม": "JOB",
+   "บท": "13",
+   "ข้อ": "10",
+   "ลำดับคำ": 7,
+   "คำเดิม": "סֵּ֗תֶר",
+   "รูปตั้งต้น": "סֵתֶר",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "secret",
+   "รหัสความหมายที่เราแปะ": "005190001002000",
+   "คำในพจนานุกรม": "סֵתֶר",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 3,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "005190001002000",
+     "ข้อความ": "state in which knowledge, an object, or an action is kept hidden or unknown from others [คำแปลสั้น: secret, secrecy]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "005190001003000",
+     "ข้อความ": "literally: (one's) shelter; hence: a title for God as the one who provides a hiding place for his people [คำแปลสั้น: Shelter]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "005190001001000",
+     "ข้อความ": "state in which people, animals, or objects are in a location where they cannot be readily seen or where danger cannot reach them [คำแปลสั้น: cover, shelter, disguise]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 27
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "EZK 1:26",
+   "เล่ม": "EZK",
+   "บท": "1",
+   "ข้อ": "26",
+   "ลำดับคำ": 11,
+   "คำเดิม": "מַרְאֵ֥ה",
+   "รูปตั้งต้น": "מַרְאֶה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "appearance",
+   "รหัสความหมายที่เราแปะ": "004362001001000",
+   "คำในพจนานุกรม": "מַרְאֶה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 7,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "004362001002000",
+     "ข้อความ": "literally: bad to look at; hence: state in which an animal is considered unpleasant to look at [คำแปลสั้น: ugly]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "004362001006000",
+     "ข้อความ": "literally: a person of sight; hence: a person of an imposing size [คำแปลสั้น: huge person]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "004362001007000",
+     "ข้อความ": "experience by which humans see something in a dream or trance, or as a supernatural apparition [คำแปลสั้น: vision]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "004362001003000",
+     "ข้อความ": "literally: appearance; hence: state in which someone speak in plain language which can be readily understood [คำแปลสั้น: plain, clear]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "004362001004000",
+     "ข้อความ": "literally: good to look at; hence: state in which humans or animals are considered pleasant to look at [คำแปลสั้น: beautiful, handsome, good-looking]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 28
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "PRO 2:18",
+   "เล่ม": "PRO",
+   "บท": "2",
+   "ข้อ": "18",
+   "ลำดับคำ": 5,
+   "คำเดิม": "הּ",
+   "รูปตั้งต้น": "הוּא",
+   "ชนิดคำ": "suffix",
+   "แปลอังกฤษของต้นฉบับ": "her",
+   "รหัสความหมายที่เราแปะ": "000931001001000",
+   "คำในพจนานุกรม": "בַּיִת",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 6,
+   "ชี้ถูกคำเพราะ": "สรรพนามต่อท้ายเกาะคำหลัก",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003619001009000",
+     "ข้อความ": "literally: to take (someone) out of (something else); causative action by which God creates a human body out of something else [คำแปลสั้น: to take from]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "007231001004000",
+     "ข้อความ": "literally: to cause (one's) anger to turn (towards someone); hence: action by which humans express their anger in words or actions [คำแปลสั้น: to vent (one's) anger]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "007498001008000",
+     "ข้อความ": "causative action by which humans or deities make sure that an object is safe from harm; · by observing the object and the surrounding area carefully and intervening when necessary [คำแปลสั้น: to watch over, to guard, to be in charge of, to take care of, to protect, to tend, to keep]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "007231001064000",
+     "ข้อความ": "literally: to bring back vengeance; hence: causative action by which deities find relief from their anger by inflicting punishment [คำแปลสั้น: to take vengeance]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "004762003010000",
+     "ข้อความ": "literally: to cause (someone's) heart to turn aside; hence: causative action by which humans or deities cause (other) humans to focus their thoughts and attention on a person, deity or activity [คำแปลสั้น: to cause (someone's) heart to turn, to cause (someone) to focus their attention]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "001824001005000",
+     "ข้อความ": "process by which humans or deities follow a certain pattern of behavior, · which is described as their journey through life [คำแปลสั้น: to go > to act, to behave]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 29
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "NUM 14:29",
+   "เล่ม": "NUM",
+   "บท": "14",
+   "ข้อ": "29",
+   "ลำดับคำ": 14,
+   "คำเดิม": "מִסְפַּרְ",
+   "รูปตั้งต้น": "מִסְפָּר",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "number",
+   "รหัสความหมายที่เราแปะ": "004177001005000",
+   "คำในพจนานุกรม": "מִסְפָּר",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 7,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000867001041000",
+     "ข้อความ": "literally: to come to the youth of youths; hence, possibly: process by which a young woman reaches the time when her body becomes mature [คำแปลสั้น: to reach full womanhood]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "004931001009000",
+     "ข้อความ": "literally: to take a wife (for someone else); hence: action by which a man contracts a marriage with a woman on behalf of someone else [คำแปลสั้น: to take a wife (for someone else)]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "005921001013000",
+     "ข้อความ": "literally: to turn (something); hence: causative action by which humans prepare an object to be used for a certain purpose [คำแปลสั้น: to clear, to prepare]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "007231001031000",
+     "ข้อความ": "exact meaning unsure; possible: causative action by which humans in authority cause other humans move from place to place in a certain area [คำแปลสั้น: to cause to roam]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "005707001002000",
+     "ข้อความ": "action by which humans or deities engage in a particular action [คำแปลสั้น: to do, to perform, to commit, to practice, to observe, to celebrate, to keep]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "000867001024000",
+     "ข้อความ": "literally: to bring (an event); hence: causative process by which deities cause events to take place [คำแปลสั้น: to bring, to bring about, to cause to happen]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 30
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "NUM 26:62",
+   "เล่ม": "NUM",
+   "บท": "26",
+   "ข้อ": "62",
+   "ลำดับคำ": 24,
+   "คำเดิม": "לֹא",
+   "รูปตั้งต้น": "לֹא",
+   "ชนิดคำ": "particle",
+   "แปลอังกฤษของต้นฉบับ": "no",
+   "รหัสความหมายที่เราแปะ": "003491001001000",
+   "คำในพจนานุกรม": "לֹא",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a marker negating a proposition [คำแปลสั้น: not, no]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 31
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "ฮีบรู",
+   "ที่อยู่": "ZEC 4:2",
+   "เล่ม": "ZEC",
+   "บท": "4",
+   "ข้อ": "2",
+   "ลำดับคำ": 12,
+   "คำเดิม": "מְנוֹרַת֩",
+   "รูปตั้งต้น": "מְנוֹרָה",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "lampstand",
+   "รหัสความหมายที่เราแปะ": "004120001001000",
+   "คำในพจนานุกรม": "מְנֹורָה",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "004120001001000",
+     "ข้อความ": "stand · designed to hold one or more lamps so that the lamps can light a large area [คำแปลสั้น: lampstand]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 32
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "1PE 4:4",
+   "เล่ม": "1PE",
+   "บท": "4",
+   "ข้อ": "4",
+   "ลำดับคำ": 10,
+   "คำเดิม": "ἀσωτίας",
+   "รูปตั้งต้น": "ἀσωτία",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "dissipation",
+   "รหัสความหมายที่เราแปะ": "000807001001000",
+   "คำในพจนานุกรม": "ἀσωτία",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000807001001000",
+     "ข้อความ": "behavior which shows lack of concern or thought for the consequences of an action [คำแปลสั้น: senseless deeds, reckless deeds, recklessness]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 33
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "REV 8:9",
+   "เล่ม": "REV",
+   "บท": "8",
+   "ข้อ": "9",
+   "ลำดับคำ": 18,
+   "คำเดิม": "διεφθάρησαν",
+   "รูปตั้งต้น": "διαφθείρω",
+   "ชนิดคำ": "verb",
+   "แปลอังกฤษของต้นฉบับ": "destroyed",
+   "รหัสความหมายที่เราแปะ": "001325001001000",
+   "คำในพจนานุกรม": "διαφθείρω",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 3,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001109001010000",
+     "ข้อความ": "a marker of new information, either concerning participants in an episode or concerning the episode itself (occurring normally in the formulas ἐγένετο δέ or καὶ ἐγένετο004 [คำแปลสั้น: there was, and it happened that]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "003677001001000",
+     "ข้อความ": "space above the earth, including the vault arching high over the earth from one horizon to another, as well as the sun, moon, and stars [คำแปลสั้น: sky]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001340001002000",
+     "ข้อความ": "to cause to happen, used particularly in relationship to physical events001 [คำแปลสั้น: to make, to cause, to give, to produce]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "002205001011000",
+     "ข้อความ": "(an idiom, literally: to have in common) to share with one another equitably [คำแปลสั้น: to share, to share with one another]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "005475001008000",
+     "ข้อความ": "(an idiom, literally: to acquire one’s soul or to acquire one’s life) to save oneself from grave danger or death [คำแปลสั้น: to save oneself, to protect oneself]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "000130001005000",
+     "ข้อความ": "(an idiom, literally: the blood pours out) to die, with the implication of a sacrificial purpose [คำแปลสั้น: to die as a sacrifice, sacrificial death]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 34
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "2CO 2:2",
+   "เล่ม": "2CO",
+   "บท": "2",
+   "ข้อ": "2",
+   "ลำดับคำ": 1,
+   "คำเดิม": "γὰρ",
+   "รูปตั้งต้น": "γάρ",
+   "ชนิดคำ": "conj",
+   "แปลอังกฤษของต้นฉบับ": "for",
+   "รหัสความหมายที่เราแปะ": "001073001001000",
+   "คำในพจนานุกรม": "γάρ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001073001002000",
+     "ข้อความ": "a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001073001001000",
+     "ข้อความ": "a marker of cause or reason between events, though in some contexts the relation is often remote or tenuous [คำแปลสั้น: for, because]"
+    }
+   ],
+   "คำตอบที่ควรได้": "B",
+   "เลขข้อสอบ": 35
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "1TH 4:12",
+   "เล่ม": "1TH",
+   "บท": "4",
+   "ข้อ": "12",
+   "ลำดับคำ": 1,
+   "คำเดิม": "περιπατῆτε",
+   "รูปตั้งต้น": "περιπατέω",
+   "ชนิดคำ": "verb",
+   "แปลอังกฤษของต้นฉบับ": "behave",
+   "รหัสความหมายที่เราแปะ": "003947001002000",
+   "คำในพจนานุกรม": "περιπατέω",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 3,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001278001001000",
+     "ข้อความ": "to make a serious declaration on the basis of presumed personal knowledge001 [คำแปลสั้น: to declare, to assert, to testify]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001340001008000",
+     "ข้อความ": "a marker of a causative relation, with otherwise almost empty semantic content [คำแปลสั้น: to cause, to bring about, to produce]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000447001008000",
+     "ข้อความ": "a title with Messianic implications used by Jesus concerning himself [คำแปลสั้น: Son of Man]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "000536001001000",
+     "ข้อความ": "the totality of any object, mass, collective, or extension001 [คำแปลสั้น: all, every, each, whole]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "002321001002000",
+     "ข้อความ": "any one of many different supernatural beings regarded as having authority or control over some aspect of the universe or human activity [คำแปลสั้น: god]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "003148001001000",
+     "ข้อความ": "a degree which surpasses in some manner a point on an explicit or implicit scale of extent [คำแปลสั้น: more, more than, to a greater degree, even more]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 36
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "LUK 11:30",
+   "เล่ม": "LUK",
+   "บท": "11",
+   "ข้อ": "30",
+   "ลำดับคำ": 6,
+   "คำเดิม": "σημεῖον",
+   "รูปตั้งต้น": "σημεῖον",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "sign",
+   "รหัสความหมายที่เราแปะ": "004493001001000",
+   "คำในพจนานุกรม": "σημεῖον",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001549001015000",
+     "ข้อความ": "(an idiom, literally: to sit on the right side of) to be in a position of high status [คำแปลสั้น: to sit on the right side of, to be granted high position]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "003864001007000",
+     "ข้อความ": "(figurative extension of meaning of πατήρ[a] ‘father,’ 10.14) an archetype anticipating a later reality and suggesting a derivative relationship004 [คำแปลสั้น: archetype, father, spiritual father]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "003528001001000",
+     "ข้อความ": "a building consisting of one or more rooms and normally serving as a dwelling place (οἶκος[a] also includes certain public buildings, for example, a temple. The extension of οἶκος[a] to include temples may be the result of speaking of a temple as the dwelling place of the deity.) [คำแปลสั้น: house, temple, sanctuary]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "003683001001000",
+     "ข้อความ": "a reference to an entity regarded as a part of the discourse setting,001 with pejorative meaning in certain contexts002 [คำแปลสั้น: this, this one]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001511001006000",
+     "ข้อความ": "(an idiom, literally: if it should happen) a marker of a degree of probability [คำแปลสั้น: probably]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "001430001001000",
+     "ข้อความ": "(derivative of δύναμις[a] ‘ability,’ 74.1) to be able to do or to experience something [คำแปลสั้น: can, to be able to]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 37
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "MAT 28:1",
+   "เล่ม": "MAT",
+   "บท": "28",
+   "ข้อ": "1",
+   "ลำดับคำ": 15,
+   "คำเดิม": "Μαρία",
+   "รูปตั้งต้น": "Μαρία",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "Mary",
+   "รหัสความหมายที่เราแปะ": "003162001003000",
+   "คำในพจนานุกรม": "Μαρία",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 7,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000080001003000",
+     "ข้อความ": "a person belonging to the same socio-religious entity and being of the same age group as the so-called reference person [คำแปลสั้น: brother, fellow countryman, fellow Jew, associate]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "004130001004000",
+     "ข้อความ": "(idioms, literally: to put at someone’s feet) to present something to someone who is reckoned as having superior status or position [คำแปลสั้น: to turn over to, to put at someone’s disposal]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001475001009000",
+     "ข้อความ": "to go to war against [คำแปลสั้น: to rise up in arms against, to make war against]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "003661001004000",
+     "ข้อความ": "a marker of emphatic negation003 [คำแปลสั้น: by no means, certainly not]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001533001002000",
+     "ข้อความ": "extension toward a goal which is inside an area [คำแปลสั้น: into]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "002206001002000",
+     "ข้อความ": "an extent of time of the same length as another extent or unit of time [คำแปลสั้น: as long as, while]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 38
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "REV 12:5",
+   "เล่ม": "REV",
+   "บท": "12",
+   "ข้อ": "5",
+   "ลำดับคำ": 18,
+   "คำเดิม": "πρὸς",
+   "รูปตั้งต้น": "πρός",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "to",
+   "รหัสความหมายที่เราแปะ": "004214001001000",
+   "คำในพจนานุกรม": "πρός",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 21,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003210001004000",
+     "ข้อความ": "unlimited extent of time beginning with the time of the discourse [คำแปลสั้น: the future]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001735001017000",
+     "ข้อความ": "a marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "005098001008000",
+     "ข้อความ": "a kind or class of persons, with the implication of possessing certain derived characteristics [คำแปลสั้น: son of, offspring of, child of, kind of, one who has the characteristics of, person of]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "002294001002000",
+     "ข้อความ": "a widespread contagious disease, often associated with divine retribution [คำแปลสั้น: plague, pestilence]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "003677001002000",
+     "ข้อความ": "the supernatural dwelling place of God and other heavenly beings (οὐρανός[b] also contains a component denoting that which is above or in the sky, but the element of abode is evidently more significant than location above the earth) [คำแปลสั้น: heaven]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "001106001006000",
+     "ข้อความ": "a more or less fixed phrase: the heavens and the earth, equivalent to a single lexical item: the totality of God’s creation [คำแปลสั้น: heaven and earth, universe]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 39
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "2CO 11:3",
+   "เล่ม": "2CO",
+   "บท": "11",
+   "ข้อ": "3",
+   "ลำดับคำ": 17,
+   "คำเดิม": "ἀπὸ",
+   "รูปตั้งต้น": "ἀπό",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "from",
+   "รหัสความหมายที่เราแปะ": "000571001001000",
+   "คำในพจนานุกรม": "ἀπό",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 16,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000571001011000",
+     "ข้อความ": "(an idiom, literally: from a part) the state of being part of something [คำแปลสั้น: being part of, as a part of, in part, partially]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000571001010000",
+     "ข้อความ": "a marker of one who is responsible for an event or state [คำแปลสั้น: by, on (the basis of), of, upon]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000571001004000",
+     "ข้อความ": "a marker of a part of a whole, whether consisting of countables or of mass [คำแปลสั้น: one of, one among, a part of]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "000571001016000",
+     "ข้อความ": "(an idiom, literally: from ancient days) a point of time preceding another point of time, with a considerable interval [คำแปลสั้น: long ago, some time ago]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "000571001012000",
+     "ข้อความ": "(an idiom, literally: from a part) pertaining to a relatively short period of time, with emphasis upon the temporary nature of the event or state [คำแปลสั้น: not long, temporary, for a little while, for a while]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 40
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "JHN 20:6",
+   "เล่ม": "JHN",
+   "บท": "20",
+   "ข้อ": "6",
+   "ลำดับคำ": 10,
+   "คำเดิม": "τὸ",
+   "รูปตั้งต้น": "ὁ",
+   "ชนิดคำ": "det",
+   "แปลอังกฤษของต้นฉบับ": "the",
+   "รหัสความหมายที่เราแปะ": "003491001001000",
+   "คำในพจนานุกรม": "ὁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a reference to an entity, event, or state, clearly identified by the linguistic or non-linguistic context of the utterance001 [คำแปลสั้น: the, he, she, it]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 41
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "ROM 7:6",
+   "เล่ม": "ROM",
+   "บท": "7",
+   "ข้อ": "6",
+   "ลำดับคำ": 3,
+   "คำเดิม": "ἀπὸ",
+   "รูปตั้งต้น": "ἀπό",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "from",
+   "รหัสความหมายที่เราแปะ": "000571001001000",
+   "คำในพจนานุกรม": "ἀπό",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 16,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "000571001011000",
+     "ข้อความ": "(an idiom, literally: from a part) the state of being part of something [คำแปลสั้น: being part of, as a part of, in part, partially]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "000571001016000",
+     "ข้อความ": "(an idiom, literally: from ancient days) a point of time preceding another point of time, with a considerable interval [คำแปลสั้น: long ago, some time ago]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000571001013000",
+     "ข้อความ": "(an idiom, literally: from one) a sequence of single units, one after another [คำแปลสั้น: one after another, one by one]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "000571001012000",
+     "ข้อความ": "(an idiom, literally: from a part) pertaining to a relatively short period of time, with emphasis upon the temporary nature of the event or state [คำแปลสั้น: not long, temporary, for a little while, for a while]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "000571001010000",
+     "ข้อความ": "a marker of one who is responsible for an event or state [คำแปลสั้น: by, on (the basis of), of, upon]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 42
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "LUK 6:38",
+   "เล่ม": "LUK",
+   "บท": "6",
+   "ข้อ": "38",
+   "ลำดับคำ": 6,
+   "คำเดิม": "πεπιεσμένον",
+   "รูปตั้งต้น": "πιέζω",
+   "ชนิดคำ": "verb",
+   "แปลอังกฤษของต้นฉบับ": "pressed down",
+   "รหัสความหมายที่เราแปะ": "003990001001000",
+   "คำในพจนานุกรม": "πιέζω",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003990001001000",
+     "ข้อความ": "to press down, in order to make more compact [คำแปลสั้น: to press down]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 43
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "REV 1:10",
+   "เล่ม": "REV",
+   "บท": "1",
+   "ข้อ": "10",
+   "ลำดับคำ": 9,
+   "คำเดิม": "ὀπίσω",
+   "รูปตั้งต้น": "ὀπίσω",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "behind",
+   "รหัสความหมายที่เราแปะ": "003601001001000",
+   "คำในพจนานุกรม": "ὀπίσω",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003601001001000",
+     "ข้อความ": "a position behind an object or other position [คำแปลสั้น: behind, in back of]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "003601001002000",
+     "ข้อความ": "marker of one who is followed as a leader (occurring with a variety of verbs indicating change of state or movement) [คำแปลสั้น: after, to follow]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 44
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "MAT 16:19",
+   "เล่ม": "MAT",
+   "บท": "16",
+   "ข้อ": "19",
+   "ลำดับคำ": 30,
+   "คำเดิม": "τοῖς",
+   "รูปตั้งต้น": "ὁ",
+   "ชนิดคำ": "det",
+   "แปลอังกฤษของต้นฉบับ": "the",
+   "รหัสความหมายที่เราแปะ": "003491001001000",
+   "คำในพจนานุกรม": "ὁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a reference to an entity, event, or state, clearly identified by the linguistic or non-linguistic context of the utterance001 [คำแปลสั้น: the, he, she, it]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 45
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "JHN 8:24",
+   "เล่ม": "JHN",
+   "บท": "8",
+   "ข้อ": "24",
+   "ลำดับคำ": 5,
+   "คำเดิม": "ἐν",
+   "รูปตั้งต้น": "ἐν",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "in",
+   "รหัสความหมายที่เราแปะ": "001735001005000",
+   "คำในพจนานุกรม": "ἐν",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 35,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001735001037000",
+     "ข้อความ": "an extent of time of the same length as another extent or unit of time [คำแปลสั้น: as long as, while]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001735001019000",
+     "ข้อความ": "a marker of a point of time which is simultaneous to or overlaps with another point of time007 [คำแปลสั้น: when, at the time of]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001735001028000",
+     "ข้อความ": "pertaining to expressions which are not to be understood literally, but symbolically or figuratively [คำแปลสั้น: symbolically, allegorically, figuratively, so to speak]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "001735001024000",
+     "ข้อความ": "(an idiom, literally: to have in the womb) to be in a state of pregnancy [คำแปลสั้น: pregnant, to be pregnant]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001735001015000",
+     "ข้อความ": "a marker of objects which serve as symbolic substitutes for supernatural persons or powers presumed to act as guarantors of compliance with oaths [คำแปลสั้น: by]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 46
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "2TI 4:3",
+   "เล่ม": "2TI",
+   "บท": "4",
+   "ข้อ": "3",
+   "ลำดับคำ": 4,
+   "คำเดิม": "τῆς",
+   "รูปตั้งต้น": "ὁ",
+   "ชนิดคำ": "det",
+   "แปลอังกฤษของต้นฉบับ": "",
+   "รหัสความหมายที่เราแปะ": "003491001001000",
+   "คำในพจนานุกรม": "ὁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a reference to an entity, event, or state, clearly identified by the linguistic or non-linguistic context of the utterance001 [คำแปลสั้น: the, he, she, it]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 47
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "1CO 15:12",
+   "เล่ม": "1CO",
+   "บท": "15",
+   "ข้อ": "12",
+   "ลำดับคำ": 13,
+   "คำเดิม": "ὅτι",
+   "รูปตั้งต้น": "ὅτι",
+   "ชนิดคำ": "conj",
+   "แปลอังกฤษของต้นฉบับ": "that",
+   "รหัสความหมายที่เราแปะ": "001377001002000",
+   "คำในพจนานุกรม": "διότι",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "พจนานุกรมยกรากศัพท์คนละตัว",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001377001001000",
+     "ข้อความ": "marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001377001002000",
+     "ข้อความ": "a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]"
+    }
+   ],
+   "คำตอบที่ควรได้": "B",
+   "เลขข้อสอบ": 48
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "HEB 4:13",
+   "เล่ม": "HEB",
+   "บท": "4",
+   "ข้อ": "13",
+   "ลำดับคำ": 14,
+   "คำเดิม": "αὐτοῦ",
+   "รูปตั้งต้น": "αὐτός",
+   "ชนิดคำ": "pron",
+   "แปลอังกฤษของต้นฉบับ": "him",
+   "รหัสความหมายที่เราแปะ": "000842002001000",
+   "คำในพจนานุกรม": "αὐτός",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 3,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "002671001001000",
+     "ข้อความ": "to cease one’s work or activity, resulting in a period of rest [คำแปลสั้น: to rest, to cease from work]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001539001004000",
+     "ข้อความ": "to begin to experience an event or state [คำแปลสั้น: to begin to experience, to come into an experience, to attain]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "000230001002000",
+     "ข้อความ": "a marker of a series of coordinate relations which are contrastive with a previously identified event or state [คำแปลสั้น: and]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "005475001003000",
+     "ข้อความ": "(a figurative extension of meaning of ψυχή[a] ‘inner self, mind,’ 26.4) a person as a living being001 [คำแปลสั้น: person, people]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "000571001008000",
+     "ข้อความ": "a marker of the extent of time from a point in the past [คำแปลสั้น: since, from]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "001525001003000",
+     "ข้อความ": "to exist, in an absolute sense [คำแปลสั้น: to be, to exist]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 49
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "MAT 16:27",
+   "เล่ม": "MAT",
+   "บท": "16",
+   "ข้อ": "27",
+   "ลำดับคำ": 14,
+   "คำเดิม": "τῶν",
+   "รูปตั้งต้น": "ὁ",
+   "ชนิดคำ": "det",
+   "แปลอังกฤษของต้นฉบับ": "the",
+   "รหัสความหมายที่เราแปะ": "003491001001000",
+   "คำในพจนานุกรม": "ὁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a reference to an entity, event, or state, clearly identified by the linguistic or non-linguistic context of the utterance001 [คำแปลสั้น: the, he, she, it]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 50
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "EPH 4:18",
+   "เล่ม": "EPH",
+   "บท": "4",
+   "ข้อ": "18",
+   "ลำดับคำ": 16,
+   "คำเดิม": "διὰ",
+   "รูปตั้งต้น": "διά",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "because of",
+   "รหัสความหมายที่เราแปะ": "001238001006000",
+   "คำในพจนานุกรม": "διά",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 14,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001238001007000",
+     "ข้อความ": "(with the genitive) extension through an area or object [คำแปลสั้น: through]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001238001013000",
+     "ข้อความ": "pertaining to a relatively brief extent of time003 [คำแปลสั้น: a little while, for a little while, a short time, brief, briefly]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001238001016000",
+     "ข้อความ": "(an idiom, literally, through all) duration of time, either continuous or episodic, but without limits [คำแปลสั้น: always, constantly, continually]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "001238001011000",
+     "ข้อความ": "(an idiom, literally: through years) a point of time subsequent to another point of time after an interval of some years [คำแปลสั้น: some years later]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001238001015000",
+     "ข้อความ": "(an idiom, literally: through all) a number of related points of time, occurring at regular intervals [คำแปลสั้น: regularly, periodically]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 51
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "LUK 7:37",
+   "เล่ม": "LUK",
+   "บท": "7",
+   "ข้อ": "37",
+   "ลำดับคำ": 11,
+   "คำเดิม": "ὅτι",
+   "รูปตั้งต้น": "ὅτι",
+   "ชนิดคำ": "conj",
+   "แปลอังกฤษของต้นฉบับ": "that",
+   "รหัสความหมายที่เราแปะ": "001377001002000",
+   "คำในพจนานุกรม": "διότι",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "พจนานุกรมยกรากศัพท์คนละตัว",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001377001002000",
+     "ข้อความ": "a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001377001001000",
+     "ข้อความ": "marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 52
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "LUK 24:33",
+   "เล่ม": "LUK",
+   "บท": "24",
+   "ข้อ": "33",
+   "ลำดับคำ": 6,
+   "คำเดิม": "εἰς",
+   "รูปตั้งต้น": "εἰς",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "to",
+   "รหัสความหมายที่เราแปะ": "001533001001000",
+   "คำในพจนานุกรม": "εἰς",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 24,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001533001021000",
+     "ข้อความ": "unlimited duration of time, with particular focus upon the future [คำแปลสั้น: always, forever, forever and ever, eternally]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001533001013000",
+     "ข้อความ": "(with the accusative) a marker of persons benefited by an event, with the implication of something directed to them [คำแปลสั้น: for, on behalf of]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001533001008000",
+     "ข้อความ": "a marker of the means by which one event makes another event possible004 [คำแปลสั้น: by means of, through, by]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "001533001022000",
+     "ข้อความ": "(an idiom, literally: into the ear) pertaining to what is known only by those who hear a particular message in private [คำแปลสั้น: in secret, in private, privately]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001533001014000",
+     "ข้อความ": "(with the dative) a marker of objects which serve as symbolic substitutes for supernatural persons or powers presumed to act as guarantors of compliance with oaths [คำแปลสั้น: by]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 53
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "MRK 2:8",
+   "เล่ม": "MRK",
+   "บท": "2",
+   "ข้อ": "8",
+   "ลำดับคำ": 8,
+   "คำเดิม": "ὅτι",
+   "รูปตั้งต้น": "ὅτι",
+   "ชนิดคำ": "conj",
+   "แปลอังกฤษของต้นฉบับ": "that",
+   "รหัสความหมายที่เราแปะ": "001377001002000",
+   "คำในพจนานุกรม": "διότι",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "พจนานุกรมยกรากศัพท์คนละตัว",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001377001001000",
+     "ข้อความ": "marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001377001002000",
+     "ข้อความ": "a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]"
+    }
+   ],
+   "คำตอบที่ควรได้": "B",
+   "เลขข้อสอบ": 54
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "ROM 1:2",
+   "เล่ม": "ROM",
+   "บท": "1",
+   "ข้อ": "2",
+   "ลำดับคำ": 2,
+   "คำเดิม": "διὰ",
+   "รูปตั้งต้น": "διά",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "through",
+   "รหัสความหมายที่เราแปะ": "001238001001000",
+   "คำในพจนานุกรม": "διά",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 14,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001238001015000",
+     "ข้อความ": "(an idiom, literally: through all) a number of related points of time, occurring at regular intervals [คำแปลสั้น: regularly, periodically]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001238001013000",
+     "ข้อความ": "pertaining to a relatively brief extent of time003 [คำแปลสั้น: a little while, for a little while, a short time, brief, briefly]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001238001012000",
+     "ข้อความ": "(an idiom, literally: through days) a point of time subsequent to another point of time after an interval of a few days [คำแปลสั้น: a few days later]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "001238001011000",
+     "ข้อความ": "(an idiom, literally: through years) a point of time subsequent to another point of time after an interval of some years [คำแปลสั้น: some years later]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001238001009000",
+     "ข้อความ": "a marker of the extent of time within a unit [คำแปลสั้น: during, in the course of, within, for]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 55
+  },
+  {
+   "ชนิด": "ง ยกชั้นของคำอื่นมาปน",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "MRK 14:58",
+   "เล่ม": "MRK",
+   "บท": "14",
+   "ข้อ": "58",
+   "ลำดับคำ": 4,
+   "คำเดิม": "λέγοντος",
+   "รูปตั้งต้น": "λέγω",
+   "ชนิดคำ": "verb",
+   "แปลอังกฤษของต้นฉบับ": "say",
+   "รหัสความหมายที่เราแปะ": "003022001001000",
+   "คำในพจนานุกรม": "λέγω",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 5,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "005475001008000",
+     "ข้อความ": "(an idiom, literally: to acquire one’s soul or to acquire one’s life) to save oneself from grave danger or death [คำแปลสั้น: to save oneself, to protect oneself]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "003661001005000",
+     "ข้อความ": "a marker of a strongly emphatic affirmative response to a question [คำแปลสั้น: not]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "004004001014000",
+     "ข้อความ": "(an idiom, literally: to his own master he stands or falls, probably a familiar adage) whether one maintains one’s status or relationship to a master depends on the masters judgment or evaluation [คำแปลสั้น: honor or disgrace depends on the person whom one serves]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "002105001002000",
+     "ข้อความ": "pertaining to events which measure up to their intended purpose [คำแปลสั้น: fine, well, good, excellent, well done]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001525001009000",
+     "ข้อความ": "to change from one state to another [คำแปลสั้น: to change, to become]"
+    },
+    {
+     "ป้าย": "F",
+     "รหัส": "004336001001000",
+     "ข้อความ": "pertaining to being poor and destitute, implying a continuous state [คำแปลสั้น: poor, destitute]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 56
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "JHN 11:56",
+   "เล่ม": "JHN",
+   "บท": "11",
+   "ข้อ": "56",
+   "ลำดับคำ": 15,
+   "คำเดิม": "ὅτι",
+   "รูปตั้งต้น": "ὅτι",
+   "ชนิดคำ": "conj",
+   "แปลอังกฤษของต้นฉบับ": "that",
+   "รหัสความหมายที่เราแปะ": "001377001002000",
+   "คำในพจนานุกรม": "διότι",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 2,
+   "ชี้ถูกคำเพราะ": "พจนานุกรมยกรากศัพท์คนละตัว",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001377001002000",
+     "ข้อความ": "a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001377001001000",
+     "ข้อความ": "marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 57
+  },
+  {
+   "ชนิด": "ข ถอดคำตอบจริงออก",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "ACT 2:20",
+   "เล่ม": "ACT",
+   "บท": "2",
+   "ข้อ": "20",
+   "ลำดับคำ": 3,
+   "คำเดิม": "εἰς",
+   "รูปตั้งต้น": "εἰς",
+   "ชนิดคำ": "prep",
+   "แปลอังกฤษของต้นฉบับ": "to",
+   "รหัสความหมายที่เราแปะ": "001533001011000",
+   "คำในพจนานุกรม": "εἰς",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 24,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001533001008000",
+     "ข้อความ": "a marker of the means by which one event makes another event possible004 [คำแปลสั้น: by means of, through, by]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001533001020000",
+     "ข้อความ": "(an idiom, literally: into that which is not measured) a point on a scale going beyond what is expected [คำแปลสั้น: excessive, beyond measure]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001533001004000",
+     "ข้อความ": "a position defined as being within certain limits002 [คำแปลสั้น: inside, within, in]"
+    },
+    {
+     "ป้าย": "D",
+     "รหัส": "001533001022000",
+     "ข้อความ": "(an idiom, literally: into the ear) pertaining to what is known only by those who hear a particular message in private [คำแปลสั้น: in secret, in private, privately]"
+    },
+    {
+     "ป้าย": "E",
+     "รหัส": "001533001005000",
+     "ข้อความ": "a position within an area determined by other objects and distributed among such objects003 [คำแปลสั้น: among, with]"
+    }
+   ],
+   "คำตอบที่ควรได้": "X",
+   "เลขข้อสอบ": 58
+  },
+  {
+   "ชนิด": "ค หมวดต่างกันชัด",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "EPH 5:23",
+   "เล่ม": "EPH",
+   "บท": "5",
+   "ข้อ": "23",
+   "ลำดับคำ": 5,
+   "คำเดิม": "γυναικὸς",
+   "รูปตั้งต้น": "γυνή",
+   "ชนิดคำ": "noun",
+   "แปลอังกฤษของต้นฉบับ": "wife",
+   "รหัสความหมายที่เราแปะ": "001149001002000",
+   "คำในพจนานุกรม": "γυνή",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 3,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "001149001003000",
+     "ข้อความ": "(an idiom, literally: to touch a woman) to marry a woman [คำแปลสั้น: to marry, to get married]"
+    },
+    {
+     "ป้าย": "B",
+     "รหัส": "001149001001000",
+     "ข้อความ": "an adult female person of marriageable age [คำแปลสั้น: woman]"
+    },
+    {
+     "ป้าย": "C",
+     "รหัส": "001149001002000",
+     "ข้อความ": "a woman who is married to a man [คำแปลสั้น: wife]"
+    }
+   ],
+   "คำตอบที่ควรได้": "C",
+   "เลขข้อสอบ": 59
+  },
+  {
+   "ชนิด": "ก คำที่มีชั้นเดียว",
+   "ฝั่ง": "กรีก",
+   "ที่อยู่": "GAL 5:14",
+   "เล่ม": "GAL",
+   "บท": "5",
+   "ข้อ": "14",
+   "ลำดับคำ": 0,
+   "คำเดิม": "ὁ",
+   "รูปตั้งต้น": "ὁ",
+   "ชนิดคำ": "det",
+   "แปลอังกฤษของต้นฉบับ": "the",
+   "รหัสความหมายที่เราแปะ": "003491001001000",
+   "คำในพจนานุกรม": "ὁ",
+   "ชั้นความหมายของคำนี้ทั้งหมด": 1,
+   "ชี้ถูกคำเพราะ": "ตัวอักษรตรงกัน",
+   "ตัวเลือก": [
+    {
+     "ป้าย": "A",
+     "รหัส": "003491001001000",
+     "ข้อความ": "a reference to an entity, event, or state, clearly identified by the linguistic or non-linguistic context of the utterance001 [คำแปลสั้น: the, he, she, it]"
+    }
+   ],
+   "คำตอบที่ควรได้": "A",
+   "เลขข้อสอบ": 60
+  }
+ ]
+}

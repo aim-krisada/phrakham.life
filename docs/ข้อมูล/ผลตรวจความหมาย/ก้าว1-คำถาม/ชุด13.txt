@@ -1,0 +1,42 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 3 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 58
+ที่อยู่: ACT 2:20
+ข้อความต้นฉบับ: ὁ ἥλιος μεταστραφήσεται εἰς σκότος καὶ ἡ σελήνη εἰς αἷμα πρὶν ἢ ἐλθεῖν ἡμέραν κυρίου τὴν μεγάλην καὶ ἐπιφανῆ.
+คำที่ถาม: εἰς   (รูปตั้งต้น εἰς · ชนิดคำ prep)
+ตัวเลือก:
+  A) a marker of the means by which one event makes another event possible004 [คำแปลสั้น: by means of, through, by]
+  B) (an idiom, literally: into that which is not measured) a point on a scale going beyond what is expected [คำแปลสั้น: excessive, beyond measure]
+  C) a position defined as being within certain limits002 [คำแปลสั้น: inside, within, in]
+  D) (an idiom, literally: into the ear) pertaining to what is known only by those who hear a particular message in private [คำแปลสั้น: in secret, in private, privately]
+  E) a position within an area determined by other objects and distributed among such objects003 [คำแปลสั้น: among, with]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 59
+ที่อยู่: EPH 5:23
+ข้อความต้นฉบับ: ὅτι ἀνήρ ἐστιν κεφαλὴ τῆς γυναικὸς ὡς καὶ ὁ Χριστὸς κεφαλὴ τῆς ἐκκλησίας,αὐτὸς σωτὴρ τοῦ σώματος.
+คำที่ถาม: γυναικὸς   (รูปตั้งต้น γυνή · ชนิดคำ noun)
+ตัวเลือก:
+  A) (an idiom, literally: to touch a woman) to marry a woman [คำแปลสั้น: to marry, to get married]
+  B) an adult female person of marriageable age [คำแปลสั้น: woman]
+  C) a woman who is married to a man [คำแปลสั้น: wife]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 60
+ที่อยู่: GAL 5:14
+ข้อความต้นฉบับ: ὁ γὰρ πᾶς νόμος ἐν ἑνὶ λόγῳ πεπλήρωται,ἐν τῷ·Ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν.
+คำที่ถาม: ὁ   (รูปตั้งต้น ὁ · ชนิดคำ det)
+ตัวเลือก:
+  A) a reference to an entity, event, or state, clearly identified by the linguistic or non-linguistic context of the utterance001 [คำแปลสั้น: the, he, she, it]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,56 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 96
+ที่อยู่: NUM 26:1
+ข้อความต้นฉบับ: וַיֹּ֤אמֶר יְהוָה֙ אֶל־מֹשֶׁ֔ה וְאֶ֧ל אֶלְעָזָ֛ר בֶּן־אַהֲרֹ֥ן הַכֹּהֵ֖ן לֵאמֹֽר׃
+คำที่ถาม: בֶּן   (รูปตั้งต้น בֵּן · ชนิดคำ noun)
+ตัวเลือก:
+  A) direct or indirect human offspring, either male or indeterminate, either biologically or through adoption [คำแปลสั้น: son, child, descendant]
+  B) title used by a male person to address someone else whom he considers superior to himself, · as if he were that person's child [คำแปลสั้น: (your) son > (your) subordinate]
+  C) title used to address a person (male if in singular) who is regarded with some degree of affection, · as if he were the speaker's child [คำแปลสั้น: my son, my children]
+  D) literally: son (of a number of years); hence: state in which humans and animals have a certain age, · referred to as a child of a certain number of years [คำแปลสั้น: at the age of ...]
+  E) state of being associated with a certain attribute, attitude, or behavior, · referred to as a child of that attribute, attitude, or behavior [คำแปลสั้น: one who is ..., one that is ...]
+  F) see בֶּן־יְמִינִי [คำแปลสั้น: Benjaminite]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 97
+ที่อยู่: 2CH 29:12
+ข้อความต้นฉบับ: וַיָּקֻ֣מוּ הַ֠לְוִיִּם מַ֣חַת בֶּן־עֲמָשַׂ֞י וְיוֹאֵ֣ל בֶּן־עֲזַרְיָהוּ֮ מִן־בְּנֵ֣י הַקְּהָתִי֒ וּמִן־בְּנֵ֣י מְרָרִ֔י קִ֚ישׁ בֶּן־עַבְדִּ֔י וַעֲזַרְיָ֖הוּ בֶּן־יְהַלֶּלְאֵ֑ל וּמִן־הַגֵּ֣רְשֻׁנִּ֔י יוֹאָח֙ בֶּן־זִמָּ֔ה וְעֵ֖דֶן בֶּן־יוֹאָֽח׃
+คำที่ถาม: בֶּן   (รูปตั้งต้น בֵּן · ชนิดคำ noun)
+ตัวเลือก:
+  A) direct offspring of animals, either male or indeterminate [คำแปลสั้น: young, colt, calf, foal, cub]
+  B) see גַּיְא [คำแปลสั้น: Valley of the Son of Hinnom]
+  C) direct or indirect human offspring, either male or indeterminate, either biologically or through adoption [คำแปลสั้น: son, child, descendant]
+  D) people of relatively young age [คำแปลสั้น: youth, young person]
+  E) state of being associated with a certain attribute, attitude, or behavior, · referred to as a child of that attribute, attitude, or behavior [คำแปลสั้น: one who is ..., one that is ...]
+  F) title used to address a person (male if in singular) who is regarded with some degree of affection, · as if he were the speaker's child [คำแปลสั้น: my son, my children]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 98
+ที่อยู่: JOB 27:1
+ข้อความต้นฉบับ: וַיֹּ֣סֶף אִ֭יּוֹב שְׂאֵ֥ת מְשָׁל֗וֹ וַיֹּאמַֽר׃
+คำที่ถาม: מְשָׁל֗   (รูปตั้งต้น מָשָׁל · ชนิดคำ noun)
+ตัวเลือก:
+  A) an utterance, often in poetic style, that has a specific message, such as an oracle, words of advice, wisdom, or mockery [คำแปลสั้น: saying, oracle, proverb, byword, parable]
+  B) town, also known as Mishal; · territory of Asher; · assigned to clan of Gershon, tribe of Levi [คำแปลสั้น: Mashal]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 99
+ที่อยู่: 1KI 6:27
+ข้อความต้นฉบับ: וַיִּתֵּ֨ן אֶת־הַכְּרוּבִ֜ים בְּת֣וֹךְ׀הַבַּ֣יִת הַפְּנִימִ֗י וַֽיִּפְרְשׂוּ֮ אֶת־כַּנְפֵ֣י הַכְּרֻבִים֒ וַתִּגַּ֤ע כְּנַף־הָֽאֶחָד֙ בַּקִּ֔יר וּכְנַף֙ הַכְּר֣וּב הַשֵּׁנִ֔י נֹגַ֖עַת בַּקִּ֣יר הַשֵּׁנִ֑י וְכַנְפֵיהֶם֙ אֶל־תּ֣וֹךְ הַבַּ֔יִת נֹגְעֹ֖ת כָּנָ֥ף אֶל־כָּנָֽף׃
+คำที่ถาม: כְּרֻבִים֒   (รูปตั้งต้น כְּרוּב · ชนิดคำ noun)
+ตัวเลือก:
+  A) heavenly creature with wings, · carrying the throne of God, symbol of God's majesty, and associated with his presence [คำแปลสั้น: cherub, winged creature]
+  B) town; · located in Babylon; · from which a group of Jews returned to Israel [คำแปลสั้น: Cherub]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,59 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 211
+ที่อยู่: 2SA 12:10
+ข้อความต้นฉบับ: וְעַתָּ֗ה לֹא־תָס֥וּר חֶ֛רֶב מִבֵּיתְךָ֖ עַד־עוֹלָ֑ם עֵ֚קֶב כִּ֣י בְזִתָ֔נִי וַתִּקַּ֗ח אֶת־אֵ֨שֶׁת֙ אוּרִיָּ֣ה הַחִתִּ֔י לִהְי֥וֹת לְךָ֖ לְאִשָּֽׁה׃ס
+คำที่ถาม: אֶת   (รูปตั้งต้น אֵת · ชนิดคำ particle)
+ตัวเลือก:
+  A) particle linking two entities and denoting that X and Y function as one single entity in the proposition in focus [คำแปลสั้น: with, together with]
+  B) exact meaning unknown; possibly: wooden handle with an iron head that has both an adze and a chisel as its ends; · used for breaking up moderately hard soil to make it ready for cultivation [คำแปลสั้น: mattock]
+  C) marker identifying the entity that is directly targeted by the event in focus, and which usually is already part of the cognitive context; described in syntactic terms as the direct object marker; untranslatable in English unless accompanied by a suffix [คำแปลสั้น: -]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 212
+ที่อยู่: NEH 3:16
+ข้อความต้นฉบับ: אַחֲרָ֤יו הֶחֱזִיק֙ נְחֶמְיָ֣ה בֶן־עַזְבּ֔וּק שַׂ֕ר חֲצִ֖י פֶּ֣לֶךְ בֵּֽית־צ֑וּר עַד־נֶ֨גֶד֙ קִבְרֵ֣י דָוִ֔יד וְעַד־הַבְּרֵכָה֙ הָעֲשׂוּיָ֔ה וְעַ֖ד בֵּ֥ית הַגִּבֹּרִֽים׃ס
+คำที่ถาม: צ֑וּר   (รูปตั้งต้น בֵּיתצוּר · ชนิดคำ noun)
+ตัวเลือก:
+  A) town; · located in the hill country; territory of Judah [คำแปลสั้น: Beth-Zur]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 213
+ที่อยู่: NUM 1:45
+ข้อความต้นฉบับ: וַיִּֽהְי֛וּ כָּל־פְּקוּדֵ֥י בְנֵֽי־יִשְׂרָאֵ֖ל לְבֵ֣ית אֲבֹתָ֑ם מִבֶּ֨ן עֶשְׂרִ֤ים שָׁנָה֙ וָמַ֔עְלָה כָּל־יֹצֵ֥א צָבָ֖א בְּיִשְׂרָאֵֽל׃
+คำที่ถาม: ם   (รูปตั้งต้น הוּא · ชนิดคำ suffix)
+ตัวเลือก:
+  A) a location, · compared to a father, · regarded as a source of security and comfort [คำแปลสั้น: father, place of security, place of comfort]
+  B) a group of people to which one traces one's ancestry; · largest unit within family group [คำแปลสั้น: ancestral tribe]
+  C) a person, · compared to a father, · who is the originator of a certain process; · said about God only [คำแปลสั้น: father > creator]
+  D) direct male progenitor; · who normally provides protection, care, instruction, and discipline; · is usually regarded with respect and associated with wisdom, security, and comfort [คำแปลสั้น: father]
+  E) a group of people to which one traces one's ancestry; · smallest unit within family group [คำแปลสั้น: father's house = family]
+  F) a person · who is the first to be engaged in a certain activity or pattern of behavior [คำแปลสั้น: the first person to ...]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 214
+ที่อยู่: 1KI 8:61
+ข้อความต้นฉบับ: וְהָיָ֤ה לְבַבְכֶם֙ שָׁלֵ֔ם עִ֖ם יְהוָ֣ה אֱלֹהֵ֑ינוּ לָלֶ֧כֶת בְּחֻקָּ֛יו וְלִשְׁמֹ֥ר מִצְוֺתָ֖יו כַּיּ֥וֹם הַזֶּֽה׃
+คำที่ถาม: יְהוָ֣ה   (รูปตั้งต้น יהוה · ชนิดคำ noun)
+ตัวเลือก:
+  A) deity; · God of Israel who revealed himself to Moses [คำแปลสั้น: YHWH]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 215
+ที่อยู่: NEH 7:28
+ข้อความต้นฉบับ: אַנְשֵׁ֥י בֵית־עַזְמָ֖וֶת אַרְבָּעִ֥ים וּשְׁנָֽיִם׃ס
+คำที่ถาม: עַזְמָ֖וֶת   (รูปตั้งต้น בֵּיתעַזְמָוֶת · ชนิดคำ noun)
+ตัวเลือก:
+  A) location, also known as Azmaveth; · territory of Benjamin [คำแปลสั้น: Beth-Azmaveth]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,65 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 395
+ที่อยู่: LUK 11:50
+ข้อความต้นฉบับ: ἵνα ἐκζητηθῇ τὸ αἷμα πάντων τῶν προφητῶν τὸ ἐκκεχυμένον ἀπὸ καταβολῆς κόσμου ἀπὸ τῆς γενεᾶς ταύτης,
+คำที่ถาม: γενεᾶς   (รูปตั้งต้น γενεά · ชนิดคำ noun)
+ตัวเลือก:
+  A) an ethnic group exhibiting cultural similarities [คำแปลสั้น: people of the same kind]
+  B) an indefinite period of time, but in close relationship to human existence and in some contexts, a period of time about the length of a generation [คำแปลสั้น: age, epoch]
+  C) successive following generations of those who are biologically related to a reference person [คำแปลสั้น: posterity, descendants, offspring]
+  D) people living at the same time and belonging to the same reproductive age-class [คำแปลสั้น: those of the same time, those of the same generation]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 396
+ที่อยู่: MAT 20:34
+ข้อความต้นฉบับ: σπλαγχνισθεὶς δὲ ὁ Ἰησοῦς ἥψατο τῶν ὀμμάτων αὐτῶν,καὶ εὐθέως ἀνέβλεψαν καὶ ἠκολούθησαν αὐτῷ.
+คำที่ถาม: σπλαγχνισθεὶς   (รูปตั้งต้น σπλαγχνίζομαι · ชนิดคำ verb)
+ตัวเลือก:
+  A) to experience great affection and compassion for someone [คำแปลสั้น: to feel compassion for, to have great affection for, love, compassion]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 397
+ที่อยู่: LUK 11:22
+ข้อความต้นฉบับ: ἐπὰν δὲ ἰσχυρότερος αὐτοῦ ἐπελθὼν νικήσῃ αὐτόν,τὴν πανοπλίαν αὐτοῦ αἴρει ἐφ’ᾗ ἐπεποίθει,καὶ τὰ σκῦλα αὐτοῦ διαδίδωσιν.
+คำที่ถาม: σκῦλα   (รูปตั้งต้น σκῦλα · ชนิดคำ noun)
+ตัวเลือก:
+  A) that which is taken away by force, particularly in the case of war [คำแปลสั้น: booty, spoils, plunder]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 398
+ที่อยู่: MAT 9:11
+ข้อความต้นฉบับ: καὶ ἰδόντες οἱ Φαρισαῖοι ἔλεγον τοῖς μαθηταῖς αὐτοῦ·Διὰ τί μετὰ τῶν τελωνῶν καὶ ἁμαρτωλῶν ἐσθίει ὁ διδάσκαλος ὑμῶν;
+คำที่ถาม: ἰδόντες   (รูปตั้งต้น ὁράω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to see001 [คำแปลสั้น: to see, sight, seeing]
+  B) to go to see a person on the basis of friendship and with helpful intent [คำแปลสั้น: to visit, to go to see]
+  C) (a figurative extension of meaning of ὁράω[a] ‘to see,’ 24.1) to experience an event or state, normally in negative expressions indicating what one will not experience [คำแปลสั้น: to experience, to undergo]
+  D) to come to understand as the result of perception [คำแปลสั้น: to understand, to perceive, to see, to recognize]
+  E) to take responsibility for causing something to happen [คำแปลสั้น: to see to it that something happens, to arrange for something to happen]
+  F) to take special notice of something, with the implication of concerning oneself [คำแปลสั้น: to take notice of, to consider, to pay attention to, to concern oneself with]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 399
+ที่อยู่: LUK 21:8
+ข้อความต้นฉบับ: ὁ δὲ εἶπεν·Βλέπετε μὴ πλανηθῆτε·πολλοὶ γὰρ ἐλεύσονται ἐπὶ τῷ ὀνόματί μου λέγοντες·Ἐγώ εἰμι καί·Ὁ καιρὸς ἤγγικεν·μὴ πορευθῆτε ὀπίσω αὐτῶν.
+คำที่ถาม: καί   (รูปตั้งต้น καί · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of a totality of two closely related elements [คำแปลสั้น: both … and]
+  B) a marker of an additive relation which is not coordinate [คำแปลสั้น: and, and also, also, in addition, even]
+  C) a marker of coordinate relations [คำแปลสั้น: and]
+  D) marker of a sequence of closely related events [คำแปลสั้น: and, and then]
+  E) a marker of emphasis, involving surprise and unexpectedness [คำแปลสั้น: then, indeed, how is it then, yet]
+  F) a marker of a new sentence, but often best left untranslated or reflected in the use of ‘and’ or the conjunctive adverb ‘then.’ [คำแปลสั้น: and, then]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,56 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 4 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 224
+ที่อยู่: DAN 12:6
+ข้อความต้นฉบับ: וַיֹּ֗אמֶר לָאִישׁ֙ לְב֣וּשׁ הַבַּדִּ֔ים אֲשֶׁ֥ר מִמַּ֖עַל לְמֵימֵ֣י הַיְאֹ֑ר עַד־מָתַ֖י קֵ֥ץ הַפְּלָאֽוֹת׃
+คำที่ถาม: מַּ֖עַל   (รูปตั้งต้น מַעַל · ชนิดคำ adverb)
+ตัวเลือก:
+  A) literally: upwards; hence: process by which time moves on from a particular point [คำแปลสั้น: onward (in time)]
+  B) literally: above; hence: state or process by which humans have or achieve a relatively high status [คำแปลสั้น: greater]
+  C) literally: upwards; hence: state in which humans have a relatively advanced age [คำแปลสั้น: upwards (in years)]
+  D) a referent pointing to a position above a person or object [คำแปลสั้น: upwards, above]
+  E) action by which humans do something to (other) humans or deities that is not in line with the behavior that they committed themselves to [คำแปลสั้น: unfaithfulness]
+  F) literally: above; hence: state in which an event has an relatively high level of intensity [คำแปลสั้น: more, increasingly]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 225
+ที่อยู่: GEN 11:22
+ข้อความต้นฉบับ: וַיְחִ֥י שְׂר֖וּג שְׁלֹשִׁ֣ים שָׁנָ֑ה וַיּ֖וֹלֶד אֶת־נָחֽוֹר׃
+คำที่ถาม: שָׁנָ֑ה   (รูปตั้งต้น שָׁנָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) the time period representing a full cycle of seasons, calculated as a sequence of twelve months, though adjusted on a regular basis by adding a thirteenth month [คำแปลสั้น: year]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 226
+ที่อยู่: JER 29:6
+ข้อความต้นฉบับ: קְח֣וּ נָשִׁ֗ים וְהוֹלִידוּ֮ בָּנִ֣ים וּבָנוֹת֒ וּקְח֨וּ לִבְנֵיכֶ֜ם נָשִׁ֗ים וְאֶת־בְּנֽוֹתֵיכֶם֙ תְּנ֣וּ לַֽאֲנָשִׁ֔ים וְתֵלַ֖דְנָה בָּנִ֣ים וּבָנ֑וֹת וּרְבוּ־שָׁ֖ם וְאַל־תִּמְעָֽטוּ׃
+คำที่ถาม: בָנ֑וֹת   (รูปตั้งต้น בַּת · ชนิดคำ noun)
+ตัวเลือก:
+  A) singular only: the population of a certain location, town, or ethnic group, · referred to as the daughter of that location, town, or ethnic group [คำแปลสั้น: daughter, people]
+  B) plural only: villages or small towns that are considered part of the territory of a larger town or nation, referred to as the daughters of that larger town or nation [คำแปลสั้น: daughters, villages, towns]
+  C) title used to address a woman who is regarded with some degree of affection, · as if she were the speaker's child [คำแปลสั้น: daughter, my daughter]
+  D) state in which female humans and animals have a certain age, · referred to as a daughter of a certain number of years [คำแปลสั้น: age]
+  E) literally: daughters of song; hence, possibly: birds that produces musical songs; alternatively: the act of producing musical sounds [คำแปลสั้น: songbirds, singing]
+  F) direct or indirect female offspring of humans or animals, either biologically or through adoption [คำแปลสั้น: daughter]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 227
+ที่อยู่: ISA 7:11
+ข้อความต้นฉบับ: שְׁאַל־לְךָ֣ א֔וֹת מֵעִ֖ם יְהוָ֣ה אֱלֹהֶ֑יךָ הַעְמֵ֣ק שְׁאָ֔לָה א֖וֹ הַגְבֵּ֥הַּ לְמָֽעְלָה׃
+คำที่ถาม: א֔וֹת   (รูปตั้งต้น אוֹת · ชนิดคำ noun)
+ตัวเลือก:
+  A) an object that represents and identifies a group of people; in the form of a flag or a metal or wooden board, often with an image; attached to a pole so that it can be carried; used in both military and religious contexts [คำแปลสั้น: sign, standard]
+  B) object or event that reminds of something that has happened or as a confirmation of something that is yet to happen [คำแปลสั้น: sign, souvenir]
+  C) supernatural act of a deity, · performed by the deity himself or in his name; ·in order to assert his power and greatness [คำแปลสั้น: miraculous sign, miracle]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

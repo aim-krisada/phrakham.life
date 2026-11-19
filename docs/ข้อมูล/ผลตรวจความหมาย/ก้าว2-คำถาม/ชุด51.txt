@@ -1,0 +1,64 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 105
+ที่อยู่: 1CH 6:34
+ข้อความต้นฉบับ: וְֽאַהֲרֹ֨ן וּבָנָ֜יו מַקְטִירִ֨ים עַל־מִזְבַּ֤ח הָֽעוֹלָה֙ וְעַל־מִזְבַּ֣ח הַקְּטֹ֔רֶת לְכֹ֕ל מְלֶ֖אכֶת קֹ֣דֶשׁ הַקֳּדָשִׁ֑ים וּלְכַפֵּר֙ עַל־יִשְׂרָאֵ֔ל כְּכֹל֙ אֲשֶׁ֣ר צִוָּ֔ה מֹשֶׁ֖ה עֶ֥בֶד הָאֱלֹהִֽים׃פ
+คำที่ถาม: מֹשֶׁ֖ה   (รูปตั้งต้น מֹשֶׁה · ชนิดคำ noun)
+ตัวเลือก:
+  A) man; · son of Amram and Jochebed, younger brother of Miriam and Aaron; tribe of Levi; · leader of Israel during exodus [คำแปลสั้น: Moses]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 106
+ที่อยู่: JOS 2:24
+ข้อความต้นฉบับ: וַיֹּאמְרוּ֙ אֶל־יְהוֹשֻׁ֔עַ כִּֽי־נָתַ֧ן יְהוָ֛ה בְּיָדֵ֖נוּ אֶת־כָּל־הָאָ֑רֶץ וְגַם־נָמֹ֛גוּ כָּל־יֹשְׁבֵ֥י הָאָ֖רֶץ מִפָּנֵֽינוּ׃ס
+คำที่ถาม: יֹשְׁבֵ֥י   (รูปตั้งต้น יָשַׁב · ชนิดคำ verb)
+ตัวเลือก:
+  A) literally: to sit; hence: causative action by which humans cause a certain condition to persist over a relatively long period of time [คำแปลสั้น: to remain, to stay]
+  B) action by which humans make a certain place or area their home [คำแปลสั้น: to settle, to dwell, to live, to inhabit]
+  C) state in which humans remain in a place that is not their home for a relatively short time [คำแปลสั้น: to stay, to remain]
+  D) a location that has been chosen by humans or deities as their dwelling place [คำแปลสั้น: settlement, dwelling]
+  E) causative action by which humans or deities cause (other) humans to make a certain place or area their home [คำแปลสั้น: to settle, to make (people) dwell]
+  F) state in which an object has been placed in a certain location with the intention that it will stay there for an extended period of time [คำแปลสั้น: to be set, to remain, to stay]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 107
+ที่อยู่: JOS 18:17
+ข้อความต้นฉบับ: וְתָאַ֣ר מִצָּפ֗וֹן וְיָצָא֙ עֵ֣ין שֶׁ֔מֶשׁ וְיָצָא֙ אֶל־גְּלִיל֔וֹת אֲשֶׁר־נֹ֖כַח מַעֲלֵ֣ה אֲדֻמִּ֑ים וְיָרַ֕ד אֶ֥בֶן בֹּ֖הַן בֶּן־רְאוּבֵֽן׃
+คำที่ถาม: אֶ֥בֶן   (รูปตั้งต้น אֶבֶן · ชนิดคำ noun)
+ตัวเลือก:
+  A) stone or rock · located on boundary between territories of Judah and Benjamin; · associated with Bohan, one of the sons of Reuben [คำแปลสั้น: stone (of) Bohan son of Reuben]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 108
+ที่อยู่: JOS 8:1
+ข้อความต้นฉบับ: וַיֹּ֨אמֶר יְהוָ֤ה אֶל־יְהוֹשֻׁ֨עַ֙ אַל־תִּירָ֣א וְאַל־תֵּחָ֔ת קַ֣ח עִמְּךָ֗ אֵ֚ת כָּל־עַ֣ם הַמִּלְחָמָ֔ה וְק֖וּם עֲלֵ֣ה הָעָ֑י רְאֵ֣ה׀נָתַ֣תִּי בְיָדְךָ֗ אֶת־מֶ֤לֶךְ הָעַי֙ וְאֶת־עַמּ֔וֹ וְאֶת־עִיר֖וֹ וְאֶת־אַרְצֽוֹ׃
+คำที่ถาม: יְהוֹשֻׁ֨עַ֙   (รูปตั้งต้น יְהֹושֻׁעַ · ชนิดคำ noun)
+ตัวเลือก:
+  A) man, also known as Hoshea and Jeshua; · son of Nun; tribe of Ephraim; · one of the twelve men sent by Moses to spy out the land; his name was Hoshea, later changed by Moses to Joshua; Moses' assistant, who later became his successor and brought Israel into Canaan [คำแปลสั้น: Joshua]
+  B) man; · governor of either Jerusalem or Beer-Sheba; time of Josiah [คำแปลสั้น: Joshua]
+  C) man, also known as Jeshua; · son of Jehozadak; tribe of Levi; · high priest; after exile [คำแปลสั้น: Joshua]
+  D) man; · inhabitant of Beth-Shemesh [คำแปลสั้น: Joshua]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 109
+ที่อยู่: JOS 12:5
+ข้อความต้นฉบับ: וּ֠מֹשֵׁל בְּהַ֨ר חֶרְמ֤וֹן וּבְסַלְכָה֙ וּבְכָל־הַבָּשָׁ֔ן עַד־גְּב֥וּל הַגְּשׁוּרִ֖י וְהַמַּעֲכָתִ֑י וַחֲצִי֙ הַגִּלְעָ֔ד גְּב֖וּל סִיח֥וֹן מֶֽלֶךְ־חֶשְׁבּֽוֹן׃
+คำที่ถาม: חֲצִי֙   (รูปตั้งต้น חֲצִי · ชนิดคำ noun)
+ตัวเลือก:
+  A) a point of time in the middle of a larger period of time [คำแปลสั้น: middle (of time)]
+  B) a referent pointing to a location in the middle of an object, on an imaginary division line as if it were divided into two parts [คำแปลสั้น: middle (of object)]
+  C) one half of a measure [คำแปลสั้น: half (measure)]
+  D) one part of an object or substance that has been divided into two parts [คำแปลสั้น: half (of object or substance)]
+  E) one half of a range of activities [คำแปลสั้น: half (of activities)]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

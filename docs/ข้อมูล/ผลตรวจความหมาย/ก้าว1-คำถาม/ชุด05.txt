@@ -1,0 +1,70 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ HALOT (Koehler-Baumgartner) ช่วยได้ ⛔ ห้ามใช้ BDAG เพราะนั่นเล่มกรีก
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 21
+ที่อยู่: GEN 24:61
+ข้อความต้นฉบับ: וַתָּ֨קָם רִבְקָ֜ה וְנַעֲרֹתֶ֗יהָ וַתִּרְכַּ֨בְנָה֙ עַל־הַגְּמַלִּ֔ים וַתֵּלַ֖כְנָה אַחֲרֵ֣י הָאִ֑ישׁ וַיִּקַּ֥ח הָעֶ֛בֶד אֶת־רִבְקָ֖ה וַיֵּלַֽךְ׃
+คำที่ถาม: אִ֑ישׁ   (รูปตั้งต้น אִישׁ · ชนิดคำ noun)
+ตัวเลือก:
+  A) literally: to come among people; hence, probably: state in which people have reached an advanced age, meaning, among other things, that they are too old for military duty [คำแปลสั้น: to be advanced in years]
+  B) singlular only: a specific group of people united for a common purpose, distinguishing this group from other groups referred to in the same context [คำแปลสั้น: people, men]
+  C) referent referring to each and every individual in a group of people or objects [คำแปลสั้น: each]
+  D) literally: person of battle; person of military age, trained and experienced in warfare; · associated with strength and bravery [คำแปลสั้น: warrior]
+  E) literally: person of in between; hence: a soldier who fights in single combat on behalf of the entire army [คำแปลสั้น: champion]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 22
+ที่อยู่: HOS 10:13
+ข้อความต้นฉบับ: חֲרַשְׁתֶּם־רֶ֛שַׁע עַוְלָ֥תָה קְצַרְתֶּ֖ם אֲכַלְתֶּ֣ם פְּרִי־כָ֑חַשׁ כִּֽי־בָטַ֥חְתָּ בְדַרְכְּךָ֖ בְּרֹ֥ב גִּבּוֹרֶֽיךָ׃
+คำที่ถาม: ה   (รูปตั้งต้น ה · ชนิดคำ suffix)
+ตัวเลือก:
+  A) causative action by which humans or deities cause objects to become similar to another objects [คำแปลสั้น: to make like]
+  B) literally: to arise; hence: action by which humans or deities position themselves in a standing position in a certain location [คำแปลสั้น: to take position, to stand]
+  C) literally: to raise up (a pattern of behavior over someone); hence: causative action by which humans in a position of authority prescribe a certain pattern of behavior to other humans [คำแปลสั้น: to oblige]
+  D) literally: goodness; state in which people go through a time of relative prosperity [คำแปลสั้น: prosperity, well-being]
+  E) a generic term for an offering made to a deity [คำแปลสั้น: offering]
+  F) road · leading through Transjordan along the desert border, connecting Damascus with the Gulf of Aqabah [คำแปลสั้น: King's Highway]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 23
+ที่อยู่: NUM 10:15
+ข้อความต้นฉบับ: וְעַ֨ל־צְבָ֔א מַטֵּ֖ה בְּנֵ֣י יִשָׂשכָ֑ר נְתַנְאֵ֖ל בֶּן־צוּעָֽר׃
+คำที่ถาม: צְבָ֔א   (รูปตั้งต้น צָבָא · ชนิดคำ noun)
+ตัวเลือก:
+  A) collective of all celestial bodies that give light; · created by God; · often worshiped by people, contrary to God's law; · in Daniel 8 possibly used as a metaphor for the people of God [คำแปลสั้น: host of heaven, sun, moon, and stars]
+  B) person who is fit for military service [คำแปลสั้น: soldier fit for war]
+  C) state of being in the service of the community; · sometimes associated with suffering and heavy labor [คำแปลสั้น: work, service]
+  D) literally: "YHWH (or one of the other names of God or a combination thereof) of Hosts"; hence: epithet of God with focus on his being in charge of the host of heavenly beings surrounding his throne, praising him, and carrying out his will in earth; · as an epithet it relates to God's power and control of the cosmos as the divine king and warrior [คำแปลสั้น: of Hosts, Almighty One]
+  E) state of serving as a soldier in active combat [คำแปลสั้น: war, campaign, battle]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 24
+ที่อยู่: ISA 22:11
+ข้อความต้นฉบับ: וּמִקְוָ֣ה׀עֲשִׂיתֶ֗ם בֵּ֚ין הַחֹ֣מֹתַ֔יִם לְמֵ֖י הַבְּרֵכָ֣ה הַיְשָׁנָ֑ה וְלֹ֤א הִבַּטְתֶּם֙ אֶל־עֹשֶׂ֔יהָ וְיֹצְרָ֥הּ מֵֽרָח֖וֹק לֹ֥א רְאִיתֶֽם׃
+คำที่ถาม: בְּרֵכָ֣ה   (รูปตั้งต้น בְּרֵכָה · ชนิดคำ noun)
+ตัวเลือก:
+  A) relatively large reservoir · dug by human hands · to collect water; place where many public activities take place [คำแปลสั้น: pool]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 25
+ที่อยู่: PRO 28:14
+ข้อความต้นฉบับ: אַשְׁרֵ֣י אָ֭דָם מְפַחֵ֣ד תָּמִ֑יד וּמַקְשֶׁ֥ה לִ֝בּ֗וֹ יִפּ֥וֹל בְּרָעָֽה׃
+คำที่ถาม: מַקְשֶׁ֥ה   (รูปตั้งต้น קָשָׁה · ชนิดคำ verb)
+ตัวเลือก:
+  A) action by which someone observes something carefully, with the intention of seeing through the outward appearance of things and grasping their essence, and so gain knowledge and understanding [คำแปลสั้น: to look closely, to take note, to pay attention, to consider, to understand, to draw understanding]
+  B) literally: to find (for someone); hence: state in which people or objects are available in sufficient quantity [คำแปลสั้น: to suffice]
+  C) literally: to cause to stand; hence: causative action by which humans assign roles and responsibilities to other humans [คำแปลสั้น: to set, to install]
+  D) literally: to pursue; hence: action by which humans do their utmost to achieve a certain condition or type of behavior [คำแปลสั้น: to pursue (a type of behavior)]
+  E) literally: to fall; hence: process by which an individual or nation loses power, prosperity or status [คำแปลสั้น: to fall]
+  F) to cause an object to have a relatively even and regular surface, free from perceptible projections or lumps or indentations [คำแปลสั้น: to make smooth]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>หน้าตามีมิติ — แบบให้เลือก 3 แบบ (ใบ #137)</title>
+<!--
+  แบบให้ดู ⛔ ไม่ใช่เว็บจริง · ใบงาน https://aimgit.aimagin.com/v3/phrakham/-/issues/137
+  ไฟล์เดียวจบ ⇒ ดับเบิลคลิกเปิดได้เลย
+  ⇒ ถ้าไม่ต่อเน็ต ตัวอักษร Sarabun กับฟอนต์ตัวมีเชิงของแบบ ข จะถอยไปใช้ตัวในเครื่องแทน หน้าตาเพี้ยนนิดหน่อย แต่ดูได้ครบ
+  ตัวบทเป็นของจริง ⇒ มาระโก 12 ฉบับ TCV · WEB · คำกรีก SBLGNT ⇒ ยกมาจาก _data/ ของเว็บจริง ⛔ ไม่ได้แต่งขึ้น
+  ⭐ ทุกแบบมีของบนจอชุดเดียวกับเว็บวันนี้ ตำแหน่งเดียวกัน ⇒ เปลี่ยนแค่หน้าตา (ใบ #137 ข้อ 9)
+  ⭐ สีของแต่ละแบบอยู่ในก้อน .จอ[data-p][data-t] ข้างล่าง ⇒ ตัวเลขความต่างของสีใน docs/design/เสนอ-หน้าตามีมิติ.md คำนวณจากก้อนนี้ตรง ๆ
+  เปิดตรงไปที่ฉากที่ต้องการได้ด้วยท้ายที่อยู่ เช่น #p=a&w=375&t=dark&s=compare&v=pair
+-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ⭐ ใช้เฉพาะแบบ ข ⇒ ตัวมีเชิงไทยหนา 600 สำหรับหัวเรื่อง + ตัวมีเชิงกรีกสำหรับคอลัมน์คำภาษาเดิม -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@600&family=Noto+Serif:wght@400;600&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'Sarabun';font-weight:400;font-display:swap;
+  src:local('Sarabun'),url('https://aimgit.aimagin.com/phrakham/fonts/Sarabun-Regular.woff2') format('woff2')}
+@font-face{font-family:'Sarabun';font-weight:700;font-display:swap;
+  src:local('Sarabun Bold'),url('https://aimgit.aimagin.com/phrakham/fonts/Sarabun-Bold.woff2') format('woff2')}
+
+/* =====================================================================
+   สีของแต่ละแบบ ⇒ วันนี้ (now) · ก (a) · ข (b) · ค (c) × สว่าง (light) · มืด (dark)
+   ⭐ ชื่อตัวแปรตรงกับตารางความต่างของสีในเอกสารสรุป
+   --desk   พื้นโต๊ะที่อยู่หลังแผ่นอ่าน        --paper  แผ่นที่ตัวบทวางอยู่
+   --sheet  แผ่นที่ลอยขึ้นมา เมนู ปุ่ม        --bar    แถบบนกับแถบล่าง (ตัวเลข rgb + ความทึบ --bar-a)
+   --ink ตัวบท · --ink2 คำอธิบายรอง · --accent ลิงก์ · --vnum เลขข้อ · --red คำของพระเยซู
+   --edge กรอบของที่กดได้ (ต้อง ≥ 3:1 ตาม SC 1.4.11) · --hl/--hlink พื้นกับตัวหนังสือตอนถูกเลือก
+   --pill/--pillink ปุ่มฟัง · --card คอลัมน์คำภาษาเดิม · --tense สีสัญลักษณ์กาล
+   ===================================================================== */
+.จอ[data-p="now"][data-t="light"]{
+  --desk:#faf6f0;--paper:#faf6f0;--sheet:#fffdf7;--bar-rgb:255 253 247;--bar-a:1;
+  --ink:#2b2118;--ink2:#5a4f42;--accent:#6b3410;--vnum:#5f5233;--red:#8f1212;
+  --edge:#a87e2b;--hair:#e0d6c8;--hl:#f7e9c9;--hlink:#5c4214;
+  --pill:#2b2118;--pillink:#faf6f0;--card:#fffdf7;--tense:#a87e2b;--btnbg:#fffdf7;--barink:#6b3410;--barink2:#5a4f42;
+}
+/* วันนี้ยังไม่มีธีมมืด (ใบ #67) ⇒ ฝั่ง "วันนี้" ตอนเลือกมืดจะโชว์ธีมสว่างพร้อมป้ายบอก */
+.จอ[data-p="now"][data-t="dark"]{
+  --desk:#faf6f0;--paper:#faf6f0;--sheet:#fffdf7;--bar-rgb:255 253 247;--bar-a:1;
+  --ink:#2b2118;--ink2:#5a4f42;--accent:#6b3410;--vnum:#5f5233;--red:#8f1212;
+  --edge:#a87e2b;--hair:#e0d6c8;--hl:#f7e9c9;--hlink:#5c4214;
+  --pill:#2b2118;--pillink:#faf6f0;--card:#fffdf7;--tense:#a87e2b;--btnbg:#fffdf7;--barink:#6b3410;--barink2:#5a4f42;
+}
+/* ---------- ก. แผ่นกระดาษซ้อน ---------- */
+.จอ[data-p="a"][data-t="light"]{
+  --desk:#ece4d6;--paper:#fcf9f3;--sheet:#fffefa;--bar-rgb:252 249 243;--bar-a:.95;
+  --ink:#2b2118;--ink2:#5a4f42;--accent:#6b3410;--vnum:#5f5233;--red:#8f1212;
+  --edge:#9c7425;--hair:#e6ddd0;--hl:#f7e9c9;--hlink:#5c4214;
+  --pill:#2b2118;--pillink:#fffaf0;--card:#fffefa;--tense:#a87e2b;--btnbg:#fffefa;--barink:#6b3410;--barink2:#5a4f42;
+  --sh-rgb:70 45 15;
+}
+.จอ[data-p="a"][data-t="dark"]{
+  --desk:#0e0b08;--paper:#1c1712;--sheet:#2a231c;--bar-rgb:28 23 18;--bar-a:.95;
+  --ink:#efe6d8;--ink2:#bcae9b;--accent:#e6ad7f;--vnum:#c3b08a;--red:#f58b80;
+  --edge:#a9864a;--hair:#3a3128;--hl:#3d2f1c;--hlink:#f5ddb0;
+  --pill:#efe6d8;--pillink:#1c1712;--card:#241e18;--tense:#c9a45c;--btnbg:#2a231c;--barink:#e6ad7f;--barink2:#bcae9b;
+  --sh-rgb:0 0 0;
+}
+/* ---------- ข. ปกหนังขอบทอง ---------- */
+.จอ[data-p="b"][data-t="light"]{
+  --desk:#e9dfcc;--paper:#f8f1e3;--sheet:#fffaf0;--bar-rgb:59 38 24;--bar-a:1;
+  --ink:#2b2118;--ink2:#5a4f42;--accent:#6b3410;--vnum:#5f5233;--red:#8f1212;
+  --edge:#a87e2b;--hair:#e3d5bb;--hl:#f7e9c9;--hlink:#5c4214;
+  --pill:#c9a45c;--pillink:#2b2118;--card:#fffaf0;--tense:#a87e2b;--btnbg:#fffaf0;--barbtn:#4a3020;--barink:#f6ead2;--barink2:#e9cf95;
+  --gold:#c9a45c;--sh-rgb:60 30 5;
+}
+.จอ[data-p="b"][data-t="dark"]{
+  --desk:#120c07;--paper:#211812;--sheet:#2c2119;--bar-rgb:26 17 10;--bar-a:1;
+  --ink:#f0e4cc;--ink2:#c2b196;--accent:#e8b57e;--vnum:#cbb48a;--red:#ef8d84;
+  --edge:#b08d4c;--hair:#3b2e22;--hl:#43321d;--hlink:#f5ddb0;
+  --pill:#c9a45c;--pillink:#1a110a;--card:#281e16;--tense:#c9a45c;--btnbg:#2c2119;--barbtn:#2a1c12;--barink:#f0e4cc;--barink2:#e0c58a;
+  --gold:#c9a45c;--sh-rgb:0 0 0;
+}
+/* ---------- ค. แสงนวล ---------- */
+.จอ[data-p="c"][data-t="light"]{
+  --desk:#f1efeb;--paper:#fdfcfa;--sheet:#ffffff;--bar-rgb:253 252 250;--bar-a:.92;
+  --ink:#1f1a15;--ink2:#6a6158;--accent:#7a3b12;--vnum:#6a6158;--red:#8f1212;
+  --edge:#867c6f;--hair:#e8e4de;--hl:#f3eadb;--hlink:#5c4214;
+  --pill:#1f1a15;--pillink:#ffffff;--card:#ffffff;--tense:#867c6f;--btnbg:#f6f4f0;--barink:#7a3b12;--barink2:#6a6158;
+  --sh-rgb:0 0 0;
+}
+.จอ[data-p="c"][data-t="dark"]{
+  --desk:#0b0b0a;--paper:#1c1b19;--sheet:#2a2826;--bar-rgb:28 27 25;--bar-a:.92;
+  --ink:#f5f2ec;--ink2:#a8a196;--accent:#f0b183;--vnum:#a8a196;--red:#ff8f86;
+  --edge:#857c6f;--hair:#34312d;--hl:#3a3226;--hlink:#f5ddb0;
+  --pill:#f5f2ec;--pillink:#1c1b19;--card:#242320;--tense:#a8a196;--btnbg:#2a2826;--barink:#f0b183;--barink2:#a8a196;
+  --sh-rgb:0 0 0;
+}
+
+/* =====================================================================
+   หน้าของแบบให้ดู ⛔ ไม่ใช่ส่วนของเว็บจริง
+   ===================================================================== */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:#2c2c2e;color:#f2f2f2;font-family:'Sarabun','Noto Sans Thai','Leelawadee UI',system-ui,sans-serif;font-size:16px}
+#แถบดู{position:sticky;top:0;z-index:999;background:#141414;padding:8px 12px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+#แถบดู .กลุ่ม{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+#แถบดู .ป้าย{font-size:13px;color:#c9c2b6;margin-right:2px}
+#แถบดู button{min-height:44px;min-width:44px;padding:0 12px;background:#2e2e2e;color:#fff;border:1px solid #6a6a6a;border-radius:10px;font:inherit;font-size:15px;cursor:pointer}
+#แถบดู button[aria-pressed="true"]{background:#fff;color:#141414;border-color:#fff;font-weight:700}
+#แถบดู button:focus-visible{outline:3px solid #ffd479;outline-offset:2px}
+#คำบรรยาย{max-width:1180px;margin:14px auto 0;padding:0 16px;color:#d8d2c8;font-size:15px;line-height:1.7}
+#คำบรรยาย b{color:#fff}
+#เวที{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:28px 28px;padding:18px 12px 60px}
+.ช่องจอ{display:flex;flex-direction:column;gap:8px;align-items:center}
+.ป้ายจอ{font-size:14px;color:#e8e2d8;text-align:center;line-height:1.4}
+.ป้ายจอ b{color:#fff}
+.ป้ายจอ .เตือน{display:block;color:#ffd479;font-size:13px}
+
+/* =====================================================================
+   จอจำลอง ⇒ โครงเดียวกันทุกแบบ ⇒ ต่างกันแค่ตัวแปรสีกับผิวข้างล่าง
+   ===================================================================== */
+.จอ{
+  position:relative;overflow:hidden;flex:none;
+  background:var(--desk);color:var(--ink);
+  font-family:'Sarabun','Noto Sans Thai','Leelawadee UI',system-ui,sans-serif;
+  --f-head:inherit;--f-greek:inherit;
+  --r-btn:4px;--r-pop:2px;--r-card:12px;--r-sheet:0px;--fs:18px;
+  box-shadow:0 18px 50px rgba(0,0,0,.5);
+}
+.จอ[data-t="dark"]:not([data-p="now"]){color-scheme:dark}
+.จอ[data-w="375"]{width:375px;height:812px;border-radius:30px}
+.จอ[data-w="wide"]{width:1200px;height:780px;border-radius:12px}
+.เลื่อน{position:absolute;inset:0;overflow:auto;scrollbar-width:none}
+.เลื่อน::-webkit-scrollbar{display:none}
+
+/* ---------- แถบบน ---------- */
+.แถบบน{
+  position:sticky;top:0;z-index:20;height:60px;
+  display:flex;align-items:center;gap:8px;padding:0 16px;
+  background:rgb(var(--bar-rgb) / var(--bar-a));
+  border-bottom:1px solid var(--hair);
+}
+.ชื่อเว็บ{color:var(--barink);text-decoration:underline;text-underline-offset:.2em;font-size:16px;white-space:nowrap}
+.ลิงก์บน{color:var(--barink);text-decoration:underline;text-underline-offset:.2em;font-size:14px;margin-left:10px;white-space:nowrap}
+.ช่องว่าง{flex:1}
+.ปุ่ม{
+  min-height:44px;min-width:44px;padding:0 14px;display:inline-flex;align-items:center;justify-content:center;gap:4px;
+  background:var(--btnbg);color:var(--ink);border:1px solid var(--edge);border-radius:var(--r-btn);
+  font:inherit;font-size:15px;cursor:pointer;white-space:nowrap;
+}
+.แถบบน .ปุ่ม{color:var(--ink)}
+.ปุ่ม[aria-expanded="true"]{border:2px solid var(--ink);font-weight:700}
+.ปุ่ม:focus-visible,.ชิป:focus-visible,.ชื่อเว็บ:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* ---------- หัวคอลัมน์ ---------- */
+.หัวช่อง{
+  position:sticky;top:60px;z-index:15;
+  background:rgb(var(--bar-rgb) / var(--bar-a));
+  border-bottom:1px solid var(--hair);
+  padding:6px 16px 6px;
+  display:grid;gap:6px 8px;
+}
+.หัวหนึ่ง{display:flex;gap:4px;min-width:0}
+.หัวหนึ่ง .เลือกฉบับ{padding:0 8px;font-size:14px;color:var(--ink2)}
+.หัวหนึ่ง .ตอน{flex:1;min-width:0;justify-content:flex-start;font-weight:700;overflow:hidden;text-overflow:ellipsis}
+.หัวหนึ่ง .ปิด{padding:0;font-size:18px;color:var(--ink2)}
+.จอ[data-w="375"] .หัวหนึ่ง{gap:3px}
+.จอ[data-w="375"] .หัวหนึ่ง .ปุ่ม{padding:0 6px;font-size:13.5px}.แถวชิป{display:flex;gap:6px;flex-wrap:wrap}
+.ชิป{min-height:44px;padding:0 12px;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--edge);border-radius:var(--r-btn);
+  background:var(--btnbg);color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.ชิป[aria-pressed="true"]{background:var(--hl);color:var(--hlink)}
+
+/* ---------- แผ่นอ่าน ---------- */
+.แผ่น{background:var(--paper);padding:14px 16px 120px;border-radius:var(--r-sheet)}
+.ชื่อบท{font-family:var(--f-head);font-size:16px;font-weight:700;color:var(--ink2);margin:4px 0 14px}
+.ตาราง{display:grid;column-gap:12px;position:relative}
+.เลข{font-size:11px;font-weight:700;color:var(--vnum);padding-top:.55em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.บท{font-size:var(--fs);line-height:1.95;padding-bottom:.55em;min-width:0}
+.บท .ฉ{display:block}
+.บท .ฉ + .ฉ{font-size:.9em;line-height:1.85;margin-top:.15em}
+.แดง{color:var(--red)}
+.กลอน{display:block;padding-left:1.2em}
+.กลอน.สอง{padding-left:2.4em}
+.พื้นการ์ด{background:var(--card);border:1px solid var(--hair);border-radius:var(--r-card);z-index:0}
+.กรีก{position:relative;z-index:1;padding:6px 10px 10px;display:flex;flex-wrap:wrap;gap:4px 12px;align-content:flex-start;min-width:0}
+.หัวการ์ด{position:relative;z-index:1;font-size:13px;color:var(--ink2);padding:8px 12px 2px;grid-column:3}
+.คำ{display:inline-flex;flex-direction:column;align-items:center;line-height:1.25;padding:2px 0}
+.คำ .ก{font-family:var(--f-greek);font-size:17px;color:var(--ink);white-space:nowrap;display:inline-flex;align-items:center;gap:3px}
+.คำ.เน้น .ก{font-weight:700}
+.คำ .แปล{font-size:12px;color:var(--ink2);text-align:center}
+.คำ svg{width:22px;height:11px;fill:none;stroke:var(--tense);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.คำ svg circle{fill:var(--tense);stroke:none}
+
+/* ---------- แถบล่าง ---------- */
+.แถบล่าง{
+  position:sticky;bottom:0;z-index:20;height:64px;margin-top:-64px;
+  display:flex;align-items:center;gap:4px;padding:0 10px 0 16px;
+  background:rgb(var(--bar-rgb) / var(--bar-a));
+  border-top:1px solid var(--hair);
+}
+.จอ[data-p][data-t] .แถบล่าง .ปุ่ม{background:transparent;border:0;box-shadow:none}
+.แถบล่าง .ลูกศร{color:var(--barink2);font-size:20px}
+.แถบล่าง .ป้ายล่าง{flex:1;text-align:center;font-weight:700;color:var(--barink2);font-size:15px}
+.ปุ่มฟัง{min-height:48px;min-width:96px;padding:2px 20px;border-radius:999px;border:1px solid var(--pill);
+  background:var(--pill);color:var(--pillink);font:inherit;font-weight:700;font-size:16px;line-height:1.05;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer}
+.ปุ่มฟัง small{font-size:.72em;font-weight:400}
+
+/* ---------- เมนูที่ลอยขึ้นมา ---------- */
+.เมนู{
+  position:absolute;z-index:40;top:60px;width:260px;
+  background:var(--sheet);color:var(--ink);border:1px solid var(--edge);border-radius:var(--r-pop);
+  padding:12px 14px 14px;
+}
+.จอ[data-w="wide"] .เมนู{width:330px}
+.เมนู h3{margin:2px 0 8px;font-family:var(--f-head);font-size:16px}
+.เมนู .หัวย่อย{font-size:13.5px;color:var(--ink2);margin:10px 0 4px}
+.เมนู hr{border:0;border-top:1px solid var(--ink);margin:12px 0 4px;opacity:.85}
+.แถวขนาด{display:flex;align-items:center;gap:8px}
+.แถวขนาด output{min-width:52px;text-align:center}
+.ตัวเลือก{display:flex;align-items:center;gap:10px;min-height:44px;font-size:15px;line-height:1.35;cursor:pointer}
+.ตัวเลือก input{width:20px;height:20px;accent-color:var(--accent);flex:none;margin:0}
+.เมนู .หมาย{font-size:12.5px;color:var(--ink2);margin-top:8px}
+
+/* =====================================================================
+   ผิวของแต่ละแบบ ⇒ ⭐ เปลี่ยนแค่หน้าตา ⛔ ไม่มีของเพิ่ม ⛔ ไม่ย้ายตำแหน่ง
+   ===================================================================== */
+
+/* ---------- ก. แผ่นกระดาษซ้อน ⇒ ชั้นของแผ่น 3 ระดับ: โต๊ะ → แผ่นอ่าน → แถบกับเมนูที่ลอยเหนือ ---------- */
+.จอ[data-p="a"]{--r-btn:12px;--r-pop:18px;--r-card:16px;--r-sheet:20px}
+.จอ[data-p="a"] .แถบบน,.จอ[data-p="a"] .หัวช่อง{
+  -webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);
+  border-bottom:0;box-shadow:0 .5px 0 rgb(var(--sh-rgb) / .12),0 8px 18px -12px rgb(var(--sh-rgb) / .35);
+}
+.จอ[data-p="a"] .หัวช่อง{top:60px;box-shadow:0 .5px 0 rgb(var(--sh-rgb) / .12)}
+.จอ[data-p="a"] .ปุ่ม,.จอ[data-p="a"] .ชิป{
+  background:linear-gradient(180deg,var(--sheet),var(--btnbg));
+  box-shadow:0 1px 2px rgb(var(--sh-rgb) / .16),inset 0 1px 0 rgb(255 255 255 / .55);
+}
+.จอ[data-p="a"][data-t="dark"] .ปุ่ม,.จอ[data-p="a"][data-t="dark"] .ชิป{box-shadow:0 1px 2px rgb(0 0 0 / .5),inset 0 1px 0 rgb(255 255 255 / .06)}
+.จอ[data-p="a"] .ชิป[aria-pressed="true"]{background:var(--hl)}
+.จอ[data-p="a"] .แผ่น{
+  margin:10px 8px 0;padding:16px 14px 130px;
+  box-shadow:0 1px 2px rgb(var(--sh-rgb) / .08),0 14px 36px -14px rgb(var(--sh-rgb) / .28);
+}
+.จอ[data-p="a"][data-w="wide"] .แผ่น{margin:22px auto 0;max-width:820px;padding:24px 40px 130px}
+.จอ[data-p="a"][data-w="wide"] .แผ่น.เทียบ{max-width:1120px;padding:20px 28px 130px}
+.จอ[data-p="a"] .ชื่อบท{font-size:24px;color:var(--ink);letter-spacing:-.005em;margin:2px 0 16px}
+.จอ[data-p="a"] .เลข{font-weight:600}
+.จอ[data-p="a"] .พื้นการ์ด{border:0;box-shadow:0 0 0 1px rgb(var(--sh-rgb) / .08),0 2px 6px rgb(var(--sh-rgb) / .10),0 12px 28px -14px rgb(var(--sh-rgb) / .25)}
+.จอ[data-p="a"][data-t="dark"] .พื้นการ์ด{box-shadow:0 0 0 1px rgb(255 255 255 / .06),0 12px 28px -10px rgb(0 0 0 / .6)}
+.จอ[data-p="a"] .แถบล่าง{
+  margin:-74px 8px 10px;height:64px;border:0;border-radius:24px;
+  -webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);
+  box-shadow:0 0 0 .5px rgb(var(--sh-rgb) / .14),0 10px 30px -8px rgb(var(--sh-rgb) / .35);
+}
+.จอ[data-p="a"][data-w="wide"] .แถบล่าง{margin:-74px auto 10px;max-width:820px}
+.จอ[data-p="a"] .ปุ่มฟัง{background:linear-gradient(180deg,color-mix(in srgb,var(--pill) 88%,#fff),var(--pill));
+  box-shadow:0 6px 14px -4px rgb(var(--sh-rgb) / .45),inset 0 1px 0 rgb(255 255 255 / .18)}
+.จอ[data-p="a"] .เมนู{
+  background:color-mix(in srgb,var(--sheet) 90%,transparent);
+  -webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);
+  border:0;top:66px;padding:14px 16px 16px;
+  box-shadow:0 0 0 .5px rgb(var(--sh-rgb) / .18),0 4px 10px rgb(var(--sh-rgb) / .08),0 26px 50px -14px rgb(var(--sh-rgb) / .38);
+}
+.จอ[data-p="a"] .เมนู hr{border-top-color:var(--hair);opacity:1}
+
+/* ---------- ข. ปกหนังขอบทอง ⇒ แถบเป็นหนังสีน้ำตาลเข้ม เส้นทอง หัวเรื่องตัวมีเชิง กระดาษมีเนื้อ ---------- */
+.จอ[data-p="b"]{--r-btn:8px;--r-pop:10px;--r-card:10px;--r-sheet:4px;
+  --f-head:'Noto Serif Thai','Sarabun',serif;--f-greek:'Noto Serif','Gentium Plus','Times New Roman',serif}
+.จอ[data-p="b"] .แถบบน{
+  background:linear-gradient(180deg,color-mix(in srgb,rgb(var(--bar-rgb)) 88%,#fff 4%),rgb(var(--bar-rgb)));
+  border-bottom:1px solid var(--gold);box-shadow:0 1px 0 rgb(0 0 0 / .25),0 6px 16px -6px rgb(var(--sh-rgb) / .5);
+}
+.จอ[data-p="b"] .ชื่อเว็บ{font-family:var(--f-head);text-decoration-color:var(--gold);color:var(--barink);letter-spacing:.02em}
+.จอ[data-p="b"] .ลิงก์บน{color:var(--barink2)}
+.จอ[data-p="b"] .แถบบน .ปุ่ม{background:var(--barbtn);color:var(--barink);border-color:var(--gold);box-shadow:inset 0 1px 0 rgb(255 255 255 / .08)}
+.จอ[data-p="b"] .แถบบน .ปุ่ม[aria-expanded="true"]{border:2px solid var(--barink)}
+.จอ[data-p="b"] .หัวช่อง{background:var(--paper);border-bottom:1px solid var(--hair);box-shadow:0 4px 10px -8px rgb(var(--sh-rgb) / .4)}
+.จอ[data-p="b"] .แผ่น,.จอ[data-p="b"] .หัวช่อง{
+  background-color:var(--paper);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .3 0 0 0 0 .1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.จอ[data-p="b"] .แผ่น{box-shadow:inset 14px 0 18px -16px rgb(var(--sh-rgb) / .35)}
+.จอ[data-p="b"][data-w="wide"] .แผ่น{margin:0 auto;max-width:860px;min-height:100%;
+  box-shadow:0 0 0 1px var(--hair),0 0 40px rgb(var(--sh-rgb) / .18),inset 18px 0 22px -18px rgb(var(--sh-rgb) / .35)}
+.จอ[data-p="b"][data-w="wide"] .แผ่น.เทียบ{max-width:1140px}
+.จอ[data-p="b"] .ชื่อบท{font-size:24px;font-weight:600;color:var(--accent);margin:6px 0 18px;padding-bottom:10px;position:relative}
+.จอ[data-p="b"] .ชื่อบท::after{content:"";position:absolute;left:0;bottom:0;width:72px;height:3px;
+  border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.จอ[data-p="b"] .เลข{color:var(--vnum)}
+.จอ[data-p="b"] .พื้นการ์ด{border:1px solid var(--gold);box-shadow:inset 0 0 0 3px var(--card),inset 0 0 0 4px color-mix(in srgb,var(--gold) 45%,transparent),0 6px 18px -8px rgb(var(--sh-rgb) / .35)}
+.จอ[data-p="b"] .หัวการ์ด{font-family:var(--f-head);color:var(--accent)}
+.จอ[data-p="b"] .แถบล่าง{
+  background:linear-gradient(0deg,color-mix(in srgb,rgb(var(--bar-rgb)) 92%,#000),rgb(var(--bar-rgb)));
+  border-top:1px solid var(--gold);box-shadow:0 -6px 16px -6px rgb(var(--sh-rgb) / .45);
+}
+.จอ[data-p="b"] .แถบล่าง .ลูกศร,.จอ[data-p="b"] .แถบล่าง .ป้ายล่าง{color:var(--barink)}
+.จอ[data-p="b"] .ปุ่มฟัง{background:linear-gradient(180deg,#d9b872,var(--pill) 55%,#b38d45);border-color:#e4c98d;color:var(--pillink);
+  box-shadow:0 4px 12px -2px rgb(0 0 0 / .5),inset 0 1px 0 rgb(255 255 255 / .45)}
+.จอ[data-p="b"] .เมนู{border:1px solid var(--gold);top:64px;
+  box-shadow:inset 0 0 0 3px var(--sheet),inset 0 0 0 4px color-mix(in srgb,var(--gold) 40%,transparent),0 22px 44px -10px rgb(var(--sh-rgb) / .5)}
+.จอ[data-p="b"] .เมนู h3{color:var(--accent)}
+.จอ[data-p="b"] .เมนู hr{border-top-color:var(--gold);opacity:.7}
+
+/* ---------- ค. แสงนวล ⇒ ขาวนวลแบบหนังสือของ Apple หัวเรื่องใหญ่ ปุ่มทรงแคปซูล การ์ดลอยนุ่ม ---------- */
+.จอ[data-p="c"]{--r-btn:999px;--r-pop:22px;--r-card:22px;--r-sheet:0px}
+.จอ[data-p="c"] .แถบบน,.จอ[data-p="c"] .หัวช่อง{
+  -webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);
+  border-bottom:1px solid var(--hair);
+}
+.จอ[data-p="c"] .ชื่อเว็บ{text-decoration:none;font-weight:700;letter-spacing:-.01em}
+
+.จอ[data-p="c"] .แผ่น{background:var(--paper);padding:18px 20px 130px}
+.จอ[data-p="c"][data-w="wide"] .แผ่น{max-width:860px;margin:0 auto;padding:36px 48px 130px;background:transparent}
+.จอ[data-p="c"][data-w="wide"] .แผ่น.เทียบ{max-width:1140px}
+.จอ[data-p="c"][data-w="wide"]{background:var(--paper)}
+.จอ[data-p="c"] .ชื่อบท{font-size:32px;line-height:1.2;color:var(--ink);letter-spacing:-.015em;margin:6px 0 22px}
+.จอ[data-p="c"] .เลข{font-weight:400}
+.จอ[data-p="c"] .บท{line-height:2}
+.จอ[data-p="c"] .พื้นการ์ด{border:0;background:var(--desk);box-shadow:none}
+.จอ[data-p="c"] .แถบล่าง{border-top:1px solid var(--hair);
+  -webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%)}
+.จอ[data-p="c"] .ปุ่มฟัง{box-shadow:0 8px 20px -6px rgb(var(--sh-rgb) / .35)}
+.จอ[data-p="c"] .เมนู{border:0;top:66px;padding:16px 18px 18px;
+  box-shadow:0 0 0 1px var(--hair),0 30px 60px -12px rgb(var(--sh-rgb) / .28),0 6px 16px rgb(var(--sh-rgb) / .06)}
+.จอ[data-p="c"] .เมนู hr{border-top-color:var(--hair);opacity:1}
+.จอ[data-p="c"] .ปุ่ม[aria-expanded="true"]{border-width:2px}
+
+/* ---------- การเคลื่อนไหว ⇒ เมนูค่อย ๆ ลอยขึ้น ⇒ ⛔ ปิดตาม prefers-reduced-motion (SC 2.3.3) ---------- */
+.จอ:not([data-p="now"]) .เมนู{animation:ลอยขึ้น .18s ease-out}
+@keyframes ลอยขึ้น{from{opacity:0;transform:translateY(-6px) scale(.98)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.จอ .เมนู{animation:none}}
+/* ⭐ เครื่องที่ตั้ง "ลดความโปร่งใส" หรือไม่รองรับกระจกฝ้า ⇒ แถบกับเมนูกลับเป็นสีทึบ ⇒ ตัวหนังสือข้างใต้ไม่ซ้อนขึ้นมา */
+@media (prefers-reduced-transparency:reduce){
+  .จอ .แถบบน,.จอ .หัวช่อง,.จอ .แถบล่าง,.จอ .เมนู{--bar-a:1;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+  .จอ[data-p] .เมนู{background:var(--sheet)}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .จอ .แถบบน,.จอ .หัวช่อง,.จอ .แถบล่าง{--bar-a:1}
+}
+</style>
+</head>
+<body>
+<div id="แถบดู" role="toolbar" aria-label="ตัวเลือกของแบบให้ดู">
+  <div class="กลุ่ม" data-key="p"><span class="ป้าย">แบบ</span>
+    <button data-v="now">วันนี้</button><button data-v="a">ก. แผ่นกระดาษซ้อน</button><button data-v="b">ข. ปกหนังขอบทอง</button><button data-v="c">ค. แสงนวล</button></div>
+  <div class="กลุ่ม" data-key="v"><span class="ป้าย">มุมดู</span>
+    <button data-v="pair">วันนี้คู่แบบใหม่</button><button data-v="single">แบบเดียว</button><button data-v="sheet">ทุกฉาก</button></div>
+  <div class="กลุ่ม" data-key="w"><span class="ป้าย">จอ</span>
+    <button data-v="375">375</button><button data-v="wide">กว้าง</button></div>
+  <div class="กลุ่ม" data-key="t"><span class="ป้าย">ธีม</span>
+    <button data-v="light">สว่าง</button><button data-v="dark">มืด</button></div>
+  <div class="กลุ่ม" data-key="s"><span class="ป้าย">ฉาก</span>
+    <button data-v="read">อ่าน</button><button data-v="compare">เทียบ + คำภาษาเดิม</button><button data-v="aa">เมนู Aa</button><button data-v="tiab">เมนู เทียบ</button></div>
+</div>
+<div id="คำบรรยาย"></div>
+<main id="เวที"></main>
+
+<script>
+/* ---------- ตัวบทจริง มาระโก 12 ---------- */
+const TCV = [
+  [1,'แล้วพระองค์พูดเป็นอุปมาว่า ','“ชายคนหนึ่งทำไร่องุ่น เขาล้อมรั้วรอบไร่ สกัดบ่อย่ำองุ่น และสร้างหอไว้เฝ้า จากนั้นให้คนทำไร่มาเช่า แล้วย้ายไปต่างแดน'],
+  [2,'','เมื่อถึงฤดูเก็บเกี่ยว เขาส่งคนรับใช้ไปหาผู้เช่า เพื่อรับส่วนแบ่งผลผลิตจากไร่องุ่นจากพวกเขา'],
+  [3,'','แต่พวกผู้เช่าจับคนรับใช้นั้นทุบตี แล้วไล่เขากลับไปมือเปล่า'],
+  [4,'','เขาจึงส่งคนรับใช้ไปอีกคน แต่ก็ถูกรุมฟาดหัวและทำให้อับอาย'],
+  [5,'','เจ้าของยังส่งคนไปอีก แต่ก็ถูกพวกเขาฆ่า เขาส่งไปอีกหลายคน บ้างก็ถูกทุบตี บ้างก็ถูกฆ่า'],
+  [6,'','เขาเหลืออยู่คนเดียวที่จะส่งไป คือลูกชายที่เขารัก เขาส่งมาเป็นคนสุดท้าย และพูดว่า ‘พวกนั้นน่าจะเคารพยำเกรงลูกของเรา’'],
+  [7,'','แต่พวกผู้เช่าพูดกันว่า ‘นี่ไงทายาท เราฆ่าเขากันเถอะ แล้วมรดกจะตกเป็นของเรา’'],
+  [8,'','พวกนั้นจึงจับเขาโยนออกนอกไร่องุ่นแล้วฆ่าทิ้ง'],
+  [9,'','แล้วเจ้าของไร่องุ่นจะทำอะไร เขาก็จะมาฆ่าพวกนั้นและให้คนอื่นเช่าไร่องุ่น'],
+  [10,'','พวกท่านไม่เคยอ่านพระคัมภีร์หรือที่ว่า|‘ศิลาซึ่งช่างก่อได้ทิ้งแล้ว|>กลับกลายเป็นศิลามุมเอก'],
+  [11,'','องค์พระผู้เป็นเจ้าได้กระทำการนี้|>ซึ่งเป็นสิ่งมหัศจรรย์ในสายตาของเรา’”'],
+  [12,'พวกหัวหน้าปุโรหิต ครูสอนกฎบัญญัติและผู้อาวุโสหาทางจับกุมพระเยซู เพราะรู้ว่าพระองค์ใช้อุปมานี้ว่าพวกตน แต่ก็กลัวฝูงชนจึงละจากพระองค์ไป',''],
+];
+const WEB = {
+  1:'He began to speak to them in parables. “A man planted a vineyard, put a hedge around it, dug a pit for the wine press, built a tower, rented it out to a farmer, and went into another country.',
+  2:'When it was time, he sent a servant to the farmer to get from the farmer his share of the fruit of the vineyard.',
+  3:'They took him, beat him, and sent him away empty.',
+  4:'Again, he sent another servant to them; and they threw stones at him, wounded him in the head, and sent him away shamefully treated.',
+  5:'Again he sent another, and they killed him, and many others, beating some, and killing some.',
+  6:'Therefore still having one, his beloved son, he sent him last to them, saying, ‘They will respect my son.’',
+};
+/* คำกรีก SBLGNT ⇒ [คำ, คำแปล, รหัสกาล, เน้น] ⇒ A เอออริสต์ · P ปัจจุบันกาล · I อดีตกาลต่อเนื่อง · F อนาคตกาล */
+const GRK = {
+ 1:'Καὶ|And;ἤρξατο|He began|A;αὐτοῖς|to them;ἐν|in||1;παραβολαῖς|parables||1;λαλεῖν|to speak|P;Ἀμπελῶνα|A vineyard||1;ἄνθρωπος|a man;ἐφύτευσεν|planted|A;καὶ|and;περιέθηκεν|he placed around [it]|A;φραγμὸν|a fence;καὶ|and;ὤρυξεν|dug|A;ὑπολήνιον|a wine vat;καὶ|and;ᾠκοδόμησεν|built|A;πύργον|a tower;καὶ|and;ἐξέδετο|rented out|A;αὐτὸν|it;γεωργοῖς|to farmers;καὶ|and;ἀπεδήμησεν|traveled abroad|A',
+ 2:'καὶ|And;ἀπέστειλεν|he sent|A;πρὸς|to;τοὺς|the;γεωργοὺς|farmers;τῷ|at the;καιρῷ|due time;δοῦλον|a servant||1;ἵνα|that;παρὰ|from;τῶν|the;γεωργῶν|farmers;λάβῃ|he might receive|A;ἀπὸ|from;τῶν|the;καρπῶν|fruit;τοῦ|of the;ἀμπελῶνος|vineyard',
+ 3:'καὶ|But;λαβόντες|having taken|A;αὐτὸν|him;ἔδειραν|they beat [him]|A;καὶ|and;ἀπέστειλαν|sent [him] away|A;κενόν|empty-handed',
+ 4:'καὶ|And;πάλιν|again||1;ἀπέστειλεν|he sent|A;πρὸς|to;αὐτοὺς|them;ἄλλον|another;δοῦλον|servant;κἀκεῖνον|and him;ἐκεφαλίωσαν|they struck on the head|A;καὶ|and;ἠτίμασαν|treated shamefully|A',
+ 5:'καὶ|And;ἄλλον|another||1;ἀπέστειλεν|He sent|A;κἀκεῖνον|and him;ἀπέκτειναν|they killed|A;καὶ|also;πολλοὺς|many;ἄλλους|others;οὓς|some;μὲν|indeed;δέροντες|beating|P;οὓς|some;δὲ|then;ἀποκτέννοντες|killing|P',
+ 6:'ἔτι|Yet;ἕνα|one||1;εἶχεν|having|I;υἱὸν|son||1;ἀγαπητόν|beloved||1;ἀπέστειλεν|he sent|A;αὐτὸν|him;ἔσχατον|last;πρὸς|to;αὐτοὺς|them;λέγων|saying|P;ὅτι|-;Ἐντραπήσονται|They will have respect for|F;τὸν|the;υἱόν|son;μου|of me',
+};
+/* รูปสัญลักษณ์กาล ⇒ เส้นเดียวกับ app/utils/กาลกริยา.ts ของเว็บจริง */
+const TENSE = {
+  P:'M2 6q2.5-4.5 5 0t5 0t5 0t5 0',
+  I:'M1 6q2.25-4.5 4.5 0t4.5 0t4.5 0t4.5 0M22 1.5v9',
+  A:'M4 2.5h16a1.5 1.5 0 0 1 1.5 1.5v4a1.5 1.5 0 0 1-1.5 1.5h-16a1.5 1.5 0 0 1-1.5-1.5v-4a1.5 1.5 0 0 1 1.5-1.5z',
+  F:'M2 6h18M16 2l5 4-5 4',
+};
+const NAMES = {now:'วันนี้',a:'ก. แผ่นกระดาษซ้อน',b:'ข. ปกหนังขอบทอง',c:'ค. แสงนวล'};
+const SCENES = {read:'อ่าน',compare:'เทียบ + คำภาษาเดิม',aa:'เมนู Aa',tiab:'เมนู เทียบ'};
+const BLURB = {
+  now:'<b>วันนี้</b> ⇒ หน้าตาที่ขึ้นจริงที่ https://aimgit.aimagin.com/phrakham/ ณ 5 พ.ย. 2569 ⇒ แผ่นทุกแผ่นอยู่ระดับเดียวกัน ไม่มีเงา ⇒ ทุกอย่างแบน',
+  a:'<b>ก. แผ่นกระดาษซ้อน</b> ⇒ สีครีมเดิมทุกตัว แต่แยกเป็น 3 ชั้น ⇒ โต๊ะสีเข้มกว่าเล็กน้อย → แผ่นอ่านมีเงานุ่ม → แถบบนแถบล่างกับเมนูเป็นกระจกฝ้าที่ลอยอยู่เหนือ ⇒ ไม่ต้องโหลดอะไรเพิ่ม',
+  b:'<b>ข. ปกหนังขอบทอง</b> ⇒ แถบบนแถบล่างเป็นหนังสีน้ำตาลเข้มขอบทอง ⇒ หัวเรื่องเป็นตัวมีเชิง ⇒ กระดาษมีเนื้อ ⇒ ดูเป็นหนังสือเล่มหนา ⇒ ต้องโหลดฟอนต์เพิ่ม',
+  c:'<b>ค. แสงนวล</b> ⇒ ทิ้งสีครีม ไปทางขาวนวลแบบหนังสือของ Apple ⇒ หัวเรื่องใหญ่ ปุ่มทรงแคปซูล การ์ดลอยนุ่ม ⇒ ไม่ต้องโหลดอะไรเพิ่ม',
+};
+
+/* ---------- สถานะ ⇒ อ่าน/เขียนที่ท้ายที่อยู่ ---------- */
+const st = {p:'a',v:'pair',w:'375',t:'light',s:'compare'};
+function readHash(){
+  const q = new URLSearchParams(location.hash.slice(1));
+  for (const k of Object.keys(st)) if (q.get(k)) st[k] = q.get(k);
+}
+function writeHash(){ history.replaceState(null,'','#'+new URLSearchParams(st).toString()); }
+
+const h = (tag, attrs={}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k,v] of Object.entries(attrs)) {
+    if (k==='class') e.className=v; else if (k==='html') e.innerHTML=v;
+    else if (k.startsWith('on')) e.addEventListener(k.slice(2),v); else e.setAttribute(k,v);
+  }
+  for (const k of kids.flat()) if (k!=null) e.append(k.nodeType?k:document.createTextNode(k));
+  return e;
+};
+
+function verseHTML(red){
+  return red.split('|').map((l,i)=> i===0 ? l : `<span class="กลอน${l.startsWith('>')?' สอง':''}">${l.replace(/^>/,'')}</span>`).join('');
+}
+function greekCell(n){
+  const words = (GRK[n]||'').split(';').filter(Boolean).map(s=>{
+    const [g,gl,t,em]=s.split('|');
+    const sym = t ? `<svg viewBox="0 0 24 12" aria-hidden="true"><path d="${TENSE[t]}"/></svg>` : '';
+    return `<span class="คำ${em?' เน้น':''}"><span class="ก">${sym}${g}</span><span class="แปล">${gl}</span></span>`;
+  }).join('');
+  return h('div',{class:'กรีก',html:words});
+}
+
+/* ---------- วาดจอหนึ่งจอ ---------- */
+function drawScreen(p,w,t,s){
+  const wide = w==='wide';
+  const compare = s==='compare'||s==='tiab';
+  const scr = h('div',{class:'จอ','data-p':p,'data-w':w,'data-t':t});
+  const sc = h('div',{class:'เลื่อน'});
+  scr.append(sc);
+
+  const btnTiab = h('button',{class:'ปุ่ม','aria-expanded':String(s==='tiab'),type:'button'},'เทียบ');
+  const btnAa = h('button',{class:'ปุ่ม','aria-expanded':String(s==='aa'),type:'button'},'Aa');
+  const top = h('header',{class:'แถบบน'},
+    h('a',{class:'ชื่อเว็บ',href:'#'},'พระคำ.ชีวิต'),
+    wide ? h('a',{class:'ลิงก์บน',href:'#'},'อ่านพระคัมภีร์') : null,
+    wide ? h('a',{class:'ลิงก์บน',href:'#'},'แหล่งข้อมูล') : null,
+    h('span',{class:'ช่องว่าง'}), btnTiab, btnAa);
+  sc.append(top);
+
+  // หัวคอลัมน์
+  const head = h('div',{class:'หัวช่อง'});
+  const col = (ver,ch,x) => h('div',{class:'หัวหนึ่ง'},
+    h('button',{class:'ปุ่ม เลือกฉบับ',type:'button'},ver+' ▾'),
+    h('button',{class:'ปุ่ม ตอน',type:'button'},ch),
+    x ? h('button',{class:'ปุ่ม ปิด',type:'button','aria-label':'ปิดคอลัมน์'},'×') : null);
+  const chips = () => h('div',{class:'แถวชิป'},
+    h('button',{class:'ชิป',type:'button','aria-pressed':'true'},'✓ สัญลักษณ์กาล'),
+    h('button',{class:'ชิป',type:'button','aria-pressed':'true'},'✓ คำเน้น'),
+    h('button',{class:'ชิป',type:'button','aria-pressed':'false'},'ความหมาย ⌄'));
+  const pad = wide ? 0 : 0;
+  let cols;
+  if (!compare){
+    cols = wide ? '40px 1fr' : '34px 1fr';
+    head.style.gridTemplateColumns = cols;
+    head.append(h('span'), col('TCV','มก. 12',false));
+  } else if (wide){
+    cols = '40px 1.15fr 1fr';
+    head.style.gridTemplateColumns = cols;
+    head.append(h('span'), h('div',{style:'display:grid;gap:6px'}, col('TCV','มก. 12',true), col('WEB','Mrk 12',true)),
+      h('div',{style:'display:grid;gap:6px;align-content:start'}, col('SBLGNT','มก. 12',true), chips()));
+  } else {
+    cols = '26px 1fr 1fr';
+    head.style.gridTemplateColumns = '1fr 1fr';
+    head.append(col('TCV','มก. 12',true), col('SBLGNT','มก. 12',true));
+    const c = chips(); c.style.gridColumn='1 / -1'; head.append(c);
+  }
+  if (wide){ head.style.maxWidth = compare ? '1140px' : '860px'; head.style.margin='0 auto'; }
+  sc.append(head);
+
+  // แผ่นอ่าน
+  const sheet = h('section',{class:'แผ่น'+(compare?' เทียบ':'')});
+  sheet.append(h('h1',{class:'ชื่อบท'},'มาระโก 12'));
+  const grid = h('div',{class:'ตาราง'});
+  grid.style.gridTemplateColumns = cols;
+  const verses = compare ? TCV.slice(0,6) : TCV;
+  if (compare){
+    grid.style.gridTemplateRows = `auto repeat(${verses.length}, auto)`;
+    const bg = h('div',{class:'พื้นการ์ด'}); bg.style.gridColumn='3'; bg.style.gridRow=`1 / ${verses.length+2}`;
+    grid.append(bg);
+    grid.append(h('span',{style:'grid-column:1/3;grid-row:1'}), h('div',{class:'หัวการ์ด',style:'grid-row:1'},'คำกรีก · SBLGNT'));
+  }
+  verses.forEach(([n,pre,red],i)=>{
+    const r = compare ? i+2 : i+1;
+    grid.append(h('div',{class:'เลข',style:`grid-column:1;grid-row:${r}`}, n===1?'12:1':String(n)));
+    const tc = h('span',{class:'ฉ',html: pre + (red?`<span class="แดง">${verseHTML(red)}</span>`:'')});
+    const b = h('div',{class:'บท',style:`grid-column:2;grid-row:${r}`}, tc);
+    if (compare && wide && WEB[n]) b.append(h('span',{class:'ฉ'},WEB[n]));
+    grid.append(b);
+    if (compare){ const g=greekCell(n); g.style.gridColumn='3'; g.style.gridRow=String(r); grid.append(g); }
+  });
+  sheet.append(grid);
+  sc.append(sheet);
+
+  // แถบล่าง
+  sc.append(h('footer',{class:'แถบล่าง'},
+    h('button',{class:'ปุ่ม ลูกศร',type:'button','aria-label':'ตอนก่อนหน้า'},'‹'),
+    h('button',{class:'ปุ่ม ป้ายล่าง',type:'button'}, wide ? (compare?'เปลี่ยนตอนทุกคอลัมน์':'เปลี่ยนตอน') : 'มาระโก 12'),
+    h('button',{class:'ปุ่ม ลูกศร',type:'button','aria-label':'ตอนถัดไป'},'›'),
+    h('button',{class:'ปุ่มฟัง',type:'button'},'▶ ฟัง',h('small',{},'TCV'))));
+
+  // เมนูที่เปิด
+  if (s==='aa'){
+    scr.append(h('div',{class:'เมนู','data-anchor':'aa',role:'dialog','aria-label':'ปรับตัวอักษรและหน้าจอ'},
+      h('h3',{},'ปรับตัวอักษรและหน้าจอ'),
+      h('div',{class:'หัวย่อย'},'ขนาดตัวอักษร'),
+      h('div',{class:'แถวขนาด'},
+        h('button',{class:'ปุ่ม',type:'button',onclick:()=>size(scr,-1)},'ก−'),
+        h('output',{},'100%'),
+        h('button',{class:'ปุ่ม',type:'button',onclick:()=>size(scr,1)},'ก+')),
+      h('hr'), h('div',{class:'หัวย่อย'},'การจัดวาง'),
+      radio('จว'+Math.random(),['ไหลต่อเนื่อง','แยกตามข้อ (เทียบบรรทัด)','แยกตามย่อหน้า'],1),
+      h('hr'), h('div',{class:'หัวย่อย'},'แสดงผล'),
+      h('label',{class:'ตัวเลือก'},h('input',{type:'checkbox',checked:''}),'แสดงเลขบท/ข้อ')));
+  }
+  if (s==='tiab'){
+    const on = new Set(['TCV','คำภาษาเดิม'].concat(wide?['WEB']:[]));
+    const items = [['TCV','TCV · Thai Common Version 2025'],['THKJV','THKJV · Thai KJV 2003'],['WEB','WEB · World English Bible'],['LSV','LSV · Literal Standard Version'],['คำภาษาเดิม','คำภาษาเดิม']];
+    scr.append(h('div',{class:'เมนู','data-anchor':'tiab',role:'dialog','aria-label':'ฉบับที่เปิดเทียบ'},
+      h('div',{class:'หัวย่อย',style:'margin-top:0'},'ฉบับที่เปิดเทียบ'),
+      items.map(([k,l])=>{ const i=h('input',{type:'checkbox'}); if(on.has(k)) i.checked=true; return h('label',{class:'ตัวเลือก'},i,l); }),
+      h('div',{class:'หมาย'},'ต้องเปิดไว้อย่างน้อย 1 ฉบับ')));
+  }
+  // ⭐ กดปุ่มในจอได้จริง ⇒ เปิดปิดเมนู
+  btnAa.addEventListener('click',()=>{ st.s = s==='aa'?'read':'aa'; render(); });
+  btnTiab.addEventListener('click',()=>{ st.s = s==='tiab'?'compare':'tiab'; render(); });
+  return scr;
+}
+function radio(name,labels,sel){
+  return labels.map((l,i)=>{ const r=h('input',{type:'radio',name}); if(i===sel) r.checked=true; return h('label',{class:'ตัวเลือก'},r,l); });
+}
+function size(scr,d){
+  const cur = parseFloat(getComputedStyle(scr).getPropertyValue('--fs'))||18;
+  const nx = Math.max(14,Math.min(28,cur+d*2)); scr.style.setProperty('--fs',nx+'px');
+  scr.querySelector('output').textContent = Math.round(nx/18*100)+'%';
+}
+/* วางเมนูใต้ปุ่มที่เปิดมัน ⇒ ขอบขวาของเมนูตรงกับขอบขวาของปุ่ม แบบเว็บจริง */
+function placeMenus(scr){
+  const m = scr.querySelector('.เมนู'); if(!m) return;
+  const btn = [...scr.querySelectorAll('.แถบบน .ปุ่ม')].find(b=>b.getAttribute('aria-expanded')==='true');
+  const k = scr.getBoundingClientRect().width / scr.offsetWidth;
+  const right = (scr.getBoundingClientRect().right - btn.getBoundingClientRect().right)/k;
+  m.style.right = right+'px';
+}
+
+function frame(p,w,t,s,extra){
+  const box = h('div',{class:'ช่องจอ'});
+  const note = (p==='now' && t==='dark') ? h('span',{class:'เตือน'},'วันนี้ยังไม่มีธีมมืด (ใบ #67) ⇒ จอนี้จึงเป็นธีมสว่าง') : null;
+  box.append(h('div',{class:'ป้ายจอ'},h('b',{},NAMES[p]),` · ${w==='wide'?'จอกว้าง':'375'} · ${t==='dark'?'มืด':'สว่าง'} · ${SCENES[s]}`, extra||'', note));
+  const scr = drawScreen(p,w,t,s);
+  box.append(scr);
+  return box;
+}
+function fit(){
+  // ⭐ ย่อจอกว้างให้พอดีหน้าต่าง ⇒ ใช้ zoom ⇒ ⛔ ไม่ใช้ transform เพราะ transform ไม่ย่อพื้นที่ที่จอกินอยู่
+  const avail = document.documentElement.clientWidth - 24;
+  document.querySelectorAll('.ช่องจอ').forEach(b=>{
+    const scr=b.querySelector('.จอ'); b.style.zoom='';
+    const need = scr.offsetWidth;
+    const per = st.v==='pair' && st.w==='wide' ? 1 : (st.v==='sheet' && st.w==='wide' ? 2 : 1);
+    const z = Math.min(1,(avail/per - 28)/need);
+    if (z<1) b.style.zoom = z;
+  });
+  document.querySelectorAll('.จอ').forEach(placeMenus);
+}
+function render(){
+  document.querySelectorAll('#แถบดู .กลุ่ม').forEach(g=>{
+    g.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===st[g.dataset.key])));
+  });
+  document.getElementById('คำบรรยาย').innerHTML = BLURB[st.p];
+  const stage = document.getElementById('เวที'); stage.innerHTML='';
+  if (st.v==='single') stage.append(frame(st.p,st.w,st.t,st.s));
+  else if (st.v==='pair'){
+    stage.append(frame('now',st.w,st.t,st.s));
+    if (st.p!=='now') stage.append(frame(st.p,st.w,st.t,st.s));
+  } else {
+    for (const t of ['light','dark']) for (const s of Object.keys(SCENES)) stage.append(frame(st.p,st.w,t,s));
+  }
+  writeHash();
+  requestAnimationFrame(fit);
+}
+document.querySelectorAll('#แถบดู .กลุ่ม').forEach(g=>{
+  g.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; st[g.dataset.key]=b.dataset.v; render(); });
+});
+addEventListener('resize',fit);
+addEventListener('hashchange',()=>{readHash();render();});
+readHash(); render();
+document.fonts && document.fonts.ready.then(fit);
+</script>
+</body>
+</html>

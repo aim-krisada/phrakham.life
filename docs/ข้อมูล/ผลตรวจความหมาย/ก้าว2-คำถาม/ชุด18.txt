@@ -1,0 +1,61 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 365
+ที่อยู่: MRK 15:12
+ข้อความต้นฉบับ: ὁ δὲ Πιλᾶτος πάλιν ἀποκριθεὶς ἔλεγεν αὐτοῖς·Τί οὖν θέλετε ποιήσω ὃν λέγετε τὸν βασιλέα τῶν Ἰουδαίων;
+คำที่ถาม: ὃν   (รูปตั้งต้น ὅς · ชนิดคำ pron)
+ตัวเลือก:
+  A) a marker of an explanation or a clarification in the same or a different language [คำแปลสั้น: that is, that means]
+  B) a relative reference to any entity, event, or state, either occurring overtly in the immediate context or clearly implied in the discourse or setting [คำแปลสั้น: who, which, what, the one who, that which]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 366
+ที่อยู่: 2CO 6:8
+ข้อความต้นฉบับ: διὰ δόξης καὶ ἀτιμίας,διὰ δυσφημίας καὶ εὐφημίας·ὡς πλάνοι καὶ ἀληθεῖς,
+คำที่ถาม: ἀτιμίας   (รูปตั้งต้น ἀτιμία · ชนิดคำ noun)
+ตัวเลือก:
+  A) a state of dishonor or disrespect as a negative of τιμή[a] ‘honor, respect’ (87.4) [คำแปลสั้น: dishonor, disrespect]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 367
+ที่อยู่: ACT 19:25
+ข้อความต้นฉบับ: οὓς συναθροίσας καὶ τοὺς περὶ τὰ τοιαῦτα ἐργάτας εἶπεν·Ἄνδρες,ἐπίστασθε ὅτι ἐκ ταύτης τῆς ἐργασίας ἡ εὐπορία ἡμῖν ἐστιν,
+คำที่ถาม: ὅτι   (รูปตั้งต้น ὅτι · ชนิดคำ conj)
+ตัวเลือก:
+  A) a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]
+  B) marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 368
+ที่อยู่: MAT 14:27
+ข้อความต้นฉบับ: εὐθὺς δὲ ἐλάλησεν αὐτοῖς ὁ Ἰησοῦς λέγων·Θαρσεῖτε,ἐγώ εἰμι·μὴ φοβεῖσθε.
+คำที่ถาม: φοβεῖσθε   (รูปตั้งต้น φοβέομαι · ชนิดคำ verb)
+ตัวเลือก:
+  A) (a figurative extension of meaning of φοβέω[a] ‘to fear,’ 25.252) to have profound reverence and respect for deity, with the implication of awe bordering on fear [คำแปลสั้น: to reverence, to worship]
+  B) (derivative of φόβος[a] ‘fear,’ 25.251) to be in a state of fearing [คำแปลสั้น: to fear, to be afraid]
+  C) to have such awe or respect for a person as to involve a measure of fear [คำแปลสั้น: to fear, to show great reverence for, to show great respect for]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 369
+ที่อยู่: MAT 6:2
+ข้อความต้นฉบับ: Ὅταν οὖν ποιῇς ἐλεημοσύνην,μὴ σαλπίσῃς ἔμπροσθέν σου,ὥσπερ οἱ ὑποκριταὶ ποιοῦσιν ἐν ταῖς συναγωγαῖς καὶ ἐν ταῖς ῥύμαις,ὅπως δοξασθῶσιν ὑπὸ τῶν ἀνθρώπων·ἀμὴν λέγω ὑμῖν,ἀπέχουσιν τὸν μισθὸν αὐτῶν.
+คำที่ถาม: δοξασθῶσιν   (รูปตั้งต้น δοξάζω · ชนิดคำ verb)
+ตัวเลือก:
+  A) a benevolent supernatural power deserving respect and honor [คำแปลสั้น: glorious power, wonderful being]
+  B) the quality of splendid, remarkable appearance [คำแปลสั้น: glory, splendor]
+  C) honor as an element in the assignment of status to a person [คำแปลสั้น: honor, respect, status]
+  D) a state of being great and wonderful [คำแปลสั้น: greatness, glory]
+  E) the reason or basis for legitimate pride [คำแปลสั้น: pride]
+  F) to speak of something as being unusually fine and deserving honor [คำแปลสั้น: to praise, to glorify, praise]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

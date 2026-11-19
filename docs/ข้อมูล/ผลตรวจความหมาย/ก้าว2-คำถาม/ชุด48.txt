@@ -1,0 +1,60 @@
+# เลือกความหมายให้ตรงกับคำในข้อ
+
+ข้างล่างมี 5 ข้อ แต่ละข้อยกข้อความต้นฉบับมาให้ พร้อมชี้คำหนึ่งคำในข้อนั้น
+แล้วให้ตัวเลือกความหมายมาหลายอัน **ตัวเลือกทุกอันเป็นความหมายที่พจนานุกรมให้กับคำนั้นจริง**
+งานของคุณคือตอบว่า **คำนั้นในข้อนั้นใช้ความหมายตัวเลือกไหน**
+
+กติกาการตอบ ⛔ ห้ามอธิบายยาว
+- ตัดสินจาก **บริบทของข้อในต้นฉบับ** เป็นหลัก ใช้ BDAG ช่วยได้ ⛔ ห้ามใช้ HALOT เพราะนั่นเล่มฮีบรู
+- ตอบเป็นตารางเท่านั้น 3 คอลัมน์ คือ  เลขข้อสอบ | ตัวอักษรที่เลือก | เหตุผลไม่เกิน 12 คำ
+- **ถ้าไม่มีตัวเลือกไหนเข้ากับคำนั้นในข้อนั้นเลย ให้ตอบ X** ⛔ ห้ามเลือกอันที่ใกล้ที่สุดแทน
+- เลือกได้ตัวเดียวต่อข้อ
+
+--- ข้อสอบ 437
+ที่อยู่: 1CO 11:13
+ข้อความต้นฉบับ: ἐν ὑμῖν αὐτοῖς κρίνατε·πρέπον ἐστὶν γυναῖκα ἀκατακάλυπτον τῷ θεῷ προσεύχεσθαι;
+คำที่ถาม: ὑμῖν   (รูปตั้งต้น σύ · ชนิดคำ pron)
+ตัวเลือก:
+  A) a reference to the receptors of a message, whether oral or written (with an added feature of emphasis in the form ὑμεῖς) [คำแปลสั้น: you, your]
+  B) a reference to a receptor of a message (with an added feature of emphasis in the form σύ) [คำแปลสั้น: you]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 438
+ที่อยู่: JAS 4:1
+ข้อความต้นฉบับ: Πόθεν πόλεμοι καὶ πόθεν μάχαι ἐν ὑμῖν;οὐκ ἐντεῦθεν,ἐκ τῶν ἡδονῶν ὑμῶν τῶν στρατευομένων ἐν τοῖς μέλεσιν ὑμῶν;
+คำที่ถาม: πόλεμοι   (รูปตั้งต้น πόλεμος · ชนิดคำ noun)
+ตัวเลือก:
+  A) (figurative extension of meaning of πολεμέω[a] ‘to wage war,’ 55.5) to engage in serious and protracted conflict, often involving a series of attacks [คำแปลสั้น: to fight, to war against]
+  B) to engage in open warfare [คำแปลสั้น: to wage war, war, fighting]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 439
+ที่อยู่: ACT 19:21
+ข้อความต้นฉบับ: Ὡς δὲ ἐπληρώθη ταῦτα,ἔθετο ὁ Παῦλος ἐν τῷ πνεύματι διελθὼν τὴν Μακεδονίαν καὶ Ἀχαΐαν πορεύεσθαι εἰς Ἱεροσόλυμα,εἰπὼν ὅτι Μετὰ τὸ γενέσθαι με ἐκεῖ δεῖ με καὶ Ῥώμην ἰδεῖν.
+คำที่ถาม: ὅτι   (รูปตั้งต้น ὅτι · ชนิดคำ conj)
+ตัวเลือก:
+  A) marker of cause or reason, with focus upon instrumentality, either of objects or events [คำแปลสั้น: because of, on account of, by reason of]
+  B) a marker of discourse content, whether direct or indirect [คำแปลสั้น: that, the fact that]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 440
+ที่อยู่: JHN 19:23
+ข้อความต้นฉบับ: οἱ οὖν στρατιῶται ὅτε ἐσταύρωσαν τὸν Ἰησοῦν ἔλαβον τὰ ἱμάτια αὐτοῦ καὶ ἐποίησαν τέσσαρα μέρη,ἑκάστῳ στρατιώτῃ μέρος,καὶ τὸν χιτῶνα.ἦν δὲ ὁ χιτὼν ἄραφος,ἐκ τῶν ἄνωθεν ὑφαντὸς δι’ὅλου·
+คำที่ถาม: Ἰησοῦν   (รูปตั้งต้น Ἰησοῦς · ชนิดคำ noun)
+ตัวเลือก:
+  A) Joshua, the successor of Moses [คำแปลสั้น: Joshua]
+  B) an additional name assigned to Justus, a companion of Paul [คำแปลสั้น: Jesus, Joshua]
+  C) the son of Eliezer mentioned in the genealogy of Jesus [คำแปลสั้น: Joshua]
+  D) an additional name assigned to Barabbas (04002701600014, 04002701700024, apparatus) [คำแปลสั้น: Jesus]
+  E) Jesus Christ of Nazareth [คำแปลสั้น: Jesus]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+
+--- ข้อสอบ 441
+ที่อยู่: LUK 24:44
+ข้อความต้นฉบับ: Εἶπεν δὲ πρὸς αὐτούς·Οὗτοι οἱ λόγοι μου οὓς ἐλάλησα πρὸς ὑμᾶς ἔτι ὢν σὺν ὑμῖν,ὅτι δεῖ πληρωθῆναι πάντα τὰ γεγραμμένα ἐν τῷ νόμῳ Μωϋσέως καὶ προφήταις καὶ ψαλμοῖς περὶ ἐμοῦ.
+คำที่ถาม: δεῖ   (รูปตั้งต้น δέω · ชนิดคำ verb)
+ตัวเลือก:
+  A) to be something which should be done as the result of compulsion, whether internal (as a matter of duty) or external (law, custom, and circumstances) [คำแปลสั้น: should, ought, to have to do]
+  B) to be that which must necessarily take place, often with the implication of inevitability [คำแปลสั้น: to be necessary, must]
+  X) ไม่มีตัวเลือกไหนเข้ากับคำนี้ในข้อนี้
+

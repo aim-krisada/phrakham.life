@@ -1,0 +1,27 @@
+You are checking a Bible-study data set, not writing devotional material.
+
+Reference: DAN 10.15
+Language: Biblical Hebrew
+Whole word as printed in the text: וּבְדַבְּר֣וֹ
+Our source data cuts that word into 4 piece(s), in this order:
+  piece 1: וּ   gloss: and
+  piece 2: בְ   gloss: while
+  piece 3: דַבְּר֣   gloss: speaking
+  piece 4: וֹ   gloss: he
+We are asking about piece number 4: וֹ
+Interlinear gloss of that piece in our source data: he
+Lemma our source data gives for that piece: הוּא
+
+Our data attaches to that piece one dictionary entry:
+  dictionary headword: דבר
+  glosses: to speak; to mention; to tell
+  definition: = action by which humans and deities utter words; this can happen within their minds and be inaudible to others, but in most cases the words are spoken out loud in order to communicate something to others; usually not directly followed by the actual words that are spoken
+
+Question: is that attached meaning really the meaning of that piece of the word,
+and of the whole word, at this reference?
+
+Answer in this shape:
+1. First line: YES or NO or PARTLY.
+2. Then at most four sentences saying what the piece actually means, what the whole
+   word means here, and whether the attached dictionary entry is the right entry.
+Do not quote more than the single word above from the Bible text.
