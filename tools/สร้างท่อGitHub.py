@@ -262,11 +262,41 @@ def งานเตรียมLFS():
     }
 
 
+def งานปล่อยเว็บ(ตัวแปรกลาง, งาน, รหัสด่านทั้งหมด):
+    """วางเว็บที่ phrakham.life/v3/ เอง ⇒ เมื่อดันขึ้นสาขา v3 และด่าน**ทุกตัว**ผ่าน
+
+    ⭐ พี่เอมเคาะ 19 พ.ย. 2569 (ทาง 1) ⇒ บนอัมกิตงานนี้เป็นปุ่มที่คนต้องกด ⇒ บน GitHub วิ่งเอง
+      ⇒ ด่านของกฎ "ห้ามเผยแพร่เว็บเอง" ย้ายจากคนกด ⇒ มาเป็น `needs` ที่รอด่านครบทุกตัว
+    ⇒ ใช้สคริปต์ของงาน `ปล่อยเว็บ` ใน .gitlab-ci.yml ตรง ๆ ⇒ สร้างเว็บใหม่ ตรวจ แล้วส่งขึ้น `v3-dist`
+      ⇒ แล้วปลุก deploy.yml บน main ด้วย `repository_dispatch` ⇒ ⛔ ไม่แตะสาขา main
+    ⇒ ชิ้นงานที่ต้องใช้ = ของงาน `ซ้อมปล่อยเว็บ` ⇒ สองงานสร้างเว็บด้วยสคริปต์เดียวกัน
+    ⇒ กุญแจ = GITHUB_TOKEN ของรอบนั้นเอง ⇒ ⛔ ไม่ต้องตั้งความลับเพิ่ม
+      ⇒ `repository_dispatch` จาก GITHUB_TOKEN ยังปลุกท่ออื่นได้ (ข้อยกเว้นที่ GitHub เขียนไว้)
+    """
+    d = yaml.safe_load(ไฟล์ท่อเดิม.read_text(encoding="utf-8"))
+    v = dict(d["ปล่อยเว็บ"])
+    v["needs"] = d["ซ้อมปล่อยเว็บ"]["needs"]
+    v["variables"] = {
+        **(v.get("variables") or {}),
+        "PUBLISH_REPO": "${{ github.repository }}",
+        "PUBLISH_BRANCH": "v3-dist",
+        "PUBLISH_DISPATCH_EVENT": "v3-delivered",
+        "GITHUB_TOKEN_PHRAKHAM": "${{ secrets.GITHUB_TOKEN }}",
+    }
+    งานนี้ = ขั้นของงาน("ปล่อยเว็บ", v, ตัวแปรกลาง, งาน)
+    งานนี้["needs"] = ["lfs"] + รหัสด่านทั้งหมด
+    งานนี้["if"] = "github.event_name == 'push' && github.ref == 'refs/heads/v3'"
+    งานนี้["permissions"] = {"contents": "write"}
+    งานนี้["concurrency"] = {"group": "ปล่อยเว็บ-v3", "cancel-in-progress": False}
+    return งานนี้
+
+
 def สร้าง():
     งาน, ตัวแปรกลาง, _ = อ่านงาน()
     jobs = {"lfs": งานเตรียมLFS()}
     for ชื่อ, v in งาน.items():
         jobs[รหัสงาน(ชื่อ)] = ขั้นของงาน(ชื่อ, v, ตัวแปรกลาง, งาน)
+    jobs["publish"] = งานปล่อยเว็บ(ตัวแปรกลาง, งาน, [รหัสงาน(n) for n in งาน])
     ท่อ = {
         "name": "ตรวจ",
         "on": {"pull_request": None, "push": {"branches": ["main", "v3"]}, "workflow_dispatch": None},

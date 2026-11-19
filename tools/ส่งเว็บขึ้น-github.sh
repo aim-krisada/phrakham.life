@@ -51,7 +51,7 @@ cd "$OUT"
 rm -rf .git
 git init -q
 git add -A
-git commit -qm "เว็บพระคำจาก ${CI_COMMIT_SHORT_SHA:-local} (อัมกิต pipeline ${CI_PIPELINE_ID:-?})"
+git commit -qm "เว็บพระคำจาก ${CI_COMMIT_SHORT_SHA:-local} (ท่อ ${CI_PIPELINE_ID:-?} ${CI_PROJECT_URL:-})"
 # ⛔ **ชื่อสาขาปลายทางเขียนเต็ม** `refs/heads/<ชื่อ>` ⇒ git ⛔ ไม่มีทางเดาไปลงสาขาอื่น
 git push --force "https://github.com/$PUBLISH_REPO.git" "HEAD:refs/heads/$PUBLISH_BRANCH"
 cd ..

@@ -9320,3 +9320,328 @@ jobs:
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '1'
       run: bash .github/run-job.sh mcr.microsoft.com/playwright:v1.62.1-noble
+  publish:
+    name: ปล่อยเว็บ
+    needs:
+    - lfs
+    - j14dbf6b990
+    - j40d0e39e26
+    - jeac3122f60
+    - jb537709d73
+    - jeefe7dd6f9
+    - j3c4a80670b
+    - jd078215907
+    - j84347807bd
+    - j6bc7ac6413
+    - j3a7083ff7f
+    - j27854f2a42
+    - j259ce7680f
+    - jb6ea1e5900
+    - j02b428e908
+    - j846a7c4138
+    - j7d185e7f96
+    - jf844340064
+    - j566821aee2
+    - j268dd9ef1a
+    - j44168a66d9
+    - j7fa0ad512d
+    - j554eba7dfe
+    - j387605c1bc
+    - jf916b3c724
+    - jad1510b000
+    - jdf4b8574bc
+    - j571c0fe3e6
+    - j873ebd682a
+    - j1205e22986
+    - jd01c8ef389
+    - jf259585984
+    - j98d6346668
+    - je454da5391
+    - j93174f2aa5
+    - jf7f57ba066
+    - j7114a1a8f6
+    - jd6cfe2fd4c
+    - j21548fd970
+    - j9d34bc8536
+    - j3b4f8b8be3
+    - j1953e4d63e
+    - j29925b8817
+    - j08a9555d22
+    - j2939df5443
+    - jd30f15530a
+    - jef06a53e91
+    - jdeb07d3774
+    - j7e4ecedbac
+    - jfbf69c4ab7
+    - j94e5c9f0f5
+    - j86469c9337
+    - ja2589a2022
+    - jff6e7eb2bc
+    - j86195e6426
+    - jfb926fb309
+    - j3aeb586c89
+    - j7ead48236f
+    - j15b45a77ed
+    - j707ee26f0b
+    - j25866c87d6
+    - ja7aa45e5cc
+    - j5a48a576a2
+    - jd478c76b7e
+    - j8a8ac75156
+    - je9ca6d607e
+    - j2675ed6ba7
+    - j06c843b746
+    - jcf95d93893
+    - jeb019bb344
+    - j4c8dd956eb
+    - j19be206917
+    - j3fbf9bc985
+    - j2b58666dbb
+    - j49e42e28e6
+    - j443178f60e
+    - jdd90187970
+    - j040074ddc2
+    - j1effd0091a
+    - j587d2a94dc
+    - je39f3eb2a5
+    - j5c3153a184
+    - j71b4894c1b
+    - jb10ed2bf8a
+    - j116c02e3b7
+    - j75f24ac570
+    - jeaf9ffa900
+    - jde85ca787c
+    - j709951bf67
+    - j2bf89e263d
+    - j69d18045e0
+    - j45807e6b9b
+    - j6cad140309
+    - j6cee34cf77
+    - j4269573a90
+    - j5012675db1
+    - j441c58cfb7
+    - j053563bbac
+    - jbac6d9ddab
+    - j7c0a605faa
+    - jc8ae2ff897
+    - j8616196e49
+    - j0dca0f92f5
+    - jc1f6fbc9d2
+    - j622caa1965
+    - j85dd7f51bc
+    - jdd299096a6
+    - jf9cb1260d9
+    - j49f4a90ae4
+    - j25886a4f7c
+    - j9240ebb007
+    - j1922f7f248
+    - jdd04db530c
+    - jf6ad866bfd
+    - j5ba46fe3b0
+    - j922e9a03c9
+    - j4f18fb8573
+    - j92f06c7597
+    - j1425bf1ff7
+    - jc64a6cc32c
+    - j304ac2d631
+    - j2a1fd6404c
+    - j8eed264bde
+    - j359979d5c8
+    - jc66b8bd8d9
+    - je8a8cf68a8
+    - jcfc9899351
+    - jb77f8037ee
+    - j6b7abccb87
+    - jd0f40f3bd1
+    - j9b057062ab
+    - jd1312d1e5d
+    - j5a06059a93
+    - j37da184d91
+    - jc5b10ec6bb
+    - j445174f176
+    - j469df3a654
+    - ja28c3437f1
+    - j4bf2ff1835
+    - j0d8d9d8b1d
+    - jbc8c12fdba
+    - jfae62f34e1
+    - j3c0368538b
+    - j66a85d2b04
+    - j041b379747
+    - jc60494245a
+    - jeb8d239a3c
+    - jfb5182d176
+    - j098a804168
+    - j8743c1e841
+    - j11f992b0a0
+    - j5c7dca3669
+    - j9d6dd85a66
+    - j0527b0e04f
+    - jc57e7285c4
+    - j047d2f6887
+    - jc1fea441ca
+    - jc2daced86c
+    - j1fe4eca9bf
+    - j9f7d17bbb0
+    - j44e92e7518
+    - je43b561e2b
+    - jf60c6486be
+    - j6851ca87e8
+    - j0efe20b8c7
+    - j7d170ed30f
+    - j26fffa43df
+    - jfa70ae43a4
+    - j349c498eff
+    - jd2bce387d6
+    - j71dd465090
+    - jf9d35b2c9b
+    - jfc57e2ec7f
+    - j19f0f1b869
+    - j7bda12837a
+    - j94eee37e5a
+    - j38e067eb3a
+    - j68e4ebd4ae
+    - j64bec18b26
+    - je6adcde139
+    - j8b5130809e
+    - j1560da5395
+    - j000dac1ab2
+    - j7329dfedb8
+    - j57b0721b08
+    - j60ba45ff4a
+    - j070e701166
+    - j2ae6834890
+    - j075ccc677b
+    - jc603642fda
+    - j006461183c
+    - jbaae417455
+    - j545a08d14b
+    - j2e0625538d
+    - jdd142ab417
+    - j0591189946
+    - ja9ca5eedef
+    - jb3c84144cb
+    - j977443af5a
+    - j879f613fd1
+    - jbdf78821f1
+    - j0728eb1e75
+    - j5d0ba536ad
+    - j597110a939
+    - j4062c9ee13
+    - j4933c82813
+    - j140941b87c
+    - jb44a53d6e4
+    - jdb458d8909
+    - j9a366c84be
+    - jd82a77dbbe
+    - j4c2b788f68
+    - jbcfd2ce7a2
+    - j3ca2c257c0
+    - j8af4c7d365
+    - j4545ab01e0
+    - j518daf904b
+    - jed6e6cb52c
+    - j358b7385b5
+    - ja370a4f434
+    - jece591d53f
+    - jeaf3620941
+    - j10fa3a3986
+    - je246d4d86e
+    - jf2e1d5907a
+    - j1e46750427
+    - jbf694bca32
+    - j389805c4c1
+    - j2293aa7dc8
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '1'
+    - name: แคช npm
+      uses: actions/cache@v4
+      with:
+        path: .npm
+        key: npm-${{ hashFiles('package-lock.json') }}
+    - name: หยิบชิ้นงานของ พ่นรายการเสียง
+      uses: actions/download-artifact@v4
+      with:
+        name: a-jb6ea1e5900
+        path: /tmp/ชิ้นงาน/jb6ea1e5900
+    - name: แกะชิ้นงานของ พ่นรายการเสียง ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/jb6ea1e5900/ชิ้นงาน.tar"
+    - name: หยิบชิ้นงานของ พ่นพจนานุกรม
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j02b428e908
+        path: /tmp/ชิ้นงาน/j02b428e908
+    - name: แกะชิ้นงานของ พ่นพจนานุกรม ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j02b428e908/ชิ้นงาน.tar"
+    - name: หยิบชิ้นงานของ พ่นคำเน้น
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j846a7c4138
+        path: /tmp/ชิ้นงาน/j846a7c4138
+    - name: แกะชิ้นงานของ พ่นคำเน้น ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j846a7c4138/ชิ้นงาน.tar"
+    - name: หยิบชิ้นงานของ พ่นฉบับเพิ่ม
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j7d185e7f96
+        path: /tmp/ชิ้นงาน/j7d185e7f96
+    - name: แกะชิ้นงานของ พ่นฉบับเพิ่ม ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j7d185e7f96/ชิ้นงาน.tar"
+    - name: ปล่อยเว็บ
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git curl
+          SKIP_AUDIO=0
+          if [ -s _พ่น/รายการเสียง.json ] && grep -q '"ฐานของฉบับ":{"' _พ่น/รายการเสียง.json; then
+            SKIP_AUDIO=1
+            echo "⏭ เสียงอยู่บน GitHub Pages แล้ว ⇒ ⛔ ไม่ดึงไบต์จริงของ เสียง/ ⇒ ตัวสร้างเว็บ ⛔ ไม่คัดลอก mp3"
+          fi
+          echo "$SKIP_AUDIO" > /tmp/skip_audio
+
+          command -v git-lfs >/dev/null 2>&1 || apk add --no-cache git git-lfs
+          if [ "$(cat /tmp/skip_audio)" = 1 ]; then git -c lfs.fetchexclude= lfs pull -I "เสียง/เรื่องเล่า/"; else git -c lfs.fetchexclude= lfs pull -I "เสียง/"; fi
+          for f in เสียง/เรื่องเล่า/*.mp3; do
+            if head -c 40 "$f" | grep -q "git-lfs"; then
+              echo "⛔ $f ยังเป็นตัวชี้ของ Git LFS ⛔ ไม่ใช่ไบต์จริง ⇒ กดฟังเรื่องเล่าแล้วจะเงียบ"
+              exit 1
+            fi
+          done
+          echo "✅ ไบต์จริงของเสียงเรื่องเล่าพร้อมแล้ว ⇒ $(du -sh เสียง/เรื่องเล่า | cut -f1)"
+          if [ "$(cat /tmp/skip_audio)" = 1 ]; then
+            :
+          elif head -c 40 "เสียง/ข้อ/Acts.1.1.puck.mp3" | grep -q "git-lfs"; then
+            echo "⛔ เสียง/ ยังเป็นตัวชี้ของ Git LFS ⛔ ไม่ใช่ไบต์จริง ⇒ การดึงล้มเหลว"
+            exit 1
+          fi
+          [ "$(cat /tmp/skip_audio)" = 1 ] || echo "✅ ไบต์จริงของเสียงพร้อมแล้ว ⇒ $(du -sh เสียง/ข้อ | cut -f1)"
+
+          npm ci --cache .npm --prefer-offline --ignore-scripts
+          sh tools/สร้างเว็บที่จะปล่อย.sh
+          sh tools/ส่งเว็บขึ้น-github.sh
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE PUBLISH_REPO PUBLISH_BRANCH PUBLISH_DISPATCH_EVENT GITHUB_TOKEN_PHRAKHAM
+        GIT_LFS_SKIP_SMUDGE: '0'
+        PUBLISH_REPO: ${{ github.repository }}
+        PUBLISH_BRANCH: v3-dist
+        PUBLISH_DISPATCH_EVENT: v3-delivered
+        GITHUB_TOKEN_PHRAKHAM: ${{ secrets.GITHUB_TOKEN }}
+      run: bash .github/run-job.sh node:24-alpine
+    if: github.event_name == 'push' && github.ref == 'refs/heads/v3'
+    permissions:
+      contents: write
+    concurrency:
+      group: ปล่อยเว็บ-v3
+      cancel-in-progress: false
