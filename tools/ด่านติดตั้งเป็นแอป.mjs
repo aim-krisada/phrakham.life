@@ -136,15 +136,27 @@ async function ตรวจ(ctx) {
   }
 
   // ⑦ ไอคอนบนแท็บ
+  //   ⛔ **วัดผ่าน `ctx.request` (ฝั่ง node) ⛔ ไม่ใช่ `fetch` ในหน้า** ⇒ เมื่อบริบทมี `ctx.route` อยู่สักตัว
+  //     Chromium ตอบ `fetch` ของ `favicon.ico` เป็น *Failed to fetch* ทั้งที่ไฟล์มีจริง (ลองเอง 19 พ.ย. 2569)
+  //     ⇒ โหมดพิสูจน์ทุกอาการมี route ⇒ วัดในหน้าแล้วด่านตายทั้งดุ้น ⇒ ท่อ 44559206924
   const ico = ป้าย.favicon.find((f) => /\.ico$/.test(f.ที่ || ''))
   const png32 = ป้าย.favicon.find((f) => f.ชนิด === 'image/png' && f.ขนาด === '32x32')
   if (!ico) ตก.push('⑦ หัวหน้าเว็บไม่มีป้าย favicon รูป .ico ⇒ แท็บจะได้ไอคอนของเว็บรุ่น 2 จากรากโดเมน')
   if (!png32) ตก.push('⑦ หัวหน้าเว็บไม่มีป้าย favicon รูป png 32x32')
   for (const f of [ico, png32].filter(Boolean)) {
     if (!f.ที่.startsWith(หน้าแรก)) ตก.push(`⑦ favicon ${f.ที่} อยู่นอกฐานของเว็บ ${หน้าแรก}`)
-    const ผล = await วัดรูป(f.ที่)
-    if (ผล.สถานะ !== 200 || ผล.อ่านไม่ออก) ตก.push(`⑦ favicon ${f.ที่} เปิดไม่ได้ (${ผล.สถานะ})`)
-    else if (f === png32 && (ผล.กว้าง !== 32 || ผล.สูง !== 32)) ตก.push(`⑦ favicon png ขนาดจริง ${ผล.กว้าง}x${ผล.สูง} ⇒ ต้อง 32x32`)
+    const ตอบ = await ctx.request.get(f.ที่)
+    const ไบต์ = ตอบ.ok() ? await ตอบ.body() : Buffer.alloc(0)
+    if (!ตอบ.ok()) ตก.push(`⑦ favicon ${f.ที่} เปิดไม่ได้ (${ตอบ.status()})`)
+    else if (f === ico && !(ไบต์.length > 6 && ไบต์.readUInt32LE(0) === 0x00010000))
+      ตก.push(`⑦ favicon ${f.ที่} ⛔ ไม่ใช่ไฟล์ .ico จริง`)
+    else if (f === png32) {
+      const เป็นpng = ไบต์.length > 24 && ไบต์.readUInt32BE(0) === 0x89504e47
+      const กว้าง = เป็นpng ? ไบต์.readUInt32BE(16) : 0
+      const สูง = เป็นpng ? ไบต์.readUInt32BE(20) : 0
+      if (!เป็นpng) ตก.push(`⑦ favicon ${f.ที่} ⛔ ไม่ใช่ไฟล์ png จริง`)
+      else if (กว้าง !== 32 || สูง !== 32) ตก.push(`⑦ favicon png ขนาดจริง ${กว้าง}x${สูง} ⇒ ต้อง 32x32`)
+    }
   }
   หลักฐาน.favicon = ป้าย.favicon
 
@@ -206,7 +218,9 @@ if (ทดสอบตัวเอง) {
       /^④ รูป .*icon-512\.png ขนาดจริง/,
     ],
     ['รูป 192 หาย', async (ctx) => ctx.route('**/icons/icon-192.png', (route) => route.fulfill({ status: 404, body: '' })), /^④ รูป .*icon-192\.png เปิดไม่ได้/],
-    ['favicon หาย', async (ctx) => ctx.route('**/favicon.ico', (route) => route.fulfill({ status: 404, body: '' })), /^⑦ favicon .*favicon\.ico เปิดไม่ได้/],
+    // ⇒ ⛔ ใช้ route ดัก favicon.ico ไม่ได้ ⇒ `ctx.request` ⛔ ไม่ผ่าน route ⇒ จึงชี้ป้ายไปไฟล์ที่ไม่มีแทน
+    ['favicon หาย', แก้หน้าแรก((h) => h.replace(/favicon\.ico/g, 'favicon-หาย.ico')), /^⑦ favicon .*เปิดไม่ได้/],
+    ['favicon png ผิดขนาด', แก้หน้าแรก((h) => h.replace(/icons\/favicon-32\.png/g, 'icons/icon-192.png')), /^⑦ favicon png ขนาดจริง 192x192/],
     ['ป้าย favicon หายจากไฟล์', แก้หน้าแรก((h) => h.replace(/<link[^>]*rel="icon"[^>]*>/g, '')), /^⑦ หัวหน้าเว็บไม่มีป้าย/],
     ['รูปไอคอน iPhone หาย', async (ctx) => ctx.route('**/icons/apple-touch-icon.png', (route) => route.fulfill({ status: 404, body: '' })), /^⑤ /],
     ['ชื่อใต้ไอคอน iPhone หาย', แก้หน้าแรก((h) => h.replace(/<meta[^>]*name="apple-mobile-web-app-title"[^>]*>/g, '')), /^① ชื่อใต้ไอคอน/],
