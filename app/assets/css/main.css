@@ -5202,3 +5202,194 @@ body:has(.pk-แผ่นเนื้อความ) {
   margin: 0 0 0.5rem;
   font-size: 1em;
 }
+
+/* ==========================================================================
+   ⭐⭐ **ปุ่ม *ติดตั้งแอพ* ⇒ การ์ดหน้าแรก · แถวในแผง ≡ · แผ่นบอกขั้น** (ยกมาจากเว็บเพลง ⇒ ใบ v3/pleng#156)
+   ⇒ เหตุผลอยู่หัว `app/components/การ์ดติดตั้งแอป.vue` · `แผ่นติดตั้งแอป.vue` · `เมนูเว็บเดิม.vue` ⇒ ⛔ จดซ้ำที่นี่
+   ⇒ สีและมุมใช้ของเว็บนี้ ⛔ ยกตัวแปรของเว็บเพลงมา ⇒ ปุ่มทุกปุ่มจากปุ่มกลาง (หน้าตาของ `.pk-ปุ่มชุด`) ⇒ สูงไม่ต่ำกว่า 44 จุด
+   **ตัวเฝ้า** ⇒ `tools/ด่านปุ่มติดตั้งแอป.mjs` · มุมโค้ง ⇒ `tools/ด่านมุมโค้งร่วมศูนย์.mjs` · สี ⇒ `tools/ด่านหน้าตา.mjs`
+   ========================================================================== */
+
+/* ปุ่มติดตั้ง ⇒ รูปมือถือ + คำ ⇒ ตาเห็นคำทุกจอ (⛔ อยู่ในชุดคำข้างรูปของใบ #155 ⇒ ⛔ ใช่ปุ่มรูปอย่างเดียว) */
+.pk-ปุ่มติดตั้งแอป {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--color-pk-accent);
+  background: var(--color-pk-sheet);
+  cursor: pointer;
+}
+
+/* การ์ดหน้าแรก ⇒ แผ่นลอยสีเดียวกับแผง ⇒ กรอบสีขอบชิ้นส่วน (⛔ เส้นคั่นบาง ⇒ ห้ามใช้บอกขอบเขตชิ้นส่วน)
+     ⇒ มุม = มุมปุ่ม + ขอบใน + เส้นกรอบ (`--pk-มุมกล่อง`) ⇒ ปุ่มติดตั้งเต็มกว้าง · × ชิดขวาบน ⇒ ห่างขอบเท่ากัน ⇒ ร่วมศูนย์ทุกมุม */
+.pk-การ์ดติดตั้งแอป {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  /* ⭐ ขอบล่าง 2.5rem ⇒ ปุ่มในการ์ดห่างมุมล่างของแผ่นอ่านเกินระยะที่นับว่า *ชิดมุม* (`tools/ด่านมุมโค้งร่วมศูนย์.mjs` ข้อ ②)
+       ⇒ ⛔ มีระยะนี้ ⇒ ด่านอ่านว่าปุ่มติดตั้งเป็นปุ่มของมุมแผ่นอ่าน ⇒ แผ่นอ่านต้องโค้งตามปุ่มนี้ ⇒ ผิดความหมาย (ปุ่มอยู่ในการ์ด ⛔ ใช่ในแผ่นตรง ๆ) */
+  margin: 1.75rem 0 2.5rem;
+  padding: var(--pk-ขอบในกล่อง);
+  background: var(--color-pk-sheet);
+  border: var(--pk-เส้นกรอบ) solid var(--color-pk-edge);
+  border-radius: var(--pk-มุมกล่อง);
+}
+.pk-หัวการ์ดติดตั้งแอป {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.pk-หัวการ์ดติดตั้งแอป h2 {
+  margin: 0;
+  padding-top: 0.5rem;
+  min-width: 0;
+  font-size: 1.1em;
+  line-height: 1.4;
+  color: var(--color-pk-ink);
+}
+.pk-การ์ดติดตั้งแอป p {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--color-pk-ink-soft);
+  font-size: 0.95em;
+}
+/* บรรทัด *ติดตั้งแล้ว* ⇒ คำกับ × แถวเดียว ⇒ คำห่อบรรทัดในที่ของมันเอง */
+.pk-บรรทัดติดตั้งแล้ว {
+  flex-direction: row;
+  align-items: center;
+}
+.pk-บรรทัดติดตั้งแล้ว p {
+  flex: 1 1 auto;
+}
+
+/* แถวในแผง ≡ ⇒ ท้ายแผง ⇒ เส้นคั่นบางเหนือแถว ⇒ ตาแยกการกระทำออกจากลิงก์ (ท่าเดียวกับ `.pk-ลิงก์หลักในเมนู`) */
+.pk-แถวติดตั้งแอป {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-pk-hairline);
+}
+
+/* แผ่นบอกขั้น ⇒ เหนือทุกอย่างบนหน้า (แถบบน · แผง · การ์ดคำ) ⇒ มันคือหน้าต่างที่ต้องตอบก่อน */
+.pk-รากแผ่นติดตั้ง {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+}
+.pk-พื้นแผ่นติดตั้ง {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 0.35);
+}
+/* ⭐ หน้าตาเดียวกับการ์ดความหมายคำบนจอแคบ ⇒ ติดขอบล่าง มนเฉพาะมุมบน ⇒ ขอบใน `--pk-ขอบในการ์ด` ⇒ มุม `--pk-มุมการ์ด` */
+.pk-แผ่นติดตั้ง {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 34rem;
+  max-height: 90vh;
+  margin: 0 auto;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 1rem var(--pk-ขอบในการ์ด) calc(1rem + env(safe-area-inset-bottom, 0px));
+  background: var(--color-pk-sheet);
+  color: var(--color-pk-ink);
+  border-top: 2px solid var(--color-pk-edge);
+  border-radius: var(--pk-มุมการ์ด) var(--pk-มุมการ์ด) 0 0;
+  box-shadow: 0 -0.25rem 1rem rgb(0 0 0 / 0.12);
+}
+.pk-แผ่นติดตั้ง:focus {
+  outline: none;
+}
+.pk-หัวแผ่นติดตั้ง {
+  margin: 0;
+  font-size: 1.15em;
+  line-height: 1.4;
+  color: var(--color-pk-accent);
+}
+.pk-นำแผ่นติดตั้ง,
+.pk-หมายเหตุแผ่นติดตั้ง {
+  margin: 0;
+  line-height: 1.6;
+}
+.pk-หมายเหตุแผ่นติดตั้ง {
+  color: var(--color-pk-ink-soft);
+  font-size: 0.95em;
+}
+.pk-ขั้นติดตั้ง {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pk-ขั้นติดตั้ง li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  line-height: 1.8;
+}
+/* เลขขั้น ⇒ วงกลมทึบ ⇒ ตัวหนังสือบนพื้นสีของที่กดได้ (คู่สีเดียวกับปุ่มเข้ม) */
+.pk-เลขขั้น {
+  display: grid;
+  place-items: center;
+  flex: 0 0 1.75rem;
+  height: 1.75rem;
+  margin-top: 0.125rem;
+  border-radius: 50%;
+  background: var(--color-pk-accent);
+  color: var(--color-pk-sheet);
+  font-weight: 700;
+}
+.pk-คำขั้น {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+/* ปุ่มที่ผู้อ่านมองหาบนจอ ⇒ กล่องเล็กสีไฮไลต์ ⇒ ⛔ กดได้ (ป้ายบอกทาง) */
+.pk-ปุ่มในขั้น {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.4rem;
+  border: 1px solid var(--color-pk-edge);
+  border-radius: 0.375rem;
+  background: var(--color-pk-highlight);
+  color: var(--color-pk-highlight-ink);
+  font-weight: 700;
+  line-height: 1.6;
+}
+.pk-ปุ่มแผ่นติดตั้ง {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pk-ปุ่มแผ่นติดตั้ง[data-variant='กรอบ'] {
+  color: var(--color-pk-ink);
+  background: var(--color-pk-sheet);
+}
+/* ปุ่มพาไปเบราว์เซอร์จริง (แผ่นของแอปแชต) ⇒ ปุ่มหลักของแผ่น ⇒ คู่สีเดียวกับ `.pk-ปุ่มหลัก` ของหน้าแรก */
+.pk-ปุ่มแผ่นติดตั้ง[data-variant='เข้ม'] {
+  color: var(--color-pk-sheet);
+  background: var(--color-pk-accent);
+  border: 1px solid var(--color-pk-accent);
+}

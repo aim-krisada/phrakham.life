@@ -34,6 +34,8 @@ import { ตั้งใจเปิดแท็บใหม่ } from '~/utils/
 
 // ⛔⛔ **ต้องสั่ง import เอง — ตัวเติม import อัตโนมัติ ⛔ ไม่รู้จักชื่อภาษาไทย**
 import แถบนำทาง from '~/components/แถบนำทาง.vue'
+// ⭐ การ์ดชวนติดตั้งเป็นแอป ⇒ ใต้ปุ่มหลัก ⇒ เหตุผลของที่วางอยู่หัว `การ์ดติดตั้งแอป.vue`
+import การ์ดติดตั้งแอป from '~/components/การ์ดติดตั้งแอป.vue'
 
 const เปิดแผง = ref(false)
 
@@ -88,6 +90,8 @@ useHead({ title: 'พระคำ.ชีวิต' })
       <p class="pk-เริ่มอ่าน">
         <Button as="a" variant="เข้ม" class="pk-ปุ่มหลัก" :href="ที่อยู่สารบัญ()" @click="กดปุ่มหลัก">เลือกพระธรรมที่จะอ่าน</Button>
       </p>
+
+      <component :is="การ์ดติดตั้งแอป" />
     </div>
   </article>
 </template>

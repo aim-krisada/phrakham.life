@@ -1,0 +1,192 @@
+// ⭐⭐ **สถานะของปุ่ม *ติดตั้งแอพ* ⇒ ที่เดียวทั้งเว็บ** (ยกมาจากเว็บเพลง `src/lib/pwaInstall.js` ⇒ ใบ v3/pleng#156 · #158 · #165)
+//   ⇒ คำตัดสินว่ากดแล้วทำอะไรอยู่ที่ `app/utils/ติดตั้งแอป.ts` (ฟังก์ชันล้วน) ⇒ ที่นี่ถือแค่สถานะกับตัวฟัง
+//
+// ⭐ **ทำไมเป็นสถานะกลาง ⛔ ไม่ใช่ของชิ้นส่วน** ⇒ `beforeinstallprompt` เกิดครั้งเดียว ตั้งแต่ต้น ⇒ มักก่อนชิ้นส่วนไหนติด
+//   ⇒ ตัวเสริม `app/plugins/ติดตั้งแอป.client.ts` เรียก `เริ่มฟังการติดตั้ง()` ก่อนแอปติด ⇒ หน้าต่างที่จับไว้อยู่จนผู้อ่านกด
+//
+// ⛔ **ฝั่งสร้างหน้า (SSR) ⇒ ⛔ แตะ `window` · `localStorage`** ⇒ ค่าตั้งต้นทุกตัวเป็น *ยังไม่รู้* ⇒ ตัวเสริมฝั่งเครื่องอ่านค่าจริงทีหลัง
+//   ⇒ ชิ้นส่วนแสดงการ์ดหลังติดแล้วเท่านั้น (`onMounted`) ⇒ ไฟล์ HTML ที่สร้างไว้ ⛔ มีการ์ด ⇒ ⛔ หน้าไม่ตรงตอนโค้ดติด
+//
+// ⭐ **ที่เก็บในเครื่อง ⇒ กุญแจขึ้นต้น `phrakham.`** ⇒ ท่าเดียวกับ `app/utils/มุมมอง.ts` ⇒ ⛔ เก็บได้ (โหมดส่วนตัว) ⇒ เงียบ ⇒ จำแค่รอบนี้
+import { ref } from 'vue'
+import { วางแผนติดตั้ง, type แผ่นติดตั้ง } from '~/utils/ติดตั้งแอป'
+
+/** หน้าต่างติดตั้งของเบราว์เซอร์ (`beforeinstallprompt`) ⇒ ชนิดของ Chrome ⛔ อยู่ใน lib.dom */
+interface หน้าต่างติดตั้ง extends Event {
+  prompt: () => Promise<unknown>
+  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>
+}
+
+/** หน้านี้เปิดเป็นแอปที่ติดตั้งแล้ว (Android/คอม ⇒ `display-mode: standalone` · iPhone ⇒ `navigator.standalone`) */
+export const เปิดเป็นแอป = ref(false)
+/** ⭐ ใบ v3/pleng#158 ⇒ ติดตั้งแล้ว แม้ดูจากแท็บเบราว์เซอร์ธรรมดา ⇒ ⛔ เสนอให้ติดตั้งซ้ำ */
+export const ติดตั้งแล้ว = ref(false)
+/** ✕ บนการ์ดหน้าแรก ⇒ จำในเครื่องนี้ */
+export const ปิดการ์ดแล้ว = ref(false)
+/** ✕ บนบรรทัด *ติดตั้งแล้ว* ⇒ จำในเครื่องนี้ */
+export const ปิดบรรทัดติดตั้งแล้ว = ref(false)
+/** แผ่นบอกขั้นที่เปิดอยู่ (ทีละแผ่น) ⇒ `แผ่นติดตั้งแอป.vue` วาด */
+export const แผ่นที่เปิด = ref<แผ่นติดตั้ง | null>(null)
+
+let หน้าต่างที่จับไว้: หน้าต่างติดตั้ง | null = null
+let คืนโฟกัสที่: HTMLElement | null = null
+
+const กุญแจการ์ด = 'phrakham.install-card-dismissed'
+const กุญแจติดตั้งแล้ว = 'phrakham.app-installed'
+const กุญแจเห็นแอป = 'phrakham.app-seen-at'
+const กุญแจบรรทัด = 'phrakham.installed-note-dismissed'
+/** ⭐ ใบ v3/pleng#165 ⇒ เปิดแอปในเครื่องนี้ภายใน 30 วัน ⇒ เชื่อว่ายังติดตั้งอยู่ แม้ `getInstalledRelatedApps` ตอบว่าง */
+const สดภายใน = 30 * 24 * 60 * 60 * 1000
+
+function อ่านธง(k: string) {
+  try {
+    return localStorage.getItem(k) === '1'
+  } catch {
+    return false
+  }
+}
+function ตั้งธง(k: string) {
+  try {
+    localStorage.setItem(k, '1')
+  } catch {
+    /* โหมดส่วนตัว ⇒ จำแค่รอบนี้ */
+  }
+}
+
+function ดูว่าเปิดเป็นแอป() {
+  const mm = typeof matchMedia === 'function' && matchMedia('(display-mode: standalone)').matches
+  // ⭐ Safari ของ iPhone ⛔ รองรับ `display-mode` ⇒ บอกผ่าน `navigator.standalone`
+  const iosApp = (navigator as Navigator & { standalone?: boolean }).standalone === true
+  return Boolean(mm || iosApp)
+}
+
+export function จำว่าติดตั้งแล้ว() {
+  ติดตั้งแล้ว.value = true
+  ตั้งธง(กุญแจติดตั้งแล้ว)
+}
+/** ⭐ หน้านี้คือแอปเอง ⇒ แท็บเบราว์เซอร์ใช้ที่เก็บเดียวกัน ⇒ แท็บต่อไปรู้ว่าติดตั้งแล้ว */
+function จำว่าเห็นแอป() {
+  จำว่าติดตั้งแล้ว()
+  try {
+    localStorage.setItem(กุญแจเห็นแอป, String(Date.now()))
+  } catch {
+    /* โหมดส่วนตัว */
+  }
+}
+function เห็นแอปไม่นานนี้() {
+  let เมื่อ = 0
+  try {
+    เมื่อ = Number(localStorage.getItem(กุญแจเห็นแอป)) || 0
+  } catch {
+    /* โหมดส่วนตัว */
+  }
+  return เมื่อ > 0 && Date.now() - เมื่อ < สดภายใน
+}
+
+/** ⭐ Chrome บน Android ⇒ ถามระบบว่าแอปของเว็บนี้ติดตั้งอยู่ไหม ⇒ ต้องมี `related_applications` ใน manifest */
+async function ถามแอปที่ติดตั้ง() {
+  const nav = navigator as Navigator & { getInstalledRelatedApps?: () => Promise<unknown[]> }
+  if (typeof nav.getInstalledRelatedApps !== 'function') return
+  try {
+    const แอป = await nav.getInstalledRelatedApps()
+    if (Array.isArray(แอป) && แอป.length) จำว่าติดตั้งแล้ว()
+    // ⚠️ ตอบว่าง ⛔ พิสูจน์ว่าถอนแล้ว ⇒ Chrome เทียบกับ manifest ที่แอปเก็บไว้ ⇒ อัปเดตช้า ⇒ ลืมเฉพาะเมื่อ ⛔ เห็นแอปมา 30 วัน
+    else if (!เห็นแอปไม่นานนี้()) {
+      ติดตั้งแล้ว.value = false
+      try {
+        localStorage.removeItem(กุญแจติดตั้งแล้ว)
+      } catch {
+        /* โหมดส่วนตัว */
+      }
+    }
+  } catch {
+    /* ⛔ ถามได้ ⇒ เชื่อธงที่จำไว้ */
+  }
+}
+
+export function ปิดการ์ด() {
+  ปิดการ์ดแล้ว.value = true
+  ตั้งธง(กุญแจการ์ด)
+}
+export function ปิดบรรทัดติดตั้ง() {
+  ปิดบรรทัดติดตั้งแล้ว.value = true
+  ตั้งธง(กุญแจบรรทัด)
+}
+
+/** เปิดหน้าต่างของเบราว์เซอร์ที่จับไว้ ⇒ ใช้ได้ครั้งเดียว ⇒ คืน `accepted` · `dismissed` · `null` (⛔ มีให้เปิด) */
+async function เปิดหน้าต่างติดตั้ง() {
+  if (!หน้าต่างที่จับไว้) return null
+  const e = หน้าต่างที่จับไว้
+  หน้าต่างที่จับไว้ = null
+  let ผล: string | null = null
+  try {
+    await e.prompt()
+    ผล = (await e.userChoice)?.outcome ?? null
+  } catch {
+    /* ผู้อ่านปิดหน้าต่าง หรือเบราว์เซอร์ไม่ยอมเปิด */
+  }
+  if (ผล === 'accepted') จำว่าติดตั้งแล้ว()
+  return ผล
+}
+
+/**
+ * ⭐⭐ **ทุกปุ่ม *ติดตั้งแอพ* เรียกตัวนี้** ⇒ `ปุ่มที่กด` = ที่ที่โฟกัสกลับไปเมื่อแผ่นปิด (WCAG 2.2 SC 2.4.3)
+ *   ⇒ คืน `accepted` · `dismissed` · `sheet` · `installed`
+ *   ⇒ กดยกเลิกในหน้าต่างของเบราว์เซอร์ ⇒ การ์ดอยู่ต่อเฉย ๆ ⛔ มีข้อความ (เว็บเพลง กติกาข้อ 2)
+ */
+export async function เริ่มติดตั้ง(ปุ่มที่กด?: HTMLElement | null) {
+  const แผน = วางแผนติดตั้ง({
+    ua: navigator.userAgent,
+    nav: navigator,
+    มีหน้าต่าง: !!หน้าต่างที่จับไว้,
+    เปิดเป็นแอป: เปิดเป็นแอป.value,
+    ติดตั้งแล้ว: ติดตั้งแล้ว.value,
+    href: location.href,
+  })
+  if (แผน.kind === 'installed') return 'installed'
+  if (แผน.kind === 'native') return (await เปิดหน้าต่างติดตั้ง()) || 'dismissed'
+  คืนโฟกัสที่ = ปุ่มที่กด || (document.activeElement as HTMLElement | null)
+  แผ่นที่เปิด.value = แผน.sheet
+  return 'sheet'
+}
+
+export function ปิดแผ่นติดตั้ง() {
+  แผ่นที่เปิด.value = null
+  const ที่ = คืนโฟกัสที่
+  คืนโฟกัสที่ = null
+  if (ที่ && ที่.isConnected) ที่.focus()
+}
+
+let ฟังแล้ว = false
+/**
+ * ⭐ ตั้งตัวฟังทั้งหมด ⇒ เรียกครั้งเดียวจากตัวเสริมฝั่งเครื่อง ⇒ เร็วที่สุดที่ทำได้ (ก่อนแอปติด)
+ *   ⇒ อ่านค่าที่จำไว้ในเครื่อง ⇒ `beforeinstallprompt` · `appinstalled` · `display-mode` เปลี่ยน
+ */
+export function เริ่มฟังการติดตั้ง() {
+  if (ฟังแล้ว || typeof window === 'undefined') return
+  ฟังแล้ว = true
+  เปิดเป็นแอป.value = ดูว่าเปิดเป็นแอป()
+  ติดตั้งแล้ว.value = อ่านธง(กุญแจติดตั้งแล้ว)
+  ปิดการ์ดแล้ว.value = อ่านธง(กุญแจการ์ด)
+  ปิดบรรทัดติดตั้งแล้ว.value = อ่านธง(กุญแจบรรทัด)
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // ⭐ หยุดแถบเล็กของ Chrome เอง ⇒ ใช้ปุ่มของเราที่ผู้อ่านหาเจอแทน
+    e.preventDefault()
+    หน้าต่างที่จับไว้ = e as หน้าต่างติดตั้ง
+  })
+  // ⭐ ติดตั้งเสร็จ (จากปุ่มเรา หรือจากเมนูของเบราว์เซอร์เอง) ⇒ เก็บปุ่มทิ้ง
+  window.addEventListener('appinstalled', () => {
+    จำว่าติดตั้งแล้ว()
+    หน้าต่างที่จับไว้ = null
+    แผ่นที่เปิด.value = null
+  })
+  // ⭐ ติดตั้งแล้วเปิดเป็นแอปได้โดยไม่โหลดใหม่ ⇒ ตามให้ทัน
+  const mq = typeof matchMedia === 'function' ? matchMedia('(display-mode: standalone)') : null
+  mq?.addEventListener?.('change', (e) => {
+    เปิดเป็นแอป.value = e.matches
+    if (e.matches) จำว่าเห็นแอป()
+  })
+  if (เปิดเป็นแอป.value) จำว่าเห็นแอป()
+  ถามแอปที่ติดตั้ง()
+}

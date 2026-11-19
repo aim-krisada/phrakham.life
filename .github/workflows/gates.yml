@@ -1,6 +1,6 @@
 # ⛔⛔ ไฟล์นี้สร้างด้วยเครื่อง ⇒ ห้ามแก้ด้วยมือ
 #   ⇒ แก้ที่ .gitlab-ci.yml แล้วรัน `python tools/สร้างท่อGitHub.py` ⇒ เหตุผลอยู่หัวไฟล์นั้น
-#   ⇒ ด่าน 228 งาน จาก .gitlab-ci.yml
+#   ⇒ ด่าน 230 งาน จาก .gitlab-ci.yml
 name: ตรวจ
 'on':
   pull_request:
@@ -9078,6 +9078,92 @@ jobs:
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '1'
       run: bash .github/run-job.sh mcr.microsoft.com/playwright:v1.62.1-noble
+  jbc5ee111dc:
+    name: ด่านปุ่มติดตั้งแอป
+    needs:
+    - lfs
+    - j14dbf6b990
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: แคช npm
+      uses: actions/cache@v4
+      with:
+        path: .npm
+        key: npm-${{ hashFiles('package-lock.json') }}
+    - name: หยิบชิ้นงานของ สร้างเว็บ
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j14dbf6b990
+        path: /tmp/ชิ้นงาน/j14dbf6b990
+    - name: แกะชิ้นงานของ สร้างเว็บ ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j14dbf6b990/ชิ้นงาน.tar"
+    - name: ด่านปุ่มติดตั้งแอป
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          node tools/ติดตั้งของด่านเบราว์เซอร์.mjs
+          node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
+          node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
+          node tools/ด่านปุ่มติดตั้งแอป.mjs http://127.0.0.1:5396/phrakham
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
+      run: bash .github/run-job.sh mcr.microsoft.com/playwright:v1.62.1-noble
+  j73be750c96:
+    name: ด่านปุ่มติดตั้งแอปยังจับได้
+    needs:
+    - lfs
+    - j14dbf6b990
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: แคช npm
+      uses: actions/cache@v4
+      with:
+        path: .npm
+        key: npm-${{ hashFiles('package-lock.json') }}
+    - name: หยิบชิ้นงานของ สร้างเว็บ
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j14dbf6b990
+        path: /tmp/ชิ้นงาน/j14dbf6b990
+    - name: แกะชิ้นงานของ สร้างเว็บ ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j14dbf6b990/ชิ้นงาน.tar"
+    - name: ด่านปุ่มติดตั้งแอปยังจับได้
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          node tools/ติดตั้งของด่านเบราว์เซอร์.mjs
+          node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
+          node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
+          node tools/ด่านปุ่มติดตั้งแอป.mjs http://127.0.0.1:5396/phrakham --ทดสอบตัวเอง
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
+      run: bash .github/run-job.sh mcr.microsoft.com/playwright:v1.62.1-noble
   je246d4d86e:
     name: ด่านลิงก์เว็บเดิม
     needs:
@@ -9562,6 +9648,8 @@ jobs:
     - jece591d53f
     - jeaf3620941
     - j10fa3a3986
+    - jbc5ee111dc
+    - j73be750c96
     - je246d4d86e
     - jf2e1d5907a
     - j1e46750427

@@ -7,6 +7,10 @@ const sha = computed(() => cfg.public.commitShort || 'ในเครื่อ�
 //   ⇒ ⛔ เวลาของคอมมิต ⛔ ไม่ใช่เวลาที่ท่อสร้างเว็บ ⇒ เหตุผลอยู่ที่ `nuxt.config.ts` ⛔ ไม่จดซ้ำที่นี่
 const เวลา = computed(() => String(cfg.public.commitTimeTh || ''))
 const เวลาเครื่อง = computed(() => String(cfg.public.commitTime || ''))
+
+// ⭐ แผ่นบอกวิธีติดตั้งแอป ⇒ ติดที่นี่ครั้งเดียวทั้งเว็บ ⇒ ปุ่ม *ติดตั้งแอพ* ทุกปุ่มเปิดแผ่นนี้ (เหตุผลอยู่หัว `แผ่นติดตั้งแอป.vue`)
+// ⛔⛔ **ต้องสั่ง import เอง — ตัวเติม import อัตโนมัติ ⛔ ไม่รู้จักชื่อภาษาไทย**
+import แผ่นติดตั้งแอป from '~/components/แผ่นติดตั้งแอป.vue'
 </script>
 
 <template>
@@ -28,5 +32,8 @@ const เวลาเครื่อง = computed(() => String(cfg.public.commi
       <time v-if="เวลา" id="เวลาคอมมิต" :datetime="เวลาเครื่อง">{{ เวลา }}</time
       ><code v-else id="เวลาคอมมิต">ในเครื่อง</code>
     </footer>
+
+    <!-- ⛔ ชื่อแท็กต้องเป็นตัวอักษรอังกฤษ ⇒ ชื่อชิ้นส่วนภาษาไทยต้องผ่าน `<component :is>` -->
+    <component :is="แผ่นติดตั้งแอป" />
   </div>
 </template>
