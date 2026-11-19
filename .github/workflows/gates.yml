@@ -3734,6 +3734,8 @@ jobs:
     name: ซ้อมปล่อยเว็บ
     needs:
     - lfs
+    - j27854f2a42
+    - j259ce7680f
     - jb6ea1e5900
     - j02b428e908
     - j846a7c4138
@@ -3757,6 +3759,20 @@ jobs:
       with:
         path: .npm
         key: npm-${{ hashFiles('package-lock.json') }}
+    - name: หยิบชิ้นงานของ พ่นคำพระเยซู
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j27854f2a42
+        path: /tmp/ชิ้นงาน/j27854f2a42
+    - name: แกะชิ้นงานของ พ่นคำพระเยซู ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j27854f2a42/ชิ้นงาน.tar"
+    - name: หยิบชิ้นงานของ พ่นรอยย่อหน้า
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j259ce7680f
+        path: /tmp/ชิ้นงาน/j259ce7680f
+    - name: แกะชิ้นงานของ พ่นรอยย่อหน้า ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j259ce7680f/ชิ้นงาน.tar"
     - name: หยิบชิ้นงานของ พ่นรายการเสียง
       uses: actions/download-artifact@v4
       with:
@@ -9571,6 +9587,20 @@ jobs:
       with:
         path: .npm
         key: npm-${{ hashFiles('package-lock.json') }}
+    - name: หยิบชิ้นงานของ พ่นคำพระเยซู
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j27854f2a42
+        path: /tmp/ชิ้นงาน/j27854f2a42
+    - name: แกะชิ้นงานของ พ่นคำพระเยซู ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j27854f2a42/ชิ้นงาน.tar"
+    - name: หยิบชิ้นงานของ พ่นรอยย่อหน้า
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j259ce7680f
+        path: /tmp/ชิ้นงาน/j259ce7680f
+    - name: แกะชิ้นงานของ พ่นรอยย่อหน้า ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j259ce7680f/ชิ้นงาน.tar"
     - name: หยิบชิ้นงานของ พ่นรายการเสียง
       uses: actions/download-artifact@v4
       with:
