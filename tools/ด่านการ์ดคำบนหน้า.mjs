@@ -160,7 +160,8 @@ async function ตรวจกรีก(พัง = {}) {
 
   if (พัง.แก้ความหมาย) {
     // ⇒ จำลองว่าหน้าจอแสดงตัวหนังสือที่ ⛔ ไม่ตรงกับไฟล์ ⇒ ⑨ ต้องจับได้
-    await แท็บ.route('**/api/lex/strong-grc/**', async (route) => {
+    // ⭐ ดักที่บริบท ⛔ ที่แท็บ ⇒ หน้าที่ตัวช่วยออฟไลน์ (`public/sw.js`) คุมอยู่ ⇒ คำขอผ่านตัวช่วย ⇒ `page.route` ⛔ เห็น (เอกสาร Playwright)
+    await ctx.route('**/api/lex/strong-grc/**', async (route) => {
       const r = await route.fetch()
       const ของ = await r.json()
       for (const ร of Object.values(ของ.คำ))

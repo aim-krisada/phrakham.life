@@ -79,6 +79,20 @@ grep -qF "<a href=\"${B}read\"" "$OUT/404.html" \
 grep -q '<title>' "$OUT/404.html" \
   || { echo "⛔ 404.html ⛔ ไม่มีชื่อหน้า ⇒ ผิด WCAG SC 2.4.2"; exit 1; }
 
+# ⭐⭐ **ตัวช่วยออฟไลน์กับรายการตัวบททั้งเล่ม** (@krisada เคาะ 19 พ.ย. 2569) ⇒ `npm run generate` พ่น `offline.json` เอง
+#   ⇒ ⛔ มีไฟล์ใดไฟล์หนึ่ง = แอปที่ติดตั้งแล้วเก็บตัวบทไว้อ่านแบบไม่มีเน็ตไม่ได้ ⇒ ⛔ ส่ง
+#   ⇒ และทุกไฟล์ในรายการต้องมีจริงในกองที่จะส่ง ⇒ ⛔ งั้นแอปเก็บไม่ครบตลอดไปแล้วบอกว่า *ยังไม่พร้อม* ไม่รู้จบ
+test -s "$OUT/sw.js" || { echo "⛔ ไม่มี sw.js ⇒ แอปที่ติดตั้งแล้วอ่านแบบไม่มีเน็ตไม่ได้"; exit 1; }
+test -s "$OUT/offline.json" || { echo "⛔ ไม่มี offline.json ⇒ ตัวช่วยออฟไลน์ไม่รู้ว่าต้องเก็บอะไร"; exit 1; }
+node --input-type=module -e '
+  import { readFileSync, existsSync } from "node:fs"
+  const ราก = process.argv[1]
+  const m = JSON.parse(readFileSync(ราก + "/offline.json", "utf8"))
+  const ขาด = m.ไฟล์.map(([ทาง]) => ทาง).filter((ทาง) => !existsSync(ราก + "/" + (ทาง === "" || ทาง.endsWith("/") ? ทาง + "index.html" : ทาง)))
+  if (ขาด.length) { console.log("⛔ offline.json อ้างไฟล์ที่ไม่มีในกองที่จะส่ง " + ขาด.length + " ไฟล์ เช่น " + ขาด.slice(0, 3).join(" · ")); process.exit(1) }
+  console.log("ตัวบทออฟไลน์ " + m.ไฟล์.length + " ไฟล์ · " + (m.ขนาดรวม / 1e6).toFixed(1) + " MB")
+' "$OUT"
+
 # หน้าเว็บต้องบอกเองได้ว่ามาจากคอมมิตไหน (WPA.08 ของที่ต้องส่งข้อ 1)
 grep -q 'name="commit"' "$PAGE" \
   || { echo "⛔ ไม่มีตัวประทับคอมมิตในหน้าเว็บ"; exit 1; }

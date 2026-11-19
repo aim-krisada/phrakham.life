@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate && node tools/สร้างรายการออฟไลน์.mjs .output/public",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },

@@ -16,7 +16,10 @@
 //   ④ รูปทุกรูปที่ประกาศ เปิดได้จริงและขนาดจริงตรงที่ประกาศ ⇒ มี 192 กับ 512 ครบ
 //   ⑤ รูปไอคอนของ iPhone (`apple-touch-icon`) เปิดได้จริง ขนาด 180
 //   ⑦ ไอคอนบนแท็บ (favicon) ⇒ มีป้ายรูป .ico และรูป png 32 ⇒ เปิดได้จริง ⇒ png ขนาด 32 จริง
-//   ⑥ ⛔ ไม่มีตัวช่วยออฟไลน์ (service worker) ⇒ ใบงานสั่งไม่ทำ ⇒ เว็บเดิมมี `/sw.js` ที่ต้องวางแผนตอนย้าย
+//   ⑥ ตัวช่วยออฟไลน์ (service worker) ของเว็บเองลงทะเบียน ⇒ ขอบเขต = ฐานของเว็บพอดี ⇒ ไฟล์อยู่ใต้ฐาน
+//      ⇒ เดิมข้อนี้ห้ามมี (ใบ #167) ⇒ @krisada กลับคำตัดสิน 19 พ.ย. 2569 ⇒ ให้เก็บตัวบททั้งเล่มไว้อ่านแบบไม่มีเน็ต
+//      ⇒ ขอบเขตต้องเป็นฐาน ⛔ ราก ⇒ เว็บรุ่น 2 ที่รากโดเมนมี `/sw.js` ขอบเขต `/` ⇒ ของเราต้องแคบกว่าถึงจะได้คุมหน้า `/v3/`
+//      ⇒ งานของตัวช่วยเอง (เก็บทั้งเล่ม · เน็ตก่อน · ไม่มีเน็ตแล้วอ่านได้) ⇒ คนละด่าน ⇒ `tools/ด่านออฟไลน์.mjs`
 //
 // **พิสูจน์ว่าด่านแดงได้จริง** ⇒ ท่า `--ทดสอบตัวเอง` ดักของที่เบราว์เซอร์ขอ แล้วส่งของพังกลับไปทีละอาการ
 //   ⇒ ทุกอาการต้องถูกจับด้วยข้อของมันเอง ⛔ ไม่ใช่ข้ออื่นที่บังเอิญแดง
@@ -160,12 +163,22 @@ async function ตรวจ(ctx) {
   }
   หลักฐาน.favicon = ป้าย.favicon
 
-  // ⑥ ไม่มีตัวช่วยออฟไลน์
-  const ตัวช่วย = await แท็บ.evaluate(async () =>
-    'serviceWorker' in navigator ? (await navigator.serviceWorker.getRegistrations()).map((r) => r.scope) : [],
-  )
+  // ⑥ ตัวช่วยออฟไลน์ของเว็บเอง ⇒ ลงทะเบียนหลังหน้าพร้อม ⇒ รอได้ไม่เกิน 15 วินาที
+  const ตัวช่วย = await แท็บ
+    .evaluate(async () => {
+      if (!('serviceWorker' in navigator)) return []
+      for (let i = 0; i < 60; i++) {
+        const ทั้งหมด = await navigator.serviceWorker.getRegistrations()
+        if (ทั้งหมด.length) return ทั้งหมด.map((r) => ({ ขอบเขต: r.scope, ไฟล์: (r.active || r.waiting || r.installing)?.scriptURL || '' }))
+        await new Promise((ok) => setTimeout(ok, 250))
+      }
+      return []
+    })
+    .catch(() => [])
   หลักฐาน.serviceWorker = ตัวช่วย
-  if (ตัวช่วย.length) ตก.push(`⑥ มีตัวช่วยออฟไลน์ลงทะเบียนอยู่ ${ตัวช่วย.join(', ')} ⇒ ใบงาน #167 สั่งไม่ทำ`)
+  const ของเรา = ตัวช่วย.find((r) => r.ขอบเขต === หน้าแรก)
+  if (!ของเรา) ตก.push(`⑥ ⛔ มีตัวช่วยออฟไลน์ขอบเขต ${หน้าแรก} ⇒ ที่ลงทะเบียนอยู่ ${JSON.stringify(ตัวช่วย.map((r) => r.ขอบเขต))}`)
+  else if (!ของเรา.ไฟล์.startsWith(หน้าแรก + 'sw.js')) ตก.push(`⑥ ไฟล์ตัวช่วยออฟไลน์ ${ของเรา.ไฟล์} ⛔ อยู่ใต้ฐาน ${หน้าแรก}`)
 
   await แท็บ.close()
   return { ตก, หลักฐาน }
@@ -225,25 +238,15 @@ if (ทดสอบตัวเอง) {
     ['รูปไอคอน iPhone หาย', async (ctx) => ctx.route('**/icons/apple-touch-icon.png', (route) => route.fulfill({ status: 404, body: '' })), /^⑤ /],
     ['ชื่อใต้ไอคอน iPhone หาย', แก้หน้าแรก((h) => h.replace(/<meta[^>]*name="apple-mobile-web-app-title"[^>]*>/g, '')), /^① ชื่อใต้ไอคอน/],
     ['ป้ายสีแถบบนหายจากไฟล์', แก้หน้าแรก((h) => h.replace(/<meta[^>]*name="theme-color"[^>]*>/g, '')), /^③ ป้าย theme-color/],
-    [
-      'มีตัวช่วยออฟไลน์แอบลงทะเบียน',
-      async (ctx) => {
-        await ctx.route(ฐาน + '/sw-ยัด.js', (route) => route.fulfill({ status: 200, contentType: 'text/javascript', body: '' }))
-        await แก้หน้าแรก((h) =>
-          h.replace('</head>', `<script>navigator.serviceWorker.register(${JSON.stringify(ฐาน + '/sw-ยัด.js')})</script></head>`),
-        )(ctx)
-      },
-      /^⑥ /,
-    ],
+    // ⭐ ไฟล์ตัวช่วยหาย (เว็บลืมวาง `sw.js`) ⇒ ลงทะเบียนไม่ได้ ⇒ ข้อ ⑥ ต้องแดง
+    ['ไฟล์ตัวช่วยออฟไลน์หาย', async (ctx) => ctx.route(/\/sw\.js(\?.*)?$/, (route) => route.fulfill({ status: 404, body: '' })), /^⑥ ⛔ มีตัวช่วยออฟไลน์ขอบเขต/],
   ]
   const ไม่จับ = []
   console.log('\nโหมดพิสูจน์ ⇒ ยัดของพังทีละอาการ')
   for (const [ชื่อ, ยัด, แบบ] of อาการ) {
     const ctx = await ใหม่()
     await ยัด(ctx)
-    let ผล = await ตรวจ(ctx)
-    // ⭐ ตัวช่วยออฟไลน์ลงทะเบียนหลังหน้าโหลด ⇒ ถ้ายังไม่เห็นรอบแรก ให้ตรวจซ้ำอีกรอบในบริบทเดิม
-    if (!ผล.ตก.some((x) => แบบ.test(x)) && ชื่อ.includes('ตัวช่วย')) ผล = await ตรวจ(ctx)
+    const ผล = await ตรวจ(ctx)
     await ctx.close()
     const เช่น = ผล.ตก.find((x) => แบบ.test(x))
     console.log(`  ${เช่น ? '✅' : '⛔'} ${ชื่อ}${เช่น ? ` ⇒ เช่น ${เช่น}` : ` ⇒ ด่านแดง ${ผล.ตก.length} ข้อแต่ไม่ตรงอาการ ${JSON.stringify(ผล.ตก)}`}`)
@@ -265,4 +268,4 @@ if (จริง.ตก.length) {
   for (const x of จริง.ตก) console.error('  - ' + x)
   process.exit(1)
 }
-console.log(`\n✅ ติดตั้งเป็นแอปได้ ⇒ Chrome ไม่มีข้อติด · ชื่อ ${ชื่อเว็บ} · เปิดที่ ${ฐาน}/ · สี ${สีกระดาษ} · รูป ${จริง.หลักฐาน.รูป.length} รูป + iPhone 180 · ไม่มีตัวช่วยออฟไลน์`)
+console.log(`\n✅ ติดตั้งเป็นแอปได้ ⇒ Chrome ไม่มีข้อติด · ชื่อ ${ชื่อเว็บ} · เปิดที่ ${ฐาน}/ · สี ${สีกระดาษ} · รูป ${จริง.หลักฐาน.รูป.length} รูป + iPhone 180 · ตัวช่วยออฟไลน์ขอบเขต ${ฐาน}/`)
