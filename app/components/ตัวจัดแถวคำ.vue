@@ -86,7 +86,16 @@ function ที่ของคำ(คำ: HTMLElement, จำ: Map<Element, numb
   let ได้ = จำ.get(e)
   if (ได้ === undefined) {
     const ส = getComputedStyle(e)
-    ได้ = e.clientWidth - parseFloat(ส.paddingLeft) - parseFloat(ส.paddingRight)
+    // ⭐ วัดเป็นเศษจุด ⛔ ไม่ใช้ `clientWidth` ⇒ ตัวนั้นปัดลงเป็นจุดเต็ม ⇒ คำแปลที่ตัดบรรทัดจนเต็มที่พอดี จะดูล้นไปเศษจุดแล้วถูกย่อเปล่า ๆ
+    //   ⇒ เจอจริง 20 พ.ย. 2569 ⇒ ซ่อนตัวกรีกแล้วก้อนคำกว้างขึ้น 0.72em (`main.css`) ⇒ "[Feast of] Unleavened Bread" ถูกย่อเหลือ 12 จุด
+    //   ⇒ คำแปลที่ตัดบรรทัดได้ ⇒ ปุ่มกว้างเท่าที่เหลือพอดี ⇒ บวกกลับแล้วเกินที่ไปเศษเล็ก ๆ จากการปัดของเบราว์เซอร์ (วัดได้ 0.03 จุด)
+    //     ⇒ จึงนับว่าล้นต่อเมื่อเกินครึ่งจุด (`เกินได้` ข้างล่าง) ⇒ ตาไม่เห็นแน่
+    ได้ =
+      e.getBoundingClientRect().width -
+      parseFloat(ส.paddingLeft) -
+      parseFloat(ส.paddingRight) -
+      parseFloat(ส.borderLeftWidth) -
+      parseFloat(ส.borderRightWidth)
     จำ.set(e, ได้)
   }
   return ได้
@@ -97,6 +106,9 @@ function กว้างของคำ(คำ: HTMLElement) {
   const ส = getComputedStyle(คำ)
   return คำ.getBoundingClientRect().width + parseFloat(ส.marginLeft) + parseFloat(ส.marginRight)
 }
+
+/** ล้นไม่เกินเท่านี้ (จุด) ⇒ นับว่าพอดี ⇒ เศษจากการปัดของเบราว์เซอร์ ⇒ เหตุผลอยู่ใน `ที่ของคำ` */
+const เกินได้ = 0.5
 
 /** พื้นตัวหนังสือของหน้าอ่าน (จุด) ⇒ ชุดเดียวกับ `max(12px, …)` ใน `main.css` · `สัญลักษณ์กาล.css` · `คำเน้น.css` */
 const พื้นตัวหนังสือ = 12
@@ -128,7 +140,7 @@ function ย่อคำที่ล้น() {
     const กว้าง = กว้างของคำ(คำ)
     if (!กว้าง) continue
     const ได้ = ที่ของคำ(คำ, จำ)
-    if (กว้าง > ได้) {
+    if (กว้าง > ได้ + เกินได้) {
       // ⭐ พื้น 12 จุดเป็นกี่เท่าของขนาดจริงของคำ ⇒ ชิ้นข้างในย่อตามคำทั้งก้อน ⇒ ดู `--pk-พื้นคำย่อ` ใน `แถวคำเดิม.css`
       const ขนาดจริง = parseFloat(getComputedStyle(คำ).fontSize) || 16
       ทั้งหมด.push({ คำ, ได้, ขนาด: 0.99 * (ได้ / กว้าง), พื้นเท่า: พื้นตัวหนังสือ / ขนาดจริง, ล่าง: 0, บน: 1 })
@@ -151,7 +163,7 @@ function ย่อคำที่ล้น() {
     for (const x of ค้าง) x.คำ.style.fontSize = `${x.ขนาด}em`
     for (const x of ค้าง) {
       const กว้าง = กว้างของคำ(x.คำ)
-      const พอ = กว้าง <= x.ได้
+      const พอ = กว้าง <= x.ได้ + เกินได้
       if (พอ) x.ล่าง = x.ขนาด
       else x.บน = x.ขนาด
       let ต่อ = x.ขนาด * (x.ได้ / กว้าง) * (พอ ? 0.999 : 0.99)
@@ -219,7 +231,7 @@ function จัด() {
   for (const x of ทั้งหมด) {
     x.ได้ = x.แปล.getBoundingClientRect().height
     const ใช้ = ที่ใช้(x.คำ, x.เพิ่ม)
-    if (ใช้ <= x.ได้ + 0.5) continue
+    if (ใช้ <= x.ได้ + เกินได้) continue
     ต้องย่อ.push(x)
     // ⭐ เดาครั้งแรก ⇒ ย่อ s เท่า ⇒ ทั้งกว้างและสูงของคำหดตาม ⇒ ความสูงรวมหดราว s² ⇒ เดาที่ √(ได้/ใช้)
     x.ขนาด = Math.min(0.99, 0.98 * Math.sqrt(x.ได้ / ใช้))
@@ -232,7 +244,7 @@ function จัด() {
     for (const x of ค้าง) x.คำ.style.setProperty('--pk-ย่อ', String(x.ขนาด))
     for (const x of ค้าง) {
       const ใช้ = ที่ใช้(x.คำ, x.เพิ่ม)
-      if (ใช้ <= x.ได้ + 0.5) x.ล่าง = x.ขนาด
+      if (ใช้ <= x.ได้ + เกินได้) x.ล่าง = x.ขนาด
       else x.บน = x.ขนาด
       let ต่อ = x.ขนาด * Math.sqrt(x.ได้ / ใช้) * (ใช้ > x.ได้ ? 0.98 : 1)
       if (!(ต่อ > x.ล่าง * 1.005 && ต่อ < x.บน * 0.995)) ต่อ = x.ล่าง > 0 ? (x.ล่าง + x.บน) / 2 : x.บน / 2
