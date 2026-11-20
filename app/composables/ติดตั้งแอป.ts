@@ -83,7 +83,12 @@ function เห็นแอปไม่นานนี้() {
   return เมื่อ > 0 && Date.now() - เมื่อ < สดภายใน
 }
 
-/** ⭐ Chrome บน Android ⇒ ถามระบบว่าแอปของเว็บนี้ติดตั้งอยู่ไหม ⇒ ต้องมี `related_applications` ใน manifest */
+/**
+ * ⭐ Chrome บน Android ⇒ ถามระบบว่าแอปของเว็บนี้ติดตั้งอยู่ไหม ⇒ ต้องมี `related_applications` ใน manifest
+ *   ⇒ มีแล้ว (`public/manifest.webmanifest` ⇒ `platform: webapp` ชี้ manifest ของตัวเอง ⇒ ตัวเฝ้า `tools/ด่านติดตั้งเป็นแอป.mjs` ข้อ ⑧)
+ *   ⚠️ Chrome หาแอปที่ *Chrome ติดตั้ง* (WebAPK ที่ลายเซ็นตรงของ Chrome) ⇒ Samsung Internet ⛔ มีหลักฐานว่าเห็นแอปที่ Chrome ติดตั้ง
+ *     ⇒ จึงยังต้องมีบรรทัด *ถ้าติดตั้งแล้ว เปิดจากไอคอน* บนแผ่น Samsung (`ก่อนหัว` ของ `แผ่นSamsung` ใน `app/utils/ติดตั้งแอป.ts`)
+ */
 async function ถามแอปที่ติดตั้ง() {
   const nav = navigator as Navigator & { getInstalledRelatedApps?: () => Promise<unknown[]> }
   if (typeof nav.getInstalledRelatedApps !== 'function') return

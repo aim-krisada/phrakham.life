@@ -11,7 +11,7 @@
 //   ⇒ ส่วนที่ Chrome ดูเองว่าเว็บติดตั้งได้ไหม (manifest · รูป · ตัวช่วยออฟไลน์ลงทะเบียน) ⇒ คนละด่าน ⇒ `tools/ด่านติดตั้งเป็นแอป.mjs`
 //   ⇒ ตัวช่วยออฟไลน์เก็บทั้งเล่ม · บรรทัดสถานะออฟไลน์ ⇒ คนละด่าน ⇒ `tools/ด่านออฟไลน์.mjs`
 //
-// **ด่านนี้ตรวจ 7 ข้อ**
+// **ด่านนี้ตรวจ 8 ข้อ**
 //   ⓪ **คำตัดสินกับถ้อยคำ** (⛔ เปิดเบราว์เซอร์) ⇒ import `วางแผนติดตั้ง` ตรง ๆ ⇒ user agent จริง 16 แบบ × มี/ไม่มีหน้าต่าง
 //      ⇒ ลำดับเดียวกับเว็บเพลง (`pwaInstall.decision.test.js`) ⇒ ติดตั้งแล้ว ⇒ ⛔ ทำอะไร · ในแอปแชต ⇒ แผ่นพาออกแม้มีหน้าต่าง
 //        · Samsung ⇒ ไป Chrome แม้มีหน้าต่าง · มีหน้าต่าง ⇒ เปิดเลย · ⛔ มี ⇒ แผ่นของเบราว์เซอร์นั้น
@@ -29,6 +29,11 @@
 //      ⇒ ⚠️ Chrome ของ Playwright ⛔ จำลอง `display-mode` ผ่าน `Emulation.setEmulatedMedia` (ลองเอง 19 พ.ย. 2569 ⇒ `matches` ยังเป็น false)
 //        ⇒ จึงแทน `matchMedia` ก่อนหน้าโหลด ⇒ ตอบ *ใช่* เฉพาะคำถาม `display-mode: standalone` ⇒ ด่านเช็กก่อนว่าแทนได้จริง
 //   ⑤ **× ของการ์ดจำไว้** ⇒ กด × ⇒ การ์ดหาย ⇒ โหลดหน้าใหม่ ⇒ ยังหาย ⇒ แถวในแผง ≡ ยังอยู่ (เว็บเพลง กติกาข้อ 5)
+//   ⑦ **ติดตั้งแล้ว แต่เปิดจากเบราว์เซอร์อื่น** (@krisada 20 พ.ย. 2569 ⇒ ติดตั้งผ่าน Chrome แล้วเปิดด้วย Samsung Internet ⇒ เว็บยังชวนติดตั้ง)
+//      ⇒ Samsung ⇒ กดปุ่มบนการ์ด ⇒ แผ่น `android-samsung-chrome` ⇒ บรรทัด *ถ้ามีไอคอน…* (คำตรงตัว) ⇒ หัว *ถ้ายังไม่ได้ติดตั้ง…* (คำตรงตัว)
+//        ⇒ ลำดับ ⇒ บรรทัดนั้น ⇒ หัว ⇒ ปุ่มเปิดใน Chrome (ทั้งลำดับในหน้าและบนจอ) ⇒ หน้าต่างผูกบรรทัดนั้นด้วย `aria-describedby` (หูได้ยินพร้อมชื่อหน้าต่าง)
+//      ⇒ `getInstalledRelatedApps()` ตอบว่ามีแอป (ของปลอมที่ด่านใส่ก่อนหน้าโหลด) ⇒ ⛔ การ์ด ⇒ บรรทัด *ติดตั้งแอพในเครื่องนี้แล้ว…* แทน ⇒ แผง ≡ ⛔ มีแถว
+//      ⇒ คำ 2 ข้อของแผ่น Samsung ตรวจที่ ⓪ ด้วย ⇒ แผ่นอื่น ⛔ มี `ก่อนหัว` ⇒ ลายนิ้วมือเว็บเพลงยังคุมคำที่เหลือทุกตัวอักษร
 //   ⑥ **⛔ ล้นจอ 360** ⇒ ตัวอักษร 100% กับ 200% (`pk-fs` ท่าเดียวกับปุ่ม ก+) ⇒ หน้าแรกที่มีการ์ด · แผ่นของ iPhone · แผ่นของ LINE · แผง ≡ ที่กาง
 //      ⇒ หน้า ⛔ เลื่อนซ้ายขวา ⇒ การ์ด แผ่น แถว อยู่ในจอ ⇒ ปุ่มทุกปุ่มสูงกว้างไม่ต่ำกว่า 44 จุด
 //
@@ -54,7 +59,12 @@ const คำ = {
   หัวการ์ด: 'ติดตั้งเป็นแอพ ใช้ได้แม้ไม่มีเน็ต',
   ติดตั้งแล้ว: 'ติดตั้งแอพในเครื่องนี้แล้ว · เปิดจากไอคอน พระคำ.ชีวิต บนหน้าจอ ใช้ได้แม้ไม่มีเน็ต',
   เข้าใจแล้ว: 'เข้าใจแล้ว',
+  // ⭐ แผ่น Samsung ⇒ @krisada อนุมัติ 20 พ.ย. 2569 (G เขียน ⇒ N ตรวจ) ⇒ เจ้าของคือ `แผ่นSamsung` ใน `app/utils/ติดตั้งแอป.ts`
+  ก่อนหัวSamsung: 'ถ้ามีไอคอน พระคำ.ชีวิต บนหน้าจอแล้ว ให้กดเปิดที่ไอคอนได้เลย',
+  หัวSamsung: 'ถ้ายังไม่ได้ติดตั้ง ให้ติดตั้งผ่าน Chrome',
 }
+// ⭐ หัวแผ่น Samsung ของเว็บเพลง ⇒ ใช้คืนค่าก่อนคิดลายนิ้วมือ ⇒ คำที่เหลือบนแผ่นทุกแผ่นยังต้องตรงเว็บเพลงทุกตัวอักษร
+const หัวSamsungเว็บเพลง = 'ติดตั้งผ่าน Chrome'
 
 // ⭐ user agent จริง ⇒ ชุดเดียวกับ `src/lib/pwaInstall.decision.test.js` ของเว็บเพลง
 const UA = {
@@ -107,6 +117,8 @@ const ที่อยู่ตัวอย่าง = 'https://example.test/phra
 // ⭐⭐ **ลายนิ้วมือของถ้อยคำทุกแผ่น** ⇒ sha256 ของ JSON ผลของ `installPlan` ในเว็บเพลง ⇒ ชุด UA ข้างบน × มี/ไม่มีหน้าต่าง ⇒ `ที่อยู่ตัวอย่าง`
 //   ⇒ คิดจาก `src/lib/pwaInstall.js` ของ pleng (origin/main 19 พ.ย. 2569) ⇒ ตอนนั้นโมดูลของเว็บนี้ให้ผลตรงทุกไบต์ (32 กรณี)
 //   ⇒ แดงที่นี่ ⇒ คำบนแผ่นเปลี่ยน ⇒ ถ้า @krisada อนุมัติคำใหม่แล้ว ⇒ แก้เลขนี้พร้อมจดว่าใครอนุมัติเมื่อไร
+//   ⇒ ⭐ ยกเว้นแผ่น Samsung (@krisada อนุมัติ 20 พ.ย. 2569) ⇒ `ก่อนหัว` กับหัว ตรวจตรงตัวแยกต่างหาก
+//     ⇒ แล้วคืนเป็นของเว็บเพลง (ตัด `ก่อนหัว` · หัวเดิม) ก่อนคิดลายนิ้วมือ ⇒ เลขเดิมจึงยังคุม intro · ปุ่ม · note และแผ่นอื่นทุกตัวอักษร
 const ลายนิ้วมือคำ = 'c4ca6e752258b218b2797c6cf51a700cfde746647ac6252f1c40f3a36c84f560'
 
 /** ⓪ ⇒ ตรวจคำตัดสินด้วยฟังก์ชันที่ให้มา ⇒ คืนรายการที่ตก */
@@ -117,9 +129,17 @@ function ตรวจคำตัดสิน(วาง = วางแผนต�
     for (const [i, มีหน้าต่าง] of [false, true].entries()) {
       const nav = { maxTouchPoints: ชื่อ === 'ipad' ? 5 : 0 }
       const ผล = วาง({ ua, nav, มีหน้าต่าง, href: ที่อยู่ตัวอย่าง })
-      ผลทั้งหมด.push(ผล)
       const ได้ = ผล.kind === 'sheet' ? ผล.sheet.id : ผล.kind
       if (ได้ !== ที่ต้องเป็น[ชื่อ][i]) ตก.push(`⓪ ${ชื่อ}${มีหน้าต่าง ? ' มีหน้าต่าง' : ''} ⇒ ได้ ${ได้} ⇒ ต้องเป็น ${ที่ต้องเป็น[ชื่อ][i]}`)
+      if (ผล.kind === 'sheet' && ผล.sheet.id === 'android-samsung-chrome') {
+        if (ผล.sheet.ก่อนหัว !== คำ.ก่อนหัวSamsung) ตก.push(`⓪ แผ่น Samsung บรรทัดเหนือหัว "${ผล.sheet.ก่อนหัว}" ⇒ ต้องเป็น "${คำ.ก่อนหัวSamsung}"`)
+        if (ผล.sheet.title !== คำ.หัวSamsung) ตก.push(`⓪ แผ่น Samsung หัว "${ผล.sheet.title}" ⇒ ต้องเป็น "${คำ.หัวSamsung}"`)
+        const { ก่อนหัว: _, ...เหลือ } = ผล.sheet
+        ผลทั้งหมด.push({ ...ผล, sheet: { ...เหลือ, title: หัวSamsungเว็บเพลง } })
+      } else {
+        if (ผล.kind === 'sheet' && 'ก่อนหัว' in ผล.sheet) ตก.push(`⓪ แผ่น ${ผล.sheet.id} มีบรรทัดเหนือหัว ⇒ ต้องมีแค่แผ่น Samsung`)
+        ผลทั้งหมด.push(ผล)
+      }
       for (const ติดตั้ง of [{ เปิดเป็นแอป: true }, { ติดตั้งแล้ว: true }]) {
         const ซ้ำ = วาง({ ua, nav, มีหน้าต่าง, href: ที่อยู่ตัวอย่าง, ...ติดตั้ง })
         if (ซ้ำ.kind !== 'installed') ตก.push(`⓪ ${ชื่อ} ${Object.keys(ติดตั้ง)[0]} ⇒ ได้ ${ซ้ำ.kind} ⇒ ต้องเป็น installed (⛔ เสนอติดตั้งซ้ำ)`)
@@ -376,6 +396,76 @@ const ข้อ = {
     return ตก
   },
 
+  async '⑦'(พัง) {
+    const ตก = []
+    // ก. Samsung ⇒ แผ่นไป Chrome ⇒ บรรทัด *ถ้ามีไอคอน…* ⇒ หัว *ถ้ายังไม่ได้ติดตั้ง…* ⇒ ปุ่มเปิดใน Chrome (ลำดับนี้ ทั้งในหน้าและบนจอ)
+    {
+      const { ctx, แท็บ } = await เปิด({ ua: UA.samsung, กว้าง: 412, พัง })
+      try {
+        await แท็บ.locator(ปุ่มการ์ด).click()
+        if (!(await รอแผ่น(แท็บ))) ตก.push('⑦ Samsung กดปุ่มบนการ์ด ⛔ มีแผ่น')
+        else {
+          const ผ = await แท็บ.evaluate((ต) => {
+            const d = document.querySelector(ต)
+            const บ = d.querySelector('[data-บรรทัด="ก่อนหัว"]')
+            const ห = document.getElementById(d.getAttribute('aria-labelledby') || '')
+            const ป = d.querySelector('[data-ปุ่ม="เปิดในเบราว์เซอร์"]')
+            const กล่อง = (x) => (x ? x.getBoundingClientRect() : null)
+            const [rb, rh, rp] = [กล่อง(บ), กล่อง(ห), กล่อง(ป)]
+            const ก่อน = (a, b) => !!a && !!b && !!(a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING)
+            const เหนือ = (a, b) => !!a && !!b && a.bottom <= b.top + 0.5
+            const บรรยาย = (d.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean)
+            return {
+              id: d.getAttribute('data-แผ่น'),
+              มีบรรทัด: !!บ,
+              เห็นบรรทัด: !!rb && rb.width > 0 && rb.height > 0 && getComputedStyle(บ).visibility !== 'hidden',
+              คำ: (บ?.textContent || '').replace(/\s+/g, ' ').trim(),
+              หัว: (ห?.textContent || '').replace(/\s+/g, ' ').trim(),
+              มีปุ่ม: !!ป,
+              ก่อนหัวในหน้า: ก่อน(บ, ห) && ก่อน(ห, ป),
+              ก่อนหัวบนจอ: เหนือ(rb, rh) && เหนือ(rh, rp),
+              ผูกหน้าต่าง: !!บ && !!บ.id && บรรยาย.includes(บ.id),
+            }
+          }, แผ่น)
+          if (ผ.id !== 'android-samsung-chrome') ตก.push(`⑦ Samsung ได้แผ่น ${ผ.id} ⇒ ต้องเป็น android-samsung-chrome`)
+          if (!ผ.มีปุ่ม) ตก.push('⑦ Samsung แผ่น ⛔ มีปุ่มเปิดใน Chrome')
+          if (ผ.หัว !== คำ.หัวSamsung) ตก.push(`⑦ Samsung หัวแผ่น "${ผ.หัว}" ⇒ ต้องเป็น "${คำ.หัวSamsung}"`)
+          if (!ผ.มีบรรทัด || !ผ.เห็นบรรทัด) ตก.push('⑦ Samsung แผ่น ⛔ เห็นบรรทัด *ถ้ามีไอคอน…* เหนือหัว')
+          else {
+            if (ผ.คำ !== คำ.ก่อนหัวSamsung) ตก.push(`⑦ Samsung บรรทัดเหนือหัว "${ผ.คำ}" ⇒ ต้องเป็น "${คำ.ก่อนหัวSamsung}"`)
+            if (!ผ.ก่อนหัวในหน้า || !ผ.ก่อนหัวบนจอ)
+              ตก.push(`⑦ Samsung ลำดับผิด ⇒ ต้องเป็น บรรทัด *ถ้ามีไอคอน…* ⇒ หัว ⇒ ปุ่มเปิดใน Chrome (ในหน้า ${ผ.ก่อนหัวในหน้า} · บนจอ ${ผ.ก่อนหัวบนจอ})`)
+            if (!ผ.ผูกหน้าต่าง) ตก.push('⑦ Samsung บรรทัด *ถ้ามีไอคอน…* ⛔ ผูกกับหน้าต่างด้วย aria-describedby ⇒ โปรแกรมอ่านจอไม่อ่านพร้อมชื่อหน้าต่าง')
+          }
+        }
+      } finally {
+        await ctx.close()
+      }
+    }
+    // ข. ระบบตอบว่ามีแอปที่ติดตั้งแล้ว ⇒ ⛔ ชวนติดตั้ง (Samsung กับ Chrome บน Android)
+    const ตอบว่ามีแอป = () => {
+      const ปลอม = () =>
+        Promise.resolve([{ platform: 'webapp', url: new URL(document.querySelector('link[rel="manifest"]')?.getAttribute('href') || 'manifest.webmanifest', location.href).href }])
+      Object.defineProperty(Navigator.prototype, 'getInstalledRelatedApps', { value: ปลอม, configurable: true, writable: true })
+    }
+    for (const [ชื่อ, ua] of [
+      ['Samsung', UA.samsung],
+      ['Chrome Android', UA.chromeAndroid],
+    ]) {
+      const { ctx, แท็บ } = await เปิด({ ua, กว้าง: 412, ก่อนโหลด: [ตอบว่ามีแอป], พัง })
+      try {
+        await แท็บ.locator(บรรทัด).waitFor({ timeout: 5000 }).catch(() => {})
+        if (await นับ(แท็บ, การ์ด)) ตก.push(`⑦ ${ชื่อ} ⇒ getInstalledRelatedApps ตอบว่ามีแอปแล้ว หน้าแรกยังชวนติดตั้ง`)
+        if (!(await นับ(แท็บ, บรรทัด))) ตก.push(`⑦ ${ชื่อ} ⇒ getInstalledRelatedApps ตอบว่ามีแอปแล้ว ⛔ มีบรรทัด *ติดตั้งแอพในเครื่องนี้แล้ว…*`)
+        await กางเมนู(แท็บ)
+        if (await นับ(แท็บ, แถวเมนู)) ตก.push(`⑦ ${ชื่อ} ⇒ getInstalledRelatedApps ตอบว่ามีแอปแล้ว แผง ≡ ยังมีแถว *ติดตั้งแอพ*`)
+      } finally {
+        await ctx.close()
+      }
+    }
+    return ตก
+  },
+
   async '⑥'(พัง) {
     const ตก = []
     /** วัด ⇒ หน้าเลื่อนซ้ายขวาไหม · ชิ้นที่ให้มาอยู่ในจอไหม · ปุ่มในชิ้นเล็กกว่า 44 ไหม */
@@ -455,6 +545,42 @@ const ของพัง = {
       return ผล
     },
   },
+  // ⭐ แผ่น Samsung (@krisada อนุมัติ 20 พ.ย. 2569) ⇒ ⓪ ต้องจับได้ทั้งคำใหม่ 2 ข้อ และคำเว็บเพลงที่เหลือบนแผ่นเดียวกัน
+  'แผ่น Samsung ไม่มีบรรทัดเหนือหัว': {
+    ข้อ: '⓪',
+    คำตัดสิน: (o) => {
+      const ผล = วางแผนติดตั้ง(o)
+      if (ผล.kind === 'sheet' && ผล.sheet.id === 'android-samsung-chrome') {
+        const { ก่อนหัว: _, ...เหลือ } = ผล.sheet
+        ผล.sheet = เหลือ
+      }
+      return ผล
+    },
+  },
+  'หัวแผ่น Samsung กลับเป็นคำเดิม': {
+    ข้อ: '⓪',
+    คำตัดสิน: (o) => {
+      const ผล = วางแผนติดตั้ง(o)
+      if (ผล.kind === 'sheet' && ผล.sheet.id === 'android-samsung-chrome') ผล.sheet = { ...ผล.sheet, title: 'ติดตั้งผ่าน Chrome' }
+      return ผล
+    },
+  },
+  'แก้คำนำของแผ่น Samsung เอง': {
+    ข้อ: '⓪',
+    คำตัดสิน: (o) => {
+      const ผล = วางแผนติดตั้ง(o)
+      if (ผล.kind === 'sheet' && ผล.sheet.id === 'android-samsung-chrome') ผล.sheet = { ...ผล.sheet, intro: ผล.sheet.intro.replace('ไม่ปลอดภัย', 'อันตราย') }
+      return ผล
+    },
+  },
+  'แผ่น LINE ก็มีบรรทัดเหนือหัว': {
+    ข้อ: '⓪',
+    คำตัดสิน: (o) => {
+      const ผล = วางแผนติดตั้ง(o)
+      if (ผล.kind === 'sheet' && ผล.sheet.id === 'line') ผล.sheet = { id: 'line', ก่อนหัว: 'มีไอคอนแล้วเปิดได้เลย', ...ผล.sheet }
+      return ผล
+    },
+  },
   'เว็บไม่ฟังหน้าต่างติดตั้ง': {
     ข้อ: '①',
     ก่อนโหลด: `(() => { const เดิม = EventTarget.prototype.addEventListener; EventTarget.prototype.addEventListener = function (t, ...r) { if (t === 'beforeinstallprompt') return; return เดิม.call(this, t, ...r) } })()`,
@@ -499,6 +625,33 @@ const ของพัง = {
     ข้อ: '⑤',
     ก่อนโหลด: `Storage.prototype.setItem = function () { throw new Error('ด่าน: เขียนไม่ได้') }`,
   },
+  'บรรทัดเหนือหัวแผ่น Samsung ถูกซ่อน': { ข้อ: '⑦', css: '[data-บรรทัด="ก่อนหัว"] { display: none !important; }' },
+  'บรรทัดเหนือหัวไปอยู่ใต้ปุ่ม Chrome': { ข้อ: '⑦', css: '[data-บรรทัด="ก่อนหัว"] { order: 99 !important; }' },
+  'บรรทัดเหนือหัวไม่ผูกกับหน้าต่าง': {
+    ข้อ: '⑦',
+    // ⭐ ถอด `aria-describedby` ทุกครั้งที่หน้าต่างโผล่ ⇒ ตาเห็นเหมือนเดิม แต่โปรแกรมอ่านจอไม่อ่านบรรทัดนั้นพร้อมชื่อหน้าต่าง
+    ก่อนโหลด: () => {
+      new MutationObserver(() => {
+        for (const d of document.querySelectorAll('[role="dialog"][aria-describedby]')) d.removeAttribute('aria-describedby')
+      }).observe(document, { subtree: true, childList: true, attributes: true, attributeFilter: ['aria-describedby'] })
+    },
+  },
+  'เว็บไม่ถามระบบว่าแอปติดตั้งแล้ว': {
+    ข้อ: '⑦',
+    // ⭐ ท่าเดียวกับของพังข้อ ④ ⇒ โค้ดของเว็บ (`/_nuxt/`) มองไม่เห็น `getInstalledRelatedApps` ⇒ ของปลอมของด่านยังอยู่ครบ
+    ก่อนโหลด: () => {
+      const จากเว็บ = () => /\/_nuxt\//.test(new Error().stack || '')
+      const ตัวเดิม = Object.getOwnPropertyDescriptor(Navigator.prototype, 'getInstalledRelatedApps')
+      if (!ตัวเดิม) return
+      const ค่า = ตัวเดิม.value
+      Object.defineProperty(Navigator.prototype, 'getInstalledRelatedApps', {
+        get() {
+          return จากเว็บ() ? undefined : ค่า
+        },
+        configurable: true,
+      })
+    },
+  },
   'การ์ดกว้างเกินจอแคบ': { ข้อ: '⑥', css: '.pk-การ์ดติดตั้งแอป { min-width: 420px !important; }' },
   'ปุ่มในแผ่นเตี้ยกว่า 44': { ข้อ: '⑥', css: '.pk-ปุ่มแผ่นติดตั้ง { min-height: 0 !important; height: 30px !important; padding: 0 !important; }' },
 }
@@ -526,7 +679,7 @@ if (ทดสอบตัวเอง) {
     for (const x of ไม่จับ) console.error('  - ' + x)
     process.exit(1)
   }
-  console.log(`\n✅ โหมดพิสูจน์: ด่านจับของพังได้ครบ ${Object.keys(ของพัง).length} ท่า ⇒ ทุกข้อ ⓪–⑥ แดงได้ด้วยตัวเอง`)
+  console.log(`\n✅ โหมดพิสูจน์: ด่านจับของพังได้ครบ ${Object.keys(ของพัง).length} ท่า ⇒ ทุกข้อ ⓪–⑦ แดงได้ด้วยตัวเอง`)
   process.exit(0)
 }
 
@@ -537,6 +690,7 @@ if (จริง.length) {
   process.exit(1)
 }
 console.log(
-  `✅ ปุ่มติดตั้งแอพผ่านครบ 7 ข้อ ⇒ คำตัดสิน ${Object.keys(UA).length * 2} กรณีตรงเว็บเพลง · หน้าต่างของเบราว์เซอร์ถูกเรียกครั้งละ 1` +
-    ' · iPhone 17/26 ได้แผ่นถูกรุ่น Escape ปิดโฟกัสกลับ · LINE พาออกด้วย openExternalBrowser=1 · เปิดเป็นแอปแล้ว ⛔ เสนอ · × จำได้ · จอ 360 ⛔ ล้น',
+  `✅ ปุ่มติดตั้งแอพผ่านครบ 8 ข้อ ⇒ คำตัดสิน ${Object.keys(UA).length * 2} กรณีตรงเว็บเพลง · หน้าต่างของเบราว์เซอร์ถูกเรียกครั้งละ 1` +
+    ' · iPhone 17/26 ได้แผ่นถูกรุ่น Escape ปิดโฟกัสกลับ · LINE พาออกด้วย openExternalBrowser=1 · เปิดเป็นแอปแล้ว ⛔ เสนอ · × จำได้' +
+    ' · Samsung บอกเปิดจากไอคอนก่อนหัวและปุ่ม Chrome · ระบบตอบว่ามีแอป ⛔ ชวน · จอ 360 ⛔ ล้น',
 )

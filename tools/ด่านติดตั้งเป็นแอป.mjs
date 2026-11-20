@@ -20,6 +20,12 @@
 //      ⇒ เดิมข้อนี้ห้ามมี (ใบ #167) ⇒ @krisada กลับคำตัดสิน 19 พ.ย. 2569 ⇒ ให้เก็บตัวบททั้งเล่มไว้อ่านแบบไม่มีเน็ต
 //      ⇒ ขอบเขตต้องเป็นฐาน ⛔ ราก ⇒ เว็บรุ่น 2 ที่รากโดเมนมี `/sw.js` ขอบเขต `/` ⇒ ของเราต้องแคบกว่าถึงจะได้คุมหน้า `/v3/`
 //      ⇒ งานของตัวช่วยเอง (เก็บทั้งเล่ม · เน็ตก่อน · ไม่มีเน็ตแล้วอ่านได้) ⇒ คนละด่าน ⇒ `tools/ด่านออฟไลน์.mjs`
+//   ⑧ `related_applications` มีรายการ `platform: "webapp"` ชี้ manifest ของตัวเอง (@krisada 20 พ.ย. 2569)
+//      ⇒ ให้ `navigator.getInstalledRelatedApps()` ตอบได้ว่าแอปติดตั้งอยู่ แม้เปิดจากแท็บเบราว์เซอร์ (developer.chrome.com
+//        /docs/capabilities/get-installed-related-apps ⇒ *PWA in same scope* ⇒ Chrome 84+ บน Android)
+//      ⇒ ที่อยู่ในไฟล์เป็นแบบสัมพัทธ์ (`manifest.webmanifest`) ⇒ อ่านเทียบกับที่อยู่ของ manifest เอง ⇒ ฐานไหนก็ตรง
+//        ⇒ Chrome บน Android เทียบที่อยู่เต็มตรงทุกตัวอักษร (`InstalledAppProviderImpl.java` ⇒ `manifestUrl.url.equals(app.url)`)
+//      ⇒ ⛔ ใส่ `id` ⇒ ใช้เฉพาะคอม (Chrome 140+) และต้องเป็นที่อยู่เต็ม ⇒ จะผูกไฟล์กับโดเมนเดียว ⇒ ยังไม่ใส่
 //
 // **พิสูจน์ว่าด่านแดงได้จริง** ⇒ ท่า `--ทดสอบตัวเอง` ดักของที่เบราว์เซอร์ขอ แล้วส่งของพังกลับไปทีละอาการ
 //   ⇒ ทุกอาการต้องถูกจับด้วยข้อของมันเอง ⛔ ไม่ใช่ข้ออื่นที่บังเอิญแดง
@@ -163,6 +169,22 @@ async function ตรวจ(ctx) {
   }
   หลักฐาน.favicon = ป้าย.favicon
 
+  // ⑧ ถามได้ว่าแอปติดตั้งอยู่ไหม (`navigator.getInstalledRelatedApps`) ⇒ `related_applications` ชี้ manifest ของตัวเอง
+  //   ⇒ Chrome บน Android เทียบ **ที่อยู่เต็มของ manifest ตรงทุกตัวอักษร** กับที่อยู่ manifest ของหน้า ⇒ ที่อยู่ในไฟล์อ่านเทียบกับ manifest เอง
+  //   ⇒ Chrome อ่านแค่ 3 รายการแรก ⇒ รายการของเราต้องอยู่ในนั้น
+  const แอปที่เกี่ยว = Array.isArray(m.related_applications) ? m.related_applications : []
+  หลักฐาน.related_applications = แอปที่เกี่ยว
+  const ชี้ตัวเอง = แอปที่เกี่ยว.slice(0, 3).find((a) => {
+    try {
+      return a?.platform === 'webapp' && new URL(a.url, ที่manifest).href === ที่manifest
+    } catch {
+      return false
+    }
+  })
+  if (!ชี้ตัวเอง)
+    ตก.push(`⑧ related_applications ⛔ มีรายการ platform "webapp" ที่ชี้ manifest ของตัวเอง ${ที่manifest} ใน 3 รายการแรก ⇒ ได้ ${JSON.stringify(แอปที่เกี่ยว)}`)
+  for (const ข of ผิดรูปแบบ || []) if (/related_applications/.test(ข.message)) ตก.push(`⑧ Chrome ว่า related_applications ผิด ⇒ ${ข.message}`)
+
   // ⑥ ตัวช่วยออฟไลน์ของเว็บเอง ⇒ ลงทะเบียนหลังหน้าพร้อม ⇒ รอได้ไม่เกิน 15 วินาที
   const ตัวช่วย = await แท็บ
     .evaluate(async () => {
@@ -237,6 +259,10 @@ if (ทดสอบตัวเอง) {
     ['ป้าย favicon หายจากไฟล์', แก้หน้าแรก((h) => h.replace(/<link[^>]*rel="icon"[^>]*>/g, '')), /^⑦ หัวหน้าเว็บไม่มีป้าย/],
     ['รูปไอคอน iPhone หาย', async (ctx) => ctx.route('**/icons/apple-touch-icon.png', (route) => route.fulfill({ status: 404, body: '' })), /^⑤ /],
     ['ชื่อใต้ไอคอน iPhone หาย', แก้หน้าแรก((h) => h.replace(/<meta[^>]*name="apple-mobile-web-app-title"[^>]*>/g, '')), /^① ชื่อใต้ไอคอน/],
+    ['manifest ไม่มี related_applications', แก้manifest((m) => delete m.related_applications), /^⑧ related_applications/],
+    // ⭐ ที่อยู่แบบขึ้นต้น `/` ⇒ หลุดฐาน ⇒ ไปรากของเครื่อง ⇒ ⛔ ตรงที่อยู่ manifest ของหน้า ⇒ Chrome ตอบว่างเสมอ
+    ['related_applications ชี้ manifest ที่รากเครื่อง', แก้manifest((m) => (m.related_applications = [{ platform: 'webapp', url: '/manifest.webmanifest' }])), /^⑧ related_applications/],
+    ['related_applications เป็นแอป Play ไม่ใช่ webapp', แก้manifest((m) => (m.related_applications = [{ platform: 'play', url: 'manifest.webmanifest', id: 'life.phrakham' }])), /^⑧ related_applications/],
     ['ป้ายสีแถบบนหายจากไฟล์', แก้หน้าแรก((h) => h.replace(/<meta[^>]*name="theme-color"[^>]*>/g, '')), /^③ ป้าย theme-color/],
     // ⭐ ไฟล์ตัวช่วยหาย (เว็บลืมวาง `sw.js`) ⇒ ลงทะเบียนไม่ได้ ⇒ ข้อ ⑥ ต้องแดง
     ['ไฟล์ตัวช่วยออฟไลน์หาย', async (ctx) => ctx.route(/\/sw\.js(\?.*)?$/, (route) => route.fulfill({ status: 404, body: '' })), /^⑥ ⛔ มีตัวช่วยออฟไลน์ขอบเขต/],
@@ -268,4 +294,4 @@ if (จริง.ตก.length) {
   for (const x of จริง.ตก) console.error('  - ' + x)
   process.exit(1)
 }
-console.log(`\n✅ ติดตั้งเป็นแอปได้ ⇒ Chrome ไม่มีข้อติด · ชื่อ ${ชื่อเว็บ} · เปิดที่ ${ฐาน}/ · สี ${สีกระดาษ} · รูป ${จริง.หลักฐาน.รูป.length} รูป + iPhone 180 · ตัวช่วยออฟไลน์ขอบเขต ${ฐาน}/`)
+console.log(`\n✅ ติดตั้งเป็นแอปได้ ⇒ Chrome ไม่มีข้อติด · ชื่อ ${ชื่อเว็บ} · เปิดที่ ${ฐาน}/ · สี ${สีกระดาษ} · รูป ${จริง.หลักฐาน.รูป.length} รูป + iPhone 180 · ตัวช่วยออฟไลน์ขอบเขต ${ฐาน}/ · related_applications ชี้ manifest ของตัวเอง`)

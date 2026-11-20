@@ -64,9 +64,12 @@ onBeforeUnmount(() => document.removeEventListener('keydown', กดแป้น
       role="dialog"
       aria-modal="true"
       aria-labelledby="pk-หัวแผ่นติดตั้ง"
+      :aria-describedby="แผ่นที่เปิด.ก่อนหัว ? 'pk-ก่อนหัวแผ่นติดตั้ง' : undefined"
       tabindex="-1"
       :data-แผ่น="แผ่นที่เปิด.id"
     >
+      <!-- ⭐ บรรทัดเหนือหัว (แผ่น Samsung ⇒ ติดตั้งแล้วเปิดจากไอคอนได้เลย) ⇒ ตาเห็นก่อน ⇒ หูได้ยินพร้อมชื่อหน้าต่างผ่าน `aria-describedby` -->
+      <p v-if="แผ่นที่เปิด.ก่อนหัว" id="pk-ก่อนหัวแผ่นติดตั้ง" class="pk-นำแผ่นติดตั้ง" data-บรรทัด="ก่อนหัว">{{ แผ่นที่เปิด.ก่อนหัว }}</p>
       <h2 id="pk-หัวแผ่นติดตั้ง" class="pk-หัวแผ่นติดตั้ง">{{ แผ่นที่เปิด.title }}</h2>
       <p v-if="แผ่นที่เปิด.intro" class="pk-นำแผ่นติดตั้ง">{{ แผ่นที่เปิด.intro }}</p>
 
