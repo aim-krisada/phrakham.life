@@ -98,22 +98,36 @@ function กว้างของคำ(คำ: HTMLElement) {
   return คำ.getBoundingClientRect().width + parseFloat(ส.marginLeft) + parseFloat(ส.marginRight)
 }
 
+/** พื้นตัวหนังสือของหน้าอ่าน (จุด) ⇒ ชุดเดียวกับ `max(12px, …)` ใน `main.css` · `สัญลักษณ์กาล.css` · `คำเน้น.css` */
+const พื้นตัวหนังสือ = 12
+
+/** คืนคำที่ตัวนี้ย่อไว้เป็นขนาดจริง ⇒ ทั้งขนาดและพื้นที่ย่อตาม */
+function คืนขนาดจริง(คำ: HTMLElement) {
+  คำ.style.removeProperty('font-size')
+  คำ.style.removeProperty('--pk-พื้นเท่า')
+}
+
 /** ⭐ ข้อ 11.13 ⇒ ย่อเฉพาะคำที่กว้างเกินที่ ⇒ ตั้งทุกคำก่อน อ่านทุกคำทีเดียว ⇒ หน้าคำนวณผังรอบละครั้ง */
 function ย่อคำที่ล้น() {
   if (!ราก) return
-  for (const คำ of คำที่ย่อ) คำ.style.removeProperty('font-size')
+  for (const คำ of คำที่ย่อ) คืนขนาดจริง(คำ)
   คำที่ย่อ.clear()
   const จำ = new Map<Element, number>()
-  let ค้าง: { คำ: HTMLElement; ได้: number; ขนาด: number }[] = []
+  let ค้าง: { คำ: HTMLElement; ได้: number; ขนาด: number; พื้นเท่า: number }[] = []
   for (const คำ of ราก.querySelectorAll<HTMLElement>('.pk-ชั้นคำ .pk-คำ')) {
     const กว้าง = กว้างของคำ(คำ)
     if (!กว้าง) continue
     const ได้ = ที่ของคำ(คำ, จำ)
-    if (กว้าง > ได้) ค้าง.push({ คำ, ได้, ขนาด: 0.99 * (ได้ / กว้าง) })
+    if (กว้าง > ได้) {
+      // ⭐ พื้น 12 จุดเป็นกี่เท่าของขนาดจริงของคำ ⇒ ชิ้นข้างในย่อตามคำทั้งก้อน ⇒ ดู `--pk-พื้นคำย่อ` ใน `แถวคำเดิม.css`
+      const ขนาดจริง = parseFloat(getComputedStyle(คำ).fontSize) || 16
+      ค้าง.push({ คำ, ได้, ขนาด: 0.99 * (ได้ / กว้าง), พื้นเท่า: พื้นตัวหนังสือ / ขนาดจริง })
+    }
   }
   // ⭐ ระยะข้างกับขอบเป็นจุดตายตัวบางส่วน ⇒ ย่อตามสัดส่วนรอบเดียวอาจยังเกินเศษจุด ⇒ วัดซ้ำจนพอ (ปกติ 1 ถึง 2 รอบ)
   for (let รอบ = 0; รอบ < 6 && ค้าง.length; รอบ++) {
     for (const x of ค้าง) {
+      x.คำ.style.setProperty('--pk-พื้นเท่า', String(x.พื้นเท่า))
       x.คำ.style.fontSize = `${x.ขนาด}em`
       คำที่ย่อ.add(x.คำ)
     }
@@ -249,7 +263,7 @@ onBeforeUnmount(() => {
   ตัวเฝ้าลูก?.disconnect()
   document.fonts?.removeEventListener?.('loadingdone', นัดจัด)
   ล้างขนาด()
-  for (const คำ of คำที่ย่อ) คำ.style.removeProperty('font-size')
+  for (const คำ of คำที่ย่อ) คืนขนาดจริง(คำ)
   คำที่ย่อ.clear()
   ราก?.removeAttribute('data-จัดแถว')
 })
