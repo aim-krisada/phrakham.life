@@ -28,7 +28,7 @@
 //   ⇒ ใช้ทุกความกว้างจอ ⇒ คำที่ ⛔ ไม่ล้น ⛔ ถูกแตะ ⇒ จอกว้างที่คอลัมน์พอ = ขนาดจริงทุกคำ
 import '~/assets/css/แถวคำเดิม.css'
 
-const props = defineProps<{ ขนาดคำ: string; ขนาดตัวอักษร?: number; ตัวเดิม?: boolean }>()
+const props = defineProps<{ ขนาดคำ: string; ขนาดตัวอักษร?: number; ตัวเดิม?: boolean; จุดคั่น?: boolean }>()
 const emit = defineEmits<{ พร้อม: []; จัดแล้ว: [] }>()
 
 let ราก: HTMLElement | null = null
@@ -258,8 +258,122 @@ function จัด() {
   เสร็จ()
 }
 
+// ---------------------------------------------------------------- จุดคั่นคำ (@krisada ขอ 20 พ.ย. 2569)
+// ⭐⭐ **ซ่อนตัวกรีก/ฮีบรูแล้ว ⇒ จุดจาง ๆ กลางช่องระหว่างคำแปลที่อยู่แถวเดียวกัน** ⇒ ตาเห็นว่าคำแปลอังกฤษก้อนไหนคือคำเดียว
+//   ⇒ ⛔ **ไม่มีจุดที่ต้นแถวหรือท้ายแถว** ⇒ CSS ⛔ รู้ว่าคำไหนอยู่ท้ายแถว ⇒ ตัวนี้วัดให้หลังจัดแถวเสร็จทุกรอบ
+//   ⇒ ⭐ **จุดอยู่กลางช่องระหว่างตัวหนังสือ ⛔ กลางช่องระหว่างกล่องปุ่ม** ⇒ ปุ่มคำสั้น ("in") กว้างอย่างน้อย 44 จุด ตัวหนังสืออยู่กลางปุ่ม
+//     ⇒ วัดกลางกล่องแล้วจุดเยื้องไปชิดคำถัดไป (เห็นในภาพลองรอบแรก) ⇒ ⭐ ปุ่มที่มีขีดตั้ง กรอบ หรือป้าย ⇒ ขอบปุ่มคือขอบของคำ
+//   ⇒ ⭐ สูงเท่ากลางบรรทัดแรกของคำแปล ⇒ ⛔ ดูเหมือนจุดจบประโยค · ขนาด 0.22 เท่าของตัวคำแปล (อย่างน้อย 3 จุด)
+//   ⇒ ⭐ จุดเป็น `::after` ที่ไม่มีตัวอักษร (`main.css` ก้อน `.pk-จุดคั่นคำ`) ⇒ คัดลอกข้อความ ⛔ ติดจุด · โปรแกรมอ่านหน้าจอ ⛔ อ่าน
+//   ⇒ ⭐ ใช้ได้ทั้งซ้ายไปขวาและขวาไปซ้าย ⇒ คำถัดไปอยู่ทางไหน ⇒ ช่องอยู่ทางนั้น
+//   ⇒ ⭐ อ่านทุกคำก่อน แล้วค่อยเขียนทีเดียว ⇒ หน้าคำนวณผังรอบเดียว ⇒ ตัวเฝ้า `ด่านซ่อนตัวเดิม.mjs` ข้อ ⑪
+/** กรอบของตัวหนังสือกับรูป (สัญลักษณ์กาล) ที่ตาเห็นในปุ่มคำ
+ *  ⇒ ⛔ นับคำที่มีไว้ให้โปรแกรมอ่านหน้าจอ (`.pk-เฉพาะเสียง`) ⇒ กล่องมันกว้าง 1 จุดแต่ตัวหนังสือข้างในยังมีกรอบยาวเต็มคำ
+ *    ⇒ เจอจริง ⇒ "how" มีคำอ่าน *ต้นประโยคหลัก* ซ่อนอยู่ ⇒ กรอบยาว 118 จุด ⇒ จุดไปชิดคำถัดไป */
+function กรอบที่ตาเห็น(คำ: HTMLElement) {
+  const ได้: DOMRect[] = []
+  const ช่วง = document.createRange()
+  const เดิน = document.createTreeWalker(คำ, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT, {
+    acceptNode: (n) =>
+      n instanceof Element && n.matches('.pk-เฉพาะเสียง')
+        ? NodeFilter.FILTER_REJECT
+        : n.nodeType === Node.TEXT_NODE || n instanceof SVGSVGElement
+          ? NodeFilter.FILTER_ACCEPT
+          : NodeFilter.FILTER_SKIP,
+  })
+  for (let n = เดิน.nextNode(); n; n = เดิน.nextNode()) {
+    if (n instanceof SVGSVGElement) ได้.push(n.getBoundingClientRect())
+    else {
+      ช่วง.selectNodeContents(n)
+      ได้.push(...ช่วง.getClientRects())
+    }
+  }
+  return ได้.filter((x) => x.width > 0)
+}
+
+function ขอบเนื้อ(คำ: HTMLElement, ก: DOMRect) {
+  const ส = getComputedStyle(คำ)
+  if (ส.boxShadow !== 'none' || parseFloat(ส.borderLeftWidth) > 0 || parseFloat(ส.borderRightWidth) > 0 || คำ.hasAttribute('data-ป้าย'))
+    return { ซ้าย: ก.left, ขวา: ก.right }
+  let ซ้าย = Infinity
+  let ขวา = -Infinity
+  for (const x of กรอบที่ตาเห็น(คำ)) {
+    ซ้าย = Math.min(ซ้าย, x.left)
+    ขวา = Math.max(ขวา, x.right)
+  }
+  return ซ้าย < ขวา ? { ซ้าย, ขวา } : { ซ้าย: ก.left, ขวา: ก.right }
+}
+
+/** ⭐ คำในข้อตัดแถวใหม่โดยตัวบท ⛔ เปลี่ยนความกว้าง (ฟอนต์มาช้า · หมุดบทโตขึ้น) ⇒ ข้อสูงขึ้นหรือเตี้ยลง ⇒ วางจุดใหม่ ⇒ ต้นแถวท้ายแถวเปลี่ยน */
+let ตัวเฝ้าข้อ: ResizeObserver | undefined
+const ข้อที่เฝ้า = new WeakSet<Element>()
+let นัดจุด: ReturnType<typeof setTimeout> | undefined
+function นัดวางจุด() {
+  clearTimeout(นัดจุด)
+  นัดจุด = setTimeout(วางจุดคั่น, 50)
+}
+
+function วางจุดคั่น() {
+  const ทุกคำ = document.querySelectorAll<HTMLElement>('.pk-ข้อคำ > .pk-คำ')
+  if (!props.จุดคั่น) {
+    for (const คำ of ทุกคำ) คำ.removeAttribute('data-จุด')
+    return
+  }
+  const เขียน: [HTMLElement, string | null][] = []
+  for (const ข้อ of document.querySelectorAll<HTMLElement>('.pk-ซ่อนตัวเดิม .pk-ข้อคำ')) {
+    if (typeof ResizeObserver !== 'undefined' && !ข้อที่เฝ้า.has(ข้อ)) {
+      ตัวเฝ้าข้อ ??= new ResizeObserver(นัดวางจุด)
+      ตัวเฝ้าข้อ.observe(ข้อ)
+      ข้อที่เฝ้า.add(ข้อ)
+    }
+    const คำ = [...ข้อ.querySelectorAll<HTMLElement>(':scope > .pk-คำ')].filter((x) => x.getClientRects().length)
+    const กล่อง = คำ.map((x) => x.getBoundingClientRect())
+    for (let i = 0; i < คำ.length; i++) {
+      const ก = กล่อง[i]!
+      const ถัด = กล่อง[i + 1]
+      if (!ถัด || Math.abs(ถัด.top - ก.top) > 2) {
+        เขียน.push([คำ[i]!, null])
+        continue
+      }
+      const นี่ = ขอบเนื้อ(คำ[i]!, ก)
+      const นั่น = ขอบเนื้อ(คำ[i + 1]!, ถัด)
+      const x = ถัด.left >= ก.left ? (นี่.ขวา + นั่น.ซ้าย) / 2 : (นี่.ซ้าย + นั่น.ขวา) / 2
+      const แปล = คำ[i]!.querySelector<HTMLElement>('.pk-คำแปลคำ')
+      let y = ก.top + ก.height / 2
+      let ขนาด = 3
+      if (แปล) {
+        const บรรทัด = กรอบที่ตาเห็น(แปล)[0]
+        if (บรรทัด) y = บรรทัด.top + บรรทัด.height / 2
+        ขนาด = Math.max(3, 0.22 * (parseFloat(getComputedStyle(แปล).fontSize) || 14))
+      }
+      // ⭐⭐ **นับจากขอบของปุ่มคำเอง ⛔ นับจากขอบหน้า** ⇒ ระยะจากขอบปุ่มถึงตัวหนังสือเป็นของคำเอง ⇒ แถวเลื่อนซ้ายขวาทั้งแถวแล้วจุดยังอยู่ที่เดิม
+      //   ⇒ ⚠️ ของเดิม (ยังไม่ขึ้นจริง) นับจากขอบซ้ายปุ่ม ⇒ ข้อ 1 ขยับหลังวัด ⇒ จุดเยื้องไปชิดคำถัดไปถึง 100 จุด (ด่าน ⑪ จับได้)
+      //   ⇒ ⭐ ซ้ายไปขวา ⇒ นับจากขอบขวาของปุ่ม (`100%`) · ขวาไปซ้าย ⇒ นับจากขอบซ้าย
+      const ส = getComputedStyle(คำ[i]!)
+      const ไปขวา = ถัด.left >= ก.left
+      const จุดx = ไปขวา
+        ? `calc(100% + ${(x - (ก.right - parseFloat(ส.borderRightWidth))).toFixed(2)}px)`
+        : `${(x - (ก.left + parseFloat(ส.borderLeftWidth))).toFixed(2)}px`
+      const บนใน = ก.top + parseFloat(ส.borderTopWidth)
+      เขียน.push([คำ[i]!, `${จุดx};${(y - บนใน).toFixed(2)}px;${ขนาด.toFixed(2)}px`])
+    }
+  }
+  for (const [คำ, ค่า] of เขียน) {
+    if (ค่า === null) {
+      คำ.removeAttribute('data-จุด')
+      continue
+    }
+    คำ.setAttribute('data-จุด', '')
+    const [x, y, s] = ค่า.split(';') as [string, string, string]
+    คำ.style.setProperty('--pk-จุดx', x)
+    คำ.style.setProperty('--pk-จุดy', y)
+    คำ.style.setProperty('--pk-จุดs', s)
+  }
+}
+
 /** ⭐ จัดเสร็จ ⇒ บอกหน้าอ่าน ⇒ หน้าอ่านยึดที่ที่ผู้อ่านอ่านค้างไว้กลับคืน (แถวข้างบนสูงขึ้นหรือเตี้ยลงได้) ⇒ แล้วค่อยติดป้ายให้ด่าน */
 function เสร็จ() {
+  วางจุดคั่น()
   emit('จัดแล้ว')
   ราก?.setAttribute('data-จัดแถว', 'เสร็จ')
 }
@@ -291,17 +405,22 @@ watch(() => props.ขนาดคำ, นัดจัด)
 watch(() => props.ขนาดตัวอักษร, นัดจัด)
 // ⭐ ซ่อนหรือแสดงตัวกรีก/ฮีบรู (`แสดงตัวเดิม` ใน `app/utils/มุมมอง.ts`) ⇒ ปุ่มคำแคบลงและเตี้ยลงหรือกลับมา ⇒ ดูใหม่ว่าคำไหนเกินที่
 watch(() => props.ตัวเดิม, นัดจัด)
+// ⭐ เปิดปิดจุดคั่นคำ ⇒ ⛔ แถวขยับ ⇒ วางหรือถอดจุดอย่างเดียว
+watch(() => props.จุดคั่น, วางจุดคั่น, { flush: 'post' })
 
 onBeforeUnmount(() => {
   clearTimeout(นัด)
   ตัวเฝ้าขนาด?.disconnect()
   ตัวเฝ้ากว้าง?.disconnect()
   ตัวเฝ้าลูก?.disconnect()
+  ตัวเฝ้าข้อ?.disconnect()
+  clearTimeout(นัดจุด)
   document.fonts?.removeEventListener?.('loadingdone', นัดจัด)
   ล้างขนาด()
   for (const คำ of คำที่ย่อ) คืนขนาดจริง(คำ)
   คำที่ย่อ.clear()
   ราก?.removeAttribute('data-จัดแถว')
+  for (const คำ of document.querySelectorAll('.pk-ข้อคำ > .pk-คำ[data-จุด]')) คำ.removeAttribute('data-จุด')
 })
 </script>
 
