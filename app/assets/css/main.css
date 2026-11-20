@@ -458,7 +458,9 @@ summary {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  font-size: 0.95rem;
+  /* ⭐ ⛔ ใหญ่กว่าตัวบท (`tools/ด่านจังหวะการอ่าน.mjs`) ⇒ ขั้น Aa 75% (@krisada เคาะ 20 พ.ย. 2569) ตัวบทเหลือ 14.25 จุด ⇒ ชื่อเว็บเท่าตัวบท
+       ⇒ ขั้นอื่นตัวบทใหญ่กว่า 0.95rem อยู่แล้ว ⇒ หน้าตาเดิมทุกขั้น */
+  font-size: min(0.95rem, 1.1875rem * var(--pk-fs, 1));
   letter-spacing: 0.04em;
   color: var(--color-pk-ink-soft);
 }
@@ -1038,7 +1040,8 @@ a.pk-ชื่อเว็บในเมนู {
 .pk-จบเล่ม {
   margin: 1.5rem 0 0;
   color: var(--color-pk-ink-soft);
-  font-size: 0.9em;
+  /* ⭐ พื้น 12 จุด (หัวข้อ *ตัวหนังสือต่ำสุด 12 จุด*) ⇒ ขั้น Aa 75% ได้ 10.8 จุด */
+  font-size: max(12px, 0.9em);
 }
 
 /* พวงลิงก์ท้ายหน้า — **เบาที่สุดในหน้า** ⇒ ทางเข้าทางที่สองของหน้าสำคัญทุกหน้า
@@ -1053,7 +1056,8 @@ a.pk-ชื่อเว็บในเมนู {
   gap: 0 0.5rem;
   align-items: center;
   margin-top: 1rem;
-  font-size: 0.9em;
+  /* ⭐ พื้น 12 จุด (หัวข้อ *ตัวหนังสือต่ำสุด 12 จุด*) ⇒ ขั้น Aa 75% ได้ 10.8 จุด ⇒ `tools/ด่านวางคอลัมน์จอแคบ.mjs` ⑫ */
+  font-size: max(12px, 0.9em);
 }
 
 @media (min-width: 768px) {
@@ -1732,7 +1736,8 @@ a.pk-ชื่อเว็บในเมนู {
 .pk-หัวเมนู {
   margin: 0.25rem 0;
   color: var(--color-pk-ink-soft);
-  font-size: 0.9em;
+  /* ⭐ พื้น 12 จุด (หัวข้อ *ตัวหนังสือต่ำสุด 12 จุด*) ⇒ ขั้น Aa 75% ลิงก์หัวเมนูบนแถบบนได้ 10.8 จุด */
+  font-size: max(12px, 0.9em);
 }
 
 /* ⭐ หัวของแผง Aa (ใบ https://aimgit.aimagin.com/v3/phrakham/-/issues/131#note_30332 ข้อ 2)
