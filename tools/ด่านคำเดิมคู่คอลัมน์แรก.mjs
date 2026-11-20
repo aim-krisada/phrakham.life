@@ -120,6 +120,22 @@ async function เปิด(ที่อยู่, { กว้าง = 1920, ส
     },
     [ฉบับ, มุม, ขนาด],
   )
+  // 🔎 พิมพ์อย่างเดียว ⇒ จดลำดับเวลา *ย่อจอแคบ* กับ *จัดแถว* ให้ `ส่องคำที่ตก` พิมพ์ตอนข้อ ⑪ ตก ⇒ ⛔ แตะเกณฑ์
+  await ctx.addInitScript(() => {
+    window.__ส่อง = []
+    const จด = () =>
+      new MutationObserver((ms) => {
+        for (const m of ms) {
+          const t = m.target
+          const เวลา = Math.round(performance.now())
+          if (m.attributeName === 'data-จัดแถว')
+            window.__ส่อง.push(`${เวลา}ms จัดแถว=${t.getAttribute('data-จัดแถว')} กว้างตัวบท=${Math.round(t.getBoundingClientRect().width)}`)
+          else if (t.classList?.contains('pk-คอลัมน์')) window.__ส่อง.push(`${เวลา}ms ย่อจอแคบ=${t.style.getPropertyValue('--pk-ย่อจอแคบ') || '-'}`)
+        }
+      }).observe(document.documentElement, { attributes: true, subtree: true, attributeFilter: ['data-จัดแถว', 'style'] })
+    if (document.documentElement) จด()
+    else document.addEventListener('DOMContentLoaded', จด)
+  })
   const แท็บ = await ctx.newPage()
   await แท็บ.goto(`${ฐาน}${ที่อยู่}`, { waitUntil: 'domcontentloaded' })
   await แท็บ.waitForFunction(() => document.getElementById('__nuxt')?.__vue_app__, null, { timeout: 30000 })
@@ -264,6 +280,125 @@ function ตรวจหัว(ตก, ตอน, ชั้น, ป้าย) {
     if (!ป้าย.ตัวบท.includes(x.ตัวบท) || !ป้าย.ตัวบท.includes(x.ภาษา))
       ตก.push(`② 11.2 หัวคอลัมน์คำภาษาเดิมบอกตัวบท “${ป้าย.ตัวบท}” ⇒ ต้องมี ${x.ตัวบท} (และชื่อ ${x.ภาษา} ให้โปรแกรมอ่านหน้าจอ)`)
   if (/MACULA/i.test(ป้าย.ทั้งหมด)) ตก.push(`② 11.2.1 หัวคอลัมน์คำภาษาเดิมมีคำว่า MACULA ⇒ “${ป้าย.ทั้งหมด}” ⇒ หัวบอกชื่อตัวบท ⛔ ไม่ใช่ชื่อชุดข้อมูล`)
+}
+
+/**
+ * 🔎 **ส่องคำที่ข้อ ⑪ ตก ⇒ พิมพ์ค่าวัดละเอียด** (20 พ.ย. 2569 ⇒ ท่อ GitHub รอบ 44676576652 ฮีบรูตกบนลินุกซ์ ⇒ บนวินโดวส์ทำซ้ำไม่ได้)
+ *   ⇒ ⛔ แตะเกณฑ์ ⇒ ⛔ เพิ่มรายการตก ⇒ พิมพ์อย่างเดียว ⇒ เกณฑ์ตัดสินไปแล้วก่อนเรียกตัวนี้
+ *   ⇒ ต่อคำ ⇒ ขนาดที่ตั้ง · ที่ · กว้างของคำและทุกชิ้นข้างใน (ขนาด · จำนวนบรรทัด) ใน 3 สภาพ: ตอนย่อ · 1em แบบด่าน · ถอด style ทั้งหมด
+ *     ⇒ ฟอนต์ที่เครื่องใช้จริงของตัวเดิมและคำแปล (CDP) · ลำดับเวลาย่อจอแคบกับจัดแถว
+ *   ⇒ ท้ายสุด ⇒ สั่งตัวจัดแถวจัดใหม่ (ส่ง `loadingdone`) แล้ววัดคำเดิมอีกรอบ ⇒ ผลเปลี่ยน = ค่าย่อเดิมค้างจากสภาพก่อน
+ */
+async function ส่องคำที่ตก(ctx, แท็บ, ที่) {
+  try {
+    const ผล = await แท็บ.evaluate(() => {
+      const ที่ของ = (คำ) => {
+        let e = คำ.parentElement
+        while (e && getComputedStyle(e).display.startsWith('inline')) e = e.parentElement
+        const ส = getComputedStyle(e)
+        return { ได้: e.clientWidth - parseFloat(ส.paddingLeft) - parseFloat(ส.paddingRight), กล่อง: e.className }
+      }
+      const กว้างรวม = (คำ) => {
+        const ส = getComputedStyle(คำ)
+        return คำ.getBoundingClientRect().width + parseFloat(ส.marginLeft) + parseFloat(ส.marginRight)
+      }
+      const บรรทัด = (e) => {
+        const ช = document.createRange()
+        ช.selectNodeContents(e)
+        return new Set([...ช.getClientRects()].map((x) => Math.round(x.top))).size
+      }
+      const สภาพ = (คำ) => {
+        const ส = getComputedStyle(คำ)
+        const ก = getComputedStyle(คำ, '::before')
+        const ชิ้น = [...คำ.children].map((c) => {
+          const cs = getComputedStyle(c)
+          return `${c.className || c.tagName}:${c.getBoundingClientRect().width.toFixed(1)}@${parseFloat(cs.fontSize).toFixed(2)}px/${บรรทัด(c)}บรรทัด`
+        })
+        const ป้าย = ก.content !== 'none' ? ` | ::before ${ก.content}@${ก.fontSize}` : ''
+        return `กว้างรวม ${กว้างรวม(คำ).toFixed(1)} กล่อง ${คำ.getBoundingClientRect().width.toFixed(1)} ขนาด ${parseFloat(ส.fontSize).toFixed(2)}px ระยะข้าง ${ส.marginLeft}+${ส.marginRight} ขอบใน ${ส.paddingLeft}+${ส.paddingRight} ${ส.display} | ${ชิ้น.join(' ')}${ป้าย}`
+      }
+      const ออก = []
+      let i = 0
+      for (const คำ of document.querySelectorAll('.pk-ชั้นคำ .pk-คำ')) {
+        if (!คำ.getBoundingClientRect().width || !คำ.style.fontSize) continue
+        const { ได้, กล่อง } = ที่ของ(คำ)
+        const ตอนย่อ = กว้างรวม(คำ)
+        const สภาพย่อ = สภาพ(คำ)
+        const เดิม = คำ.getAttribute('style')
+        คำ.style.setProperty('font-size', '1em', 'important')
+        const ตอนจริง = กว้างรวม(คำ)
+        const สภาพจริง = สภาพ(คำ)
+        คำ.removeAttribute('style')
+        const สภาพเปลือย = สภาพ(คำ)
+        คำ.setAttribute('style', เดิม)
+        if (!(ตอนจริง <= ได้ || ตอนย่อ < ได้ * 0.94)) continue
+        คำ.setAttribute('data-ส่อง', String(i))
+        ออก.push({
+          i: i++,
+          ชื่อ: คำ.querySelector('.pk-ตัวเดิม')?.textContent,
+          แปล: คำ.querySelector('.pk-คำแปลคำ')?.textContent,
+          style: เดิม,
+          ขนาดแม่: getComputedStyle(คำ.parentElement).fontSize,
+          ได้: ได้.toFixed(1),
+          กล่อง,
+          ย่อ: สภาพย่อ,
+          จริง1em: สภาพจริง,
+          เปลือย: สภาพเปลือย,
+        })
+      }
+      const คอลัมน์ = document.querySelector('.pk-คอลัมน์')
+      return {
+        คำ: ออก,
+        ย่อจอแคบ: คอลัมน์?.style.getPropertyValue('--pk-ย่อจอแคบ') || '-',
+        คลาส: คอลัมน์?.className,
+        จัดแถว: document.querySelector('.pk-ตัวบท')?.getAttribute('data-จัดแถว'),
+        ลำดับ: (window.__ส่อง || []).slice(-40),
+      }
+    })
+    console.log(`🔎 ${ที่} ⇒ ย่อจอแคบ ${ผล.ย่อจอแคบ} · จัดแถว ${ผล.จัดแถว} · ${ผล.คลาส}`)
+    console.log(`🔎   ลำดับ ${ผล.ลำดับ.join(' → ')}`)
+    let cdp = null
+    try {
+      cdp = await ctx.newCDPSession(แท็บ)
+      await cdp.send('DOM.enable')
+      await cdp.send('CSS.enable')
+    } catch {
+      cdp = null
+    }
+    for (const x of ผล.คำ) {
+      console.log(`🔎   ${x.ชื่อ} (${x.แปล}) style="${x.style}" ขนาดแม่ ${x.ขนาดแม่} ที่ ${x.ได้} ใน ${x.กล่อง}`)
+      console.log(`🔎     ตอนย่อ  ${x.ย่อ}`)
+      console.log(`🔎     1em     ${x.จริง1em}`)
+      console.log(`🔎     ถอดหมด ${x.เปลือย}`)
+      if (!cdp) continue
+      for (const ตัว of ['.pk-ตัวเดิม', '.pk-คำแปลคำ']) {
+        try {
+          const { root } = await cdp.send('DOM.getDocument', { depth: -1 })
+          const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector: `[data-ส่อง="${x.i}"] > ${ตัว}` })
+          const { fonts } = await cdp.send('CSS.getPlatformFontsForNode', { nodeId })
+          console.log(`🔎     ฟอนต์ ${ตัว} ⇒ ${fonts.map((f) => `${f.familyName}${f.isCustomFont ? '(เว็บ)' : ''}×${f.glyphCount}`).join(' · ')}`)
+        } catch (e) {
+          console.log(`🔎     ฟอนต์ ${ตัว} ⇒ ถามไม่ได้ ${e.message.split('\n')[0]}`)
+        }
+      }
+    }
+    // ⭐ สั่งจัดใหม่ ⇒ แล้ววัดคำเดิม ⇒ ค่าเปลี่ยน = ค่าเดิมค้างจากสภาพก่อน
+    await แท็บ.evaluate(() => document.fonts.dispatchEvent(new Event('loadingdone')))
+    await แท็บ.waitForTimeout(100)
+    await แท็บ
+      .waitForFunction(() => document.querySelector('.pk-ตัวบท')?.getAttribute('data-จัดแถว') === 'เสร็จ', null, { timeout: 15000 })
+      .catch(() => {})
+    const ใหม่ = await แท็บ.evaluate(() =>
+      [...document.querySelectorAll('[data-ส่อง]')].map((คำ) => {
+        const ส = getComputedStyle(คำ)
+        const ก = คำ.getBoundingClientRect().width + parseFloat(ส.marginLeft) + parseFloat(ส.marginRight)
+        return `${คำ.querySelector('.pk-ตัวเดิม')?.textContent} style="${คำ.getAttribute('style') || ''}" กว้างรวม ${ก.toFixed(1)}`
+      }),
+    )
+    console.log(`🔎   จัดใหม่แล้ว ⇒ ${ใหม่.join(' · ') || '(ไม่มีคำ)'}`)
+  } catch (e) {
+    console.log(`🔎 ${ที่} ⇒ ส่องไม่สำเร็จ ${e.message.split('\n')[0]}`)
+  }
 }
 
 async function ตรวจ(พัง) {
@@ -627,6 +762,7 @@ async function ตรวจ(พัง) {
             return { ทั้งหมด, ย่อ, ล้น, หัก, ย่อเกินเหตุ, ย่อเกินจำเป็น }
           })
           const ที่ = `⑪ 11.13 ${ชุด} จอ ${กว้าง} ตัวอักษร ${ขนาด}% ${จัดวาง}`
+          if (!พัง && (ผล.ล้น.length || ผล.ย่อเกินเหตุ.length || ผล.ย่อเกินจำเป็น.length)) await ส่องคำที่ตก(ctx, แท็บ, ที่)
           if (!ผล.ทั้งหมด) ตก.push(`${ที่} ⇒ ⛔ ไม่เจอคำภาษาเดิมบนหน้า ⇒ ตรวจข้อนี้ไม่ได้`)
           if (ผล.ล้น.length) ตก.push(`${ที่} ⇒ คำล้นที่ของมัน ${ผล.ล้น.length} คำ ⇒ เช่น ${ผล.ล้น.slice(0, 3).join(' · ')} ⇒ คำที่กว้างเกินต้องย่อจนพอดี`)
           if (ผล.หัก.length) ตก.push(`${ที่} ⇒ คำถูกหักกลางคำ ${ผล.หัก.length} คำ ⇒ เช่น ${ผล.หัก.slice(0, 3).join(' · ')}`)
