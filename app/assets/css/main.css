@@ -5489,3 +5489,81 @@ body:has(.pk-แผ่นเนื้อความ) {
   background: var(--color-pk-accent);
   border: 1px solid var(--color-pk-accent);
 }
+
+/* ⭐ เชิงอรรถของผู้แปล (ร่างให้ดูหน้าตา 21 พ.ย. 2569) ⇒ เจ้าของคือ `app/utils/เชิงอรรถ.ts` กับ `app/components/แผ่นเชิงอรรถ.vue`
+     ⇒ เครื่องหมายเป็นตัวอักษรเล็กสีจาง ยกขึ้นเหมือนเลขข้อ แต่เบากว่า ⇒ ⛔ ไม่แย่งสายตาจากตัวบท
+     ⇒ ⭐ ที่กดได้ใหญ่กว่าตัวที่เห็น ⇒ ขยายด้วยกรอบล่องหน ⛔ ไม่ดันบรรทัดให้ห่าง (SC 2.5.8 ⇒ ยังต้องวัดจริง) */
+.pk-เครื่องหมายเชิงอรรถ {
+  position: relative;
+  padding: 0 0.08em;
+  font-size: max(12px, 0.6em); /* ⛔ ต่ำกว่า 12 ⇒ `tools/ด่านวางคอลัมน์จอแคบ.mjs` ข้อ ⑫ แดง ⇒ เท่าเลขข้อ */
+  font-style: normal;
+  /* ⚠️ ⛔ 0 แบบเลขข้อ ⇒ กล่องสูง 0 ⇒ เครื่องมือมองว่าซ่อนอยู่ (วัดจริง 21 พ.ย. 2569) */
+  display: inline-block;
+  line-height: 1;
+  vertical-align: super;
+  color: var(--color-pk-accent);
+  opacity: 0.75;
+  cursor: pointer;
+  user-select: none;
+}
+/* ⭐⭐ ตัวอักษรวาดด้วย CSS ⛔ ไม่ใช่ตัวหนังสือในหน้า ⇒ ตัวบทใน DOM เท่าเดิมทุกตัวอักษร
+     ⇒ คัดลอกหรือแชร์ข้อ ⛔ ไม่ติด ก ข ค ไปด้วย ⇒ `tools/ด่านคำพระเยซูบนหน้า.mjs` ข้อ ① ยังเทียบตัวบทได้ตรง
+     ⇒ ⛔ ไม่ใช่ปุ่ม (ข้อทั้งข้อเป็นปุ่มอยู่แล้ว) ⇒ โปรแกรมอ่านหน้าจอข้าม ⇒ ⚠️ ทางของแป้นพิมพ์ยังไม่มี */
+.pk-เครื่องหมายเชิงอรรถ::before {
+  content: attr(data-อักษร);
+}
+.pk-เครื่องหมายเชิงอรรถ::after {
+  content: '';
+  position: absolute;
+  inset: -10px -8px;
+}
+.pk-เครื่องหมายเชิงอรรถ:hover,
+.pk-เครื่องหมายเชิงอรรถ[data-เปิด] {
+  opacity: 1;
+  text-decoration: underline;
+}
+.pk-แผ่นเชิงอรรถ {
+  position: fixed;
+  left: 50%;
+  bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: 45vh;
+  overflow: auto;
+  z-index: 45;
+  background: var(--color-pk-sheet);
+  color: var(--color-pk-ink);
+  border: 1px solid var(--color-pk-hairline);
+  border-radius: var(--pk-มุมการ์ด, 20px);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 0.18);
+  padding: 0.5rem var(--pk-ขอบในการ์ด, 1rem) 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.pk-หัวแผ่นเชิงอรรถ {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--color-pk-ink-soft);
+  font-size: 0.85rem;
+}
+.pk-ป้ายแผ่นเชิงอรรถ {
+  color: var(--color-pk-accent);
+  font-weight: 700;
+}
+.pk-ฉบับแผ่นเชิงอรรถ {
+  flex: 1;
+}
+.pk-แผ่นเชิงอรรถ p {
+  margin: 0.25rem 0 0;
+}
+/* ⭐ คำที่ยกมา (fq · fqa) ⇒ ไทย ⛔ เอียง (หัวตัวอักษรเสีย) ⇒ ใช้สีเข้มขึ้นแทน · อังกฤษเอียงตามธรรมเนียม */
+.pk-คำยกเชิงอรรถ {
+  font-style: normal;
+  font-weight: 600;
+}
+.pk-แผ่นเชิงอรรถ p:not(:lang(th)) .pk-คำยกเชิงอรรถ {
+  font-style: italic;
+  font-weight: inherit;
+}
