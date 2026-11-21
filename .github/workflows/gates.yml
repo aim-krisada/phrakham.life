@@ -506,6 +506,8 @@ jobs:
         JOB_SCRIPT: |
           set -e
           (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git git-lfs
+          git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
           python3 tools/สร้างเชิงอรรถ.py
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '0'

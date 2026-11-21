@@ -654,6 +654,9 @@ stages:
   <<: [*everywhere_build, *lfs_data]
   needs: []
   script:
+    # ⭐ KJV (ฉบับเพิ่ม) อ่านจาก zip ⇒ ต้องดึงไบต์จริงก่อน ⇒ ท่าเดียวกับงาน `พ่นฉบับเพิ่ม`
+    - apk add --no-cache git git-lfs
+    - git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
     - python3 tools/สร้างเชิงอรรถ.py
   artifacts:
     paths:
