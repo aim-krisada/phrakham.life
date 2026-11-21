@@ -1,0 +1,1 @@
+import"./DHwB1DNv.js";import{M as e}from"./lOtioi5N.js";export{e as createArchitectureServices};
