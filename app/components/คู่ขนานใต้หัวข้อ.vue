@@ -4,6 +4,7 @@
 //   ⇒ ⭐ ที่อยู่แต่ละท่อนแตะได้ ⇒ หน้าอ่านเปิดคอลัมน์ใหม่ที่ข้อนั้น (คอลัมน์เต็ม ⇒ พาไป) ⇒ ท่าเดียวกับที่อยู่ในเชิงอรรถ
 //   ⇒ ข้อมูลมาจาก `tools/สร้างรอยย่อหน้า.py` (ช่อง `คู่ขนาน` ของหัวข้อ) ⇒ ตัวเฝ้าคือ `tools/ด่านคู่ขนานบนหน้า.mjs`
 //   ⇒ ⛔ ไม่มีถ้อยคำใหม่ ⇒ ตัวหนังสือทุกตัวเป็นของผู้แปล
+import type { ComputedRef } from 'vue'
 import { Button } from '~/components/ui/button'
 import type { หัวข้อย่อย } from '~/utils/หัวข้อย่อย'
 
@@ -11,9 +12,11 @@ const props = defineProps<{ หัว: หัวข้อย่อย | null | u
 const emit = defineEmits<{ ไปที่: [ที่อยู่: string] }>()
 
 /** ผ่าตัวหนังสือตรงที่อยู่ ⇒ ต่อกลับได้ครบเท่าเดิม */
+/** ⭐ สวิตช์ของหน้าอ่าน ⇒ ปิดแล้วกรอบ ⛔ ขึ้น (`app/components/หน้าอ่าน.vue` ⇒ `กรองหัว`) */
+const แสดงหัว = inject<ComputedRef<{ หัว: boolean; คู่ขนาน: boolean }> | null>('pk-แสดงหัว', null)
 const ท่อน = computed(() => {
   const ค = props.หัว?.คู่ขนาน
-  if (!ค) return []
+  if (!ค || แสดงหัว?.value.คู่ขนาน === false) return []
   const ออก: { ตัวหนังสือ: string; ที่อยู่?: string }[] = []
   let เหลือ = ค.ตัวหนังสือ
   for (const ร of ค.โยงไป) {

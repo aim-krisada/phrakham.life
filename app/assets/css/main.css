@@ -5585,11 +5585,19 @@ body:has(.pk-แผ่นเนื้อความ) {
 
 /* ⭐ บรรทัดคู่ขนานใต้หัวข้อ (@krisada 22 พ.ย. 2569) ⇒ ของผู้แปล ⇒ เล็กและจางกว่าหัวข้อ ⇒ ⛔ แย่งสายตาจากตัวบท
      ⇒ ที่อยู่แตะได้ ⇒ ปุ่มชนิดลิงก์ ⇒ ขนาดตัวอักษรเท่าบรรทัด ⇒ ผู้วาดคือ `app/components/คู่ขนานใต้หัวข้อ.vue` */
+/* ⭐ **กรอบ** (@krisada 22 พ.ย. 2569 *"ชัดเจนกว่านี้ว่าไม่ใช่เนื้อหาหลัก เช่นเป็น box"*)
+     ⇒ พื้นอ่อน มุมมน เส้นบาง ⇒ ตาแยกออกทันทีว่าเป็นของเสริม ⛔ ไม่ใช่ตัวบท ⇒ กว้างพอดีของข้างใน ⛔ เต็มคอลัมน์ */
 .pk-คู่ขนาน {
-  margin: 0 0 calc(var(--pk-ช่วงบรรทัด, 2.26rem) * 0.2);
+  display: table;
+  margin: 0.15rem 0 calc(var(--pk-ช่วงบรรทัด, 2.26rem) * 0.25);
+  padding: 0 0.6rem;
   font-size: max(12px, 0.8em);
   line-height: 1.6;
   color: var(--color-pk-ink-soft);
+  /* พื้นเจือสีเน้นนิดเดียว ⇒ ต่างจากแผ่นอ่านพอให้เห็นเป็นกรอบ ⇒ ใช้ได้ทั้งโหมดสว่างและมืด (ผสมจากสีของธีมเอง) */
+  background: color-mix(in srgb, var(--color-pk-accent) 7%, var(--color-pk-paper));
+  border: 1px solid var(--color-pk-hairline);
+  border-radius: 0.6rem;
   text-indent: 0;
   white-space: normal;
 }
