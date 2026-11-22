@@ -471,6 +471,14 @@ def อ่าน_usfx(ไฟล์, ชื่อฉบับ):
             if el.tail and ที่อยู่[0]:
                 เก็บ[ที่อยู่[0]].append(el.tail)
             return
+        if t == "d":
+            # หัวสดุดี ⛔ ไม่ใช่ตัวบท ⇒ WEB วางชื่ออักษรฮีบรูของสดุดี 119 (NUN, SAMEKH, ...)
+            # ไว้ใน <d> โดยมี <ve/> ของข้อก่อนซ้อนอยู่ข้างใน ⇒ เดิมชื่ออักษรจึงไหลไปติดท้ายข้อก่อน 21 ที่
+            if any(True for _ in el.iter("ve")):
+                ที่อยู่[0] = None
+            if el.tail and ที่อยู่[0]:
+                เก็บ[ที่อยู่[0]].append(el.tail)
+            return
         if el.text and ที่อยู่[0]:
             เก็บ[ที่อยู่[0]].append(el.text)
         for c in el:
