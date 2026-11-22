@@ -1,6 +1,6 @@
 # ⛔⛔ ไฟล์นี้สร้างด้วยเครื่อง ⇒ ห้ามแก้ด้วยมือ
 #   ⇒ แก้ที่ .gitlab-ci.yml แล้วรัน `python tools/สร้างท่อGitHub.py` ⇒ เหตุผลอยู่หัวไฟล์นั้น
-#   ⇒ ด่าน 235 งาน จาก .gitlab-ci.yml
+#   ⇒ ด่าน 237 งาน จาก .gitlab-ci.yml
 name: ตรวจ
 'on':
   pull_request:
@@ -1703,6 +1703,92 @@ jobs:
           node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
           node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
           node tools/ด่านเชิงอรรถบนหน้า.mjs http://127.0.0.1:5396/phrakham --ทดสอบตัวเอง
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
+      run: bash .github/run-job.sh mcr.microsoft.com/playwright:v1.62.1-noble
+  j4f08f08ee1:
+    name: ด่านคู่ขนานบนหน้า
+    needs:
+    - lfs
+    - j14dbf6b990
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: แคช npm
+      uses: actions/cache@v4
+      with:
+        path: .npm
+        key: npm-${{ hashFiles('package-lock.json') }}
+    - name: หยิบชิ้นงานของ สร้างเว็บ
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j14dbf6b990
+        path: /tmp/ชิ้นงาน/j14dbf6b990
+    - name: แกะชิ้นงานของ สร้างเว็บ ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j14dbf6b990/ชิ้นงาน.tar"
+    - name: ด่านคู่ขนานบนหน้า
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          node tools/ติดตั้งของด่านเบราว์เซอร์.mjs
+          node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
+          node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
+          node tools/ด่านคู่ขนานบนหน้า.mjs http://127.0.0.1:5396/phrakham
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
+      run: bash .github/run-job.sh mcr.microsoft.com/playwright:v1.62.1-noble
+  ja40986d1d8:
+    name: ด่านคู่ขนานบนหน้ายังจับได้
+    needs:
+    - lfs
+    - j14dbf6b990
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: แคช npm
+      uses: actions/cache@v4
+      with:
+        path: .npm
+        key: npm-${{ hashFiles('package-lock.json') }}
+    - name: หยิบชิ้นงานของ สร้างเว็บ
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j14dbf6b990
+        path: /tmp/ชิ้นงาน/j14dbf6b990
+    - name: แกะชิ้นงานของ สร้างเว็บ ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j14dbf6b990/ชิ้นงาน.tar"
+    - name: ด่านคู่ขนานบนหน้ายังจับได้
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          node tools/ติดตั้งของด่านเบราว์เซอร์.mjs
+          node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
+          node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
+          node tools/ด่านคู่ขนานบนหน้า.mjs http://127.0.0.1:5396/phrakham --ทดสอบตัวเอง
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '1'
       run: bash .github/run-job.sh mcr.microsoft.com/playwright:v1.62.1-noble
@@ -9717,6 +9803,8 @@ jobs:
     - j1953e4d63e
     - jbab2e06bde
     - jf2570b3963
+    - j4f08f08ee1
+    - ja40986d1d8
     - j29925b8817
     - j08a9555d22
     - j2939df5443

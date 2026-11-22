@@ -166,6 +166,9 @@ const สภาพหน้า = (แท็บ) =>
         const ก = s.querySelector('.pk-เนื้อตอนเทียบ')?.cloneNode(true)
         if (!ก) return ''
         for (const h of ก.querySelectorAll('.pk-หัวข้อย่อย')) h.textContent = ` ${h.textContent} `
+        // ⭐ บรรทัดคู่ขนานใต้หัวข้อ (22 พ.ย. 2569) ⇒ ⛔ ไม่ใช่ตัวบท ⛔ ไม่อยู่ในซองตัวบท ⇒ ถอดออกจากสำเนาก่อนเทียบ
+        //   ⇒ ตัวหนังสือของมันมีด่านตรวจของตัวเอง (`tools/ด่านคู่ขนานบนหน้า.mjs` ข้อ ①) ⇒ ตัวบททุกตัวอักษรยังถูกเทียบเท่าเดิม
+        for (const x of ก.querySelectorAll('.pk-คู่ขนาน')) x.remove()
         return (ก.textContent || '').replace(/\s+/g, ' ').trim()
       }),
       // ⑤ ตอนเทียบต้อง ⛔ ไม่ถูกยัดเข้าผังเทียบบรรทัดของคอลัมน์แรก

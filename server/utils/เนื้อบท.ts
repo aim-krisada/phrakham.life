@@ -115,6 +115,7 @@ interface หัวข้อย่อย {
   ข้อ: number
   หลังอักษร: number
   ตัวหนังสือ: string
+  คู่ขนาน?: { ตัวหนังสือ: string; โยงไป: { ตัวหนังสือ: string; ที่อยู่: string }[] }
 }
 
 interface รอยย่อหน้า {
