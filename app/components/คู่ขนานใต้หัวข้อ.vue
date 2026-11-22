@@ -32,6 +32,8 @@ const ท่อน = computed(() => {
 </script>
 
 <template>
+  <!-- ⭐ หัวสดุดี ⇒ ขึ้นเสมอ ⛔ ไม่ดูสวิตช์ ⇒ เหตุผลอยู่ที่ `หัวสดุดี` ใน `app/utils/หัวข้อย่อย.ts` -->
+  <p v-if="หัว?.หัวสดุดี" class="pk-หัวสดุดี">{{ หัว.หัวสดุดี }}</p>
   <p v-if="ท่อน.length" class="pk-คู่ขนาน"
     ><template v-for="(ท, i) in ท่อน" :key="i"
       ><Button
