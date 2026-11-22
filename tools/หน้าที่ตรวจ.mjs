@@ -276,6 +276,17 @@ export async function เฝ้าข้อผิดพลาด(บริบท
     window.__pkข้อผิดพลาด = []
     addEventListener('error', (e) => window.__pkข้อผิดพลาด.push(`${e.message} @${(e.filename || '').split('/').pop()}:${e.lineno}`))
     addEventListener('unhandledrejection', (e) => window.__pkข้อผิดพลาด.push(`promise: ${e.reason?.message || e.reason}`))
+    // ⭐ คำขอที่ยังไม่ได้คำตอบ (ท่อ 44993741873 ⇒ ไฟล์โค้ดครบ ไม่มีข้อผิดพลาด แต่ Vue ไม่ติด ⇒ สงสัยว่ารอคำขอที่ค้าง)
+    //   ⇒ `performance` เห็นแค่ที่จบแล้ว ⇒ ห่อ `fetch` จดตอนเริ่ม ลบตอนจบ ⇒ ที่เหลือคือที่ค้าง
+    window.__pkค้าง = new Map()
+    const เดิม = window.fetch
+    let ลำดับ = 0
+    window.fetch = function (...a) {
+      const k = ++ลำดับ
+      const u = typeof a[0] === 'string' ? a[0] : a[0]?.url || String(a[0])
+      window.__pkค้าง.set(k, { u, t: Math.round(performance.now()) })
+      return เดิม.apply(this, a).finally(() => window.__pkค้าง.delete(k))
+    }
   })
 }
 
@@ -306,6 +317,11 @@ async function สภาพตอนค้าง(แท็บ) {
             .join(' , ') || 'ไม่มี'
         }`,
         `ผ่านไป ${Math.round(performance.now())}ms`,
+        `คำขอที่ค้าง ${
+          window.__pkค้าง
+            ? [...window.__pkค้าง.values()].map((x) => `${x.u.replace(location.origin, '').slice(-60)} ตั้งแต่ ${x.t}ms`).join(' , ') || 'ไม่มี'
+            : 'ไม่ได้เฝ้า'
+        }`,
         `ข้อผิดพลาด ${(window.__pkข้อผิดพลาด || []).slice(0, 3).join(' | ') || (window.__pkข้อผิดพลาด ? 'ไม่มี' : 'ไม่ได้เฝ้า')}`,
       ].join(' · ')
     })
