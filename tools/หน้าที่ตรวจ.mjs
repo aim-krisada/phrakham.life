@@ -288,11 +288,39 @@ export async function เฝ้าข้อผิดพลาด(บริบท
       return เดิม.apply(this, a).finally(() => window.__pkค้าง.delete(k))
     }
   })
+  // ⭐ คำขอที่ค้าง ระดับเบราว์เซอร์ (22 พ.ย. 2569 ท่อ 45029962889 ⇒ ไฟล์โค้ด 0/19 ค้าง · fetch ไม่ค้าง · ไม่มีข้อผิดพลาด · Vue ไม่ติด)
+  //   ⇒ ของสองอย่างข้างบนมองไม่เห็น `import()` ของโค้ดก้อนย่อย และคำขอที่ตัวช่วยออฟไลน์ยิงต่อเอง
+  //   ⇒ จดจากฝั่ง Playwright ทั้งบริบท ⇒ เห็นทั้งคำขอของหน้า และของ sw.js ⇒ ⛔ ไม่ได้รอเพิ่ม ⛔ ไม่ได้ลองใหม่ แค่จด
+  const ค้าง = new Map()
+  const จบ = (r) => ค้าง.delete(r)
+  บริบท.on('request', (r) => ค้าง.set(r, Date.now()))
+  บริบท.on('requestfinished', จบ)
+  บริบท.on('requestfailed', จบ)
+  คำขอค้างของบริบท.set(บริบท, ค้าง)
+}
+
+const คำขอค้างของบริบท = new WeakMap()
+
+function คำขอค้างฝั่งเบราว์เซอร์(แท็บ) {
+  const ค้าง = คำขอค้างของบริบท.get(แท็บ.context())
+  if (!ค้าง) return 'ไม่ได้เฝ้า'
+  const ตอนนี้ = Date.now()
+  const รายการ = [...ค้าง]
+    .filter(([, t]) => ตอนนี้ - t > 2000)
+    .map(([r, t]) => {
+      let ทาง = r.url()
+      try {
+        ทาง = decodeURIComponent(new URL(ทาง).pathname).slice(-60)
+      } catch {}
+      return `${r.serviceWorker() ? 'sw ' : ''}${r.resourceType()} ${ทาง} ค้าง ${Math.round((ตอนนี้ - t) / 1000)}s`
+    })
+  return รายการ.length ? รายการ.slice(0, 6).join(' , ') : 'ไม่มี'
 }
 
 async function สภาพตอนค้าง(แท็บ) {
   try {
-    return await แท็บ.evaluate(async () => {
+    const ฝั่งเบราว์เซอร์ = คำขอค้างฝั่งเบราว์เซอร์(แท็บ)
+    return (await แท็บ.evaluate(async () => {
       const โหลดแล้ว = new Set(performance.getEntriesByType('resource').map((e) => e.name))
       const ไฟล์โค้ด = [
         ...document.querySelectorAll('script[src], link[rel="modulepreload"][href], link[rel="stylesheet"][href]'),
@@ -324,7 +352,7 @@ async function สภาพตอนค้าง(แท็บ) {
         }`,
         `ข้อผิดพลาด ${(window.__pkข้อผิดพลาด || []).slice(0, 3).join(' | ') || (window.__pkข้อผิดพลาด ? 'ไม่มี' : 'ไม่ได้เฝ้า')}`,
       ].join(' · ')
-    })
+    })) + ` · คำขอค้างฝั่งเบราว์เซอร์ ${ฝั่งเบราว์เซอร์}`
   } catch (เหตุ) {
     return `อ่านสภาพไม่ได้ (${เหตุ.message})`
   }
