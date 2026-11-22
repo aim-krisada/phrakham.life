@@ -254,8 +254,41 @@ export async function รอโค้ดของเว็บติด(แท็
     throw new Error(
       '⛔ โค้ดของเว็บยังไม่ติดภายในเวลาที่รอ ⇒ ลิงก์ *อ่านพระคัมภีร์* ยังไม่ได้ `aria-haspopup="dialog"`' +
         '\n   ⇒ กดอะไรตอนนี้จะหล่นหายทั้งหมด ⇒ ดูเหตุที่หัวข้อ "รอให้โค้ดของเว็บติดจริง" ใน tools/หน้าที่ตรวจ.mjs' +
-        `\n   ⇒ ของเดิม: ${เหตุ.message}`,
+        `\n   ⇒ ของเดิม: ${เหตุ.message}` +
+        `\n   ⇒ สภาพหน้าตอนหมดเวลา: ${await สภาพตอนค้าง(แท็บ)}`,
     )
+  }
+}
+
+/**
+ * ⭐ **หลักฐานตอนโค้ดของเว็บไม่ติด** (22 พ.ย. 2569) ⇒ ⛔ ไม่ใช่การรอเพิ่ม ⛔ ไม่ใช่ลองใหม่ ⇒ แค่จดว่าหน้าค้างที่ไหน
+ *   ⇒ ที่มา ⇒ `ด่านลิงก์เลขเดิมยังจับได้` บน GitHub ล้มแบบนี้ 2 ครั้งใน 21 พ.ย. 2569 (ท่อ 44907792036 ISA 8:23 · 44912522243 NEH 10:1)
+ *     ⇒ 82 จาก 83 หน้าติดปกติ · หน้าที่ค้างไม่ซ้ำกัน · ในเครื่องพร้อมใน 0.3 วินาที ⇒ บันทึกเดิมบอกแค่ว่า *หมดเวลา* ⇒ หาสาเหตุไม่ได้
+ *   ⇒ จดห้าอย่าง ⇒ ที่อยู่ตอนค้าง · หน้าโหลดถึงไหน · ตัวช่วยออฟไลน์คุมหน้าไหมและอยู่สภาพไหน · ไฟล์โค้ดตัวไหนยังโหลดไม่เสร็จ · Vue ติดไหม
+ *     ⇒ ⚠️ สงสัยตัวช่วยออฟไลน์ (`public/sw.js`) ⇒ คำขอของหน้ารอให้ตัวช่วยเข้าแทนเสร็จก่อน ⇒ ตอนเข้าแทนมันดึงรายการไฟล์ออฟไลน์ ⇒ **ยังไม่ได้พิสูจน์**
+ */
+async function สภาพตอนค้าง(แท็บ) {
+  try {
+    return await แท็บ.evaluate(async () => {
+      const โหลดแล้ว = new Set(performance.getEntriesByType('resource').map((e) => e.name))
+      const ไฟล์โค้ด = [
+        ...document.querySelectorAll('script[src], link[rel="modulepreload"][href], link[rel="stylesheet"][href]'),
+      ].map((x) => x.src || x.href)
+      const ค้าง = ไฟล์โค้ด.filter((u) => !โหลดแล้ว.has(u)).map((u) => u.replace(location.origin, ''))
+      const ทะเบียน = navigator.serviceWorker ? await navigator.serviceWorker.getRegistration() : undefined
+      const ตัวช่วย = ทะเบียน
+        ? `ทำงาน ${ทะเบียน.active?.state || '-'} · รอ ${ทะเบียน.waiting?.state || '-'} · ติดตั้ง ${ทะเบียน.installing?.state || '-'}`
+        : 'ไม่มีตัวช่วย'
+      return [
+        `ที่อยู่ ${location.pathname}${location.search}`,
+        `โหลด ${document.readyState}`,
+        `ตัวช่วยออฟไลน์คุมหน้า ${navigator.serviceWorker?.controller ? 'ใช่' : 'ไม่'} (${ตัวช่วย})`,
+        `ไฟล์โค้ดค้าง ${ค้าง.length}/${ไฟล์โค้ด.length}${ค้าง.length ? ' ⇒ ' + ค้าง.slice(0, 5).join(' ') : ''}`,
+        `Vue ${document.querySelector('#__nuxt')?.__vue_app__ ? 'ติด' : 'ไม่ติด'}`,
+      ].join(' · ')
+    })
+  } catch (เหตุ) {
+    return `อ่านสภาพไม่ได้ (${เหตุ.message})`
   }
 }
 
