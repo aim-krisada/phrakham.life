@@ -267,6 +267,18 @@ export async function รอโค้ดของเว็บติด(แท็
  *   ⇒ จดห้าอย่าง ⇒ ที่อยู่ตอนค้าง · หน้าโหลดถึงไหน · ตัวช่วยออฟไลน์คุมหน้าไหมและอยู่สภาพไหน · ไฟล์โค้ดตัวไหนยังโหลดไม่เสร็จ · Vue ติดไหม
  *     ⇒ ⚠️ สงสัยตัวช่วยออฟไลน์ (`public/sw.js`) ⇒ คำขอของหน้ารอให้ตัวช่วยเข้าแทนเสร็จก่อน ⇒ ตอนเข้าแทนมันดึงรายการไฟล์ออฟไลน์ ⇒ **ยังไม่ได้พิสูจน์**
  */
+/**
+ * ⭐ เฝ้าข้อผิดพลาดของโค้ดในหน้า ⇒ ใส่ที่บริบทก่อนเปิดหน้า ⇒ ตอนค้าง `สภาพตอนค้าง` อ่านมาบอก
+ *   ⇒ ท่อ 44982710510 ⇒ ไฟล์โค้ดครบแต่ Vue ไม่ติด ⇒ น่าจะมีโค้ดพังก่อนติด ⇒ ต้องรู้ว่าพังที่ไหน
+ */
+export async function เฝ้าข้อผิดพลาด(บริบท) {
+  await บริบท.addInitScript(() => {
+    window.__pkข้อผิดพลาด = []
+    addEventListener('error', (e) => window.__pkข้อผิดพลาด.push(`${e.message} @${(e.filename || '').split('/').pop()}:${e.lineno}`))
+    addEventListener('unhandledrejection', (e) => window.__pkข้อผิดพลาด.push(`promise: ${e.reason?.message || e.reason}`))
+  })
+}
+
 async function สภาพตอนค้าง(แท็บ) {
   try {
     return await แท็บ.evaluate(async () => {
@@ -285,6 +297,16 @@ async function สภาพตอนค้าง(แท็บ) {
         `ตัวช่วยออฟไลน์คุมหน้า ${navigator.serviceWorker?.controller ? 'ใช่' : 'ไม่'} (${ตัวช่วย})`,
         `ไฟล์โค้ดค้าง ${ค้าง.length}/${ไฟล์โค้ด.length}${ค้าง.length ? ' ⇒ ' + ค้าง.slice(0, 5).join(' ') : ''}`,
         `Vue ${document.querySelector('#__nuxt')?.__vue_app__ ? 'ติด' : 'ไม่ติด'}`,
+        // ⭐ ท่อ 44982710510 (22 พ.ย. 2569) ⇒ ไฟล์โค้ดครบ 19/19 แต่ Vue ไม่ติด ⇒ ดูต่อว่าข้อมูลที่หน้ารอก่อนติด (api · _payload) ได้คำตอบหรือยัง
+        `ข้อมูลที่ได้แล้ว ${
+          performance
+            .getEntriesByType('resource')
+            .filter((e) => /\/api\/|_payload|\.json/.test(e.name))
+            .map((e) => `${e.name.replace(location.origin, '').slice(-40)} ${Math.round(e.duration)}ms${e.workerStart > 0 ? ' ผ่านตัวช่วย' : ''}`)
+            .join(' , ') || 'ไม่มี'
+        }`,
+        `ผ่านไป ${Math.round(performance.now())}ms`,
+        `ข้อผิดพลาด ${(window.__pkข้อผิดพลาด || []).slice(0, 3).join(' | ') || (window.__pkข้อผิดพลาด ? 'ไม่มี' : 'ไม่ได้เฝ้า')}`,
       ].join(' · ')
     })
   } catch (เหตุ) {

@@ -54,7 +54,7 @@
 //   node tools/ด่านลิงก์เลขเดิม.mjs <ที่อยู่เว็บ>
 
 import { chromium } from 'playwright'
-import { เส้นทางเว็บ, รอโค้ดของเว็บติด } from './หน้าที่ตรวจ.mjs'
+import { เส้นทางเว็บ, รอโค้ดของเว็บติด, เฝ้าข้อผิดพลาด } from './หน้าที่ตรวจ.mjs'
 
 const ฐาน = (process.argv.slice(2).find((x) => !x.startsWith('--')) || `http://127.0.0.1:5396${เส้นทางเว็บ}`).replace(/\/+$/, '')
 const ทดสอบตัวเอง = process.argv.includes('--ทดสอบตัวเอง')
@@ -183,6 +183,7 @@ function ตัวรับแทน() {
 async function บริบท(พัง = {}, จอ = { width: 1280, height: 900 }) {
   const ctx = await เบราว์เซอร์.newContext({ viewport: จอ })
   await ctx.addInitScript(ตัวรับแทน)
+  await เฝ้าข้อผิดพลาด(ctx)
   if (พัง.แทนโค้ด) {
     // ⭐ แก้โค้ดของเว็บที่เสิร์ฟจริงตอนส่งถึงเบราว์เซอร์ ⇒ ท่าเดียวกับ `tools/ด่านลิงก์เว็บเดิม.mjs` ⇒ นับว่าแทนเข้าจริงกี่ครั้ง
     await ctx.route('**/_nuxt/*.js', async (route) => {
