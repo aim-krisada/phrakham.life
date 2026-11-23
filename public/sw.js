@@ -75,21 +75,28 @@ async function หาในแคช(กุญแจ) {
 }
 
 async function เก็บที่เปิด(กุญแจ, res) {
+  const k = ++ลำดับจด
+  ที่เก็บค้าง.set(k, { กุญแจ: กุญแจ.slice(-60), ตั้งแต่: Date.now() })
   try {
     await (await caches.open(แคชที่เปิด)).put(กุญแจ, res)
   } catch {
     /* ที่เก็บเต็ม ⇒ หน้ายังได้ของจากเน็ตตามปกติ */
+  } finally {
+    ที่เก็บค้าง.delete(k)
   }
 }
 
-async function เน็ตก่อน(event, url, ทาง) {
+async function เน็ตก่อน(event, url, ทาง, จด) {
   const req = event.request
   const กุญแจ = กุญแจของ(url)
   try {
+    จด.ขั้น = 'เน็ต'
     const res = await fetch(req)
+    จด.ขั้น = 'ได้จากเน็ต'
     if (res.ok && res.type === 'basic' && !res.redirected && เก็บตอนเปิด(ทาง)) event.waitUntil(เก็บที่เปิด(กุญแจ, res.clone()))
     return res
   } catch (เหตุ) {
+    จด.ขั้น = 'หาในแคชหลังเน็ตพลาด'
     const ได้ = await หาในแคช(กุญแจ)
     if (ได้) return ได้
     // ⭐ หน้าที่ไม่เคยเก็บ (ที่อยู่เดิม `/read/<เล่ม>/<บท>`) ⇒ โครงเว็บทั้งก้อน `404.html` ⇒ โค้ดของเว็บเดินเส้นทางเอง ⇒ ท่าเดียวกับที่วางเว็บ
@@ -101,11 +108,14 @@ async function เน็ตก่อน(event, url, ทาง) {
   }
 }
 
-async function ที่เก็บก่อน(event, url, ทาง) {
+async function ที่เก็บก่อน(event, url, ทาง, จด) {
   const กุญแจ = กุญแจของ(url)
+  จด.ขั้น = 'หาในแคช'
   const ได้ = await หาในแคช(กุญแจ)
   if (ได้) return ได้
+  จด.ขั้น = 'เน็ต'
   const res = await fetch(event.request)
+  จด.ขั้น = 'ได้จากเน็ต'
   if (res.ok && res.type === 'basic' && เก็บตอนเปิด(ทาง)) event.waitUntil(เก็บที่เปิด(กุญแจ, res.clone()))
   return res
 }
@@ -117,7 +127,26 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin || !url.pathname.startsWith(ราก)) return
   const ทาง = ทางของ(url)
   if (ไม่แตะ(ทาง)) return
-  event.respondWith(ใช้ที่เก็บก่อน(ทาง) ? ที่เก็บก่อน(event, url, ทาง) : เน็ตก่อน(event, url, ทาง))
+  const จด = เริ่มจด(ทาง, req.destination)
+  const ตอบ = (ใช้ที่เก็บก่อน(ทาง) ? ที่เก็บก่อน(event, url, ทาง, จด) : เน็ตก่อน(event, url, ทาง, จด)).finally(() => คำขอค้าง.delete(จด.k))
+  event.respondWith(ตอบ)
+})
+
+// ⭐ **ตัวจดคำขอที่ยังไม่ตอบ** (23 พ.ย. 2569 ⇒ หาเหตุที่หน้าค้างแบบสุ่มบนท่อ) ⇒ ⛔ เปลี่ยนพฤติกรรม ⇒ แค่จดว่าคำขอไหนค้างอยู่ขั้นไหน
+//   ⇒ คนอ่านคือ `สภาพตอนค้าง` ใน `tools/หน้าที่ตรวจ.mjs` ⇒ อ่านผ่าน Playwright ตอนโค้ดของเว็บไม่ติด
+const คำขอค้าง = new Map()
+const ที่เก็บค้าง = new Map()
+let ลำดับจด = 0
+function เริ่มจด(ทาง, ชนิด) {
+  const จด = { k: ++ลำดับจด, ทาง, ชนิด, ตั้งแต่: Date.now(), ขั้น: 'เริ่ม' }
+  คำขอค้าง.set(จด.k, จด)
+  return จด
+}
+self.__pkสภาพ = () => ({
+  ตอนนี้: Date.now(),
+  คำขอค้าง: [...คำขอค้าง.values()],
+  ที่เก็บค้าง: [...ที่เก็บค้าง.values()],
+  เก็บทั้งเล่ม: !!งานที่วิ่ง,
 })
 
 // ---- ติดตั้ง · เข้าแทน ------------------------------------------------------------------------
