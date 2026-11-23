@@ -74,16 +74,25 @@ import สร้างข้อมูลเว็บ as ตัวแปลง  #
 import กติกาไทย  # noqa: E402          # ล้างตัวมองไม่เห็นออก ⇒ ทำช่องค้นหา (ใบ #64)
 import สัญญาอนุญาต  # noqa: E402       # ยกข้อความลิขสิทธิ์จาก metadata.xml (ใบ #64)
 
-B   = 'C:/gl/v3/_ต้นทาง'                 # กองที่โคลนมา ⇒ มีเลขคอมมิตติดมาด้วย
+# กองต้นทางของ MACULA กับ UBS
+# ⇒ ปกติอ่านจาก `_แตก/<ชื่อ>-main` ที่ `tools/แตกกอง.py` แกะจาก zip ใน `source/` ⇒ ใช้ได้ทุกเครื่อง
+# ⇒ ตั้ง PHRAKHAM_SOURCE_DIR ไว้ ⇒ ใช้กองที่โคลนมาเองแทน ⇒ ได้เลขคอมมิตของเจ้าของติดมาด้วย
+# ⛔ ชื่อตัวแปรแวดล้อมต้องเป็นอังกฤษ ⇒ เชลล์ตั้งชื่อไทยไม่ได้
+def ทางต้นทาง(repo):
+    ฐาน = os.environ.get('PHRAKHAM_SOURCE_DIR')
+    if ฐาน:
+        p = os.path.join(ฐาน, repo)
+        if os.path.isdir(p): return p
+    return os.path.join(ที่เก็บ, '_แตก', repo + '-main')
 OUT = 'public/data'                      # ต่อหน้าด้วย --ออกที่ ⇒ ที่เก็บของเว็บ
 OUT_ตรวจ = 'docs/ข้อมูล/ชั้นตรวจ'        # อยู่ในที่เก็บของดิบนี้เอง ⛔ ไม่ขึ้นเว็บ
 ไทย_USX  = os.path.join(ที่เก็บ, '_แตก', 'tcv', 'usx-rev2-release', 'release', 'USX_1')
 ไทย_ชื่อแหล่ง = ตัวแปลง.แหล่งของชั้น['TCV']  # กุญแจไปหาเครดิตใน content/แหล่งข้อมูล.md
-ฮ_ต้นฉบับ = B + '/macula-hebrew/WLC/tsv/macula-hebrew.tsv'
-ฮ_ตาราง   = B + '/macula-hebrew/mappings/tsv/macula_to_marble_map.tsv'
-ฮ_พจน     = B + '/ubs-open-license/dictionaries/hebrew/JSON/UBSHebrewDic-v0.9.2-en.JSON'
-ก_ต้นฉบับ = B + '/macula-greek/SBLGNT/tsv/macula-greek-SBLGNT.tsv'
-ก_พจน     = B + '/ubs-open-license/dictionaries/greek/JSON/UBSGreekNTDic-v1.1-en.JSON'
+ฮ_ต้นฉบับ = ทางต้นทาง('macula-hebrew') + '/WLC/tsv/macula-hebrew.tsv'
+ฮ_ตาราง   = ทางต้นทาง('macula-hebrew') + '/mappings/tsv/macula_to_marble_map.tsv'
+ฮ_พจน     = ทางต้นทาง('ubs-open-license') + '/dictionaries/hebrew/JSON/UBSHebrewDic-v0.9.2-en.JSON'
+ก_ต้นฉบับ = ทางต้นทาง('macula-greek') + '/SBLGNT/tsv/macula-greek-SBLGNT.tsv'
+ก_พจน     = ทางต้นทาง('ubs-open-license') + '/dictionaries/greek/JSON/UBSGreekNTDic-v1.1-en.JSON'
 
 # หัวตารางของแต่ละชั้น ⇒ ลำดับนี้คือลำดับค่าในทุกแถว ⛔ ห้ามสลับ ห้ามแทรกกลาง
 หัวอ่าน = ['คำเดิม', 'ตามหลัง']
@@ -191,7 +200,7 @@ def เลขรุ่นกิต(path):
 
 def ที่มาไฟล์(ชื่อ, path, repo):
     return {'ชื่อ': ชื่อ, 'ไฟล์': os.path.basename(path),
-            'รุ่นของเจ้าของ': เลขรุ่นกิต(B + '/' + repo),
+            'รุ่นของเจ้าของ': เลขรุ่นกิต(ทางต้นทาง(repo)),
             'ลายนิ้วมือไฟล์': ลายนิ้วมือ(path)}
 
 # ───────────────────────── ชั้นความหมาย ─────────────────────────

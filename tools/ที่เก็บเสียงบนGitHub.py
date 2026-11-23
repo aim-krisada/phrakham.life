@@ -56,7 +56,8 @@ if hasattr(sys.stdout, "reconfigure"):
 ที่ตั้งต้น = Path(os.environ.get("LOCALAPPDATA") or Path.home()) / "phrakham-audio-pages"
 ตัวตอบกุญแจ = ราก / "tools" / "กุญแจgitGitHub.sh"
 ชื่อกุญแจ = "GITHUB_TOKEN_PHRAKHAM"
-ที่กุญแจ = [Path(r"D:\OneDrive\4 Personal\claude\.env")]
+#: ⭐ วินโดวส์เดิมอยู่ไดรฟ์ D · ลินุกซ์อยู่ใต้บ้าน ⇒ ลองทีละที่ ⇒ ⛔ ไม่ผูกเครื่องเดียว
+ที่กุญแจ = [Path(r"D:\OneDrive\4 Personal\claude\.env"), Path.home() / "OneDrive" / "4 Personal" / "claude" / ".env"]
 ชื่อคนคอมมิต = ["-c", "user.name=Aim Agent", "-c", "user.email=aim-agent@aimagin.com"]
 
 #: ⭐ ฉบับที่ไฟล์อยู่ที่รากของ `เสียง/ข้อ/` ⇒ ของเดิมจากเว็บรุ่น 2 ⇒ ฉบับอื่นอยู่ในโฟลเดอร์ชื่อฉบับ
@@ -253,6 +254,13 @@ def เตรียมที่เก็บในเครื่อง(g: dict, 
             git(โฟลเดอร์, "remote", "add", "origin", remote)
     # ⭐ ที่เก็บเปล่าที่เพิ่งโคลนมายังไม่มีกิ่ง ⇒ ตั้งชื่อกิ่งเป็น main ให้ตรงกับที่ Pages อ่าน
     git(โฟลเดอร์, "symbolic-ref", "HEAD", "refs/heads/main")
+    # ⭐⭐ **ดึงของบน GitHub มาทับก่อนคัดลอกทุกครั้ง** ⇒ โต๊ะในเครื่องอาจตามหลัง
+    #   ⇒ 23 พ.ย. 2569 คืนรายคืนส่งไม่ขึ้น (rejected) เพราะวันก่อนมีคนส่งเสียง 6 ข้อที่ทำใหม่จากอีกเครื่อง
+    #   ⇒ โต๊ะนี้เป็นแค่ที่พักก่อนส่ง ⇒ ทับได้ ⛔ ไม่มีงานของคนค้างอยู่ ⇒ ไฟล์ที่ต้องส่งถูกคัดลอกใหม่หลังจากนี้
+    if กุญแจ:
+        git_GitHub(โฟลเดอร์, g["ที่เก็บ"], กุญแจ, "fetch", "-q", "origin")
+        if git(โฟลเดอร์, "for-each-ref", "refs/remotes/origin/main"):
+            git(โฟลเดอร์, "reset", "-q", "--hard", "origin/main")
     return โฟลเดอร์
 
 
