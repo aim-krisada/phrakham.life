@@ -635,6 +635,9 @@ stages:
   <<: [*everywhere_build, *lfs_data]
   needs: []
   script:
+    # ⭐ KJV (ฉบับเพิ่ม) อ่านเครื่องหมายจาก USFX ใน zip ⇒ ต้องดึงไบต์จริงก่อน ⇒ ท่าเดียวกับงาน `พ่นฉบับเพิ่ม`
+    - apk add --no-cache git git-lfs
+    - git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
     - python3 tools/สร้างคำพระเยซู.py
   artifacts:
     paths:
@@ -683,6 +686,9 @@ stages:
   <<: [*everywhere_build, *lfs_data]
   needs: []
   script:
+    # ⭐ KJV (ฉบับเพิ่ม) อ่านเครื่องหมายจาก USFX ใน zip ⇒ ต้องดึงไบต์จริงก่อน ⇒ ท่าเดียวกับงาน `พ่นฉบับเพิ่ม`
+    - apk add --no-cache git git-lfs
+    - git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
     - python3 tools/สร้างรอยย่อหน้า.py
   artifacts:
     paths:
@@ -1033,6 +1039,9 @@ stages:
   <<: [*everywhere, *lfs_data]
   needs: ['พ่นรอยย่อหน้า']
   script:
+    # ⭐ KJV (ฉบับเพิ่ม) อ่านเครื่องหมายจาก USFX ใน zip ⇒ ต้องดึงไบต์จริงก่อน ⇒ ท่าเดียวกับงาน `พ่นฉบับเพิ่ม`
+    - apk add --no-cache git git-lfs
+    - git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
     - python3 tools/ตรวจรอยย่อหน้า.py
 
 # ---------------------------------------------------------------------------
@@ -1049,6 +1058,9 @@ stages:
   <<: [*everywhere, *lfs_data]
   needs: ['พ่นรอยย่อหน้า']
   script:
+    # ⭐ KJV (ฉบับเพิ่ม) อ่านเครื่องหมายจาก USFX ใน zip ⇒ ต้องดึงไบต์จริงก่อน ⇒ ท่าเดียวกับงาน `พ่นฉบับเพิ่ม`
+    - apk add --no-cache git git-lfs
+    - git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
     - python3 tools/ตรวจรอยย่อหน้า.py --ทดสอบตัวเอง
 
 # ---------------------------------------------------------------------------
@@ -1062,7 +1074,7 @@ stages:
   <<: [*node, *everywhere, *lfs_data]
   # ⭐ งานนี้ ⛔ ไม่ได้สั่ง `npm ci` ⇒ แคชของ npm ไม่มีประโยชน์ ⇒ ⛔ ไม่ดึง (ใบงาน #123 ทาง ก)
   cache: []
-  needs: ['พ่นรอยย่อหน้า']
+  needs: ['พ่นรอยย่อหน้า', 'พ่นฉบับเพิ่ม']
   script:
     - node --experimental-strip-types tools/ตรวจจัดย่อหน้า.mjs
 
@@ -1074,7 +1086,7 @@ stages:
   <<: [*node, *everywhere, *lfs_data]
   # ⭐ งานนี้ ⛔ ไม่ได้สั่ง `npm ci` ⇒ แคชของ npm ไม่มีประโยชน์ ⇒ ⛔ ไม่ดึง (ใบงาน #123 ทาง ก)
   cache: []
-  needs: ['พ่นรอยย่อหน้า']
+  needs: ['พ่นรอยย่อหน้า', 'พ่นฉบับเพิ่ม']
   script:
     - node --experimental-strip-types tools/ตรวจจัดย่อหน้า.mjs --ทดสอบตัวเอง
 

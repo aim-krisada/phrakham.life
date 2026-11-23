@@ -467,6 +467,8 @@ jobs:
         JOB_SCRIPT: |
           set -e
           (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git git-lfs
+          git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
           python3 tools/สร้างคำพระเยซู.py
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '0'
@@ -547,6 +549,8 @@ jobs:
         JOB_SCRIPT: |
           set -e
           (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git git-lfs
+          git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
           python3 tools/สร้างรอยย่อหน้า.py
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '0'
@@ -1257,6 +1261,8 @@ jobs:
         JOB_SCRIPT: |
           set -e
           (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git git-lfs
+          git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
           python3 tools/ตรวจรอยย่อหน้า.py
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '0'
@@ -1292,6 +1298,8 @@ jobs:
         JOB_SCRIPT: |
           set -e
           (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git git-lfs
+          git -c lfs.fetchexclude= lfs pull -I "source/eng-kjv2006_usfx.zip"
           python3 tools/ตรวจรอยย่อหน้า.py --ทดสอบตัวเอง
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '0'
@@ -1301,6 +1309,7 @@ jobs:
     needs:
     - lfs
     - j259ce7680f
+    - j7d185e7f96
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -1322,6 +1331,13 @@ jobs:
         path: /tmp/ชิ้นงาน/j259ce7680f
     - name: แกะชิ้นงานของ พ่นรอยย่อหน้า ลงที่เดิม
       run: tar -xf "/tmp/ชิ้นงาน/j259ce7680f/ชิ้นงาน.tar"
+    - name: หยิบชิ้นงานของ พ่นฉบับเพิ่ม
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j7d185e7f96
+        path: /tmp/ชิ้นงาน/j7d185e7f96
+    - name: แกะชิ้นงานของ พ่นฉบับเพิ่ม ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j7d185e7f96/ชิ้นงาน.tar"
     - name: ด่านจัดย่อหน้า
       env:
         JOB_SCRIPT: |
@@ -1336,6 +1352,7 @@ jobs:
     needs:
     - lfs
     - j259ce7680f
+    - j7d185e7f96
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -1357,6 +1374,13 @@ jobs:
         path: /tmp/ชิ้นงาน/j259ce7680f
     - name: แกะชิ้นงานของ พ่นรอยย่อหน้า ลงที่เดิม
       run: tar -xf "/tmp/ชิ้นงาน/j259ce7680f/ชิ้นงาน.tar"
+    - name: หยิบชิ้นงานของ พ่นฉบับเพิ่ม
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j7d185e7f96
+        path: /tmp/ชิ้นงาน/j7d185e7f96
+    - name: แกะชิ้นงานของ พ่นฉบับเพิ่ม ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j7d185e7f96/ชิ้นงาน.tar"
     - name: ด่านจัดย่อหน้ายังจับได้
       env:
         JOB_SCRIPT: |

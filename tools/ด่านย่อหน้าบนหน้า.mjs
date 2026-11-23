@@ -367,14 +367,15 @@ async function ตรวจฉบับที่ยืม(ยัดของพ�
         await แท็บ.waitForTimeout(300)
       }
       if (รอบ === 2) {
-        // ปิดคอลัมน์ซ้ายสุดไปเรื่อย ๆ จนคอลัมน์ซ้ายสุดเป็นฉบับที่ไม่มีของตัวเอง
+        // ปิดทุกคอลัมน์ที่มีย่อหน้าของตัวเอง ⇒ เหลือแต่ฉบับที่ยืม
+        //   ⇒ ⭐ ⛔ ไม่ใช่แค่ปิดซ้ายสุดจนซ้ายสุดเป็นผู้ยืม ⇒ ฉบับที่มีของตัวเองทางขวา (KJV ตั้งแต่ 23 พ.ย. 2569) จะค้างเป็นต้นแบบ
         for (let i = 0; i < 8; i++) {
-          const ซ้ายสุด = await แท็บ
+          const คอลัมน์ตอนนี้ = await แท็บ
             .locator('.pk-หัวคอลัมน์ .pk-ช่องหัว')
-            .first()
-            .getAttribute('data-ฉบับ')
-          if (ซ้ายสุด in ไม่มีของตัวเอง) break
-          await แท็บ.getByRole('button', { name: 'ปิดคอลัมน์ที่ 1', exact: true }).click()
+            .evaluateAll((els) => els.map((el) => el.getAttribute('data-ฉบับ')))
+          const ที่ = คอลัมน์ตอนนี้.findIndex((ฉ) => !(ฉ in ไม่มีของตัวเอง))
+          if (ที่ < 0 || คอลัมน์ตอนนี้.length < 2) break
+          await แท็บ.getByRole('button', { name: `ปิดคอลัมน์ที่ ${ที่ + 1}`, exact: true }).click()
           await แท็บ.waitForTimeout(300)
         }
       }
