@@ -158,6 +158,19 @@ jobs:
           test -f v3/index.html
           test -f v3/version.json
 
+          # ---- 0. which address was this delivery built for? (aimgit v3/phrakham#179) ------------
+          # The same branch carries either a bundle built for /v3/ (the redesign beside the old site)
+          # or one built for / (the switch: the redesign IS the site). The bundle says which, in the
+          # address of its own code, so it is read here and never typed in by hand. B is that base
+          # without its trailing slash: "/v3" or "" for the root. ⛔ Anything else is refused — a
+          # bundle built for /phrakham/ (the aimgit preview) would put every link in the wrong place.
+          if grep -qF '"/v3/_nuxt/' v3/index.html; then B=/v3
+          elif grep -qF '"/_nuxt/' v3/index.html; then B=
+          else echo "::error::v3/index.html loads its code from neither /v3/_nuxt/ nor /_nuxt/ — this delivery was built for some other address"; exit 1
+          fi
+          echo "base=${B:-/}" >> "$GITHUB_OUTPUT"
+          echo "delivery built for ${B:-/}/" | sed 's|//|/|'
+
           # ---- 1. nothing hollow -----------------------------------------------------------------
           # `test -f` says a file is there, not that anything is inside it. A write that failed part
           # way leaves a 0-byte .js, .css or .html behind, and every check further down still passes
@@ -414,8 +427,9 @@ jobs:
             t=${raw%%\?*}; t=${t%%#*}
             case "$t" in ""|"#"*|*:*|"//"*) continue ;; esac
             case "$t" in
-              /v3|/v3/*) t=${t#/v3} ;;
-              /*) continue ;;
+              /*) if [ -n "$B" ]; then
+                    case "$t" in "$B"|"$B"/*) t=${t#"$B"} ;; *) continue ;; esac
+                  fi ;;
               *) t="/$t" ;;
             esac
             t=$(printf '%b' "${t//%/'\x'}")
@@ -429,13 +443,13 @@ jobs:
             # file endings listed just above are treated as files.
             seg=${t#/}; seg=${seg%%/*}
             [ -e "v3/$seg" ] || [ -f "v3/$seg.html" ] \
-              || { echo "::error::the home page links to /v3$t but /v3/$seg was not delivered at all"; exit 1; }
+              || { echo "::error::the home page links to $B$t but $B/$seg was not delivered at all"; exit 1; }
             n=$((n+1))
             case " $linked " in *" $seg "*) continue ;; esac   # two links, one section
             linked="$linked $seg"
           done
           [ "$n" -gt 0 ] \
-            || { echo "::error::v3/index.html links to no other page under /v3/ — that is not a home page"; exit 1; }
+            || { echo "::error::v3/index.html links to no other page under ${B:-the root} — that is not a home page"; exit 1; }
 
           # ---- 5. every file the delivered pages name must be there -------------------------------
           # ⚠️ This reads EVERY delivered page, not only the home page and its neighbours. The home
@@ -445,15 +459,17 @@ jobs:
           # path has to be decoded before it is tested — comparing the raw text would report every
           # valid Thai-named file as missing. (Same trap aimgit hit on 29 Aug 2026.)
           refs=0
-          for p in $(grep -ohrE "[\"']/v3/[^\"']+" --include='*.html' --exclude-dir=.git v3 \
+          for p in $(grep -ohrE "[\"']$B/[^\"']+" --include='*.html' --exclude-dir=.git v3 \
                      | cut -c2- | sort -u); do
             p=${p%%\?*}; p=${p%%#*}
+            # with B empty the pattern is "/…", which also matches //other-host/… — not our file
+            case "$p" in //*) continue ;; esac
             case "${p##*/}" in
               *.js|*.mjs|*.css|*.json|*.map|*.txt|*.xml|*.webmanifest|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.webp|*.avif|*.woff|*.woff2|*.ttf|*.mp3|*.pdf) ;;
               *) continue ;;
             esac
             p=$(printf '%b' "${p//%/'\x'}")
-            test -f "v3${p#/v3}" \
+            test -f "v3${p#"$B"}" \
               || { echo "::error::delivered v3 references $p but the file is missing"; exit 1; }
             refs=$((refs+1))
           done
@@ -505,9 +521,21 @@ jobs:
           # v3 arrives built, so the checkout itself IS the site. Drop the .git that checkout adds —
           # publishing it would put the delivery branch's history on a public web server.
           if [ "${{ steps.v3check.outcome }}" = "success" ]; then
-            rm -rf live/v3
-            cp -r v3 live/v3
-            rm -rf live/v3/.git
+            if [ "${{ steps.v3check.outputs.base }}" = "/" ]; then
+              # ⭐ THE SWITCH (aimgit v3/phrakham#179 · #180): the delivery was built for the root, so
+              # it IS the site. The old site on `main` is no longer served — it stays in git, nothing
+              # is deleted here. Only CNAME and .nojekyll are carried over from `main`.
+              mkdir site
+              cp live/CNAME live/.nojekyll site/
+              cp -r v3/. site/
+              rm -rf site/.git
+              rm -rf live
+              mv site live
+            else
+              rm -rf live/v3
+              cp -r v3 live/v3
+              rm -rf live/v3/.git
+            fi
           fi
 
       # ---- say out loud what is actually going up ----------------------------------------------
@@ -519,7 +547,8 @@ jobs:
           echo "root  <- main @ ${{ steps.root.outputs.sha }}"
           echo "root  : $(ls -A live | tr '\n' ' ')"
           echo "size  : $(du -sh live | cut -f1)"
-          if [ -d live/v3 ]; then echo "/v3/  : included"; else echo "/v3/  : NOT included"; fi
+          if [ "${{ steps.v3check.outputs.base }}" = "/" ]; then echo "/     : the redesign itself, $(cat live/version.json)"
+          elif [ -d live/v3 ]; then echo "/v3/  : included"; else echo "/v3/  : NOT included"; fi
 
       # ---- STOP BEFORE PUBLISHING IF /v3/ WOULD BE DROPPED --------------------------------------
       # Pages replaces the WHOLE site every run. So an upload with no /v3/ in it does not "skip v3":
@@ -544,6 +573,17 @@ jobs:
       - name: Refuse to publish a site that would drop /v3/
         if: steps.v3checkout.outcome == 'success'
         run: |
+          if [ "${{ steps.v3check.outputs.base }}" = "/" ]; then
+            # the switch: the root must be the delivered redesign, whole, and nothing else
+            { test -f live/index.html && test -f live/version.json && test -f live/404.html && test -f live/CNAME \
+              && cmp -s live/version.json v3/version.json && test -n "$(find live/_nuxt -name '*.js' -print -quit)"; } || {
+              echo "::error::the delivery was built for the root, but what was about to be published is not that delivery, whole."
+              echo "NOTHING WAS PUBLISHED. The live site is untouched and still serves the previous deployment."
+              exit 1
+            }
+            echo "/ is the redesign: $(du -sh live | cut -f1), $(find live -type f | wc -l) files"
+            exit 0
+          fi
           test -f live/v3/index.html || {
             echo "::error::a v3 delivery arrived, but /v3/index.html is not in what was about to be published."
             echo "Publishing this would have replaced the whole site and turned a working /v3/ into a 404."
@@ -578,11 +618,18 @@ jobs:
         if: steps.v3checkout.outcome == 'success'
         run: |
           url="${{ steps.deployment.outputs.page_url }}"
-          url="${url%/}/v3/"
+          if [ "${{ steps.v3check.outputs.base }}" = "/" ]; then url="${url%/}/"; else url="${url%/}/v3/"; fi
           for i in 1 2 3 4 5 6 7 8 9 10; do
             code=$(curl -sS -o /dev/null -w '%{http_code}' -L --max-time 30 "$url" || echo 000)
             echo "try $i: $url -> $code"
-            [ "$code" = "200" ] && exit 0
+            if [ "$code" = "200" ] && [ "${{ steps.v3check.outputs.base }}" = "/" ]; then
+              # at the root a 200 alone proves nothing — the OLD site answers 200 too. The commit
+              # the root reports must be the one that was just delivered.
+              got=$(curl -sS -L --max-time 30 "${url}version.json" || true)
+              echo "      version.json -> $got"
+              [ "$got" = "$(cat v3/version.json)" ] && exit 0
+              code="$code but version.json is not the delivery"
+            elif [ "$code" = "200" ]; then exit 0; fi
             sleep 15
           done
           echo "::error::the site was published but $url does not answer 200 (last answer: $code)."
