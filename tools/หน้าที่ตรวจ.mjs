@@ -297,9 +297,34 @@ export async function เฝ้าข้อผิดพลาด(บริบท
   บริบท.on('requestfinished', จบ)
   บริบท.on('requestfailed', จบ)
   คำขอค้างของบริบท.set(บริบท, ค้าง)
+  // ⭐ ข้อยกเว้นที่ถูกจับไว้ข้างใน (23 พ.ย. 2569) ⇒ Nuxt ครอบ `app:created` กับ `mount` ด้วย try/catch แล้วส่งให้ตัวจัดการของตัวเอง
+  //   ⇒ ถ้าตอนติดโค้ดมีอะไรโยน ⇒ Vue ไม่ติด แต่ ⛔ ขึ้น `window.onerror` ⇒ ตัวเฝ้าข้างบนมองไม่เห็น
+  //   ⇒ ให้ตัวดีบักของเบราว์เซอร์หยุดทุกข้อยกเว้น (รวมที่ถูกจับ) ⇒ จดแล้วปล่อยต่อทันที ⇒ หน้าปกติโยน 0 ครั้ง (วัดแล้ว) ⇒ ⛔ ทำให้ช้า
+  บริบท.on('page', async (แท็บ) => {
+    const จด = []
+    ข้อยกเว้นของแท็บ.set(แท็บ, จด)
+    try {
+      const cdp = await บริบท.newCDPSession(แท็บ)
+      cdp.on('Debugger.paused', (e) => {
+        if (e.reason === 'exception' || e.reason === 'promiseRejection') {
+          const ชั้น = e.callFrames
+            .slice(0, 4)
+            .map((f) => `${f.functionName || '?'}@${f.url.split('/').pop()}:${f.location.lineNumber + 1}:${f.location.columnNumber + 1}`)
+            .join(' < ')
+          จด.push(`${e.reason} ${String(e.data?.description || '').split('\n')[0].slice(0, 150)} ⇐ ${ชั้น}`)
+        }
+        cdp.send('Debugger.resume').catch(() => {})
+      })
+      await cdp.send('Debugger.enable')
+      await cdp.send('Debugger.setPauseOnExceptions', { state: 'all' })
+    } catch {
+      จด.push('เฝ้าข้อยกเว้นไม่ได้')
+    }
+  })
 }
 
 const คำขอค้างของบริบท = new WeakMap()
+const ข้อยกเว้นของแท็บ = new WeakMap()
 
 function คำขอค้างฝั่งเบราว์เซอร์(แท็บ) {
   const ค้าง = คำขอค้างของบริบท.get(แท็บ.context())
@@ -382,7 +407,9 @@ export async function สภาพตอนค้าง(แท็บ) {
         }`,
         `ข้อผิดพลาด ${(window.__pkข้อผิดพลาด || []).slice(0, 3).join(' | ') || (window.__pkข้อผิดพลาด ? 'ไม่มี' : 'ไม่ได้เฝ้า')}`,
       ].join(' · ')
-    })) + ` · คำขอค้างฝั่งเบราว์เซอร์ ${ฝั่งเบราว์เซอร์} · ${await สภาพตัวช่วย(แท็บ)}`
+    })) +
+      ` · คำขอค้างฝั่งเบราว์เซอร์ ${ฝั่งเบราว์เซอร์} · ${await สภาพตัวช่วย(แท็บ)}` +
+      ` · ข้อยกเว้นทั้งหมด (รวมที่ถูกจับ) ${ข้อยกเว้นของแท็บ.has(แท็บ) ? ข้อยกเว้นของแท็บ.get(แท็บ).slice(0, 4).join(' | ') || 'ไม่มี' : 'ไม่ได้เฝ้า'}`
   } catch (เหตุ) {
     return `อ่านสภาพไม่ได้ (${เหตุ.message})`
   }
