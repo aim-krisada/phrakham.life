@@ -35,6 +35,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read   # the wait step below lists this run's artifacts
 
 # One deployment at a time. Do NOT cancel an in-progress deploy: a cancelled
 # deploy-pages run can leave the Pages backend mid-deployment, and the next push
@@ -598,6 +599,29 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: live
+      # ---- wait until GitHub can see the upload -----------------------------------------------
+      # deploy-pages asks for this run's "github-pages" artifact a second after the upload ends.
+      # On 23 Nov 2026 that question came back "found 0 artifacts" twice in a row, while the same
+      # artifact (432 MB) was listed fine minutes later — the listing lags the upload. The site
+      # stayed on the previous deployment both times, so nothing broke, but the delivery never
+      # shipped. This step asks the same question first and only lets deploy-pages run once the
+      # answer is yes. ⛔ It never skips the deploy: if the artifact still is not listed after the
+      # wait, the run fails here, loudly, exactly as it would have failed one step later.
+      - name: Wait until GitHub lists the uploaded artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 24); do
+            n=$(curl -sS -H "Authorization: Bearer $GH_TOKEN" \
+                  "${{ github.api_url }}/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?name=github-pages" \
+                | python3 -c 'import json,sys; print(json.load(sys.stdin).get("total_count", 0))' || echo 0)
+            echo "try $i: github-pages artifacts listed = $n"
+            [ "$n" -ge 1 ] && exit 0
+            sleep 5
+          done
+          echo "::error::the github-pages artifact was uploaded but GitHub still does not list it after 2 minutes. Nothing was published; the site still serves the previous deployment."
+          exit 1
+
       - id: deployment
         uses: actions/deploy-pages@v4
 
