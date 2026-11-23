@@ -1,0 +1,126 @@
+{
+  "หน้าแรก": "http://127.0.0.1:5396/phrakham/",
+  "ที่manifest": "http://127.0.0.1:5396/phrakham/manifest.webmanifest",
+  "ผิดรูปแบบ": [],
+  "installabilityErrors": [],
+  "manifest": {
+    "name": "พระคำ.ชีวิต",
+    "short_name": "พระคำ.ชีวิต",
+    "lang": "th",
+    "dir": "ltr",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#fcf9f3",
+    "theme_color": "#fcf9f3",
+    "related_applications": [
+      {
+        "platform": "webapp",
+        "url": "manifest.webmanifest"
+      }
+    ],
+    "icons": [
+      {
+        "src": "icons/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
+  },
+  "ป้าย": {
+    "ชื่อiPhone": "พระคำ.ชีวิต",
+    "สีแถบ": "#fcf9f3",
+    "รูปiPhone": "http://127.0.0.1:5396/phrakham/icons/apple-touch-icon.png",
+    "มีลิงก์manifest": true,
+    "favicon": [
+      {
+        "ที่": "http://127.0.0.1:5396/phrakham/favicon.ico",
+        "ชนิด": null,
+        "ขนาด": "16x16 32x32 48x48"
+      },
+      {
+        "ที่": "http://127.0.0.1:5396/phrakham/icons/favicon-32.png",
+        "ชนิด": "image/png",
+        "ขนาด": "32x32"
+      }
+    ]
+  },
+  "รูป": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any",
+      "ที่": "http://127.0.0.1:5396/phrakham/icons/icon-192.png",
+      "สถานะ": 200,
+      "ชนิด": "image/png",
+      "กว้าง": 192,
+      "สูง": 192
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any",
+      "ที่": "http://127.0.0.1:5396/phrakham/icons/icon-512.png",
+      "สถานะ": 200,
+      "ชนิด": "image/png",
+      "กว้าง": 512,
+      "สูง": 512
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable",
+      "ที่": "http://127.0.0.1:5396/phrakham/icons/icon-512.png",
+      "สถานะ": 200,
+      "ชนิด": "image/png",
+      "กว้าง": 512,
+      "สูง": 512
+    }
+  ],
+  "รูปiPhone": {
+    "สถานะ": 200,
+    "ชนิด": "image/png",
+    "กว้าง": 180,
+    "สูง": 180
+  },
+  "favicon": [
+    {
+      "ที่": "http://127.0.0.1:5396/phrakham/favicon.ico",
+      "ชนิด": null,
+      "ขนาด": "16x16 32x32 48x48"
+    },
+    {
+      "ที่": "http://127.0.0.1:5396/phrakham/icons/favicon-32.png",
+      "ชนิด": "image/png",
+      "ขนาด": "32x32"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "manifest.webmanifest"
+    }
+  ],
+  "serviceWorker": [
+    {
+      "ขอบเขต": "http://127.0.0.1:5396/phrakham/",
+      "ไฟล์": "http://127.0.0.1:5396/phrakham/sw.js?b=d5f9f5d4-0b01-4b02-8a20-b9ec9d8e50b8"
+    }
+  ]
+}
