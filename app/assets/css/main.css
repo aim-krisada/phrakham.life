@@ -5598,6 +5598,28 @@ body:has(.pk-แผ่นเนื้อความ) {
   text-indent: 0;
   white-space: normal;
 }
+/* ⭐ หัวข้อชั้นอื่น (`หัวรอง` ใน `app/utils/หัวข้อย่อย.ts`) ⇒ หน้าตาตามชั้น ⛔ ไม่ใหญ่กว่าหัวข้อ `s1`
+     ⇒ `ms` `ms1` หัวแบ่งตอนใหญ่ ⇒ หนาเท่า s1 · `s2` หัวข้อรอง ⇒ หนาน้อยกว่า
+     ⇒ `mr` ช่วงของตอนใหญ่ กับ `sp` ชื่อผู้พูด ⇒ สีอ่อน ตัวเล็ก ⇒ เป็นป้ายกำกับ ⛔ ไม่ใช่หัวเรื่อง */
+.pk-หัวรอง {
+  margin: 0 0 calc(var(--pk-ช่วงบรรทัด, 2.26rem) * 0.15);
+  font-size: max(12px, 0.9em);
+  line-height: 1.5;
+  color: var(--color-pk-ink);
+  text-indent: 0;
+  white-space: normal;
+}
+.pk-หัวรอง[data-ป้าย='ms'],
+.pk-หัวรอง[data-ป้าย='ms1'] {
+  font-weight: 700;
+}
+.pk-หัวรอง[data-ป้าย='s2'] {
+  font-weight: 600;
+}
+.pk-หัวรอง[data-ป้าย='mr'],
+.pk-หัวรอง[data-ป้าย='sp'] {
+  color: var(--color-pk-ink-soft);
+}
 .pk-คู่ขนาน {
   display: table;
   margin: 0.15rem 0 calc(var(--pk-ช่วงบรรทัด, 2.26rem) * 0.25);
