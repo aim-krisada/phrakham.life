@@ -521,6 +521,39 @@ jobs:
           echo "size  : $(du -sh live | cut -f1)"
           if [ -d live/v3 ]; then echo "/v3/  : included"; else echo "/v3/  : NOT included"; fi
 
+      # ---- STOP BEFORE PUBLISHING IF /v3/ WOULD BE DROPPED --------------------------------------
+      # Pages replaces the WHOLE site every run. So an upload with no /v3/ in it does not "skip v3":
+      # it DELETES a /v3/ that was serving a minute ago. That is exactly what happened on 8 Sep 2026
+      # — v3check refused a good delivery over a stale rule, the upload went ahead without /v3/, and
+      # phrakham.life/v3/ was a 404 for six days.
+      #
+      # The step that used to cover this ran AFTER the deployment: it only refused to call the run a
+      # success, once the damage was already on the web. The damage is what has to be stopped, so
+      # this refuses to publish at all. ⛔ Do not move it below the upload again.
+      #
+      # WHAT NOT PUBLISHING COSTS, AND WHY IT IS THE CHEAPER SIDE: Pages keeps serving the previous
+      # deployment, so root AND /v3/ stay exactly as they are and nothing on the web changes. A root
+      # change waits for the next run. That is one delayed root change against a live section of the
+      # site going 404 — and root is a Quarto site committed as finished HTML, so it changes rarely,
+      # while /v3/ is delivered on every ปล่อยเว็บ press.
+      # ⇒ a wrong red now costs a delay, not an outage. That is what lets the check above stay a
+      #   judgement call instead of something that must never be wrong.
+      #
+      # It reads the FILE that is about to be uploaded, not the outcome of an earlier step. A copy
+      # that silently did nothing looks identical to a check that failed, and both must stop here.
+      - name: Refuse to publish a site that would drop /v3/
+        if: steps.v3checkout.outcome == 'success'
+        run: |
+          test -f live/v3/index.html || {
+            echo "::error::a v3 delivery arrived, but /v3/index.html is not in what was about to be published."
+            echo "Publishing this would have replaced the whole site and turned a working /v3/ into a 404."
+            echo "NOTHING WAS PUBLISHED. The live site is untouched and still serves the previous deployment."
+            echo "Read the v3check step above for what was wrong with the delivery, fix it on aimgit,"
+            echo "then press ปล่อยเว็บ again."
+            exit 1
+          }
+          echo "/v3/ is in the upload: $(du -sh live/v3 | cut -f1), $(find live/v3 -type f | wc -l) files"
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -528,16 +561,31 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 
-      # ---- a delivery that arrived but did not ship must be LOUD -------------------------------
-      # Pages replaces the WHOLE site every run. So if `v3-dist` was delivered but failed its check,
-      # the upload above simply has no /v3/ in it — and a /v3/ that was working five minutes ago
-      # becomes a 404, with every check mark still green because v3check is continue-on-error.
-      #
-      # This runs AFTER the deployment on purpose: the live root has already shipped, which is the
-      # property we must never trade away. All this does is refuse to call the run a success.
-      - name: Fail if a v3 delivery arrived but did not make it onto the site
-        if: steps.v3checkout.outcome == 'success' && steps.v3check.outcome != 'success'
+      # ---- ask the web, not ourselves ----------------------------------------------------------
+      # Everything above reasons about files in the runner. This opens the address a reader opens
+      # and insists on a page. It is the only line here that can catch a way of losing /v3/ that
+      # nobody thought of — a bad upload, a Pages setting changed by hand, a path that does not
+      # survive publishing. ⛔ Do not turn it into a warning: a warning is what let 8 Sep 2026 sit
+      # unnoticed for six days.
+      # Nothing can be undone at this point, so a red here does not protect the site — it is how a
+      # person finds out the same hour instead of the next time they happen to look.
+      # Pages needs a moment to start serving what was just uploaded, so this waits rather than
+      # trusting the first answer.
+      # ⛔ The step that used to sit here — "a delivery arrived but did not ship" — is gone on
+      # purpose, not by accident: the gate above the upload now stops that run before it publishes,
+      # so a step below the upload could never have been reached to say it.
+      - name: Check the published site really serves /v3/
+        if: steps.v3checkout.outcome == 'success'
         run: |
-          echo "::error::v3-dist was delivered but failed its check, so /v3/ is NOT on the site."
-          echo "The root shipped normally. Fix the delivery on aimgit and press ปล่อยเว็บ again."
+          url="${{ steps.deployment.outputs.page_url }}"
+          url="${url%/}/v3/"
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            code=$(curl -sS -o /dev/null -w '%{http_code}' -L --max-time 30 "$url" || echo 000)
+            echo "try $i: $url -> $code"
+            [ "$code" = "200" ] && exit 0
+            sleep 15
+          done
+          echo "::error::the site was published but $url does not answer 200 (last answer: $code)."
+          echo "A reader opening the redesign right now gets nothing. Check Settings › Pages and the"
+          echo "upload list in the report step above."
           exit 1
