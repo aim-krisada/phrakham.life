@@ -12,6 +12,7 @@
 //   ③ สดุดี 3 ไม่มีหัวข้อ `s1` ⇒ **⛔ ต้องไม่มีหัวข้อเปล่า (h3 ว่าง)** ในหน้า
 //   ④ ฮาบากุก 3 มีทั้งหัวข้อและหัวสดุดีที่จุดเดียวกัน ⇒ **เห็นทั้งสองอย่าง**
 //   ⑤ หัวข้อชั้นอื่น (`หัวรอง` ⇒ ms ms1 mr s2 sp) ⇒ สดุดี 42 · เพลงซาโลมอน 1 ⇒ เปิดสวิตช์เห็นครบ · ปิดสวิตช์หายหมด แต่หัวสดุดียังอยู่
+//   ⑥ คำนำเล่มของผู้แปล (`คำนำ`) ⇒ ปฐมกาล 1 THKJV ⇒ กล่องพับ 1 กล่อง กดเปิดแล้วย่อหน้าครบตัวหนังสือตรง · ปิดสวิตช์แล้วหาย
 //
 // **พิสูจน์ว่าด่านแดงได้จริง** ⇒ `node tools/ด่านหัวสดุดีบนหน้า.mjs <ที่อยู่เว็บ> --ทดสอบตัวเอง`
 //   ⇒ ยัดกฎซ่อนหัวสดุดี ⇒ **ข้อ ① ต้องแดง**
@@ -130,6 +131,35 @@ if (!ทดสอบตัวเอง) {
       const ได้ = await อ่านหัวรอง(แท็บ)
       if (ได้.length) ที่ตก.push(`⑤ ${กุญแจ} ปิดสวิตช์หัวข้อ ⇒ ยังเห็นหัวรอง ${ได้.length} อัน`)
       if (กุญแจ === 'PSA/42' && !(await อ่านหน้า(แท็บ)).สดุดี.length) ที่ตก.push('⑤ PSA/42 ปิดสวิตช์ ⇒ หัวสดุดีหายไปด้วย')
+      await ctx.close()
+    }
+  }
+  // ── ⑥ คำนำเล่มของผู้แปล ⇒ ปฐมกาล 1 ฉบับ THKJV ⇒ กล่องพับขึ้น 1 กล่อง · กดเปิดแล้วย่อหน้าครบตัวหนังสือตรง · ปิดสวิตช์แล้วหาย
+  {
+    const ส่ง = await (await fetch(`${ฐาน}/api/chapter/GEN/1.json`)).json()
+    const คาด = (ส่ง.หัวข้อ?.THKJV || []).flatMap((ห) => (ห.คำนำ || []).map((ย) => ตัด(ย.ตัวหนังสือ)))
+    if (!คาด.length) ที่ตก.push('⑥ GEN/1 ⇒ หลังบ้านไม่ส่งคำนำเล่มของ THKJV มาเลย ⇒ ตัวพ่นอ่านป้าย ip ไม่ออก')
+    for (const หัวเปิด of [true, false]) {
+      const ctx = await เบราว์เซอร์.newContext({ viewport: { width: 1280, height: 900 } })
+      await ctx.addInitScript((v) => localStorage.setItem('phrakham.view', JSON.stringify(v)), { จัดวาง: 'แยกตามข้อ', หัวข้อย่อย: หัวเปิด, คู่ขนาน: หัวเปิด })
+      const แท็บ = await ctx.newPage()
+      await แท็บ.goto(`${ฐาน}/read/GEN/?c=1&t=THKJV`, { waitUntil: 'domcontentloaded' })
+      await แท็บ.waitForSelector('article.pk-เนื้อ h1')
+      await รอโค้ดของเว็บติด(แท็บ)
+      await แท็บ.waitForTimeout(300)
+      const กล่อง = แท็บ.locator('details.pk-คำนำเล่ม').filter({ visible: true })
+      const n = await กล่อง.count()
+      if (!หัวเปิด) {
+        if (n) ที่ตก.push(`⑥ GEN/1 ปิดสวิตช์หัวข้อ ⇒ ยังเห็นคำนำเล่ม ${n} กล่อง`)
+      } else if (n !== 1) ที่ตก.push(`⑥ GEN/1 THKJV ⇒ เห็นกล่องคำนำเล่ม ${n} กล่อง ⛔ ต้องเป็น 1`)
+      else {
+        await กล่อง.first().locator('summary').click()
+        const ย่อ = await กล่อง.first().evaluate((d) =>
+          [...d.querySelectorAll('p')].filter((p) => p.getClientRects().length).map((p) => (p.textContent || '').replace(/​/g, '').trim()),
+        )
+        if (ย่อ.length !== คาด.length || ย่อ.some((x, i) => x !== คาด[i]))
+          ที่ตก.push(`⑥ GEN/1 THKJV ⇒ เปิดกล่องแล้วเห็น ${ย่อ.length} ย่อหน้า ⛔ ไม่ตรงที่ส่งมา ${คาด.length} ย่อหน้า`)
+      }
       await ctx.close()
     }
   }

@@ -642,6 +642,7 @@ stages:
   artifacts:
     paths:
       - _พ่น/คำพระเยซู.json.gz
+      - _พ่น/ช่วงเน้น.json.gz
     expire_in: 1 day
 
 # ---------------------------------------------------------------------------
@@ -1231,6 +1232,25 @@ stages:
     - node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
     - node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
     - node tools/ด่านหัวสดุดีบนหน้า.mjs http://127.0.0.1:5396/phrakham --ทดสอบตัวเอง
+
+# ตัวเอียง (คำที่ผู้แปลเติม) กับ LORD ของ KJV ⇒ ขึ้นครบ ตัวหนังสือตรง ตาเห็นจริง ⇒ เหตุผลอยู่หัว `tools/ด่านช่วงเน้นบนหน้า.mjs`
+ด่านช่วงเน้นบนหน้า:
+  stage: ตรวจ
+  <<: [*browser, *ui_changed]
+  needs: ['สร้างเว็บ']
+  script:
+    - node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
+    - node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
+    - node tools/ด่านช่วงเน้นบนหน้า.mjs http://127.0.0.1:5396/phrakham
+
+ด่านช่วงเน้นบนหน้ายังจับได้:
+  stage: ตรวจ
+  <<: [*browser, *ui_changed]
+  needs: ['สร้างเว็บ']
+  script:
+    - node tools/เสิร์ฟเว็บที่สร้างเสร็จ.mjs .output/public /phrakham 5396 &
+    - node tools/รอให้ที่อยู่ตอบ.mjs http://127.0.0.1:5396/phrakham/
+    - node tools/ด่านช่วงเน้นบนหน้า.mjs http://127.0.0.1:5396/phrakham --ทดสอบตัวเอง
 
 # ---------------------------------------------------------------------------
 # ด่าน ③ — ไม่เลื่อนซ้ายขวา (WCAG 2.2 SC 1.4.10 กับ SC 1.4.4 ระดับ AA)

@@ -5601,6 +5601,24 @@ body:has(.pk-แผ่นเนื้อความ) {
 /* ⭐ หัวข้อชั้นอื่น (`หัวรอง` ใน `app/utils/หัวข้อย่อย.ts`) ⇒ หน้าตาตามชั้น ⛔ ไม่ใหญ่กว่าหัวข้อ `s1`
      ⇒ `ms` `ms1` หัวแบ่งตอนใหญ่ ⇒ หนาเท่า s1 · `s2` หัวข้อรอง ⇒ หนาน้อยกว่า
      ⇒ `mr` ช่วงของตอนใหญ่ กับ `sp` ชื่อผู้พูด ⇒ สีอ่อน ตัวเล็ก ⇒ เป็นป้ายกำกับ ⛔ ไม่ใช่หัวเรื่อง */
+/* ⭐ คำนำเล่มของผู้แปล (`คำนำ` ใน `app/utils/หัวข้อย่อย.ts`) ⇒ กล่องพับเหนือบทที่ 1 ⇒ ตัวเล็กกว่าตัวบท สีอ่อน */
+.pk-คำนำเล่ม {
+  margin: 0 0 calc(var(--pk-ช่วงบรรทัด, 2.26rem) * 0.3);
+  font-size: max(12px, 0.9em);
+  line-height: 1.6;
+  color: var(--color-pk-ink-soft);
+  text-indent: 0;
+  white-space: normal;
+}
+.pk-คำนำเล่ม > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-pk-ink);
+  min-height: 24px;
+}
+.pk-คำนำเล่ม > p {
+  margin: 0.4em 0 0;
+}
 .pk-หัวรอง {
   margin: 0 0 calc(var(--pk-ช่วงบรรทัด, 2.26rem) * 0.15);
   font-size: max(12px, 0.9em);
@@ -5649,4 +5667,15 @@ body:has(.pk-แผ่นเนื้อความ) {
   color: var(--color-pk-accent);
   text-decoration: underline;
   text-underline-offset: 0.2em;
+}
+
+/* ⭐ ช่วงเน้นของเจ้าของฉบับ (`ผ่าตามช่วงเน้น` ใน `app/utils/คำพระเยซู.ts`) ⇒ หน้าตาตามที่ฉบับพิมพ์ของเจ้าของใช้มาตลอด
+     ⇒ คำเติม (`<add>` ของ KJV) ⇒ ตัวเอียง ⇒ บอกว่าคำนี้ผู้แปลเติม ⛔ ไม่มีในต้นฉบับ
+     ⇒ พระนาม (`<nd>` ⇒ LORD แทน YHWH) ⇒ ตัวพิมพ์ใหญ่ขนาดเล็ก */
+.pk-คำเติม {
+  font-style: italic;
+}
+.pk-พระนาม {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.02em;
 }

@@ -15,7 +15,7 @@
 // ⭐ `ป้าย` ⇒ ป้ายเล็กหน้าข้อตอนวางบนล่าง (`data-ป้ายบนล่าง`) ⇒ ตาเห็นจาก CSS ⛔ ไม่อยู่ในตัวหนังสือของข้อ
 //   ⇒ โปรแกรมอ่านหน้าจอได้ยินชื่อเต็มจากกล่องที่ครอบอยู่แล้ว ⇒ ⛔ ไม่ได้ยินซ้ำ (กฎอยู่ที่ `main.css` หัวข้อ *วางบนล่างบนจอแคบ*)
 import type { ComputedRef } from 'vue'
-import type { ชิ้นเนื้อ } from '~/utils/คำพระเยซู'
+import { คลาสของชิ้น, type ชิ้นเนื้อ } from '~/utils/คำพระเยซู'
 import { เยื้องบรรทัดแรก, type ย่อหน้า } from '~/utils/ย่อหน้า'
 import { หัวข้อตามข้อ, type หัวข้อย่อย } from '~/utils/หัวข้อย่อย'
 import { เลขบนคำ } from '~/utils/เลขStrong'
@@ -147,7 +147,7 @@ const กำลังอ่าน = (บท: number, เลข: string) =>
     <span class="pk-เฉพาะเสียง">{{ ป้าย || ต.ชื่อฉบับ }}: </span
     ><sup class="pk-เลขข้อ">{{ ต.แถว[แถวที่]!.ป้าย }}</sup
     ><template v-for="(ชิ้น, j) in ต.แถว[แถวที่]!.ชิ้น" :key="j"
-      ><span v-if="ชิ้น.พระเยซู" class="pk-คำพระเยซู">{{ ชิ้น.ตัวหนังสือ }}</span
+      ><span v-if="ชิ้น.พระเยซู || ชิ้น.เน้น" :class="คลาสของชิ้น(ชิ้น)">{{ ชิ้น.ตัวหนังสือ }}</span
       ><template v-else>{{ ชิ้น.ตัวหนังสือ }}</template></template
     >
   </p>
@@ -176,7 +176,7 @@ const กำลังอ่าน = (บท: number, เลข: string) =>
           v-bind="ของเลือก(ท.บท, ท.เลข, ท.ท่อนแรก)"
           ><sup v-if="ท.ป้าย" class="pk-เลขข้อ">{{ ท.ป้าย }}</sup
           ><template v-for="(ชิ้น, j) in ท.ชิ้น" :key="j"
-            ><span v-if="ชิ้น.พระเยซู" class="pk-คำพระเยซู">{{ ชิ้น.ตัวหนังสือ }}</span
+            ><span v-if="ชิ้น.พระเยซู || ชิ้น.เน้น" :class="คลาสของชิ้น(ชิ้น)">{{ ชิ้น.ตัวหนังสือ }}</span
             ><template v-else>{{ ชิ้น.ตัวหนังสือ }}</template></template
           ></span
         ><template v-if="t < ย.ท่อน.length - 1">{{ ' ' }}</template></template
@@ -203,7 +203,7 @@ const กำลังอ่าน = (บท: number, เลข: string) =>
             v-bind="ของเลือก(ท.บท, ท.เลข, ท.ท่อนแรก)"
             ><sup v-if="ท.ป้าย" class="pk-เลขข้อ">{{ ท.ป้าย }}</sup
             ><template v-for="(ชิ้น, j) in ท.ชิ้น" :key="j"
-              ><span v-if="ชิ้น.พระเยซู" class="pk-คำพระเยซู">{{ ชิ้น.ตัวหนังสือ }}</span
+              ><span v-if="ชิ้น.พระเยซู || ชิ้น.เน้น" :class="คลาสของชิ้น(ชิ้น)">{{ ชิ้น.ตัวหนังสือ }}</span
               ><template v-else>{{ ชิ้น.ตัวหนังสือ }}</template></template
             ></span
           >{{ ' ' }}</template
@@ -225,7 +225,7 @@ const กำลังอ่าน = (บท: number, เลข: string) =>
         v-bind="ของเลือก(x.บท, x.เลข)"
         ><sup class="pk-เลขข้อ">{{ x.ป้าย }}</sup
         ><template v-for="(ชิ้น, j) in x.ชิ้น" :key="j"
-          ><span v-if="ชิ้น.พระเยซู" class="pk-คำพระเยซู">{{ ชิ้น.ตัวหนังสือ }}</span
+          ><span v-if="ชิ้น.พระเยซู || ชิ้น.เน้น" :class="คลาสของชิ้น(ชิ้น)">{{ ชิ้น.ตัวหนังสือ }}</span
           ><template v-else>{{ ชิ้น.ตัวหนังสือ }}</template></template
         ></span
       >{{ ' ' }}</template
@@ -247,7 +247,7 @@ const กำลังอ่าน = (บท: number, เลข: string) =>
     >
       <sup class="pk-เลขข้อ">{{ x.ป้าย }}</sup
       ><template v-for="(ชิ้น, j) in x.ชิ้น" :key="j"
-        ><span v-if="ชิ้น.พระเยซู" class="pk-คำพระเยซู">{{ ชิ้น.ตัวหนังสือ }}</span
+        ><span v-if="ชิ้น.พระเยซู || ชิ้น.เน้น" :class="คลาสของชิ้น(ชิ้น)">{{ ชิ้น.ตัวหนังสือ }}</span
         ><template v-else>{{ ชิ้น.ตัวหนังสือ }}</template></template
       >
     </p>
