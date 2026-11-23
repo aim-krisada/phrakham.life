@@ -5695,3 +5695,43 @@ body:has(.pk-แผ่นเนื้อความ) {
   font-variant-caps: all-small-caps;
   letter-spacing: 0.02em;
 }
+
+/* ==========================================================================
+   ⭐ **หน้า *ยังไม่พบหน้านี้*** (ใบ https://aimgit.aimagin.com/v3/phrakham/-/issues/179 ข้อ 4) ⇒ เหตุผลอยู่หัว `app/error.vue`
+   ⇒ แผ่นกับโต๊ะมาจาก `pk-แผ่นเนื้อความ` ⇒ ปุ่มมาจากปุ่มกลาง ⇒ ที่นี่จัดแค่ระยะห่าง ⛔ หน้าตาใหม่
+   ⇒ ลิงก์ตัวหนังสือของก้อนอังกฤษสูง ≥ 44 จุดเหมือนลิงก์บนหน้าบทความ (WCAG 2.2 SC 2.5.8)
+   **ตัวเฝ้า** ⇒ `tools/ด่านหน้าไม่พบ.mjs`
+   ========================================================================== */
+.pk-หน้าไม่พบ h1 {
+  margin-top: 1.5rem;
+}
+.pk-หน้าไม่พบ .pk-ทางไปต่อ {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+.pk-หน้าไม่พบ .pk-ทางไปต่อ .pk-ปุ่มชุด:not(.pk-ปุ่มหลัก) {
+  /* ⭐ ปุ่มกรอบ ⇒ สูงเท่าปุ่มหลักข้าง ๆ (ขนาดของปุ่มหลักมาจาก `.pk-ปุ่มหลัก` ⛔ ตั้งใหม่) */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.55rem 1.6rem;
+  text-decoration: none;
+}
+.pk-หน้าไม่พบ .pk-ก้อนอังกฤษ {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-pk-hairline);
+}
+.pk-หน้าไม่พบ .pk-ก้อนอังกฤษ h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1em;
+}
+.pk-หน้าไม่พบ .pk-ก้อนอังกฤษ .pk-ทางไปต่อ a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--color-pk-accent);
+}
