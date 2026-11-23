@@ -33,6 +33,7 @@
 import { chromium } from 'playwright'
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
+import { เฝ้าข้อผิดพลาด, สภาพตอนค้าง } from './หน้าที่ตรวจ.mjs'
 
 const ฐาน = (process.argv[2] || 'http://127.0.0.1:5396/phrakham').replace(/\/+$/, '')
 const ทดสอบตัวเอง = process.argv.includes('--ทดสอบตัวเอง')
@@ -50,6 +51,7 @@ const สีกระดาษ = (() => {
 /** ตรวจหน้าแรก 1 รอบในบริบทที่ให้มา ⇒ คืน { ตก, หลักฐาน } */
 async function ตรวจ(ctx) {
   const ตก = []
+  await เฝ้าข้อผิดพลาด(ctx)
   const แท็บ = await ctx.newPage()
   const หน้าแรก = ฐาน + '/'
   await แท็บ.goto(หน้าแรก, { waitUntil: 'load' })
@@ -199,7 +201,13 @@ async function ตรวจ(ctx) {
     .catch(() => [])
   หลักฐาน.serviceWorker = ตัวช่วย
   const ของเรา = ตัวช่วย.find((r) => r.ขอบเขต === หน้าแรก)
-  if (!ของเรา) ตก.push(`⑥ ⛔ มีตัวช่วยออฟไลน์ขอบเขต ${หน้าแรก} ⇒ ที่ลงทะเบียนอยู่ ${JSON.stringify(ตัวช่วย.map((r) => r.ขอบเขต))}`)
+  // ⭐ 23 พ.ย. 2569 ⇒ ท่อ 45090693070 ล้มข้อนี้แบบสุ่ม ⇒ เว็บลงทะเบียนตัวช่วยหลัง Vue ติดเท่านั้น ⇒ จดสภาพหน้าด้วย ⇒ แยกได้ว่าหน้าค้างหรือลงทะเบียนพลาด
+  if (!ของเรา)
+    ตก.push(
+      `⑥ ⛔ มีตัวช่วยออฟไลน์ขอบเขต ${หน้าแรก} ⇒ ที่ลงทะเบียนอยู่ ${JSON.stringify(ตัวช่วย.map((r) => r.ขอบเขต))}` +
+        `
+   ⇒ สภาพหน้า: ${await สภาพตอนค้าง(แท็บ)}`,
+    )
   else if (!ของเรา.ไฟล์.startsWith(หน้าแรก + 'sw.js')) ตก.push(`⑥ ไฟล์ตัวช่วยออฟไลน์ ${ของเรา.ไฟล์} ⛔ อยู่ใต้ฐาน ${หน้าแรก}`)
 
   await แท็บ.close()
