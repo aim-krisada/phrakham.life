@@ -12,11 +12,19 @@
 import { ref, watch } from 'vue'
 import { เปิดเป็นแอป } from '~/composables/ติดตั้งแอป'
 import { ตัดสินสถานะ, type สถานะออฟไลน์ } from '~/utils/สถานะออฟไลน์'
+import { ภาพเสียง, ตัดสินของใหม่, type รายการเสียง } from '~/utils/ของใหม่'
+import { ถ้อยคำติดตั้งแอป } from '~/utils/ถ้อยคำติดตั้งแอป'
 
 export const สถานะออฟไลน์ = ref<สถานะออฟไลน์>({ แบบ: 'ไม่มี' })
 /** × บนบรรทัดเขียว ⇒ จำในเครื่องนี้ */
 export const ปิดบรรทัดพร้อมแล้ว = ref(false)
 const กุญแจปิดบรรทัด = 'phrakham.offline-ready-dismissed'
+// ⭐ ใบ #187 ⇒ ของที่ผู้อ่านเห็นแล้ว ⇒ จดตอนเปิดแอปครั้งแรกที่พร้อม และทุกครั้งที่กด × บนบรรทัดเขียว
+//   ⇒ รุ่น = `รุ่น` ของ `offline.json` (เปลี่ยนเมื่อไฟล์ไหนเปลี่ยน) · เสียง = `ภาพเสียง()` ของ `api/audio.json`
+const กุญแจรุ่นที่เห็น = 'phrakham.update-seen-build'
+const กุญแจเสียงที่เห็น = 'phrakham.update-seen-audio'
+/** ของรุ่นที่อยู่ในเครื่องตอนนี้ ⇒ อ่านจากแคชตัวบท ⇒ ใช้ตอนกด × */
+let ของรุ่นนี้: { รุ่น: string; เสียง: string[] } | null = null
 
 let ฐาน = '/'
 let เริ่มแล้ว = false
@@ -58,10 +66,31 @@ function ชื่อแคชตัวบท(scopePath: string) {
 
 export function ปิดบรรทัดพร้อม() {
   ปิดบรรทัดพร้อมแล้ว.value = true
+  // ⭐ ใบ #187 เกณฑ์ข้อ 2 ⇒ ปิดแล้ว ⇒ ไม่ขึ้นซ้ำจนกว่าจะมีรุ่นใหม่อีก
+  if (สถานะออฟไลน์.value.อัปเดต) สถานะออฟไลน์.value = { ...สถานะออฟไลน์.value, อัปเดต: undefined }
   try {
+    if (ของรุ่นนี้) จำของที่เห็น(ของรุ่นนี้)
     localStorage.setItem(กุญแจปิดบรรทัด, '1')
   } catch {
     /* โหมดส่วนตัว ⇒ จำแค่รอบนี้ */
+  }
+}
+
+function จำของที่เห็น(ของ: { รุ่น: string; เสียง: string[] }) {
+  localStorage.setItem(กุญแจรุ่นที่เห็น, ของ.รุ่น)
+  localStorage.setItem(กุญแจเสียงที่เห็น, JSON.stringify(ของ.เสียง))
+}
+
+/** ⭐ ใบ #187 ⇒ คำตัดสินอยู่ที่ `ตัดสินของใหม่()` ⇒ ที่นี่แค่อ่านและจดในเครื่อง */
+function ดูของใหม่(ของ: { รุ่น: string; เสียง: string[] }, หนังสือ: Map<string, string>): string[] | undefined {
+  try {
+    const เสียงเดิม = JSON.parse(localStorage.getItem(กุญแจเสียงที่เห็น) || '[]') as string[]
+    const ได้ = ตัดสินของใหม่(localStorage.getItem(กุญแจรุ่นที่เห็น), เสียงเดิม, ของ, (รหัส) => หนังสือ.get(รหัส), ถ้อยคำติดตั้งแอป)
+    if (ได้.ต้องจด) จำของที่เห็น(ของ)
+    return ได้.อัปเดต
+  } catch {
+    /* โหมดส่วนตัว ⇒ จำไม่ได้ ⇒ ⛔ บอกว่าอัปเดต (ทุกครั้งจะเป็นครั้งแรก) */
+    return undefined
   }
 }
 
@@ -160,6 +189,8 @@ async function อ่านจากเครื่อง() {
   let ทั้งหมด = 0
   let มีแล้ว = 0
   let เต็ม = เต็มรอบนี้
+  let ของ: { รุ่น: string; เสียง: string[] } | null = null
+  const หนังสือ = new Map<string, string>()
   try {
     if (await caches.has(ชื่อ)) {
       const c = await caches.open(ชื่อ)
@@ -171,11 +202,18 @@ async function อ่านจากเครื่อง() {
       ทั้งหมด = ไฟล์.length
       for (const [ทาง, ลาย] of ไฟล์) if (สมุด[ทาง] === ลาย && กุญแจ.has(ที่(ทาง))) มีแล้ว++
       if (สถานะ?.เต็มเมื่อ && มีแล้ว < ทั้งหมด) เต็ม = true
+      // ⭐ ใบ #187 ⇒ รายการเสียงกับชื่อเล่มของรุ่นนี้ ⇒ อยู่ในแคชตัวบทแล้ว (`tools/สร้างรายการออฟไลน์.mjs`) ⇒ ⛔ ยิงเน็ตเพิ่ม
+      if (typeof รายการ?.รุ่น === 'string') {
+        const เสียง = (await อ่านJSON(c, ที่('api/audio.json'))) as รายการเสียง | null
+        const เล่ม = (await อ่านJSON(c, ที่('api/books.json'))) as { เล่ม?: { รหัส: string; ชื่อไทย: string }[] } | null
+        ของ = { รุ่น: รายการ.รุ่น, เสียง: ภาพเสียง(เสียง) }
+        for (const x of เล่ม?.เล่ม || []) หนังสือ.set(x.รหัส, x.ชื่อไทย)
+      }
     }
   } catch {
     /* ที่เก็บถูกปิด */
   }
-  return { ...พื้น, ตัวช่วยทำงาน: !!reg?.active, ทั้งหมด, มีแล้ว, เต็ม }
+  return { ...พื้น, ตัวช่วยทำงาน: !!reg?.active, ทั้งหมด, มีแล้ว, เต็ม, ของ, หนังสือ }
 }
 
 let กำลังอ่าน: Promise<void> | null = null
@@ -188,7 +226,11 @@ export async function อ่านสถานะ() {
   กำลังอ่าน = (async () => {
     do {
       อ่านอีก = false
-      สถานะออฟไลน์.value = ตัดสินสถานะ(await อ่านจากเครื่อง())
+      const d = await อ่านจากเครื่อง()
+      const s = ตัดสินสถานะ(d)
+      ของรุ่นนี้ = 'ของ' in d ? d.ของ : null
+      if (s.แบบ === 'พร้อม' && ของรุ่นนี้) s.อัปเดต = ดูของใหม่(ของรุ่นนี้, d.หนังสือ)
+      สถานะออฟไลน์.value = s
     } while (อ่านอีก)
   })()
   try {
