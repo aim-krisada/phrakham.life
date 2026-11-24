@@ -9,7 +9,7 @@
 //
 // ⭐ **ที่เก็บในเครื่อง ⇒ กุญแจขึ้นต้น `phrakham.`** ⇒ ท่าเดียวกับ `app/utils/มุมมอง.ts` ⇒ ⛔ เก็บได้ (โหมดส่วนตัว) ⇒ เงียบ ⇒ จำแค่รอบนี้
 import { ref } from 'vue'
-import { วางแผนติดตั้ง, type แผ่นติดตั้ง } from '~/utils/ติดตั้งแอป'
+import { วางแผนติดตั้ง, กุญแจติดตั้งแอป, type แผ่นติดตั้ง } from '~/utils/ติดตั้งแอป'
 
 /** หน้าต่างติดตั้งของเบราว์เซอร์ (`beforeinstallprompt`) ⇒ ชนิดของ Chrome ⛔ อยู่ใน lib.dom */
 interface หน้าต่างติดตั้ง extends Event {
@@ -31,10 +31,8 @@ export const แผ่นที่เปิด = ref<แผ่นติดตั
 let หน้าต่างที่จับไว้: หน้าต่างติดตั้ง | null = null
 let คืนโฟกัสที่: HTMLElement | null = null
 
-const กุญแจการ์ด = 'phrakham.install-card-dismissed'
-const กุญแจติดตั้งแล้ว = 'phrakham.app-installed'
-const กุญแจเห็นแอป = 'phrakham.app-seen-at'
-const กุญแจบรรทัด = 'phrakham.installed-note-dismissed'
+// ⭐ ชื่อกุญแจอยู่ที่ `app/utils/ติดตั้งแอป.ts` ⇒ สคริปต์ก่อนวาด (`สคริปต์ชวนติดตั้งก่อนวาด`) อ่านชื่อเดียวกัน ⇒ ⛔ พิมพ์ซ้ำที่นี่
+const { การ์ด: กุญแจการ์ด, ติดตั้งแล้ว: กุญแจติดตั้งแล้ว, เห็นแอป: กุญแจเห็นแอป, บรรทัด: กุญแจบรรทัด } = กุญแจติดตั้งแอป
 /** ⭐ ใบ v3/pleng#165 ⇒ เปิดแอปในเครื่องนี้ภายใน 30 วัน ⇒ เชื่อว่ายังติดตั้งอยู่ แม้ `getInstalledRelatedApps` ตอบว่าง */
 const สดภายใน = 30 * 24 * 60 * 60 * 1000
 
