@@ -16,6 +16,8 @@ runs:
     # ⭐ ตัวแปรของกิตแล็บที่เครื่องมือในที่เก็บนี้อ่าน ⇒ เติมจากค่าของ GitHub ที่ความหมายตรงกัน
     #   ⇒ CI_COMMIT_TIMESTAMP คือเวลาของคอมมิต ⛔ ไม่ใช่เวลาที่ท่อวิ่ง (เหตุผลอยู่ที่ nuxt.config.ts)
     #   ⇒ คำขอรวม = merge_request_event ⇒ กิตแล็บ ⛔ ไม่ตั้ง CI_COMMIT_BRANCH ในคำขอรวม ⇒ ที่นี่ก็ไม่ตั้ง
+    #   ⇒ ⚠️ PR ⇒ checkout ได้คอมมิตรวมจำลอง (github.sha) ลึก 1 ชั้น ⇒ คอมมิตหัวของ PR ⛔ อยู่ในเครื่อง ⇒ git log ว่าง ⇒ สร้างเว็บล้มที่ตัวประทับ
+    #     ⇒ ดึงคอมมิตหัวมา 1 ชั้นก่อนอ่านเวลา (PR แรก ๆ ทุกใบล้มแบบนี้ 24 พ.ย. 2569 ⇒ PR #5–#8)
     - name: ตัวแปรของกิตแล็บ
       shell: bash
       env:
@@ -30,7 +32,7 @@ runs:
           echo "CI=true"
           echo "CI_COMMIT_SHA=$SHA"
           echo "CI_COMMIT_SHORT_SHA=${SHA:0:8}"
-          echo "CI_COMMIT_TIMESTAMP=$(git log -1 --format=%cI "$SHA")"
+          echo "CI_COMMIT_TIMESTAMP=$(git log -1 --format=%cI "$SHA" 2>/dev/null || { git fetch -q --depth=1 origin "$SHA" && git log -1 --format=%cI "$SHA"; })"
           echo "CI_COMMIT_REF_NAME=$REF"
           echo "CI_DEFAULT_BRANCH=$DEFAULT"
           echo "CI_PIPELINE_ID=$RUN"
