@@ -1,6 +1,6 @@
 # ⛔⛔ ไฟล์นี้สร้างด้วยเครื่อง ⇒ ห้ามแก้ด้วยมือ
 #   ⇒ แก้ที่ .gitlab-ci.yml แล้วรัน `python tools/สร้างท่อGitHub.py` ⇒ เหตุผลอยู่หัวไฟล์นั้น
-#   ⇒ ด่าน 250 งาน จาก .gitlab-ci.yml
+#   ⇒ ด่าน 252 งาน จาก .gitlab-ci.yml
 name: ตรวจ
 'on':
   pull_request:
