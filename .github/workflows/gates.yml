@@ -1,6 +1,6 @@
 # ⛔⛔ ไฟล์นี้สร้างด้วยเครื่อง ⇒ ห้ามแก้ด้วยมือ
 #   ⇒ แก้ที่ .gitlab-ci.yml แล้วรัน `python tools/สร้างท่อGitHub.py` ⇒ เหตุผลอยู่หัวไฟล์นั้น
-#   ⇒ ด่าน 245 งาน จาก .gitlab-ci.yml
+#   ⇒ ด่าน 247 งาน จาก .gitlab-ci.yml
 name: ตรวจ
 'on':
   pull_request:
@@ -4852,6 +4852,60 @@ jobs:
           set -e
           (set -o pipefail) 2>/dev/null && set -o pipefail
           node tools/ด่านรูปผันเป็นไทย.mjs --ทดสอบตัวเอง
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
+      run: bash .github/run-job.sh node:24-alpine
+  jf63141e249:
+    name: ด่านของใหม่
+    needs:
+    - lfs
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: ด่านของใหม่
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          node tools/ด่านของใหม่.mjs
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
+      run: bash .github/run-job.sh node:24-alpine
+  j3d6f2ef8a4:
+    name: ด่านของใหม่ยังจับได้
+    needs:
+    - lfs
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: ด่านของใหม่ยังจับได้
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          node tools/ด่านของใหม่.mjs --ทดสอบตัวเอง
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '1'
       run: bash .github/run-job.sh node:24-alpine
@@ -10245,6 +10299,8 @@ jobs:
     - j85dd7f51bc
     - jdd299096a6
     - jf9cb1260d9
+    - jf63141e249
+    - j3d6f2ef8a4
     - j49f4a90ae4
     - j25886a4f7c
     - j9240ebb007
