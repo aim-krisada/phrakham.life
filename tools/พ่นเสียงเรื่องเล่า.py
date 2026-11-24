@@ -198,7 +198,10 @@ def main() -> int:
 
     if max(len(x) for x in แผน["ก้อน"]) > ga.MAX_SEG_CHARS:
         sys.exit(f"⛔ มีก้อนยาวเกิน {ga.MAX_SEG_CHARS} ตัว ⇒ เพดานของ Cloud TTS ⇒ ยังไม่ได้ยิงอะไร")
-    สมุด = ga.QuotaLedger()
+    # ⭐ ใบ https://aimgit.aimagin.com/v3/phrakham/-/issues/188 ⇒ สมุดเล่มเดียวกับเสียงพระคำ ⇒ เดือนต้องนับแบบเดียวกัน (เวลาแปซิฟิก)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from เดือนโควตา import เดือนของGoogle
+    สมุด = ga.QuotaLedger(month=เดือนของGoogle())
     ต้องยิง = [c for c in แผน["ก้อน"] if not ที่เก็บดิบของ(c).exists()]
     try:
         สมุด.check(sum(len(c) for c in ต้องยิง))
