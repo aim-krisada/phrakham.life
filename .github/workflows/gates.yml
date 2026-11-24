@@ -1,6 +1,6 @@
 # ⛔⛔ ไฟล์นี้สร้างด้วยเครื่อง ⇒ ห้ามแก้ด้วยมือ
 #   ⇒ แก้ที่ .gitlab-ci.yml แล้วรัน `python tools/สร้างท่อGitHub.py` ⇒ เหตุผลอยู่หัวไฟล์นั้น
-#   ⇒ ด่าน 247 งาน จาก .gitlab-ci.yml
+#   ⇒ ด่าน 250 งาน จาก .gitlab-ci.yml
 name: ตรวจ
 'on':
   pull_request:
@@ -299,6 +299,99 @@ jobs:
           python3 tools/ด่านข้อมูลต้องห้าม.py --ที่ _data docs
         JOB_VARS: GIT_LFS_SKIP_SMUDGE
         GIT_LFS_SKIP_SMUDGE: '0'
+      run: bash .github/run-job.sh python:3.13-alpine
+  j046d540573:
+    name: ด่านข้อมูลต้องห้ามตามเนื้อ
+    needs:
+    - lfs
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '1'
+    - name: ด่านข้อมูลต้องห้ามตามเนื้อ
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git git-lfs
+          git -c lfs.fetchexclude= lfs pull -I "source/macula-greek-main.zip,source/macula-hebrew-main.zip"
+          python3 tools/ด่านข้อมูลต้องห้าม.py --ที่ _data docs --เทียบเนื้อ
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '0'
+      run: bash .github/run-job.sh python:3.13-alpine
+  j363b56417e:
+    name: ด่านเลขข้อครบทุกฉบับ
+    needs:
+    - lfs
+    - j14dbf6b990
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: หยิบชิ้นงานของ สร้างเว็บ
+      uses: actions/download-artifact@v4
+      with:
+        name: a-j14dbf6b990
+        path: /tmp/ชิ้นงาน/j14dbf6b990
+    - name: แกะชิ้นงานของ สร้างเว็บ ลงที่เดิม
+      run: tar -xf "/tmp/ชิ้นงาน/j14dbf6b990/ชิ้นงาน.tar"
+    - name: ด่านเลขข้อครบทุกฉบับ
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          apk add --no-cache git git-lfs
+          git -c lfs.fetchexclude= lfs pull -I "source/tcv/usx-rev2-release.zip,source/lsv-rev32-release.zip,source/thaKJV_usfx.zip,source/eng-web_usfx.zip,source/eng-kjv2006_usfx.zip"
+          python3 tools/ด่านเลขข้อครบทุกฉบับ.py --ที่ .output/public
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
+      run: bash .github/run-job.sh python:3.13-alpine
+  jc0af900564:
+    name: ด่านเลขข้อครบทุกฉบับยังจับได้
+    needs:
+    - lfs
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        lfs: false
+        fetch-depth: 1
+      env:
+        GIT_LFS_SKIP_SMUDGE: '1'
+    - name: เตรียมงาน
+      uses: ./.github/actions/prep
+      with:
+        lfs-key: ${{ needs.lfs.outputs.key }}
+        data: '0'
+    - name: ด่านเลขข้อครบทุกฉบับยังจับได้
+      env:
+        JOB_SCRIPT: |
+          set -e
+          (set -o pipefail) 2>/dev/null && set -o pipefail
+          python3 tools/ด่านเลขข้อครบทุกฉบับ.py --ทดสอบตัวเอง
+        JOB_VARS: GIT_LFS_SKIP_SMUDGE
+        GIT_LFS_SKIP_SMUDGE: '1'
       run: bash .github/run-job.sh python:3.13-alpine
   j3c4a80670b:
     name: ด่านนับชั้นคำ
@@ -10186,6 +10279,9 @@ jobs:
     - jeac3122f60
     - jb537709d73
     - jeefe7dd6f9
+    - j046d540573
+    - j363b56417e
+    - jc0af900564
     - j3c4a80670b
     - jd078215907
     - j84347807bd
