@@ -163,9 +163,10 @@ const สภาพ = (แท็บ) =>
     const ก้อน = [...document.querySelectorAll('section.pk-ชั้นคำ')].find(เห็น)
     return {
       ที่อยู่: location.search,
-      ปิดฉบับ: [...document.querySelectorAll('.pk-ช่องหัว[data-ฉบับ] [data-ปุ่ม="ปิดคอลัมน์"]')].filter(เห็น).map((x) => x.closest('[data-ฉบับ]').dataset.ฉบับ),
-      ปิดทุกตัว: [...document.querySelectorAll('[data-ปุ่ม="ปิดคอลัมน์"], [data-ปุ่ม="ปิดคำเดิม"]')].filter(เห็น).length,
-      ปิดคำเดิม: [...document.querySelectorAll('[data-ปุ่ม="ปิดคำเดิม"]')].filter(เห็น).length,
+      // ⭐ ใบ #122 ⇒ คอลัมน์สุดท้ายยังเห็น × แต่กดไม่ได้ (`aria-disabled`) ⇒ นับเฉพาะ × ที่กดได้
+      ปิดฉบับ: [...document.querySelectorAll('.pk-ช่องหัว[data-ฉบับ] [data-ปุ่ม="ปิดคอลัมน์"]:not([aria-disabled="true"])')].filter(เห็น).map((x) => x.closest('[data-ฉบับ]').dataset.ฉบับ),
+      ปิดทุกตัว: [...document.querySelectorAll('[data-ปุ่ม="ปิดคอลัมน์"], [data-ปุ่ม="ปิดคำเดิม"]')].filter((x) => เห็น(x) && x.getAttribute('aria-disabled') !== 'true').length,
+      ปิดคำเดิม: [...document.querySelectorAll('[data-ปุ่ม="ปิดคำเดิม"]:not([aria-disabled="true"])')].filter(เห็น).length,
       ข้อแปลที่เห็น: [...document.querySelectorAll('.pk-ตัวบท [data-ข้อ]')].filter(เห็น).length,
       กว้างตัวบท: ตัวบท ? ตัวบท.getBoundingClientRect().width : 0,
       กว้างก้อน: ก้อน ? ก้อน.getBoundingClientRect().width : 0,
@@ -179,7 +180,7 @@ const สภาพ = (แท็บ) =>
 // ⚠️ ใบ #161 ⇒ ตัวอ่านช่องติ๊กในเมนู *เทียบ* (`เมนู` · `พับเมนู`) ถอดพร้อมช่องติ๊ก ⇒ ข้อ ① ② ④ เปลี่ยนตามที่หัวไฟล์บอก
 
 async function ปิดTCV(แท็บ) {
-  await แท็บ.locator('.pk-ช่องหัว[data-ฉบับ="TCV"] [data-ปุ่ม="ปิดคอลัมน์"]:visible').first().click({ timeout: 10000 })
+  await แท็บ.locator('.pk-ช่องหัว[data-ฉบับ="TCV"] [data-ปุ่ม="ปิดคอลัมน์"]:not([aria-disabled="true"]):visible').first().click({ timeout: 10000 })
   await แท็บ.waitForFunction(() => !document.querySelector('.pk-ช่องหัว[data-ฉบับ="TCV"]'), null, { timeout: 10000 }).catch(() => {})
   await แท็บ.waitForSelector('section.pk-ชั้นคำ', { state: 'visible', timeout: 15000 }).catch(() => {})
   await รอหน้านิ่ง(แท็บ)
@@ -191,7 +192,7 @@ function ตรวจเหลือแต่คำเดิม(ส, ชื่�
   if (ส.ข้อแปลที่เห็น) ตก.push(`② ${ชื่อ} เหลือแต่คำเดิมแล้วยังเห็นข้อของฉบับแปล ${ส.ข้อแปลที่เห็น} ข้อ`)
   if (!ส.กว้างก้อน || ส.กว้างก้อน < ส.กว้างตัวบท * 0.9)
     ตก.push(`② ${ชื่อ} คำเดิมกว้าง ${Math.round(ส.กว้างก้อน)} จุด ⇒ ⛔ เต็มกว้างตัวบท ${Math.round(ส.กว้างตัวบท)} จุด`)
-  if (ส.ปิดทุกตัว) ตก.push(`② ${ชื่อ} เหลือคอลัมน์เดียวแล้วยังมี × ${ส.ปิดทุกตัว} ปุ่ม`)
+  if (ส.ปิดทุกตัว) ตก.push(`② ${ชื่อ} เหลือคอลัมน์เดียวแล้วยังมี × ที่กดได้ ${ส.ปิดทุกตัว} ปุ่ม`)
   if (ส.เตือน.length) ตก.push(`② ${ชื่อ} มีประโยคเตือน ${JSON.stringify(ส.เตือน)}`)
   if (!/[?&]t=SBLGNT(&|$)/.test(ส.ที่อยู่)) ตก.push(`② ${ชื่อ} ที่อยู่ ${ส.ที่อยู่} ⛔ บอก t=SBLGNT`)
 }
@@ -230,7 +231,7 @@ async function ตรวจ(พัง = null) {
         if (ต้อง('②')) {
           ตรวจเหลือแต่คำเดิม(หลัง, บ.ชื่อ, ตก)
           // ⭐ ใบ #161 ⇒ คอลัมน์สุดท้าย ⇒ ⛔ มี × ให้ปิดจนหน้าว่าง ⇒ ⚠️ ของเดิมตรวจช่องติ๊กคำเดิมที่ติ๊กอยู่ ล็อก และมีเหตุผล
-          if (หลัง.ปิดทุกตัว) ตก.push(`② ${บ.ชื่อ} เหลือคำเดิมคอลัมน์เดียว ⇒ ยังมี × ${หลัง.ปิดทุกตัว} ปุ่ม ⇒ ปิดแล้วหน้าว่าง`)
+          if (หลัง.ปิดทุกตัว) ตก.push(`② ${บ.ชื่อ} เหลือคำเดิมคอลัมน์เดียว ⇒ ยังมี × ที่กดได้ ${หลัง.ปิดทุกตัว} ปุ่ม ⇒ ปิดแล้วหน้าว่าง`)
         }
         if (ต้อง('④')) {
           if (หลัง.ฟัง || หลัง.ไม่มีเสียง) ตก.push(`④ ${บ.ชื่อ} เหลือแต่คำเดิมแล้วยังมี${หลัง.ฟัง ? 'ปุ่มฟัง' : 'ประโยคยังไม่มีเสียง'}`)
