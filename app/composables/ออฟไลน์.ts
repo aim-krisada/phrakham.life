@@ -64,6 +64,47 @@ function ชื่อแคชตัวบท(scopePath: string) {
   return 'phrakham-ตัวบท-v1--' + ป้าย
 }
 
+/** ชื่องานเก็บต่อแม้ปิดแอป ⇒ ชุดเดียวกับ `ชื่อพื้นหลัง` ใน `public/sw.js` */
+function ชื่อพื้นหลัง(scopePath: string) {
+  const ป้าย = scopePath.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'ราก'
+  return 'phrakham-ตัวบท--' + ป้าย
+}
+
+/** งานพื้นหลัง (Background Fetch ⇒ ชนิดยังไม่อยู่ใน lib.dom) */
+interface งานพื้นหลัง extends EventTarget {
+  matchAll(): Promise<{ responseReady: Promise<Response> }[]>
+}
+let ฟังงานพื้นหลัง: EventTarget | null = null
+let จังหวะคืบ: ReturnType<typeof setTimeout> | null = null
+/**
+ * ⭐ งานพื้นหลังเก็บลงที่เก็บตอนจบทีเดียว ⇒ ระหว่างทางนับจากในแคชได้ 0 ⇒ ร้อยละค้าง
+ *   ⇒ นับไฟล์ที่เบราว์เซอร์โหลดเสร็จแล้ว (`responseReady` ตอบภายในชั่วครู่) ⇒ บวกเข้า *มีแล้ว* ⇒ ⛔ เกิน ทั้งหมด − 1 (ยังไม่ได้ตรวจลาย)
+ */
+async function นับงานพื้นหลัง(reg: ServiceWorkerRegistration | undefined, scope: string) {
+  const bf = (reg as unknown as { backgroundFetch?: { get(id: string): Promise<งานพื้นหลัง | undefined> } })?.backgroundFetch
+  if (!bf) return 0
+  try {
+    const งาน = await bf.get(ชื่อพื้นหลัง(scope))
+    if (!งาน) return 0
+    if (ฟังงานพื้นหลัง !== งาน) {
+      ฟังงานพื้นหลัง = งาน
+      งาน.addEventListener('progress', () => {
+        if (จังหวะคืบ) return
+        จังหวะคืบ = setTimeout(() => {
+          จังหวะคืบ = null
+          อ่านสถานะ()
+        }, 2000)
+      })
+    }
+    const ทุกไฟล์ = await งาน.matchAll()
+    const ชั่วครู่ = new Promise<false>((ok) => setTimeout(() => ok(false), 50))
+    const เสร็จ = await Promise.all(ทุกไฟล์.map((x) => Promise.race([x.responseReady.then(() => true, () => false), ชั่วครู่])))
+    return เสร็จ.filter(Boolean).length
+  } catch {
+    return 0
+  }
+}
+
 export function ปิดบรรทัดพร้อม() {
   ปิดบรรทัดพร้อมแล้ว.value = true
   // ⭐ ใบ #187 เกณฑ์ข้อ 2 ⇒ ปิดแล้ว ⇒ ไม่ขึ้นซ้ำจนกว่าจะมีรุ่นใหม่อีก
@@ -139,6 +180,7 @@ interface ข่าว {
   ทั้งหมด?: number
   เข้าแทน?: boolean
   กำลังเก็บ?: boolean
+  ยกเลิกพื้นหลัง?: boolean
 }
 function รับข่าว(d: ข่าว) {
   if (!d || d.type !== 'phrakham-ออฟไลน์') return
@@ -153,6 +195,13 @@ function รับข่าว(d: ข่าว) {
       มีแล้วรอบก่อน = d.มีแล้ว ?? มีแล้วรอบก่อน
       if (คืบ) setTimeout(ขอเก็บ, 0)
     } else จบรอบแล้ว = true
+  }
+  // ⭐ ผู้อ่านกดยกเลิกที่แจ้งเตือน ⇒ ตัวช่วยพักงานพื้นหลัง ⇒ แอปเปิดอยู่ก็เก็บแบบรอบปกติต่อ
+  if (d.ยกเลิกพื้นหลัง) {
+    รอบวิ่งอยู่ = false
+    ขอไปกี่รอบ = 0
+    มีแล้วรอบก่อน = -1
+    setTimeout(ขอเก็บ, 0)
   }
   if (d.เข้าแทน) {
     // ⭐ ตัวช่วยตัวใหม่ (เว็บขึ้นรอบใหม่) ⇒ รายการอาจเปลี่ยน ⇒ เริ่มนับรอบใหม่
@@ -201,6 +250,8 @@ async function อ่านจากเครื่อง() {
       const ไฟล์: [string, string, number][] = Array.isArray(รายการ?.ไฟล์) ? รายการ.ไฟล์ : []
       ทั้งหมด = ไฟล์.length
       for (const [ทาง, ลาย] of ไฟล์) if (สมุด[ทาง] === ลาย && กุญแจ.has(ที่(ทาง))) มีแล้ว++
+      // ⭐ เก็บต่อแม้ปิดแอป ⇒ ไฟล์ที่เบราว์เซอร์โหลดเสร็จแล้วแต่ยังไม่ลงที่เก็บ ⇒ นับให้ร้อยละขยับ
+      if (มีแล้ว < ทั้งหมด) มีแล้ว = Math.min(ทั้งหมด - 1, มีแล้ว + (await นับงานพื้นหลัง(reg, scope)))
       if (สถานะ?.เต็มเมื่อ && มีแล้ว < ทั้งหมด) เต็ม = true
       // ⭐ ใบ #187 ⇒ รายการเสียงกับชื่อเล่มของรุ่นนี้ ⇒ อยู่ในแคชตัวบทแล้ว (`tools/สร้างรายการออฟไลน์.mjs`) ⇒ ⛔ ยิงเน็ตเพิ่ม
       if (typeof รายการ?.รุ่น === 'string') {
@@ -265,6 +316,19 @@ export function เริ่มออฟไลน์(baseURL: string, รุ่�
     อ่านสถานะ()
   })
   window.addEventListener('offline', () => อ่านสถานะ())
+  // ⭐ @krisada 25 พ.ย. 2569 ⇒ บรรทัด *กำลังเก็บ… N%* ค้างเป็นชั่วโมง ⇒ ออกจากแอปหรือจอดับ ⇒ มือถือหยุดตัวช่วยกลางรอบ
+  //   ⇒ กลับมาเปิด ⇒ ⛔ มีข่าวจบรอบ ⇒ เดิมต้องรอ `รอข่าวนานสุด` (3 นาที) ⇒ หรือ *⛔ คืบ ⇒ หยุดขอ* ค้างไว้
+  //   ⇒ กลับมาเห็นจอเมื่อไร ⇒ ขอรอบใหม่ทันที ⇒ ตัวช่วยมี `งานที่วิ่ง` กันรอบซ้อนอยู่แล้ว ⇒ ขอซ้ำ ⛔ เสียหาย
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState !== 'visible') return
+    if (ตัวจับเวลา) clearTimeout(ตัวจับเวลา)
+    ตัวจับเวลา = null
+    รอบวิ่งอยู่ = false
+    ขอไปกี่รอบ = 0
+    มีแล้วรอบก่อน = -1
+    ขอเก็บ()
+    อ่านสถานะ()
+  })
   // ⭐ ใบ #186 ⇒ ติดตั้งเสร็จในแท็บนี้ ⇒ บรรทัด *ยังไม่ได้เก็บ…* ต้องหายเอง
   watch(ติดตั้งแล้ว, () => อ่านสถานะ())
   // ⭐ กด × การ์ดชวนติดตั้ง ⇒ บรรทัด *ยังอ่านแบบไม่มีเน็ตไม่ได้…* หายตามทันที
