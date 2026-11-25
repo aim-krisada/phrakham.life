@@ -419,8 +419,8 @@ async function รับพื้นหลัง(event, สำเร็จ) {
   // ⭐ ข่าวรูปเดียวกับรอบปกติ ⇒ ยังไม่ครบแต่คืบ ⇒ หน้าเว็บขอรอบต่อไปเอง (รอบปกติเก็บที่ตกหล่น)
   บอก({ รอบจบ: true, จบ: ครบ, เต็ม, มีแล้ว, ทั้งหมด: ไฟล์.length, พลาด: 0 })
 }
-self.addEventListener('backgroundfetchsuccess', (event) => event.waitUntil(รับพื้นหลัง(event, true)))
-self.addEventListener('backgroundfetchfail', (event) => event.waitUntil(รับพื้นหลัง(event, false)))
+self.addEventListener('backgroundfetchsuccess', (event) => event.waitUntil(ทำตามคิว(() => รับพื้นหลัง(event, true))))
+self.addEventListener('backgroundfetchfail', (event) => event.waitUntil(ทำตามคิว(() => รับพื้นหลัง(event, false))))
 // ⭐ ผู้อ่านกดยกเลิกที่แจ้งเตือน ⇒ จด ⇒ ⛔ เริ่มพื้นหลังซ้ำภายใน `พักหลังยกเลิก` ⇒ เปิดแอปอยู่ก็ยังเก็บแบบรอบปกติ
 self.addEventListener('backgroundfetchabort', (event) =>
   event.waitUntil(
@@ -434,11 +434,16 @@ self.addEventListener('backgroundfetchabort', (event) =>
 // ⭐ แตะแจ้งเตือน ⇒ เปิดแอป
 self.addEventListener('backgroundfetchclick', (event) => event.waitUntil(self.clients.openWindow(ราก)))
 
+// ⭐ งานที่เขียนสมุด (รอบปกติ · รับงานพื้นหลัง) ⇒ ทีละงาน ⇒ ⛔ อ่านสมุดพร้อมกันแล้วเขียนทับกัน
+//   ⇒ เจอในท่อ 25 พ.ย. 2569 ⇒ รับงานพื้นหลังยังเก็บไม่เสร็จ หน้าเว็บขอรอบปกติ ⇒ สมุดของรอบปกติทับ ⇒ บรรทัดเป็น *ไม่ครบ*
+let คิวสมุด = Promise.resolve()
+const ทำตามคิว = (งาน) => (คิวสมุด = คิวสมุด.then(งาน, งาน))
+
 let งานที่วิ่ง = null
 self.addEventListener('message', (event) => {
   if (!event.data || event.data.type !== 'phrakham-เก็บทั้งเล่ม') return
   if (!งานที่วิ่ง)
-    งานที่วิ่ง = เก็บรอบหนึ่ง()
+    งานที่วิ่ง = ทำตามคิว(เก็บรอบหนึ่ง)
       .catch(() => ({ จบ: false, พลาด: 1 }))
       .then((ผล) => {
         งานที่วิ่ง = null
