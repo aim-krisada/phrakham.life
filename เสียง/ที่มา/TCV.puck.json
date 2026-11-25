@@ -7,7 +7,7 @@
  "bitrate": "48k",
  "engine": "Google Cloud Text-to-Speech v1 text:synthesize",
  "generator": "tools/พ่นเสียงพระคำ.py TCV --คืนนี้",
- "generated": "2026-11-25",
+ "generated": "2026-11-26",
  "dir": "",
  "source": {
   "name": "พระคริสตธรรมคัมภีร์ ฉบับ Thai Common Version 2025 (TCV)",
@@ -14224,6 +14224,1186 @@
    "d": 6.28,
    "chars": 78,
    "h": "sha256:b1fdd5118722af73"
+  },
+  "Luke.8.1": {
+   "ref": "ลูกา 8:1",
+   "osis": "Luke",
+   "c": 8,
+   "v": 1,
+   "file": "Luke.8.1.puck.mp3",
+   "d": 10.64,
+   "chars": 126,
+   "h": "sha256:18e9ecaaa5df2aac"
+  },
+  "Luke.8.2": {
+   "ref": "ลูกา 8:2",
+   "osis": "Luke",
+   "c": 8,
+   "v": 2,
+   "file": "Luke.8.2.puck.mp3",
+   "d": 10.52,
+   "chars": 121,
+   "h": "sha256:88ba180b94bacbbb"
+  },
+  "Luke.8.3": {
+   "ref": "ลูกา 8:3",
+   "osis": "Luke",
+   "c": 8,
+   "v": 3,
+   "file": "Luke.8.3.puck.mp3",
+   "d": 12.44,
+   "chars": 127,
+   "h": "sha256:1e1e4a2a2fd83f80"
+  },
+  "Luke.8.4": {
+   "ref": "ลูกา 8:4",
+   "osis": "Luke",
+   "c": 8,
+   "v": 4,
+   "file": "Luke.8.4.puck.mp3",
+   "d": 9.16,
+   "chars": 94,
+   "h": "sha256:2d2cace41a5eece4"
+  },
+  "Luke.8.5": {
+   "ref": "ลูกา 8:5",
+   "osis": "Luke",
+   "c": 8,
+   "v": 5,
+   "file": "Luke.8.5.puck.mp3",
+   "d": 8.68,
+   "chars": 93,
+   "h": "sha256:80889622c30e23f7"
+  },
+  "Luke.8.6": {
+   "ref": "ลูกา 8:6",
+   "osis": "Luke",
+   "c": 8,
+   "v": 6,
+   "file": "Luke.8.6.puck.mp3",
+   "d": 5.68,
+   "chars": 69,
+   "h": "sha256:7223253b57a9aa11"
+  },
+  "Luke.8.7": {
+   "ref": "ลูกา 8:7",
+   "osis": "Luke",
+   "c": 8,
+   "v": 7,
+   "file": "Luke.8.7.puck.mp3",
+   "d": 5.08,
+   "chars": 45,
+   "h": "sha256:e29ac39387b0481a"
+  },
+  "Luke.8.8": {
+   "ref": "ลูกา 8:8",
+   "osis": "Luke",
+   "c": 8,
+   "v": 8,
+   "file": "Luke.8.8.puck.mp3",
+   "d": 11.16,
+   "chars": 137,
+   "h": "sha256:aef0c7b1b81ce630"
+  },
+  "Luke.8.9": {
+   "ref": "ลูกา 8:9",
+   "osis": "Luke",
+   "c": 8,
+   "v": 9,
+   "file": "Luke.8.9.puck.mp3",
+   "d": 3.64,
+   "chars": 43,
+   "h": "sha256:a2a183c3f306e5ef"
+  },
+  "Luke.8.10": {
+   "ref": "ลูกา 8:10",
+   "osis": "Luke",
+   "c": 8,
+   "v": 10,
+   "file": "Luke.8.10.puck.mp3",
+   "d": 12.56,
+   "chars": 154,
+   "h": "sha256:9a96ea69a6d456b2"
+  },
+  "Luke.8.11": {
+   "ref": "ลูกา 8:11",
+   "osis": "Luke",
+   "c": 8,
+   "v": 11,
+   "file": "Luke.8.11.puck.mp3",
+   "d": 3.68,
+   "chars": 49,
+   "h": "sha256:db37c6900839dfcb"
+  },
+  "Luke.8.12": {
+   "ref": "ลูกา 8:12",
+   "osis": "Luke",
+   "c": 8,
+   "v": 12,
+   "file": "Luke.8.12.puck.mp3",
+   "d": 8.8,
+   "chars": 105,
+   "h": "sha256:cd309f9cda882afb"
+  },
+  "Luke.8.13": {
+   "ref": "ลูกา 8:13",
+   "osis": "Luke",
+   "c": 8,
+   "v": 13,
+   "file": "Luke.8.13.puck.mp3",
+   "d": 10.56,
+   "chars": 139,
+   "h": "sha256:ae713de72a4fd3b6"
+  },
+  "Luke.8.14": {
+   "ref": "ลูกา 8:14",
+   "osis": "Luke",
+   "c": 8,
+   "v": 14,
+   "file": "Luke.8.14.puck.mp3",
+   "d": 11.6,
+   "chars": 127,
+   "h": "sha256:9f3740cc7cee7cc5"
+  },
+  "Luke.8.15": {
+   "ref": "ลูกา 8:15",
+   "osis": "Luke",
+   "c": 8,
+   "v": 15,
+   "file": "Luke.8.15.puck.mp3",
+   "d": 9.68,
+   "chars": 109,
+   "h": "sha256:d6548f47830c76cd"
+  },
+  "Luke.8.16": {
+   "ref": "ลูกา 8:16",
+   "osis": "Luke",
+   "c": 8,
+   "v": 16,
+   "file": "Luke.8.16.puck.mp3",
+   "d": 8.52,
+   "chars": 108,
+   "h": "sha256:07c7e20bc385af18"
+  },
+  "Luke.8.17": {
+   "ref": "ลูกา 8:17",
+   "osis": "Luke",
+   "c": 8,
+   "v": 17,
+   "file": "Luke.8.17.puck.mp3",
+   "d": 7.24,
+   "chars": 84,
+   "h": "sha256:1935b3ae4341f17b"
+  },
+  "Luke.8.18": {
+   "ref": "ลูกา 8:18",
+   "osis": "Luke",
+   "c": 8,
+   "v": 18,
+   "file": "Luke.8.18.puck.mp3",
+   "d": 10.0,
+   "chars": 104,
+   "h": "sha256:ee7da27268dd3ab6"
+  },
+  "Luke.8.19": {
+   "ref": "ลูกา 8:19",
+   "osis": "Luke",
+   "c": 8,
+   "v": 19,
+   "file": "Luke.8.19.puck.mp3",
+   "d": 7.48,
+   "chars": 92,
+   "h": "sha256:bd721483570cedbf"
+  },
+  "Luke.8.20": {
+   "ref": "ลูกา 8:20",
+   "osis": "Luke",
+   "c": 8,
+   "v": 20,
+   "file": "Luke.8.20.puck.mp3",
+   "d": 6.44,
+   "chars": 75,
+   "h": "sha256:f474d22ba96458dd"
+  },
+  "Luke.8.21": {
+   "ref": "ลูกา 8:21",
+   "osis": "Luke",
+   "c": 8,
+   "v": 21,
+   "file": "Luke.8.21.puck.mp3",
+   "d": 6.08,
+   "chars": 76,
+   "h": "sha256:8d39baafcb784c8d"
+  },
+  "Luke.8.22": {
+   "ref": "ลูกา 8:22",
+   "osis": "Luke",
+   "c": 8,
+   "v": 22,
+   "file": "Luke.8.22.puck.mp3",
+   "d": 7.96,
+   "chars": 99,
+   "h": "sha256:c336c274735feef6"
+  },
+  "Luke.8.23": {
+   "ref": "ลูกา 8:23",
+   "osis": "Luke",
+   "c": 8,
+   "v": 23,
+   "file": "Luke.8.23.puck.mp3",
+   "d": 10.0,
+   "chars": 109,
+   "h": "sha256:e09ab2e1abcf0047"
+  },
+  "Luke.8.24": {
+   "ref": "ลูกา 8:24",
+   "osis": "Luke",
+   "c": 8,
+   "v": 24,
+   "file": "Luke.8.24.puck.mp3",
+   "d": 11.6,
+   "chars": 124,
+   "h": "sha256:e8528cf8bf2b1051"
+  },
+  "Luke.8.25": {
+   "ref": "ลูกา 8:25",
+   "osis": "Luke",
+   "c": 8,
+   "v": 25,
+   "file": "Luke.8.25.puck.mp3",
+   "d": 11.0,
+   "chars": 137,
+   "h": "sha256:72f3ec9e83d62117"
+  },
+  "Luke.8.26": {
+   "ref": "ลูกา 8:26",
+   "osis": "Luke",
+   "c": 8,
+   "v": 26,
+   "file": "Luke.8.26.puck.mp3",
+   "d": 5.68,
+   "chars": 62,
+   "h": "sha256:278acf26a5ca2091"
+  },
+  "Luke.8.27": {
+   "ref": "ลูกา 8:27",
+   "osis": "Luke",
+   "c": 8,
+   "v": 27,
+   "file": "Luke.8.27.puck.mp3",
+   "d": 11.28,
+   "chars": 135,
+   "h": "sha256:759615b0f4dfc213"
+  },
+  "Luke.8.28": {
+   "ref": "ลูกา 8:28",
+   "osis": "Luke",
+   "c": 8,
+   "v": 28,
+   "file": "Luke.8.28.puck.mp3",
+   "d": 12.16,
+   "chars": 144,
+   "h": "sha256:7b4472378c8b99e9"
+  },
+  "Luke.8.29": {
+   "ref": "ลูกา 8:29",
+   "osis": "Luke",
+   "c": 8,
+   "v": 29,
+   "file": "Luke.8.29.puck.mp3",
+   "d": 15.0,
+   "chars": 185,
+   "h": "sha256:8804895b90b3cade"
+  },
+  "Luke.8.30": {
+   "ref": "ลูกา 8:30",
+   "osis": "Luke",
+   "c": 8,
+   "v": 30,
+   "file": "Luke.8.30.puck.mp3",
+   "d": 7.48,
+   "chars": 73,
+   "h": "sha256:42b2291b6c9137ff"
+  },
+  "Luke.8.31": {
+   "ref": "ลูกา 8:31",
+   "osis": "Luke",
+   "c": 8,
+   "v": 31,
+   "file": "Luke.8.31.puck.mp3",
+   "d": 5.0,
+   "chars": 57,
+   "h": "sha256:e1e521c6bc9676b8"
+  },
+  "Luke.8.32": {
+   "ref": "ลูกา 8:32",
+   "osis": "Luke",
+   "c": 8,
+   "v": 32,
+   "file": "Luke.8.32.puck.mp3",
+   "d": 9.0,
+   "chars": 98,
+   "h": "sha256:70a8eeb3b21c18a4"
+  },
+  "Luke.8.33": {
+   "ref": "ลูกา 8:33",
+   "osis": "Luke",
+   "c": 8,
+   "v": 33,
+   "file": "Luke.8.33.puck.mp3",
+   "d": 7.92,
+   "chars": 75,
+   "h": "sha256:77c51d5240d2ee23"
+  },
+  "Luke.8.34": {
+   "ref": "ลูกา 8:34",
+   "osis": "Luke",
+   "c": 8,
+   "v": 34,
+   "file": "Luke.8.34.puck.mp3",
+   "d": 5.68,
+   "chars": 79,
+   "h": "sha256:2a7d50da0d10e755"
+  },
+  "Luke.8.35": {
+   "ref": "ลูกา 8:35",
+   "osis": "Luke",
+   "c": 8,
+   "v": 35,
+   "file": "Luke.8.35.puck.mp3",
+   "d": 11.92,
+   "chars": 141,
+   "h": "sha256:dd518a432263c450"
+  },
+  "Luke.8.36": {
+   "ref": "ลูกา 8:36",
+   "osis": "Luke",
+   "c": 8,
+   "v": 36,
+   "file": "Luke.8.36.puck.mp3",
+   "d": 5.48,
+   "chars": 71,
+   "h": "sha256:28e49c5fd6549042"
+  },
+  "Luke.8.37": {
+   "ref": "ลูกา 8:37",
+   "osis": "Luke",
+   "c": 8,
+   "v": 37,
+   "file": "Luke.8.37.puck.mp3",
+   "d": 7.96,
+   "chars": 91,
+   "h": "sha256:9c0f368dfb7180cd"
+  },
+  "Luke.8.38": {
+   "ref": "ลูกา 8:38",
+   "osis": "Luke",
+   "c": 8,
+   "v": 38,
+   "file": "Luke.8.38.puck.mp3",
+   "d": 7.32,
+   "chars": 78,
+   "h": "sha256:abf6491cb21b4ca0"
+  },
+  "Luke.8.39": {
+   "ref": "ลูกา 8:39",
+   "osis": "Luke",
+   "c": 8,
+   "v": 39,
+   "file": "Luke.8.39.puck.mp3",
+   "d": 9.64,
+   "chars": 119,
+   "h": "sha256:403a075ca457e205"
+  },
+  "Luke.8.40": {
+   "ref": "ลูกา 8:40",
+   "osis": "Luke",
+   "c": 8,
+   "v": 40,
+   "file": "Luke.8.40.puck.mp3",
+   "d": 6.16,
+   "chars": 71,
+   "h": "sha256:54d3eb972076269c"
+  },
+  "Luke.8.41": {
+   "ref": "ลูกา 8:41",
+   "osis": "Luke",
+   "c": 8,
+   "v": 41,
+   "file": "Luke.8.41.puck.mp3",
+   "d": 8.96,
+   "chars": 90,
+   "h": "sha256:f0c1bb6c3b316f46"
+  },
+  "Luke.8.42": {
+   "ref": "ลูกา 8:42",
+   "osis": "Luke",
+   "c": 8,
+   "v": 42,
+   "file": "Luke.8.42.puck.mp3",
+   "d": 8.52,
+   "chars": 105,
+   "h": "sha256:549ebe11ad3e8c47"
+  },
+  "Luke.8.43": {
+   "ref": "ลูกา 8:43",
+   "osis": "Luke",
+   "c": 8,
+   "v": 43,
+   "file": "Luke.8.43.puck.mp3",
+   "d": 6.0,
+   "chars": 61,
+   "h": "sha256:998a994ff7a98c5e"
+  },
+  "Luke.8.44": {
+   "ref": "ลูกา 8:44",
+   "osis": "Luke",
+   "c": 8,
+   "v": 44,
+   "file": "Luke.8.44.puck.mp3",
+   "d": 5.64,
+   "chars": 65,
+   "h": "sha256:2c9c317f83c26d91"
+  },
+  "Luke.8.45": {
+   "ref": "ลูกา 8:45",
+   "osis": "Luke",
+   "c": 8,
+   "v": 45,
+   "file": "Luke.8.45.puck.mp3",
+   "d": 9.32,
+   "chars": 98,
+   "h": "sha256:df0ce26bf9e657ca"
+  },
+  "Luke.8.46": {
+   "ref": "ลูกา 8:46",
+   "osis": "Luke",
+   "c": 8,
+   "v": 46,
+   "file": "Luke.8.46.puck.mp3",
+   "d": 6.76,
+   "chars": 69,
+   "h": "sha256:bd31c0f9f2f035de"
+  },
+  "Luke.8.47": {
+   "ref": "ลูกา 8:47",
+   "osis": "Luke",
+   "c": 8,
+   "v": 47,
+   "file": "Luke.8.47.puck.mp3",
+   "d": 10.48,
+   "chars": 131,
+   "h": "sha256:881051d21f4ca9dd"
+  },
+  "Luke.8.48": {
+   "ref": "ลูกา 8:48",
+   "osis": "Luke",
+   "c": 8,
+   "v": 48,
+   "file": "Luke.8.48.puck.mp3",
+   "d": 6.64,
+   "chars": 83,
+   "h": "sha256:1169973b04775941"
+  },
+  "Luke.8.49": {
+   "ref": "ลูกา 8:49",
+   "osis": "Luke",
+   "c": 8,
+   "v": 49,
+   "file": "Luke.8.49.puck.mp3",
+   "d": 10.2,
+   "chars": 114,
+   "h": "sha256:419b51586008b4a5"
+  },
+  "Luke.8.50": {
+   "ref": "ลูกา 8:50",
+   "osis": "Luke",
+   "c": 8,
+   "v": 50,
+   "file": "Luke.8.50.puck.mp3",
+   "d": 7.12,
+   "chars": 74,
+   "h": "sha256:ee0a9374dc76946e"
+  },
+  "Luke.8.51": {
+   "ref": "ลูกา 8:51",
+   "osis": "Luke",
+   "c": 8,
+   "v": 51,
+   "file": "Luke.8.51.puck.mp3",
+   "d": 6.76,
+   "chars": 94,
+   "h": "sha256:c808c4c01753b85e"
+  },
+  "Luke.8.52": {
+   "ref": "ลูกา 8:52",
+   "osis": "Luke",
+   "c": 8,
+   "v": 52,
+   "file": "Luke.8.52.puck.mp3",
+   "d": 7.76,
+   "chars": 88,
+   "h": "sha256:36d470e91c77047e"
+  },
+  "Luke.8.53": {
+   "ref": "ลูกา 8:53",
+   "osis": "Luke",
+   "c": 8,
+   "v": 53,
+   "file": "Luke.8.53.puck.mp3",
+   "d": 4.12,
+   "chars": 52,
+   "h": "sha256:c3448951a7ee88e4"
+  },
+  "Luke.8.54": {
+   "ref": "ลูกา 8:54",
+   "osis": "Luke",
+   "c": 8,
+   "v": 54,
+   "file": "Luke.8.54.puck.mp3",
+   "d": 5.4,
+   "chars": 57,
+   "h": "sha256:f0a6f217000d409b"
+  },
+  "Luke.8.55": {
+   "ref": "ลูกา 8:55",
+   "osis": "Luke",
+   "c": 8,
+   "v": 55,
+   "file": "Luke.8.55.puck.mp3",
+   "d": 7.96,
+   "chars": 89,
+   "h": "sha256:fe8856e97c896b8e"
+  },
+  "Luke.8.56": {
+   "ref": "ลูกา 8:56",
+   "osis": "Luke",
+   "c": 8,
+   "v": 56,
+   "file": "Luke.8.56.puck.mp3",
+   "d": 5.64,
+   "chars": 69,
+   "h": "sha256:276174a44d9eae6b"
+  },
+  "Luke.9.1": {
+   "ref": "ลูกา 9:1",
+   "osis": "Luke",
+   "c": 9,
+   "v": 1,
+   "file": "Luke.9.1.puck.mp3",
+   "d": 9.4,
+   "chars": 108,
+   "h": "sha256:9fdfd4a927293682"
+  },
+  "Luke.9.2": {
+   "ref": "ลูกา 9:2",
+   "osis": "Luke",
+   "c": 9,
+   "v": 2,
+   "file": "Luke.9.2.puck.mp3",
+   "d": 5.52,
+   "chars": 63,
+   "h": "sha256:70ccfea3ba0e289b"
+  },
+  "Luke.9.3": {
+   "ref": "ลูกา 9:3",
+   "osis": "Luke",
+   "c": 9,
+   "v": 3,
+   "file": "Luke.9.3.puck.mp3",
+   "d": 7.48,
+   "chars": 100,
+   "h": "sha256:9a637d8e27444a97"
+  },
+  "Luke.9.4": {
+   "ref": "ลูกา 9:4",
+   "osis": "Luke",
+   "c": 9,
+   "v": 4,
+   "file": "Luke.9.4.puck.mp3",
+   "d": 4.8,
+   "chars": 59,
+   "h": "sha256:4a55bd1981269389"
+  },
+  "Luke.9.5": {
+   "ref": "ลูกา 9:5",
+   "osis": "Luke",
+   "c": 9,
+   "v": 5,
+   "file": "Luke.9.5.puck.mp3",
+   "d": 7.12,
+   "chars": 87,
+   "h": "sha256:b4779edaec78e5af"
+  },
+  "Luke.9.6": {
+   "ref": "ลูกา 9:6",
+   "osis": "Luke",
+   "c": 9,
+   "v": 6,
+   "file": "Luke.9.6.puck.mp3",
+   "d": 6.64,
+   "chars": 70,
+   "h": "sha256:0cfc825c0eba533f"
+  },
+  "Luke.9.7": {
+   "ref": "ลูกา 9:7",
+   "osis": "Luke",
+   "c": 9,
+   "v": 7,
+   "file": "Luke.9.7.puck.mp3",
+   "d": 11.48,
+   "chars": 125,
+   "h": "sha256:f5273c5b2af30197"
+  },
+  "Luke.9.8": {
+   "ref": "ลูกา 9:8",
+   "osis": "Luke",
+   "c": 9,
+   "v": 8,
+   "file": "Luke.9.8.puck.mp3",
+   "d": 8.08,
+   "chars": 86,
+   "h": "sha256:2cb84447b1658505"
+  },
+  "Luke.9.9": {
+   "ref": "ลูกา 9:9",
+   "osis": "Luke",
+   "c": 9,
+   "v": 9,
+   "file": "Luke.9.9.puck.mp3",
+   "d": 10.28,
+   "chars": 107,
+   "h": "sha256:30a71867048b15c0"
+  },
+  "Luke.9.10": {
+   "ref": "ลูกา 9:10",
+   "osis": "Luke",
+   "c": 9,
+   "v": 10,
+   "file": "Luke.9.10.puck.mp3",
+   "d": 8.4,
+   "chars": 101,
+   "h": "sha256:25e3a09b154a61d7"
+  },
+  "Luke.9.11": {
+   "ref": "ลูกา 9:11",
+   "osis": "Luke",
+   "c": 9,
+   "v": 11,
+   "file": "Luke.9.11.puck.mp3",
+   "d": 10.84,
+   "chars": 108,
+   "h": "sha256:1fb6e63ef8473f3d"
+  },
+  "Luke.9.12": {
+   "ref": "ลูกา 9:12",
+   "osis": "Luke",
+   "c": 9,
+   "v": 12,
+   "file": "Luke.9.12.puck.mp3",
+   "d": 11.92,
+   "chars": 144,
+   "h": "sha256:af116e3f0e74053d"
+  },
+  "Luke.9.13": {
+   "ref": "ลูกา 9:13",
+   "osis": "Luke",
+   "c": 9,
+   "v": 13,
+   "file": "Luke.9.13.puck.mp3",
+   "d": 12.44,
+   "chars": 135,
+   "h": "sha256:0a75e747591c25dd"
+  },
+  "Luke.9.14": {
+   "ref": "ลูกา 9:14",
+   "osis": "Luke",
+   "c": 9,
+   "v": 14,
+   "file": "Luke.9.14.puck.mp3",
+   "d": 9.08,
+   "chars": 107,
+   "h": "sha256:ba9a0eea843f0c00"
+  },
+  "Luke.9.15": {
+   "ref": "ลูกา 9:15",
+   "osis": "Luke",
+   "c": 9,
+   "v": 15,
+   "file": "Luke.9.15.puck.mp3",
+   "d": 3.36,
+   "chars": 33,
+   "h": "sha256:5a0afb7617c06a83"
+  },
+  "Luke.9.16": {
+   "ref": "ลูกา 9:16",
+   "osis": "Luke",
+   "c": 9,
+   "v": 16,
+   "file": "Luke.9.16.puck.mp3",
+   "d": 10.6,
+   "chars": 117,
+   "h": "sha256:01a0d922829b8bb4"
+  },
+  "Luke.9.17": {
+   "ref": "ลูกา 9:17",
+   "osis": "Luke",
+   "c": 9,
+   "v": 17,
+   "file": "Luke.9.17.puck.mp3",
+   "d": 6.52,
+   "chars": 65,
+   "h": "sha256:1ff71f0e3514fde4"
+  },
+  "Luke.9.18": {
+   "ref": "ลูกา 9:18",
+   "osis": "Luke",
+   "c": 9,
+   "v": 18,
+   "file": "Luke.9.18.puck.mp3",
+   "d": 9.88,
+   "chars": 113,
+   "h": "sha256:3c5e425996b45557"
+  },
+  "Luke.9.19": {
+   "ref": "ลูกา 9:19",
+   "osis": "Luke",
+   "c": 9,
+   "v": 19,
+   "file": "Luke.9.19.puck.mp3",
+   "d": 15.32,
+   "chars": 141,
+   "h": "sha256:52dcbe52f14ecd5e"
+  },
+  "Luke.9.20": {
+   "ref": "ลูกา 9:20",
+   "osis": "Luke",
+   "c": 9,
+   "v": 20,
+   "file": "Luke.9.20.puck.mp3",
+   "d": 7.96,
+   "chars": 91,
+   "h": "sha256:4b850e6e69d3388d"
+  },
+  "Luke.9.21": {
+   "ref": "ลูกา 9:21",
+   "osis": "Luke",
+   "c": 9,
+   "v": 21,
+   "file": "Luke.9.21.puck.mp3",
+   "d": 4.72,
+   "chars": 57,
+   "h": "sha256:9303f8cd2b15fdcc"
+  },
+  "Luke.9.22": {
+   "ref": "ลูกา 9:22",
+   "osis": "Luke",
+   "c": 9,
+   "v": 22,
+   "file": "Luke.9.22.puck.mp3",
+   "d": 14.72,
+   "chars": 166,
+   "h": "sha256:e3dd6cbb5ae0b0bb"
+  },
+  "Luke.9.23": {
+   "ref": "ลูกา 9:23",
+   "osis": "Luke",
+   "c": 9,
+   "v": 23,
+   "file": "Luke.9.23.puck.mp3",
+   "d": 10.04,
+   "chars": 110,
+   "h": "sha256:3afd640ab2c9ee23"
+  },
+  "Luke.9.24": {
+   "ref": "ลูกา 9:24",
+   "osis": "Luke",
+   "c": 9,
+   "v": 24,
+   "file": "Luke.9.24.puck.mp3",
+   "d": 6.04,
+   "chars": 75,
+   "h": "sha256:a75089cce8c99290"
+  },
+  "Luke.9.25": {
+   "ref": "ลูกา 9:25",
+   "osis": "Luke",
+   "c": 9,
+   "v": 25,
+   "file": "Luke.9.25.puck.mp3",
+   "d": 4.24,
+   "chars": 49,
+   "h": "sha256:171415f884b5f6e5"
+  },
+  "Luke.9.26": {
+   "ref": "ลูกา 9:26",
+   "osis": "Luke",
+   "c": 9,
+   "v": 26,
+   "file": "Luke.9.26.puck.mp3",
+   "d": 12.72,
+   "chars": 150,
+   "h": "sha256:6a7a2eea6479db58"
+  },
+  "Luke.9.27": {
+   "ref": "ลูกา 9:27",
+   "osis": "Luke",
+   "c": 9,
+   "v": 27,
+   "file": "Luke.9.27.puck.mp3",
+   "d": 7.48,
+   "chars": 92,
+   "h": "sha256:0c5a5e47424afc80"
+  },
+  "Luke.9.28": {
+   "ref": "ลูกา 9:28",
+   "osis": "Luke",
+   "c": 9,
+   "v": 28,
+   "file": "Luke.9.28.puck.mp3",
+   "d": 9.4,
+   "chars": 90,
+   "h": "sha256:17fef2916343ec89"
+  },
+  "Luke.9.29": {
+   "ref": "ลูกา 9:29",
+   "osis": "Luke",
+   "c": 9,
+   "v": 29,
+   "file": "Luke.9.29.puck.mp3",
+   "d": 6.96,
+   "chars": 93,
+   "h": "sha256:6ea1bdd969df5e09"
+  },
+  "Luke.9.30": {
+   "ref": "ลูกา 9:30",
+   "osis": "Luke",
+   "c": 9,
+   "v": 30,
+   "file": "Luke.9.30.puck.mp3",
+   "d": 8.8,
+   "chars": 76,
+   "h": "sha256:7fda9fba1dbc9d14"
+  },
+  "Luke.9.31": {
+   "ref": "ลูกา 9:31",
+   "osis": "Luke",
+   "c": 9,
+   "v": 31,
+   "file": "Luke.9.31.puck.mp3",
+   "d": 4.44,
+   "chars": 56,
+   "h": "sha256:0190d805102d0c65"
+  },
+  "Luke.9.32": {
+   "ref": "ลูกา 9:32",
+   "osis": "Luke",
+   "c": 9,
+   "v": 32,
+   "file": "Luke.9.32.puck.mp3",
+   "d": 7.88,
+   "chars": 89,
+   "h": "sha256:36039314bb411519"
+  },
+  "Luke.9.33": {
+   "ref": "ลูกา 9:33",
+   "osis": "Luke",
+   "c": 9,
+   "v": 33,
+   "file": "Luke.9.33.puck.mp3",
+   "d": 17.92,
+   "chars": 227,
+   "h": "sha256:c100dc5089224b12"
+  },
+  "Luke.9.34": {
+   "ref": "ลูกา 9:34",
+   "osis": "Luke",
+   "c": 9,
+   "v": 34,
+   "file": "Luke.9.34.puck.mp3",
+   "d": 6.32,
+   "chars": 73,
+   "h": "sha256:148e6ccfe4f7df97"
+  },
+  "Luke.9.35": {
+   "ref": "ลูกา 9:35",
+   "osis": "Luke",
+   "c": 9,
+   "v": 35,
+   "file": "Luke.9.35.puck.mp3",
+   "d": 6.52,
+   "chars": 72,
+   "h": "sha256:bb6ea174bb97d88a"
+  },
+  "Luke.9.36": {
+   "ref": "ลูกา 9:36",
+   "osis": "Luke",
+   "c": 9,
+   "v": 36,
+   "file": "Luke.9.36.puck.mp3",
+   "d": 10.04,
+   "chars": 122,
+   "h": "sha256:bab1948d1f544d42"
+  },
+  "Luke.9.37": {
+   "ref": "ลูกา 9:37",
+   "osis": "Luke",
+   "c": 9,
+   "v": 37,
+   "file": "Luke.9.37.puck.mp3",
+   "d": 6.28,
+   "chars": 73,
+   "h": "sha256:c32ab258da813710"
+  },
+  "Luke.9.38": {
+   "ref": "ลูกา 9:38",
+   "osis": "Luke",
+   "c": 9,
+   "v": 38,
+   "file": "Luke.9.38.puck.mp3",
+   "d": 7.96,
+   "chars": 91,
+   "h": "sha256:13e027b0ef00cbdc"
+  },
+  "Luke.9.39": {
+   "ref": "ลูกา 9:39",
+   "osis": "Luke",
+   "c": 9,
+   "v": 39,
+   "file": "Luke.9.39.puck.mp3",
+   "d": 10.16,
+   "chars": 104,
+   "h": "sha256:0506f7c729404670"
+  },
+  "Luke.9.40": {
+   "ref": "ลูกา 9:40",
+   "osis": "Luke",
+   "c": 9,
+   "v": 40,
+   "file": "Luke.9.40.puck.mp3",
+   "d": 5.24,
+   "chars": 61,
+   "h": "sha256:c5b676c681447bbf"
+  },
+  "Luke.9.41": {
+   "ref": "ลูกา 9:41",
+   "osis": "Luke",
+   "c": 9,
+   "v": 41,
+   "file": "Luke.9.41.puck.mp3",
+   "d": 9.2,
+   "chars": 110,
+   "h": "sha256:1490f89f79b8514e"
+  },
+  "Luke.9.42": {
+   "ref": "ลูกา 9:42",
+   "osis": "Luke",
+   "c": 9,
+   "v": 42,
+   "file": "Luke.9.42.puck.mp3",
+   "d": 9.72,
+   "chars": 114,
+   "h": "sha256:aacb4fee96385d4d"
+  },
+  "Luke.9.43": {
+   "ref": "ลูกา 9:43",
+   "osis": "Luke",
+   "c": 9,
+   "v": 43,
+   "file": "Luke.9.43.puck.mp3",
+   "d": 8.6,
+   "chars": 106,
+   "h": "sha256:40248e6e99147872"
+  },
+  "Luke.9.44": {
+   "ref": "ลูกา 9:44",
+   "osis": "Luke",
+   "c": 9,
+   "v": 44,
+   "file": "Luke.9.44.puck.mp3",
+   "d": 5.92,
+   "chars": 68,
+   "h": "sha256:ace52a64997c2345"
+  },
+  "Luke.9.45": {
+   "ref": "ลูกา 9:45",
+   "osis": "Luke",
+   "c": 9,
+   "v": 45,
+   "file": "Luke.9.45.puck.mp3",
+   "d": 8.6,
+   "chars": 109,
+   "h": "sha256:388cefdc3b49d9aa"
+  },
+  "Luke.9.46": {
+   "ref": "ลูกา 9:46",
+   "osis": "Luke",
+   "c": 9,
+   "v": 46,
+   "file": "Luke.9.46.puck.mp3",
+   "d": 5.04,
+   "chars": 56,
+   "h": "sha256:2a723bd9d747c45b"
+  },
+  "Luke.9.47": {
+   "ref": "ลูกา 9:47",
+   "osis": "Luke",
+   "c": 9,
+   "v": 47,
+   "file": "Luke.9.47.puck.mp3",
+   "d": 4.92,
+   "chars": 60,
+   "h": "sha256:c935b36c3418ae87"
+  },
+  "Luke.9.48": {
+   "ref": "ลูกา 9:48",
+   "osis": "Luke",
+   "c": 9,
+   "v": 48,
+   "file": "Luke.9.48.puck.mp3",
+   "d": 13.16,
+   "chars": 172,
+   "h": "sha256:f13705fae4765842"
+  },
+  "Luke.9.49": {
+   "ref": "ลูกา 9:49",
+   "osis": "Luke",
+   "c": 9,
+   "v": 49,
+   "file": "Luke.9.49.puck.mp3",
+   "d": 8.44,
+   "chars": 100,
+   "h": "sha256:dfe23b4e06ca06d9"
+  },
+  "Luke.9.50": {
+   "ref": "ลูกา 9:50",
+   "osis": "Luke",
+   "c": 9,
+   "v": 50,
+   "file": "Luke.9.50.puck.mp3",
+   "d": 6.24,
+   "chars": 76,
+   "h": "sha256:7abc27cddfb4d2f0"
+  },
+  "Luke.9.51": {
+   "ref": "ลูกา 9:51",
+   "osis": "Luke",
+   "c": 9,
+   "v": 51,
+   "file": "Luke.9.51.puck.mp3",
+   "d": 6.8,
+   "chars": 78,
+   "h": "sha256:23aa9310e93dc517"
+  },
+  "Luke.9.52": {
+   "ref": "ลูกา 9:52",
+   "osis": "Luke",
+   "c": 9,
+   "v": 52,
+   "file": "Luke.9.52.puck.mp3",
+   "d": 8.44,
+   "chars": 119,
+   "h": "sha256:03c55904257cf9f1"
+  },
+  "Luke.9.53": {
+   "ref": "ลูกา 9:53",
+   "osis": "Luke",
+   "c": 9,
+   "v": 53,
+   "file": "Luke.9.53.puck.mp3",
+   "d": 5.2,
+   "chars": 66,
+   "h": "sha256:1f147bb09d94618d"
+  },
+  "Luke.9.54": {
+   "ref": "ลูกา 9:54",
+   "osis": "Luke",
+   "c": 9,
+   "v": 54,
+   "file": "Luke.9.54.puck.mp3",
+   "d": 9.04,
+   "chars": 130,
+   "h": "sha256:98896375a3d3c74f"
+  },
+  "Luke.9.55": {
+   "ref": "ลูกา 9:55",
+   "osis": "Luke",
+   "c": 9,
+   "v": 55,
+   "file": "Luke.9.55.puck.mp3",
+   "d": 3.08,
+   "chars": 26,
+   "h": "sha256:3bebaee3d76f164a"
+  },
+  "Luke.9.56": {
+   "ref": "ลูกา 9:56",
+   "osis": "Luke",
+   "c": 9,
+   "v": 56,
+   "file": "Luke.9.56.puck.mp3",
+   "d": 1.84,
+   "chars": 29,
+   "h": "sha256:2ba91c5f9b546f66"
+  },
+  "Luke.9.57": {
+   "ref": "ลูกา 9:57",
+   "osis": "Luke",
+   "c": 9,
+   "v": 57,
+   "file": "Luke.9.57.puck.mp3",
+   "d": 7.72,
+   "chars": 89,
+   "h": "sha256:5ae0158a2e7ea12d"
+  },
+  "Luke.9.58": {
+   "ref": "ลูกา 9:58",
+   "osis": "Luke",
+   "c": 9,
+   "v": 58,
+   "file": "Luke.9.58.puck.mp3",
+   "d": 8.8,
+   "chars": 84,
+   "h": "sha256:46f43f68659d72ee"
+  },
+  "Luke.9.59": {
+   "ref": "ลูกา 9:59",
+   "osis": "Luke",
+   "c": 9,
+   "v": 59,
+   "file": "Luke.9.59.puck.mp3",
+   "d": 8.56,
+   "chars": 102,
+   "h": "sha256:4337cd63468172c7"
+  },
+  "Luke.9.60": {
+   "ref": "ลูกา 9:60",
+   "osis": "Luke",
+   "c": 9,
+   "v": 60,
+   "file": "Luke.9.60.puck.mp3",
+   "d": 6.76,
+   "chars": 87,
+   "h": "sha256:7579f4037b2f3a7e"
+  },
+  "Luke.9.61": {
+   "ref": "ลูกา 9:61",
+   "osis": "Luke",
+   "c": 9,
+   "v": 61,
+   "file": "Luke.9.61.puck.mp3",
+   "d": 6.52,
+   "chars": 77,
+   "h": "sha256:7cb709fd5e05fa8e"
+  },
+  "Luke.9.62": {
+   "ref": "ลูกา 9:62",
+   "osis": "Luke",
+   "c": 9,
+   "v": 62,
+   "file": "Luke.9.62.puck.mp3",
+   "d": 6.96,
+   "chars": 89,
+   "h": "sha256:9156cdb9212da26f"
   }
  },
  "gaps": [
@@ -14339,6 +15519,14 @@
     "Luke.7"
    ],
    "chars": 13136
+  },
+  {
+   "date": "2026-11-26",
+   "chapters": [
+    "Luke.8",
+    "Luke.9"
+   ],
+   "chars": 11197
   }
  ]
 }
