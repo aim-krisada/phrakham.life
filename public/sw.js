@@ -30,6 +30,24 @@ const ที่รายการ = ที่อยู่('offline.json')
 // ⭐ สมุดจด *ไฟล์ไหนเก็บไว้ด้วยลายนิ้วมือไหน* ⇒ อยู่ในแคชตัวบทเอง ⇒ ⛔ มีไฟล์นี้บนเว็บจริง
 const ที่สมุด = ที่อยู่('__phrakham-สมุดออฟไลน์.json')
 const ที่สถานะ = ที่อยู่('__phrakham-สถานะออฟไลน์.json')
+// ⭐ จดเวลาที่ผู้อ่านกดยกเลิกงานพื้นหลัง ⇒ แยกไฟล์ ⇒ ⛔ ถูกเขียนทับตอนรอบปกติจดสถานะ
+const ที่พักพื้นหลัง = ที่อยู่('__phrakham-พักพื้นหลัง.json')
+
+// ⭐ @krisada 25 พ.ย. 2569 ⇒ **เก็บต่อแม้ปิดแอป** (Background Fetch ⇒ Chrome บน Android)
+//   ⇒ เดิมเก็บได้เฉพาะตอนแอปเปิดอยู่บนจอ ⇒ ออกจากแอปหรือจอดับ ⇒ มือถือหยุดตัวช่วย ⇒ บรรทัด *กำลังเก็บ… N%* ค้างเป็นชั่วโมง
+//   ⇒ ไฟล์ที่ยังขาดตั้งแต่ `ขั้นต่ำพื้นหลัง` ⇒ ส่งให้เบราว์เซอร์ดาวน์โหลดเอง ⇒ มีแจ้งเตือนของเครื่อง ⇒ ปิดแอปได้
+//   ⇒ เสร็จ ⇒ `backgroundfetchsuccess` ⇒ ตรวจลายทีละไฟล์ ⇒ เก็บ ⇒ ที่ตกหล่น ⇒ รอบปกติเก็บต่อ
+//   ⇒ ⛔ รองรับ (iPhone · คอม · Samsung บางรุ่น) หรือเริ่มไม่ได้ ⇒ รอบปกติแบบเดิม ⇒ ⛔ เสียอะไร
+//   ⇒ ผู้อ่านกดยกเลิกที่แจ้งเตือน ⇒ ⛔ เริ่มพื้นหลังซ้ำภายใน `พักหลังยกเลิก` ⇒ ⛔ กวน
+//   ⇒ ⭐ คำบนแจ้งเตือน = คำที่อนุมัติแล้วบนบรรทัดสถานะ (`app/utils/ถ้อยคำติดตั้งแอป.ts` ⇒ `กำลังเก็บ` ตัด `… N%` · `พร้อมใช้` ตัด `✓ `) ⇒ ⛔ คำใหม่
+//     ⇒ ตัวเฝ้า `tools/ด่านออฟไลน์.mjs` เทียบคำ 2 ตัวนี้กับไฟล์ถ้อยคำ
+const ชื่อพื้นหลัง = 'phrakham-ตัวบท--' + ป้ายฐาน
+const ขั้นต่ำพื้นหลัง = 30
+const พักหลังยกเลิก = 24 * 3600 * 1000
+const คำแจ้งกำลังเก็บ = 'กำลังเก็บพระคัมภีร์ไว้ในเครื่อง'
+const คำแจ้งพร้อม = 'พร้อมใช้แบบไม่มีเน็ตแล้ว'
+// ⭐ เฉพาะ Android ⇒ Chrome บนคอมก็มี Background Fetch แต่คอม ⛔ ฆ่าตัวช่วยเมื่อพับจอ ⇒ รอบปกติพอ ⇒ ด่านในท่อ (Chrome บนลินุกซ์) ใช้รอบปกติ
+const ใช้พื้นหลังได้ = () => /Android/.test(self.navigator.userAgent) && !!self.registration.backgroundFetch
 
 const เวลาต่อไฟล์ = 30000 // ไฟล์ที่ค้าง ⇒ ข้ามไปก่อน ⇒ รอบหน้าดึงใหม่ (เว็บเพลง ใบ #164)
 const เวลาต่อรอบ = 120000 // ⭐ เบราว์เซอร์ฆ่าตัวช่วยที่งานเดียวยาวเกิน ~5 นาที ⇒ แบ่งรอบ ⇒ หน้าเว็บขอรอบต่อไป
@@ -251,6 +269,13 @@ async function เก็บรอบหนึ่ง() {
     /* ⛔ รู้ที่ว่าง ⇒ ลองดึงไปก่อน ⇒ เต็มเมื่อไรหยุดตรงนั้น */
   }
 
+  // ⭐ เก็บต่อแม้ปิดแอป ⇒ ส่งให้เบราว์เซอร์ ⇒ รอบนี้จบตรงนี้ ⇒ ผลมาทาง `backgroundfetchsuccess`
+  const พื้นหลัง = await เริ่มพื้นหลัง(c, ค้าง)
+  if (พื้นหลัง) {
+    const มีแล้ว = รายการ.ไฟล์.length - ค้าง.length
+    return { ทั้งหมด: รายการ.ไฟล์.length, มีแล้ว, ขนาดรวม: รายการ.ขนาดรวม, จบ: false, พลาด: 0, เต็ม: false, พื้นหลัง: true }
+  }
+
   let เต็ม = false
   let พลาด = 0
   let ทำแล้ว = 0
@@ -296,7 +321,7 @@ async function เก็บรอบหนึ่ง() {
   if (!เต็ม && รายการ.ไฟล์.length) {
     const ยังใช้ = new Set(รายการ.ไฟล์.map(([ทาง]) => ที่อยู่(ทาง)))
     for (const ทาง of Object.keys(สมุด)) if (!ยังใช้.has(ที่อยู่(ทาง))) delete สมุด[ทาง]
-    for (const k of await c.keys()) if (!ยังใช้.has(k.url) && k.url !== ที่รายการ && k.url !== ที่สมุด && k.url !== ที่สถานะ) await c.delete(k)
+    for (const k of await c.keys()) if (!ยังใช้.has(k.url) && k.url !== ที่รายการ && k.url !== ที่สมุด && k.url !== ที่สถานะ && k.url !== ที่พักพื้นหลัง) await c.delete(k)
   }
   try {
     await เขียนJSON(c, ที่สมุด, สมุด)
@@ -322,6 +347,92 @@ async function จบด้วยเต็ม(c, รายการ) {
   }
   return { ทั้งหมด: รายการ?.ไฟล์?.length || 0, มีแล้ว: 0, จบ: true, เต็ม: true, พลาด: 0 }
 }
+
+// ---- เก็บต่อแม้ปิดแอป (Background Fetch) ----------------------------------------------------------
+/** คืน true ⇒ มีงานพื้นหลังวิ่งอยู่แล้ว หรือเพิ่งเริ่มได้ ⇒ รอบปกติ ⛔ ต้องดึงเอง */
+async function เริ่มพื้นหลัง(c, ค้าง) {
+  if (!ใช้พื้นหลังได้()) return false
+  try {
+    const bf = self.registration.backgroundFetch
+    if (await bf.get(ชื่อพื้นหลัง)) return true
+    if (ค้าง.length < ขั้นต่ำพื้นหลัง) return false
+    const พัก = (await อ่านJSON(c, ที่พักพื้นหลัง)) || {}
+    if (พัก.ยกเลิกเมื่อ && Date.now() - พัก.ยกเลิกเมื่อ < พักหลังยกเลิก) return false
+    await bf.fetch(
+      ชื่อพื้นหลัง,
+      ค้าง.map(([ทาง]) => ที่อยู่(ทาง)),
+      { title: คำแจ้งกำลังเก็บ, icons: [{ src: ที่อยู่('icons/icon-192.png'), sizes: '192x192', type: 'image/png' }] },
+    )
+    return true
+  } catch {
+    // ⭐ เบราว์เซอร์ไม่ยอม (ปิดสิทธิ์ดาวน์โหลด · ที่ว่างไม่พอ) ⇒ รอบปกติ
+    return false
+  }
+}
+
+/** งานพื้นหลังจบ (ครบหรือไม่ครบ) ⇒ ตรวจลายทีละไฟล์ ⇒ เก็บ ⇒ บอกหน้าเว็บ ⇒ ที่ตกหล่นรอบปกติเก็บต่อ */
+async function รับพื้นหลัง(event, สำเร็จ) {
+  const c = await caches.open(แคชตัวบท)
+  const รายการ = await อ่านJSON(c, ที่รายการ)
+  const ไฟล์ = Array.isArray(รายการ?.ไฟล์) ? รายการ.ไฟล์ : []
+  const ตามที่อยู่ = new Map(ไฟล์.map(([ทาง, ลาย]) => [ที่อยู่(ทาง), [ทาง, ลาย]]))
+  const สมุด = (await อ่านJSON(c, ที่สมุด)) || {}
+  let เต็ม = false
+  let records = []
+  try {
+    records = await event.registration.matchAll()
+  } catch {
+    /* ⛔ ได้ ⇒ รอบปกติเก็บแทน */
+  }
+  for (const rec of records) {
+    if (เต็ม) break
+    try {
+      const x = ตามที่อยู่.get(rec.request.url)
+      if (!x) continue
+      const res = await rec.responseReady
+      if (!res || !res.ok) continue
+      const ไบต์ = await res.arrayBuffer()
+      if ((await ลายของ(ไบต์)) !== x[1]) continue
+      const ชนิด = res.headers.get('content-type')
+      await c.put(rec.request.url, new Response(ไบต์, { status: 200, headers: ชนิด ? { 'content-type': ชนิด } : {} }))
+      สมุด[x[0]] = x[1]
+    } catch (เหตุ) {
+      if (ที่เก็บเต็ม(เหตุ)) เต็ม = true
+    }
+  }
+  try {
+    await เขียนJSON(c, ที่สมุด, สมุด)
+  } catch (เหตุ) {
+    if (ที่เก็บเต็ม(เหตุ)) เต็ม = true
+  }
+  const มีอยู่ = new Set((await c.keys()).map((r) => r.url))
+  const มีแล้ว = ไฟล์.filter(([ทาง, ลาย]) => สมุด[ทาง] === ลาย && มีอยู่.has(ที่อยู่(ทาง))).length
+  const ครบ = ไฟล์.length > 0 && มีแล้ว === ไฟล์.length
+  if (ครบ) {
+    try {
+      await เขียนJSON(c, ที่สถานะ, { เต็มเมื่อ: 0, จบเมื่อ: Date.now(), รุ่น: รายการ.รุ่น })
+    } catch {
+      /* เต็มพอดี */
+    }
+  }
+  if (สำเร็จ && ครบ) await event.updateUI?.({ title: คำแจ้งพร้อม }).catch(() => {})
+  // ⭐ ข่าวรูปเดียวกับรอบปกติ ⇒ ยังไม่ครบแต่คืบ ⇒ หน้าเว็บขอรอบต่อไปเอง (รอบปกติเก็บที่ตกหล่น)
+  บอก({ รอบจบ: true, จบ: ครบ, เต็ม, มีแล้ว, ทั้งหมด: ไฟล์.length, พลาด: 0 })
+}
+self.addEventListener('backgroundfetchsuccess', (event) => event.waitUntil(รับพื้นหลัง(event, true)))
+self.addEventListener('backgroundfetchfail', (event) => event.waitUntil(รับพื้นหลัง(event, false)))
+// ⭐ ผู้อ่านกดยกเลิกที่แจ้งเตือน ⇒ จด ⇒ ⛔ เริ่มพื้นหลังซ้ำภายใน `พักหลังยกเลิก` ⇒ เปิดแอปอยู่ก็ยังเก็บแบบรอบปกติ
+self.addEventListener('backgroundfetchabort', (event) =>
+  event.waitUntil(
+    (async () => {
+      const c = await caches.open(แคชตัวบท)
+      await เขียนJSON(c, ที่พักพื้นหลัง, { ยกเลิกเมื่อ: Date.now() }).catch(() => {})
+      บอก({ ยกเลิกพื้นหลัง: true })
+    })(),
+  ),
+)
+// ⭐ แตะแจ้งเตือน ⇒ เปิดแอป
+self.addEventListener('backgroundfetchclick', (event) => event.waitUntil(self.clients.openWindow(ราก)))
 
 let งานที่วิ่ง = null
 self.addEventListener('message', (event) => {
